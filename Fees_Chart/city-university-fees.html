@@ -311,42 +311,56 @@
 }
 
 /* Specific colors based on your images */
-.cityu-line, .cityu-base { stroke: #ffffff; } /* White for high contrast on red/black header */
-.step-circle { stroke: #007bff; }
-.step-line { stroke: #ffcc00; }
-.step-block { fill: #007bff; stroke: none; }
-
-@keyframes logoAlive {
-  0% { stroke-dashoffset: 200; opacity: 0; }
-  15% { stroke-dashoffset: 0; opacity: 1; }
-  85% { stroke-dashoffset: 0; opacity: 1; }
-  100% { stroke-dashoffset: -200; opacity: 0; }
+/* --- UPDATED LOGO STYLES --- */
+.cityu-line, .cityu-base { 
+    stroke: #e31e24; /* Pure CityU Red */
+    stroke-width: 4;
 }
 
-/* --- MOBILE RESPONSIVENESS FOR HEADER --- */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .logo-container {
-    width: 70px;
-    height: 70px;
-  }
-  header h1 { font-size: 24px; }
+.step-circle { 
+    stroke: #007bff; 
+    stroke-width: 3;
+    /* Dasharray adjusted for a complete circle circumference (~264 for r=42) */
+    stroke-dasharray: 300; 
+    stroke-dashoffset: 300;
+}
+
+.step-arrow, .step-line { 
+    stroke: #ffcc00; 
+    stroke-width: 5;
+}
+
+.step-block { 
+    fill: #007bff; 
+    animation: fadeAlive 6s ease-in-out infinite; 
+}
+
+/* Keyframe for drawing/breaking lines */
+@keyframes logoAlive {
+  0% { stroke-dashoffset: 300; opacity: 0; }
+  15% { stroke-dashoffset: 0; opacity: 1; }
+  85% { stroke-dashoffset: 0; opacity: 1; }
+  100% { stroke-dashoffset: -300; opacity: 0; }
+}
+
+/* Specific fade for the solid blue block */
+@keyframes fadeAlive {
+  0%, 100% { opacity: 0; }
+  20%, 80% { opacity: 1; }
 }
 </style>
 
 
 </head>
 <body>
-
 <header>
   <div class="header-content">
     <div class="logo-container">
       <svg class="living-logo" viewBox="0 0 100 100">
-        <path class="cityu-line" d="M30,80 L30,40 M40,80 L40,30 M50,80 L50,20 M60,80 L60,30 M70,80 L70,40" />
-        <line class="cityu-base" x1="20" y1="80" x2="80" y2="80" />
+        <g class="cityu-group">
+          <path class="cityu-line" d="M30,75 L30,45 M40,75 L40,35 M50,75 L50,25 M60,75 L60,35 M70,75 L70,45" />
+          <line class="cityu-base" x1="20" y1="75" x2="80" y2="75" />
+        </g>
       </svg>
     </div>
 
@@ -358,10 +372,10 @@
 
     <div class="logo-container">
       <svg class="living-logo" viewBox="0 0 100 100">
-        <circle class="step-circle" cx="50" cy="50" r="45" />
-        <path class="step-arrow" d="M30,40 L50,20 L70,40" />
-        <line class="step-line" x1="30" y1="70" x2="75" y2="25" />
-        <rect class="step-block" x="40" y="60" width="20" height="10" rx="2" />
+        <circle class="step-circle" cx="50" cy="50" r="42" />
+        <path class="step-arrow" d="M35,45 L50,30 L65,45" />
+        <line class="step-line" x1="32" y1="72" x2="70" y2="30" />
+        <rect class="step-block" x="42" y="62" width="22" height="12" rx="3" />
       </svg>
     </div>
   </div>

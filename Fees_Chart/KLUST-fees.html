@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Infrastructure University Kuala Lumpur (IUKL) – Fee Structure 2025</title>
+  
 <style>
   /* --- GLOBAL RESET & FONTS --- */
   * {
@@ -21,25 +22,34 @@
   }
 
   /* --- HEADER (Redesigned to match Index style) --- */
-/* --- KLUST BRANDING & ANIMATED LOGO STYLES --- */
-header {
-  background: linear-gradient(135deg, #0b1d36 0%, #1a3a5f 100%); /* KLUST Navy */
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(11, 29, 54, 0.3);
-}
+  header {
+    background: linear-gradient(135deg, #000000 0%, #b30000 100%); /* City U Red & Black */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
+  }
 
-header h2 { color: #d4af37; } /* KLUST Gold Accent */
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
-.accordion::before { background-color: #0b1d36; }
-.accordion.active { 
-    background-color: #0b1d36; 
-    box-shadow: 0 8px 20px rgba(11, 29, 54, 0.3);
-}
+  header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFD700; /* Gold Accent */
+    margin-bottom: 15px;
+  }
 
-th, .download-bar, .search-icon-btn { background-color: #0b1d36; }
-.search-container input[type="text"] { border: 2px solid #0b1d36; }
+  header p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
 
   /* --- CONTAINER --- */
   .container {
@@ -288,21 +298,43 @@ th, .download-bar, .search-icon-btn { background-color: #0b1d36; }
   height: 100%;
 }
 
-/* Animation Definitions */
-.klust-outer, .klust-inner, .klust-star, .step-circle, .step-arrow, .step-line {
+/* Drawing & Breaking Animation */
+.cityu-line, .cityu-base, .step-circle, .step-arrow, .step-line, .step-block {
   fill: none;
-  stroke: #d4af37; /* Gold for KLUST */
+  stroke: white;
   stroke-width: 3;
   stroke-linecap: round;
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
   animation: logoAlive 6s linear infinite;
 }
 
-.step-circle { stroke: #007bff; }
-.step-line { stroke: #ffcc00; }
-.step-block { fill: #007bff; animation: fadeAlive 6s ease-in-out infinite; }
+/* Specific colors based on your images */
+/* --- UPDATED LOGO STYLES --- */
+.cityu-line, .cityu-base { 
+    stroke: #e31e24; /* Pure CityU Red */
+    stroke-width: 4;
+}
 
+.step-circle { 
+    stroke: #007bff; 
+    stroke-width: 3;
+    /* Dasharray adjusted for a complete circle circumference (~264 for r=42) */
+    stroke-dasharray: 300; 
+    stroke-dashoffset: 300;
+}
+
+.step-arrow, .step-line { 
+    stroke: #ffcc00; 
+    stroke-width: 5;
+}
+
+.step-block { 
+    fill: #007bff; 
+    animation: fadeAlive 6s ease-in-out infinite; 
+}
+
+/* Keyframe for drawing/breaking lines */
 @keyframes logoAlive {
   0% { stroke-dashoffset: 300; opacity: 0; }
   15% { stroke-dashoffset: 0; opacity: 1; }
@@ -310,18 +342,13 @@ th, .download-bar, .search-icon-btn { background-color: #0b1d36; }
   100% { stroke-dashoffset: -300; opacity: 0; }
 }
 
+/* Specific fade for the solid blue block */
 @keyframes fadeAlive {
   0%, 100% { opacity: 0; }
   20%, 80% { opacity: 1; }
 }
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .header-content { flex-direction: column; gap: 15px; }
-  .logo-container { width: 60px; height: 60px; }
-  header h1 { font-size: 24px; }
-}
 </style>
+
 </head>
 <body>
 

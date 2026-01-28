@@ -60,56 +60,57 @@ header {
   }
 
   /* --- MODERN SEARCH BAR (Pill Shape) --- */
-  .search-container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    text-align: center;
-    margin-bottom: 40px;
-  }
+  /* --- MODERN SEARCH BAR (Pill Shape) --- */
+.search-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-  .search-box-wrapper {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.search-box-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-  /* The Input */
-  .search-container input[type="text"] {
-    width: 100%;
-    padding: 18px 60px 18px 30px; /* Space for icon */
-    border: 2px solid #6b3a96; /* Purple Border */
-    border-radius: 50px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(179, 0, 0, 0.05);
-  }
+/* The Input with Purple Border */
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 18px 60px 18px 30px; 
+  border: 2px solid #6b3a96; /* Cyberjaya Purple */
+  border-radius: 50px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(107, 58, 150, 0.05);
+}
 
-  .search-container input[type="text"]:focus {
-    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.15);
-    transform: translateY(-2px);
-  }
+.search-container input[type="text"]:focus {
+  box-shadow: 0 8px 20px rgba(107, 58, 150, 0.15);
+  transform: translateY(-2px);
+}
 
-  /* The Icon inside input */
-  .search-icon-btn {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    background: #6b3a96; /* Purple Button */
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    cursor: default; /* It's visual mostly */
-  }
+/* The Icon inside input with Purple Background */
+.search-icon-btn {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: #6b3a96; /* Cyberjaya Purple */
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: default;
+}
 
   /* --- ACCORDION BARS (Modern Card Style) --- */
   .accordion {
@@ -413,10 +414,14 @@ header {
   </div>
 </header>
 
-<div class="container">
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search program name..." onkeyup="filterPrograms()" />
+<div class="search-container">
+  <div class="search-box-wrapper">
+    <input type="text" id="searchInput" placeholder="Search for a program (e.g. Medicine, Psychology)..." onkeyup="filterPrograms()" />
+    <button class="search-icon-btn">
+      &#128269; 
+    </button>
   </div>
+</div>
   
 <button class="accordion">Foundation Programs</button>
 <div class="panel">

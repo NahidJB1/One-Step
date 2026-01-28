@@ -355,16 +355,48 @@
   20%, 80% { opacity: 1; }
 }
 
+/* --- CYBERJAYA SVG LOGO STYLES --- */
+.uoc-c-lines {
+  stroke: url(#cyberGradient);
+  stroke-width: 4;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: logoAlive 6s linear infinite;
+}
 
+.uoc-text {
+  fill: #6b3a96; /* Primary Purple from logo */
+  font-family: 'Arial Black', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 </style>
+
+
 </head>
 <body>
 
 <header>
   <div class="header-content">
     <div class="logo-container">
-      <img src="assets/images/universities/cyberjaya/University-of-Cyberjaya-logo.png" alt="University of Cyberjaya Logo">
-    </div>
+  <svg class="living-logo" viewBox="0 0 120 120">
+    <defs>
+      <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#6b3a96;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#e91e63;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <g transform="translate(10,5)">
+      <path class="uoc-c-lines" d="M80,30 A35,35 0 1,0 80,70" />
+      <path class="uoc-c-lines" d="M80,20 A45,45 0 1,0 80,80" />
+      <path class="uoc-c-lines" d="M80,40 A25,25 0 1,0 80,60" />
+    </g>
+    <text x="50%" y="100" text-anchor="middle" class="uoc-text">CYBERJAYA</text>
+  </svg>
+</div>
 
     <div class="header-text">
       <h1>UNIVERSITY OF CYBERJAYA</h1>

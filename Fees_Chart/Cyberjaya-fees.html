@@ -4,18 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>UNIVERSITY OF CYBERJAYA – International Fee Structure 2026</title>
-<style>
+
+  <link rel="stylesheet" href="../assets/css/fees.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
     /* --- UNIVERSITY SPECIFIC THEME --- */
     :root {
-      --theme-color: #2d1347 /* City U Red */
-      --theme-dark: #6b3a96
-      --theme-accent: #FFD700; /* Gold */
+      /* 2. FIXED SEMICOLONS (Critical for variables to work) */
+      --theme-color: #6b3a96; /* Cyberjaya Main Purple */
+      --theme-dark: #2d1347;  /* Darker Purple */
+      --theme-accent: #e91e63; /* Pink Accent (Matches your Logo Gradient) */
     }
-    /* Logo Animation specific to City U (Optional, kept from your original code) */
-    .cityu-line, .cityu-base { stroke: #e31e24; stroke-width: 4; }
+
+    /* Keep the Logo Animation specific to Cyberjaya */
+    .uoc-c-lines {
+      stroke: url(#cyberGradient);
+      stroke-width: 4;
+      stroke-linecap: round;
+      fill: none;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: logoAlive 6s linear infinite;
+    }
   </style>
-
-
 </head>
 <body>
 

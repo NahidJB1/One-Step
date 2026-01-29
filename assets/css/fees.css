@@ -119,8 +119,8 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 .footer-links li { margin-bottom: 12px; }
 .footer-links a { color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: all 0.3s; }
 .footer-links a:hover { color: #00C2FF; padding-left: 5px; }
-.footer-contact p { margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px; color: rgba(255, 255, 255, 0.7);}
-.footer-contact i { color: #00C2FF; margin-top: 5px; }
+.footer-contact p { margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px; color: rgba(255, 255, 255, 0.7); line-height: 1.6; /* Adds breathing room for multiple lines */
+}.footer-contact i { color: #00C2FF; margin-top: 5px; }
 .social-links { display: flex; gap: 15px; margin-top: 25px; }
 .social-link { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s; }
 .social-link:hover { background-color: #0066CC; transform: translateY(-3px); }

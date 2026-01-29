@@ -12,14 +12,13 @@
   <style>
     /* --- UNIVERSITY SPECIFIC THEME --- */
     :root {
-      /* 2. FIXED SEMICOLONS */
-      --theme-color: #6b3a96; 
-      --theme-dark: #2d1347;  
-      --theme-accent: #e91e63;
-      --theme-light: #fdf2f7; /* Very light pink/purple for hover */
+      /* 2. FIXED SEMICOLONS (Critical for variables to work) */
+      --theme-color: #6b3a96; /* Cyberjaya Main Purple */
+      --theme-dark: #2d1347;  /* Darker Purple */
+      --theme-accent: #e91e63; /* Pink Accent (Matches your Logo Gradient) */
     }
 
-    /* Logo Animation specific to Cyberjaya */
+    /* Keep the Logo Animation specific to Cyberjaya */
     .uoc-c-lines {
       stroke: url(#cyberGradient);
       stroke-width: 4;
@@ -28,14 +27,6 @@
       stroke-dasharray: 300;
       stroke-dashoffset: 300;
       animation: logoAlive 6s linear infinite;
-    }
-    
-    /* Animation Keyframes */
-    @keyframes logoAlive {
-      0% { stroke-dashoffset: 300; opacity: 0; }
-      15% { stroke-dashoffset: 0; opacity: 1; }
-      85% { stroke-dashoffset: 0; opacity: 1; }
-      100% { stroke-dashoffset: -300; opacity: 0; }
     }
   </style>
 </head>
@@ -52,9 +43,9 @@
           </linearGradient>
         </defs>
         <g transform="translate(10,5)">
-          <path class="uoc-c-lines" d="M80,30 A35,35 0 1,0 80,70" />
-          <path class="uoc-c-lines" d="M80,20 A45,45 0 1,0 80,80" />
-          <path class="uoc-c-lines" d="M80,40 A25,25 0 1,0 80,60" />
+          <path class="uoc-c-lines" d="M80,30 A35,35 0 1,0 80,70" style="stroke: url(#cyberGradient);" />
+          <path class="uoc-c-lines" d="M80,20 A45,45 0 1,0 80,80" style="stroke: url(#cyberGradient);" />
+          <path class="uoc-c-lines" d="M80,40 A25,25 0 1,0 80,60" style="stroke: url(#cyberGradient);" />
         </g>
       </svg>
     </div>
@@ -75,8 +66,6 @@
     </div>
   </div>
 </header>
-
-<div class="container">
 
 <div class="search-container">
   <div class="search-box-wrapper">
@@ -208,9 +197,11 @@
   </table>
 </div>
 
-</div> <div id="global-footer-placeholder"></div>
 
-<script src="../assets/js/footer.js"></script>
+<footer>
+  <p>&copy; 2025 University Of Cyberjaya Malaysia.</p>
+</footer>
+
 <script src="../assets/js/fees.js"></script>
 </body>
 </html>

@@ -1,0 +1,339 @@
+  /* --- GLOBAL RESET & FONTS --- */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f8f8f8; /* Matches Index Page */
+    color: #333;
+    padding-bottom: 60px;
+    overflow-x: hidden;
+  }
+
+  /* --- HEADER (Redesigned to match Index style) --- */
+  header {
+    background: linear-gradient(135deg, #000000 0%, #b30000 100%); /* City U Red & Black */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFD700; /* Gold Accent */
+    margin-bottom: 15px;
+  }
+
+  header p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
+  /* --- CONTAINER --- */
+  .container {
+    max-width: 1100px;
+    margin: -30px auto 0; /* Overlap header slightly */
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* --- MODERN SEARCH BAR (Pill Shape) --- */
+  .search-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .search-box-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* The Input */
+  .search-container input[type="text"] {
+    width: 100%;
+    padding: 18px 60px 18px 30px; /* Space for icon */
+    border: 2px solid #b30000; /* Red Border */
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(179, 0, 0, 0.05);
+  }
+
+  .search-container input[type="text"]:focus {
+    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* The Icon inside input */
+  .search-icon-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: #b30000;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: default; /* It's visual mostly */
+  }
+
+  /* --- ACCORDION BARS (Modern Card Style) --- */
+  .accordion {
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    padding: 20px 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    border-radius: 15px; /* Rounded Cards */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Add a colored strip on the left */
+  .accordion::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: #b30000; /* Red Strip */
+    transition: width 0.3s ease;
+  }
+
+  .accordion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+
+  .accordion:hover::before {
+    width: 10px;
+  }
+
+  /* Active State (Red Background) */
+  .accordion.active {
+    background-color: #b30000;
+    color: white;
+    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.3);
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .accordion.active::before {
+    width: 0; /* Hide strip when fully colored */
+  }
+
+  /* Plus/Minus Indicator */
+  .accordion::after {
+    content: '\002B'; /* Plus sign */
+    color: #b30000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 22px;
+  }
+
+  .accordion.active::after {
+    content: "\2212"; /* Minus sign */
+    color: white;
+  }
+
+  /* --- PANEL & TABLE --- */
+  .panel {
+    padding: 0 20px 20px 20px;
+    background-color: white;
+    display: none;
+    overflow-x: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+    border-top: none;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    min-width: 700px; /* Scroll on mobile */
+  }
+
+  th {
+    background-color: #b30000; /* Red Header */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 14px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #fff5f5; /* Light Red tint */
+  }
+
+  tr.highlight {
+    background-color: #fff9c4 !important; /* Search highlight */
+    color: #000;
+    font-weight: bold;
+  }
+
+  /* --- NOTES & DOWNLOAD BTN --- */
+  .note {
+    background: #fff5f5; /* Very light red bg */
+    border-left: 5px solid #b30000;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .download-bar {
+    background-color: #b30000;
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(179, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+
+  .download-bar:hover {
+    transform: scale(1.05);
+    background-color: #8a0000; /* Darker red */
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 13px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+  }
+
+  /* --- ANIMATED LOGO STYLES --- */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.living-logo {
+  width: 100%;
+  height: 100%;
+}
+
+/* Drawing & Breaking Animation */
+.cityu-line, .cityu-base, .step-circle, .step-arrow, .step-line, .step-block {
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: logoAlive 6s linear infinite;
+}
+
+/* Specific colors based on your images */
+/* --- UPDATED LOGO STYLES --- */
+.cityu-line, .cityu-base { 
+    stroke: #e31e24; /* Pure CityU Red */
+    stroke-width: 4;
+}
+
+.step-circle { 
+    stroke: #007bff; 
+    stroke-width: 3;
+    /* Dasharray adjusted for a complete circle circumference (~264 for r=42) */
+    stroke-dasharray: 300; 
+    stroke-dashoffset: 300;
+}
+
+.step-arrow, .step-line { 
+    stroke: #ffcc00; 
+    stroke-width: 5;
+}
+
+.step-block { 
+    fill: #007bff; 
+    animation: fadeAlive 6s ease-in-out infinite; 
+}
+
+/* Keyframe for drawing/breaking lines */
+@keyframes logoAlive {
+  0% { stroke-dashoffset: 300; opacity: 0; }
+  15% { stroke-dashoffset: 0; opacity: 1; }
+  85% { stroke-dashoffset: 0; opacity: 1; }
+  100% { stroke-dashoffset: -300; opacity: 0; }
+}
+
+/* Specific fade for the solid blue block */
+@keyframes fadeAlive {
+  0

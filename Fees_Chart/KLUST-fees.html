@@ -3,384 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kuala Lumpur University of Science and Technology (KLUST) – Fee Structure 2026</title>
+  <title>KLUST – International Fee Structure 2026</title>
   
-<style>
-  /* --- GLOBAL RESET & FONTS --- */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+  <link rel="stylesheet" href="assets/css/fees.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  body {
-    background-color: #f8f8f8; /* Matches Index Page */
-    color: #333;
-    padding-bottom: 60px;
-    overflow-x: hidden;
-  }
+  <style>
+    /* --- KLUST SPECIFIC THEME --- */
+    :root {
+      /* KLUST Navy & Gold Theme (Extracted from Logo) */
+      --theme-color: #0E2A47;       /* Deep Navy Blue */
+      --theme-dark: #051626;        /* Darker Navy */
+      --theme-accent: #D4AF37;      /* Metallic Gold */
+      --theme-light: #f0f4f8;       /* Very Light Blue-Grey */
+    }
 
-  /* --- HEADER (Redesigned to match Index style) --- */
-  header {
-    background: linear-gradient(135deg, #000000 0%, #b30000 100%); /* City U Red & Black */
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
-  }
+    /* KLUST specific logo animation styles */
+    .klust-shield, .klust-star {
+        stroke: var(--theme-accent);
+        stroke-width: 3;
+        fill: none;
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        animation: logoAlive 6s linear infinite;
+    }
+    
+    .klust-fill {
+        fill: var(--theme-color);
+        animation: fadeAlive 6s ease-in-out infinite;
+    }
 
-  header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  header h2 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #FFD700; /* Gold Accent */
-    margin-bottom: 15px;
-  }
-
-  header p {
-    font-size: 14px;
-    opacity: 0.8;
-  }
-
-  /* --- CONTAINER --- */
-  .container {
-    max-width: 1100px;
-    margin: -30px auto 0; /* Overlap header slightly */
-    padding: 0 20px;
-    position: relative;
-    z-index: 10;
-  }
-
-  /* --- MODERN SEARCH BAR (Pill Shape) --- */
-  .search-container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .search-box-wrapper {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* The Input */
-  .search-container input[type="text"] {
-    width: 100%;
-    padding: 18px 60px 18px 30px; /* Space for icon */
-    border: 2px solid #b30000; /* Red Border */
-    border-radius: 50px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(179, 0, 0, 0.05);
-  }
-
-  .search-container input[type="text"]:focus {
-    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.15);
-    transform: translateY(-2px);
-  }
-
-  /* The Icon inside input */
-  .search-icon-btn {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    background: #b30000;
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    cursor: default; /* It's visual mostly */
-  }
-
-  /* --- ACCORDION BARS (Modern Card Style) --- */
-  .accordion {
-    background-color: #ffffff;
-    color: #333;
-    cursor: pointer;
-    padding: 20px 25px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    margin-bottom: 15px;
-    border-radius: 15px; /* Rounded Cards */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Add a colored strip on the left */
-  .accordion::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 6px;
-    background-color: #b30000; /* Red Strip */
-    transition: width 0.3s ease;
-  }
-
-  .accordion:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-  }
-
-  .accordion:hover::before {
-    width: 10px;
-  }
-
-  /* Active State (Red Background) */
-  .accordion.active {
-    background-color: #b30000;
-    color: white;
-    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.3);
-    margin-bottom: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .accordion.active::before {
-    width: 0; /* Hide strip when fully colored */
-  }
-
-  /* Plus/Minus Indicator */
-  .accordion::after {
-    content: '\002B'; /* Plus sign */
-    color: #b30000;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-    font-size: 22px;
-  }
-
-  .accordion.active::after {
-    content: "\2212"; /* Minus sign */
-    color: white;
-  }
-
-  /* --- PANEL & TABLE --- */
-  .panel {
-    padding: 0 20px 20px 20px;
-    background-color: white;
-    display: none;
-    overflow-x: auto;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
-    border: 1px solid #eee;
-    border-top: none;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    min-width: 700px; /* Scroll on mobile */
-  }
-
-  th {
-    background-color: #b30000; /* Red Header */
-    color: white;
-    padding: 15px;
-    text-align: left;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  td {
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    color: #555;
-    font-size: 14px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-
-  tr:hover {
-    background-color: #fff5f5; /* Light Red tint */
-  }
-
-  tr.highlight {
-    background-color: #fff9c4 !important; /* Search highlight */
-    color: #000;
-    font-weight: bold;
-  }
-
-  /* --- NOTES & DOWNLOAD BTN --- */
-  .note {
-    background: #fff5f5; /* Very light red bg */
-    border-left: 5px solid #b30000;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .download-bar {
-    background-color: #b30000;
-    color: white !important;
-    padding: 10px 25px;
-    border-radius: 50px;
-    float: right;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 4px 10px rgba(179, 0, 0, 0.3);
-    transition: transform 0.2s ease;
-  }
-
-  .download-bar:hover {
-    transform: scale(1.05);
-    background-color: #8a0000; /* Darker red */
-  }
-
-  /* --- FOOTER --- */
-  footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: #666;
-    font-size: 13px;
-    margin-top: 40px;
-    border-top: 1px solid #ddd;
-  }
-
-  /* --- ANIMATED LOGO STYLES --- */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo-container {
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
-}
-
-.living-logo {
-  width: 100%;
-  height: 100%;
-}
-
-/* Drawing & Breaking Animation */
-.cityu-line, .cityu-base, .step-circle, .step-arrow, .step-line, .step-block {
-  fill: none;
-  stroke: white;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
-  animation: logoAlive 6s linear infinite;
-}
-
-/* Specific colors based on your images */
-/* --- UPDATED LOGO STYLES --- */
-.cityu-line, .cityu-base { 
-    stroke: #e31e24; /* Pure CityU Red */
-    stroke-width: 4;
-}
-
-.step-circle { 
-    stroke: #007bff; 
-    stroke-width: 3;
-    /* Dasharray adjusted for a complete circle circumference (~264 for r=42) */
-    stroke-dasharray: 300; 
-    stroke-dashoffset: 300;
-}
-
-.step-arrow, .step-line { 
-    stroke: #ffcc00; 
-    stroke-width: 5;
-}
-
-.step-block { 
-    fill: #007bff; 
-    animation: fadeAlive 6s ease-in-out infinite; 
-}
-
-/* Keyframe for drawing/breaking lines */
-@keyframes logoAlive {
-  0% { stroke-dashoffset: 300; opacity: 0; }
-  15% { stroke-dashoffset: 0; opacity: 1; }
-  85% { stroke-dashoffset: 0; opacity: 1; }
-  100% { stroke-dashoffset: -300; opacity: 0; }
-}
-
-/* Specific fade for the solid blue block */
-@keyframes fadeAlive {
-  0%, 100% { opacity: 0; }
-  20%, 80% { opacity: 1; }
-}
-</style>
-
+    @keyframes logoAlive {
+      0% { stroke-dashoffset: 300; opacity: 0; }
+      15% { stroke-dashoffset: 0; opacity: 1; }
+      85% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: -300; opacity: 0; }
+    }
+    
+    @keyframes fadeAlive {
+        0%, 100% { opacity: 0; }
+        20%, 80% { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
 
 <header>
   <div class="header-content">
     <div class="logo-container">
+      <svg class="living-logo" viewBox="0 0 100 100">
+         <path class="klust-shield" d="M20,20 Q50,5 80,20 V50 Q50,95 20,50 Z" />
+         <path class="klust-shield" d="M35,35 L65,35 M50,35 L50,70" stroke-width="2"/>
+      </svg>
     </div>
 
     <div class="header-text">
-      <h1>Kuala Lumpur University of Science and Technology (KLUST)</h1>
-      <h2>International Fee Structure 2025</h2>
+      <h1>Kuala Lumpur University of Science and Technology</h1>
+      <h2>International Fee Structure 2026</h2>
       <p>Valid from 1st January 2026 until 31st December 2026</p>
     </div>
 
     <div class="logo-container">
       <svg class="living-logo" viewBox="0 0 100 100">
-        <circle class="step-circle" cx="50" cy="50" r="42" />
-        <path class="step-arrow" d="M35,45 L50,30 L65,45" />
-        <line class="step-line" x1="32" y1="72" x2="70" y2="30" />
-        <rect class="step-block" x="42" y="62" width="22" height="12" rx="3" />
+        <circle class="klust-shield" cx="50" cy="50" r="45" />
+        <polygon class="klust-fill" points="50,20 53,29 62,29 55,35 58,44 50,38 42,44 45,35 38,29 47,29" fill="#D4AF37" />
+        <rect class="klust-fill" x="30" y="60" width="40" height="5" fill="#D4AF37" />
+        <rect class="klust-fill" x="35" y="70" width="30" height="5" fill="#D4AF37" />
       </svg>
     </div>
   </div>
 </header>
-<div class="container">
 
- <div class="search-container">
+<div class="container">
+  <div class="search-container">
     <div class="search-box-wrapper">
-      <input type="text" id="searchInput" placeholder="Search for a program (e.g. Business, IT)..." onkeyup="filterPrograms()" />
-      <button class="search-icon-btn">
-        &#128269; 
-      </button>
+      <input type="text" id="searchInput" placeholder="Search for a program (e.g. Engineering, Architecture)..." onkeyup="filterPrograms()" />
+      <button class="search-icon-btn"> &#128269; </button>
     </div>
   </div>
 
@@ -580,84 +278,10 @@
     </div>
   </div>
 
-<footer>
-  <p>&copy; 2026 Kuala Lumpur University of Science and Technology (KLUST).</p>
-</footer>
+<div id="global-footer-placeholder"></div>
 
-<script>
-// 1. Restore Original Accordion Logic
-const acc = document.querySelectorAll(".accordion");
-acc.forEach(btn => {
-  btn.addEventListener("click", function() {
-    this.classList.toggle("active");
-    const panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-});
-
-// 2. Restore Search Filter & Highlight Feature
-function filterPrograms() {
-  const input = document.getElementById("searchInput").value.toLowerCase().trim();
-  const tables = document.querySelectorAll("table");
-
-  tables.forEach(table => {
-    const rows = table.querySelectorAll("tr");
-    let foundInTable = false;
-
-    for (let i = 1; i < rows.length; i++) {
-      const rowText = rows[i].textContent.toLowerCase();
-      if (input !== "" && rowText.includes(input)) {
-        rows[i].style.display = "";
-        rows[i].classList.add("highlight"); // Restore Highlight
-        foundInTable = true;
-      } else if (input === "") {
-        rows[i].style.display = "";
-        rows[i].classList.remove("highlight");
-      } else {
-        rows[i].style.display = "none";
-        rows[i].classList.remove("highlight");
-      }
-    }
-
-    const panel = table.closest(".panel");
-    const accordion = panel.previousElementSibling;
-    
-    // Auto-open accordion if a match is found (needed for search from index)
-    if (foundInTable && input !== "") {
-      panel.style.display = "block";
-      accordion.classList.add("active");
-    } else if (input === "") {
-      panel.style.display = "none";
-      accordion.classList.remove("active");
-    }
-  });
-}
-
-// 3. Restore URL Parameter Logic (View Chart Feature)
-document.addEventListener("DOMContentLoaded", function() {
-  const searchTerm = new URLSearchParams(window.location.search).get('q');
-  if (searchTerm) {
-    const input = document.getElementById('searchInput');
-    input.value = decodeURIComponent(searchTerm);
-    filterPrograms(); // This triggers the highlight and opens the correct chart
-    input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
-});
-
-// 4. Original PDF Download Logic
-function downloadPDF(programKey) {
-  const link = document.createElement("a");
-  link.href = "assets/documents/fees/klust-fees.pdf"; 
-  link.download = "klust_Fee_Structure_2026.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-</script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/fees.js"></script>
 
 </body>
 </html>

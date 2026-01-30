@@ -44,6 +44,33 @@
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* --- GROUP BANNER STYLES --- */
+    .group-banner-container {
+        margin-top: 60px;       /* Spacing from the last table */
+        margin-bottom: 20px;    /* Spacing before footer */
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;        /* Safety padding for mobile */
+    }
+
+    .group-banner-img {
+        max-width: 100%;        /* Ensures mobile responsiveness */
+        height: auto;           /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;     /* Smooth corners */
+        
+        /* Modern aesthetic touch */
+        transition: transform 0.4s ease, filter 0.4s ease;
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08)); 
+    }
+
+    /* Subtle interaction effect */
+    .group-banner-img:hover {
+        transform: translateY(-5px);
+        filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));
+    }
   </style>
 </head>
 <body>
@@ -51,7 +78,7 @@
 <header>
   <div class="header-content">
     <div class="logo-container">
-      <img src="../assets/images/universities/BAC/BAC-logo.png" alt="KLUST Logo" class="static-logo">
+      <img src="../assets/images/universities/KLUST/KLUST-logo.png" alt="KLUST Logo" class="static-logo">
     </div>
 
     <div class="header-text">
@@ -227,7 +254,7 @@
     <tr><td>2</td><td>Diploma in Business Management</td><td>2.5 years</td><td>RM16,168</td><td>RM13,000</td><td>RM29,168</td></tr>
     <tr><td>3</td><td>Diploma in Hotel Management</td><td>2.5 years</td><td>RM16,168</td><td>RM13,000</td><td>RM29,168</td></tr>
   </table>
-  <div class="note">
+<div class="note">
     <div class="download-bar" onclick="downloadPDF('reliance')">
       <span>Download PDF</span>
       <span>⬇️</span>
@@ -239,9 +266,9 @@
     <strong>Intakes Calendar:</strong><br>
     Pre-University Programs: Feb, Apr, Aug
   </div>
+</div> <div class="group-banner-container">
+  <img src="../assets/images/bac-group-banner.png" alt="The BAC Education Group - Transforming Lives Through Education" class="group-banner-img">
 </div>
-
-
 
 </div> <div id="global-footer-placeholder"></div>
 

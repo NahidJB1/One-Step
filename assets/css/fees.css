@@ -181,16 +181,36 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 }
 
 
-/* --- UPDATED LOGO ANIMATION TARGETS --- */
-.cityu-line, .cityu-base, .step-circle, 
-.step-arrow-top, .step-line-main, .step-block-rect {
+/* --- GLOBAL LOGO ANIMATION (SYNCED) --- */
+
+/* 1. Line Drawing Animation 
+   Targets: CityU, KLUST, Cyberjaya, AND One Step logo lines */
+.cityu-line, .cityu-base, 
+.klust-shield, .klust-star,
+.uoc-c-lines,
+.step-circle, .step-line, .step-arrow {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
   animation: logoAlive 6s linear infinite;
 }
 
-.step-block-rect {
-  fill: #0066CC;
-  stroke: none; /* Rects usually don't need strokes for this design */
+/* 2. Fade Animation 
+   Targets: The solid block in the One Step logo & fills for KLUST */
+.step-block, .klust-fill {
   animation: fadeAlive 6s ease-in-out infinite;
+}
+
+/* --- KEYFRAMES (Global Definition) --- */
+@keyframes logoAlive {
+  0% { stroke-dashoffset: 300; opacity: 0; }
+  15% { stroke-dashoffset: 0; opacity: 1; }   /* Lines fully drawn by 15% */
+  85% { stroke-dashoffset: 0; opacity: 1; }   /* Stay visible until 85% */
+  100% { stroke-dashoffset: -300; opacity: 0; }
+}
+
+@keyframes fadeAlive {
+  0% { opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { opacity: 0; }
 }

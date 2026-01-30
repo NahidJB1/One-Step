@@ -127,66 +127,87 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 30px; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; }
 .developer-link { color: #00C2FF; text-decoration: none; font-weight: 600; }
 
-/* --- RESPONSIVE FIXES --- */
+/* --- UPDATED RESPONSIVE FIXES --- */
 @media (max-width: 1024px) { 
   .footer-grid { grid-template-columns: repeat(2, 1fr); } 
 }
 
-@media (max-width: 576px) { 
-  .footer-grid { grid-template-columns: 1fr; }
-  
+@media (max-width: 768px) {
   /* Header Adjustments */
-  header { padding: 30px 15px; }
-  header h1 { font-size: 24px; }
-  header h2 { font-size: 16px; }
+  header { padding: 40px 15px; }
+  header h1 { font-size: 22px; line-height: 1.2; }
+  header h2 { font-size: 15px; }
+  .header-content { flex-direction: column; gap: 15px; }
+  .logo-container { width: 80px; height: 80px; }
+
+  /* Container & Search Spacing */
+  .container { margin-top: -20px; padding: 0 15px; }
+  .search-container { padding: 20px 15px; margin-bottom: 25px; }
+
+  /* --- RESPONSIVE TABLE TO CARDS --- */
+  /* This forces the table to stop behaving like a table */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+
+  /* Hide table headers (but keep for screen readers) */
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  }
+
+  tr:nth-child(even) { background-color: #fafafa; }
+
+  td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+    padding-left: 50% !important;
+    text-align: right !important;
+    font-size: 13px;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  td:last-child { border-bottom: 0; }
+
+  /* Label the data using data-label attribute */
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  /* Specific fix for Program names to allow wrapping */
+  td[data-label="Program"] {
+    text-align: right;
+    line-height: 1.3;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   
-  /* Logo Adjustments - Stack them on mobile */
-  .header-content { flex-direction: column; gap: 20px; }
-  
-  /* Table Fixes: Reduce padding to fit more content */
-  th, td { padding: 10px 8px; font-size: 12px; }
-  
-  /* Accordion Font Size */
-  .accordion { font-size: 15px; padding: 15px 20px; }
-  
-  /* Download Bar Adjustment */
-  .download-bar { float: none; display: table; margin: 10px auto; }
-}
-
-/* --- ONE STEP BRAND LOGO STYLES (Fixed Colors) --- */
-.step-circle { 
-    fill: none;
-    stroke: #007bff; /* One Step Blue */
-    stroke-width: 3;
-    stroke-dasharray: 300; 
-    stroke-dashoffset: 300;
-    animation: logoAlive 6s linear infinite;
-}
-
-.step-arrow, .step-line { 
-    fill: none;
-    stroke: #ffcc00; /* One Step Yellow/Gold */
-    stroke-width: 5;
-    stroke-linecap: round;
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-    animation: logoAlive 6s linear infinite;
-}
-
-.step-block { 
-    fill: #007bff; /* One Step Blue */
-    animation: fadeAlive 6s ease-in-out infinite; 
-}
-
-/* Shared Animations */
-@keyframes logoAlive {
-  0% { stroke-dashoffset: 300; opacity: 0; }
-  15% { stroke-dashoffset: 0; opacity: 1; }
-  85% { stroke-dashoffset: 0; opacity: 1; }
-  100% { stroke-dashoffset: -300; opacity: 0; }
-}
-
-@keyframes fadeAlive {
-  0%, 100% { opacity: 0; }
-  20%, 80% { opacity: 1; }
+  .panel { padding: 10px; }
+  .note { font-size: 13px; padding: 15px; }
+  .download-bar { width: 100%; justify-content: center; float: none; }
 }

@@ -3,676 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>City University Malaysia – International Fee Structure 2025</title>
+  <title>UNIVERSITY OF CYBERJAYA – International Fee Structure 2026</title>
 
+  <link rel="stylesheet" href="../assets/css/fees.css">
   
-<style>
-  /* --- GLOBAL RESET & FONTS --- */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  body {
-    background-color: #f8f8f8; /* Matches Index Page */
-    color: #333;
-    padding-bottom: 60px;
-    overflow-x: hidden;
-  }
+  <style>
+    /* --- UNIVERSITY SPECIFIC THEME --- */
+:root {
+      --theme-color: #6b3a96; 
+      --theme-dark: #2d1347;  
+      --theme-accent: #e91e63;
+      --theme-light: #fdf2f7; 
+    }
 
-  /* --- HEADER (Redesigned to match Index style) --- */
-  header {
-    background: linear-gradient(135deg, #000000 0%, #b30000 100%); /* City U Red & Black */
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
-  }
-
-  header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  header h2 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #FFD700; /* Gold Accent */
-    margin-bottom: 15px;
-  }
-
-  header p {
-    font-size: 14px;
-    opacity: 0.8;
-  }
-
-  /* --- CONTAINER --- */
-  .container {
-    max-width: 1100px;
-    margin: -30px auto 0; /* Overlap header slightly */
-    padding: 0 20px;
-    position: relative;
-    z-index: 10;
-  }
-
-  /* --- MODERN SEARCH BAR (Pill Shape) --- */
-  .search-container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .search-box-wrapper {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* The Input */
-  .search-container input[type="text"] {
-    width: 100%;
-    padding: 18px 60px 18px 30px; /* Space for icon */
-    border: 2px solid #b30000; /* Red Border */
-    border-radius: 50px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(179, 0, 0, 0.05);
-  }
-
-  .search-container input[type="text"]:focus {
-    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.15);
-    transform: translateY(-2px);
-  }
-
-  /* The Icon inside input */
-  .search-icon-btn {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    background: #b30000;
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    cursor: default; /* It's visual mostly */
-  }
-
-  /* --- ACCORDION BARS (Modern Card Style) --- */
-  .accordion {
-    background-color: #ffffff;
-    color: #333;
-    cursor: pointer;
-    padding: 20px 25px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    margin-bottom: 15px;
-    border-radius: 15px; /* Rounded Cards */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Add a colored strip on the left */
-  .accordion::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 6px;
-    background-color: #b30000; /* Red Strip */
-    transition: width 0.3s ease;
-  }
-
-  .accordion:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-  }
-
-  .accordion:hover::before {
-    width: 10px;
-  }
-
-  /* Active State (Red Background) */
-  .accordion.active {
-    background-color: #b30000;
-    color: white;
-    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.3);
-    margin-bottom: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .accordion.active::before {
-    width: 0; /* Hide strip when fully colored */
-  }
-
-  /* Plus/Minus Indicator */
-  .accordion::after {
-    content: '\002B'; /* Plus sign */
-    color: #b30000;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-    font-size: 22px;
-  }
-
-  .accordion.active::after {
-    content: "\2212"; /* Minus sign */
-    color: white;
-  }
-
-  /* --- PANEL & TABLE --- */
-  .panel {
-    padding: 0 20px 20px 20px;
-    background-color: white;
-    display: none;
-    overflow-x: auto;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
-    border: 1px solid #eee;
-    border-top: none;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    min-width: 700px; /* Scroll on mobile */
-  }
-
-  th {
-    background-color: #b30000; /* Red Header */
-    color: white;
-    padding: 15px;
-    text-align: left;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  td {
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    color: #555;
-    font-size: 14px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-
-  tr:hover {
-    background-color: #fff5f5; /* Light Red tint */
-  }
-
-  tr.highlight {
-    background-color: #fff9c4 !important; /* Search highlight */
-    color: #000;
-    font-weight: bold;
-  }
-
-  /* --- NOTES & DOWNLOAD BTN --- */
-  .note {
-    background: #fff5f5; /* Very light red bg */
-    border-left: 5px solid #b30000;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .download-bar {
-    background-color: #b30000;
-    color: white !important;
-    padding: 10px 25px;
-    border-radius: 50px;
-    float: right;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 4px 10px rgba(179, 0, 0, 0.3);
-    transition: transform 0.2s ease;
-  }
-
-  .download-bar:hover {
-    transform: scale(1.05);
-    background-color: #8a0000; /* Darker red */
-  }
-
-  /* --- FOOTER --- */
-  footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: #666;
-    font-size: 13px;
-    margin-top: 40px;
-    border-top: 1px solid #ddd;
-  }
-
-  /* --- ANIMATED LOGO STYLES --- */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo-container {
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
-}
-
-.living-logo {
-  width: 100%;
-  height: 100%;
-}
-
-/* Drawing & Breaking Animation */
-.cityu-line, .cityu-base, .step-circle, .step-arrow, .step-line, .step-block {
-  fill: none;
-  stroke: white;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
-  animation: logoAlive 6s linear infinite;
-}
-
-/* Specific colors based on your images */
-/* --- UPDATED LOGO STYLES --- */
-.cityu-line, .cityu-base { 
-    stroke: #e31e24; /* Pure CityU Red */
-    stroke-width: 4;
-}
-
-.step-circle { 
-    stroke: #007bff; 
-    stroke-width: 3;
-    /* Dasharray adjusted for a complete circle circumference (~264 for r=42) */
-    stroke-dasharray: 300; 
-    stroke-dashoffset: 300;
-}
-
-.step-arrow, .step-line { 
-    stroke: #ffcc00; 
-    stroke-width: 5;
-}
-
-.step-block { 
-    fill: #007bff; 
-    animation: fadeAlive 6s ease-in-out infinite; 
-}
-
-/* Keyframe for drawing/breaking lines */
-@keyframes logoAlive {
-  0% { stroke-dashoffset: 300; opacity: 0; }
-  15% { stroke-dashoffset: 0; opacity: 1; }
-  85% { stroke-dashoffset: 0; opacity: 1; }
-  100% { stroke-dashoffset: -300; opacity: 0; }
-}
-
-/* Specific fade for the solid blue block */
-@keyframes fadeAlive {
-  0%, 100% { opacity: 0; }
-  20%, 80% { opacity: 1; }
-}
-</style>
-
-
+    /* Logo Animation specific to Cyberjaya */
+    .uoc-c-lines {
+      stroke: url(#cyberGradient);
+      stroke-width: 4;
+      stroke-linecap: round;
+      fill: none;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: logoAlive 6s linear infinite;
+    }
+    
+    /* Animation Keyframes */
+    @keyframes logoAlive {
+      0% { stroke-dashoffset: 300; opacity: 0; }
+      15% { stroke-dashoffset: 0; opacity: 1; }
+      85% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: -300; opacity: 0; }
+    }
+  </style>
 </head>
 <body>
+
 <header>
   <div class="header-content">
-    <div class="logo-container">
-      <svg class="living-logo" viewBox="0 0 100 100">
-        <g class="cityu-group">
-          <path class="cityu-line" d="M30,75 L30,45 M40,75 L40,35 M50,75 L50,25 M60,75 L60,35 M70,75 L70,45" />
-          <line class="cityu-base" x1="20" y1="75" x2="80" y2="75" />
-        </g>
-      </svg>
-    </div>
+<div class="logo-container">
+  <svg class="living-logo" viewBox="0 0 120 120">
+    <defs>
+      <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#6b3a96; stop-opacity:1" /> 
+        <stop offset="100%" style="stop-color:#e91e63; stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    
+    <g transform="translate(60,60)">
+      <path class="uoc-c-lines" 
+            d="M 38.9,-22.5 A 45,45 0 1,0 38.9,22.5" 
+            fill="none" stroke="url(#cyberGradient)" stroke-width="5" stroke-linecap="butt" />
+            
+      <path class="uoc-c-lines" 
+            d="M 30.3,-17.5 A 35,35 0 1,0 30.3,17.5" 
+            fill="none" stroke="url(#cyberGradient)" stroke-width="5" stroke-linecap="butt" />
+            
+      <path class="uoc-c-lines" 
+            d="M 21.6,-12.5 A 25,25 0 1,0 21.6,12.5" 
+            fill="none" stroke="url(#cyberGradient)" stroke-width="5" stroke-linecap="butt" />
+    </g>
+  </svg>
+</div>
 
     <div class="header-text">
-      <h1>City University Malaysia</h1>
-      <h2>International Fee Structure 2025</h2>
+      <h1>UNIVERSITY OF CYBERJAYA</h1>
+      <h2>International Fee Structure 2026</h2>
       <p>Valid from 1st January 2026 until 31st December 2026</p>
     </div>
 
-    <div class="logo-container">
-      <svg class="living-logo" viewBox="0 0 100 100">
-        <circle class="step-circle" cx="50" cy="50" r="42" />
-        <path class="step-arrow" d="M35,45 L50,30 L65,45" />
-        <line class="step-line" x1="32" y1="72" x2="70" y2="30" />
-        <rect class="step-block" x="42" y="62" width="22" height="12" rx="3" />
-      </svg>
-    </div>
+<div class="logo-container">
+  <svg class="living-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="step-circle" cx="50" cy="50" r="48" stroke="#0066CC" stroke-width="4" />
+    
+    <path class="step-line" d="M30 70L50 50L70 30" stroke="#FFD700" stroke-width="8" stroke-linecap="round" />
+    
+    <path class="step-arrow" d="M30 40L50 20L70 40" stroke="#00C2FF" stroke-width="6" stroke-linecap="round" />
+    
+    <rect class="step-block" x="40" y="60" width="20" height="10" rx="2" fill="#0066CC" />
+  </svg>
+</div>
   </div>
 </header>
+
 <div class="container">
 
-
- <div class="search-container">
-    <div class="search-box-wrapper">
-      <input type="text" id="searchInput" placeholder="Search for a program (e.g. Business, IT)..." onkeyup="filterPrograms()" />
-      <button class="search-icon-btn">
-        &#128269; 
-      </button>
-    </div>
+<div class="search-container">
+  <div class="search-box-wrapper">
+    <input type="text" id="searchInput" placeholder="Search for a program (e.g. Medicine, Psychology)..." onkeyup="filterPrograms()" />
+    <button class="search-icon-btn">
+      &#128269; 
+    </button>
   </div>
-
-  <!-- FOUNDATION -->
-  <button class="accordion">FOUNDATION PROGRAMS</button>
-  <div class="panel">
-    <table>
-      <tr>
-        <th>No</th><th>Programme</th><th>Duration</th><th>Tuition Fees (Promo)</th><th>Resource Fee/Sem</th><th>Total</th>
-      </tr>
-      <tr><td>1</td><td>Foundation in Business</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-      <tr><td>2</td><td>Foundation in Arts (Communication)</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-      <tr><td>3</td><td>Foundation in Arts (English)</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-      <tr><td>4</td><td>Foundation in Arts (Graphic Design & Multimedia)</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-      <tr><td>5</td><td>Foundation in Arts (Built Environment)</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-      <tr><td>6</td><td>Foundation in Arts (Fashion Design)</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-      <tr><td>7</td><td>Foundation in Science</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-      <tr><td>8</td><td>Foundation in Information Technology</td><td>1 year</td><td>RM12,915</td><td>RM300</td><td>RM25,785</td></tr>
-    </table>
-    <div class="note">
-      <div class="download-bar" onclick="downloadPDF('foundation')">
-  <span>Download PDF</span>
-  <span>⬇️</span>
 </div>
-      <strong>Misc Fees:</strong><br>
-      Visa & Application: RM3,150<br>
-      International Fee: RM8,000<br>
-      Completion Processing Fee: RM1,000<br>
-      <strong>Total Misc: RM12,150</strong><br><br>
-      <strong>Payment Schedule:</strong><br>
-      1st: RM3,150 (Visa & App Fee)<br>
-      2nd: 50% Tuition + RM8,000 + RM1,000 + RM900 Resource (RM300 × 3)<br>
-      Assessment Fee: RM25/subject
-    </div>
-  </div>
-
-<button class="accordion">DIPLOMA PROGRAMS</button>
-  <div class="panel">
-    <table>
-      <tr>
-        <th>No</th><th>Programme</th><th>Faculty</th><th>Duration</th><th>Sem</th><th>Tuition Fees (Promo)</th><th>Resource Fee/Sem</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th>
-      </tr>
-      <tr><td>1</td><td>Diploma in Fashion Design</td><td>Creative Industries</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>2</td><td>Diploma in Graphic Design</td><td>Creative Industries</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>3</td><td>Diploma in Mass Communication</td><td>Creative Industries</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>4</td><td>Diploma in Corporate Communication</td><td>Creative Industries</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>5</td><td>Diploma in Accounting</td><td>Business</td><td>3 yrs</td><td>7</td><td>RM31,780</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,650</td></tr>
-      <tr><td>6</td><td>Diploma in Business Management</td><td>Business</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>7</td><td>Diploma in Human Resource Management</td><td>Business</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>8</td><td>Diploma in Office Management</td><td>Business</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>9</td><td>Diploma in Islamic Banking</td><td>Business</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>10</td><td>Diploma in Management</td><td>Business</td><td>3 yrs</td><td>7</td><td>RM31,780</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,650</td></tr>
-      <tr><td>11</td><td>Diploma in Information Technology</td><td>Information Technology</td><td>3 yrs</td><td>7</td><td>RM31,780</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,650</td></tr>
-      <tr><td>12</td><td>Diploma in Medical Lab Technology</td><td>Allied Health Sciences</td><td>3 yrs</td><td>9</td><td>RM32,380</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>45,250</td></tr>
-      <tr><td>13</td><td>Diploma in Nursing</td><td>Allied Health Sciences</td><td>3 yrs</td><td>–</td><td>RM31,480</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,350</td></tr>
-      <tr><td>14</td><td>Diploma in Occupational Safety & Health</td><td>Allied Health Sciences</td><td>3 yrs</td><td>–</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>15</td><td>Diploma in Environmental Health</td><td>Allied Health Sciences</td><td>3 yrs</td><td>8</td><td>RM32,380</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>45,250</td></tr>
-      <tr><td>16</td><td>Diploma in Culinary Arts</td><td>Hospitality</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>17</td><td>Diploma in Hotel Management</td><td>Hospitality</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>18</td><td>Diploma in Early Childhood Education</td><td>Education</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>19</td><td>Diploma in Civil Engineering</td><td>Engineering</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>20</td><td>Diploma in Mechanical Engineering</td><td>Engineering</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>21</td><td>Diploma in Architectural Technology</td><td>Engineering</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-      <tr><td>22</td><td>Diploma in Interior Design</td><td>Creative Industries</td><td>3 yrs</td><td>8</td><td>RM32,080</td><td>RM300</td><td>21,350</td><td>10,600</td><td>10,600</td><td>44,950</td></tr>
-    </table>
-    <div class="note">
-      <div class="download-bar" onclick="downloadPDF('foundation')">
-  <span>Download PDF</span>
-  <span>⬇️</span>
-</div>
-      <strong>Misc Fees:</strong><br>
-      Visa & Application: RM3,150<br>
-      International Fee: RM8,000<br>
-      Completion Processing Fee: RM1,000<br>
-      <strong>Total Misc: RM12,150</strong><br><br>
-      <strong>Payment Schedule:</strong><br>
-      1st: RM3,150 (Visa & App Fee)<br>
-      2nd: 50% Year 1 Tuition + RM8,000 + RM1,000 + Resource Fee<br>
-      Assessment Fee: RM25/subject
-    </div>
-  </div>
-
-  <!-- BACHELOR -->
-  <button class="accordion">BACHELOR PROGRAMS</button>
-  <div class="panel">
-    <table>
-  <tr>
-    <th>No</th><th>Programme</th><th>Faculty</th><th>Duration</th><th>Sem</th><th>Tuition Fees (Promo)</th><th>Resource Fee/Sem</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th><th>Total</th>
-  </tr>
-  <tr><td>1</td><td>Bachelor of Graphic Design (Hons)</td><td>Creative Industries</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>2</td><td>Bachelor of Fashion Design (Hons)</td><td>Creative Industries</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>3</td><td>Bachelor of Multimedia (Hons)</td><td>Creative Industries</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>4</td><td>Bachelor of Communication (Hons) Corporate Communication</td><td>Creative Industries</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>5</td><td>Bachelor of Communication (Hons) Mass Communication</td><td>Creative Industries</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>6</td><td>Bachelor of Communication (Hons) Journalism</td><td>Creative Industries</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>7</td><td>Bachelor of Business Administration (Hons)</td><td>Business</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>8</td><td>Bachelor of Engineering Management (Hons)</td><td>Business</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>9</td><td>Bachelor of Accounting (Hons)</td><td>Business</td><td>3 Years 6 Months</td><td>10</td><td>RM55,880</td><td>RM500</td><td>21,350</td><td>15,900</td><td>15,900</td><td>10,600</td><td>68,750</td></tr>
-  <tr><td>10</td><td>Bachelor of Science (Hons) Accounting & Finance</td><td>Business</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>11</td><td>Bachelor of Information Technology (Hons)</td><td>Information Technology</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>12</td><td>Bachelor of Computer Science (Hons) Software Engineering</td><td>Information Technology</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>13</td><td>Bachelor of Cybersecurity</td><td>Information Technology</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>14</td><td>Bachelor of Occupational Safety & Health (Hons)</td><td>Allied Health Sciences</td><td>4 Years</td><td>11</td><td>RM56,380</td><td>RM500</td><td>21,350</td><td>15,900</td><td>15,900</td><td>10,600</td><td>69,250</td></tr>
-  <tr><td>15</td><td>Bachelor of Biomedical Sciences (Hons)</td><td>Allied Health Sciences</td><td>4 Years</td><td>11</td><td>RM56,380</td><td>RM500</td><td>21,350</td><td>15,900</td><td>15,900</td><td>10,600</td><td>69,250</td></tr>
-  <tr><td>16</td><td>Bachelor of Environmental Health (Hons)</td><td>Allied Health Sciences</td><td>4 Years</td><td>11</td><td>RM56,380</td><td>RM500</td><td>21,350</td><td>15,900</td><td>15,900</td><td>10,600</td><td>69,250</td></tr>
-  <tr><td>17</td><td>Bachelor of Nursing</td><td>Allied Health Sciences</td><td>4 Years</td><td>8</td><td>RM54,880</td><td>RM500</td><td>21,350</td><td>15,900</td><td>15,900</td><td>10,600</td><td>67,750</td></tr>
-  <tr><td>18</td><td>Bachelor of Hospitality Management (Hons)</td><td>Hospitality</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>19</td><td>Bachelor of Education (Early Childhood Education) Honours</td><td>Education</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>20</td><td>Bachelor of Applied Psychology (Hons)</td><td>Education</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>21</td><td>Bachelor of Education (Hons) in TESL</td><td>Education</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>22</td><td>Bachelor of Civil Engineering with Honours</td><td>Engineering</td><td>4 Years</td><td>8</td><td>RM54,880</td><td>RM500</td><td>21,350</td><td>15,900</td><td>15,900</td><td>10,600</td><td>67,750</td></tr>
-  <tr><td>23</td><td>Bachelor of Mechanical Engineering with Honours</td><td>Engineering</td><td>4 Years</td><td>8</td><td>RM54,880</td><td>RM500</td><td>21,350</td><td>15,900</td><td>15,900</td><td>10,600</td><td>67,750</td></tr>
-  <tr><td>24</td><td>Bachelor of Science (Hons) Architectural Design</td><td>Built Environment</td><td>3 Years</td><td>9</td><td>RM44,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>57,226</td></tr>
-  <tr><td>25</td><td>Bachelor of Interior Design (Hons)</td><td>Built Environment</td><td>3 1/2 Years</td><td>11</td><td>RM45,356</td><td>RM500</td><td>21,350</td><td>15,688</td><td>15,688</td><td>–</td><td>58,226</td></tr>
-</table>
-    <div class="note">
-      <div class="download-bar" onclick="downloadPDF('foundation')">
-  <span>Download PDF</span>
-  <span>⬇️</span>
-</div>
-      <strong>Misc Fees:</strong><br>
-      Visa & Application: RM3,150<br>
-      International Fee: RM8,000<br>
-      Completion Fee: RM1,000<br>
-      <strong>Total Misc: RM12,150</strong><br><br>
-      <strong>Payment Schedule:</strong><br>
-      1st: RM3,150 (Visa & App Fee)<br>
-      2nd: 50% Year 1 Tuition + RM8,000 + RM1,000 + Resource Fee (Year 1)<br>
-      Assessment Fee: RM25/subject
-    </div>
-  </div>
-
-
-  <!-- MASTERS -->
-<button class="accordion">MASTERS PROGRAMS</button>
+  
+<button class="accordion">Foundation Programs</button>
 <div class="panel">
   <table>
     <tr>
-      <th>No</th><th>Programme</th><th>Duration</th><th>Tuition Fees (Promo)</th><th>Resource Fee/Sem</th><th>Total</th>
+      <th>No</th><th>Program</th><th>Duration</th>
+      <th>Year 1 (RM)</th><th>Total Tuition (RM)</th><th>Final Total (With Misc)</th>
     </tr>
-    <tr><td>1</td><td>Master of Business Administration (MBA)</td><td>1 year</td><td>RM17,278</td><td>RM500</td><td>RM30,148</td></tr>
-    <tr><td>2</td><td>Master of Science in Business Administration (By Research) (MSCBA)</td><td>2 years</td><td>RM23,813</td><td>RM500</td><td>RM36,683</td></tr>
-    <tr><td>3</td><td>Master of Information Technology (MIT)</td><td>1 year</td><td>RM17,278</td><td>RM500</td><td>RM30,148</td></tr>
-    <tr><td>4</td><td>Master of Accounting (MACE)</td><td>1 year</td><td>RM17,278</td><td>RM500</td><td>RM30,148</td></tr>
-    <tr><td>5</td><td>Master of Education (MED)</td><td>1 year</td><td>RM17,276</td><td>RM500</td><td>RM30,148</td></tr>
-    <tr><td>6</td><td>Master of Architecture (M.ARC)</td><td>2 years</td><td>RM22,813</td><td>RM500</td><td>RM35,683</td></tr>
-    <tr><td>7</td><td>Master of Mechanical Engineering (MME)</td><td>1 year</td><td>RM17,278</td><td>RM500</td><td>RM30,148</td></tr>
-    <tr><td>8</td><td>Master of Sport Studies (MSS) By Research</td><td>2 years</td><td>RM23,813</td><td>RM500</td><td>RM36,683</td></tr>
-    <tr><td>9</td><td>Master of Creative Industries and Communication (MCIC)</td><td>1 year</td><td>RM17,278</td><td>RM500</td><td>RM30,148</td></tr>
-    <tr><td>10</td><td>Master of Architecture Project Management (MAPM)</td><td>1 year</td><td>RM22,313</td><td>RM500</td><td>RM35,183</td></tr>
+    <tr><td>1</td><td>FOUNDATION IN SCIENCE (FIS)</td><td>1 Year</td><td>12,466</td><td>18,700</td><td>27,400</td></tr>
+    <tr><td>2</td><td>FOUNDATION IN ARTS (FIA)</td><td>1 Year</td><td>11,600</td><td>17,400</td><td>26,100</td></tr>
+    <tr><td>3</td><td>IELTS PREPARATORY PROGRAM (IPP)</td><td>1 Sem</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
   </table>
   <div class="note">
-    <div class="download-bar" onclick="downloadPDF('foundation')">
-  <span>Download PDF</span>
-  <span>⬇️</span>
-</div>
-    <strong>Misc Fees:</strong><br>
-    Visa (EMGS) & Application Processing Fee: RM3,810<br>
-    International Student Fee: RM8,000<br>
-    Completion Processing Fee: RM1,060<br>
-    <strong>Total Misc: RM12,870</strong><br><br>
-    <strong>Payment Schedule:</strong><br>
-    1st: RM3,810 (Visa & App Fee)<br>
-    2nd: 50% Tuition + RM8,000 + RM1,060 + Resource Fee (RM500 × Semesters)<br>
-    Assessment Fee: RM25/subject
+    <div class="download-bar" onclick="downloadPDF('uoc-initial-fees')">
+      <span>Download PDF</span>
+      <span>⬇️</span>
+    </div>
+    <strong>Initial Fixed Fees (Payable Once):</strong><br>
+    EMS Fees: RM3,700<br>
+    Registration Fees: RM2,000<br>
+    Administrative Fees: RM3,000<br><br>
+    <strong>Total Initial Fixed Fees:</strong> RM8,700 
   </div>
 </div>
 
-<!-- PHD -->
-<button class="accordion">PHD PROGRAMS</button>
+<button class="accordion">Diploma Programs</button>
 <div class="panel">
   <table>
     <tr>
-      <th>No</th><th>Programme</th><th>Duration</th><th>Tuition Fees (Promo)</th><th>Resource Fee/Sem</th><th>Total</th>
+      <th>No</th><th>Program</th><th>Duration</th>
+      <th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total Tuition</th>
     </tr>
-    <tr><td>1</td><td>Doctor of Business Administration (DBA)</td><td>3 years</td><td>RM41,128</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>2</td><td>Doctor of Education (DE)</td><td>3 years</td><td>RM41,228</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>3</td><td>Doctor of Philosophy in Business Administration (PhDBA)</td><td>3 years</td><td>RM41,128</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>4</td><td>Doctor of Philosophy in Design (PhD Design)</td><td>3 years</td><td>RM41,128</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>5</td><td>Doctor of Philosophy in Education (PhD Edu)</td><td>3 years</td><td>RM41,128</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>6</td><td>Doctor of Philosophy in Information Technology (PhD IT)</td><td>3 years</td><td>RM41,228</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>7</td><td>Doctor of Philosophy in Sport Studies (PhD SS)</td><td>3 years</td><td>RM41,128</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>8</td><td>Doctor of Philosophy in Performing Art (PhD PA)</td><td>3 years</td><td>RM41,128</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>9</td><td>Doctor of Philosophy in Built Environment (PhD BE)</td><td>3 years</td><td>RM41,128</td><td>RM500</td><td>RM53,998</td></tr>
-    <tr><td>10</td><td>Doctor of Philosophy in Engineering</td><td>3 years</td><td>RM53,996</td><td>RM500</td><td>RM53,998</td></tr>
+    <tr><td>4</td><td>DIPLOMA IN ACCOUNTING (DIA)</td><td>3 Years</td><td>7,428</td><td>7,428</td><td>7,430</td><td>26,000</td></tr>
+    <tr><td>5</td><td>DIPLOMA IN COSMETICS (DICOS)</td><td>3 Years</td><td>13,428</td><td>13,428</td><td>13,430</td><td>47,000</td></tr>
+    <tr><td>6</td><td>DIPLOMA IN DIGITAL CREATIVE CONTENT (DDC)</td><td>3 Years</td><td>8,126</td><td>8,126</td><td>8,125</td><td>32,500</td></tr>
+    <tr><td>7</td><td>DIPLOMA IN GRAPHIC DESIGN (DGD)</td><td>3 Years</td><td>8,126</td><td>8,126</td><td>8,125</td><td>32,500</td></tr>
+    <tr><td>8</td><td>DIPLOMA IN NURSING (DNSG)</td><td>3 Years</td><td>15,300</td><td>15,300</td><td>15,300</td><td>45,900</td></tr>
+    <tr><td>9</td><td>DIPLOMA IN OCCUPATIONAL SAFETY AND HEALTH (DOSH)</td><td>3 Years</td><td>13,858</td><td>13,858</td><td>13,855</td><td>48,500</td></tr>
+    <tr><td>10</td><td>DIPLOMA IN PSYCHOLOGY (DPSY)</td><td>3 Years</td><td>11,750</td><td>11,750</td><td>11,750</td><td>47,000</td></tr>
+    <tr><td>11</td><td>DIPLOMA IN MASS COMMUNICATION (DMCOMM)</td><td>2 Years</td><td>9,168</td><td>9,168</td><td>9,164</td><td>27,500</td></tr>
+    <tr><td>12</td><td>DIPLOMA IN 3D ANIMATION (DANIM)</td><td>2 Years</td><td>8,126</td><td>8,126</td><td>8,125</td><td>32,500</td></tr>
+    <tr><td>13</td><td>DIPLOMA IN BUSINESS ADMINISTRATION (DIBA)</td><td>3 Years</td><td>7,428</td><td>9,427</td><td>9,145</td><td>26,000</td></tr>
+    <tr><td>14</td><td>DIPLOMA IN EARLY CHILDHOOD EDUCATION (DECE)</td><td>3 Years</td><td>10,658</td><td>10,656</td><td>10,657</td><td>44,300</td></tr>
+    <tr><td>15</td><td>DIPLOMA IN INFORMATION TECHNOLOGY (DIT)</td><td>3 Years</td><td>7,256</td><td>7,256</td><td>7,260</td><td>25,400</td></tr>
+    <tr><td>16</td><td>DIPLOMA IN PHARMACY (DPHARM)</td><td>3 Years</td><td>16,734</td><td>16,734</td><td>16,732</td><td>50,200</td></tr>
+    <tr><td>17</td><td>DIPLOMA IN MEDICAL AND HEALTH SCIENCE (DMHS)</td><td>3 Years</td><td>19,066</td><td>19,066</td><td>19,068</td><td>57,200</td></tr>
   </table>
   <div class="note">
-    <div class="download-bar" onclick="downloadPDF('foundation')">
-  <span>Download PDF</span>
-  <span>⬇️</span>
-</div>
-    <strong>Misc Fees:</strong><br>
-    Visa (EMGS) & Application Processing Fee: RM3,810<br>
-    International Student Fee: RM8,000<br>
-    Completion Processing Fee: RM1,060<br>
-    <strong>Total Misc: RM12,870</strong><br><br>
-    <strong>Payment Schedule:</strong><br>
-    1st: RM3,810 (Visa & App Fee)<br>
-    2nd: 50% Tuition + RM8,000 + RM1,060 + Resource Fee (RM500 × Semesters)<br>
-    Assessment Fee: RM25/subject
+    <strong>Initial Fixed Fees:</strong> RM13,700 (EMS RM3,700 + Reg RM2,000 + Admin RM8,000) 
   </div>
 </div>
 
+<button class="accordion">Bachelor Programs</button>
+<div class="panel">
+  <table>
+    <tr>
+      <th>No</th><th>Program</th><th>Duration</th>
+      <th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th><th>Year 5</th><th>Total Tuition</th>
+    </tr>
+    <tr><td>18</td><td>BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBBS)</td><td>5 Years</td><td>79,000</td><td>79,000</td><td>79,000</td><td>79,000</td><td>79,000</td><td>395,000</td></tr>
+    <tr><td>19</td><td>BACHELOR OF PHARMACY (HONS) (BPHARM)</td><td>4 Years</td><td>25,500</td><td>25,500</td><td>25,500</td><td>25,500</td><td>-</td><td>102,000</td></tr>
+    <tr><td>20</td><td>BACHELOR OF PSYCHOLOGY (HONS) (BPSY)</td><td>4 Years</td><td>14,000</td><td>14,000</td><td>14,000</td><td>21,000</td><td>-</td><td>63,000</td></tr>
+    <tr><td>21</td><td>BACHELOR OF NURSING (HONS) (BNSG)</td><td>4 Years</td><td>16,750</td><td>16,750</td><td>16,750</td><td>16,750</td><td>-</td><td>67,000</td></tr>
+    <tr><td>22</td><td>BACHELOR OF OCCUPATIONAL SAFETY AND HEALTH (HONS) (BOSH)</td><td>3 Years</td><td>24,669</td><td>24,669</td><td>24,662</td><td>-</td><td>-</td><td>74,000</td></tr>
+    <tr><td>23</td><td>BOSH (ODL MODE)</td><td>3 Years</td><td>13,424</td><td>20,137</td><td>26,849</td><td>-</td><td>-</td><td>60,400</td></tr>
+    <tr><td>24</td><td>BACHELOR OF ACCOUNTING AND FINANCE (HONS) (BAF)</td><td>3.6 Years</td><td>12,000</td><td>12,000</td><td>18,000</td><td>12,000</td><td>-</td><td>54,000</td></tr>
+    <tr><td>25</td><td>BACHELOR OF INTERNATIONAL BUSINESS MANAGEMENT (BBM)</td><td>3.6 Years</td><td>12,000</td><td>12,000</td><td>18,000</td><td>12,000</td><td>-</td><td>54,000</td></tr>
+    <tr><td>26</td><td>BACHELOR OF BUSINESS ADMINISTRATION (HONS) (BBA)</td><td>3.6 Years</td><td>10,000</td><td>12,000</td><td>22,000</td><td>10,000</td><td>-</td><td>54,000</td></tr>
+    <tr><td>27</td><td>BACHELOR OF CREATIVE MULTIMEDIA (HONS)</td><td>3 Years</td><td>15,334</td><td>15,334</td><td>38,332</td><td>-</td><td>-</td><td>69,000</td></tr>
+    <tr><td>28</td><td>BACHELOR OF EDUCATION (HONS) EARLY CHILDHOOD EDUCATION</td><td>3 Years</td><td>15,334</td><td>15,334</td><td>38,332</td><td>-</td><td>-</td><td>69,000</td></tr>
+    <tr><td>29</td><td>BACHELOR OF MULTIMEDIA (HONS) ANIMATION</td><td>3 Years</td><td>15,334</td><td>15,334</td><td>38,332</td><td>-</td><td>-</td><td>69,000</td></tr>
+    <tr><td>30</td><td>BACHELOR OF ART (HONS) GRAPHIC DESIGN / ADVERTISING</td><td>3 Years</td><td>15,334</td><td>15,334</td><td>38,332</td><td>-</td><td>-</td><td>69,000</td></tr>
+    <tr><td>31</td><td>BACHELOR OF INFORMATION TECHNOLOGY (HONS) (BIT)</td><td>3.5 Years</td><td>14,224</td><td>14,224</td><td>21,331</td><td>14,221</td><td>-</td><td>64,000</td></tr>
+    <tr><td>32</td><td>BACHELOR OF BIOMEDICAL ENGINEERING TECHNOLOGY (BEET)</td><td>4 Years</td><td>20,500</td><td>20,500</td><td>20,500</td><td>20,500</td><td>-</td><td>82,000</td></tr>
+    <tr><td>33</td><td>BACHELOR OF PHYSIOTHERAPY (HONS) (BPHYSIO)</td><td>4 Years</td><td>23,750</td><td>23,750</td><td>23,750</td><td>23,750</td><td>-</td><td>95,000</td></tr>
+    <tr><td>34</td><td>BACHELOR OF HOMEOPATHIC MEDICAL SCIENCE (BHMS)</td><td>5 Years</td><td>17,000</td><td>17,000</td><td>17,000</td><td>17,000</td><td>17,000</td><td>85,000</td></tr>
+    <tr><td>35</td><td>BACHELOR OF DIETETICS (HONS) (BDIET)</td><td>4 Years</td><td>23,326</td><td>23,326</td><td>23,324</td><td>23,324</td><td>-</td><td>93,300</td></tr>
+    <tr><td>36</td><td>BACHELOR OF EDUCATION (HONS) TESL</td><td>3.6 Years</td><td>12,000</td><td>12,000</td><td>18,000</td><td>12,000</td><td>-</td><td>54,000</td></tr>
+  </table>
+</div>
 
-<footer>
-  <p>&copy; 2025 City University Malaysia.</p>
-</footer>
+<button class="accordion">Postgraduate Programs</button>
+<div class="panel">
+  <table>
+    <tr>
+      <th>No</th><th>Program</th><th>Duration</th>
+      <th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total Tuition</th>
+    </tr>
+    <tr><td>37</td><td>MASTER OF BUSINESS ADMINISTRATION (MBA)</td><td>1 Year</td><td>10,000</td><td>5,000</td><td>-</td><td>15,000</td></tr>
+    <tr><td>38</td><td>MBA (ODL MODE)</td><td>1.5 Years</td><td>7,400</td><td>3,400</td><td>-</td><td>10,800</td></tr>
+    <tr><td>39</td><td>MBA DUAL AWARD</td><td>1.5 Years</td><td>23,000</td><td>11,500</td><td>-</td><td>34,500</td></tr>
+    <tr><td>40</td><td>MBA DUAL AWARD (TOP-UP)</td><td>0.5 Year</td><td>20,000</td><td>-</td><td>-</td><td>20,000</td></tr>
+    <tr><td>41</td><td>MASTER OF CLINICAL PSYCHOLOGY (MCP)</td><td>2 Years</td><td>22,300</td><td>22,300</td><td>11,150</td><td>55,750</td></tr>
+    <tr><td>42</td><td>MASTER OF BUSINESS DATA SCIENCE</td><td>1 Year</td><td>16,334</td><td>8,166</td><td>-</td><td>24,500</td></tr>
+    <tr><td>43</td><td>MASTER OF ISLAMIC FINANCE (MIF)</td><td>1.5 Years</td><td>15,000</td><td>7,500</td><td>-</td><td>22,500</td></tr>
+    <tr><td>44</td><td>MASTER OF OCCUPATIONAL SAFETY AND HEALTH (ODL)</td><td>1.5 Years</td><td>11,440</td><td>17,160</td><td>-</td><td>28,600</td></tr>
+    <tr><td>45</td><td>MASTER OF OCCUPATIONAL SAFETY AND HEALTH MANAGEMENT</td><td>2 Years</td><td>15,400</td><td>23,100</td><td>-</td><td>38,500</td></tr>
+    <tr><td>46</td><td>MASTER OF SCIENCE (MSC) BY RESEARCH</td><td>2 Years</td><td>16,100</td><td>16,100</td><td>-</td><td>32,200</td></tr>
+    <tr><td>47</td><td>MASTER OF MEDICAL SCIENCE (MMS) BY RESEARCH</td><td>2 Years</td><td>12,350</td><td>12,350</td><td>-</td><td>24,700</td></tr>
+    <tr><td>48</td><td>MASTER OF SCIENCE IN PUBLIC HEALTH (MPH)</td><td>1 Year</td><td>41,000</td><td>-</td><td>-</td><td>41,000</td></tr>
+    <tr><td>49</td><td>MASTER OF CLINICAL PHARMACY (MCLINPHARM)</td><td>2 Years</td><td>33,000</td><td>-</td><td>-</td><td>33,000</td></tr>
+    <tr><td>50</td><td>MASTER OF PHARMACEUTICAL SCIENCE BY RESEARCH</td><td>2 Years</td><td>13,000</td><td>13,000</td><td>-</td><td>26,000</td></tr>
+    <tr><td>51</td><td>MASTER OF PHYSIOTHERAPY (MPHS)</td><td>1.5 Years</td><td>12,332</td><td>6,168</td><td>-</td><td>18,500</td></tr>
+  </table>
+</div>
 
-<!-- JavaScript to handle accordion and search -->
-<script>
-// 1. Restore Original Accordion Logic
-const acc = document.querySelectorAll(".accordion");
-acc.forEach(btn => {
-  btn.addEventListener("click", function() {
-    this.classList.toggle("active");
-    const panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-});
+<button class="accordion">Doctorate Programs (PhD)</button>
+<div class="panel">
+  <table>
+    <tr>
+      <th>No</th><th>Program</th><th>Duration</th>
+      <th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total Tuition</th>
+    </tr>
+    <tr><td>52</td><td>DOCTOR OF BUSINESS ADMINISTRATION (DBA)</td><td>3 Years</td><td>14,667</td><td>14,667</td><td>14,666</td><td>44,000</td></tr>
+    <tr><td>53</td><td>DOCTOR OF PHILOSOPHY (PHD) MANAGEMENT</td><td>3 Years</td><td>13,000</td><td>13,000</td><td>13,000</td><td>39,000</td></tr>
+    <tr><td>54</td><td>PHD (GENERAL)</td><td>3 Years</td><td>11,668</td><td>11,668</td><td>11,664</td><td>35,000</td></tr>
+    <tr><td>55</td><td>PHD MEDICAL SCIENCE</td><td>3 Years</td><td>13,000</td><td>13,000</td><td>13,000</td><td>39,000</td></tr>
+    <tr><td>56</td><td>PHD PHARMACEUTICAL SCIENCE</td><td>3 Years</td><td>16,334</td><td>16,333</td><td>16,333</td><td>49,000</td></tr>
+    <tr><td>57</td><td>DOCTOR OF PHARMACY (PHARMAD)</td><td>2 Years</td><td>23,000</td><td>23,000</td><td>-</td><td>46,000</td></tr>
+  </table>
+</div>
 
-// 2. Restore Search Filter & Highlight Feature
-function filterPrograms() {
-  const input = document.getElementById("searchInput").value.toLowerCase().trim();
-  const tables = document.querySelectorAll("table");
+</div> <div id="global-footer-placeholder"></div>
 
-  tables.forEach(table => {
-    const rows = table.querySelectorAll("tr");
-    let foundInTable = false;
-
-    for (let i = 1; i < rows.length; i++) {
-      const rowText = rows[i].textContent.toLowerCase();
-      if (input !== "" && rowText.includes(input)) {
-        rows[i].style.display = "";
-        rows[i].classList.add("highlight"); // Restore Highlight
-        foundInTable = true;
-      } else if (input === "") {
-        rows[i].style.display = "";
-        rows[i].classList.remove("highlight");
-      } else {
-        rows[i].style.display = "none";
-        rows[i].classList.remove("highlight");
-      }
-    }
-
-    const panel = table.closest(".panel");
-    const accordion = panel.previousElementSibling;
-    
-    // Auto-open accordion if a match is found (needed for search from index)
-    if (foundInTable && input !== "") {
-      panel.style.display = "block";
-      accordion.classList.add("active");
-    } else if (input === "") {
-      panel.style.display = "none";
-      accordion.classList.remove("active");
-    }
-  });
-}
-
-// 3. Restore URL Parameter Logic (View Chart Feature)
-document.addEventListener("DOMContentLoaded", function() {
-  const searchTerm = new URLSearchParams(window.location.search).get('q');
-  if (searchTerm) {
-    const input = document.getElementById('searchInput');
-    input.value = decodeURIComponent(searchTerm);
-    filterPrograms(); // This triggers the highlight and opens the correct chart
-    input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
-});
-
-// 4. Original PDF Download Logic
-function downloadPDF(programKey) {
-  const link = document.createElement("a");
-  link.href = "assets/documents/fees/city-fees.pdf"; 
-  link.download = "City_Fee_Structure_2026.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-</script>
-
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/fees.js"></script>
 </body>
 </html>
-

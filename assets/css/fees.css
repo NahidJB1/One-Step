@@ -127,6 +127,8 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 30px; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; }
 .developer-link { color: #00C2FF; text-decoration: none; font-weight: 600; }
 
+/* --- RESPONSIVE FIXES --- */
+/* --- UPDATED RESPONSIVE FIXES --- */
 /* --- UPDATED RESPONSIVE FIXES --- */
 @media (max-width: 1024px) { 
   .footer-grid { grid-template-columns: repeat(2, 1fr); } 
@@ -211,3 +213,4 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
   .note { font-size: 13px; padding: 15px; }
   .download-bar { width: 100%; justify-content: center; float: none; }
 }
+  

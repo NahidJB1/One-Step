@@ -17,6 +17,13 @@
       --theme-accent: #D4AF37;      /* Metallic Gold */
       --theme-light: #f0f4f8;       /* Very Light Blue-Grey */
     }
+    .static-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Keeps aspect ratio intact */
+        display: block;
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); /* Adds a subtle modern depth */
+    }
 
     /* KLUST specific logo animation styles */
     .klust-shield, .klust-star {
@@ -49,12 +56,9 @@
 <body>
 
 <header>
-  <div class="header-content">
+<div class="header-content">
     <div class="logo-container">
-      <svg class="living-logo" viewBox="0 0 100 100">
-         <path class="klust-shield" d="M20,20 Q50,5 80,20 V50 Q50,95 20,50 Z" />
-         <path class="klust-shield" d="M35,35 L65,35 M50,35 L50,70" stroke-width="2"/>
-      </svg>
+      <img src="../assets/img/klust-logo.png" alt="KLUST Logo" class="static-logo">
     </div>
 
     <div class="header-text">

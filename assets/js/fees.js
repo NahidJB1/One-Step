@@ -1,8 +1,7 @@
 /* assets/js/fees.js */
 
+// 1. Accordion Logic
 document.addEventListener("DOMContentLoaded", function() {
-  
-  // 1. Accordion Logic
   const acc = document.querySelectorAll(".accordion");
   acc.forEach(btn => {
     btn.addEventListener("click", function() {
@@ -26,28 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
       input.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
-
-  // 3. AUTO-GENERATE MOBILE LABELS (Essential for fees.css Card View)
-  // This grabs the header text (e.g. "Year 1") and attaches it to the data
-  // so the CSS can display "Year 1: RM 20,000" on mobile.
-  const tables = document.querySelectorAll("table");
-  tables.forEach(table => {
-    const headers = Array.from(table.querySelectorAll("th")).map(th => th.textContent.trim());
-    const rows = table.querySelectorAll("tr");
-    
-    rows.forEach(row => {
-      const cells = row.querySelectorAll("td");
-      cells.forEach((cell, index) => {
-        if (headers[index]) {
-          cell.setAttribute("data-label", headers[index]);
-        }
-      });
-    });
-  });
-
 });
 
-// 4. Search Filter Function
+// 3. Search Filter Function
 function filterPrograms() {
   const input = document.getElementById("searchInput").value.toLowerCase().trim();
   const tables = document.querySelectorAll("table");
@@ -85,18 +65,21 @@ function filterPrograms() {
   });
 }
 
-// 5. PDF Download Logic
+// 4. PDF Download Logic
 function downloadPDF(filename) {
+  // You can customize the path logic here if needed, 
+  // or pass the full path from the HTML onclick="downloadPDF('assets/docs/city.pdf')"
   const link = document.createElement("a");
-  // Check if filename is a full path or just a name
+  
+  // Check if the user passed a full path or just a key
   if(filename.includes('/')) {
       link.href = filename;
   } else {
-      // Points to the correct parent folder structure
+      // Default fallback if you stick to old naming convention
       link.href = `../assets/documents/fees/${filename}.pdf`;
   }
   
-  link.download = filename.split('/').pop(); 
+  link.download = filename.split('/').pop(); // Extracts filename from path
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

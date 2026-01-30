@@ -134,6 +134,10 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
   .footer-grid { grid-template-columns: repeat(2, 1fr); } 
 }
 
+@media (max-width: 1024px) { 
+  .footer-grid { grid-template-columns: repeat(2, 1fr); } 
+}
+
 @media (max-width: 768px) {
   /* Header Adjustments */
   header { padding: 40px 15px; }
@@ -145,69 +149,31 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
   /* Container & Search Spacing */
   .container { margin-top: -20px; padding: 0 15px; }
   .search-container { padding: 20px 15px; margin-bottom: 25px; }
-
-  /* --- RESPONSIVE TABLE TO CARDS --- */
-  /* This forces the table to stop behaving like a table */
-  table, thead, tbody, th, td, tr { 
-    display: block; 
-  }
-
-  /* Hide table headers (but keep for screen readers) */
-  th {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  tr {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    margin-bottom: 15px;
+  
+  /* --- RESTORE HORIZONTAL SCROLL --- */
+  /* Ensure the panel allows scrolling */
+  .panel {
+    display: none; /* Toggled by JS */
+    overflow-x: auto !important; /* Forces scrollbar */
+    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+    width: 100%;
+    box-sizing: border-box;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
   }
 
-  tr:nth-child(even) { background-color: #fafafa; }
+  /* Force table to keep its width so scrollbar appears */
+  table { 
+    min-width: 700px !important; 
+    width: 100%;
+  }
 
-  td {
-    /* Behave like a "row" */
-    border: none;
-    border-bottom: 1px solid #f1f1f1;
-    position: relative;
-    padding-left: 50% !important;
-    text-align: right !important;
+  /* Adjust adjustments for readability on small screens */
+  th, td {
+    padding: 10px;
     font-size: 13px;
-    min-height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    white-space: normal; /* Allow text to wrap inside cells */
   }
-
-  td:last-child { border-bottom: 0; }
-
-  /* Label the data using data-label attribute */
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    text-align: left;
-    font-weight: 700;
-    color: var(--theme-color);
-    text-transform: uppercase;
-    font-size: 11px;
-  }
-
-  /* Specific fix for Program names to allow wrapping */
-  td[data-label="Program"] {
-    text-align: right;
-    line-height: 1.3;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+}
   
   .panel { padding: 10px; }
   .note { font-size: 13px; padding: 15px; }

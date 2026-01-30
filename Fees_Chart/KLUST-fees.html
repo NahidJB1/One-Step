@@ -25,32 +25,6 @@
         filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); /* Adds a subtle modern depth */
     }
 
-    /* KLUST specific logo animation styles */
-    .klust-shield, .klust-star {
-        stroke: var(--theme-accent);
-        stroke-width: 3;
-        fill: none;
-        stroke-dasharray: 200;
-        stroke-dashoffset: 200;
-        animation: logoAlive 6s linear infinite;
-    }
-    
-    .klust-fill {
-        fill: var(--theme-color);
-        animation: fadeAlive 6s ease-in-out infinite;
-    }
-
-    @keyframes logoAlive {
-      0% { stroke-dashoffset: 300; opacity: 0; }
-      15% { stroke-dashoffset: 0; opacity: 1; }
-      85% { stroke-dashoffset: 0; opacity: 1; }
-      100% { stroke-dashoffset: -300; opacity: 0; }
-    }
-    
-    @keyframes fadeAlive {
-        0%, 100% { opacity: 0; }
-        20%, 80% { opacity: 1; }
-    }
   </style>
 </head>
 <body>

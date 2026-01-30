@@ -12,7 +12,7 @@
 
 /* --- GLOBAL RESET --- */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
-body { background-color: var(--bg-color); color: var(--text-color); padding-bottom: 60px; overflow-x: hidden; }
+body { background-color: var(--bg-color); color: var(--text-color); padding-bottom: 0px; overflow-x: hidden; }
 
 /* --- HEADER --- */
 header {

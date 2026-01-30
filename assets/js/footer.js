@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
               
               <div class="footer-bottom">
-                <p>&copy; 2023 YS Study Focus. All rights reserved. | Developed and Designed by <a href="#" class="developer-link" style="color: #00C2FF; text-decoration: none; font-weight: 600;">Bhuiyan Mohamed Nahid Jahan</a></p>
+                <p>&copy; 2026 One Step. All rights reserved. | Developed and Designed by <a href="#" class="developer-link" style="color: #00C2FF; text-decoration: none; font-weight: 600;">Bhuiyan Mohamed Nahid Jahan</a></p>
               </div>
             </div>
         </footer>

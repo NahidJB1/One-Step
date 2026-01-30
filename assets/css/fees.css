@@ -12,7 +12,7 @@
 
 /* --- GLOBAL RESET --- */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
-body { background-color: var(--bg-color); color: var(--text-color); padding-bottom: 0px; overflow-x: hidden; }
+body { background-color: var(--bg-color); color: var(--text-color); padding-bottom: 0; overflow-x: hidden; }
 
 /* --- HEADER --- */
 header {
@@ -111,7 +111,7 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 .download-bar:hover { transform: scale(1.05); filter: brightness(0.9); }
 
 /* --- GLOBAL FOOTER (From Index) --- */
-.main-footer { background-color: #0A192F; color: white; padding: 80px 0 30px; margin-top: 60px; }
+.main-footer { background-color: #0A192F; color: white; padding: 80px 0 30px; margin-top: 60px; margin-bottom: 0; }
 .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 60px; max-width: 1280px; margin-left: auto; margin-right: auto; padding: 0 24px;}
 .footer-col h3 { font-size: 1.3rem; margin-bottom: 25px; position: relative; padding-bottom: 10px; }
 .footer-col h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: linear-gradient(90deg, #0066CC, #00C2FF); }

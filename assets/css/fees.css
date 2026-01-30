@@ -128,12 +128,6 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 .developer-link { color: #00C2FF; text-decoration: none; font-weight: 600; }
 
 /* --- RESPONSIVE FIXES --- */
-/* --- UPDATED RESPONSIVE FIXES --- */
-/* --- UPDATED RESPONSIVE FIXES --- */
-@media (max-width: 1024px) { 
-  .footer-grid { grid-template-columns: repeat(2, 1fr); } 
-}
-
 @media (max-width: 1024px) { 
   .footer-grid { grid-template-columns: repeat(2, 1fr); } 
 }
@@ -151,35 +145,30 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
   .search-container { padding: 20px 15px; margin-bottom: 25px; }
   
   /* --- RESTORE HORIZONTAL SCROLL --- */
-  /* Ensure the panel allows scrolling */
   .panel {
     display: none; /* Toggled by JS */
-    overflow-x: auto !important; /* Forces scrollbar */
-    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch; 
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
   }
 
-  /* Force table to keep its width so scrollbar appears */
+  /* Force table width so scrollbar appears */
   table { 
     min-width: 700px !important; 
     width: 100%;
   }
 
-  /* Adjust adjustments for readability on small screens */
   th, td {
     padding: 10px;
     font-size: 13px;
-    white-space: normal; /* Allow text to wrap inside cells */
+    white-space: normal;
   }
-}
-  
-  .panel { padding: 10px; }
+
   .note { font-size: 13px; padding: 15px; }
   .download-bar { width: 100%; justify-content: center; float: none; }
 }
-
 
 /* --- GLOBAL LOGO ANIMATION (SYNCED) --- */
 
@@ -203,8 +192,8 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 /* --- KEYFRAMES (Global Definition) --- */
 @keyframes logoAlive {
   0% { stroke-dashoffset: 300; opacity: 0; }
-  15% { stroke-dashoffset: 0; opacity: 1; }   /* Lines fully drawn by 15% */
-  85% { stroke-dashoffset: 0; opacity: 1; }   /* Stay visible until 85% */
+  15% { stroke-dashoffset: 0; opacity: 1; }
+  85% { stroke-dashoffset: 0; opacity: 1; }
   100% { stroke-dashoffset: -300; opacity: 0; }
 }
 

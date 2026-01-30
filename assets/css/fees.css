@@ -213,4 +213,18 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
   .note { font-size: 13px; padding: 15px; }
   .download-bar { width: 100%; justify-content: center; float: none; }
 }
-  
+
+
+/* --- UPDATED LOGO ANIMATION TARGETS --- */
+.cityu-line, .cityu-base, .step-circle, 
+.step-arrow-top, .step-line-main, .step-block-rect {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: logoAlive 6s linear infinite;
+}
+
+.step-block-rect {
+  fill: #0066CC;
+  stroke: none; /* Rects usually don't need strokes for this design */
+  animation: fadeAlive 6s ease-in-out infinite;
+}

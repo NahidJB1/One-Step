@@ -809,66 +809,98 @@
       }
     }
 
-    /* ... inside @media (max-width: 768px) ... */
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .process-steps {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
   
-  /* REMOVE or REPLACE the old ".nav-links { display: none; }" with this: */
+  .process-steps::before {
+    display: none;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  
+  /* 1. MAKE THE HAMBURGER BUTTON VISIBLE */
+  .mobile-menu-btn {
+    display: block; /* This was likely missing or 'none' */
+    position: relative;
+    z-index: 1001; /* Ensure it stays above the menu */
+  }
+
+  /* 2. THE DROPDOWN MENU CONTAINER */
   .nav-links {
     position: absolute;
-    top: 100%; /* Attach to bottom of header */
+    top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.98); /* Clean white background */
-    backdrop-filter: blur(20px); /* Modern frosted glass effect */
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    padding: 0;
     
-    /* Animation Properties */
+    /* Hidden state (for animation) */
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    padding: 0;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth eased transition */
+    
+    /* Smooth Transition */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 
-  /* This class is added by JS to trigger the drop down */
+  /* 3. ACTIVE STATE (Triggered by JS) */
   .nav-links.active {
-    max-height: 500px; /* Enough height to fit all links */
+    max-height: 500px;
     opacity: 1;
     padding: 40px 0;
   }
 
-  /* Adjust link style for mobile menu */
+  /* 4. LINK STYLES */
   .nav-links .nav-link {
     font-size: 1.2rem;
     font-weight: 600;
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    display: block; /* Ensure links take up space */
+  }
+
+  /* Hide the search/whatsapp icons on mobile if you want more space, 
+     otherwise keep them flexed */
+  .nav-actions {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
   }
   
-  /* ... rest of your mobile styles ... */
-
-    @media (max-width: 576px) {
-      .section-title {
-        font-size: 1.8rem;
-      }
-      
-      .hero-title {
-        font-size: 2.2rem;
-      }
-      
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .university-grid {
-        grid-template-columns: 1fr;
-      }
-    }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .university-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
     /* Hide extra cards initially */
 .hidden-card {

@@ -291,29 +291,38 @@
       margin-right: auto;
     }
 
-    .hero-stats {
+
+
+.hero-stats {
       display: flex;
       justify-content: center;
-      gap: 60px;
+      gap: 60px; /* Desktop gap */
       margin-top: 60px;
+      flex-wrap: wrap; /* Allows wrapping on smaller screens */
     }
 
     .hero-stat {
       text-align: center;
+      flex: 1; /* Allows items to shrink/grow */
+      min-width: 120px; /* Prevents them from getting too squashed */
     }
 
-    .hero-stat-number {
-      font-size: 3rem;
-      font-weight: 700;
-      color: var(--accent);
-      display: block;
-      line-height: 1;
-    }
-
-    .hero-stat-label {
-      font-size: 1rem;
-      opacity: 0.8;
-      margin-top: 5px;
+    /* Add this specific mobile fix immediately after */
+    @media (max-width: 768px) {
+      .hero-stats {
+        gap: 30px; /* Smaller gap for mobile */
+        margin-top: 40px;
+        flex-direction: row; /* Keep in a row but allow wrap */
+        justify-content: space-around; /* Distribute evenly */
+      }
+      
+      .hero-stat-number {
+        font-size: 2.2rem; /* Slightly smaller number */
+      }
+      
+      .hero-stat-label {
+        font-size: 0.9rem; /* Slightly smaller text */
+      }
     }
 
     .floating-elements {

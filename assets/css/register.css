@@ -1,0 +1,236 @@
+/* assets/css/register.css */
+
+.register-section {
+    background: linear-gradient(135deg, #F8FAFF 0%, #E2E8F0 100%);
+    min-height: 100vh;
+    padding: 100px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-card {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.register-card::top {
+    content: '';
+    height: 8px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    width: 100%;
+    display: block;
+}
+
+.register-header {
+    padding: 40px 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.register-header h2 {
+    color: var(--dark);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.register-header p {
+    color: var(--gray);
+}
+
+.register-form {
+    padding: 30px 40px 50px;
+}
+
+.section-heading {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+
+/* Form Inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+.file-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid var(--gray-light);
+    border-radius: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: var(--dark);
+    transition: all 0.3s ease;
+    background-color: #FAFAFA;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary);
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+}
+
+/* Payment Styles */
+.fee-badge {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.payment-option {
+    cursor: pointer;
+    position: relative;
+}
+
+.payment-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.option-content {
+    border: 2px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-option input:checked + .option-content {
+    border-color: var(--primary);
+    background-color: rgba(0, 102, 204, 0.05);
+}
+
+.option-icon {
+    font-size: 1.8rem;
+    color: var(--gray);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.payment-option input:checked + .option-content .option-icon {
+    color: var(--primary);
+}
+
+.option-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Payment Details Dynamic Areas */
+.payment-details {
+    display: none; /* Hidden by default */
+    animation: slideDown 0.3s ease;
+    background-color: #F8FAFC;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px dashed var(--gray);
+}
+
+.payment-details.active {
+    display: block;
+}
+
+.alert-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: #E0F2FE;
+    color: #0369A1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.alert-box.warning {
+    background-color: #FFF7ED;
+    color: #C2410C;
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 0.85rem;
+    color: var(--gray);
+    font-weight: 600;
+    position: relative;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: var(--gray-light);
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.submit-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 16px;
+    margin-top: 10px;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .register-form { padding: 20px; }
+    .register-header { padding: 30px 20px; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+    .payment-options { grid-template-columns: 1fr; }
+}

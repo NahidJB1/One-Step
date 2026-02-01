@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration | One Step</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+
+  <header class="main-header" style="background-color: white; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text">
+            <span style="font-weight: 800; letter-spacing: 1px; color: var(--primary);">ONE STEP</span>
+            <span style="color: var(--gray); font-size: 0.85rem;">Exam Registration</span>
+        </div>
+      </a>
+      <a href="scholarship.html" class="btn btn-secondary" style="padding: 8px 20px; font-size: 0.9rem;">
+        <i class="fas fa-arrow-left"></i> Back
+      </a>
+    </div>
+  </header>
+
+  <section class="register-section">
+    <div class="container">
+      <div class="register-card">
+        
+        <div class="register-header">
+          <h2>Student Registration</h2>
+          <p>Fill in your details to sit for the scholarship exam.</p>
+        </div>
+
+        <form id="registrationForm" class="register-form">
+          
+          <div class="form-section">
+            <h3 class="section-heading"><i class="fas fa-user-graduate"></i> Student Information</h3>
+            
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rollNumber">Roll Number</label>
+                <input type="number" id="rollNumber" placeholder="Class Roll" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="classSelect">Class / Status</label>
+                <select id="classSelect" required>
+                  <option value="" disabled selected>Select your class</option>
+                  <option value="8">Class 8</option>
+                  <option value="9">Class 9</option>
+                  <option value="10">Class 10</option>
+                  <option value="SSC">Passed SSC</option>
+                  <option value="HSC1">1st Year HSC</option>
+                  <option value="HSC2">2nd Year HSC</option>
+                  <option value="HSC_Pass">Passed HSC</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="schoolSelect">Institution</label>
+              <select id="schoolSelect" required>
+                <option value="" disabled selected>Select your school</option>
+                <option value="Noagaon">Noagaon Aftab Hossain Academy</option>
+                <option value="Tiosree">Tiosree NH Khan Academy</option>
+                <option value="Fatehpur">Fatehpur M.H. High School</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3 class="section-heading"><i class="fas fa-credit-card"></i> Registration Fee</h3>
+            <div class="fee-badge">Amount to Pay: <strong>10 BDT</strong></div>
+
+            <label class="payment-label">Select Payment Method:</label>
+            <div class="payment-options">
+              
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="digital" checked>
+                <div class="option-content">
+                  <div class="option-icon"><i class="fas fa-mobile-alt"></i></div>
+                  <span class="option-title">Bkash / Nagad</span>
+                </div>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="cash">
+                <div class="option-content">
+                  <div class="option-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                  <span class="option-title">Pay to Teacher</span>
+                </div>
+              </label>
+            </div>
+
+            <div id="digitalPaymentDetails" class="payment-details active">
+              <div class="alert-box">
+                <i class="fas fa-info-circle"></i>
+                <p>Send <strong>10 TK</strong> to <strong>01714640536</strong> (Personal)</p>
+              </div>
+              
+              <div class="form-group">
+                <label for="trxId">Transaction ID (TRX)</label>
+                <input type="text" id="trxId" placeholder="e.g. 8JHS62..." >
+              </div>
+              
+              <div class="divider">OR</div>
+              
+              <div class="form-group">
+                <label for="receiptUpload">Upload Screenshot/Receipt</label>
+                <input type="file" id="receiptUpload" accept="image/*" class="file-input">
+              </div>
+            </div>
+
+            <div id="cashPaymentDetails" class="payment-details">
+              <div class="alert-box warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Please pay <strong>10 TK</strong> directly to your designated class teacher to confirm your registration.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            Confirm Registration <i class="fas fa-check-circle"></i>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="global-footer-placeholder"></div>
+
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/register.js"></script>
+</body>
+</html>

@@ -931,3 +931,89 @@ h1, h2, h3, h4, h5 {
   display: block !important;
   animation: fadeInCard 0.5s ease forwards;
 }
+
+/* ===== SCHOLARSHIP PROMO BANNER ===== */
+.scholarship-promo-container {
+  background-color: var(--dark); /* Matches hero bottom */
+  padding-bottom: 80px; /* Space for the search bar to overlap */
+  position: relative;
+  z-index: 5;
+}
+
+.promo-banner {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), rgba(0, 102, 204, 0.2));
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: var(--border-radius);
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  animation: glowPulse 3s infinite;
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.1); }
+  50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+  100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.1); }
+}
+
+.promo-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.promo-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--dark);
+  flex-shrink: 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.promo-text h3 {
+  color: var(--accent);
+  margin-bottom: 4px;
+  font-size: 1.3rem;
+}
+
+.promo-text p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Adjust Quick Search to overlap correctly */
+.quick-search {
+  margin-top: -50px; /* Keep existing overlap */
+}
+
+/* Mobile Responsive for Banner */
+@media (max-width: 768px) {
+  .promo-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .promo-content {
+    flex-direction: column;
+  }
+  
+  .promo-btn {
+    width: 100%;
+  }
+}

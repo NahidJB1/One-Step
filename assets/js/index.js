@@ -97,7 +97,7 @@ function getResultsPerPage() {
 // 2. Load Data on Startup
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('universities.json');
+        const response = await fetch('universities.json?v=2');
         if (!response.ok) throw new Error("JSON not found");
         ALL_PROGRAMS_DATA = await response.json();
         console.log("Enhanced Search Engine: Ready with responsive display");

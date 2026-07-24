@@ -13,7 +13,7 @@ async function initDynamicFees() {
     }
 
     try {
-        const res = await fetch('../data/fees_data.json');
+        const res = await fetch('../data/fees_data.json?v=2');
         const data = await res.json();
         
         const uni = data[uniId];

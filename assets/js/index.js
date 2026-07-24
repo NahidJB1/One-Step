@@ -116,10 +116,10 @@ function renderFeaturedUniversities() {
     let count = 0;
 
     ALL_PROGRAMS_DATA.forEach(uni => {
-        // Use global UNIVERSITY_META
-        const meta = window.UNIVERSITY_META && window.UNIVERSITY_META[uni.name] 
-          ? window.UNIVERSITY_META[uni.name] 
-          : { badge: "Featured", img: "default.jpg", loc: "Malaysia", slug: uni.name.toLowerCase().replace(/\s+/g, '-') };
+        // Skip universities that are commented out or not in UNIVERSITY_META
+        if (!window.UNIVERSITY_META || !window.UNIVERSITY_META[uni.name]) return;
+        
+        const meta = window.UNIVERSITY_META[uni.name];
         
         const isHidden = count >= 6 ? ' hidden-card' : '';
         const detailsLink = `Universities/${meta.slug}-details.html`;
@@ -175,9 +175,8 @@ function triggerSearch() {
     // 1. Find All Matches
     ALL_PROGRAMS_DATA.forEach(uni => {
         const uniName = uni.name;
-        const meta = window.UNIVERSITY_META && window.UNIVERSITY_META[uniName] 
-            ? window.UNIVERSITY_META[uniName] 
-            : { slug: uniName.toLowerCase().replace(/\s+/g, '-') };
+        if (!window.UNIVERSITY_META || !window.UNIVERSITY_META[uniName]) return;
+        const meta = window.UNIVERSITY_META[uniName];
         const uniLink = `Universities/${meta.slug}-details.html`;
 
         uni.programs.forEach(program => {

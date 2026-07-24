@@ -4,16 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taylor's University | Details</title>
-  <meta name="description" content="Discover programs, fees, and campus details for Taylor's University | Details. Apply to Taylor's University | Details through One Step MY for expert guidance and scholarships.">
+  
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../assets/css/index.css">
   <link rel="stylesheet" href="../assets/css/university-details.css">
-  <link rel="stylesheet" href="../assets/css/universities/taylors.css">
+
+  <style>
+    /* Page Specific Theme Override */
+    :root {
+      --uni-theme: #E41F2D; /* Taylor's Official Red */
+    }
+    
+    /* Hero Image */
+    .uni-header {
+      /* Ensure you have this image in your folder */
+      background-image: url('../assets/images/universities/taylors/taylors-main.jpg');
+    }
+  </style>
 </head>
 <body>
 
@@ -29,8 +45,8 @@
       <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="uni-title">Taylor's University</h1>
         <div class="uni-meta">
-          <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Subang Jaya</span>
-          <span class="meta-tag"><i class="fas fa-star"></i> QS Top 300</span>
+          <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Subang Jaya, Selangor</span>
+          <span class="meta-tag"><i class="fas fa-trophy"></i> #1 Private Uni in SEA</span>
           <span class="meta-tag"><i class="fas fa-university"></i> Est. 1969</span>
         </div>
       </div>
@@ -38,137 +54,152 @@
   </header>
 
 <div class="container main-container">
+    
     <div class="tabs-nav" data-aos="fade-up" data-aos-delay="100">
       <button class="tab-btn active" data-tab="overview">Overview</button>
-      <button class="tab-btn" data-tab="faculties">Faculties & Programs</button>
-      <button class="tab-btn" data-tab="location">Location & Facilities</button>
-      <button class="tab-btn" data-tab="rankings">Rankings & Awards</button>
-      <button class="tab-btn" data-tab="admissions">Admissions</button>
+      <button class="tab-btn" data-tab="location">Lakeside Campus</button>
+      <button class="tab-btn" data-tab="faculties">Faculties</button>
     </div>
 
     <div class="details-grid">
+      
       <div class="content-area">
+        
         <div id="overview" class="tab-content active" data-aos="fade-up" data-aos-delay="200">
           <h2 class="section-head">About the University</h2>
-          <p>Taylor’s University was established in 1969, initially operating as a private college focused on pre-university and tertiary education. Over the decades, it experienced significant growth, achieving full university status in 2010. It is a key member of the Taylor’s Education Group.</p><p>The university is renowned for its modern 'Lakeside Campus' and its unique learning ecosystem known as 'Taylor’sphere.' This ecosystem is designed to nurture students' intellect, creativity, and practical wisdom. Today, Taylor's University stands as a premier private institution in Malaysia.</p>
+          <p>Taylor's University is the No. 1 Private University in Southeast Asia (QS World University Rankings). Famous for its stunning Lakeside Campus, it combines academic excellence with world-class facilities to produce high-achieving graduates.</p>
+          <p>With a legacy dating back to 1969, Taylor's offers a diverse range of programmes and is renowned for its industry partnerships and global connectivity.</p>
+
           <div class="divider"></div>
-          <h2 class="section-head">Campus Gallery</h2>
+
+          <h2 class="section-head">Life at Lakeside</h2>
           <div class="gallery-grid">
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <img src="../assets/images/universities/taylors/taylors_accommodation.jpg" alt="Taylors Accommodation">
+              <img src="../assets/images/universities/taylors/taylors_lake_view.jpg" alt="Lakeside View">
               <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Taylors Accommodation</div>
+              <div class="gallery-title">The Iconic Lake</div>
             </div>
+
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <img src="../assets/images/universities/taylors/taylors_grand_hall.jpg" alt="Taylors Grand Hall">
+              <img src="../assets/images/universities/taylors/taylors_library.jpg" alt="Grand Library">
               <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Taylors Grand Hall</div>
+              <div class="gallery-title">24/7 Library</div>
             </div>
+
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <img src="../assets/images/universities/taylors/taylors_lake_view.jpg" alt="Taylors Lake View">
+              <img src="../assets/images/universities/taylors/taylors_lecture.jpg" alt="Lecture Theatre">
               <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Taylors Lake View</div>
+              <div class="gallery-title">X-Space Classrooms</div>
             </div>
+
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <img src="../assets/images/universities/taylors/taylors_lecture.jpg" alt="Taylors Lecture">
+              <img src="../assets/images/universities/taylors/taylors_accommodation.jpg" alt="U Residence">
               <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Taylors Lecture</div>
+              <div class="gallery-title">U-Residence</div>
             </div>
+
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <img src="../assets/images/universities/taylors/taylors_library.jpg" alt="Taylors Library">
+              <img src="../assets/images/universities/taylors/taylors_student_hub.jpg" alt="Student Life">
               <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Taylors Library</div>
+              <div class="gallery-title">Student Hub</div>
             </div>
+
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <img src="../assets/images/universities/taylors/taylors_student_hub.jpg" alt="Taylors Student Hub">
+              <img src="../assets/images/universities/taylors/taylors_grand_hall.jpg" alt="Grand Hall">
               <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Taylors Student Hub</div>
+              <div class="gallery-title">The Grand Hall</div>
             </div>
           </div>
-              <div class="gallery-title">Campus Exterior</div>
+        </div>
+
+        <div id="location" class="tab-content">
+          <h2 class="section-head">The Lakeside Campus</h2>
+          <p>Taylor's Lakeside Campus is a modern, self-sustainable campus located in Subang Jaya. It is built around a 5.5-acre man-made lake and features state-of-the-art laboratories, studios, and accommodation.</p>
+          
+          <div class="map-container" data-aos="zoom-in">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy" 
+              width="100%" 
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div class="locations-list">
+            <div class="loc-card highlighted-loc" data-aos="fade-right">
+              <i class="fas fa-map-marker-alt location-sign-anim"></i>
+              <div>
+                <h4>Lakeside Campus (Main)</h4>
+                <p>No. 1, Jalan Taylor's, 47500 Subang Jaya, Selangor Darul Ehsan</p>
+              </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <img src="https://via.placeholder.com/600x400?text=Library" alt="Library">
-              <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Library</div>
+            
+            <div class="loc-card" data-aos="fade-left">
+              <i class="fas fa-building"></i>
+              <div>
+                <h4>Taylor's College</h4>
+                <p>Integrated within the Lakeside Campus ecosystem</p>
+              </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <img src="https://via.placeholder.com/600x400?text=Labs" alt="Labs">
-              <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">State-of-the-art Labs</div>
-            </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <img src="https://via.placeholder.com/600x400?text=Student+Lounge" alt="Student Lounge">
-              <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Student Lounge</div>
-            </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <img src="https://via.placeholder.com/600x400?text=Auditorium" alt="Auditorium">
-              <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Auditorium</div>
-            </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <img src="https://via.placeholder.com/600x400?text=Accommodation" alt="Accommodation">
-              <div class="overlay"><i class="fas fa-expand"></i></div>
-              <div class="gallery-title">Accommodation</div>
+
+            <div class="loc-card" data-aos="fade-right">
+              <i class="fas fa-info-circle"></i>
+              <div>
+                <h4>Counselling Centres</h4>
+                <p>Available in Penang, Johor Bahru, Kota Kinabalu, and Kuching</p>
+              </div>
             </div>
           </div>
         </div>
 
         <div id="faculties" class="tab-content">
-            <h2 class="section-head">Faculties & Popular Programs</h2>
+            <h2 class="section-head">Faculties & Schools</h2>
             <ul class="faculty-list">
-                <li><i class='fas fa-check-circle'></i> Faculty of Innovation and Technology</li><li><i class='fas fa-check-circle'></i> Faculty of Business and Law</li><li><i class='fas fa-check-circle'></i> Faculty of Health and Medical Sciences</li><li><i class='fas fa-check-circle'></i> Faculty of Social Sciences and Leisure Management</li>
+                <li><i class="fas fa-check-circle"></i> Taylor's Business School</li>
+                <li><i class="fas fa-check-circle"></i> School of Computing & IT</li>
+                <li><i class="fas fa-check-circle"></i> School of Engineering</li>
+                <li><i class="fas fa-check-circle"></i> School of Medicine</li>
+                <li><i class="fas fa-check-circle"></i> School of Pharmacy</li>
+                <li><i class="fas fa-check-circle"></i> School of Biosciences</li>
+                <li><i class="fas fa-check-circle"></i> School of Architecture, Building & Design</li>
+                <li><i class="fas fa-check-circle"></i> School of Media & Communication</li>
+                <li><i class="fas fa-check-circle"></i> School of Hospitality, Tourism & Events</li>
+                <li><i class="fas fa-check-circle"></i> The Design School</li>
+                <li><i class="fas fa-check-circle"></i> Taylor's Law School</li>
+                <li><i class="fas fa-check-circle"></i> School of Education</li>
             </ul>
         </div>
 
-        <div id="location" class="tab-content">
-          <h2 class="section-head">Our Campuses & Facilities</h2>
-          <p>Taylor's University is primarily located at its state-of-the-art Lakeside Campus in Subang Jaya, Selangor.</p><h3 style='margin-top: 20px; margin-bottom: 10px;'>Facilities</h3><ul class='faculty-list'><li><i class='fas fa-vr-cardboard'></i> VORTEX Extended Reality (XR) lab and Taylor's ME.REKA Makerspace</li><li><i class='fas fa-utensils'></i> Hotel front office simulations, fine dining restaurants, and culinary suites</li><li><i class='fas fa-shopping-bag'></i> On-campus mall and 24-hour library</li><li><i class='fas fa-users'></i> Dynamic Student Life Centre (SLC)</li><li><i class='fas fa-bed'></i> Taylor's Residence with gym and swimming pool</li></ul>
-        </div>
-        
-        <div id="rankings" class="tab-content">
-            <h2 class="section-head">Rankings, Accreditations & Awards</h2>
-            <ul class="faculty-list">
-                <li><i class='fas fa-award'></i> Ranked #272 globally in the QS World University Rankings 2027</li><li><i class='fas fa-award'></i> Consistently recognized as the #1 private university in Southeast Asia</li><li><i class='fas fa-award'></i> Hospitality & Leisure Management ranked in the Top 30 globally</li><li><i class='fas fa-award'></i> Business & Management AACSB accredited</li><li><i class='fas fa-award'></i> 'Competitive' (Tier 5: Excellent) rating in SETARA</li>
-            </ul>
-        </div>
-              <div id="admissions" class="tab-content">
-            <h2 class="section-head">Admission Requirements</h2>
-            <p>Our goal is to make the admission process as smooth as possible for you. The requirements may vary slightly depending on the specific program, but general requirements include:</p>
-            <ul class="faculty-list" style="margin-top: 15px;">
-                <li><i class='fas fa-file-alt'></i> High School/Secondary School Transcripts</li>
-                <li><i class='fas fa-language'></i> English Proficiency (IELTS/TOEFL) - waived for some countries</li>
-                <li><i class='fas fa-passport'></i> Valid Passport (for international students)</li>
-                <li><i class='fas fa-user-md'></i> Medical Check-up Report</li>
-            </ul>
-            <h3 style="margin-top: 25px; margin-bottom: 10px;">How to Apply</h3>
-            <p>Simply click the "Chat Now" button or use our application portal. We will guide you step-by-step through document submission, visa processing, and accommodation booking.</p>
-        </div>
       </div>
 
       <div class="sidebar-info">
+        
         <div class="info-card glass-card" data-aos="fade-left" data-aos-delay="300">
           <h3 class="card-title">At a Glance</h3>
+          
           <div class="stat-row">
             <div class="icon-box"><i class="fas fa-calendar-alt"></i></div>
             <div class="stat-details">
               <strong>Intakes</strong>
-              <span>Jan, May, Sept</span>
+              <span>Jan, March, Aug</span>
             </div>
           </div>
+
           <div class="stat-row">
             <div class="icon-box"><i class="fas fa-globe-asia"></i></div>
             <div class="stat-details">
-              <strong>International</strong>
-              <span>Yes, Accepted</span>
+              <strong>Ranking</strong>
+              <span>Top 300 Global (QS)</span>
             </div>
           </div>
+
           <div class="stat-row">
             <div class="icon-box"><i class="fas fa-home"></i></div>
             <div class="stat-details">
-              <strong>Housing</strong>
-              <span>On & Off Campus</span>
+              <strong>U Residence</strong>
+              <span>On-Campus Hostel</span>
             </div>
           </div>
         </div>
@@ -176,6 +207,7 @@
         <div class="info-card glass-card" data-aos="fade-left" data-aos-delay="400">
           <h3 class="card-title">Interested?</h3>
           <p class="small-text">Get more details or speak to a counselor.</p>
+          
           <div class="action-buttons">
             <a href="../Fees_Chart/taylors-fees.html" class="btn-action secondary">
               <i class="fas fa-file-invoice-dollar"></i> View Fees
@@ -185,9 +217,10 @@
             </a>
           </div>
         </div>
+
       </div>
     </div>
-  </div>
+</div>
 
   <div id="lightbox" class="lightbox">
     <span class="close-lightbox">×</span>
@@ -195,6 +228,7 @@
   </div>
 
   <div id="global-footer-placeholder"></div> 
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../assets/js/university-details.js"></script>
   <script src="../assets/js/footer.js"></script>

@@ -1,0 +1,447 @@
+{
+"id": "apu",
+"title": "Asia Pacific University (APU)",
+"theme": {
+"theme_color": "#003087",
+"theme_dark": "#001a4d",
+"theme_accent": "#fbbc05",
+"theme_light": "#e6efff"
+},
+"logo": "../assets/images/universities/apu/apu_gallery_1.png",
+"categories": [
+{
+"category_name": "FOUNDATION (PRE-U) PROGRAMMES",
+"table": {
+"headers": [
+"No",
+"Programme",
+"FULL PAYMENT",
+"SEMESTER 1",
+"SEMESTER 2 & 3"
+],
+"rows": [
+[
+"1",
+"APU Foundation Programme - Computing & Technology Pathway / - Business, Finance & Social Sciences Pathway / - Architecture & Design Pathway",
+"RM 27,900 (USD 6,490)*",
+"RM 15,300 (USD 3,560)*",
+"RM 6,900 (USD 1,605)* x 2 semesters"
+],
+[
+"2",
+"APU Foundation Programme - Engineering Pathway",
+"RM 28,500 (USD 6,630)*",
+"RM 15,300 (USD 3,560)*",
+"RM 7,200 (USD 1,675)* x 2 semesters"
+]
+]
+},
+"remarks": "Initial Fees (International Students):\n- Application & Processing Fees (STAGE 1): RM 2,650 (approx. USD 620)\n- Application & Processing Fees (STAGE 2): RM 1,500 (approx. USD 350)\n- International Student Registration & Administrative Fees: RM 5,000 (approx. USD 1,165)\n- Library Deposit (refundable): RM 500 (approx. USD 120)\n- Engineering Laboratory Deposit (only for Engineering students - refundable): RM 500 (approx. USD 120)\n- Personal Bond: RM 1,000 (approx. USD 235)\n\nNote: Fees stated include Course Fee and Library Fee for the duration of the course. All fees are payable in Ringgit Malaysia (RM). Exchange rate of USD 1 = RM 4.30. Annual Student Visa renewal costs between RM 930 to RM 1,260.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "DIPLOMA PROGRAMMES",
+"table": {
+"headers": [
+"No",
+"Programme",
+"FULL PAYMENT",
+"YEARLY PAYMENT",
+"SEMESTER 1",
+"SEMESTER 2, 3, 4 & 5"
+],
+"rows": [
+[
+"1",
+"Diploma in Information & Communication Technology / Diploma in Information & Communication Technology with a specialism in: - Software Engineering - Data Informatics - Interactive Technology / Diploma in Business Administration / Diploma in Accounting / Diploma in Business Information Technology / Diploma in International Studies / Diploma in Design and Media",
+"RM 52,600 (USD 12,235)*",
+"RM 27,100 (USD 6,305)* x 2 years",
+"RM 15,300 (USD 3,560)*",
+"RM 10,050 (USD 2,340)* x 4 semesters"
+],
+[
+"2",
+"Diploma in Mechatronic Engineering",
+"RM 52,600 (USD 12,235)*",
+"RM 27,100 (USD 6,305)* x 2 years",
+"RM 15,300 (USD 3,560)*",
+"RM 10,050 (USD 2,340)* x 4 payments"
+]
+]
+},
+"remarks": "Initial Fees (International Students):\n- Application & Processing Fees (STAGE 1): RM 2,650 (approx. USD 620)\n- Application & Processing Fees (STAGE 2): RM 1,500 (approx. USD 350)\n- International Student Registration & Administrative Fees: RM 5,000 (approx. USD 1,165)\n- Library Deposit (refundable): RM 500 (approx. USD 120)\n- Engineering Laboratory Deposit (only for Engineering students - refundable): RM 500 (approx. USD 120)\n- Personal Bond: RM 1,000 (approx. USD 235)\n\nNote: Fees stated include Course Fee and Library Fee for the duration of the course. Exchange rate of USD 1 = RM 4.30.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "APIIT CERTIFICATE PROGRAMMES",
+"table": {
+"headers": [
+"No",
+"Programme",
+"FULL PAYMENT",
+"SEMESTER 1",
+"SEMESTER 2 & 3"
+],
+"rows": [
+[
+"1",
+"Certificate in Administrative Skills / Certificate in Information & Communication Technology",
+"RM 21,200 (USD 4,930)*",
+"RM 12,300 (USD 2,860)*",
+"RM 4,900 (USD 1,140)* x 2 payments"
+]
+]
+},
+"remarks": "Initial Fees (International Students):\n- Application & Processing Fees (STAGE 1): RM 2,650 (approx. USD 620)\n- Application & Processing Fees (STAGE 2): RM 1,500 (approx. USD 350)\n- International Student Registration & Administrative Fees: RM 5,000 (approx. USD 1,165)\n- Library Deposit (refundable): RM 500 (approx. USD 120)\n- Personal Bond: RM 1,000 (approx. USD 235)\n\nNote: Fees stated include Course Fee and Library Fee for the duration of the course.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "UNDERGRADUATE DEGREE PROGRAMMES (COMPUTING, BUSINESS, MEDIA, PSYCHOLOGY, ETC.)",
+"table": {
+"headers": [
+"No",
+"Level",
+"FULL PAYMENT",
+"SEMESTER 1",
+"SEMESTER 2"
+],
+"rows": [
+[
+"1",
+"Degree Level 1",
+"RM 33,600 (USD 7,815)*",
+"RM 17,500 (USD 4,070)*",
+"RM 17,500 (USD 4,070)*"
+],
+[
+"2",
+"Degree Level 2",
+"RM 34,800 (USD 8,095)*",
+"RM 18,200 (USD 4,235)*",
+"RM 18,200 (USD 4,235)*"
+],
+[
+"3",
+"Degree Level 3",
+"RM 36,200 (USD 8,420)*",
+"RM 18,900 (USD 4,395)*",
+"RM 18,900 (USD 4,395)*"
+]
+]
+},
+"remarks": "Programmes: COMPUTING & TECHNOLOGY, INTERACTIVE MEDIA AND IMMERSIVE TECHNOLOGY, VR/AR, COMPUTER GAMES DEVELOPMENT, BUSINESS MANAGEMENT, DIGITAL MARKETING, HUMAN RESOURCE MANAGEMENT, TOURISM & HOSPITALITY, ACCOUNTING & FINANCE, ACCTECH, FORENSIC ACCOUNTING, ACTUARIAL STUDIES, BANKING & FINANCE, FINTECH, INVESTMENT ANALYTICS, INTERNATIONAL RELATIONS, MEDIA & COMMUNICATION, PSYCHOLOGY.\n\nInitial Fees (International Students):\n- Application & Processing Fees (STAGE 1): RM 2,650 (approx. USD 620)\n- Application & Processing Fees (STAGE 2): RM 1,500 (approx. USD 350)\n- International Student Registration & Administrative Fees: RM 5,000 (approx. USD 1,165)\n- Library Deposit: RM 500 (approx. USD 120)\n- Personal Bond: RM 1,000 (approx. USD 235)\n\nOptional Fees:\n- APU-DMU Dual Degree Scheme: Additional Fee of GBP 425 per level.\n- DMI Membership: EURO 220.\n- CMI Membership: GBP 160.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "UNDERGRADUATE DEGREE PROGRAMMES (ARCHITECTURE, DESIGN, ANIMATION)",
+"table": {
+"headers": [
+"No",
+"Level",
+"FULL PAYMENT",
+"SEMESTER 1",
+"SEMESTER 2"
+],
+"rows": [
+[
+"1",
+"Degree Level 1",
+"RM 33,600 (USD 7,815)*",
+"RM 17,500 (USD 4,070)*",
+"RM 17,500 (USD 4,070)*"
+],
+[
+"2",
+"Degree Level 2",
+"RM 34,800 (USD 8,095)*",
+"RM 18,200 (USD 4,235)*",
+"RM 18,200 (USD 4,235)*"
+],
+[
+"3",
+"Degree Level 3",
+"RM 36,200 (USD 8,420)*",
+"RM 18,900 (USD 4,395)*",
+"RM 18,900 (USD 4,395)*"
+]
+]
+},
+"remarks": "Programmes: ARCHITECTURE, INDUSTRIAL DESIGN, VISUALS EFFECTS, ANIMATION, DIGITAL ADVERTISING.\n\nInitial Fees (International Students):\n- Application & Processing Fees (STAGE 1): RM 2,650 (approx. USD 620)\n- Application & Processing Fees (STAGE 2): RM 1,500 (approx. USD 350)\n- International Student Registration & Administrative Fees: RM 5,000 (approx. USD 1,165)\n- Library Deposit: RM 500 (approx. USD 120)\n- Personal Bond: RM 1,000 (approx. USD 235)\n\nOptional Fees:\n- APU-DMU Dual Degree Scheme: Additional Fee of GBP 425 per level.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "UNDERGRADUATE DEGREE PROGRAMMES (ENGINEERING)",
+"table": {
+"headers": [
+"No",
+"Level",
+"FULL PAYMENT",
+"SEMESTER 1",
+"SEMESTER 2"
+],
+"rows": [
+[
+"1",
+"Degree Level 1",
+"RM 31,600 (USD 7,350)*",
+"RM 16,500 (USD 3,840)*",
+"RM 16,500 (USD 3,840)*"
+],
+[
+"2",
+"Degree Level 2",
+"RM 32,600 (USD 7,580)*",
+"RM 17,000 (USD 3,955)*",
+"RM 17,000 (USD 3,955)*"
+],
+[
+"3",
+"Degree Level 3",
+"RM 33,800 (USD 7,860)*",
+"RM 17,600 (USD 4,095)*",
+"RM 17,600 (USD 4,095)*"
+],
+[
+"4",
+"Degree Level 4",
+"RM 35,200 (USD 8,190)*",
+"RM 18,400 (USD 4,280)*",
+"RM 18,400 (USD 4,280)*"
+]
+]
+},
+"remarks": "Programmes: MECHATRONIC ENGINEERING, MECHANICAL ENGINEERING, COMPUTER ENGINEERING, ELECTRICAL & ELECTRONIC ENGINEERING, PETROLEUM ENGINEERING.\n\nInitial Fees (International Students):\n- Application & Processing Fees (STAGE 1): RM 2,650 (approx. USD 620)\n- Application & Processing Fees (STAGE 2): RM 1,500 (approx. USD 350)\n- International Student Registration & Administrative Fees: RM 5,000 (approx. USD 1,165)\n- Library Deposit: RM 500 (approx. USD 120)\n- Engineering Laboratory Deposit: RM 500 (approx. USD 120)\n- Personal Bond: RM 1,000 (approx. USD 235)\n\nOptional Fees:\n- APU-DMU Dual Degree Scheme: Additional Fee of GBP 425 per level.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "APU MASTERS DEGREE PROGRAMMES",
+"table": {
+"headers": [
+"No",
+"Programme",
+"FULL PAYMENT",
+"SEMESTER 1",
+"SEMESTER 2",
+"SEMESTER 3"
+],
+"rows": [
+[
+"1",
+"Master of Technology Management / MSc in Information Technology Management / Master of Science in Digital Transformation / MSc in Software Engineering / Master of Project Management / Master of Business Administration / Master of Business Administration with a specialism in: - Digital Leadership - Business Analytics - Artificial Intelligence (MBAI) - Oil and Gas Management - Supply Chain Management - Hospitality and Tourism / Master of Science in International Business Communications / Master of Science in Digital Marketing / Master of Finance / Master of Finance with a specialism in FinTech / Master of Accounting / Master of Accounting in Forensic Analysis / Master of Arts in Design Innovation Management / Master of Science in Actuarial Science",
+"RM 38,800 (USD 9,025)*",
+"RM 13,480 (USD 3,135)*",
+"RM 13,480 (USD 3,135)*",
+"RM 13,480 (USD 3,135)*"
+],
+[
+"2",
+"Master of Science in Artificial Intelligence / Master of Science in Cyber Security",
+"RM 40,800 (USD 9,490)*",
+"RM 14,180 (USD 3,300)*",
+"RM 14,180 (USD 3,300)*",
+"RM 14,180 (USD 3,300)*"
+],
+[
+"3",
+"MSc in Data Science and Business Analytics",
+"RM 44,800 (USD 10,420)*",
+"RM 15,570 (USD 3,620)*",
+"RM 15,570 (USD 3,620)*",
+"RM 15,570 (USD 3,620)*"
+],
+[
+"4",
+"Master of Education in Learning Design and Technology",
+"RM 34,000 (USD 7,905)*",
+"RM 11,810 (USD 2,745)*",
+"RM 11,810 (USD 2,745)*",
+"RM 11,810 (USD 2,745)*"
+]
+]
+},
+"remarks": "Initial Fees (International Students):\n- Application & Processing Fees (STAGE 1): RM 3,350 (approx. USD 780)\n- Application & Processing Fees (STAGE 2): RM 1,500 (approx. USD 350)\n- International Student Registration & Administrative Fees: RM 5,000 (approx. USD 1,160)\n- Library Deposit (refundable): RM 500 (approx. USD 120)\n- Personal Bond: RM 1,000 (approx. USD 235)\n\nOptional Fees:\n- APU-DMU Dual Degree Scheme: Additional Fee of GBP 500.\n- CMI Membership: GBP 220.\n\nNote: Excludes the 6% Sales and Service Tax (SST) imposed by the Malaysian Government.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "APU MASTERS DEGREE PROGRAMMES (Awarded by APU)",
+"table": {
+"headers": [
+"No",
+"Programme",
+"FULL PAYMENT",
+"INSTALLMENT PAYMENTS"
+],
+"rows": [
+[
+"1",
+"Master of Philosophy in Engineering / Master of Philosophy in Management / Master of Science in Computing",
+"RM 29,800 (USD 6,930)*",
+"RM 10,360 x 3 payments (USD 2,410)*"
+]
+]
+},
+"remarks": "The MPhil fees covers the full-time duration of up to 2 years. Each additional year will be charged at RM 7,500 (approx. USD 1,745) for full-time. Excludes 6% SST.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "APU PhD PROGRAMMES (Awarded by APU)",
+"table": {
+"headers": [
+"No",
+"Programme",
+"STUDY MODE",
+"FULL PAYMENT",
+"YEARLY PAYMENTS",
+"ADDITIONAL YEAR FEES"
+],
+"rows": [
+[
+"1",
+"Doctor of Philosophy: • Computing • Technology • Management • Finance • Engineering",
+"FULL-TIME (3-5 years)",
+"RM 46,800 (USD 10,885)*",
+"RM 24,420 x 2 years (USD 5,680)* or RM 16,450 x 3 years (USD 3,825)*",
+"RM 7,500 (USD 1,745) per year - Applicable from the start of the 4th year onwards from commencement of course."
+]
+]
+},
+"remarks": "The PhD fees covers the full-time duration of up to 3 years. Each additional year will be charged at RM 7,500 (approx. USD 1,745) for full-time. Excludes 6% SST.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "APU DOCTOR OF BUSINESS ADMINISTRATION (DBA) (Awarded by APU)",
+"table": {
+"headers": [
+"No",
+"Programme",
+"STUDY MODE",
+"FULL PAYMENT",
+"YEARLY PAYMENTS",
+"INSTALLMENT PAYMENTS"
+],
+"rows": [
+[
+"1",
+"Doctor of Business Administration (DBA)",
+"FULL-TIME",
+"RM 54,800 (USD 12,745)*",
+"RM 19,200 (USD 4,465)* x 3 years",
+"RM 11,650 (USD 2,710)* x 5 payments"
+]
+]
+},
+"remarks": "The DBA fees covers the full-time duration of up to 3 years. Each additional year will be charged at RM 7,500 (approx. USD 1,745) for full-time. Excludes 6% SST.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "OPEN & DISTANCE LEARNING (ODL) PROGRAMMES - 100% ONLINE (MASTERS)",
+"table": {
+"headers": [
+"No",
+"Programme",
+"FULL PAYMENT / YEARLY PAYMENTS",
+"MODULAR PAYMENTS 1st INSTALLMENT",
+"MODULAR PAYMENTS INSTALLMENTS"
+],
+"rows": [
+[
+"1",
+"Master of Business Administration / MBA with a specialism in: - Digital Leadership - Business Analytics - Artificial Intelligence (MBAI) - Oil and Gas Management - Supply Chain Management) - Hospitality and Tourism)",
+"RM 16,200 (USD 3,770)* x 2 years / RM 31,000 (USD 7,210)*",
+"RM 5,500 (USD 1,280)*",
+"RM 3,530 (USD 820)* (2nd-9th INSTALLMENTS)"
+],
+[
+"2",
+"Master of Science in Artificial Intelligence / Master of Science in Cyber Security",
+"RM 18,050 (USD 4,200)* x 2 years / RM 34,500 (USD 8,025)* FULL PAYMENT",
+"RM 5,500 (USD 1,280)*",
+"RM 4,010 (USD 935)* (2nd-10th INSTALLMENTS)"
+],
+[
+"3",
+"Master of Science in Data Science and Business Analytics",
+"RM 19,250 (USD 4,475)* x 2 years / RM 36,800 (USD 8,560)* FULL PAYMENT",
+"RM 5,500 (USD 1,280)*",
+"RM 3,840 (USD 895)* (2nd-8th INSTALLMENTS)"
+],
+[
+"4",
+"Master of Education in Learning Design and Technology",
+"RM 14,530 (USD 3,380)* x 2 years / RM 27,800 (USD 6,465)* FULL PAYMENT",
+"RM 5,500 (USD 1,280)*",
+"RM 3,540 (USD 825)* (2nd-8th INSTALLMENTS)"
+],
+[
+"5",
+"Postgraduate Diploma of Education in Learning Design and Technology",
+"RM 8,990 (USD 2,090)* x 2 years / RM 17,200 (USD 4,000)* FULL PAYMENT",
+"RM 3,800 (USD 885)*",
+"RM 2,490 (USD 580)* (2nd-7th INSTALLMENTS)"
+],
+[
+"6",
+"Postgraduate Certificate of Education in Learning Design and Technology",
+"RM 8,800 (USD 2045)* FULL PAYMENT",
+"RM 3,800 (USD 885)*",
+"RM 1,930 (USD 450)* (2nd-4th INSTALLMENTS)"
+]
+]
+},
+"remarks": "Enrolment Fees for Online - Open & Distance Learning (ODL) Mode:\n- A one-off fee of RM 2,580 (approx. USD 600) is payable upon enrolment to APU for all ODL programmes. This fee includes Processing Fees by Education Malaysia Global Services (EMGS).\n- Excludes 6% SST.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "OPEN & DISTANCE LEARNING (ODL) PROGRAMMES - 100% ONLINE (PhD)",
+"table": {
+"headers": [
+"No",
+"Programme",
+"STUDY MODE",
+"FULL PAYMENT",
+"YEARLY PAYMENTS",
+"ADDITIONAL YEAR FEES"
+],
+"rows": [
+[
+"1",
+"Doctor of Philosophy (ODL): • Computing • Technology • Management",
+"FULL-TIME (3-5 years)",
+"RM 38,500 (USD 8,955)*",
+"RM 13,500 x 3 years (USD 3,140)*",
+"RM 5,800 (USD 1,350)* per year - Applicable from the start of the 4th year onwards from commencement of course."
+],
+[
+"2",
+"Doctor of Philosophy (ODL): • Computing • Technology • Management",
+"PART-TIME (4-6 years)",
+"RM 38,500 (USD 8,955)*",
+"RM 10,250 x 4 years (USD 2,385)*",
+"RM 4,800 (USD 1,115)* per year - Applicable from the start of the 5th year onwards from commencement of course."
+]
+]
+},
+"remarks": "Enrolment Fees for Online - Open & Distance Learning (ODL) Mode:\n- A one-off fee of RM 2,580 (approx. USD 600) is payable upon enrolment to APU for all ODL programmes. This fee includes Processing Fees by Education Malaysia Global Services (EMGS).\n- The PhD (ODL) fees covers the full-time duration of up to 3 years or part-time duration of up to 4 years. Excludes 6% SST.",
+"pdf_link": "apu-fees"
+},
+{
+"category_name": "INTENSIVE ENGLISH LANGUAGE PROGRAMMES",
+"table": {
+"headers": [
+"No",
+"Programme",
+"FULL PAYMENT"
+],
+"rows": [
+[
+"1",
+"APU Intensive English Language Programmes (Each Level - 4 Weeks) Note: This fee includes English Preparation book",
+"RM 2,650 (USD 620)*"
+]
+]
+},
+"remarks": "Included English Preparation book.",
+"pdf_link": "apu-fees"
+}
+]
+}

@@ -6,30 +6,12 @@
   <title>UCSI University - International Fee Structure</title>
   <link rel="stylesheet" href="../assets/css/fees.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    :root { --uni-primary: #B71C1C; --uni-dark: #7f0000; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f8f9fa; }
-    .coming-soon-box {
-      max-width: 600px; margin: 80px auto; text-align: center;
-      background: white; border-radius: 16px; padding: 60px 40px;
-      box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-      border-top: 6px solid #B71C1C;
-    }
-    .coming-soon-box i { font-size: 3.5rem; color: #B71C1C; margin-bottom: 20px; display: block; }
-    .coming-soon-box h2 { color: #B71C1C; margin-bottom: 15px; font-size: 1.8rem; }
-    .coming-soon-box p { color: #555; font-size: 1rem; line-height: 1.7; }
-    .btn-back-uni {
-      display: inline-block; margin-top: 30px; padding: 12px 28px;
-      background: #B71C1C; color: white; border-radius: 8px;
-      text-decoration: none; font-weight: 600; transition: opacity 0.2s;
-    }
-    .btn-back-uni:hover { opacity: 0.85; }
-  </style>
 </head>
 <body data-uni-id="ucsi">
 
 <header>
   <div class="header-content">
+    <div class="logo-container"></div>
     <div class="header-text"></div>
     <div class="logo-container">
       <svg class="living-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,22 +25,31 @@
 </header>
 
 <div class="container">
-  <div class="coming-soon-box">
-    <i class="fas fa-file-invoice-dollar"></i>
-    <h2>UCSI University</h2>
-    <h3 style="color:#333; margin-bottom:15px;">Fee Structure — Coming Soon</h3>
-    <p>We are currently preparing the detailed fee structure for UCSI University. Please check back soon or contact our team for the latest fee information.</p>
-    <a href="https://wa.me/601119359497" target="_blank" class="btn-back-uni" style="background: #25D366;">
-      <i class="fab fa-whatsapp"></i> Ask on WhatsApp
-    </a>
-    <br><br>
-    <a href="../Universities/ucsi-details.html" class="btn-back-uni">
-      <i class="fas fa-arrow-left"></i> Back to University Details
+  <div class="search-container">
+    <div class="search-box-wrapper">
+      <input type="text" id="searchInput" placeholder="Search for a program (e.g. Engineering, Business)..." />
+      <button class="search-icon-btn">&#128269;</button>
+    </div>
+  </div>
+
+  <div id="dynamicFeesContainer">
+    <div style="padding: 40px; text-align: center; color: #64748b;">
+      <i class="fas fa-spinner fa-spin" style="font-size: 2rem; margin-bottom: 10px;"></i>
+      <p>Loading fee structures...</p>
+    </div>
+  </div>
+
+  <div class="view-details-btn-container" style="margin-top: 50px;">
+    <a href="../Universities/ucsi-details.html" class="view-details-btn">
+      <i class="fas fa-arrow-left"></i>
+      Check University Details
     </a>
   </div>
 </div>
 
 <div id="global-footer-placeholder"></div>
+
 <script src="../assets/js/footer.js"></script>
+<script src="../assets/js/fees.js"></script>
 </body>
 </html>

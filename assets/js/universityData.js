@@ -1,4 +1,4 @@
-const UNIVERSITY_META = {
+﻿const UNIVERSITY_META = {
     "Taylor's University": {
         slug: "taylors",
         name: "Taylor's University",
@@ -343,7 +343,7 @@ const UNIVERSITY_META = {
     "Asia Metropolitan University (AMU)": {
         slug: "amu",
         name: "Asia Metropolitan University",
-        img: "amu/amu_gallery_1.jpg",
+        img: "amu/amu_gallery_3.png",
         badge: "Business & Tech",
         loc: "Kuala Lumpur / Johor Bahru",
         type: "Private",
@@ -363,7 +363,7 @@ const UNIVERSITY_META = {
     "Asia Pacific University of Technology & Innovation (APU)": {
         slug: "apu",
         name: "Asia Pacific University (APU)",
-        img: "apu/apu_campus_1.webp",
+        img: "apu/APU-campus.jpg",
         badge: "Technology",
         loc: "Bukit Jalil, KL",
         type: "Private",
@@ -403,7 +403,7 @@ const UNIVERSITY_META = {
     "ICMS": {
         slug: "icms",
         name: "ICMS",
-        img: "icms/icms_gallery_1.jpg",
+        img: "icms/icms_Campus.jfif",
         badge: "Management",
         loc: "Kuala Lumpur",
         type: "Private",
@@ -503,7 +503,7 @@ const UNIVERSITY_META = {
     "International University of Malaya-Wales (IUMW)": {
         slug: "umw",
         name: "University Malaya-Wales (IUMW)",
-        img: "umw/umw_gallery_2.jpg",
+        img: "umw/umw_campus_1.avif",
         badge: "International",
         loc: "Kuala Lumpur",
         type: "Private",
@@ -523,7 +523,7 @@ const UNIVERSITY_META = {
     "Universiti Kuala Lumpur (UniKL)": {
         slug: "unikl",
         name: "Universiti Kuala Lumpur (UniKL)",
-        img: "unikl/unikl_gallery_1.jpg",
+        img: "unikl/unikl_campus_1.jfif",
         badge: "Applied Technology",
         loc: "Kuala Lumpur",
         type: "Private",
@@ -545,3 +545,4 @@ const UNIVERSITY_META = {
 if (typeof window !== 'undefined') {
     window.UNIVERSITY_META = UNIVERSITY_META;
 }
+

@@ -1,11 +1,13 @@
-﻿Options -Indexes
+﻿Options -Indexes -MultiViews
 RewriteEngine On
+RewriteBase /
 
-# 1. Redirect externally requested .html URLs to extensionless URLs
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html[\ ?\ HTTP/] [NC]
-RewriteRule ^(.*)\.html$ / [R=301,L]
+# 1. Remove .html from visible URL (redirect to extensionless)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
 
-# 2. Internally route extensionless requests to the .html files
+# 2. Add .html internally to serve the file
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ .html [L]
+RewriteRule ^(.*)$ $1.html [L]

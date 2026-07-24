@@ -320,7 +320,7 @@ const UNIVERSITY_META = {
         tags: ['Medical Focus', 'Islamic Finance'],
         desc: "Strong emphasis on Health Sciences, Nursing, and Pharmacy."
     }, */
-    "Infrastructure University Kuala Lumpur (IUKL)": {
+    /* "Infrastructure University Kuala Lumpur (IUKL)": {
         slug: "iukl",
         name: "IUKL",
         img: "default.jpg",
@@ -339,7 +339,7 @@ const UNIVERSITY_META = {
         locationCode: 'any',
         tags: ['Infrastructure', 'Engineering Hub'],
         desc: "Malaysia's first infrastructure university, excellent for Civil Engineering."
-    }
+    } */
 };
 
 if (typeof window !== 'undefined') {

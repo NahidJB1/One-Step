@@ -214,3 +214,41 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     /* --- NEW UPDATE END --- */
 });
+// --- Image Lightbox Logic ---
+document.addEventListener("DOMContentLoaded", function() {
+    if (document.querySelectorAll('.gallery-item').length > 0) {
+        const lightboxHtml = 
+            <div class="lightbox-overlay" id="gallery-lightbox">
+                <div class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></div>
+                <div class="lightbox-content">
+                    <img src="" alt="Gallery Image" class="lightbox-img" id="lightbox-img">
+                </div>
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        ;
+        document.body.insertAdjacentHTML('beforeend', lightboxHtml);
+
+        const overlay = document.getElementById('gallery-lightbox');
+        const imgEl = document.getElementById('lightbox-img');
+        const captionEl = document.getElementById('lightbox-caption');
+        const closeBtn = document.getElementById('lightbox-close');
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const img = this.querySelector('img');
+                if (img) {
+                    imgEl.src = img.src;
+                    captionEl.textContent = img.getAttribute('data-caption') || img.alt;
+                    overlay.classList.add('active');
+                }
+            });
+        });
+
+        closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay || e.target.classList.contains('lightbox-content')) {
+                overlay.classList.remove('active');
+            }
+        });
+    }
+});

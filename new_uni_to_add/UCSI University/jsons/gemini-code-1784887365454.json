@@ -1,0 +1,847 @@
+[
+  {
+    "name": "UCSI University",
+    "campuses": [
+      "Kuala Lumpur",
+      "Springhill",
+      "Kuching"
+    ],
+    "programs": [
+      {
+        "name": "Foundation in Science",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Foundation in Science (Springhill Campus)",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Foundation in Arts",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Foundation in Arts (Springhill Campus)",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Foundation Studies (Arts) (Kuching Campus)",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Foundation Studies (Science) (Kuching Campus)",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Foundation in Music",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Diploma of Engineering Technology (Industrial Design)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Architectural Studies",
+        "level": "Diploma",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Diploma in Interior Architecture",
+        "level": "Diploma",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Diploma in Management",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Logistics Management",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Finance",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Accounting (Kuching Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Business Management (Kuching Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in International Business (Kuching Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Aquaculture with Entrepreneurship",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Pharmacy",
+        "level": "Diploma",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Diploma in Cosmetic Science",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Packaging Science and Technology",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Opticianry",
+        "level": "Diploma",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Diploma in Nursing (Springhill Campus)",
+        "level": "Diploma",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Advanced Diploma in Midwifery (Springhill Campus)",
+        "level": "Diploma",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Diploma in Information Technology (TVET Module)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Information Technology",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Hotel Management",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Culinary Arts",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Pastry and Bakery",
+        "level": "Diploma",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Diploma in Culinary Arts (Springhill Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Pastry and Bakery (Springhill Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Hotel Management (Kuching Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Culinary Arts (Kuching Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Leisure Management (Kuching Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Event Management (Kuching Campus)",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in 3D Animation Design",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Fashion Design",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Graphic Design",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Music Performance",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Bachelor of Chemical Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Civil Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Electrical and Electronic Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Computer Engineering (Artificial Intelligence) with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Energy Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Mechanical Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Mechatronic Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Petroleum Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Digital Mechanical Technology with Honours",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Microelectronic Technology with Honours",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Architecture",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Interior Architecture",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Quantity Surveying (Hons)",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "BSc (Hons) Finance and Investment",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Financial Economics (Hons)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Accounting",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Accounting and Finance",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Branding and Advertising",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Business Administration",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Logistics Management",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Supply Chain Operations Management",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Marketing",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Arts (Honours) Entrepreneurship",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of International and Sustainable Business (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Financial Technology (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BComm (Hons) Accounting and Finance (Kuching Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BComm (Hons) Marketing (Kuching Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA in Business Management (Honours) (Kuching Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of International Business (Honours) (Kuching Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Actuarial Science",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Actuarial Science and Finance",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Science (Honours) Actuarial Science with Data Analytics",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Biotechnology",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Food Science with Nutrition",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Nutrition with Wellness",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Aquatic Science",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BSc (Hons) Forensic Science",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "BSc (Hons) Applied Microbiology",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Pharmacy (Hons)",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Bachelor of Formulation Science (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Optometry (Hons)",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "Doctor of Medicine (Springhill Campus)",
+        "level": "Degree",
+        "duration": "5 Years"
+      },
+      {
+        "name": "Bachelor of Nursing (Hons) (Springhill Campus)",
+        "level": "Degree",
+        "duration": "4 Years"
+      },
+      {
+        "name": "BSc (Hons) Business Information Systems",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Hons) Mobile Computing and Networking",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Computer Science in Data Science with Honours",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Computer Science in Cyber Security with Honours",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Computer Science in Artificial Intelligence with Honours",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Honours) (TVET Module)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Psychology",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) English Language and Communication",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Mass Communication",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Early Childhood Education (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Arts (Honours) in Culinary Management",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Hospitality Administration (Dual Award with HTMI)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Arts (Honours) in Global Sustainable Tourism",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Arts (Honours) in Hospitality Management (Springhill Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Hospitality Management (Dual Award with HTMI) (Kuching Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Arts (Honours) in Culinary Management (Kuching Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Event & Tourism Management (Dual Award with HTMI) (Kuching Campus)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BCA (Hons) 3D Animation Design",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Fashion Design with Marketing",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Graphic Design",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Multimedia Design",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BA (Hons) Game Design",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BMus (Hons) Classical Music",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "BMus (Hons) Contemporary Music",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Master of Philosophy in Engineering (M.Phil)",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master in Engineering (Smart Engineering Management)",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Petroleum Engineering",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Architecture",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Philosophy in Built Environment",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master In Logistics and Supply Chain Management",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Business Administration (Blue Ocean Strategy) (Kuching Campus)",
+        "level": "Master",
+        "duration": "1.5 Years"
+      },
+      {
+        "name": "Master In Business Administration (MBA)",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Philosophy (Business and Management)",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master in Business Administration (MBA) ODL Mode",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Science (Actuarial Management) Structure B",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science (Actuarial Management) Structure C",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science in Mathematical Sciences",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Science (Biotechnology)",
+        "level": "Master",
+        "duration": "1.5 Years"
+      },
+      {
+        "name": "Master of Science (Biotechnology with Business Management)",
+        "level": "Master",
+        "duration": "1.5 Years"
+      },
+      {
+        "name": "Master of Science (Applied Sciences) by Research",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Science (Food Science with Business Management)",
+        "level": "Master",
+        "duration": "1.5 Years"
+      },
+      {
+        "name": "Master of Science in Nutrition with Management",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science in Pharmaceutical Chemistry",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science in Pharmaceutical Technology",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science (Pharmaceutical Sciences)",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Clinical Pharmacy Practice",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science (Healthy Aging, Medical Aesthetic & Regenerative Medicine)",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Science in Technopreneurship",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science in Computer Science",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Science in Digital Technology and Analytics",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Child Psychology",
+        "level": "Master",
+        "duration": "1.5 Years"
+      },
+      {
+        "name": "Master of Clinical Psychology",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Education",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master in Strategic Communication",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Postgraduate Diploma in Tertiary Teaching (PGDTT)",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Postgraduate Certificate in Education (PGCE)",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science in Gastronomy",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master in International Hospitality Management",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master in International Hospitality Management (Kuching Campus)",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Art & Design",
+        "level": "Master",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Master of Art, Design and Creative Media",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Music (Performance Studies)",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master in Science Diplomacy",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master in Environmental, Social and Governance Leadership",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Master of Science Policy and Communication",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Doctor of Philosophy in Engineering (PhD)",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Engineering) by Prior Publication",
+        "level": "PhD",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Industrial PhD In Engineering",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Architecture",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Business and Management)",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor Of Business Administration (DBA)",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Mathematical Sciences",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Science)",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Pharmaceutical Sciences)",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Medical Sciences)",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Computer Science",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Psychology",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "PhD (Education)",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Hospitality and Tourism",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Art, Design and Creative Media",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Music Performance",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Music",
+        "level": "PhD",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Graduate Certificate in Aesthetic Assistant with Wellness",
+        "level": "Certificate",
+        "duration": "1 Year"
+      },
+      {
+        "name": "English for Tertiary Education",
+        "level": "Certificate",
+        "duration": "Up to 10 Months"
+      },
+      {
+        "name": "English Enrichment Programme (Kuching Campus)",
+        "level": "Certificate",
+        "duration": "Up to 10 Months"
+      }
+    ]
+  }
+]

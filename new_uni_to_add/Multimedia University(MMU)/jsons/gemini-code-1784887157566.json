@@ -1,0 +1,386 @@
+[
+  {
+    "name": "Multimedia University",
+    "campuses": [
+      "Cyberjaya",
+      "Melaka"
+    ],
+    "programs": [
+      {
+        "name": "Foundation in Management",
+        "level": "Foundation",
+        "duration": "1 year"
+      },
+      {
+        "name": "Foundation in Business",
+        "level": "Foundation",
+        "duration": "1 year"
+      },
+      {
+        "name": "Foundation in Engineering",
+        "level": "Foundation",
+        "duration": "1 year"
+      },
+      {
+        "name": "Foundation in Computing",
+        "level": "Foundation",
+        "duration": "1 year"
+      },
+      {
+        "name": "Foundation in Science and Technology",
+        "level": "Foundation",
+        "duration": "1 year"
+      },
+      {
+        "name": "Foundation in Creative Multimedia",
+        "level": "Foundation",
+        "duration": "1 year"
+      },
+      {
+        "name": "Foundation in Communication",
+        "level": "Foundation",
+        "duration": "1 year"
+      },
+      {
+        "name": "Diploma in Management",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Business Administration",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Finance",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Accounting",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Digital Business",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Electronic Engineering",
+        "level": "Diploma",
+        "duration": "2 years 9 months"
+      },
+      {
+        "name": "Diploma in Mechanical Engineering",
+        "level": "Diploma",
+        "duration": "2 years 9 months"
+      },
+      {
+        "name": "Diploma in Information Technology",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in 3D Modelling and Animation",
+        "level": "Diploma",
+        "duration": "2 years 3 months"
+      },
+      {
+        "name": "Diploma in Creative Multimedia",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Creative Audio",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Cinematography",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Diploma in Applied Communication",
+        "level": "Diploma",
+        "duration": "2 years"
+      },
+      {
+        "name": "Bachelor of Finance (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Marketing (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Analytical Economics (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Business Management (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Accounting (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Business Administration (Hons.) (Banking and Finance)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Business Administration (Hons.) (Human Resource Management)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Business Administration (Hons.) (International Business)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Business Administration (Hons.) (Marketing Management)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Business Administration (Hons.) Digital Business Management",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Digital Enterprise Management (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Engineering (Hons.) Electrical",
+        "level": "Degree",
+        "duration": "4 years"
+      },
+      {
+        "name": "Bachelor of Engineering (Hons.) Electronics",
+        "level": "Degree",
+        "duration": "4 years"
+      },
+      {
+        "name": "Bachelor of Engineering (Hons.) Electronics Majoring in Telecommunications",
+        "level": "Degree",
+        "duration": "4 years"
+      },
+      {
+        "name": "Bachelor of Engineering (Hons.) Electronics Majoring in Computer",
+        "level": "Degree",
+        "duration": "4 years"
+      },
+      {
+        "name": "Bachelor of Electronics Engineering (Robotics & Automation) with Honours",
+        "level": "Degree",
+        "duration": "4 years"
+      },
+      {
+        "name": "Bachelor of Mechanical Engineering with Honours",
+        "level": "Degree",
+        "duration": "4 years"
+      },
+      {
+        "name": "Bachelor of Science (Hons.) Intelligent Robotics",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Science (Honours) in Applied Artificial Intelligence",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Hons.) in Software Engineering",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Hons.) in Game Development",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Hons.) in Data Science",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Hons.) Cybersecurity",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Information Technology (Hons.) Information Systems",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Information Technology (Hons.) Data Communication and Networking",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Information Technology (Hons.) Business Intelligence and Analytics",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Hons.) Artificial Intelligence",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Information Technology (Hons.) Security Technology",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Multimedia (Hons.) (Advertising Design)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Multimedia (Hons.) (Animation)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Multimedia (Hons.) (Visual Effects)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Cinematic Arts (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Immersive Media Design (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Communication (Strategic Communication) (Hons.)",
+        "level": "Degree",
+        "duration": "3 years"
+      },
+      {
+        "name": "Bachelor of Management (Hons.) ODL",
+        "level": "Degree",
+        "duration": "5 years"
+      },
+      {
+        "name": "Master of Engineering (Telecommunications)",
+        "level": "Master",
+        "duration": "N/A"
+      },
+      {
+        "name": "Master of Science in Engineering Business Management",
+        "level": "Master",
+        "duration": "N/A"
+      },
+      {
+        "name": "Master of Creative Multimedia",
+        "level": "Master",
+        "duration": "N/A"
+      },
+      {
+        "name": "Master of Business Administration",
+        "level": "Master",
+        "duration": "N/A"
+      },
+      {
+        "name": "Master of Computer Science",
+        "level": "Master",
+        "duration": "N/A"
+      },
+      {
+        "name": "Executive Master of Business Administration",
+        "level": "Master",
+        "duration": "N/A"
+      },
+      {
+        "name": "Master of Information Technology",
+        "level": "Master",
+        "duration": "N/A"
+      },
+      {
+        "name": "Master of Philosophy (Management)",
+        "level": "Master",
+        "duration": "Min 1 Year"
+      },
+      {
+        "name": "Master of Engineering Science",
+        "level": "Master",
+        "duration": "Min 1 Year"
+      },
+      {
+        "name": "Master of Computing by Research",
+        "level": "Master",
+        "duration": "Min 1 Year"
+      },
+      {
+        "name": "Master of Science (Creative Multimedia)",
+        "level": "Master",
+        "duration": "Min 1 Year"
+      },
+      {
+        "name": "Master of Philosophy (Communication)",
+        "level": "Master",
+        "duration": "Min 2 Years"
+      },
+      {
+        "name": "Master of Laws",
+        "level": "Master",
+        "duration": "Min 2 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Engineering)",
+        "level": "PhD",
+        "duration": "Min 2 Years"
+      },
+      {
+        "name": "Doctor of Philosophy in Computing by Research",
+        "level": "PhD",
+        "duration": "Min 2 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Management)",
+        "level": "PhD",
+        "duration": "Min 2 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Creative Multimedia)",
+        "level": "PhD",
+        "duration": "Min 2 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Communication)",
+        "level": "PhD",
+        "duration": "Min 3 Years"
+      },
+      {
+        "name": "Doctor of Philosophy (Laws)",
+        "level": "PhD",
+        "duration": "Min 3 Years"
+      },
+      {
+        "name": "Doctor of Business Administration",
+        "level": "PhD",
+        "duration": "N/A"
+      }
+    ]
+  }
+]

@@ -1,0 +1,290 @@
+{
+  "lincoln": {
+    "id": "lincoln",
+    "title": "Lincoln University College",
+    "theme": {
+      "theme_color": "#1C355E",
+      "theme_dark": "#132542",
+      "theme_accent": "#F4A21C",
+      "theme_light": "#F7F9FC"
+    },
+    "logo": "../assets/images/universities/lincoln/lincoln-logo.png",
+    "categories": [
+      {
+        "category_name": "FOUNDATION PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            ["181", "Foundation in Arts", "1 Year", "RM 18,000"],
+            ["182", "Foundation in Business and Computing", "1.5 Years", "RM 18,000"],
+            ["183", "Foundation in Science", "1 Year", "RM 18,000"],
+            ["184", "Foundation in Science (ODL)", "1 Year", "RM 18,000"],
+            ["185", "Foundation in Arts (ODL)", "1 Year", "RM 18,000"]
+          ]
+        },
+        "remarks": "Miscellaneous Fees: Lab Fee (Per Year) 1100 MYR (If Applicable), Intensive English Program (Per Level) 1750 MYR, Pre requisite Course 2000 MYR. All charges are Inclusive of the 6% SST Service Fee.",
+        "pdf_link": "lincoln-fees"
+      },
+      {
+        "category_name": "DIPLOMA PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            ["19", "Diploma in Pharmacy", "3 Years", "RM 35,000"],
+            ["20", "Diploma in Pharmacy (ODL)", "3 Years", "RM 35,000"],
+            ["33", "Diploma in Nursing", "3 Years", "RM 35,000"],
+            ["57", "Diploma in Medical and Health Sciences", "3 Years", "RM 35,000"],
+            ["58", "Diploma in Traditional Chinese Medicine", "3 Years", "RM 35,000"],
+            ["59", "Diploma in Physiotherapy", "3 Years", "RM 35,000"],
+            ["74", "Diploma in Aeronautical Engineering Technology (Aircraft Maintenance)", "3 Years", "RM 35,000"],
+            ["75", "Diploma in Electrical & Electronic Engineering", "2.5 Years", "RM 35,000"],
+            ["76", "Diploma in Electrical & Electronic Engineering (ODL)", "2.5 Years", "RM 35,000"],
+            ["108", "Diploma in Early Childhood Education", "2.5 Years", "RM 35,000"],
+            ["109", "Diploma in Psychology", "2.5 Years", "RM 35,000"],
+            ["110", "Diploma in Teaching English as a Second Language", "2.5 Years", "RM 35,000"],
+            ["129", "Diploma in Computer Science", "2.5 Years", "RM 35,000"],
+            ["130", "Diploma in Multimedia Applications", "2.5 Years", "RM 35,000"],
+            ["167", "Diploma in Accounting", "2.5 Years", "RM 35,000"],
+            ["168", "Diploma in Accounting (ODL)", "2.5 Years", "RM 35,000"],
+            ["169", "Diploma in Business Administration", "2.5 Years", "RM 35,000"],
+            ["170", "Diploma in Business Administration (ODL)", "2.5 Years", "RM 35,000"],
+            ["178", "Diploma in Culinary Arts", "2 Years", "RM 35,000"],
+            ["179", "Diploma in Hotel Management", "2.5 Years", "RM 35,000"],
+            ["180", "Diploma in Hotel Management (ODL)", "2.5 Years", "RM 35,000"]
+          ]
+        },
+        "remarks": "Miscellaneous Fees: Lab Fee (Per Year) 1100 MYR (If Applicable), Intensive English Program (Per Level) 1750 MYR, Pre requisite Course 2000 MYR. All charges are Inclusive of the 6% SST Service Fee.",
+        "pdf_link": "lincoln-fees"
+      },
+      {
+        "category_name": "BACHELOR PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            ["9", "Doctor of Medicine (MD)", "5 Years", "RM 412,000"],
+            ["10", "Bachelor of Cardiopulmonary and Perfusion Technology (Honours)", "4 Years", "RM 71,000"],
+            ["11", "Bachelor of Medical Imaging (Hons)", "4 Years", "RM 71,000"],
+            ["14", "Doctor of Dental Surgery (DDS)", "5 Years", "RM 412,000"],
+            ["17", "Bachelor of Pharmacy with Honours", "4 Years", "RM 71,000"],
+            ["18", "Bachelor in Cosmetic Science (Honours)", "4 Years", "RM 71,000"],
+            ["30", "Bachelor of Nursing (Public Health) (Honours)", "4 Years", "RM 71,000"],
+            ["31", "Bachelor of Nursing Sciences (Honours) (ODL)", "3 Years", "RM 71,000"],
+            ["32", "Bachelor of Nursing Sciences (Hons)", "4 Years", "RM 71,000"],
+            ["49", "Bachelor of Biomedical Sciences (Honours)", "4 Years", "RM 53,000"],
+            ["50", "Bachelor of Biotechnology (Honours)", "3 Years", "RM 53,000"],
+            ["51", "Bachelor of Homeopathic Medical Science", "4 Years", "RM 53,000"],
+            ["52", "Bachelor of Physiotherapy (Honours)", "4 Years", "RM 53,000"],
+            ["53", "Bachelor of Science in Agriculture (Hons)", "3 Years", "RM 53,000"],
+            ["54", "Bachelor in Nutrition (Honours)", "3.6 Years", "RM 53,000"],
+            ["55", "Bachelor of Science in Sports and Fitness", "3 Years", "RM 53,000"],
+            ["56", "Bachelor of Ayurvedic Medicine", "5 Years", "RM 53,000"],
+            ["69", "Bachelor of Civil Engineering Technology with Honours", "4 Years", "RM 53,000"],
+            ["70", "Bachelor of Electrical and Electronics Engineering Technology With Honours", "4 Years", "RM 53,000"],
+            ["71", "Bachelor of Mechanical Engineering Technology Aeronautics (Hons)", "4 Years", "RM 53,000"],
+            ["72", "Bachelor of Mechanical Engineering Technology with Honours", "4 Years", "RM 53,000"],
+            ["73", "Bachelor of Mechatronics Engineering Technology with Honours", "4 Years", "RM 53,000"],
+            ["99", "Bachelor of Arts in Mass Communication (Honours)", "3.2 Years", "RM 41,000"],
+            ["100", "Bachelor of Early Childhood Education", "3 Years", "RM 41,000"],
+            ["101", "Bachelor of Early Childhood Education (ODL)", "3 Years", "RM 41,000"],
+            ["102", "Bachelor of Education (Teaching of English as a Second Language -TESL)", "3 Years", "RM 41,000"],
+            ["103", "Bachelor of Psychology (Honours)", "3.4 Years", "RM 41,000"],
+            ["104", "Bachelor of Psychology (Honours) (ODL)", "3.4 Years", "RM 41,000"],
+            ["105", "Bachelor in Fashion Design Management (Honours)", "3 Years", "RM 41,000"],
+            ["106", "Bachelor of Islamic Studies (Hons)", "3 Years", "RM 41,000"],
+            ["107", "Bachelor of Education (Honours)", "3 Years", "RM 41,000"],
+            ["120", "Bachelor of Arts (HONOURS) in Creative Multimedia Technology", "3 Years", "RM 41,000"],
+            ["121", "Bachelor of Computer Science (Honours) (Artificial Intelligence)", "3 Years", "RM 41,000"],
+            ["122", "Bachelor of Computer Science (HONS) (Network Technology and Cybersecurity)", "3 Years", "RM 41,000"],
+            ["123", "Bachelor of Information Technology (Honours) (Data Analytics)", "3 Years", "RM 41,000"],
+            ["124", "Bachelor of Information Technology (Honours) (Internet Technology and Cloud Computing)", "3 Years", "RM 41,000"],
+            ["125", "Bachelor of Information Technology (Honours)", "3 Years", "RM 41,000"],
+            ["126", "Bachelor of Information Technology (Honours) (ODL)", "3 Years", "RM 41,000"],
+            ["127", "Bachelor of Computer Science with E- Commerce", "3 Years", "RM 41,000"],
+            ["128", "Bachelor in Digital Film Technology (Honours)", "3 Years", "RM 41,000"],
+            ["154", "Bachelor (HONS) in Business Administration (ODL)", "3 Years", "RM 41,000"],
+            ["155", "Bachelor (HONS) in Business Administration", "3 Years", "RM 41,000"],
+            ["156", "Bachelor of Accountancy", "3.2 Years", "RM 41,000"],
+            ["157", "Bachelor of Accountancy (ODL)", "3.4 Years", "RM 41,000"],
+            ["158", "Bachelor of Business Administration in Accounting", "3 Years", "RM 41,000"],
+            ["159", "Bachelor of Business Administration in Human Resource Management", "3 Years", "RM 41,000"],
+            ["160", "Bachelor of Business Administration in Human Resource Management (ODL)", "3 Years", "RM 41,000"],
+            ["161", "Bachelor in Business Administration with Health Administration (Honours)", "3 Years", "RM 41,000"],
+            ["162", "Bachelor of Business Entrepreneurship", "3 Years", "RM 41,000"],
+            ["163", "Bachelor of Business Information Systems", "3 Years", "RM 41,000"],
+            ["164", "Bachelor of Management (Oil and Gas)", "3 Years", "RM 41,000"],
+            ["165", "BBA in Airline and Airport Management", "3 Years", "RM 41,000"],
+            ["166", "Bachelor of Finance", "3 Years", "RM 41,000"],
+            ["175", "Bachelor in Tourism Management", "3 Years", "RM 41,000"],
+            ["176", "Bachelor of Science (Hons) in Hospitality Management", "3 Years", "RM 41,000"],
+            ["177", "Bachelor of Science (Hons) in Hospitality Management (ODL)", "3 Years", "RM 41,000"]
+          ]
+        },
+        "remarks": "Miscellaneous Fees: Lab Fee (Per Year) 1100 MYR (If Applicable), Intensive English Program (Per Level) 1750 MYR, Pre requisite Course 2000 MYR. All charges are Inclusive of the 6% SST Service Fee.",
+        "pdf_link": "lincoln-fees"
+      },
+      {
+        "category_name": "MASTER PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            ["4", "Master in Medical Ultrasound", "2 Years", "RM 29,000"],
+            ["5", "Master of Medical Sciences", "2 Years", "RM 29,000"],
+            ["6", "Master of Science in Public Health", "1.5 Years", "RM 29,000"],
+            ["7", "Master of Science in Public Health (by Research)", "2 Years", "RM 29,000"],
+            ["8", "Post Graduate Diploma in Wound Care Management", "1 Year", "RM 29,000"],
+            ["13", "Master of Science in Dentistry", "2 Years", "RM 29,000"],
+            ["16", "Master of Pharmacy", "2 Years", "RM 29,000"],
+            ["22", "Master of Science in Healthcare", "2 Years", "RM 29,000"],
+            ["23", "Master in Nursing", "2 Years", "RM 29,000"],
+            ["24", "Master in Nursing (Education)", "1.5 Years", "RM 29,000"],
+            ["25", "Master of Nursing (Midwifery)", "1.5 Years", "RM 29,000"],
+            ["26", "Master of Nursing (Public Health)", "1.5 Years", "RM 29,000"],
+            ["27", "Master of Nursing (Public Health) (ODL)", "2 Years", "RM 29,000"],
+            ["28", "Post Basic Renal Care Nursing", "0.5 Years", "RM 12,000"],
+            ["29", "Post Basic Certificate in Teaching Methodology For Nurses", "0.5 Years", "RM 12,000"],
+            ["40", "Master of Agriculture", "2 Years", "RM 29,000"],
+            ["41", "Master of Physiotherapy (By Research)", "2 Years", "RM 29,000"],
+            ["42", "Master of Science in Applied Geology", "1.5 Years", "RM 29,000"],
+            ["43", "Master of Science in Biotechnology", "1.5 Years", "RM 29,000"],
+            ["44", "Master of Science in Biotechnology (by Research)", "2 Years", "RM 29,000"],
+            ["45", "Master of Science in Biotechnology (ODL)", "1.5 Years", "RM 29,000"],
+            ["46", "Master of Science in Microbiology", "1.5 Years", "RM 29,000"],
+            ["47", "Master of Science in Nutrition", "2 Years", "RM 29,000"],
+            ["48", "Master of Traditional Chinese Medicine", "2 Years", "RM 29,000"],
+            ["61", "Master in Construction Management", "1.4 Years", "RM 29,000"],
+            ["62", "Master in Construction Management (ODL)", "1.4 Years", "RM 29,000"],
+            ["63", "Master of Engineering", "2 Years", "RM 29,000"],
+            ["64", "Master of Mechanical Engineering", "1.5 Years", "RM 29,000"],
+            ["65", "Master of Science in Civil Engineering", "1.5 Years", "RM 29,000"],
+            ["66", "Master of Science in Electrical & Electronics Engineering", "1.5 Years", "RM 29,000"],
+            ["67", "Master of Water Resource Management", "2 Years", "RM 29,000"],
+            ["68", "Master of Science in Telecommunication Engineering", "1.5 Years", "RM 29,000"],
+            ["84", "Master of Arts in Teaching of English as Second Language (MATESL)", "1.5 Years", "RM 24,000"],
+            ["85", "Master of Arts in Teaching of English as Second Language (MATESL) (ODL)", "1 Year", "RM 24,000"],
+            ["86", "Master of Communication", "1.5 Years", "RM 24,000"],
+            ["87", "Master of Education (By Research)", "2 Years", "RM 24,000"],
+            ["88", "Master of Education", "1 Year", "RM 24,000"],
+            ["89", "Master of International Relations (By Research)", "2 Years", "RM 24,000"],
+            ["90", "Master of International Relations and Policies", "1.5 Years", "RM 24,000"],
+            ["92", "Master of Mass Communication", "2 Years", "RM 24,000"],
+            ["93", "Master of Science (Psychology)", "2 Years", "RM 24,000"],
+            ["94", "Master of Social Work", "1.5 Years", "RM 24,000"],
+            ["95", "Master of Social Work (ODL)", "1.5 Years", "RM 24,000"],
+            ["96", "Master of Teaching and Learning", "1 Year", "RM 24,000"],
+            ["97", "Postgraduate Diploma in Education", "1 Year", "RM 24,000"],
+            ["98", "Postgraduate Diploma In Teaching", "1 Year", "RM 24,000"],
+            ["116", "Master in Financial Technology", "1 Year", "RM 24,000"],
+            ["117", "Master of Computer Science", "1.5 Years", "RM 24,000"],
+            ["118", "Master of Computer Science (ODL)", "2 Years", "RM 24,000"],
+            ["119", "Master of Science (Data Science and Analytics)", "1.5 Years", "RM 24,000"],
+            ["139", "Master in Business Administration (Global Business)", "1.5 Years", "RM 24,000"],
+            ["140", "Master in Management (By Research)", "2 Years", "RM 24,000"],
+            ["141", "Master in Railway Infrastructure Management", "1.5 Years", "RM 24,000"],
+            ["142", "Master of Accountancy", "1.4 Years", "RM 24,000"],
+            ["143", "Master of Business Administration", "1 Year", "RM 24,000"],
+            ["144", "Master of Business Administration (ODL)", "1 Year", "RM 24,000"],
+            ["145", "Master of Business Administration in Healthcare Management", "1.5 Years", "RM 24,000"],
+            ["146", "Master of Business Administration in Human Resource Management", "1.5 Years", "RM 24,000"],
+            ["147", "Master of Business Administration in Human Resource Management (ODL)", "1.4 Years", "RM 24,000"],
+            ["148", "Master of Business Administration in Project Management", "1.4 Years", "RM 24,000"],
+            ["149", "Master of Business Administration in Project Management (ODL)", "1.4 Years", "RM 24,000"],
+            ["150", "Master of Business Information Systems", "1.4 Years", "RM 24,000"],
+            ["151", "Master of Economics", "1.5 Years", "RM 24,000"],
+            ["152", "Master of Islamic Banking", "2 Years", "RM 24,000"],
+            ["153", "Master of Public Administration", "2 Years", "RM 24,000"],
+            ["172", "Master in Tourism Management", "1.5 Years", "RM 24,000"],
+            ["173", "Master of Business Administration in Hospitality Management", "1.5 Years", "RM 24,000"],
+            ["174", "Master of Business Administration in Hospitality Management (ODL)", "1.5 Years", "RM 24,000"]
+          ]
+        },
+        "remarks": "Miscellaneous Fees: Lab Fee (Per Year) 1100 MYR (If Applicable), Intensive English Program (Per Level) 1750 MYR, Pre requisite Course 2000 MYR. All charges are Inclusive of the 6% SST Service Fee.",
+        "pdf_link": "lincoln-fees"
+      },
+      {
+        "category_name": "PHD PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            ["1", "PhD in Medical Anatomy", "3 Years", "RM 47,000"],
+            ["2", "Doctor of Philosophy (PhD) in Medical Physiology", "3 Years", "RM 47,000"],
+            ["3", "Doctor of Philosophy in Medical Sciences", "3 Years", "RM 47,000"],
+            ["12", "Doctor of Philosophy in Dentistry", "3 Years", "RM 47,000"],
+            ["15", "Doctor of Philosophy (Ph.D.) in Pharmacy", "3 Years", "RM 47,000"],
+            ["21", "Doctor of Philosophy (PhD) in Nursing", "3 Years", "RM 47,000"],
+            ["34", "PhD in Health Sciences", "3 Years", "RM 47,000"],
+            ["35", "Doctor of Philosophy (Ph.D.) in Traditional Chinese Medicine", "3 Years", "RM 47,000"],
+            ["36", "Doctor of Philosophy in Agriculture", "3 Years", "RM 47,000"],
+            ["37", "Doctor of Philosophy in Applied Sciences", "3 Years", "RM 47,000"],
+            ["38", "Doctor of Philosophy in Nutrition", "3 Years", "RM 47,000"],
+            ["39", "Doctor of Philosophy in Physiotherapy", "3 Years", "RM 47,000"],
+            ["60", "Doctor of Philosophy (Engineering)", "3 Years", "RM 47,000"],
+            ["77", "Doctor of Philosophy (PhD) in Social Sciences", "3 Years", "RM 41,000"],
+            ["78", "Doctor of Philosophy in Creative Arts and Design", "3 Years", "RM 41,000"],
+            ["79", "Doctor of Philosophy in Education", "3 Years", "RM 41,000"],
+            ["80", "Doctor of Philosophy in English", "3 Years", "RM 41,000"],
+            ["81", "Doctor of Philosophy in Mass Communication", "3 Years", "RM 41,000"],
+            ["82", "Doctor of Philosophy in Psychology", "3 Years", "RM 41,000"],
+            ["83", "Doctor of Philosophy (PhD) in Social Sciences (ODL)", "3 Years", "RM 41,000"],
+            ["111", "PHD in Information Technology", "3 Years", "RM 41,000"],
+            ["112", "PHD in Information Technology (ODL)", "3 Years", "RM 41,000"],
+            ["113", "Doctor of Philosophy (PhD) in Computer Science", "3 Years", "RM 41,000"],
+            ["114", "Doctor of Philosophy in Data Science", "3 Years", "RM 41,000"],
+            ["115", "Doctor of Philosophy in Cybersecurity", "3 Years", "RM 41,000"],
+            ["131", "Doctor of Business Administration", "3 Years", "RM 41,000"],
+            ["132", "Doctor of Philosophy (PhD) in Accounting", "2 Years", "RM 41,000"],
+            ["133", "Doctor of Philosophy (PhD) in Accounting (ODL)", "3 Years", "RM 41,000"],
+            ["134", "Doctor of Philosophy (PhD) in Industrial Management", "3 Years", "RM 41,000"],
+            ["135", "Doctor of Philosophy (PhD) in Management", "3 Years", "RM 41,000"],
+            ["136", "Doctor of Philosophy (PhD) in Management (ODL)", "3 Years", "RM 41,000"],
+            ["137", "Doctor of Philosophy (PhD) in Strategic Management", "3 Years", "RM 41,000"],
+            ["138", "Doctor of Philosophy in Business Administration", "3 Years", "RM 41,000"],
+            ["171", "Doctor of Philosophy (PH.D.) in Tourism and Hospitality Management", "3 Years", "RM 41,000"]
+          ]
+        },
+        "remarks": "Miscellaneous Fees: Lab Fee (Per Year) 1100 MYR (If Applicable), Intensive English Program (Per Level) 1750 MYR, Pre requisite Course 2000 MYR. All charges are Inclusive of the 6% SST Service Fee.",
+        "pdf_link": "lincoln-fees"
+      },
+      {
+        "category_name": "AMERICAN DEGREE TRANSFER PROGRAMME",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            ["186", "American Degree Transfer Programme (ARTS)", "2 Years", "RM 53,000"]
+          ]
+        },
+        "remarks": "Miscellaneous Fees: Lab Fee (Per Year) 1100 MYR (If Applicable), Intensive English Program (Per Level) 1750 MYR, Pre requisite Course 2000 MYR. All charges are Inclusive of the 6% SST Service Fee.",
+        "pdf_link": "lincoln-fees"
+      }
+    ]
+  }
+}

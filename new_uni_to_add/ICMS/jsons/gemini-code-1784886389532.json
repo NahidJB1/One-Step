@@ -1,0 +1,110 @@
+[
+  {
+    "name": "International University College of Management and Sports",
+    "campuses": [
+      "Main Campus"
+    ],
+    "programs": [
+      {
+        "name": "Foundation in Arts",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Diploma In Fashion Design",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in Business Administration",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in Computer Science",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in Football Studies",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in Sports Science",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in criminal and policing Investigation",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in criminal justice",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in Enforcement Management",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in occupational safety & Health",
+        "level": "Diploma",
+        "duration": "COMING SOON"
+      },
+      {
+        "name": "Diploma in Hotel Management (WBL)",
+        "level": "Diploma",
+        "duration": "COMING SOON"
+      },
+      {
+        "name": "Bachelor in Law Enforcement",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Business Management",
+        "level": "Degree",
+        "duration": "COMING SOON"
+      },
+      {
+        "name": "Bachelor of Computer Science",
+        "level": "Degree",
+        "duration": "COMING SOON"
+      },
+      {
+        "name": "Bachelor of Business Administration",
+        "level": "Degree",
+        "duration": "COMING SOON"
+      },
+      {
+        "name": "Master in Management (by research)",
+        "level": "Master",
+        "duration": "2-3 Years"
+      },
+      {
+        "name": "Master In Education",
+        "level": "Master",
+        "duration": "1 Year"
+      },
+      {
+        "name": "MBA",
+        "level": "Master",
+        "duration": "COMING SOON"
+      },
+      {
+        "name": "Doctor of Business Administration",
+        "level": "PhD",
+        "duration": "3-4 Years"
+      },
+      {
+        "name": "IEP (English Course)",
+        "level": "English Course",
+        "duration": "4 Levels"
+      }
+    ]
+  }
+]

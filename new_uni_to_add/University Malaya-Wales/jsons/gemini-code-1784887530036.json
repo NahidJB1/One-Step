@@ -1,0 +1,237 @@
+{
+    "umwales": {
+        "id": "umwales",
+        "title": "Universiti Malaya-Wales",
+        "theme": {
+            "theme_color": "#000000",
+            "theme_dark": "#000000",
+            "theme_accent": "#000000",
+            "theme_light": "#ffffff"
+        },
+        "logo": "../assets/images/universities/umwales/umwales-logo.png",
+        "categories": [
+            {
+                "category_name": "FOUNDATION PROGRAMS",
+                "table": {
+                    "headers": [
+                        "No",
+                        "Programme",
+                        "Duration",
+                        "Total Tuition Fees"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "Foundation in Arts",
+                            "3 Semesters",
+                            "RM 19,451.00"
+                        ],
+                        [
+                            "2",
+                            "Foundation in Arts ODL",
+                            "3 Semesters",
+                            "RM 17,342.66"
+                        ],
+                        [
+                            "3",
+                            "Foundation in Science",
+                            "3 Semesters",
+                            "RM 20,988.00"
+                        ],
+                        [
+                            "4",
+                            "Foundation in Science ODL",
+                            "3 Semesters",
+                            "RM 18,762.00"
+                        ]
+                    ]
+                },
+                "remarks": "Effective 1st October 2025, a 6% SST will be imposed on all fees (except the Mobility Fee & Personal Bond) for international students[cite: 8]. Fees required by EMGS are RM3,400 to RM3,550[cite: 9]. A Security Bond Fee ranging from RM200 to RM2000 is imposed by Immigration Malaysia[cite: 10].",
+                "pdf_link": "umwales-fees"
+            },
+            {
+                "category_name": "BACHELOR PROGRAMS",
+                "table": {
+                    "headers": [
+                        "No",
+                        "Programme",
+                        "Duration",
+                        "Total Tuition Fees"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "Bachelor in Accounting (Honours)*",
+                            "9 Semesters",
+                            "RM 82,256.00"
+                        ],
+                        [
+                            "2",
+                            "BBA (Hons) in Finance*",
+                            "9 Semesters",
+                            "RM 68,900.00"
+                        ],
+                        [
+                            "3",
+                            "BBA (Hons) in Entrepreneurship*",
+                            "9 Semesters",
+                            "RM 68,900.00"
+                        ],
+                        [
+                            "4",
+                            "BBA (Hons) in International Business*",
+                            "9 Semesters",
+                            "RM 68,900.00"
+                        ],
+                        [
+                            "5",
+                            "BBA (Hons) in International Business ODL",
+                            "9 Semesters",
+                            "RM 50,774.00"
+                        ],
+                        [
+                            "6",
+                            "BBA (Hons) in Human Resource Management",
+                            "9 Semesters",
+                            "RM 68,900.00"
+                        ],
+                        [
+                            "7",
+                            "BBA (Hons) Digital Business",
+                            "9 Semesters",
+                            "RM 68,900.00"
+                        ],
+                        [
+                            "8",
+                            "BBA (Hons) Digital Business ODL",
+                            "9 Semesters",
+                            "RM 50,774.00"
+                        ],
+                        [
+                            "9",
+                            "Bachelor of Real Estate Management & Auction (Hons)",
+                            "8 Semesters",
+                            "RM 72,938.60"
+                        ],
+                        [
+                            "10",
+                            "Bachelor of Professional Communication",
+                            "9 Semesters",
+                            "RM 68,974.20"
+                        ],
+                        [
+                            "11",
+                            "Bachelor of Science (Hons) in Psychology",
+                            "9 Semesters",
+                            "RM 71,391.00"
+                        ],
+                        [
+                            "12",
+                            "Bachelor of Computer Science (Hons)",
+                            "9 Semesters",
+                            "RM 74,624.00"
+                        ],
+                        [
+                            "13",
+                            "Bachelor of Information Technology (Hons)",
+                            "9 Semesters",
+                            "RM 69,599.60"
+                        ]
+                    ]
+                },
+                "remarks": "Programs with (*) are Dual Award Programmes[cite: 5, 6]. The Dual Award fee for a UK degree is RM19,080, charged at RM3,816 for the first 5 semesters[cite: 23, 24]. The optional Mobility Programme fee is RM21,000[cite: 29]. Effective 1st October 2025, a 6% SST is imposed on all fees for international students[cite: 8].",
+                "pdf_link": "umwales-fees"
+            },
+            {
+                "category_name": "MASTER PROGRAMS",
+                "table": {
+                    "headers": [
+                        "No",
+                        "Programme",
+                        "Duration",
+                        "Total Tuition Fees"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "Master of Business Administration",
+                            "3 Semesters",
+                            "RM 50,074.40"
+                        ],
+                        [
+                            "2",
+                            "Master of Business Administration (ODL)",
+                            "3 Semesters",
+                            "RM 25,970.00"
+                        ],
+                        [
+                            "3",
+                            "Master of Arts (Professional Communication)",
+                            "3 Semesters",
+                            "RM 47,191.20"
+                        ],
+                        [
+                            "4",
+                            "Master of Arts (Professional Communication) (ODL)",
+                            "3 Semesters",
+                            "RM 31,757.60"
+                        ],
+                        [
+                            "5",
+                            "Master of Science in Project Management",
+                            "3 Semesters",
+                            "RM 47,191.20"
+                        ]
+                    ]
+                },
+                "remarks": "Effective 1st October 2025, a 6% SST will be imposed on all fees for international students[cite: 62]. EMGS processing fees range from RM3,400 to RM3,550[cite: 65]. A Security Bond Fee of RM200 to RM2000 is chargeable by Immigration Malaysia[cite: 66].",
+                "pdf_link": "umwales-fees"
+            },
+            {
+                "category_name": "PHD PROGRAMS",
+                "table": {
+                    "headers": [
+                        "No",
+                        "Programme",
+                        "Duration",
+                        "Total Tuition Fees"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "Doctor of Business Administration (DBA)",
+                            "9 Semesters",
+                            "RM 62,815.60"
+                        ],
+                        [
+                            "2",
+                            "Doctor of Philosophy (Business)",
+                            "9 Semesters",
+                            "RM 56,932.60"
+                        ],
+                        [
+                            "3",
+                            "Doctor of Philosophy (Professional Communication)",
+                            "9 Semesters",
+                            "RM 59,063.20"
+                        ],
+                        [
+                            "4",
+                            "Doctor of Philosophy (Project Management)",
+                            "9 Semesters",
+                            "RM 59,402.40"
+                        ],
+                        [
+                            "5",
+                            "Doctor of Philosophy (Computer Science)",
+                            "9 Semesters",
+                            "RM 60,398.80"
+                        ]
+                    ]
+                },
+                "remarks": "Effective 1st October 2025, a 6% SST will be imposed on all fees for international students[cite: 62]. EMGS fees range from RM3,400 to RM3,550 depending on the country[cite: 65]. Security Bond Fee of RM200 to RM2000 is chargeable[cite: 66].",
+                "pdf_link": "umwales-fees"
+            }
+        ]
+    }
+}

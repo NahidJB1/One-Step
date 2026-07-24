@@ -1,0 +1,1107 @@
+{
+  "ucsi": {
+    "id": "ucsi",
+    "title": "UCSI University",
+    "theme": {
+      "theme_color": "#000000",
+      "theme_dark": "#000000",
+      "theme_accent": "#000000",
+      "theme_light": "#ffffff"
+    },
+    "logo": "../assets/images/universities/ucsi/ucsi-logo.png",
+    "categories": [
+      {
+        "category_name": "FOUNDATION PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Foundation in Science",
+              "1 Year",
+              "RM 24,000"
+            ],
+            [
+              "2",
+              "Foundation in Science (Springhill Campus)",
+              "1 Year",
+              "RM 19,500"
+            ],
+            [
+              "3",
+              "Foundation in Arts",
+              "1 Year",
+              "RM 24,000"
+            ],
+            [
+              "4",
+              "Foundation in Arts (Springhill Campus)",
+              "1 Year",
+              "RM 19,000"
+            ],
+            [
+              "5",
+              "Foundation Studies (Arts) (Kuching Campus)",
+              "1 Year",
+              "RM 20,380"
+            ],
+            [
+              "6",
+              "Foundation Studies (Science) (Kuching Campus)",
+              "1 Year",
+              "RM 20,380"
+            ],
+            [
+              "7",
+              "Foundation in Music",
+              "1 Year",
+              "RM 28,200"
+            ]
+          ]
+        },
+        "remarks": "Registration fee is RM 450 (Non-Refundable). International Administration Fee is RM 4,200. Application Fees & Visa apply. 6% service tax is imposed on non-Malaysian citizens from 1 July 2025. EMGS payment applies to 1st year.",
+        "pdf_link": "ucsi-fees"
+      },
+      {
+        "category_name": "DIPLOMA PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Diploma of Engineering Technology (Industrial Design)",
+              "2 Years",
+              "RM 45,730"
+            ],
+            [
+              "2",
+              "Diploma in Architectural Studies",
+              "3 Years",
+              "RM 57,240"
+            ],
+            [
+              "3",
+              "Diploma in Interior Architecture",
+              "3 Years",
+              "RM 53,080"
+            ],
+            [
+              "4",
+              "Diploma in Management",
+              "2 Years",
+              "RM 45,336"
+            ],
+            [
+              "5",
+              "Diploma in Logistics Management",
+              "2 Years",
+              "RM 45,174"
+            ],
+            [
+              "6",
+              "Diploma in Finance",
+              "2 Years",
+              "RM 45,810"
+            ],
+            [
+              "7",
+              "Diploma in Accounting (Kuching Campus)",
+              "2 Years",
+              "RM 32,040"
+            ],
+            [
+              "8",
+              "Diploma in Business Management (Kuching Campus)",
+              "2 Years",
+              "RM 31,400"
+            ],
+            [
+              "9",
+              "Diploma in International Business (Kuching Campus)",
+              "2 Years",
+              "RM 31,400"
+            ],
+            [
+              "10",
+              "Diploma in Aquaculture with Entrepreneurship",
+              "2 Years",
+              "RM 48,389"
+            ],
+            [
+              "11",
+              "Diploma in Pharmacy",
+              "3 Years",
+              "RM 56,410"
+            ],
+            [
+              "12",
+              "Diploma in Cosmetic Science",
+              "2 Years",
+              "RM 56,740"
+            ],
+            [
+              "13",
+              "Diploma in Packaging Science and Technology",
+              "2 Years",
+              "RM 56,210"
+            ],
+            [
+              "14",
+              "Diploma in Opticianry",
+              "3 Years",
+              "RM 51,730"
+            ],
+            [
+              "15",
+              "Diploma in Nursing (Springhill Campus)",
+              "3 Years",
+              "RM 58,630"
+            ],
+            [
+              "16",
+              "Advanced Diploma in Midwifery (Springhill Campus)",
+              "1 Year",
+              "RM 25,990"
+            ],
+            [
+              "17",
+              "Diploma in Information Technology (TVET Module)",
+              "2 Years",
+              "RM 49,679"
+            ],
+            [
+              "18",
+              "Diploma in Information Technology",
+              "2 Years",
+              "RM 47,630 - RM 51,029"
+            ],
+            [
+              "19",
+              "Diploma in Hotel Management",
+              "2 Years",
+              "RM 44,620"
+            ],
+            [
+              "20",
+              "Diploma in Culinary Arts",
+              "2 Years",
+              "RM 41,550"
+            ],
+            [
+              "21",
+              "Diploma in Pastry and Bakery",
+              "3 Years",
+              "RM 42,165"
+            ],
+            [
+              "22",
+              "Diploma in Culinary Arts (Springhill Campus)",
+              "2 Years",
+              "RM 40,160"
+            ],
+            [
+              "23",
+              "Diploma in Pastry and Bakery (Springhill Campus)",
+              "2 Years",
+              "RM 40,160"
+            ],
+            [
+              "24",
+              "Diploma in Hotel Management (Kuching Campus)",
+              "2 Years",
+              "RM 38,900"
+            ],
+            [
+              "25",
+              "Diploma in Culinary Arts (Kuching Campus)",
+              "2 Years",
+              "RM 45,200"
+            ],
+            [
+              "26",
+              "Diploma in Leisure Management (Kuching Campus)",
+              "2 Years",
+              "RM 36,400"
+            ],
+            [
+              "27",
+              "Diploma in Event Management (Kuching Campus)",
+              "2 Years",
+              "RM 38,000"
+            ],
+            [
+              "28",
+              "Diploma in 3D Animation Design",
+              "2 Years",
+              "RM 51,940"
+            ],
+            [
+              "29",
+              "Diploma in Fashion Design",
+              "2 Years",
+              "RM 49,200"
+            ],
+            [
+              "30",
+              "Diploma in Graphic Design",
+              "2 Years",
+              "RM 52,980"
+            ],
+            [
+              "31",
+              "Diploma in Music Performance",
+              "2 Years",
+              "RM 56,580"
+            ]
+          ]
+        },
+        "remarks": "Registration fee is RM 450 (Non-Refundable). International Administration Fee is RM 4,200. Additional lab fees and resources fees may apply depending on the programme.",
+        "pdf_link": "ucsi-fees"
+      },
+      {
+        "category_name": "BACHELOR PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Bachelor of Chemical Engineering with Honours",
+              "4 Years",
+              "RM 91,010"
+            ],
+            [
+              "2",
+              "Bachelor of Civil Engineering with Honours",
+              "4 Years",
+              "RM 90,100"
+            ],
+            [
+              "3",
+              "Bachelor of Electrical and Electronic Engineering with Honours",
+              "4 Years",
+              "RM 90,015"
+            ],
+            [
+              "4",
+              "Bachelor of Computer Engineering (Artificial Intelligence) with Honours",
+              "4 Years",
+              "RM 97,645"
+            ],
+            [
+              "5",
+              "Bachelor of Energy Engineering with Honours",
+              "4 Years",
+              "RM 89,290"
+            ],
+            [
+              "6",
+              "Bachelor of Mechanical Engineering with Honours",
+              "4 Years",
+              "RM 89,115"
+            ],
+            [
+              "7",
+              "Bachelor of Mechatronic Engineering with Honours",
+              "4 Years",
+              "RM 89,850"
+            ],
+            [
+              "8",
+              "Bachelor of Petroleum Engineering with Honours",
+              "4 Years",
+              "RM 93,020"
+            ],
+            [
+              "9",
+              "Bachelor of Digital Mechanical Technology with Honours",
+              "3 Years",
+              "RM 80,075"
+            ],
+            [
+              "10",
+              "Bachelor of Microelectronic Technology with Honours",
+              "3 Years",
+              "RM 78,945"
+            ],
+            [
+              "11",
+              "BSc (Hons) Architecture",
+              "3 Years",
+              "RM 102,500"
+            ],
+            [
+              "12",
+              "BA (Hons) Interior Architecture",
+              "3 Years",
+              "RM 83,140"
+            ],
+            [
+              "13",
+              "Bachelor of Quantity Surveying (Hons)",
+              "4 Years",
+              "RM 83,110"
+            ],
+            [
+              "14",
+              "BSc (Hons) Finance and Investment",
+              "3 Years",
+              "RM 74,310"
+            ],
+            [
+              "15",
+              "Bachelor of Financial Economics (Hons)",
+              "3 Years",
+              "RM 73,320"
+            ],
+            [
+              "16",
+              "BA (Hons) Accounting",
+              "3 Years",
+              "RM 76,320"
+            ],
+            [
+              "17",
+              "BA (Hons) Accounting and Finance",
+              "3 Years",
+              "RM 76,320"
+            ],
+            [
+              "18",
+              "BA (Hons) Branding and Advertising",
+              "3 Years",
+              "RM 73,920"
+            ],
+            [
+              "19",
+              "BA (Hons) Business Administration",
+              "3 Years",
+              "RM 73,800"
+            ],
+            [
+              "20",
+              "BA (Hons) Logistics Management",
+              "3 Years",
+              "RM 73,830"
+            ],
+            [
+              "21",
+              "BA (Hons) Supply Chain Operations Management",
+              "3 Years",
+              "RM 74,070"
+            ],
+            [
+              "22",
+              "BA (Hons) Marketing",
+              "3 Years",
+              "RM 73,800"
+            ],
+            [
+              "23",
+              "Bachelor of Arts (Honours) Entrepreneurship",
+              "3 Years",
+              "RM 76,830"
+            ],
+            [
+              "24",
+              "Bachelor of International and Sustainable Business (Honours)",
+              "3 Years",
+              "RM 76,260"
+            ],
+            [
+              "25",
+              "Bachelor of Financial Technology (Honours)",
+              "3 Years",
+              "RM 74,920"
+            ],
+            [
+              "26",
+              "BComm (Hons) Accounting and Finance (Kuching Campus)",
+              "3 Years",
+              "RM 62,640"
+            ],
+            [
+              "27",
+              "BComm (Hons) Marketing (Kuching Campus)",
+              "3 Years",
+              "RM 64,440"
+            ],
+            [
+              "28",
+              "BA in Business Management (Honours) (Kuching Campus)",
+              "3 Years",
+              "RM 63,450"
+            ],
+            [
+              "29",
+              "Bachelor of International Business (Honours) (Kuching Campus)",
+              "3 Years",
+              "RM 64,440"
+            ],
+            [
+              "30",
+              "BSc (Hons) Actuarial Science",
+              "3 Years",
+              "RM 78,460"
+            ],
+            [
+              "31",
+              "BSc (Hons) Actuarial Science and Finance",
+              "3 Years",
+              "RM 79,190"
+            ],
+            [
+              "32",
+              "Bachelor of Science (Honours) Actuarial Science with Data Analytics",
+              "3 Years",
+              "RM 85,640"
+            ],
+            [
+              "33",
+              "BSc (Hons) Biotechnology",
+              "3 Years",
+              "RM 90,502"
+            ],
+            [
+              "34",
+              "BSc (Hons) Food Science with Nutrition",
+              "3 Years",
+              "RM 89,470"
+            ],
+            [
+              "35",
+              "BSc (Hons) Nutrition with Wellness",
+              "3 Years",
+              "RM 100,445"
+            ],
+            [
+              "36",
+              "BSc (Hons) Aquatic Science",
+              "3 Years",
+              "RM 88,273"
+            ],
+            [
+              "37",
+              "BSc (Hons) Forensic Science",
+              "4 Years",
+              "RM 108,500"
+            ],
+            [
+              "38",
+              "BSc (Hons) Applied Microbiology",
+              "3 Years",
+              "RM 84,900"
+            ],
+            [
+              "39",
+              "Bachelor of Pharmacy (Hons)",
+              "4 Years",
+              "RM 173,862"
+            ],
+            [
+              "40",
+              "Bachelor of Formulation Science (Honours)",
+              "3 Years",
+              "RM 89,190"
+            ],
+            [
+              "41",
+              "Bachelor of Optometry (Hons)",
+              "4 Years",
+              "RM 111,710"
+            ],
+            [
+              "42",
+              "Doctor of Medicine (Springhill Campus)",
+              "5 Years",
+              "RM 409,950"
+            ],
+            [
+              "43",
+              "Bachelor of Nursing (Hons) (Springhill Campus)",
+              "4 Years",
+              "RM 83,150"
+            ],
+            [
+              "44",
+              "BSc (Hons) Business Information Systems",
+              "3 Years",
+              "RM 76,900 - RM 78,250"
+            ],
+            [
+              "45",
+              "Bachelor of Computer Science (Honours)",
+              "3 Years",
+              "RM 76,730 - RM 78,080"
+            ],
+            [
+              "46",
+              "Bachelor of Computer Science (Hons) Mobile Computing and Networking",
+              "3 Years",
+              "RM 75,630 - RM 76,980"
+            ],
+            [
+              "47",
+              "Bachelor of Computer Science in Data Science with Honours",
+              "3 Years",
+              "RM 78,710 - RM 80,060"
+            ],
+            [
+              "48",
+              "Bachelor of Computer Science in Cyber Security with Honours",
+              "3 Years",
+              "RM 90,150 - RM 91,500"
+            ],
+            [
+              "49",
+              "Bachelor of Computer Science in Artificial Intelligence with Honours",
+              "3 Years",
+              "RM 87,600 - RM 88,950"
+            ],
+            [
+              "50",
+              "Bachelor of Computer Science (Honours) (TVET Module)",
+              "3 Years",
+              "RM 81,740 - RM 83,090"
+            ],
+            [
+              "51",
+              "BA (Hons) Psychology",
+              "3 Years",
+              "RM 75,590 - RM 78,950"
+            ],
+            [
+              "52",
+              "BA (Hons) English Language and Communication",
+              "3 Years",
+              "RM 67,630"
+            ],
+            [
+              "53",
+              "BA (Hons) Mass Communication",
+              "3 Years",
+              "RM 75,160"
+            ],
+            [
+              "54",
+              "Bachelor of Early Childhood Education (Honours)",
+              "3 Years",
+              "RM 73,930"
+            ],
+            [
+              "55",
+              "Bachelor of Arts (Honours) in Culinary Management",
+              "3 Years",
+              "RM 73,400"
+            ],
+            [
+              "56",
+              "Bachelor of Hospitality Administration (Dual Award with HTMI)",
+              "3 Years",
+              "RM 72,350"
+            ],
+            [
+              "57",
+              "Bachelor of Arts (Honours) in Global Sustainable Tourism",
+              "3 Years",
+              "RM 71,300"
+            ],
+            [
+              "58",
+              "Bachelor of Arts (Honours) in Hospitality Management (Springhill Campus)",
+              "3 Years",
+              "RM 72,241"
+            ],
+            [
+              "59",
+              "BA (Hons) Hospitality Management (Dual Award with HTMI) (Kuching Campus)",
+              "3 Years",
+              "RM 65,660"
+            ],
+            [
+              "60",
+              "Bachelor of Arts (Honours) in Culinary Management (Kuching Campus)",
+              "3 Years",
+              "RM 61,874"
+            ],
+            [
+              "61",
+              "BA (Hons) Event & Tourism Management (Dual Award with HTMI) (Kuching Campus)",
+              "3 Years",
+              "RM 60,170"
+            ],
+            [
+              "62",
+              "BCA (Hons) 3D Animation Design",
+              "3 Years",
+              "RM 77,914"
+            ],
+            [
+              "63",
+              "BA (Hons) Fashion Design with Marketing",
+              "3 Years",
+              "RM 79,410"
+            ],
+            [
+              "64",
+              "BA (Hons) Graphic Design",
+              "3 Years",
+              "RM 72,795"
+            ],
+            [
+              "65",
+              "BA (Hons) Multimedia Design",
+              "3 Years",
+              "RM 76,310"
+            ],
+            [
+              "66",
+              "BA (Hons) Game Design",
+              "3 Years",
+              "RM 75,116"
+            ],
+            [
+              "67",
+              "BMus (Hons) Classical Music",
+              "3 Years",
+              "RM 103,930"
+            ],
+            [
+              "68",
+              "BMus (Hons) Contemporary Music",
+              "3 Years",
+              "RM 103,930"
+            ]
+          ]
+        },
+        "remarks": "Registration fee RM450. International Administration RM4,200. Additional lab fees and resources fees apply. Fees vary if bridging courses are required. 6% service tax is applicable to non-Malaysians.",
+        "pdf_link": "ucsi-fees"
+      },
+      {
+        "category_name": "MASTER PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Master of Philosophy in Engineering (M.Phil)",
+              "2 Years",
+              "RM 25,380 - RM 26,280"
+            ],
+            [
+              "2",
+              "Master in Engineering (Smart Engineering Management)",
+              "1 Year",
+              "RM 34,720 - RM 35,770"
+            ],
+            [
+              "3",
+              "Master of Petroleum Engineering",
+              "1 Year",
+              "RM 38,640 - RM 40,440"
+            ],
+            [
+              "4",
+              "Master of Architecture",
+              "2 Years",
+              "RM 54,870"
+            ],
+            [
+              "5",
+              "Master of Philosophy in Built Environment",
+              "2 Years",
+              "RM 30,000 - RM 32,520"
+            ],
+            [
+              "6",
+              "Master In Logistics and Supply Chain Management",
+              "1 Year",
+              "RM 43,760 - RM 47,240"
+            ],
+            [
+              "7",
+              "Master of Business Administration (Blue Ocean Strategy) (Kuching Campus)",
+              "1.5 Years",
+              "RM 35,000 - RM 38,430"
+            ],
+            [
+              "8",
+              "Master In Business Administration (MBA)",
+              "1 Year",
+              "RM 43,760 - RM 47,240"
+            ],
+            [
+              "9",
+              "Master of Philosophy (Business and Management)",
+              "2 Years",
+              "RM 25,000"
+            ],
+            [
+              "10",
+              "Master in Business Administration (MBA) ODL Mode",
+              "2 Years",
+              "RM 43,760 - RM 47,240"
+            ],
+            [
+              "11",
+              "Master of Science (Actuarial Management) Structure B",
+              "1 Year",
+              "RM 35,939 - RM 44,389"
+            ],
+            [
+              "12",
+              "Master of Science (Actuarial Management) Structure C",
+              "1 Year",
+              "RM 38,628 - RM 47,078"
+            ],
+            [
+              "13",
+              "Master of Science in Mathematical Sciences",
+              "2 Years",
+              "RM 25,290"
+            ],
+            [
+              "14",
+              "Master of Science (Biotechnology)",
+              "1.5 Years",
+              "RM 38,501 - RM 48,133"
+            ],
+            [
+              "15",
+              "Master of Science (Biotechnology with Business Management)",
+              "1.5 Years",
+              "RM 39,597 - RM 49,229"
+            ],
+            [
+              "16",
+              "Master of Science (Applied Sciences) by Research",
+              "2 Years",
+              "RM 27,875"
+            ],
+            [
+              "17",
+              "Master of Science (Food Science with Business Management)",
+              "1.5 Years",
+              "RM 36,971 - RM 45,774"
+            ],
+            [
+              "18",
+              "Master of Science in Nutrition with Management",
+              "1 Year",
+              "RM 42,440 - RM 51,243"
+            ],
+            [
+              "19",
+              "Master of Science in Pharmaceutical Chemistry",
+              "1 Year",
+              "RM 37,800"
+            ],
+            [
+              "20",
+              "Master of Science in Pharmaceutical Technology",
+              "1 Year",
+              "RM 37,800"
+            ],
+            [
+              "21",
+              "Master of Science (Pharmaceutical Sciences)",
+              "2 Years",
+              "RM 47,060"
+            ],
+            [
+              "22",
+              "Master of Clinical Pharmacy Practice",
+              "1 Year",
+              "RM 37,800"
+            ],
+            [
+              "23",
+              "Master of Science (Healthy Aging, Medical Aesthetic & Regenerative Medicine)",
+              "2 Years",
+              "RM 58,480"
+            ],
+            [
+              "24",
+              "Master of Science in Technopreneurship",
+              "1 Year",
+              "RM 42,275 - RM 43,625"
+            ],
+            [
+              "25",
+              "Master of Science in Computer Science",
+              "2 Years",
+              "RM 25,050 - RM 27,750"
+            ],
+            [
+              "26",
+              "Master of Science in Digital Technology and Analytics",
+              "1 Year",
+              "RM 49,800 - RM 51,150"
+            ],
+            [
+              "27",
+              "Master of Child Psychology",
+              "1.5 Years",
+              "RM 40,400"
+            ],
+            [
+              "28",
+              "Master of Clinical Psychology",
+              "2 Years",
+              "RM 54,630"
+            ],
+            [
+              "29",
+              "Master of Education",
+              "1 Year",
+              "RM 49,100 - RM 54,700"
+            ],
+            [
+              "30",
+              "Master in Strategic Communication",
+              "1 Year",
+              "RM 42,000 - RM 44,400"
+            ],
+            [
+              "31",
+              "Postgraduate Diploma in Tertiary Teaching (PGDTT)",
+              "1 Year",
+              "RM 19,500"
+            ],
+            [
+              "32",
+              "Postgraduate Certificate in Education (PGCE)",
+              "1 Year",
+              "RM 26,650"
+            ],
+            [
+              "33",
+              "Master of Science in Gastronomy",
+              "2 Years",
+              "RM 40,002"
+            ],
+            [
+              "34",
+              "Master in International Hospitality Management",
+              "1 Year",
+              "RM 42,552 - RM 48,935"
+            ],
+            [
+              "35",
+              "Master in International Hospitality Management (Kuching Campus)",
+              "1 Year",
+              "RM 27,200"
+            ],
+            [
+              "36",
+              "Master of Art & Design",
+              "2 Years",
+              "RM 41,800 - RM 49,374"
+            ],
+            [
+              "37",
+              "Master of Art, Design and Creative Media",
+              "1 Year",
+              "RM 57,550"
+            ],
+            [
+              "38",
+              "Master of Music (Performance Studies)",
+              "1 Year",
+              "RM 56,000"
+            ],
+            [
+              "39",
+              "Master in Science Diplomacy",
+              "1 Year",
+              "RM 42,000"
+            ],
+            [
+              "40",
+              "Master in Environmental, Social and Governance Leadership",
+              "1 Year",
+              "RM 42,000"
+            ],
+            [
+              "41",
+              "Master of Science Policy and Communication",
+              "1 Year",
+              "RM 43,650"
+            ]
+          ]
+        },
+        "remarks": "Registration Fee is RM450 (Non-Refundable). International Administration is RM4,200. Thesis examination and lab fees apply separately for research-based programmes. Bridging courses may alter final fees.",
+        "pdf_link": "ucsi-fees"
+      },
+      {
+        "category_name": "PHD PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Doctor of Philosophy in Engineering (PhD)",
+              "3 Years",
+              "RM 41,382 - RM 42,282"
+            ],
+            [
+              "2",
+              "Doctor of Philosophy (Engineering) by Prior Publication",
+              "2 Years",
+              "RM 41,382 - RM 42,282"
+            ],
+            [
+              "3",
+              "Industrial PhD In Engineering",
+              "3 Years",
+              "RM 50,500 - RM 51,400"
+            ],
+            [
+              "4",
+              "Doctor of Philosophy in Architecture",
+              "3 Years",
+              "RM 44,400 - RM 46,920"
+            ],
+            [
+              "5",
+              "Doctor of Philosophy (Business and Management)",
+              "3 Years",
+              "RM 45,468 - RM 53,343"
+            ],
+            [
+              "6",
+              "Doctor Of Business Administration (DBA)",
+              "3 Years",
+              "RM 71,600 - RM 82,100"
+            ],
+            [
+              "7",
+              "Doctor of Philosophy in Mathematical Sciences",
+              "3 Years",
+              "RM 59,160"
+            ],
+            [
+              "8",
+              "Doctor of Philosophy (Science)",
+              "3 Years",
+              "RM 48,300"
+            ],
+            [
+              "9",
+              "Doctor of Philosophy (Pharmaceutical Sciences)",
+              "3 Years",
+              "RM 62,200"
+            ],
+            [
+              "10",
+              "Doctor of Philosophy (Medical Sciences)",
+              "3 Years",
+              "RM 68,900"
+            ],
+            [
+              "11",
+              "Doctor of Philosophy in Computer Science",
+              "3 Years",
+              "RM 35,700 - RM 38,400"
+            ],
+            [
+              "12",
+              "Doctor of Philosophy in Psychology",
+              "3 Years",
+              "RM 40,700"
+            ],
+            [
+              "13",
+              "PhD (Education)",
+              "3 Years",
+              "RM 62,050 - RM 67,650"
+            ],
+            [
+              "14",
+              "Doctor of Philosophy in Hospitality and Tourism",
+              "3 Years",
+              "RM 60,000 - RM 62,775"
+            ],
+            [
+              "15",
+              "Doctor of Philosophy in Art, Design and Creative Media",
+              "3 Years",
+              "RM 53,400"
+            ],
+            [
+              "16",
+              "Doctor of Philosophy in Music Performance",
+              "3 Years",
+              "RM 75,500"
+            ],
+            [
+              "17",
+              "Doctor of Philosophy in Music",
+              "3 Years",
+              "RM 73,500"
+            ]
+          ]
+        },
+        "remarks": "Extensions are charged according to the credit hour/subject. Thesis examination fees and research lab fees typically apply in addition to standard tuition. Bridging courses may apply.",
+        "pdf_link": "ucsi-fees"
+      },
+      {
+        "category_name": "CERTIFICATE & OTHER PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Graduate Certificate in Aesthetic Assistant with Wellness",
+              "1 Year",
+              "RM 20,400"
+            ],
+            [
+              "2",
+              "English for Tertiary Education",
+              "Up to 10 Months",
+              "RM 1,900 per level/month"
+            ],
+            [
+              "3",
+              "English Enrichment Programme (Kuching Campus)",
+              "Up to 10 Months",
+              "RM 1,700 per level/month"
+            ]
+          ]
+        },
+        "remarks": "English placement tests determine the number of levels required. Additional administration fees apply for certificate programmes.",
+        "pdf_link": "ucsi-fees"
+      }
+    ]
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "help": {
+    "id": "help",
+    "title": "HELP University",
+    "theme": {
+      "theme_color": "#00478F",
+      "theme_dark": "#002B59",
+      "theme_accent": "#F5A623",
+      "theme_light": "#FFFFFF"
+    },
+    "logo": "../assets/images/universities/help/help-logo.png",
+    "categories": [
+      {
+        "category_name": "CERTIFICATE & PREPARATORY PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Certificate in Business Management",
+              "1.5 Years",
+              "RM 17,550"
+            ],
+            [
+              "2",
+              "MUET Preparatory Course",
+              "2 Months",
+              "RM 3,700"
+            ]
+          ]
+        },
+        "remarks": "Fees are indicative only. MUET course is RM 1,850 per part (2 parts total).",
+        "pdf_link": "help-fees"
+      },
+      {
+        "category_name": "FOUNDATION PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Foundation in Arts",
+              "1 Year",
+              "RM 15,200"
+            ],
+            [
+              "2",
+              "Foundation in Science",
+              "1 Year",
+              "RM 16,600"
+            ]
+          ]
+        },
+        "remarks": "Science lab fees of RM350 x 4 subjects apply for Foundation in Science. Total Indicative Fees Exclude Application Fees, Administration Fees, Student Visa Fees & ISPF.",
+        "pdf_link": "help-fees"
+      },
+      {
+        "category_name": "DIPLOMA PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Diploma in Business",
+              "2 Years",
+              "RM 45,900"
+            ],
+            [
+              "2",
+              "Diploma in Information Technology",
+              "2 Years",
+              "RM 47,680"
+            ],
+            [
+              "3",
+              "Diploma in Communication",
+              "2 Years",
+              "RM 44,180"
+            ],
+            [
+              "4",
+              "Diploma in Early Childhood Education",
+              "2.5 Years",
+              "RM 26,900"
+            ],
+            [
+              "5",
+              "Diploma in Education",
+              "2.5 Years",
+              "RM 16,900"
+            ]
+          ]
+        },
+        "remarks": "Discounted fee applies for 2025 intakes for selected programs. Excludes extra EMGS and administrative fees.",
+        "pdf_link": "help-fees"
+      },
+      {
+        "category_name": "BACHELOR PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Bachelor in Accounting (Honours)",
+              "3 Years",
+              "RM 88,400"
+            ],
+            [
+              "2",
+              "Bachelor in Marketing (Honours)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "3",
+              "Bachelor in International Business (Honours)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "4",
+              "Bachelor of Business (Finance) (Honours)",
+              "3 Years",
+              "RM 90,275"
+            ],
+            [
+              "5",
+              "Bachelor of Business (Entrepreneurship) (Honours)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "6",
+              "Bachelor of Business (Human Resource Management) (Honours)",
+              "3 Years",
+              "RM 92,020"
+            ],
+            [
+              "7",
+              "Bachelor of Business Analytics (Honours)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "8",
+              "Bachelor of Business Psychology (Hons)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "9",
+              "Bachelor of Economics (Honours)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "10",
+              "Bachelor of Management (Honours)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "11",
+              "Bachelor in Hospitality Management (Honours)",
+              "3 Years",
+              "RM 85,525"
+            ],
+            [
+              "12",
+              "Bachelor of Tourism Management (Honours)",
+              "3 Years",
+              "RM 92,665"
+            ],
+            [
+              "13",
+              "Bachelor of Early Childhood Education (Honours)",
+              "3 Years",
+              "RM 81,045"
+            ],
+            [
+              "14",
+              "Bachelor of Information Technology (Honours)",
+              "3 Years",
+              "RM 79,955"
+            ],
+            [
+              "15",
+              "Bachelor in Information Technology (Data Analytics) (Honours)",
+              "3 Years",
+              "RM 79,955"
+            ],
+            [
+              "16",
+              "Bachelor of Computer Science (Honours)",
+              "3 Years",
+              "RM 89,585"
+            ],
+            [
+              "17",
+              "Bachelor of Psychology (Honours)",
+              "3 Years",
+              "RM 104,860"
+            ],
+            [
+              "18",
+              "Bachelor of Communication (Hons)",
+              "3 Years",
+              "RM 81,975"
+            ],
+            [
+              "19",
+              "Bachelor of Laws (Honours)",
+              "3 Years",
+              "RM 78,140"
+            ],
+            [
+              "20",
+              "UK Degree Transfer Programme (Law)",
+              "2 Years",
+              "RM 69,850"
+            ]
+          ]
+        },
+        "remarks": "General Application Fee: RM 1,000. Administration Fee: RM 6,000. ISPF: RM 2,000. Psychology degree has a science lab fee of RM250 x 1 subject in Year 2.",
+        "pdf_link": "help-fees"
+      },
+      {
+        "category_name": "MASTER PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Master of Human Resource Development (MHRD)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "2",
+              "Master of Applied Business Analytics (MABA)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "3",
+              "Master of Entrepreneurship (MER)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "4",
+              "Master of Corporate Governance (MCG)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "5",
+              "Master of Accounting and Finance (MAF)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "6",
+              "Master of Business Administration (ODL)",
+              "Refer to University",
+              "RM 31,086"
+            ],
+            [
+              "7",
+              "Master of Project Management (MPM)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "8",
+              "Master of Business Administration (MBA)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "9",
+              "Master of Philosophy (MPhil)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "10",
+              "Master of Investment and Wealth Management (MIWM)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "11",
+              "Master in Counselling",
+              "Refer to University",
+              "RM 69,195"
+            ],
+            [
+              "12",
+              "Master of Clinical Psychology (MCP)",
+              "Refer to University",
+              "RM 67,275"
+            ],
+            [
+              "13",
+              "Master of Philosophy (Psychology) (MPhil)",
+              "Refer to University",
+              "RM 48,775"
+            ],
+            [
+              "14",
+              "Master of Data Science (MDS)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "15",
+              "Master of Science in Economic Crime Management (MECM)",
+              "Refer to University",
+              "RM 39,648"
+            ],
+            [
+              "16",
+              "Master of Education (Teaching & Learning) (MTL)",
+              "Refer to University",
+              "RM 39,648"
+            ]
+          ]
+        },
+        "remarks": "Postgraduate fees incorporate Course Fees (Special), Application Fee, EMGS, Admin Fees, and ISPF. All fees are subject to 6% SST.",
+        "pdf_link": "help-fees"
+      },
+      {
+        "category_name": "PHD PROGRAMS",
+        "table": {
+          "headers": [
+            "No",
+            "Programme",
+            "Duration",
+            "Total Tuition Fees"
+          ],
+          "rows": [
+            [
+              "1",
+              "Doctor of Business Administration (DBA)",
+              "Refer to University",
+              "RM 60,648"
+            ],
+            [
+              "2",
+              "Doctor of Philosophy (PhD)",
+              "Refer to University",
+              "RM 69,775"
+            ],
+            [
+              "3",
+              "Doctor of Philosophy (PhD) (ODL)",
+              "Refer to University",
+              "RM 42,086"
+            ],
+            [
+              "4",
+              "Doctor of Philosophy (Psychology) (PhD)",
+              "Refer to University",
+              "RM 58,775"
+            ],
+            [
+              "5",
+              "Doctor of Philosophy in Education (PhD)",
+              "Refer to University",
+              "RM 64,275"
+            ]
+          ]
+        },
+        "remarks": "For the MPhil and PhD in Psychology programs, 1 semester covers 6 months. Any extension beyond maximum duration is subject to Academic Board approval and extension fees.",
+        "pdf_link": "help-fees"
+      }
+    ]
+  }
+}

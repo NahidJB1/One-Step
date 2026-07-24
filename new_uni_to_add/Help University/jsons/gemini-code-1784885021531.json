@@ -1,0 +1,262 @@
+[
+  {
+    "name": "HELP University",
+    "campuses": [
+      "Subang Bestari",
+      "Damansara Heights",
+      "Kuala Lumpur"
+    ],
+    "programs": [
+      {
+        "name": "Certificate in Business Management",
+        "level": "Certificate",
+        "duration": "1.5 Years"
+      },
+      {
+        "name": "Foundation in Arts",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Foundation in Science",
+        "level": "Foundation",
+        "duration": "1 Year"
+      },
+      {
+        "name": "Diploma in Business",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Information Technology",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Communication",
+        "level": "Diploma",
+        "duration": "2 Years"
+      },
+      {
+        "name": "Diploma in Early Childhood Education",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Diploma in Education",
+        "level": "Diploma",
+        "duration": "2.5 Years"
+      },
+      {
+        "name": "Bachelor in Accounting (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor in Marketing (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor in International Business (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Business (Finance) (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Business (Entrepreneurship) (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Business (Human Resource Management) (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Business Analytics (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Business Psychology (Hons)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Economics (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Management (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor in Hospitality Management (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Tourism Management (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Early Childhood Education (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Information Technology (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor in Information Technology (Data Analytics) (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Computer Science (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Psychology (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Communication (Hons)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "Bachelor of Laws (Honours)",
+        "level": "Degree",
+        "duration": "3 Years"
+      },
+      {
+        "name": "UK Degree Transfer Programme (Law)",
+        "level": "Degree",
+        "duration": "2 Years"
+      },
+      {
+        "name": "MUET Preparatory Course",
+        "level": "Certificate",
+        "duration": "2 Months"
+      },
+      {
+        "name": "Master of Human Resource Development (MHRD)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Applied Business Analytics (MABA)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Entrepreneurship (MER)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Corporate Governance (MCG)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Accounting and Finance (MAF)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Business Administration (ODL)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Project Management (MPM)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Business Administration (MBA)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Philosophy (MPhil)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Investment and Wealth Management (MIWM)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master in Counselling",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Clinical Psychology (MCP)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Philosophy (Psychology) (MPhil)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Data Science (MDS)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Science in Economic Crime Management (MECM)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Master of Education (Teaching & Learning) (MTL)",
+        "level": "Master",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Doctor of Business Administration (DBA)",
+        "level": "PhD",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Doctor of Philosophy (PhD)",
+        "level": "PhD",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Doctor of Philosophy (PhD) (ODL)",
+        "level": "PhD",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Doctor of Philosophy (Psychology) (PhD)",
+        "level": "PhD",
+        "duration": "Refer to University"
+      },
+      {
+        "name": "Doctor of Philosophy in Education (PhD)",
+        "level": "PhD",
+        "duration": "Refer to University"
+      }
+    ]
+  }
+]

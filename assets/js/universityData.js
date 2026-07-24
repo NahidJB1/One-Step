@@ -220,7 +220,7 @@ const UNIVERSITY_META = {
         tags: ['Tech Focus', 'Budget Friendly'],
         desc: "Highly affordable engineering and tech programs right in the capital."
     },
-    "CYBERNETICS MALAYSIA (KTAC)": {
+    /* "CYBERNETICS MALAYSIA (KTAC)": {
         slug: "cybernetics",
         name: "Cybernetics International College",
         img: "cybernetics/cybernetics-main.jpg",
@@ -239,8 +239,8 @@ const UNIVERSITY_META = {
         locationCode: 'kl',
         tags: ['TVET Focus', 'Affordable'],
         desc: "Affordable college focusing on skills and vocational training."
-    },
-    "Binary University": {
+    }, */
+    /* "Binary University": {
         slug: "binary",
         name: "Binary University",
         img: "binary/binary-main.jpg",
@@ -259,8 +259,8 @@ const UNIVERSITY_META = {
         locationCode: 'subang',
         tags: ['Entrepreneurship', 'Tech Hub'],
         desc: "A specialist university for Management, IT, and Entrepreneurship."
-    },
-    "Binary University of Management & Entrepreneurship": {
+    }, */
+    /* "Binary University of Management & Entrepreneurship": {
         slug: "binary",
         name: "Binary University",
         img: "binary/binary-main.jpg",
@@ -279,8 +279,8 @@ const UNIVERSITY_META = {
         locationCode: 'subang',
         tags: ['Entrepreneurship', 'Tech Hub'],
         desc: "A specialist university for Management, IT, and Entrepreneurship."
-    },
-    "GENOVASI UNIVERSITY MALAYSIA": {
+    }, */
+    /* "GENOVASI UNIVERSITY MALAYSIA": {
         slug: "genovasi",
         name: "Genovasi University",
         img: "genovasi/genovasi-main.jpg",
@@ -299,8 +299,8 @@ const UNIVERSITY_META = {
         locationCode: 'subang',
         tags: ['Innovation', 'Design Thinking'],
         desc: "Pioneering university in Design Thinking and Innovation."
-    },
-    "University College MAIWP International (UCMI)": {
+    }, */
+    /* "University College MAIWP International (UCMI)": {
         slug: "ucmi",
         name: "UCMI",
         img: "ucmi/ucmi_main.jpg",
@@ -319,7 +319,7 @@ const UNIVERSITY_META = {
         locationCode: 'kl',
         tags: ['Medical Focus', 'Islamic Finance'],
         desc: "Strong emphasis on Health Sciences, Nursing, and Pharmacy."
-    },
+    }, */
     "Infrastructure University Kuala Lumpur (IUKL)": {
         slug: "iukl",
         name: "IUKL",

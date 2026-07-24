@@ -1,4 +1,4 @@
-{
+﻿{
     "alfa":  {
                  "id":  "alfa",
                  "title":  "ALFA University College",
@@ -1378,7 +1378,7 @@
             },
     "city-university":  {
                             "id":  "city-university",
-                            "title":  "City University â€“ International Fee Structure 2026",
+                            "title":  "City University  -  International Fee Structure 2026",
                             "theme":  {
 
                                       },
@@ -1389,7 +1389,7 @@
                         },
     "cyberjaya":  {
                       "id":  "cyberjaya",
-                      "title":  "University of Cyberjaya â€“ International Fee Structure 2026",
+                      "title":  "University of Cyberjaya  -  International Fee Structure 2026",
                       "theme":  {
 
                                 },
@@ -1400,7 +1400,7 @@
                   },
     "cybernetics":  {
                         "id":  "cybernetics",
-                        "title":  "Cybernetics Malaysia â€“ International Fee Structure 2026",
+                        "title":  "Cybernetics Malaysia  -  International Fee Structure 2026",
                         "theme":  {
 
                                   },
@@ -1411,7 +1411,7 @@
                     },
     "genovasi":  {
                      "id":  "genovasi",
-                     "title":  "Genovasi University â€“ International Fee Structure 2026",
+                     "title":  "Genovasi University  -  International Fee Structure 2026",
                      "theme":  {
 
                                },
@@ -1432,7 +1432,7 @@
                  "logo":  "../assets/images/universities/inti/inti-logo.png",
                  "categories":  [
                                     {
-                                        "category_name":  "INTI â€“ PENANG CAMPUS",
+                                        "category_name":  "INTI  -  PENANG CAMPUS",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
@@ -1665,7 +1665,7 @@
                                         "pdf_link":  "inti-penang-fees"
                                     },
                                     {
-                                        "category_name":  "INTI â€“ NILAI CAMPUS",
+                                        "category_name":  "INTI  -  NILAI CAMPUS",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
@@ -1852,11 +1852,11 @@
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Misc Fees:\nApplication Fee: RM600\nEMGS Fee: RM2,520\nRegistration Fee: RM2,400\nAdministration Fee (Pre-U/Diploma/Degree): RM4,000\nAdministration Fee (Master/PhD): RM10,000\nGeneral Deposit: RM600\nTotal Misc Fees: RM10,120 â€“ RM16,120",
+                                        "remarks":  "Misc Fees:\nApplication Fee: RM600\nEMGS Fee: RM2,520\nRegistration Fee: RM2,400\nAdministration Fee (Pre-U/Diploma/Degree): RM4,000\nAdministration Fee (Master/PhD): RM10,000\nGeneral Deposit: RM600\nTotal Misc Fees: RM10,120  -  RM16,120",
                                         "pdf_link":  "inti-nilai-fees"
                                     },
                                     {
-                                        "category_name":  "INTI â€“ SUBANG CAMPUS",
+                                        "category_name":  "INTI  -  SUBANG CAMPUS",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",

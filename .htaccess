@@ -1,1 +1,11 @@
-Options -Indexes
+﻿Options -Indexes
+RewriteEngine On
+
+# 1. Redirect externally requested .html URLs to extensionless URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html[\ ?\ HTTP/] [NC]
+RewriteRule ^(.*)\.html$ / [R=301,L]
+
+# 2. Internally route extensionless requests to the .html files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ .html [L]

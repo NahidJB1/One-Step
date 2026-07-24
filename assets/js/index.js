@@ -123,6 +123,7 @@ function renderFeaturedUniversities() {
         
         const isHidden = count >= 6 ? ' hidden-card' : '';
         const detailsLink = `Universities/${meta.slug}-details.html`;
+        const feesLink = `Fees_Chart/${meta.slug}-fees.html`;
 
         html += `
           <div class="university-card${isHidden}">
@@ -132,7 +133,7 @@ function renderFeaturedUniversities() {
               <h3 class="university-name">${uni.name}</h3>
               <div class="university-location"><i class="fas fa-map-marker-alt"></i><span>${meta.loc}</span></div>
               <div class="university-card-buttons">
-                <a href="${detailsLink}?program=true" class="card-btn programs">
+                <a href="${feesLink}" class="card-btn programs">
                   <i class="fas fa-list-ul"></i> Programs
                 </a>
                 <a href="${detailsLink}" class="card-btn details">
@@ -177,7 +178,7 @@ function triggerSearch() {
         const uniName = uni.name;
         if (!window.UNIVERSITY_META || !window.UNIVERSITY_META[uniName]) return;
         const meta = window.UNIVERSITY_META[uniName];
-        const uniLink = `Universities/${meta.slug}-details.html`;
+        const uniLink = `Fees_Chart/${meta.slug}-fees.html`;
 
         uni.programs.forEach(program => {
             const progName = program.name;

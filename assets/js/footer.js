@@ -40,39 +40,53 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 <div class="footer-col">
                   <h3>University Details</h3>
-                  <ul class="footer-links">
+                  <ul class="footer-links two-col-list">
                     <li><a href="${root}Universities/alfa-details.html">Alfa University</a></li>
+                    <li><a href="${root}Universities/amu-details.html">AMU</a></li>
+                    <li><a href="${root}Universities/apu-details.html">APU</a></li>
                     <li><a href="${root}Universities/bac-details.html">BAC</a></li>
-                    <li><a href="${root}Universities/binary-details.html">Binary University</a></li>
                     <li><a href="${root}Universities/cityu-details.html">City University</a></li>
                     <li><a href="${root}Universities/cyberjaya-details.html">Cyberjaya Uni</a></li>
-                    <li><a href="${root}Universities/cybernetics-details.html">Cybernetics</a></li>
-                    <li><a href="${root}Universities/genovasi-details.html">Genovasi Uni</a></li>
+                    <li><a href="${root}Universities/help-details.html">HELP</a></li>
+                    <li><a href="${root}Universities/icms-details.html">ICMS</a></li>
                     <li><a href="${root}Universities/inti-details.html">INTI University</a></li>
                     <li><a href="${root}Universities/kings-details.html">Kings College</a></li>
                     <li><a href="${root}Universities/klust-details.html">KLUST</a></li>
+                    <li><a href="${root}Universities/limkokwing-details.html">Limkokwing</a></li>
+                    <li><a href="${root}Universities/lincoln-details.html">Lincoln</a></li>
+                    <li><a href="${root}Universities/mmu-details.html">MMU</a></li>
                     <li><a href="${root}Universities/segi-details.html">SEGi University</a></li>
                     <li><a href="${root}Universities/taylors-details.html">Taylor's Uni</a></li>
-                    <li><a href="${root}Universities/ucmi-details.html">UCMI</a></li>
+                    <li><a href="${root}Universities/ucsi-details.html">UCSI</a></li>
+                    <li><a href="${root}Universities/umw-details.html">UMW</a></li>
+                    <li><a href="${root}Universities/unikl-details.html">UniKL</a></li>
+                    <li><a href="${root}Universities/unirazak-details.html">UNIRAZAK</a></li>
                   </ul>
                 </div>
                 
                 <div class="footer-col">
                   <h3>Tuition Fees</h3>
-                  <ul class="footer-links">
+                  <ul class="footer-links two-col-list">
                     <li><a href="${root}Fees_Chart/alfa-fees.html">Alfa Fees</a></li>
+                    <li><a href="${root}Fees_Chart/amu-fees.html">AMU Fees</a></li>
+                    <li><a href="${root}Fees_Chart/apu-fees.html">APU Fees</a></li>
                     <li><a href="${root}Fees_Chart/bac-fees.html">BAC Fees</a></li>
-                    <li><a href="${root}Fees_Chart/binary-fees.html">Binary Fees</a></li>
                     <li><a href="${root}Fees_Chart/city-university-fees.html">City U Fees</a></li>
                     <li><a href="${root}Fees_Chart/cyberjaya-fees.html">Cyberjaya Fees</a></li>
-                    <li><a href="${root}Fees_Chart/cybernetics-fees.html">Cybernetics Fees</a></li>
-                    <li><a href="${root}Fees_Chart/genovasi-fees.html">Genovasi Fees</a></li>
+                    <li><a href="${root}Fees_Chart/help-fees.html">HELP Fees</a></li>
+                    <li><a href="${root}Fees_Chart/icms-fees.html">ICMS Fees</a></li>
                     <li><a href="${root}Fees_Chart/inti-fees.html">INTI Fees</a></li>
                     <li><a href="${root}Fees_Chart/kings-fees.html">Kings Fees</a></li>
                     <li><a href="${root}Fees_Chart/klust-fees.html">KLUST Fees</a></li>
+                    <li><a href="${root}Fees_Chart/limkokwing-fees.html">Limkokwing Fees</a></li>
+                    <li><a href="${root}Fees_Chart/lincoln-fees.html">Lincoln Fees</a></li>
+                    <li><a href="${root}Fees_Chart/mmu-fees.html">MMU Fees</a></li>
                     <li><a href="${root}Fees_Chart/segi-fees.html">SEGi Fees</a></li>
                     <li><a href="${root}Fees_Chart/taylors-fees.html">Taylor's Fees</a></li>
-                    <li><a href="${root}Fees_Chart/ucmi-fees.html">UCMI Fees</a></li>
+                    <li><a href="${root}Fees_Chart/ucsi-fees.html">UCSI Fees</a></li>
+                    <li><a href="${root}Fees_Chart/umw-fees.html">UMW Fees</a></li>
+                    <li><a href="${root}Fees_Chart/unikl-fees.html">UniKL Fees</a></li>
+                    <li><a href="${root}Fees_Chart/unirazak-fees.html">UNIRAZAK Fees</a></li>
                   </ul>
                 </div>
                 

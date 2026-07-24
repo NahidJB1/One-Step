@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // --- Image Lightbox Logic ---
 document.addEventListener("DOMContentLoaded", function() {
     if (document.querySelectorAll('.gallery-item').length > 0) {
-        const lightboxHtml = 
+        const lightboxHtml = `
             <div class="lightbox-overlay" id="gallery-lightbox">
                 <div class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></div>
                 <div class="lightbox-content">
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 <div class="lightbox-caption" id="lightbox-caption"></div>
             </div>
-        ;
+        `;
         document.body.insertAdjacentHTML('beforeend', lightboxHtml);
 
         const overlay = document.getElementById('gallery-lightbox');

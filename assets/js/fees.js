@@ -32,11 +32,17 @@ async function initDynamicFees() {
 
 function renderDynamicFees(uni) {
     // 1. Inject Theme Colors
-    if (uni.theme) {
+    if (uni.theme && uni.theme.theme_color) {
         document.documentElement.style.setProperty('--theme-color', uni.theme.theme_color);
         document.documentElement.style.setProperty('--theme-dark', uni.theme.theme_dark);
         document.documentElement.style.setProperty('--theme-accent', uni.theme.theme_accent);
         document.documentElement.style.setProperty('--theme-light', uni.theme.theme_light);
+    } else {
+        // Fallback for universities with missing theme data
+        document.documentElement.style.setProperty('--theme-color', '#0B1B3D');
+        document.documentElement.style.setProperty('--theme-dark', '#050D20');
+        document.documentElement.style.setProperty('--theme-accent', '#FFD700');
+        document.documentElement.style.setProperty('--theme-light', '#1A2F5C');
     }
 
     // 2. Inject Header

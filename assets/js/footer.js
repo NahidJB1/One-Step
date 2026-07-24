@@ -129,6 +129,46 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
 
             <style>
+                            /* WHATSAPP FLOATING BUTTON */
+              .floating-whatsapp {
+                  position: fixed;
+                  bottom: 30px;
+                  right: 30px;
+                  width: 60px;
+                  height: 60px;
+                  background-color: #25D366;
+                  color: white;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 32px;
+                  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+                  z-index: 9999;
+                  text-decoration: none;
+                  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                  animation: pulse-whatsapp 2s infinite;
+              }
+              .floating-whatsapp:hover {
+                  transform: scale(1.1) translateY(-5px);
+                  color: white;
+                  box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
+              }
+              @keyframes pulse-whatsapp {
+                  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+                  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+                  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+              }
+              @media (max-width: 768px) {
+                  .floating-whatsapp {
+                      bottom: 20px;
+                      right: 20px;
+                      width: 50px;
+                      height: 50px;
+                      font-size: 28px;
+                  }
+              }
+              
               /* Existing Styles */
               .two-col-list {
                 display: grid;

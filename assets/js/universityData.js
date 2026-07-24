@@ -1,4 +1,4 @@
-﻿const UNIVERSITY_META = {
+const UNIVERSITY_META = {
     "Taylor's University": {
         slug: "taylors",
         name: "Taylor's University",
@@ -320,9 +320,9 @@
         tags: ['Medical Focus', 'Islamic Finance'],
         desc: "Strong emphasis on Health Sciences, Nursing, and Pharmacy."
     }, */
-    "Infrastructure University Kuala Lumpur (IUKL)": {
-        slug: "iukl",
-        name: "IUKL",
+    "Kuala Lumpur University of Science and Technology (KLUST)": {
+        slug: "klust",
+        name: "KLUST",
         img: "iukl/iukl_main.jpg",
         badge: "Engineering",
         loc: "Kajang",

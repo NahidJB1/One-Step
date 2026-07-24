@@ -1,0 +1,555 @@
+/* =========================================
+   University Details Page - UPDATED VERSION
+   ========================================= */
+
+/* 1. GLOBAL PAGE SETTINGS */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--uni-theme);
+  background-image: linear-gradient(180deg, var(--uni-theme) 0%, #0f0f0f 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* 2. HERO SECTION - FULL SCREEN FIX */
+.uni-header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* FIXED: Forces full screen height on all devices */
+  min-height: 600px; /* Safety minimum */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  align-items: center; /* Vertically centers the text */
+  justify-content: center;
+}
+
+/* Dark overlay to make text pop */
+.uni-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+.uni-header-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 24px;
+  color: white;
+  margin-top: 60px; /* Slight offset for visual balance */
+}
+
+.uni-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 4.5rem; /* Slightly larger for the full-screen look */
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.uni-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.meta-tag {
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.meta-tag i {
+  color: #ff9999;
+  filter: drop-shadow(0 0 5px rgba(255, 153, 153, 0.4));
+}
+
+/* 3. LAYOUT GRID & CONTAINER */
+.main-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1280px;
+  margin: -60px auto 80px; /* Negative margin pulls it up into the hero slightly */
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 30px;
+  align-items: start;
+  width: 100%;
+}
+
+/* 4. TABS NAVIGATION - CENTERED & WRAPPED FIX */
+.tabs-nav {
+  display: flex;
+  justify-content: center; /* FIXED: Always center aligned */
+  flex-wrap: wrap; /* FIXED: Allows buttons to stack, preventing overflow */
+  gap: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  padding-top: 0;
+}
+
+.tab-btn {
+  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  flex: 0 1 auto; /* Allows natural width, but respects wrapping */
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.tab-btn.active {
+  background: white;
+  color: var(--uni-theme);
+  border-color: white;
+  font-weight: 700;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* 5. CONTENT AREA & CARDS */
+.tab-content {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section-head {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--uni-theme);
+  padding-left: 15px;
+}
+
+p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 30px 0;
+}
+
+/* 6. INTERACTIVE GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 150px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item .overlay i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.gallery-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 15px 15px; /* Top padding creates space for the gradient */
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); /* Smooth fade */
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  z-index: 5; /* Ensures it sits above the image */
+  box-sizing: border-box;
+  pointer-events: none; /* Allows clicking through the text */
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Animation: Title moves up slightly when card is hovered */
+.gallery-item:hover .gallery-title {
+  transform: translateY(-5px);
+}
+
+
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Update this media query */
+@media (min-width: 901px) {
+  .sidebar-info {
+    padding-top: 0; /* CHANGED: From 85px to 0 */
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.icon-box {
+  width: 45px;
+  height: 45px;
+  background: rgba(195, 0, 47, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--uni-theme);
+  font-size: 1.2rem;
+}
+
+.stat-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-details strong {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.stat-details span {
+  font-weight: 600;
+  color: #222;
+}
+
+/* 8. ACTION BUTTONS - GOLDEN UPDATE */
+.btn-back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 20;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-back:hover {
+  background: white;
+  color: var(--uni-theme);
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn-action {
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Primary Button (Chat Now) */
+.btn-action.primary {
+  background: var(--uni-theme);
+  color: white;
+  box-shadow: 0 4px 15px rgba(195, 0, 47, 0.4);
+}
+.btn-action.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(195, 0, 47, 0.6);
+}
+
+/* Secondary Button (View Fees) - Golden */
+.btn-action.secondary {
+  background: linear-gradient(135deg, #FFD700, #FDB931);
+  color: #000;
+  border: 1px solid #E5C100;
+}
+
+.btn-action.secondary:hover {
+  background: linear-gradient(135deg, #FFE44D, #FFC000);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* 9. LOCATIONS & MAP */
+.map-container {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.locations-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.loc-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.loc-card i {
+  color: var(--uni-theme);
+  font-size: 1.2rem;
+}
+
+.loc-card h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.loc-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* 10. LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 11. FACULTY LIST */
+.faculty-list {
+  list-style: none;
+  padding: 0;
+}
+.faculty-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+}
+.faculty-list li i {
+  color: var(--uni-theme);
+  font-size: 1.1rem;
+}
+
+/* 12. RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  /* FIXED: Removed height override so it stays 100vh on mobile */
+  .uni-header {
+    background-attachment: scroll !important; /* Performance fix for mobile */
+    background-position: center;
+  }
+  
+  .uni-title {
+    font-size: 3rem; /* Adjusted for mobile fit */
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .sidebar-info {
+    padding-top: 0;
+  }
+  
+  .main-container {
+    margin-top: -40px; /* Adjusted overlap for mobile */
+    padding: 0 20px;
+    max-width: 100vw;
+  }
+  
+  .locations-list {
+    grid-template-columns: 1fr;
+  }
+  
+  /* FIXED: Tabs wrap on center for mobile, no scrolling */
+  .tab-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    flex: 1 1 auto; /* Grow to fill space nicely */
+    min-width: 120px; /* Prevent them getting too squashed */
+  }
+}
+
+/* Update for Section 9: LOCATIONS & MAP */
+
+.highlighted-loc {
+  border: 2px solid var(--uni-theme);
+  background: white !important;
+  box-shadow: 0 10px 20px rgba(195, 0, 47, 0.1);
+}
+
+.location-sign-anim {
+  font-size: 1.5rem !important;
+  color: var(--uni-theme);
+  animation: bounceMarker 2s infinite ease-in-out;
+}
+
+@keyframes bounceMarker {
+  0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
+  50% { transform: translateY(-8px); filter: drop-shadow(0 10px 5px rgba(0,0,0,0.2)); }
+}
+
+/* Ensure mobile responsiveness for the long address */
+@media (max-width: 900px) {
+  .loc-card p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Program Recommender | One Step MY</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+<body>
+
+  <div id="global-nav-placeholder"></div>
+
+  <section class="quiz-section">
+    <div class="container">
+      <div class="quiz-header">
+        <h1>Smart Program <span>Recommender</span></h1>
+        <p>Answer 4 quick questions and let our AI-driven tool match you with the perfect Malaysian university and program.</p>
+      </div>
+
+      <div class="quiz-container">
+        
+        <!-- Progress -->
+        <div class="progress-wrapper" id="progressWrapper">
+          <span class="progress-text" id="stepCounter">Step 1 of 4</span>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          <span class="progress-text"><i class="fas fa-bullseye" style="color:var(--primary);"></i></span>
+        </div>
+
+        <!-- Step 1: Qualification -->
+        <div class="quiz-step active" id="step1">
+          <div class="quiz-question">What is your highest qualification?</div>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('edu', 'olevel', this)">
+              <i class="fas fa-school"></i><span>O-Level / SSC (Grade 10)</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('edu', 'alevel', this)">
+              <i class="fas fa-user-graduate"></i><span>A-Level / HSC (Grade 12)</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('edu', 'diploma', this)">
+              <i class="fas fa-certificate"></i><span>Diploma</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('edu', 'bachelor', this)">
+              <i class="fas fa-graduation-cap"></i><span>Bachelor's Degree</span>
+            </div>
+          </div>
+          <div class="quiz-actions" style="justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="nextStep(2)">Next Question <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 2: Field -->
+        <div class="quiz-step" id="step2">
+          <div class="quiz-question">Which field of study interests you the most?</div>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('field', 'business', this)">
+              <i class="fas fa-chart-line"></i><span>Business, Management & IT</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('field', 'engineering', this)">
+              <i class="fas fa-cogs"></i><span>Engineering & Technology</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('field', 'healthcare', this)">
+              <i class="fas fa-heartbeat"></i><span>Healthcare & Medicine</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('field', 'arts', this)">
+              <i class="fas fa-palette"></i><span>Creative Arts & Hospitality</span>
+            </div>
+          </div>
+          <div class="quiz-actions">
+            <button class="btn btn-back" onclick="prevStep(1)"><i class="fas fa-arrow-left"></i> Back</button>
+            <button class="btn btn-primary" onclick="nextStep(3)">Next Question <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 3: Budget -->
+        <div class="quiz-step" id="step3">
+          <div class="quiz-question">What is your estimated annual budget for tuition?</div>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('budget', 'budget', this)">
+              <i class="fas fa-wallet"></i><span>Under RM 30,000 (Highly Affordable)</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('budget', 'mid', this)">
+              <i class="fas fa-money-bill-wave"></i><span>RM 30,000 - RM 50,000 (Standard)</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('budget', 'premium', this)">
+              <i class="fas fa-gem"></i><span>Above RM 50,000 (Premium)</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('budget', 'any', this)">
+              <i class="fas fa-search-dollar"></i><span>Not sure yet / Any budget</span>
+            </div>
+          </div>
+          <div class="quiz-actions">
+            <button class="btn btn-back" onclick="prevStep(2)"><i class="fas fa-arrow-left"></i> Back</button>
+            <button class="btn btn-primary" onclick="nextStep(4)">Next Question <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 4: Location Preference -->
+        <div class="quiz-step" id="step4">
+          <div class="quiz-question">Do you have a preferred campus location?</div>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('location', 'kl', this)">
+              <i class="fas fa-city"></i><span>Kuala Lumpur (City Center)</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('location', 'subang', this)">
+              <i class="fas fa-map-marked-alt"></i><span>Subang / Cyberjaya (Student Hubs)</span>
+            </div>
+            <div class="quiz-option" onclick="selectOption('location', 'any', this)" style="grid-column: 1 / -1;">
+              <i class="fas fa-globe-asia"></i><span>No preference, show me the best options</span>
+            </div>
+          </div>
+          <div class="quiz-actions">
+            <button class="btn btn-back" onclick="prevStep(3)"><i class="fas fa-arrow-left"></i> Back</button>
+            <button class="btn btn-accent" onclick="submitQuiz()">Find My Matches <i class="fas fa-magic"></i></button>
+          </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading-state" id="loadingState">
+          <div class="spinner"></div>
+          <h3>Analyzing your profile...</h3>
+          <p style="color:var(--gray); margin-top:10px;">Finding the best universities for your budget and goals.</p>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results">
+          <div class="result-intro">
+            <h2>Your Top University Matches! 🎉</h2>
+            <p>Based on your profile, here are the universities that best fit your requirements.</p>
+          </div>
+          
+          <div id="resultsContainer"></div>
+          
+          <div class="quiz-actions" style="justify-content: center; gap: 15px; margin-top: 40px; flex-wrap:wrap;">
+            <button class="btn btn-back" onclick="location.reload()"><i class="fas fa-redo"></i> Retake Quiz</button>
+            <a href="compare.html" class="btn btn-primary"><i class="fas fa-balance-scale"></i> Compare These</a>
+            <a href="application.html" class="btn btn-accent"><i class="fas fa-paper-plane"></i> Apply Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="global-footer-placeholder"></div>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  
+  <script src="assets/js/universityData.js"></script>
+  <script>
+    const userAnswers = { edu: '', field: '', budget: '', location: '' };
+
+    function selectOption(category, value, el) {
+      userAnswers[category] = value;
+      const siblings = el.parentElement.children;
+      for(let i=0; i<siblings.length; i++) siblings[i].classList.remove('selected');
+      el.classList.add('selected');
+    }
+
+    function nextStep(step) {
+      const prevCat = step === 2 ? 'edu' : step === 3 ? 'field' : 'budget';
+      if (!userAnswers[prevCat]) return alert("Please select an option to continue.");
+      
+      document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+      document.getElementById('step' + step).classList.add('active');
+      document.getElementById('progressFill').style.width = (step * 25) + '%';
+      document.getElementById('stepCounter').innerText = `Step ${step} of 4`;
+    }
+
+    function prevStep(step) {
+      document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+      document.getElementById('step' + step).classList.add('active');
+      document.getElementById('progressFill').style.width = (step * 25) + '%';
+      document.getElementById('stepCounter').innerText = `Step ${step} of 4`;
+    }
+
+    function submitQuiz() {
+      if (!userAnswers.location) return alert("Please select an option to continue.");
+      
+      // Hide steps & progress, show loading
+      document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+      document.getElementById('progressWrapper').style.display = 'none';
+      document.getElementById('loadingState').style.display = 'block';
+
+      // Simulate API/Analysis delay
+      setTimeout(() => {
+        document.getElementById('loadingState').style.display = 'none';
+        showResults();
+      }, 1500);
+    }
+
+    // Convert UNIVERSITY_META to the format expected by the quiz
+    const universities = [];
+    if (window.UNIVERSITY_META) {
+        Object.values(window.UNIVERSITY_META).forEach(uni => {
+            // Deduplicate if multiple names map to same slug (like Kings)
+            if (!universities.find(u => u.id === uni.slug)) {
+                universities.push({
+                    id: uni.slug,
+                    name: uni.name,
+                    img: uni.img,
+                    link: `Universities/${uni.slug}-details.html`,
+                    fields: uni.fields || [],
+                    budget: uni.budget || 'any',
+                    location: uni.locationCode || 'any',
+                    tags: uni.tags || [],
+                    desc: uni.desc || ''
+                });
+            }
+        });
+    }
+
+    function showResults() {
+      document.getElementById('results').style.display = 'block';
+
+      // Smart Scoring Algorithm
+      universities.forEach(uni => {
+        let score = 0;
+        // Field match (critical)
+        if (uni.fields.includes(userAnswers.field)) score += 40;
+        
+        // Budget match
+        if (userAnswers.budget === 'any') {
+          score += 20; 
+        } else if (uni.budget === userAnswers.budget) {
+          score += 30;
+        } else if (userAnswers.budget === 'premium' && uni.budget === 'mid') {
+          score += 15; // Premium student can afford mid
+        } else if (userAnswers.budget === 'mid' && uni.budget === 'budget') {
+          score += 15; // Mid student can afford budget
+        }
+
+        // Location match
+        if (userAnswers.location === 'any' || uni.location === 'any') {
+          score += 20;
+        } else if (uni.location === userAnswers.location) {
+          score += 25;
+        }
+
+        // Add a slight random factor to break ties naturally
+        score += Math.floor(Math.random() * 5);
+        
+        uni.score = score;
+      });
+
+      // Sort by score descending and take top 3
+      const topMatches = universities.sort((a, b) => b.score - a.score).slice(0, 3);
+
+      let html = '';
+      topMatches.forEach((uni, index) => {
+        // Calculate a realistic percentage display based on score maxing around 95-99
+        let matchPercent = 98 - (index * 4) - Math.floor(Math.random() * 3); 
+        if(index === 0 && uni.score > 80) matchPercent = 99;
+
+        let tagsHtml = uni.tags.map(t => `<span>${t}</span>`).join('');
+
+        html += `
+          <div class="match-card">
+            <img src="assets/images/universities/${uni.img}" class="match-img" onerror="this.src='https://via.placeholder.com/140?text=Logo'">
+            <div class="match-content">
+              <div class="match-badge">${matchPercent}% Match</div>
+              <h3>${uni.name}</h3>
+              <p>${uni.desc}</p>
+              <div class="match-tags">${tagsHtml}</div>
+            </div>
+            <div class="match-action">
+              <a href="${uni.link}" class="btn btn-outline" style="border: 2px solid var(--primary); color: var(--primary);">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        `;
+      });
+
+      document.getElementById('resultsContainer').innerHTML = html;
+    }
+  </script>
+</body>
+</html>

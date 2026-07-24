@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Step MY | Study in Malaysia - Top University Partnerships</title>
+  <meta name="description" content="One Step MY provides expert guidance and direct university partnerships for students seeking world-class education in top Malaysian institutions. Start your application today.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+<div id="global-nav-placeholder"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="floating-elements">
+      <div class="floating-element"></div>
+      <div class="floating-element"></div>
+      <div class="floating-element"></div>
+    </div>
+    
+    <div class="container hero-container">
+      <h1 class="hero-title">One Step To <span>Touch Dream</span></h1>
+      <p class="hero-subtitle">One Step provides expert guidance and direct university partnerships for Bangladeshi students seeking world-class education in top institutions.</p>
+      
+      <a href="#universities" class="btn btn-primary">
+        <i class="fas fa-graduation-cap"></i> Explore Universities
+      </a>
+      
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number" id="universityCount">15+</span>
+          <span class="hero-stat-label">Partner Universities</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" id="studentCount">150+</span>
+          <span class="hero-stat-label">Successful Students</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">100%</span>
+          <span class="hero-stat-label">Visa Success Rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="scholarship-promo-container">
+    <div class="container">
+      <div class="promo-banner">
+        <div class="promo-content">
+          <div class="promo-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="promo-text">
+            <h3>Claim Your Scholarship Now</h3>
+            <p>Unlock financial support for your studies in Malaysia or apply for our local regional excellence awards.</p>
+          </div>
+        </div>
+        <a href="scholarship-options.html" class="btn btn-accent promo-btn">
+          View Details & Apply <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="promo-banner ielts-banner" style="margin-top: 20px; background: linear-gradient(90deg, rgba(0, 194, 255, 0.1), rgba(0, 82, 212, 0.2)); border-color: rgba(0, 194, 255, 0.3);">
+        <div class="promo-content">
+          <div class="promo-icon" style="color: #00C2FF; background: rgba(0, 194, 255, 0.1);">
+            <i class="fas fa-spell-check"></i>
+          </div>
+          <div class="promo-text">
+            <h3>Free IELTS Mock Test</h3>
+            <p>Practice and assess your English proficiency for free before taking the real exam.</p>
+          </div>
+        </div>
+        <a href="https://ieltsmock.onestepmy.com/" target="_blank" class="btn btn-accent promo-btn" style="background: #00C2FF; color: #fff;">
+          Take Free Test <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Search Section -->
+  <section class="quick-search">
+    <div class="container">
+      <div class="search-card">
+  <h2 class="search-title">Find Your University</h2>
+  <p class="search-subtitle">Search from hundreds of courses across Malaysia's top universities. We'll match you with the best Universities.</p>
+  
+  <div class="search-container-wrapper">
+    <div class="search-input-group">
+  <input 
+    type="text" 
+    id="programSearchInput" 
+    class="search-input" 
+    placeholder="What do you want to study? (e.g. Business, City U, IT)" 
+    onkeyup="triggerSearch()"
+  >
+  <button type="button" class="search-btn" onclick="triggerSearch()">
+    <i class="fas fa-search"></i> <span class="btn-text">Search</span>
+  </button>
+</div>
+
+    <div id="filterContainer" class="filter-buttons-container" style="display: none;">
+      </div>
+
+    <div id="searchResults" class="search-results-grid"></div>
+    
+    <div id="seeMoreContainer" class="see-more-wrapper" style="display: none;">
+      <button id="seeMoreBtn" class="btn btn-primary see-more-custom">See More Results</button>
+    </div>
+  </div>
+  </section>
+
+
+  <section class="dream-country-section" id="dream-country">
+  <div class="country-bg-overlay"></div>
+  <div class="world-map-bg"></div>
+
+  <div class="container relative-container">
+    <h2 class="section-title" style="color: white; margin-bottom: 50px;">Check Out Your <span>Dream Country</span></h2>
+    
+    <div class="carousel-wrapper">
+      <button class="nav-arrow left-arrow" onclick="rotateCountry(-1)"><i class="fas fa-chevron-left"></i></button>
+      
+      <div class="flag-carousel" id="flagCarousel">
+        </div>
+      
+      <button class="nav-arrow right-arrow" onclick="rotateCountry(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div class="country-info-container">
+      <div class="country-info-card" id="countryInfoCard">
+        <h3 class="country-name" id="cName">Select a Country</h3>
+        <div class="country-details-grid">
+          <div class="c-detail">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <small>Intakes</small>
+              <span id="cIntakes">Loading...</span>
+            </div>
+          </div>
+          <div class="c-detail">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <small>Programs</small>
+              <span id="cPrograms">Loading...</span>
+            </div>
+          </div>
+          <div class="c-detail">
+            <i class="fas fa-money-bill-wave"></i>
+            <div>
+              <small>Fee Range</small>
+              <span id="cFee">Loading...</span>
+            </div>
+          </div>
+          <div class="c-detail">
+            <i class="fas fa-passport"></i>
+            <div>
+              <small>Visa Success</small>
+              <span id="cVisa">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <div class="country-action">
+          <a href="#" id="cReadMore" class="btn btn-primary country-btn">
+            Read More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Featured Universities -->
+ <section class="section universities-section" id="universities">
+  <div class="container">
+    <h2 class="section-title">Featured <span>Universities</span></h2>
+    <p class="section-subtitle">Partnering with Malaysia's top-ranked institutions to provide you with quality education and global recognition.</p>
+    
+    <div class="university-grid" id="universityGrid">
+      <!-- University cards will be injected here by JavaScript -->
+    </div> <!-- End of .university-grid -->
+    
+    <div class="view-all-container">
+      <button id="viewAllBtn" class="btn btn-secondary">
+        View All 13+ Universities <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- Explore Tools Section -->
+  <section class="section explore-tools-section" id="explore-tools">
+    <div class="container">
+      <h2 class="section-title">Explore & <span>Discover</span></h2>
+      <p class="section-subtitle">Use our interactive tools to find the perfect university fit or explore quick facts about studying in Malaysia.</p>
+      
+      <div class="explore-tools-grid">
+        <!-- Compare Tool -->
+        <a href="compare.html" class="explore-tool-card" style="text-decoration: none;">
+          <div class="explore-tool-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3 class="explore-tool-title">Compare Universities</h3>
+          <p class="explore-tool-desc">Side-by-side comparison of tuition fees, rankings, and programs across our partner institutions.</p>
+          <div class="btn btn-secondary" style="align-self: center;">Start Comparing</div>
+        </a>
+
+        <!-- SEO Links (Middle) -->
+        <div class="seo-links-card">
+          <h3 class="seo-title">Popular Topics</h3>
+          <ul class="seo-links-list">
+            <li><a href="Articles/cheapest-universities.html">10 Cheapest Universities in Malaysia <i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="Articles/fast-processing-universities.html">Fast Processing Universities <i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="Articles/affordable-countries.html">10 Affordable Countries for Study <i class="fas fa-arrow-right"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Find Match Tool -->
+        <a href="quiz.html" class="explore-tool-card" style="text-decoration: none;">
+          <div class="explore-tool-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3 class="explore-tool-title">Find Your Match</h3>
+          <p class="explore-tool-desc">Take our quick assessment quiz and let our algorithm match you with the best universities for your profile.</p>
+          <div class="btn btn-secondary" style="align-self: center;">Take the Quiz</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Steps -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <h2 class="section-title process-title">Our <span>Simple Process</span></h2>
+      <p class="section-subtitle process-subtitle">From initial consultation to campus arrival, we guide you through every step of your educational journey.</p>
+      
+      <div class="process-steps">
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Consultation</h3>
+          <p class="step-description">Free personalized consultation to understand your goals and recommend suitable programs.</p>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3 class="step-title">University Selection</h3>
+          <p class="step-description">We help you choose the right university and program based on your academic background.</p>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Application</h3>
+          <p class="step-description">We handle the entire application process including document preparation and submission.</p>
+        </div>
+        
+        <!-- Step 4 -->
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Visa Processing</h3>
+          <p class="step-description">Expert guidance through the visa application process with a high success rate.</p>
+        </div>
+        
+        <!-- Step 5 -->
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <h3 class="step-title">Pre-Departure</h3>
+          <p class="step-description">Comprehensive pre-departure briefing and assistance with accommodation arrangements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="contact">
+    <div class="cta-particles" id="particlesContainer"></div>
+    
+    <div class="container">
+      <h2 class="cta-title">Ready to Start Your Journey?</h2>
+      <p class="cta-subtitle">Contact us today for a free consultation and take the first step toward your Malaysian education dream.</p>
+      
+      <div class="cta-buttons">
+        <a href="https://wa.me/6011159497" target="_blank" class="btn cta-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <a href="application.html" class="btn btn-accent">
+        <i class="fas fa-rocket"></i> Start Your Application
+       </a>
+      </div>
+    </div>
+  </section>
+
+<div id="global-footer-placeholder"></div>
+<script src="assets/js/universityData.js"></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>

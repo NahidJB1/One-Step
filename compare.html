@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Universities | One Step MY</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/compare.css">
+</head>
+<body>
+
+  <div id="global-nav-placeholder"></div>
+
+  <section class="hero-compare">
+    <div class="container">
+      <h1>Compare <span>Universities</span></h1>
+      <p>Select up to 3 universities to compare tuition fees, intakes, facilities, and programs side-by-side to make an informed decision.</p>
+    </div>
+  </section>
+
+  <div class="compare-container">
+    <div class="selection-panel">
+      <h3>Select Universities to Compare</h3>
+      <div class="select-wrapper">
+        <div class="custom-select">
+          <select id="uni1" onchange="renderComparison()"><option value="">-- Select University 1 --</option></select>
+        </div>
+        <div class="custom-select">
+          <select id="uni2" onchange="renderComparison()"><option value="">-- Select University 2 --</option></select>
+        </div>
+        <div class="custom-select">
+          <select id="uni3" onchange="renderComparison()"><option value="">-- Select University 3 --</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div class="compare-table-container" id="emptyState" style="display: block;">
+      <div class="empty-state">
+        <i class="fas fa-balance-scale"></i>
+        <h3>Ready to Compare</h3>
+        <p>Select at least one university from the dropdowns above to see a detailed side-by-side comparison.</p>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="compare-table-container" id="tableContainer">
+      <div class="table-scroll">
+        <table class="compare-table" id="compareTable">
+          <!-- Populated via JS -->
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="global-footer-placeholder"></div>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  
+  <script src="assets/js/universityData.js"></script>
+  <script>
+    const selects = [document.getElementById('uni1'), document.getElementById('uni2'), document.getElementById('uni3')];
+    
+    // Populate Selects from centralized UNIVERSITY_META
+    Object.keys(UNIVERSITY_META).forEach(uniKey => {
+      const uniName = UNIVERSITY_META[uniKey].name || uniKey;
+      selects.forEach(select => {
+          const option = new Option(uniName, uniKey);
+          select.add(option);
+      });
+    });
+
+    const compareFields = [
+      { key: 'location', label: 'Campus Location', icon: 'fas fa-map-marker-alt' },
+      { key: 'type', label: 'Institution Type', icon: 'fas fa-building' },
+      { key: 'rank', label: 'Highlights & Rank', icon: 'fas fa-trophy', format: 'rank' },
+      { key: 'popular', label: 'Popular Programs', icon: 'fas fa-book-open' },
+      { key: 'foundationFee', label: 'Est. Foundation Fee', icon: 'fas fa-money-bill-wave' },
+      { key: 'bachelorFee', label: 'Est. Bachelor Fee', icon: 'fas fa-graduation-cap' },
+      { key: 'intakes', label: 'Intake Months', icon: 'fas fa-calendar-alt' },
+      { key: 'visa', label: 'Visa Success Rate', icon: 'fas fa-passport', format: 'visa' }
+    ];
+
+    function renderComparison() {
+      const selectedUnis = selects.map(s => s.value).filter(v => v !== "");
+      const emptyState = document.getElementById('emptyState');
+      const tableContainer = document.getElementById('tableContainer');
+      const table = document.getElementById('compareTable');
+      
+      if (selectedUnis.length === 0) {
+        emptyState.style.display = 'block';
+        tableContainer.style.display = 'none';
+        return;
+      }
+      
+      emptyState.style.display = 'none';
+      tableContainer.style.display = 'block';
+
+      let html = `<thead><tr><th>Features</th>`;
+      
+      // Header Row with Logos
+      for(let i = 0; i < 3; i++) {
+        if (selectedUnis[i]) {
+          const uni = selectedUnis[i];
+          const data = UNIVERSITY_META[uni];
+          html += `
+            <th>
+              <div class="uni-header">
+                <div class="uni-logo-wrapper">
+                  <img src="assets/images/universities/${data.img}" onerror="this.src='https://via.placeholder.com/100?text=Logo'">
+                </div>
+                <h4>${data.name || uni}</h4>
+              </div>
+            </th>
+          `;
+        } else {
+          html += `<th><div class="uni-header"><div class="uni-logo-wrapper" style="background:#f8fafc;"><i class="fas fa-plus" style="color:#cbd5e1; font-size:2rem;"></i></div><h4 style="color:#94a3b8;">Select University</h4></div></th>`;
+        }
+      }
+      html += `</tr></thead><tbody>`;
+
+      // Data Rows
+      compareFields.forEach(field => {
+        html += `<tr>
+          <td><i class="${field.icon}" style="color:var(--primary); margin-right:8px; width:20px; text-align:center;"></i> ${field.label}</td>`;
+          
+        for(let i = 0; i < 3; i++) {
+          if (selectedUnis[i]) {
+            const val = UNIVERSITY_META[selectedUnis[i]][field.key] || 'N/A';
+            let displayContent = `<span class="data-val">${val}</span>`;
+            
+            // Format specific fields for visual flair
+            if (field.format === 'rank') {
+                if (val.toLowerCase().includes('star')) {
+                    // Extract number of stars
+                    const match = val.match(/(\d)/);
+                    let starsHtml = '';
+                    if (match && match[1]) {
+                        for(let s=0; s<parseInt(match[1]); s++) starsHtml += '<i class="fas fa-star"></i>';
+                        displayContent = `<div class="star-rating">${starsHtml}</div><span class="data-val highlight" style="margin-top:5px; display:inline-block;">${val}</span>`;
+                    } else {
+                        displayContent = `<span class="data-val highlight"><i class="fas fa-award" style="color:#f59e0b; margin-right:5px;"></i>${val}</span>`;
+                    }
+                } else if (val !== 'N/A') {
+                    displayContent = `<span class="data-val highlight"><i class="fas fa-award" style="color:#f59e0b; margin-right:5px;"></i>${val}</span>`;
+                }
+            } else if (field.format === 'visa') {
+                const percMatch = val.match(/(\d+)%/);
+                if (percMatch && percMatch[1]) {
+                    const width = percMatch[1];
+                    displayContent = `
+                        <span class="data-val highlight">${val}</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: ${width}%"></div>
+                        </div>
+                    `;
+                } else {
+                    displayContent = `<span class="data-val highlight">${val}</span>`;
+                }
+            }
+
+            html += `<td>${displayContent}</td>`;
+          } else {
+            html += `<td><span style="color:#cbd5e1;">-</span></td>`;
+          }
+        }
+        html += `</tr>`;
+      });
+      
+      // Footer Action Row
+      html += `<tr><td></td>`;
+      for(let i=0; i<3; i++) {
+        if(selectedUnis[i]) {
+           const slug = UNIVERSITY_META[selectedUnis[i]].slug;
+           html += `<td><a href="Universities/${slug}-details.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">View Details</a></td>`;
+        } else {
+           html += `<td></td>`;
+        }
+      }
+      html += `</tr></tbody>`;
+      
+      table.innerHTML = html;
+    }
+  </script>
+</body>
+</html>

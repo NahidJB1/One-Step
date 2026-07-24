@@ -1,0 +1,53 @@
+/* assets/css/universities/bac.css */
+:root {
+  --uni-theme: #ed1c24; /* BAC Red */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/bac/bac_main.jpg');
+}
+
+/* Specific styling for BAC's nested tabs */
+.institute-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inst-tab-btn {
+  padding: 12px 25px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--dark);
+  transition: all 0.3s ease;
+}
+
+.inst-tab-btn.active, .inst-tab-btn:hover {
+  background: var(--uni-theme);
+  color: white;
+  border-color: var(--uni-theme);
+}
+
+.institute-content {
+  display: none;
+  animation: fadeIn 0.5s ease;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.institute-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

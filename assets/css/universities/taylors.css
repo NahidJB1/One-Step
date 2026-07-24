@@ -1,0 +1,8 @@
+/* assets/css/universities/taylors.css */
+:root {
+  --uni-theme: #c1001f; /* Taylor's Red */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/taylors/taylors-main.jpg');
+}

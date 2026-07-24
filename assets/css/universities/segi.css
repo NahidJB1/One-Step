@@ -1,0 +1,8 @@
+/* assets/css/universities/segi.css */
+:root {
+  --uni-theme: #e2001a; /* SEGi Red */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/segi/segi_main.jpg');
+}

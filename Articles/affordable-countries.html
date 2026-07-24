@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10 Affordable Countries for Study | One Step MY</title>
+  <meta name="description" content="Discover the top 10 most affordable countries for international students. Compare tuition fees, scholarships, and living costs. Expert guidance from One Step MY.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    .article-hero {
+      padding: 160px 0 80px;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white; text-align: center;
+    }
+    .article-hero .hero-subtitle { color: rgba(255,255,255,0.9); max-width: 700px; margin: 15px auto 0; }
+    .article-body { padding: 60px 0 80px; background: var(--light); }
+    .article-body .container { max-width: 1100px; }
+    .article-intro { text-align: center; max-width: 800px; margin: 0 auto 50px; color: var(--gray); font-size: 1.1rem; line-height: 1.8; }
+    .country-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .country-card {
+      background: white; border-radius: 20px; overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+      border-left: 5px solid var(--primary);
+    }
+    .country-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,102,204,0.15); }
+    .country-card-body { padding: 30px 25px; }
+    .country-card-body h2 { font-size: 1.5rem; color: var(--dark); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+    .country-flag-icon { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; flex-shrink: 0; }
+    .data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+    .data-item {
+      background: var(--light); border-radius: 10px; padding: 12px 14px;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .data-item.full-width { grid-column: 1 / -1; }
+    .data-item i { color: var(--primary); margin-top: 3px; flex-shrink: 0; }
+    .data-item .data-label { font-size: 0.75rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+    .data-item .data-value { font-size: 0.95rem; color: var(--dark); font-weight: 500; }
+    .country-card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .country-card-actions .btn { padding: 10px 20px; font-size: 0.85rem; }
+    .mention-section { margin-top: 60px; }
+    .mention-section h2 { text-align: center; font-size: 2rem; margin-bottom: 30px; }
+    .mention-section h2 span { color: var(--primary); }
+    .mention-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+    .mention-card {
+      background: white; border-radius: 16px; padding: 25px; text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.06); transition: all 0.3s ease;
+    }
+    .mention-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    .mention-icon { width: 50px; height: 50px; border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; }
+    .mention-card h3 { font-size: 1.1rem; color: var(--dark); margin-bottom: 8px; }
+    .mention-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
+    .article-cta {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white; text-align: center; padding: 80px 0;
+    }
+    .article-cta h2 { font-size: 2.5rem; margin-bottom: 15px; }
+    .article-cta p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 35px; opacity: 0.9; }
+    .article-cta .cta-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      .article-hero { padding: 130px 20px 60px; }
+      .article-hero .hero-title { font-size: 2rem; }
+      .article-hero .hero-subtitle { font-size: 1rem; }
+      .country-grid, .mention-grid { grid-template-columns: 1fr; }
+      .data-grid { grid-template-columns: 1fr; }
+      .country-card-body h2 { font-size: 1.2rem; }
+      .article-cta h2 { font-size: 1.8rem; }
+      .article-body { padding: 40px 0 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="global-nav-placeholder"></div>
+
+<header class="article-hero">
+  <div class="container">
+    <h1 class="hero-title">10 Affordable Countries <span>for Study</span></h1>
+    <p class="hero-subtitle">Global education doesn't have to break the bank. Discover the best budget-friendly study destinations worldwide with real financial data.</p>
+  </div>
+</header>
+
+<section class="article-body">
+  <div class="container">
+    <p class="article-intro">Gaining an international degree is a significant investment, but choosing the right destination can dramatically reduce your costs. From tuition fees to daily living expenses, some countries offer exceptional value for international students. Here's our curated list based on real data.</p>
+
+    <div class="country-grid">
+
+      <!-- Malaysia -->
+      <div class="country-card" style="border-left-color: #cc0001;">
+        <div class="country-card-body">
+          <h2><span class="country-flag-icon" style="background:#cc0001;"><i class="fas fa-flag"></i></span> Malaysia</h2>
+          <div class="data-grid">
+            <div class="data-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><div class="data-label">Tuition</div><div class="data-value">From RM 10,000/year</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-home"></i>
+              <div><div class="data-label">Living Cost</div><div class="data-value">Among the cheapest in SE Asia</div></div>
+            </div>
+            <div class="data-item full-width">
+              <i class="fas fa-check-circle"></i>
+              <div><div class="data-label">Visa Success</div><div class="data-value">100% with One Step MY</div></div>
+            </div>
+          </div>
+          <div class="country-card-actions">
+            <a href="../index.html#universities" class="btn btn-primary"><i class="fas fa-university"></i> Explore Malaysia</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- China -->
+      <div class="country-card" style="border-left-color: #de2910;">
+        <div class="country-card-body">
+          <h2><span class="country-flag-icon" style="background:#de2910;"><i class="fas fa-flag"></i></span> China</h2>
+          <div class="data-grid">
+            <div class="data-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><div class="data-label">Tuition Range</div><div class="data-value">10,000 - 50,000 RMB</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-piggy-bank"></i>
+              <div><div class="data-label">Bank Solvency</div><div class="data-value">Only $2,500 USD</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-award"></i>
+              <div><div class="data-label">Scholarships</div><div class="data-value">Top hub for Masters funding</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-passport"></i>
+              <div><div class="data-label">Visa Success</div><div class="data-value">99%</div></div>
+            </div>
+          </div>
+          <div class="country-card-actions">
+            <a href="../countries/china.html" class="btn btn-primary"><i class="fas fa-globe-asia"></i> Explore China</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hungary -->
+      <div class="country-card" style="border-left-color: #436f4d;">
+        <div class="country-card-body">
+          <h2><span class="country-flag-icon" style="background:#436f4d;"><i class="fas fa-flag"></i></span> Hungary</h2>
+          <div class="data-grid">
+            <div class="data-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><div class="data-label">Tuition Range</div><div class="data-value">$4,000 - $8,000 (payable at once)</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-home"></i>
+              <div><div class="data-label">Living Cost</div><div class="data-value">Low - heart of Europe</div></div>
+            </div>
+            <div class="data-item full-width">
+              <i class="fas fa-award"></i>
+              <div><div class="data-label">Scholarships</div><div class="data-value">Stipendium Hungaricum &amp; Pannonia - full tuition + stipend</div></div>
+            </div>
+          </div>
+          <div class="country-card-actions">
+            <a href="../countries/hungary.html" class="btn btn-primary"><i class="fas fa-globe-europe"></i> Explore Hungary</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Italy -->
+      <div class="country-card" style="border-left-color: #009246;">
+        <div class="country-card-body">
+          <h2><span class="country-flag-icon" style="background:#009246;"><i class="fas fa-flag"></i></span> Italy</h2>
+          <div class="data-grid">
+            <div class="data-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><div class="data-label">Tuition</div><div class="data-value">Almost &euro;0 (Free!)</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-award"></i>
+              <div><div class="data-label">Scholarships</div><div class="data-value">Up to &euro;8,000/year</div></div>
+            </div>
+            <div class="data-item full-width">
+              <i class="fas fa-piggy-bank"></i>
+              <div><div class="data-label">Bank Solvency</div><div class="data-value">15 Lacs BDT (5 Lacs sponsor + 10 Lacs self)</div></div>
+            </div>
+          </div>
+          <div class="country-card-actions">
+            <a href="../countries/italy.html" class="btn btn-primary"><i class="fas fa-globe-europe"></i> Explore Italy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cyprus -->
+      <div class="country-card" style="border-left-color: #d47600;">
+        <div class="country-card-body">
+          <h2><span class="country-flag-icon" style="background:#d47600;"><i class="fas fa-flag"></i></span> Cyprus</h2>
+          <div class="data-grid">
+            <div class="data-item">
+              <i class="fas fa-passport"></i>
+              <div><div class="data-label">Visa Processing</div><div class="data-value">ZERO cost - Free service charge!</div></div>
+            </div>
+            <div class="data-item full-width">
+              <i class="fas fa-door-open"></i>
+              <div><div class="data-label">Entry Requirements</div><div class="data-value">Low IELTS - accepts 4.5 via 1-year on-campus Foundation</div></div>
+            </div>
+          </div>
+          <div class="country-card-actions">
+            <a href="../countries/cyprus.html" class="btn btn-primary"><i class="fas fa-globe-europe"></i> Explore Cyprus</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uzbekistan -->
+      <div class="country-card" style="border-left-color: #1eb53a;">
+        <div class="country-card-body">
+          <h2><span class="country-flag-icon" style="background:#1eb53a;"><i class="fas fa-flag"></i></span> Uzbekistan</h2>
+          <div class="data-grid">
+            <div class="data-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><div class="data-label">1st Year</div><div class="data-value">$7,500 (tuition + hostel + food)</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><div class="data-label">2nd Year+</div><div class="data-value">$4,900/year</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-piggy-bank"></i>
+              <div><div class="data-label">Bank Solvency</div><div class="data-value">Only 3 - 4 Lacs BDT</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-plane-departure"></i>
+              <div><div class="data-label">Special</div><div class="data-value">USA transfer pathway available</div></div>
+            </div>
+          </div>
+          <div class="country-card-actions">
+            <a href="../countries/uzbekistan.html" class="btn btn-primary"><i class="fas fa-globe-asia"></i> Explore Uzbekistan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spain -->
+      <div class="country-card" style="border-left-color: #c60b1e;">
+        <div class="country-card-body">
+          <h2><span class="country-flag-icon" style="background:#c60b1e;"><i class="fas fa-flag"></i></span> Spain</h2>
+          <div class="data-grid">
+            <div class="data-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><div class="data-label">Diploma</div><div class="data-value">&euro;2,800 - &euro;6,000</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-language"></i>
+              <div><div class="data-label">Language Programs</div><div class="data-value">&euro;4,700 - &euro;5,000</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-piggy-bank"></i>
+              <div><div class="data-label">Bank Solvency</div><div class="data-value">~&euro;8,400</div></div>
+            </div>
+            <div class="data-item">
+              <i class="fas fa-gift"></i>
+              <div><div class="data-label">Perks</div><div class="data-value">PR facilities, family visas, internships</div></div>
+            </div>
+          </div>
+          <div class="country-card-actions">
+            <a href="../countries/spain.html" class="btn btn-primary"><i class="fas fa-globe-europe"></i> Explore Spain</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Honorable Mentions -->
+    <div class="mention-section">
+      <h2>Honorable <span>Mentions</span></h2>
+      <div class="mention-grid">
+        <div class="mention-card">
+          <div class="mention-icon" style="background:linear-gradient(135deg,#dc143c,#fff,#003893);"><i class="fas fa-flag" style="color:#003893;"></i></div>
+          <h3>Poland</h3>
+          <p>High-quality European education at a fraction of the cost of its western neighbors.</p>
+        </div>
+        <div class="mention-card">
+          <div class="mention-icon" style="background:linear-gradient(135deg,#000,#dd0000,#ffcc00);"><i class="fas fa-flag"></i></div>
+          <h3>Germany</h3>
+          <p>Public universities charge no tuition fees - only nominal administrative costs. Living expenses vary by city.</p>
+        </div>
+        <div class="mention-card">
+          <div class="mention-icon" style="background:linear-gradient(135deg,#fe0000,#fff,#000095);"><i class="fas fa-flag"></i></div>
+          <h3>Taiwan</h3>
+          <p>Exceptional technology and engineering programs with very low tuition and living costs.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="article-cta">
+  <div class="container">
+    <h2>Ready to Start Your Journey?</h2>
+    <p>Whether you want to study in Asia or Europe, One Step MY can guide you through the options to find a destination that fits your goals and budget.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/601119359497" target="_blank" class="btn cta-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      <a href="../application.html" class="btn btn-accent"><i class="fas fa-rocket"></i> Start Your Application</a>
+    </div>
+  </div>
+</section>
+
+<div id="global-footer-placeholder"></div>
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/navbar.js"></script>
+</body>
+</html>

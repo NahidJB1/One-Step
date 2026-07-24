@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scholarship Exam 2026 | One Step</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/index.css"> 
+  <link rel="stylesheet" href="assets/css/scholarship.css"> 
+</head>
+<body>
+<div id="global-nav-placeholder"></div>
+
+  <section class="exam-hero">
+    <div class="container">
+      <span class="badge-accent">
+          <span data-i18n="academic_year_2026">Academic Year 2026</span>
+      </span>
+      <h1 class="exam-title">
+          <span data-i18n="inter_school_academic_br_span_">Inter-School Academic <br><span>Scholarship Examination</span></span></span>
+      </h1>
+      <p class="exam-subtitle">
+          <span data-i18n="an_initiative_to_promote_acade">An initiative to promote academic excellence, encourage healthy competition, and provide financial support to high-achieving students across our partner institutions.</span>
+      </p>
+      
+      <div class="hero-actions" style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="register.html" class="btn btn-accent" style="padding: 18px 40px; font-size: 1.1rem; box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);">
+          <i class="fas fa-user-plus"></i> 
+          <span data-i18n="register_for_exam">Register for Exam</span>
+        </a>
+        <a href="verify.html" class="btn btn-outline" style="padding: 18px 40px; font-size: 1.1rem; border: 2px solid var(--accent); color: white; border-radius: 50px; background: transparent; text-decoration: none; transition: all 0.3s ease;">
+          <i class="fas fa-certificate"></i> 
+          <span data-i18n="verify_certificate">Verify Certificate</span>
+        </a>
+      </div>
+
+      <div class="lang-toggle-wrapper">
+          <span class="lang-label">EN</span>
+          <label class="lang-switch-box">
+            <input type="checkbox" id="lang-switch">
+            <span class="slider"></span>
+          </label>
+          <span class="lang-label">বাংলা</span>
+      </div>
+
+    </div>
+    <div class="wave-bottom">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 60C240 140 480 20 720 60C960 100 1200 0 1440 40V120H0V60Z" fill="#F8FAFF"/>
+        </svg>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">
+          <span data-i18n="participating_span_institution">Participating <span>Institutions</span></span></span>
+      </h2>
+      <div class="schools-grid">
+        <div class="school-card">
+            <div class="school-icon"><i class="fas fa-school"></i></div>
+            <h3>
+                <span data-i18n="noagaon_aftab_hossain_academy">Noagaon Aftab Hossain Academy</span>
+            </h3>
+            <span class="role-badge">
+                <span data-i18n="examination_center">Examination Center</span>
+            </span>
+        </div>
+        <div class="school-card">
+            <div class="school-icon"><i class="fas fa-building-columns"></i></div>
+            <h3>
+                <span data-i18n="tiosree_nh_khan_academy">Tiosree NH Khan Academy</span>
+            </h3>
+        </div>
+        <div class="school-card">
+            <div class="school-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>
+                <span data-i18n="fatehpur_m_h_high_school">Fatehpur M.H. High School</span>
+            </h3>
+        </div>
+        <div class="school-card">
+            <div class="school-icon"><i class="fas fa-book-reader"></i></div>
+            <h3>
+                <span data-i18n="bansary_meherunnesa_high_school">Bansary Meherunnesa High School</span>
+            </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section structure-section">
+    <div class="container">
+        <div class="structure-layout">
+            <div class="structure-card">
+                <h3><i class="fas fa-clipboard-list"></i> 
+                    <span data-i18n="exam_format">Exam Format</span>
+                </h3>
+                <div class="format-list">
+                    <div class="format-item">
+                        <span class="lbl">
+                            <span data-i18n="format">Format</span>
+                        </span>
+                        <span class="val">
+                            <span data-i18n="mcq_multiple_choice_">MCQ (Multiple Choice)</span>
+                        </span>
+                    </div>
+                    <div class="format-item">
+                        <span class="lbl">
+                            <span data-i18n="total_questions">Total Questions</span>
+                        </span>
+                        <span class="val">
+                            <span data-i18n="50_questions">50 Questions</span>
+                        </span>
+                    </div>
+                    <div class="format-item">
+                        <span class="lbl">
+                            <span data-i18n="scoring">Scoring</span>
+                        </span>
+                        <span class="val">
+                            <span data-i18n="1_mark_correct_answer">1 Mark / Correct Answer</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="structure-card">
+                <h3><i class="fas fa-chart-pie"></i> 
+                    <span data-i18n="subject_distribution">Subject Distribution</span>
+                </h3>
+                <div class="subject-bars">
+                    <div class="subject-bar-group">
+                        <div class="sb-info">
+                            <span><span data-i18n="general_knowledge">General Knowledge</span></span>
+                            <span><span data-i18n="20_qs">20 Qs</span></span>
+                        </div>
+                        <div class="progress"><div class="bar" style="width: 40%"></div></div>
+                    </div>
+                    <div class="subject-bar-group">
+                        <div class="sb-info">
+                            <span><span data-i18n="english">English</span></span>
+                            <span><span data-i18n="20_qs">20 Qs</span></span>
+                        </div>
+                        <div class="progress"><div class="bar" style="width: 40%; background: var(--secondary);"></div></div>
+                    </div>
+                    <div class="subject-bar-group">
+                        <div class="sb-info">
+                            <span><span data-i18n="mathematics">Mathematics</span></span>
+                            <span><span data-i18n="10_qs">10 Qs</span></span>
+                        </div>
+                        <div class="progress"><div class="bar" style="width: 20%; background: var(--accent);"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: white;">
+    <div class="container">
+      <h2 class="section-title">
+          <span data-i18n="categories_span_rewards_span_">Categories & <span>Rewards</span></span></span>
+      </h2>
+      <p class="section-subtitle">
+          <span data-i18n="choose_your_eligibility_tier_t">Choose your eligibility tier to see the prizes.</span>
+      </p>
+
+      <div class="tiers-grid">
+        <div class="tier-card">
+            <div class="tier-header">
+                <h3><span data-i18n="tier_a">Tier A</span></h3>
+                <p><span data-i18n="class_8_students">Class 8 Students</span></p>
+            </div>
+            <div class="prize-list">
+                <div class="prize-item gold">
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <strong><span data-i18n="1st_place">1st Place</span></strong>
+                        <span><span data-i18n="800_bdt_6_months_fees_notebook">800 BDT + 6 Months Fees + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item silver">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <strong><span data-i18n="2nd_place">2nd Place</span></strong>
+                        <span><span data-i18n="4_months_fees_notebook">4 Months Fees + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item bronze">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <strong><span data-i18n="3rd_place">3rd Place</span></strong>
+                        <span><span data-i18n="2_months_fees_notebook">2 Months Fees + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--gray-light);">
+                    <i class="fas fa-certificate" style="color: var(--primary);"></i>
+                    <div>
+                        <strong>
+                            <span data-i18n="special_recognition">Special Recognition</span>
+                        </strong>
+                        <span>
+                            <span data-i18n="top_3_students_will_receive_of">Top 3 students will receive official certificates</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-card popular">
+            <div class="popular-tag">
+                <span data-i18n="most_popular">Most Popular</span>
+            </div>
+            <div class="tier-header">
+                <h3><span data-i18n="tier_b">Tier B</span></h3>
+                <p><span data-i18n="class_9_10_students">Class 9-10 Students</span></p>
+            </div>
+            <div class="prize-list">
+                <div class="prize-item gold">
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <strong><span data-i18n="1st_place">1st Place</span></strong>
+                        <span><span data-i18n="1_000_bdt_6_months_fees_notebo">1,000 BDT + 6 Months Fees + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item silver">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <strong><span data-i18n="2nd_place">2nd Place</span></strong>
+                        <span><span data-i18n="4_months_fees_notebook">4 Months Fees + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item bronze">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <strong><span data-i18n="3rd_place">3rd Place</span></strong>
+                        <span><span data-i18n="2_months_fees_notebook">2 Months Fees + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--gray-light);">
+                    <i class="fas fa-certificate" style="color: var(--primary);"></i>
+                    <div>
+                        <strong>
+                            <span data-i18n="special_recognition">Special Recognition</span>
+                        </strong>
+                        <span>
+                            <span data-i18n="top_3_students_will_receive_of">Top 3 students will receive official certificates</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-card">
+            <div class="tier-header">
+                <h3><span data-i18n="tier_c">Tier C</span></h3>
+                <p><span data-i18n="hsc_1st_2nd_year_graduates">HSC 1st/2nd Year & Graduates</span></p>
+            </div>
+            <div class="prize-list">
+                <div class="prize-item gold">
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <strong><span data-i18n="1st_place">1st Place</span></strong>
+                        <span><span data-i18n="1_500_bdt_notebook">1,500 BDT + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item silver">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <strong><span data-i18n="2nd_place">2nd Place</span></strong>
+                        <span><span data-i18n="1_200_bdt_notebook">1,200 BDT + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item bronze">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <strong><span data-i18n="3rd_place">3rd Place</span></strong>
+                        <span><span data-i18n="1_000_bdt_notebook">1,000 BDT + Notebook</span></span>
+                    </div>
+                </div>
+                <div class="prize-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--gray-light);">
+                    <i class="fas fa-certificate" style="color: var(--primary);"></i>
+                    <div>
+                        <strong>
+                            <span data-i18n="special_recognition">Special Recognition</span>
+                        </strong>
+                        <span>
+                            <span data-i18n="top_3_students_will_receive_of">Top 3 students will receive official certificates</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="eligibility-note">
+        <h4><i class="fas fa-info-circle"></i> 
+            <span data-i18n="eligibility_rules">Eligibility Rules</span>
+        </h4>
+        <ul>
+            <li>
+                <span data-i18n="students_must_be_enrolled_in_o">Students must be enrolled in one of the participating institutions.</span>
+            </li>
+            <li>
+                <span data-i18n="tier_c_candidates_must_not_be_">Tier C candidates must not be enrolled in any Degree/Bachelor's program.</span>
+            </li>
+            <li>
+                <span data-i18n="students_who_completed_ssc_but">Students who completed SSC but not yet in college will compete in <strong>Tier B</strong> (Special Reward: 500TK).</span>
+            </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="language-modal" class="lang-modal">
+    <div class="lang-modal-content">
+        <h3>ভাষা নির্বাচন করুন <br> <span style="font-size: 1.1rem; opacity: 0.8; font-weight: 500;">Select Language</span></h3>
+        <div class="lang-modal-buttons">
+            <button id="select-en" class="btn-english">English</button>
+            <button id="select-bn" class="btn-bangla">বাংলা</button>
+        </div>
+    </div>
+  </div>
+
+  <div id="global-footer-placeholder"></div>
+  
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+<script src="assets/js/translator.js"></script>
+<script src="assets/js/scholarship.js"></script>
+</body>
+</html>

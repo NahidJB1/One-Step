@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malaysia Scholarship Application | One Step MY</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/malaysia-scholarship.css">
+</head>
+<body>
+
+  <div id="global-nav-placeholder"></div>
+
+  <section class="ms-section">
+    <div class="container">
+      
+      <!-- FORM VIEW -->
+      <div id="formView">
+        <div class="ms-header">
+          <h1>Apply for <span>Malaysia Study Scholarship</span></h1>
+          <p>Fill out the application below with your academic details to discover the exact scholarship amount you are eligible for at our partner universities.</p>
+        </div>
+
+        <div class="ms-form-container">
+          <form id="scholarshipForm">
+            
+            <div class="form-group">
+              <label for="fullName">Full Name (As per Passport)</label>
+              <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="passport">Passport Number</label>
+              <div class="passport-group">
+                <input type="text" id="passport" name="passport" class="form-control" placeholder="Enter passport number" required>
+                <label class="passport-check">
+                  <input type="checkbox" id="noPassport"> I don't have
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="passingYear">Passing Year (Latest Academic Completion)</label>
+              <select id="passingYear" name="passingYear" class="form-control" required>
+                <option value="">-- Select Year --</option>
+                <option value="2027">2027</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="qualification">Highest Qualification</label>
+              <select id="qualification" name="qualification" class="form-control" required>
+                <option value="">-- Select Qualification --</option>
+                <option value="SSC">SSC / O-Level</option>
+                <option value="HSC">HSC / A-Level</option>
+                <option value="Bachelor">Bachelor's Degree</option>
+                <option value="Master's">Master's Degree</option>
+              </select>
+              <div id="resultsContainer">
+                <!-- Dynamically populated GPA fields -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="university">Select University</label>
+              <select id="university" name="university" class="form-control" required>
+                <option value="">-- Select University --</option>
+                <!-- Populated by JS -->
+              </select>
+            </div>
+
+            <div class="form-group" id="programmeGroup" style="display: none;">
+              <label for="programme">Select Programme Level</label>
+              <select id="programme" name="programme" class="form-control" disabled required>
+                <option value="">-- Select Programme --</option>
+                <!-- Populated by JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Select Subject</label>
+              <select id="subject" name="subject" class="form-control" disabled required>
+                <option value="">-- Select Subject --</option>
+                <!-- Populated by JS -->
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 1.1rem; margin-top: 15px;">
+              Submit Application <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- DASHBOARD VIEW -->
+      <div id="dashboardView" class="ms-dashboard">
+        <div class="dashboard-success">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h2>Application Submitted Successfully!</h2>
+          <p>Your details have been recorded. Based on your selection, here is your scholarship breakdown.</p>
+          <button id="btnSeeData" class="btn btn-accent" style="margin-top: 15px;"><i class="fas fa-eye"></i> See Filled Data</button>
+        </div>
+
+        <div class="dashboard-grid">
+          
+          <div class="dashboard-card">
+            <h3 style="color: var(--dark); margin-bottom: 20px;"><i class="fas fa-university"></i> Application Details</h3>
+            <div class="detail-row">
+              <span>University</span>
+              <span id="dashUniName">-</span>
+            </div>
+            <div class="detail-row">
+              <span>Subject</span>
+              <span id="dashSubject">-</span>
+            </div>
+            <div class="detail-row">
+              <span>Duration</span>
+              <span id="dashDuration">-</span>
+            </div>
+            <div class="detail-row">
+              <span>Intakes</span>
+              <span id="dashIntakes">-</span>
+            </div>
+            <div class="detail-row">
+              <span>Avg Fees</span>
+              <span id="dashFees">-</span>
+            </div>
+          </div>
+
+          <div class="dashboard-card scholarship-amount-card">
+            <h3><i class="fas fa-award"></i> Eligible Scholarship</h3>
+            <div class="amount-value">BDT <span id="dashAmount">0</span></div>
+            <p class="disclaimer-text">
+              * Note: The amount shown can increase or decrease based on final academic evaluations and university discretion.
+            </p>
+            <a href="https://wa.me/601119359497" target="_blank" class="btn btn-accent" style="width: 100%; text-align: center; background: #25D366; color: white; border: none;">
+              <i class="fab fa-whatsapp"></i> Chat for Exact Details
+            </a>
+          </div>
+
+        </div>
+
+        <div class="action-buttons">
+          <a href="#" id="btnUniDetail" class="btn btn-primary btn-block"><i class="fas fa-info-circle"></i> View University Details</a>
+          <a href="#" id="btnUniFees" class="btn btn-accent btn-block" style="background: white; color: var(--primary);"><i class="fas fa-file-invoice-dollar"></i> View Fees Chart</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div id="global-footer-placeholder"></div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="dataModal">
+    <div class="modal-content">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <h3 style="margin-bottom: 20px; color: var(--dark);"><i class="fas fa-clipboard-list"></i> Submitted Data</h3>
+      <ul class="modal-data-list" id="modalDataList">
+        <!-- Populated by JS -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="assets/js/universityData.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/malaysia-scholarship.js"></script>
+</body>
+</html>

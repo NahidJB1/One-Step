@@ -1,0 +1,8 @@
+/* assets/css/universities/alfa.css */
+:root {
+  --uni-theme: #005aa0; /* Alfa Blue */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/alfa/alfa_main.jpg');
+}

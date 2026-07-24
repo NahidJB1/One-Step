@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin.php
+Disallow: /login.php
+Disallow: /logout.php
+Disallow: /db_config.php

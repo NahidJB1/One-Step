@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Certificate | One Step</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/index.css"> 
+  <link rel="stylesheet" href="assets/css/scholarship.css"> 
+  <link rel="stylesheet" href="assets/css/verify.css"> 
+</head>
+<body>
+  <div id="global-nav-placeholder"></div>
+
+  <section class="exam-hero verify-hero">
+    <div class="container">
+      <h1 class="exam-title" style="font-size: 2.8rem;">
+          <span class="lang-en">Certificate <br><span>Verification Portal</span></span>
+          <span class="lang-bn">সার্টিফিকেট <br><span>যাচাইকরণ পোর্টাল</span></span>
+      </h1>
+      <p class="exam-subtitle">
+          <span class="lang-en">Enter the unique Certificate ID to verify the authenticity of a One Step scholarship record.</span>
+          <span class="lang-bn">ওয়ান স্টেপ স্কলারশিপ রেকর্ডের সত্যতা যাচাই করতে অনন্য সার্টিফিকেট আইডি লিখুন।</span>
+      </p>
+    </div>
+    <div class="wave-bottom">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 60C240 140 480 20 720 60C960 100 1200 0 1440 40V120H0V60Z" fill="#F8FAFF"/>
+        </svg>
+    </div>
+  </section>
+
+  <section class="section verify-section">
+    <div class="container">
+      <div class="verify-card">
+        <div class="verify-icon">
+          <img src="favicon.svg" alt="One Step Logo">
+        </div>
+        <h2>
+          <span class="lang-en">Check Authenticity</span>
+          <span class="lang-bn">সত্যতা যাচাই করুন</span>
+        </h2>
+        
+        <div class="verify-form">
+          <div class="input-group">
+            <div class="input-wrapper">
+              <i class="fas fa-barcode input-icon"></i>
+              <input type="text" id="cert-input" data-en-ph="e.g. OS-2026-1001" data-bn-ph="যেমন OS-2026-1001" placeholder="e.g. OS-2026-1001" autocomplete="off">
+            </div>
+            <button id="verify-btn" class="btn btn-primary">
+              <span class="btn-text">
+                <i class="fas fa-search"></i>
+                <span class="lang-en">Verify</span>
+                <span class="lang-bn">যাচাই করুন</span>
+              </span>
+              <span class="btn-loader hidden"><i class="fas fa-circle-notch fa-spin"></i></span>
+            </button>
+          </div>
+        </div>
+
+        <div id="verify-result-area" class="result-area hidden">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="global-footer-placeholder"></div>
+  
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/verify.js"></script>
+</body>
+</html>

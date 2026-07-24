@@ -1,0 +1,8 @@
+/* assets/css/universities/cityu.css */
+:root {
+  --uni-theme: #c3002f; /* City U Red */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/cityu/cityu_main.jpg');
+}

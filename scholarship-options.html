@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarship Options | One Step MY</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <style>
+    .options-section {
+      padding: 120px 20px 80px;
+      background: #f8fbff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .options-header {
+      text-align: center;
+      margin: 0 auto 50px auto;
+      max-width: 800px;
+    }
+    .options-header h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3rem;
+      color: var(--dark);
+      margin-bottom: 15px;
+    }
+    .options-header h1 span {
+      color: var(--primary);
+    }
+    .options-header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .options-section {
+        padding: 100px 15px 60px;
+      }
+      .options-header h1 {
+        font-size: 2.2rem;
+      }
+      .cards-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+      .option-card {
+        padding: 30px 20px;
+      }
+      .option-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      .option-card h2 {
+        font-size: 1.5rem;
+      }
+    }
+    .option-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 15px 35px rgba(0, 82, 212, 0.08);
+      border: 1px solid rgba(0, 82, 212, 0.1);
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .option-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0, 82, 212, 0.15);
+      border-color: var(--primary);
+    }
+    .option-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      background: rgba(0, 194, 255, 0.1);
+      color: var(--primary);
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+    .option-card:nth-child(2) .option-icon {
+      background: rgba(255, 215, 0, 0.15);
+      color: #D4AF37;
+    }
+    .option-card:hover .option-icon {
+      background: var(--primary);
+      color: white;
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
+    .option-card:nth-child(2):hover .option-icon {
+      background: #D4AF37;
+    }
+    .option-card h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.8rem;
+      color: #222;
+      margin-bottom: 20px;
+    }
+    .option-card p {
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .option-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    .option-features li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #444;
+    }
+    .option-features li i {
+      color: var(--secondary);
+      margin-top: 4px;
+    }
+    .btn-apply {
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    .btn-malaysia {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-malaysia:hover {
+      background: #0046b5;
+      box-shadow: 0 8px 20px rgba(0, 82, 212, 0.4);
+    }
+    .btn-regional {
+      background: linear-gradient(135deg, #FFD700, #FDB931);
+      color: #000;
+    }
+    .btn-regional:hover {
+      background: linear-gradient(135deg, #FFE44D, #FFC000);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="global-nav-placeholder"></div>
+
+  <section class="options-section">
+    <div class="container">
+      <div class="options-header">
+        <h1>Choose Your <span>Path</span></h1>
+        <p>Explore our exclusive scholarship opportunities designed to support your academic journey, whether you're studying abroad in Malaysia or excelling locally.</p>
+      </div>
+
+      <div class="cards-container">
+        <!-- Option 1: Malaysia Study Scholarship -->
+        <div class="option-card">
+          <div class="option-icon"><i class="fas fa-plane-departure"></i></div>
+          <h2>Malaysia Study Scholarship</h2>
+          <p>This scholarship is designed for students willing to pursue higher education in Malaysia. We partner with top institutions to make world-class education affordable.</p>
+          <ul class="option-features">
+            <li><i class="fas fa-check-circle"></i> <span>Access to 15 top universities in Malaysia</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Choose from 500+ diverse academic programs</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Grant up to <strong>BDT 100,000</strong> (Amount depends on the selected university and subject)</span></li>
+          </ul>
+          <a href="malaysia-scholarship.html" class="btn-apply btn-malaysia">Apply for Malaysia Study <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Option 2: Regional Scholarship -->
+        <div class="option-card">
+          <div class="option-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h2>Regional Excellence Scholarship</h2>
+          <p>A specialized promotional event by One Step to support rural, intelligent students in the Mymensingh division by financing their continued education.</p>
+          <ul class="option-features">
+            <li><i class="fas fa-check-circle"></i> <span>For Class 8 to 10 students & recent SSC graduates (last 2 years)</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Available at selected listed schools in Mymensingh</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Top 9 students receive up to <strong>BDT 50,000</strong> and a special certificate</span></li>
+          </ul>
+          <a href="scholarship.html" class="btn-apply btn-regional">Apply for Regional Exam <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="global-footer-placeholder"></div> 
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* assets/css/universities/inti.css */
+:root {
+  --uni-theme: #d62728; /* INTI Red */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/inti/inti_main.jpg');
+}

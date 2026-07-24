@@ -1,0 +1,232 @@
+/* assets/css/verify.css */
+
+.verify-hero {
+    padding: 100px 0 180px; 
+}
+
+.verify-section {
+    background-color: #F8FAFF;
+    padding-top: 0;
+    margin-top: -120px; 
+    position: relative;
+    z-index: 10;
+}
+
+.verify-card {
+    background: white;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px rgba(17, 34, 64, 0.08), 0 10px 15px rgba(17, 34, 64, 0.03);
+    text-align: center;
+    border: 1px solid rgba(0, 102, 204, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle decorative top border */
+.verify-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.verify-icon {
+    width: 90px;
+    height: 90px;
+    background: transparent; /* Removed the light blue background so your logo looks clean */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.verify-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the logo scales perfectly without getting stretched or cut off */
+    filter: drop-shadow(0 10px 15px rgba(0, 102, 204, 0.15)); /* Adds a very subtle floating shadow to the logo */
+}
+
+.verify-card h2 {
+    color: var(--dark);
+    margin-bottom: 35px;
+    font-size: 1.8rem;
+}
+
+/* Modern Input Group */
+.verify-form .input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.input-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94A3B8;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.verify-form input {
+    width: 100%;
+    padding: 16px 20px 16px 50px; /* Space for icon */
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    font-size: 16px; /* 16px prevents iOS auto-zoom on focus */
+    font-family: inherit;
+    outline: none;
+    background-color: #F8FAFC;
+    color: var(--dark);
+    transition: all 0.3s ease;
+}
+
+.verify-form input:focus {
+    border-color: var(--primary);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+}
+
+.verify-form input:focus + .input-icon,
+.verify-form input:focus ~ .input-icon {
+    color: var(--primary);
+}
+
+.verify-form button {
+    padding: 16px 35px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+
+.verify-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-loader.hidden {
+    display: none;
+}
+
+/* Status States */
+.result-area {
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: left;
+}
+
+.result-area.hidden {
+    display: none;
+}
+
+.result-success {
+    background-color: #F0FDF4;
+    border: 1px solid #BBF7D0;
+    box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.05);
+}
+
+.result-error {
+    background-color: #FEF2F2;
+    border: 1px solid #FECACA;
+    box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.05);
+}
+
+.result-success h3 { color: #15803D; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.result-error h3 { color: #B91C1C; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+
+.result-area > p {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Data Grid Layout */
+.cert-details {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    display: grid;
+    gap: 12px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #E2E8F0;
+}
+
+.detail-row:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.detail-label {
+    color: #64748B;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: var(--dark);
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .verify-card {
+        padding: 40px 30px;
+        margin: 0 15px; /* Prevent touching screen edges */
+    }
+}
+
+@media (max-width: 576px) {
+    .verify-form .input-group { 
+        flex-direction: column; 
+    }
+    .verify-form button { 
+        width: 100%; 
+        padding: 18px;
+    }
+    .verify-card { 
+        padding: 30px 20px; 
+    }
+    .verify-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2.2rem;
+    }
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .detail-value {
+        text-align: left;
+    }
+    .result-area {
+        padding: 20px;
+    }
+}

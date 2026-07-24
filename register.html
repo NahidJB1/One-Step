@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration | One Step</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+
+  <div id="global-nav-placeholder"></div>
+
+  <section class="register-section">
+    <div class="container">
+      <div class="register-card">
+        
+        <div class="register-header">
+          <h2>
+              <span data-i18n="student_registration">Student Registration</span>
+          </h2>
+          <p>
+              <span data-i18n="fill_in_your_details_to_sit_fo">Fill in your details to sit for the scholarship exam.</span>
+          </p>
+        </div>
+
+        <form id="registrationForm" class="register-form">
+          
+          <div class="form-section">
+            <h3 class="section-heading">
+                <i class="fas fa-user-graduate"></i> 
+                <span data-i18n="student_information">Student Information</span>
+            </h3>
+            
+            <div class="form-group">
+              <label for="fullName">
+                  <span data-i18n="full_name">Full Name</span>
+              </label>
+              <input type="text" id="fullName" required placeholder="Enter your full name" data-i18n-ph="enter_your_full_name_ph" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rollNumber">
+                    <span data-i18n="roll_number">Roll Number</span>
+                </label>
+                <input type="number" id="rollNumber" required placeholder="Class Roll" data-i18n-ph="class_roll_ph" placeholder="Class Roll">
+              </div>
+              
+              <div class="form-group">
+                <label for="classSelect">
+                    <span data-i18n="class_status">Class / Status</span>
+                </label>
+                <select id="classSelect" required>
+                  <option value="" disabled selected data-i18n="select_your_class_opt">Select your class</option>
+                  <option value="8" data-i18n="class_8_opt">Class 8</option>
+                  <option value="9" data-i18n="class_9_opt">Class 9</option>
+                  <option value="10" data-i18n="class_10_opt">Class 10</option>
+                  <option value="SSC" data-i18n="passed_ssc_opt">Passed SSC</option>
+                  <option value="HSC1" data-i18n="1st_year_hsc_opt">1st Year HSC</option>
+                  <option value="HSC2" data-i18n="2nd_year_hsc_opt">2nd Year HSC</option>
+                  <option value="HSC_Pass" data-i18n="passed_hsc_opt">Passed HSC</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="schoolSelect">
+                  <span data-i18n="institution">Institution</span>
+              </label>
+              <select id="schoolSelect" required>
+                <option value="" disabled selected data-i18n="select_your_school_opt">Select your school</option>
+                <option value="Noagaon" data-i18n="noagaon_aftab_hossain_academy_opt">Noagaon Aftab Hossain Academy</option>
+                <option value="Tiosree" data-i18n="tiosree_nh_khan_academy_opt">Tiosree NH Khan Academy</option>
+                <option value="Fatehpur" data-i18n="fatehpur_m_h_high_school_opt">Fatehpur M.H. High School</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3 class="section-heading">
+                <i class="fas fa-credit-card"></i> 
+                <span data-i18n="registration_fee">Registration Fee</span>
+            </h3>
+            <div class="fee-badge">
+                <span data-i18n="amount_to_pay_">Amount to Pay:</span> 
+                <strong><span data-i18n="10_bdt">10 BDT</span></strong>
+            </div>
+
+            <label class="payment-label">
+                <span data-i18n="select_payment_method_">Select Payment Method:</span>
+            </label>
+            <div class="payment-options">
+              
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="digital" checked>
+                <div class="option-content">
+                  <div class="option-icon"><i class="fas fa-mobile-alt"></i></div>
+                  <span class="option-title">
+                      <span data-i18n="bkash_nagad">Bkash / Nagad</span>
+                  </span>
+                </div>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="cash">
+                <div class="option-content">
+                  <div class="option-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                  <span class="option-title">
+                      <span data-i18n="pay_to_teacher">Pay to Teacher</span>
+                  </span>
+                </div>
+              </label>
+            </div>
+
+            <div id="digitalPaymentDetails" class="payment-details active">
+              <div class="alert-box">
+                <i class="fas fa-info-circle"></i>
+                <p>
+                    <span data-i18n="send_strong_10_tk_strong_to_st">Send <strong>10 TK</strong> to <strong>01714640536</strong> (Personal)</span>
+                </p>
+              </div>
+              
+              <div class="form-group">
+                <label for="trxId">
+                    <span data-i18n="transaction_id_trx_">Transaction ID (TRX)</span>
+                </label>
+                <input type="text" id="trxId" placeholder="e.g. 8JHS62..." data-i18n-ph="e_g_8jhs62__ph" placeholder="e.g. 8JHS62...">
+              </div>
+              
+              <div class="divider">
+                  <span data-i18n="or">OR</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="receiptUpload">
+                    <span data-i18n="upload_screenshot_receipt">Upload Screenshot/Receipt</span>
+                </label>
+                <input type="file" id="receiptUpload" accept="image/*" class="file-input">
+              </div>
+            </div>
+
+            <div id="cashPaymentDetails" class="payment-details">
+              <div class="alert-box warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>
+                    <span data-i18n="please_pay_strong_10_tk_strong">Please pay <strong>10 TK</strong> directly to your designated class teacher to confirm your registration.</span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span data-i18n="confirm_registration">Confirm Registration</span> 
+            <i class="fas fa-check-circle"></i>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="global-footer-placeholder"></div>
+
+  <div id="successModal" class="modal-overlay">
+  <div class="modal-content">
+    <div class="success-icon-box">
+      <i class="fas fa-check"></i>
+    </div>
+    <h3>
+        <span data-i18n="registration_successful_">Registration Successful!</span>
+    </h3>
+    <p>
+        <span data-i18n="your_information_has_been_subm">Your information has been submitted securely. Good luck with your exam!</span>
+    </p>
+    <div class="btn btn-primary" style="width: 100%; padding: 12px; cursor: default;">
+      <i class="fas fa-spinner fa-spin"></i> 
+      <span data-i18n="redirecting_">Redirecting...</span>
+    </div>
+  </div>
+</div>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/translator.js"></script>
+  <script src="assets/js/register.js"></script>
+</body>
+</html>

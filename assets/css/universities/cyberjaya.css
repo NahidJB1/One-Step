@@ -1,0 +1,8 @@
+/* assets/css/universities/cyberjaya.css */
+:root {
+  --uni-theme: #002e5b; /* Cyberjaya Blue */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/cyberjaya/cyberjaya_main.jpg');
+}

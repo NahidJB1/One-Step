@@ -1,0 +1,260 @@
+/* assets/css/application.css */
+
+.app-section {
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    min-height: 100vh;
+    padding: 120px 0 80px; /* Account for fixed navbar */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app-card {
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.app-header {
+    background: white;
+    padding: 40px 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.app-header h2 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.app-header p {
+    color: var(--gray);
+}
+
+.app-form {
+    padding: 40px;
+}
+
+.section-heading {
+    font-size: 1.1rem;
+    color: var(--secondary); /* Uses gold/secondary color */
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.form-section {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Inputs & Typography */
+.form-group {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+.sub-label {
+    font-size: 0.8rem;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: var(--dark);
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+/* Trendy Input Icons */
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray);
+    transition: color 0.3s ease;
+}
+
+.input-with-icon input {
+    padding-left: 45px;
+}
+
+.input-with-icon input:focus + i {
+    color: var(--primary);
+}
+
+input:focus, select:focus {
+    border-color: var(--primary);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+    outline: none;
+}
+
+/* Hidden Other Input Animation */
+.hidden-input {
+    display: none;
+    animation: fadeInDown 0.4s ease;
+}
+
+.hidden-input.show {
+    display: block;
+}
+
+/* Radio Cards (Passport) */
+.passport-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.radio-card {
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-card input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    color: var(--gray);
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.radio-card input:checked + .radio-content {
+    border-color: var(--primary);
+    background: rgba(0, 102, 204, 0.05);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 102, 204, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Modal Reuse Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.modal-overlay.active { opacity: 1; visibility: visible; }
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.modal-overlay.active .modal-content { transform: scale(1); }
+
+.success-icon-box {
+    width: 70px; height: 70px;
+    background: #dcfce7; color: #16a34a;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; margin: 0 auto 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .app-card {
+        border-radius: 0; /* Full width on mobile looks better */
+        min-height: 100vh;
+        box-shadow: none;
+    }
+    .app-section {
+        padding-top: 80px; /* Less padding on mobile */
+        padding-bottom: 0;
+    }
+    .form-row, .passport-options {
+        grid-template-columns: 1fr;
+        gap: 20px; /* More vertical space between stacked items */
+    }
+    .app-form {
+        padding: 30px 20px 60px;
+    }
+}
+
+/* Animations */
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

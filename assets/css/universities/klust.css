@@ -1,0 +1,8 @@
+/* assets/css/universities/klust.css */
+:root {
+  --uni-theme: #f8981d; /* KLUST Orange */
+}
+
+.uni-header {
+  background-image: url('../../images/universities/klust/klust-main.webp');
+}

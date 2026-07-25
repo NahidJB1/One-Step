@@ -233,7 +233,7 @@ function generateFilters(results) {
     
     // Extract unique levels
     results.forEach(item => {
-        if(item.level) levels.add(item.level);
+        if(item.level && isNaN(item.level)) levels.add(item.level);
     });
 
     // Only show filter bar if we have different levels

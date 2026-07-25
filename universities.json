@@ -6963,5 +6963,2483 @@
                              "duration":  "636.00"
                          }
                      ]
+    },
+    {
+        "name":  "International Islamic University Malaysia (IIUM)",
+        "campuses":  [
+                         "Main Campus"
+                     ],
+        "programs":  [
+                         {
+                             "name":  "Bachelor Degree - Ahmad Ibrahim Kulliyyah of Laws (AIKOL)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Economics and Management Sciences (KENMS)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Information and Communication Technology (KICT)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Abdulhamid Abusulayman Kulliyyah of Islamic Revealed Knowledge and Human Sciences (AHAS KIRKHS)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Education (KOED)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Sustainable Tourism and Contemporary Languages (Tourism Management)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Sustainable Tourism and Contemporary Languages (Other Programme)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Engineering (KOE)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Architecture and Environmental Design (KAED)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Science (KOS) (BSMS)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Science (KOS) (Other Programme)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Allied Health Sciences (KAHS)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Pharmacy (KOP)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Medicine (KOM)",
+                             "level":  "Degree",
+                             "duration":  "5 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Dentistry (KOD)",
+                             "level":  "Degree",
+                             "duration":  "5 Years"
+                         },
+                         {
+                             "name":  "Bachelor Degree - Kulliyyah of Nursing (KON)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Pre-Sessional (CELPAD) - Bachelor Degree",
+                             "level":  "Degree",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Ahmad Ibrahim Kulliyyah of Laws (AIKOL) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Ahmad Ibrahim Kulliyyah of Laws (AIKOL) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Ahmad Ibrahim Kulliyyah of Laws (AIKOL) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Economics and Management Sciences (KENMS) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Economics and Management Sciences (KENMS) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Economics and Management Sciences (KENMS) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Protective Security Management (MPSM) - KICT (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Business Intelligence and Analytic (MBIA) - KICT (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KICT (Others) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KICT (Others) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KICT (Others) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - AHAS KIRKHS (Others) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - AHAS KIRKHS (Others) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - AHAS KIRKHS (Others) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Development Psychology (MDP) - AHAS KIRKHS (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Industrial \u0026 Organisational Psychology (MIOP) - AHAS KIRKHS (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Human Science Psychology (Clinical) - AHAS KIRKHS (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Education (KOED) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Education (KOED) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Education (KOED) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Sustainable Tourism and Contemporary Languages (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Engineering (KOE) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Engineering (KOE) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Engineering (KOE) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Architecture (MAAR) - KAED (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KAED (Others) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KAED (Others) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KAED (Others) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Science (Industrial Pharmacy) - KOP (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Cosmetic Science - KOP (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KOP (Others) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Allied Health Sciences (KAHS) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Advance Nursing (Critical, Renal \u0026 Emergency Care) - KON (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KON (Others) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree (Clinical Specialist Training) - KOM",
+                             "level":  "Master",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KOM (Others) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - KOM (Others) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Dentistry (MDENT) - KOD (Coursework)",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master Degree - KOD (Others) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - IIUM Institute of Islamic Banking and Finance (IIiBF) (Coursework)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Halal Industry Science (MSHIS) - INHART (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Halal Industry Management (MAHIM) - INHART (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Halal Industry Management (MAHIM) - INHART (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Sustainability Science - SCASH (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Sustainability Science - SCASH (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - International Institute of Islamic Thought and Civilisation (ISTAC) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - International Institute of Islamic Thought and Civilisation (ISTAC) (Mixed Mode)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Degree - Kulliyyah of Science (KOS) (Research)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Pre-Sessional (CELPAD) - Master Degree",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Ahmad Ibrahim Kulliyyah of Laws (AIKOL)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Economics and Management Sciences (KENMS)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Information and Communication Technology (KICT)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - AHAS KIRKHS",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Education (KOED)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Sustainable Tourism and Contemporary Languages",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Engineering (KOE)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Architecture and Environmental Design (KAED)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Science (KOS)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Allied Health Sciences (KAHS)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Pharmacy (KOP)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Medicine (KOM)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Nursing (KON)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - Kulliyyah of Dentistry (KOD)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "Doctor in Paediatric - Kulliyyah of Dentistry (KOD)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "Doctor in Orthodontics/Prosthodontics - Kulliyyah of Dentistry (KOD)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - IIUM Institute of Islamic Banking and Finance (IIiBF)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - IIUM Institute for Halal Research and Training (INHART)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "PhD Programme - International Institute of Islamic Thought and Civilisation (ISTAC)",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         },
+                         {
+                             "name":  "Pre-Sessional (CELPAD) - PhD Programme",
+                             "level":  "PhD",
+                             "duration":  "2 Years"
+                         }
+                     ]
+    },
+    {
+        "name":  "University of Wollongong (UOW) Malaysia",
+        "campuses":  [
+                         "Penang Campus",
+                         "Selangor Campus"
+                     ],
+        "programs":  [
+                         {
+                             "name":  "Foundation in Arts",
+                             "level":  "Foundation",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Foundation in Science",
+                             "level":  "Foundation",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Diploma in Business",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Bachelor of Accountancy (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years 2 months"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Honours) in International Business Management",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Hons) Business Management",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Dual Award with University of Wollongong Australia Bachelor of Arts (Hons) Business Management",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Diploma in Mass Communication",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Honours) in Media Production",
+                             "level":  "Degree",
+                             "duration":  "3.5 years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Honours) in Public Relations",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Diploma in Information Technology",
+                             "level":  "Diploma",
+                             "duration":  "2.5 years"
+                         },
+                         {
+                             "name":  "Bachelor of Information Systems (Honours)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor in Software Engineering (Honours)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Dual Award with University of Wollongong Australia Bachelor of Computer Science (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Diploma in Mechatronics Engineering",
+                             "level":  "Diploma",
+                             "duration":  "2.5 years"
+                         },
+                         {
+                             "name":  "Bachelor of Mechatronics Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 years"
+                         },
+                         {
+                             "name":  "Diploma in Culinary Arts",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Diploma in International Hotel Management",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Honours) in International Hotel \u0026 Tourism Management",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Honours) in International Culinary Arts",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Dual Award with IMI International Management Institute, Switzerland Diploma in Culinary Arts",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Dual Award with IMI International Management Institute, Switzerland Diploma in International Hotel Management",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Dual Award with IMI International Management Institute, Switzerland Bachelor of Arts (Honours) in International Hotel \u0026 Tourism Management",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Dual Award with IMI International Management Institute, Switzerland Bachelor of Arts (Honours) in International Culinary Arts",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Diploma in Interior Design",
+                             "level":  "Diploma",
+                             "duration":  "2 years 8 months"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Hons) in Interior Architecture",
+                             "level":  "Degree",
+                             "duration":  "3.5 years"
+                         },
+                         {
+                             "name":  "Master of Business Administration (MBA)",
+                             "level":  "Master",
+                             "duration":  "1.5-4 years"
+                         },
+                         {
+                             "name":  "Master of Business",
+                             "level":  "Master",
+                             "duration":  "2-4 years"
+                         },
+                         {
+                             "name":  "Master in Computer Science",
+                             "level":  "Master",
+                             "duration":  "2-4 years"
+                         },
+                         {
+                             "name":  "Master of Science in Tourism Management",
+                             "level":  "Master",
+                             "duration":  "2-4 years"
+                         },
+                         {
+                             "name":  "Master of Science (Engineering)",
+                             "level":  "Master",
+                             "duration":  "2-4 years"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (Business)",
+                             "level":  "PhD",
+                             "duration":  "3-6 years"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (Computer Science)",
+                             "level":  "PhD",
+                             "duration":  "3-6 years"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (Hospitality and Tourism)",
+                             "level":  "PhD",
+                             "duration":  "3-6 years"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (Engineering)",
+                             "level":  "PhD",
+                             "duration":  "3-6 years"
+                         },
+                         {
+                             "name":  "Intensive English Program",
+                             "level":  "Foundation",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Foundation Studies",
+                             "level":  "Foundation",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Foundation in Engineering",
+                             "level":  "Foundation",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Diploma in Business Administration",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Diploma in Business Management - ODL Mode",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Bachelor of Accounting (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor in Accounting \u0026 Finance (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor in Business Management - ODL Mode",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Business (Hons) Dual Award with University of Wollongong Australia",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Business (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Diploma in Communication \u0026 Media",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Diploma in Entertainment Arts",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Bachelor of Communication (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Communication (Hons) in Media Production",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Communication (Honours) (Public Relations)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Creative Industry Management (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Diploma in Computer Studies",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Diploma in Graphic Design Technology",
+                             "level":  "Diploma",
+                             "duration":  "2 years"
+                         },
+                         {
+                             "name":  "Bachelor of Information Systems (Honours) (Enterprise Information Systems)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Software Engineering (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts (Honours) Digital Media Production",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Game Development (Honours)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Electrical and Electronics Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 years"
+                         },
+                         {
+                             "name":  "Bachelor of Mechanical Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 years"
+                         },
+                         {
+                             "name":  "Certificate in Hotel Operations",
+                             "level":  "Diploma",
+                             "duration":  "17 months"
+                         },
+                         {
+                             "name":  "Bachelor of Hospitality Management (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Culinary Management (Hons)",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Bachelor of Laws 3+0 External with University of London, UK",
+                             "level":  "Degree",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Certificate in Business Communication",
+                             "level":  "Diploma",
+                             "duration":  "1.5 years"
+                         },
+                         {
+                             "name":  "Diploma in Early Childhood Education",
+                             "level":  "Diploma",
+                             "duration":  "2-3 years"
+                         },
+                         {
+                             "name":  "Diploma in Nursing",
+                             "level":  "Diploma",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Diploma in Physiotherapy",
+                             "level":  "Diploma",
+                             "duration":  "3 years"
+                         },
+                         {
+                             "name":  "Foundation in Accountancy (ACCA - FIA)",
+                             "level":  "Foundation",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Association of Chartered Certified Accountants (ACCA)",
+                             "level":  "Degree",
+                             "duration":  "2.5 years"
+                         },
+                         {
+                             "name":  "Postgraduate Certificate in Business Administration",
+                             "level":  "Master",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Postgraduate Diploma in Enterprise Risk Management",
+                             "level":  "Master",
+                             "duration":  "1 year"
+                         },
+                         {
+                             "name":  "Master of Business Administration (MBA) - ODL Mode",
+                             "level":  "Master",
+                             "duration":  "16 months"
+                         },
+                         {
+                             "name":  "Master of Arts (Communication Management)",
+                             "level":  "Master",
+                             "duration":  "16 months"
+                         },
+                         {
+                             "name":  "Master of Design (Innovation)",
+                             "level":  "Master",
+                             "duration":  "16 months"
+                         },
+                         {
+                             "name":  "Master of Arts (Social Science)",
+                             "level":  "Master",
+                             "duration":  "2-4 years"
+                         },
+                         {
+                             "name":  "Master of Arts",
+                             "level":  "Master",
+                             "duration":  "2-4 years"
+                         },
+                         {
+                             "name":  "Master of Science",
+                             "level":  "Master",
+                             "duration":  "2-4 years"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (Social Science)",
+                             "level":  "PhD",
+                             "duration":  "3-6 years"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (Creative Arts \u0026 Media)",
+                             "level":  "PhD",
+                             "duration":  "3-6 years"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (Computing \u0026 Innovation)",
+                             "level":  "PhD",
+                             "duration":  "3-6 years"
+                         }
+                     ]
+    },
+    {
+        "name":  "Universiti Putra Malaysia (UPM)",
+        "campuses":  [
+                         "Serdang Campus"
+                     ],
+        "programs":  [
+                         {
+                             "name":  "Foundation Studies for Agricultural Science",
+                             "level":  "Foundation",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Bachelor of Agricultural Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Horticultural Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Aquaculture with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Agriculture in Animal Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Agribusiness with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Biotechnology with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Biochemistry with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Microbiology with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Cell and Molecular Biology with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Economics with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Accounting (Honours)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Business Administration with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science (Multimedia) with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Software Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science (Computer Network) with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Landscape Architecture with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Architecture with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Industrial Design with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Counselling with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Human Resource Development with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Education in Guidance and Counselling with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Education in Malay Language with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Education in Teaching of English as a Second Language with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Education in Home Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Civil Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Electrical and Electronics Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Chemical Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Agricultural and Biosystem Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Mechanical Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Aerospace Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Process and Food Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Computer and Communication System Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Food Science and Technology with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Food Service Management with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Food Manufacturing Operations with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Forestry Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Timber Industry with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Parks and Recreation Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Environmental Science and Technology with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Environmental Management with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Music with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Human Development Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Consumer Studies with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Human Development Science with Management (Honours)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Human Development Science with Information Technology (Honours)",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Communication with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts Malay Language and Linguistics with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts Malay Literature with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts in English Language and Linguistics with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts in English Literature with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts in Chinese Language Studies with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts in Arabic Language Studies with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts in French Language Studies with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Arts in German Language Studies with Honours",
+                             "level":  "Degree",
+                             "duration":  "3.5 Years"
+                         },
+                         {
+                             "name":  "Doctor of Medicine",
+                             "level":  "Degree",
+                             "duration":  "5 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Biomedical Science with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Dietetic with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Nutrition and Community Health with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Nursing with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Biology with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Mathematics with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Statistics with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Physics with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Chemistry with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Industrial Chemistry with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Petroleum Chemistry with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Material Physics with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Instrumentation Physics with Honours",
+                             "level":  "Degree",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Doctor of Veterinary Medicine",
+                             "level":  "Degree",
+                             "duration":  "5 Years"
+                         },
+                         {
+                             "name":  "Master of Science in Biotechnology with Bioentrepreneurship",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master of Economics",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master of Entrepreneurship",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master of Finance",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master of Business Administration",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master of Land Resourse Management",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Plantation Management",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Tropical Soil Science",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Food Security",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Computer Science",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Computer Network",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Information Security",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Software Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Data Science",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Intelligent System",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Architecture",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Industrial Design Innovation",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Sustainable Landscape Management",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Tropical Urban Design",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Landscape Architecture",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Construction Technology Management",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master of Education in Curriculum and Instruction",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Education in Educational Administration",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Education in Educational Psychology",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Counselling",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Human Resource Development",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Education in Instructional Technology and Innovation",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Education in Malay Language",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Physical Education and Health Education",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Education in Sport Science",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Education in Teaching of English as a Second Language",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Education in Technical and Vocational Education",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Aerospace System Design Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Communication Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Electrical Power Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Emergency Response and Planning",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Engineering Management",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Environmental Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Food Process and Packaging Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Highway and Transportation Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Innovation and Engineering Design",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Manufacturing Systems Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Microelectronic System Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Process Safety and Loss Prevention",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Remote Sensing and GIS",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Structural Engineering and Construction",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Water Engineering",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Environment Technology Management",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Food Safety and Quality Assurance",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Food Technology",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Functional Food Design",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Environment",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Community Development",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Politics and Government",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Personal Financial Planning",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Renewable Energy",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Environmental and Occupational Health",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Nutritional Sciences",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Clinical Psychology",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Applied English Linguistics",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Corporate Communication",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Malay Language and Linguistics",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of World Literature",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Applied Statistics",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Analytical Chemistry",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Materials Physics",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master in Mathematical Sciences",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Tropical Biology",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master by Research (Medical Cluster)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master by Research (Science \u0026 Technology Cluster)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master by Research (Social Science Cluster)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "PhD by Research (Medical Cluster)",
+                             "level":  "PhD",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "PhD by Research (Science \u0026 Technology Cluster)",
+                             "level":  "PhD",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "PhD by Research (Social Science Cluster)",
+                             "level":  "PhD",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Master Industry (Medical Cluster)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Industry (Science \u0026 Technology Cluster)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master Industry (Social Science Cluster)",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "PhD Industry (Medical Cluster)",
+                             "level":  "PhD",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "PhD Industry (Science \u0026 Technology Cluster)",
+                             "level":  "PhD",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "PhD Industry (Social Science Cluster)",
+                             "level":  "PhD",
+                             "duration":  "4 Years"
+                         },
+                         {
+                             "name":  "Certified Intensive English Programme (CIEP)",
+                             "level":  "Foundation",
+                             "duration":  "16 Weeks"
+                         },
+                         {
+                             "name":  "Postgraduate Certificate in Business Administration (PGCert)",
+                             "level":  "Master",
+                             "duration":  "1 Year"
+                         },
+                         {
+                             "name":  "Master of Science (MSc) - International",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "Master of Business Administration (MBA) - International",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "MBA (Human Potential Management) - International",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "MBA (Marketing) - International",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "MBA (Corporate Governance) - International",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "MBA (Finance) - International",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "MBA (International Business) - International",
+                             "level":  "Master",
+                             "duration":  "2 Years"
+                         },
+                         {
+                             "name":  "MBA - Open and Distance Learning Mode (100% Online)",
+                             "level":  "Master",
+                             "duration":  "1 Year 8 Months"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy (PhD) - International",
+                             "level":  "PhD",
+                             "duration":  "3 Years"
+                         }
+                     ]
+    },
+    {
+        "name":  "Universiti Teknikal Malaysia Melaka [cite: 54]",
+        "campuses":  [
+                         "Main Campus [cite: 71]",
+                         "Technology Campus [cite: 72]"
+                     ],
+        "programs":  [
+                         {
+                             "name":  "Bachelor Of Electronic Engineering with Honours [cite: 59]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 68]"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Engineering with honours [cite: 60]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 68]"
+                         },
+                         {
+                             "name":  "Bachelor Of Electronics Engineering Technology (Industrial Electronics) with Honours [cite: 61, 62]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 68]"
+                         },
+                         {
+                             "name":  "Bachelor Of Computer Engineering Technology (Computer Systems) with Honours [cite: 63]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 68]"
+                         },
+                         {
+                             "name":  "Bachelor of Electronics Engineering Technology (Telecommunications) with Honours [cite: 64]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 68]"
+                         },
+                         {
+                             "name":  "Bachelor Of Electronics Engineering Technology with Hanours [cite: 65]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 68]"
+                         },
+                         {
+                             "name":  "Bachelor of Technology In Industrial Electronic Automation with Honours [cite: 66]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 68]"
+                         },
+                         {
+                             "name":  "Bachelor Of Electrical Engineering with Honours [cite: 79]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 83]"
+                         },
+                         {
+                             "name":  "Bachelor Of Mechatronics Engineering with Honours [cite: 80]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 83]"
+                         },
+                         {
+                             "name":  "Bachelor Of Electrical Engineering Technology (Industrial Power) with Hanours [cite: 81]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 83]"
+                         },
+                         {
+                             "name":  "Bachelor Of Electrical Engineering Technology (Industrial Automation And Robotics) with Honours [cite: 82]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 83]"
+                         },
+                         {
+                             "name":  "Bachelor Of Electrics Engineering Technology with Honours [cite: 84]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 83]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology In Electrical Maintenance System with Honours [cite: 85]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 83]"
+                         },
+                         {
+                             "name":  "Bachelor Of Manufacturing Engineering with Honours [cite: 86]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 92]"
+                         },
+                         {
+                             "name":  "Bachelor Of Industrial Engineering with Honours [cite: 87]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 92]"
+                         },
+                         {
+                             "name":  "Bachelor Of Manufacturing Engineering Technology (Process And Technology) with Honours [cite: 88]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 92]"
+                         },
+                         {
+                             "name":  "Bachelor Of Manufacturing Engineering Technalogy (Product Design) with Honours [cite: 90, 91]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 92]"
+                         },
+                         {
+                             "name":  "Bachelor Of Manufacturing Engineering Technology with Honours [cite: 93]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 92]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology In Industrial Machining with Honours. [cite: 94]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 92]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology In Welding with Honours [cite: 95]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 92]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology Management with Honours Technology Innovation) [cite: 97]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 98]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology Management with Honours (High Technology Marketing) [cite: 97]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 98]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technopreneurship with Honours [cite: 97]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 98]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology Management (Supply Chain Management \u0026 Logistics) with Honours [cite: 97]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 98]"
+                         },
+                         {
+                             "name":  "Bachelor if Computer Science Software Development) witti Hondura [cite: 100]",
+                             "level":  "Degree",
+                             "duration":  "3.5 years [cite: 101]"
+                         },
+                         {
+                             "name":  "Banner Of Computer Science (Computes Networking) with Honours [cite: 100]",
+                             "level":  "Degree",
+                             "duration":  "3.5 years [cite: 101]"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science (latabase Management) with Honours [cite: 100]",
+                             "level":  "Degree",
+                             "duration":  "3.5 years [cite: 101]"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science Interactive Medin with Hormors [cite: 100]",
+                             "level":  "Degree",
+                             "duration":  "3.5 years [cite: 101]"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science (Artificial Intelligence) with Honours [cite: 100]",
+                             "level":  "Degree",
+                             "duration":  "3.5 years [cite: 101]"
+                         },
+                         {
+                             "name":  "Rachater Of Computer Science Computer Security) with Hottours [cite: 100]",
+                             "level":  "Degree",
+                             "duration":  "3.5 years [cite: 101]"
+                         },
+                         {
+                             "name":  "Bacheliy Of Information Technology (Game Tetraligy with Honcurs [cite: 100]",
+                             "level":  "Degree",
+                             "duration":  "3.5 years [cite: 101]"
+                         },
+                         {
+                             "name":  "Bachelor Of Mechanical Engineering with Honours [cite: 102]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         },
+                         {
+                             "name":  "Bachelor Of Automotive Engineering with Honours [cite: 103]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         },
+                         {
+                             "name":  "Bachelor Of Mechanical Engineering Technology (Automotive Technology) with Honours [cite: 104]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         },
+                         {
+                             "name":  "Bachelor Of Mechanical Engineering Technology (Refrigeration And Air Conditioning Systems) with Hangurs [cite: 108]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         },
+                         {
+                             "name":  "Bachelor Of Mechanical Engineering Technology (Maintenance Technology) with Honours [cite: 109, 111]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         },
+                         {
+                             "name":  "Bachelor of Mechanical Engineering Technology with Honours [cite: 110]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology in Automotive with Honours [cite: 113]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         },
+                         {
+                             "name":  "Bachelor Of Technology In Air Conditioning And Refrigeration with Honours [cite: 114]",
+                             "level":  "Degree",
+                             "duration":  "4 years [cite: 116]"
+                         }
+                     ]
+    },
+    {
+        "name":  "Universiti Teknologi Malaysia (UTM)",
+        "campuses":  [
+                         "UTM Johor Bahru",
+                         "UTM Kuala Lumpur"
+                     ],
+        "programs":  [
+                         {
+                             "name":  "Bachelor of Civil Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Electrical Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Engineering (Electrical-Mechatronics) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Electronic Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Biomedical Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Mechanical Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Mechanical Engineering (Aeronautics) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Naval Architecture and Offshore Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Chemical Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Chemical Engineering (Bioprocess) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Chemical Engineering (Gas) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Nuclear Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Petroleum Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor in Software Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science (Computer Networks and Security) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Computer Science (Graphics and Multimedia Software) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Architecture with Honours",
+                             "level":  "Degree",
+                             "duration":  "6 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Landscape Architecture with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Urban and Regional Planning with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Quantity Surveying with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Real Estate with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Construction with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Geomatics Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Geoinformatics with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Land Administration and Development with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science (Chemistry) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science (Mathematics) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science (Physics) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science (Industrial Chemistry) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science (Industrial Mathematics) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science (Industrial Physics) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science Biology with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science in Biotechnology with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Management with Honours",
+                             "level":  "Degree",
+                             "duration":  "6 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor in Accounting with Honours",
+                             "level":  "Degree",
+                             "duration":  "7 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Management (Marketing) with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor in Human Resource Development with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Psychology with Human Resource Development with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Chemical Process Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Electronic Systems Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Mechanical Precision Engineering with Honours",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor in Artificial Intelligence with Honours",
+                             "level":  "Degree",
+                             "duration":  "6 Semesters"
+                         },
+                         {
+                             "name":  "Bachelor of Science with Honours (Industrial Design)",
+                             "level":  "Degree",
+                             "duration":  "8 Semesters"
+                         },
+                         {
+                             "name":  "Master of Science (Biomedical Engineering)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Wireless Communication and Network)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Computer and Microelectronic Systems)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Electrical Power)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Mechatronics and Automatic Control)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Philosophy",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Civil)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Construction Management)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Environmental Management)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering (Structure)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Geotechnical Engineering",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering in Hydraulics and Hydrology",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Engineering Transportation",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Project Management",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Forensic Engineering",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Mechanical Engineering)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Industrial Engineering)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Chemical Engineering",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Gas Engineering and Management",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Petroleum Engineering",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Energy Management)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Herbal Technology",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master In Process Plant Management",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Safety, Health and Environment)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Polymer Technology)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Bioprocess Engineering",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Mater of Science in Food Processing Innovation",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Data Science)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Cyber Security",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Innovative Computing",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Computer Science",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Forensic Science",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science in Mathematics",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Chemistry)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science in Engineering Mathematics",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science in Physics",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Biotechnology)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Language in Communication and Digital Culture",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Human Resource Development",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Education",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Education",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Information Technology Entrepreneurship)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Information Technology",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Architecture",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Asset and Facilities Management",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Construction Contract Management)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Geoinformatics)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Geomatics Engineering",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Land Administration and Development",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Real Estate)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science in Remote Sensing",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Tourism Planning)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Transportation Planning",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Urban and Regional Planning)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Business Administration",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Disaster Risk Management",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Sustainability and Environmental Sciences",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Sustainable Systems",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Technology and Innovation Management",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master Occupational Safety and Health Management",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master in Science, Technology And Innovation Policy",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Professional Science",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Business Intelligence and Analytics)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Computer Systems Engineering)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Engineering Business Management)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Engineering Design)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Engineering Education)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science in Informatics",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science in Information Security Assurance",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Sustainable Infrastructure)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Sustainable Urban Design)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Science (Systems Engineering)",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Master of Software Engineering",
+                             "level":  "Master",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Doctor of Philosophy",
+                             "level":  "PhD",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Doctor of Business Administration",
+                             "level":  "PhD",
+                             "duration":  "N/A"
+                         },
+                         {
+                             "name":  "Doctor of Engineering In Engineering Business Management",
+                             "level":  "PhD",
+                             "duration":  "N/A"
+                         }
+                     ]
     }
 ]

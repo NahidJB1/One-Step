@@ -1,4 +1,4 @@
-/* assets/js/footer.js */
+﻿/* assets/js/footer.js */
 document.addEventListener("DOMContentLoaded", function() {
     const footerContainer = document.getElementById("global-footer-placeholder");
 
@@ -61,6 +61,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="${root}Universities/umw-details.html">UMW</a></li>
                     <li><a href="${root}Universities/unikl-details.html">UniKL</a></li>
                     <li><a href="${root}Universities/unirazak-details.html">UNIRAZAK</a></li>
+                    <li><a href="${root}Universities/iium-details.html">IIUM</a></li>
+                    <li><a href="${root}Universities/uow-details.html">UOW</a></li>
+                    <li><a href="${root}Universities/upm-details.html">UPM</a></li>
+                    <li><a href="${root}Universities/utem-details.html">UTeM</a></li>
+                    <li><a href="${root}Universities/utm-details.html">UTM</a></li>
                   </ul>
                 </div>
                 
@@ -87,6 +92,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="${root}Fees_Chart/umw-fees.html">UMW Fees</a></li>
                     <li><a href="${root}Fees_Chart/unikl-fees.html">UniKL Fees</a></li>
                     <li><a href="${root}Fees_Chart/unirazak-fees.html">UNIRAZAK Fees</a></li>
+                    <li><a href="${root}Fees_Chart/iium-fees.html">IIUM Fees</a></li>
+                    <li><a href="${root}Fees_Chart/uow-fees.html">UOW Fees</a></li>
+                    <li><a href="${root}Fees_Chart/upm-fees.html">UPM Fees</a></li>
+                    <li><a href="${root}Fees_Chart/utem-fees.html">UTeM Fees</a></li>
+                    <li><a href="${root}Fees_Chart/utm-fees.html">UTM Fees</a></li>
                   </ul>
                 </div>
                 
@@ -122,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="footer-bottom">
                 <p>&copy; 2026 One Step. All rights reserved. | Developed by 
                   <a href="https://nahidjahanbhuiyan.com" target="_blank" class="developer-link" data-text="Bhuiyan Mohamed Nahid Jahan">
-                      Bhuiyan Mohamed Nahid Jahan
-                   </a>
+Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Bhuiyan Mohamed Nahid Jahan
+Â  Â  Â  Â  Â  Â  Â  Â  Â  Â </a>
                 </p>
               </div>
             </div>
@@ -292,3 +302,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+

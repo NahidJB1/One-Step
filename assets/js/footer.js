@@ -1,4 +1,4 @@
-﻿/* assets/js/footer.js */
+/* assets/js/footer.js */
 document.addEventListener("DOMContentLoaded", function() {
     const footerContainer = document.getElementById("global-footer-placeholder");
 
@@ -131,13 +131,17 @@ document.addEventListener("DOMContentLoaded", function() {
               
               <div class="footer-bottom">
                 <p>&copy; 2026 One Step. All rights reserved. | Developed by 
-                  <a href="https://nahidjahanbhuiyan.com" target="_blank" class="developer-link" data-text="Bhuiyan Mohamed Nahid Jahan">
-Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Bhuiyan Mohamed Nahid Jahan
-Â  Â  Â  Â  Â  Â  Â  Â  Â  Â </a>
+                  <a href="https://nahidjahanbhuiyan.com" target="_blank" class="developer-link" data-text="Bhuiyan Mohamed Nahid Jahan" style="padding: 0 10px;">
+Bhuiyan Mohamed Nahid Jahan</a>
                 </p>
               </div>
             </div>
 
+            <!-- Floating WhatsApp Button -->
+            <a href="https://wa.me/601119359497" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            
             <style>
                             /* WHATSAPP FLOATING BUTTON */
               .floating-whatsapp {
@@ -302,4 +306,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
 

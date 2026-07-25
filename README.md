@@ -32,22 +32,7 @@ One-Step currently features integrated data for top Malaysian universities inclu
   - `fees_data.json`: Deeply nested relational data for rendering complex financial tables and program specifics.
 - **Deployment**: GitHub Pages (Static Hosting)
 
-## 🚀 Getting Started
 
-Since One-Step is a static front-end application, no build tools or servers are required!
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/NahidJB1/One-Step.git
-   ```
-2. **Open the project:**
-   Simply open `index.html` in any modern web browser to view the application locally.
-3. **Alternatively, use a local server (Recommended for fetching JSON data):**
-   ```bash
-   # If you have Python installed:
-   python -m http.server 8000
-   ```
-   Then navigate to `http://localhost:8000` in your browser.
 
 ## 📁 Project Structure
 

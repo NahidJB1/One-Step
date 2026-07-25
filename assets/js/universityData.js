@@ -1,4 +1,4 @@
-const UNIVERSITY_META = {
+﻿const UNIVERSITY_META = {
     "International Islamic University Malaysia (IIUM)": {
         slug: "iium",
         name: "International Islamic University Malaysia (IIUM)",
@@ -43,7 +43,7 @@ const UNIVERSITY_META = {
         slug: "upm",
         name: "Universiti Putra Malaysia (UPM)",
         img: "upm/upm_campus_sky_view.jfif",
-        badge: "Research",
+        badge: "Public",
         loc: "Serdang",
         type: "Public",
         rank: "Top Research Uni",
@@ -63,7 +63,7 @@ const UNIVERSITY_META = {
         slug: "utem",
         name: "Universiti Teknikal Malaysia Melaka (UTeM)",
         img: "utem/utem_sky_view.jpeg",
-        badge: "Technical",
+        badge: "Public",
         loc: "Melaka",
         type: "Public",
         rank: "Top Technical Uni",
@@ -83,7 +83,7 @@ const UNIVERSITY_META = {
         slug: "utm",
         name: "Universiti Teknologi Malaysia (UTM)",
         img: "utm/utm_campus.webp",
-        badge: "Technology",
+        badge: "Public",
         loc: "Johor Bahru",
         type: "Public",
         rank: "Top Technology Uni",
@@ -645,4 +645,5 @@ const UNIVERSITY_META = {
 if (typeof window !== 'undefined') {
     window.UNIVERSITY_META = UNIVERSITY_META;
 }
+
 

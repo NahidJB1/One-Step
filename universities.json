@@ -7403,7 +7403,7 @@
                      ]
     },
     {
-        "name":  "University of Wollongong (UOW) Malaysia",
+        "name":  "University of Wollongong (UOW)",
         "campuses":  [
                          "Penang Campus",
                          "Selangor Campus"
@@ -8630,7 +8630,7 @@
                      ]
     },
     {
-        "name":  "Universiti Teknikal Malaysia Melaka [cite: 54]",
+        "name":  "Universiti Teknikal Malaysia Melaka (UTeM)",
         "campuses":  [
                          "Main Campus [cite: 71]",
                          "Technology Campus [cite: 72]"
@@ -9443,3 +9443,4 @@
                      ]
     }
 ]
+

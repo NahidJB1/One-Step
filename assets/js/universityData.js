@@ -420,9 +420,9 @@
         tags: ['Medical Focus', 'Islamic Finance'],
         desc: "Strong emphasis on Health Sciences, Nursing, and Pharmacy."
     }, */
-    "Kuala Lumpur University of Science and Technology (KLUST)": {
+    "KL University of Science & Technology (KLUST)": {
         slug: "klust",
-        name: "KLUST",
+        name: "KL University of Science & Technology (KLUST)",
         img: "iukl/iukl_main.jpg",
         badge: "Engineering",
         loc: "Kajang",
@@ -645,5 +645,6 @@
 if (typeof window !== 'undefined') {
     window.UNIVERSITY_META = UNIVERSITY_META;
 }
+
 
 

@@ -903,7 +903,7 @@
                                                                      ]
                                                                  ]
                                                     },
-                                          "remarks":  "First Payment (Upon Registration):\nDiploma: RM14,500\nBachelor / Master / PhD: RM17,500\n\nImportant Notes:\nâ€¢ EMGS fee is non-refundable.\nâ€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\nâ€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \nâ€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \nâ€¢ Refundable Deposit: Personal Bond of RM 750 is included in the \u0027Other Fees\u0027 and is refundable upon completion.\n\nImportant Notes:\nâ€¢ Fees listed include 6% SST[cite: 891].\nâ€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\nâ€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.",
+                                          "remarks":  "First Payment (Upon Registration):\nDiploma: RM14,500\nBachelor / Master / PhD: RM17,500\n\nImportant Notes:\nâ€¢ EMGS fee is non-refundable.\nâ€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\nâ€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \nâ€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \nâ€¢ Refundable Deposit: Personal Bond of RM 750 is included in the \u0027Other Fees\u0027 and is refundable upon completion.\n\nImportant Notes:\nâ€¢ Fees listed include 6% SST.\nâ€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\nâ€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.",
                                           "pdf_link":  "binary-fees"
                                       }
                                   ]
@@ -19833,7 +19833,7 @@
             },
     "utem":  {
                  "id":  "utem",
-                 "title":  "Universiti Teknikal Malaysia Melaka (UTeM) [cite: 54]",
+                 "title":  "Universiti Teknikal Malaysia Melaka (UTeM)",
                  "theme":  {
                                "theme_color":  "#1E1F58",
                                "theme_dark":  "#111233",
@@ -19843,315 +19843,315 @@
                  "logo":  "../assets/images/universities/utem/UTEM_logo.png",
                  "categories":  [
                                     {
-                                        "category_name":  "COURSE FEES - UNDERGRADUATE [cite: 30]",
+                                        "category_name":  "COURSE FEES - UNDERGRADUATE",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
-                                                                      "PROGRAMME [cite: 31]",
-                                                                      "FEES [cite: 31]"
+                                                                      "PROGRAMME",
+                                                                      "FEES"
                                                                   ],
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Engineering/Engineering Technology [cite: 31]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "Engineering/Engineering Technology",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "IT/Computer Science [cite: 31]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "IT/Computer Science",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Technology Management and Technopreneurship [cite: 31]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "Technology Management and Technopreneurship",
+                                                                       "RM 49,000.00"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Excluding student accommodation. [cite: 32]\n\nGENERAL ENTRY REQUIREMENT: Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination [UK Examination System] or International Baccalaureate (IB) obtained in one sitting. [cite: 1, 6] For countries which do not follow the UK examination or International Baccalaureate (IB) system, intake consideration shall be based on the equivalency of qualification table by the Malaysian Qualification Agency. [cite: 6] Have completed at least twelve (12) years of education. [cite: 7] Secondary school/ higher secondary school. [cite: 8, 9] Diploma from institution of higher learning. [cite: 10, 11]\n\nLANGUAGE REQUIREMENTS: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR A minimum score/Band 5.0 in the International English Language Testing System (IELTS). [cite: 4, 23, 24] Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement above are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei. [cite: 25]\n\nSPECIAL PROGRAMME REQUIREMENTS: Engineering/Engineering Technology Programme: At least C grades (50 percent minimum) in GCE A-Level/IB Examination in all of the following subjects: Mathematics, Physics and At least C grade (50 percent minimum) in one (1) other subject. [cite: 2, 3, 12, 13, 14, 15, 16, 17, 18] ICT/Technology Management and Technopreneurship Programme: At least C grades in GCE A-Level/IB Examination in Mathematics and C grades in two (2) other subjects. [cite: 19] A Diploma from an institution of higher learning recognised by the Government of Malaysia and approved by the Senate of the University. [cite: 20] Engineering Programme/Engineering Technology Programme/ ICT Programme/ Technology Management and Technopreneurship: Diploma in the related field with a final CGPA of at least 3.00 out of 4.00 or equivalent. [cite: 21, 22]",
+                                        "remarks":  "Excluding student accommodation.\n\nGENERAL ENTRY REQUIREMENT: Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination [UK Examination System] or International Baccalaureate (IB) obtained in one sitting. For countries which do not follow the UK examination or International Baccalaureate (IB) system, intake consideration shall be based on the equivalency of qualification table by the Malaysian Qualification Agency. Have completed at least twelve (12) years of education. Secondary school/ higher secondary school. Diploma from institution of higher learning.\n\nLANGUAGE REQUIREMENTS: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR A minimum score/Band 5.0 in the International English Language Testing System (IELTS). Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement above are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n\nSPECIAL PROGRAMME REQUIREMENTS: Engineering/Engineering Technology Programme: At least C grades (50 percent minimum) in GCE A-Level/IB Examination in all of the following subjects: Mathematics, Physics and At least C grade (50 percent minimum) in one (1) other subject. ICT/Technology Management and Technopreneurship Programme: At least C grades in GCE A-Level/IB Examination in Mathematics and C grades in two (2) other subjects. A Diploma from an institution of higher learning recognised by the Government of Malaysia and approved by the Senate of the University. Engineering Programme/Engineering Technology Programme/ ICT Programme/ Technology Management and Technopreneurship: Diploma in the related field with a final CGPA of at least 3.00 out of 4.00 or equivalent.",
                                         "pdf_link":  "utem-fees.zip"
                                     },
                                     {
-                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Electronics and Computer Technology and Engineering [cite: 57, 58, 74]",
+                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Electronics and Computer Technology and Engineering",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
                                                                       "Programme",
-                                                                      "Duration [cite: 68]"
+                                                                      "Duration"
                                                                   ],
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Bachelor Of Electronic Engineering with Honours [cite: 59]",
-                                                                       "4 years [cite: 68]"
+                                                                       "Bachelor Of Electronic Engineering with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "Bachelor of Computer Engineering with honours [cite: 60]",
-                                                                       "4 years [cite: 68]"
+                                                                       "Bachelor of Computer Engineering with honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Bachelor Of Electronics Engineering Technology (Industrial Electronics) with Honours [cite: 61, 62]",
-                                                                       "4 years [cite: 68]"
+                                                                       "Bachelor Of Electronics Engineering Technology (Industrial Electronics) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "4",
-                                                                       "Bachelor Of Computer Engineering Technology (Computer Systems) with Honours [cite: 63]",
-                                                                       "4 years [cite: 68]"
+                                                                       "Bachelor Of Computer Engineering Technology (Computer Systems) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "5",
-                                                                       "Bachelor of Electronics Engineering Technology (Telecommunications) with Honours [cite: 64]",
-                                                                       "4 years [cite: 68]"
+                                                                       "Bachelor of Electronics Engineering Technology (Telecommunications) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "6",
-                                                                       "Bachelor Of Electronics Engineering Technology with Hanours [cite: 65]",
-                                                                       "4 years [cite: 68]"
+                                                                       "Bachelor Of Electronics Engineering Technology with Hanours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "7",
-                                                                       "Bachelor of Technology In Industrial Electronic Automation with Honours [cite: 66]",
-                                                                       "4 years [cite: 68]"
+                                                                       "Bachelor of Technology In Industrial Electronic Automation with Honours",
+                                                                       "4 years"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Commencement time: March and October [cite: 75]",
+                                        "remarks":  "Commencement time: March and October",
                                         "pdf_link":  "utem-fees.zip"
                                     },
                                     {
-                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Electrical Technology and Engineering [cite: 74, 78]",
+                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Electrical Technology and Engineering",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
                                                                       "Programme",
-                                                                      "Duration [cite: 83]"
+                                                                      "Duration"
                                                                   ],
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Bachelor Of Electrical Engineering with Honours [cite: 79]",
-                                                                       "4 years [cite: 83]"
+                                                                       "Bachelor Of Electrical Engineering with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "Bachelor Of Mechatronics Engineering with Honours [cite: 80]",
-                                                                       "4 years [cite: 83]"
+                                                                       "Bachelor Of Mechatronics Engineering with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Power) with Hanours [cite: 81]",
-                                                                       "4 years [cite: 83]"
+                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Power) with Hanours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "4",
-                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Automation And Robotics) with Honours [cite: 82]",
-                                                                       "4 years [cite: 83]"
+                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Automation And Robotics) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "5",
-                                                                       "Bachelor Of Electrics Engineering Technology with Honours [cite: 84]",
-                                                                       "4 years [cite: 83]"
+                                                                       "Bachelor Of Electrics Engineering Technology with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "6",
-                                                                       "Bachelor Of Technology In Electrical Maintenance System with Honours [cite: 85]",
-                                                                       "4 years [cite: 83]"
+                                                                       "Bachelor Of Technology In Electrical Maintenance System with Honours",
+                                                                       "4 years"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Commencement time: March and October [cite: 75]",
+                                        "remarks":  "Commencement time: March and October",
                                         "pdf_link":  "utem-fees.zip"
                                     },
                                     {
-                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Industrial and Manufacturing Technology and Engineering [cite: 74, 89]",
+                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Industrial and Manufacturing Technology and Engineering",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
                                                                       "Programme",
-                                                                      "Duration [cite: 92]"
+                                                                      "Duration"
                                                                   ],
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Bachelor Of Manufacturing Engineering with Honours [cite: 86]",
-                                                                       "4 years [cite: 92]"
+                                                                       "Bachelor Of Manufacturing Engineering with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "Bachelor Of Industrial Engineering with Honours [cite: 87]",
-                                                                       "4 years [cite: 92]"
+                                                                       "Bachelor Of Industrial Engineering with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Bachelor Of Manufacturing Engineering Technology (Process And Technology) with Honours [cite: 88]",
-                                                                       "4 years [cite: 92]"
+                                                                       "Bachelor Of Manufacturing Engineering Technology (Process And Technology) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "4",
-                                                                       "Bachelor Of Manufacturing Engineering Technology (Product Design) with Honours [cite: 90, 91]",
-                                                                       "4 years [cite: 92]"
+                                                                       "Bachelor Of Manufacturing Engineering Technology (Product Design) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "5",
-                                                                       "Bachelor Of Manufacturing Engineering Technology with Honours [cite: 93]",
-                                                                       "4 years [cite: 92]"
+                                                                       "Bachelor Of Manufacturing Engineering Technology with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "6",
-                                                                       "Bachelor Of Technology In Industrial Machining with Honours. [cite: 94]",
-                                                                       "4 years [cite: 92]"
+                                                                       "Bachelor Of Technology In Industrial Machining with Honours.",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "7",
-                                                                       "Bachelor Of Technology In Welding with Honours [cite: 95]",
-                                                                       "4 years [cite: 92]"
+                                                                       "Bachelor Of Technology In Welding with Honours",
+                                                                       "4 years"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Commencement time: March and October [cite: 75]",
+                                        "remarks":  "Commencement time: March and October",
                                         "pdf_link":  "utem-fees.zip"
                                     },
                                     {
-                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty Of Technology Management And Technopreneurship [cite: 74, 96]",
+                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty Of Technology Management And Technopreneurship",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
                                                                       "Programme",
-                                                                      "Duration [cite: 98]"
+                                                                      "Duration"
                                                                   ],
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Bachelor Of Technology Management with Honours Technology Innovation) [cite: 97]",
-                                                                       "4 years [cite: 98]"
+                                                                       "Bachelor Of Technology Management with Honours Technology Innovation)",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "Bachelor Of Technology Management with Honours (High Technology Marketing) [cite: 97]",
-                                                                       "4 years [cite: 98]"
+                                                                       "Bachelor Of Technology Management with Honours (High Technology Marketing)",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Bachelor Of Technopreneurship with Honours [cite: 97]",
-                                                                       "4 years [cite: 98]"
+                                                                       "Bachelor Of Technopreneurship with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "4",
-                                                                       "Bachelor Of Technology Management (Supply Chain Management \u0026 Logistics) with Honours [cite: 97]",
-                                                                       "4 years [cite: 98]"
+                                                                       "Bachelor Of Technology Management (Supply Chain Management \u0026 Logistics) with Honours",
+                                                                       "4 years"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Commencement time: March and October [cite: 75]",
+                                        "remarks":  "Commencement time: March and October",
                                         "pdf_link":  "utem-fees.zip"
                                     },
                                     {
-                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Information And Communication Technology [cite: 74, 99]",
+                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Information And Communication Technology",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
                                                                       "Programme",
-                                                                      "Duration [cite: 101]"
+                                                                      "Duration"
                                                                   ],
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Bachelor if Computer Science Software Development) witti Hondura [cite: 100]",
-                                                                       "3.5 years [cite: 101]"
+                                                                       "Bachelor if Computer Science Software Development) witti Hondura",
+                                                                       "3.5 years"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "Banner Of Computer Science (Computes Networking) with Honours [cite: 100]",
-                                                                       "3.5 years [cite: 101]"
+                                                                       "Banner Of Computer Science (Computes Networking) with Honours",
+                                                                       "3.5 years"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Bachelor of Computer Science (latabase Management) with Honours [cite: 100]",
-                                                                       "3.5 years [cite: 101]"
+                                                                       "Bachelor of Computer Science (latabase Management) with Honours",
+                                                                       "3.5 years"
                                                                    ],
                                                                    [
                                                                        "4",
-                                                                       "Bachelor of Computer Science  Interactive Medin with Hormors [cite: 100]",
-                                                                       "3.5 years [cite: 101]"
+                                                                       "Bachelor of Computer Science  Interactive Medin with Hormors",
+                                                                       "3.5 years"
                                                                    ],
                                                                    [
                                                                        "5",
-                                                                       "Bachelor of Computer Science (Artificial Intelligence) with Honours [cite: 100]",
-                                                                       "3.5 years [cite: 101]"
+                                                                       "Bachelor of Computer Science (Artificial Intelligence) with Honours",
+                                                                       "3.5 years"
                                                                    ],
                                                                    [
                                                                        "6",
-                                                                       "Rachater Of Computer Science  Computer Security) with Hottours [cite: 100]",
-                                                                       "3.5 years [cite: 101]"
+                                                                       "Rachater Of Computer Science  Computer Security) with Hottours",
+                                                                       "3.5 years"
                                                                    ],
                                                                    [
                                                                        "7",
-                                                                       "Bacheliy Of Information Technology (Game Tetraligy with Honcurs [cite: 100]",
-                                                                       "3.5 years [cite: 101]"
+                                                                       "Bacheliy Of Information Technology (Game Tetraligy with Honcurs",
+                                                                       "3.5 years"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Commencement time: March and October [cite: 75]",
+                                        "remarks":  "Commencement time: March and October",
                                         "pdf_link":  "utem-fees.zip"
                                     },
                                     {
-                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Mechanical Technology and Engineering [cite: 74, 105, 106, 107]",
+                                        "category_name":  "UNDERGRADUATE PROGRAMMES - Faculty of Mechanical Technology and Engineering",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
                                                                       "Programme",
-                                                                      "Duration [cite: 116]"
+                                                                      "Duration"
                                                                   ],
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Bachelor Of Mechanical Engineering with Honours [cite: 102]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor Of Mechanical Engineering with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "Bachelor Of Automotive Engineering with Honours [cite: 103]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor Of Automotive Engineering with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Bachelor Of Mechanical Engineering Technology (Automotive Technology) with Honours [cite: 104]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor Of Mechanical Engineering Technology (Automotive Technology) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "4",
-                                                                       "Bachelor Of Mechanical Engineering Technology (Refrigeration And Air Conditioning Systems) with Hangurs [cite: 108]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor Of Mechanical Engineering Technology (Refrigeration And Air Conditioning Systems) with Hangurs",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "5",
-                                                                       "Bachelor Of Mechanical Engineering Technology (Maintenance Technology) with Honours [cite: 109, 111]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor Of Mechanical Engineering Technology (Maintenance Technology) with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "6",
-                                                                       "Bachelor of Mechanical Engineering Technology with Honours [cite: 110]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor of Mechanical Engineering Technology with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "7",
-                                                                       "Bachelor Of Technology in Automotive with Honours [cite: 113]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor Of Technology in Automotive with Honours",
+                                                                       "4 years"
                                                                    ],
                                                                    [
                                                                        "8",
-                                                                       "Bachelor Of Technology In Air Conditioning And Refrigeration with Honours [cite: 114]",
-                                                                       "4 years [cite: 116]"
+                                                                       "Bachelor Of Technology In Air Conditioning And Refrigeration with Honours",
+                                                                       "4 years"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Commencement time: March and October [cite: 75]",
+                                        "remarks":  "Commencement time: March and October",
                                         "pdf_link":  "utem-fees.zip"
                                     },
                                     {
-                                        "category_name":  "UNDERGRADUATE DEGREE PROGRAMMES [cite: 74]",
+                                        "category_name":  "UNDERGRADUATE DEGREE PROGRAMMES",
                                         "table":  {
                                                       "headers":  [
                                                                       "No",
@@ -20163,280 +20163,280 @@
                                                       "rows":  [
                                                                    [
                                                                        "1",
-                                                                       "Bachelor Of Electronic Engineering with Honours [cite: 59]",
+                                                                       "Bachelor Of Electronic Engineering with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 68]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "2",
-                                                                       "Bachelor of Computer Engineering with honours [cite: 60]",
+                                                                       "Bachelor of Computer Engineering with honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 68]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "3",
-                                                                       "Bachelor Of Electronics Engineering Technology (Industrial Electronics) with Honours [cite: 61, 62]",
+                                                                       "Bachelor Of Electronics Engineering Technology (Industrial Electronics) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 68]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "4",
-                                                                       "Bachelor Of Computer Engineering Technology (Computer Systems) with Honours [cite: 63]",
+                                                                       "Bachelor Of Computer Engineering Technology (Computer Systems) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 68]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "5",
-                                                                       "Bachelor of Electronics Engineering Technology (Telecommunications) with Honours [cite: 64]",
+                                                                       "Bachelor of Electronics Engineering Technology (Telecommunications) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 68]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "6",
-                                                                       "Bachelor Of Electronics Engineering Technology with Hanours [cite: 65]",
+                                                                       "Bachelor Of Electronics Engineering Technology with Hanours",
                                                                        "Degree",
-                                                                       "4 years [cite: 68]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "7",
-                                                                       "Bachelor of Technology In Industrial Electronic Automation with Honours [cite: 66]",
+                                                                       "Bachelor of Technology In Industrial Electronic Automation with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 68]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "8",
-                                                                       "Bachelor Of Electrical Engineering with Honours [cite: 79]",
+                                                                       "Bachelor Of Electrical Engineering with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 83]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "9",
-                                                                       "Bachelor Of Mechatronics Engineering with Honours [cite: 80]",
+                                                                       "Bachelor Of Mechatronics Engineering with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 83]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "10",
-                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Power) with Hanours [cite: 81]",
+                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Power) with Hanours",
                                                                        "Degree",
-                                                                       "4 years [cite: 83]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "11",
-                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Automation And Robotics) with Honours [cite: 82]",
+                                                                       "Bachelor Of Electrical Engineering Technology (Industrial Automation And Robotics) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 83]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "12",
-                                                                       "Bachelor Of Electrics Engineering Technology with Honours [cite: 84]",
+                                                                       "Bachelor Of Electrics Engineering Technology with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 83]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "13",
-                                                                       "Bachelor Of Technology In Electrical Maintenance System with Honours [cite: 85]",
+                                                                       "Bachelor Of Technology In Electrical Maintenance System with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 83]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "14",
-                                                                       "Bachelor Of Manufacturing Engineering with Honours [cite: 86]",
+                                                                       "Bachelor Of Manufacturing Engineering with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 92]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "15",
-                                                                       "Bachelor Of Industrial Engineering with Honours [cite: 87]",
+                                                                       "Bachelor Of Industrial Engineering with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 92]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "16",
-                                                                       "Bachelor Of Manufacturing Engineering Technology (Process And Technology) with Honours [cite: 88]",
+                                                                       "Bachelor Of Manufacturing Engineering Technology (Process And Technology) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 92]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "17",
-                                                                       "Bachelor Of Manufacturing Engineering Technalogy (Product Design) with Honours [cite: 90, 91]",
+                                                                       "Bachelor Of Manufacturing Engineering Technalogy (Product Design) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 92]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "18",
-                                                                       "Bachelor Of Manufacturing Engineering Technology with Honours [cite: 93]",
+                                                                       "Bachelor Of Manufacturing Engineering Technology with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 92]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "19",
-                                                                       "Bachelor Of Technology In Industrial Machining with Honours. [cite: 94]",
+                                                                       "Bachelor Of Technology In Industrial Machining with Honours.",
                                                                        "Degree",
-                                                                       "4 years [cite: 92]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "20",
-                                                                       "Bachelor Of Technology In Welding with Honours [cite: 95]",
+                                                                       "Bachelor Of Technology In Welding with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 92]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "21",
-                                                                       "Bachelor Of Technology Management with Honours Technology Innovation) [cite: 97]",
+                                                                       "Bachelor Of Technology Management with Honours Technology Innovation)",
                                                                        "Degree",
-                                                                       "4 years [cite: 98]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "22",
-                                                                       "Bachelor Of Technology Management with Honours (High Technology Marketing) [cite: 97]",
+                                                                       "Bachelor Of Technology Management with Honours (High Technology Marketing)",
                                                                        "Degree",
-                                                                       "4 years [cite: 98]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "23",
-                                                                       "Bachelor Of Technopreneurship with Honours [cite: 97]",
+                                                                       "Bachelor Of Technopreneurship with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 98]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "24",
-                                                                       "Bachelor Of Technology Management (Supply Chain Management \u0026 Logistics) with Honours [cite: 97]",
+                                                                       "Bachelor Of Technology Management (Supply Chain Management \u0026 Logistics) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 98]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "25",
-                                                                       "Bachelor if Computer Science Software Development) witti Hondura [cite: 100]",
+                                                                       "Bachelor if Computer Science Software Development) witti Hondura",
                                                                        "Degree",
-                                                                       "3.5 years [cite: 101]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "3.5 years",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "26",
-                                                                       "Banner Of Computer Science (Computes Networking) with Honours [cite: 100]",
+                                                                       "Banner Of Computer Science (Computes Networking) with Honours",
                                                                        "Degree",
-                                                                       "3.5 years [cite: 101]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "3.5 years",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "27",
-                                                                       "Bachelor of Computer Science (latabase Management) with Honours [cite: 100]",
+                                                                       "Bachelor of Computer Science (latabase Management) with Honours",
                                                                        "Degree",
-                                                                       "3.5 years [cite: 101]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "3.5 years",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "28",
-                                                                       "Bachelor of Computer Science Interactive Medin with Hormors [cite: 100]",
+                                                                       "Bachelor of Computer Science Interactive Medin with Hormors",
                                                                        "Degree",
-                                                                       "3.5 years [cite: 101]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "3.5 years",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "29",
-                                                                       "Bachelor of Computer Science (Artificial Intelligence) with Honours [cite: 100]",
+                                                                       "Bachelor of Computer Science (Artificial Intelligence) with Honours",
                                                                        "Degree",
-                                                                       "3.5 years [cite: 101]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "3.5 years",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "30",
-                                                                       "Rachater Of Computer Science Computer Security) with Hottours [cite: 100]",
+                                                                       "Rachater Of Computer Science Computer Security) with Hottours",
                                                                        "Degree",
-                                                                       "3.5 years [cite: 101]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "3.5 years",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "31",
-                                                                       "Bacheliy Of Information Technology (Game Tetraligy with Honcurs [cite: 100]",
+                                                                       "Bacheliy Of Information Technology (Game Tetraligy with Honcurs",
                                                                        "Degree",
-                                                                       "3.5 years [cite: 101]",
-                                                                       "RM 41,000.00 [cite: 31]"
+                                                                       "3.5 years",
+                                                                       "RM 41,000.00"
                                                                    ],
                                                                    [
                                                                        "32",
-                                                                       "Bachelor Of Mechanical Engineering with Honours [cite: 102]",
+                                                                       "Bachelor Of Mechanical Engineering with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "33",
-                                                                       "Bachelor Of Automotive Engineering with Honours [cite: 103]",
+                                                                       "Bachelor Of Automotive Engineering with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "34",
-                                                                       "Bachelor Of Mechanical Engineering Technology (Automotive Technology) with Honours [cite: 104]",
+                                                                       "Bachelor Of Mechanical Engineering Technology (Automotive Technology) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "35",
-                                                                       "Bachelor Of Mechanical Engineering Technology (Refrigeration And Air Conditioning Systems) with Hangurs [cite: 108]",
+                                                                       "Bachelor Of Mechanical Engineering Technology (Refrigeration And Air Conditioning Systems) with Hangurs",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "36",
-                                                                       "Bachelor Of Mechanical Engineering Technology (Maintenance Technology) with Honours [cite: 109, 111]",
+                                                                       "Bachelor Of Mechanical Engineering Technology (Maintenance Technology) with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "37",
-                                                                       "Bachelor of Mechanical Engineering Technology with Honours [cite: 110]",
+                                                                       "Bachelor of Mechanical Engineering Technology with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "38",
-                                                                       "Bachelor Of Technology in Automotive with Honours [cite: 113]",
+                                                                       "Bachelor Of Technology in Automotive with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ],
                                                                    [
                                                                        "39",
-                                                                       "Bachelor Of Technology In Air Conditioning And Refrigeration with Honours [cite: 114]",
+                                                                       "Bachelor Of Technology In Air Conditioning And Refrigeration with Honours",
                                                                        "Degree",
-                                                                       "4 years [cite: 116]",
-                                                                       "RM 49,000.00 [cite: 31]"
+                                                                       "4 years",
+                                                                       "RM 49,000.00"
                                                                    ]
                                                                ]
                                                   },
-                                        "remarks":  "Entry Requirements for International Students:\n- Have completed at least twelve (12) years of education [cite: 7].\n- Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting [cite: 6].\n- Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS) [cite: 23, 24].\n- Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei [cite: 25].\n\nCourse Fees:\n- All listed course fees are excluding student accommodation[cite: 32].",
+                                        "remarks":  "Entry Requirements for International Students:\n- Have completed at least twelve (12) years of education.\n- Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n- Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n- Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n\nCourse Fees:\n- All listed course fees are excluding student accommodation.",
                                         "pdf_link":  "utem-fees.zip"
                                     }
                                 ]
@@ -22660,3 +22660,4 @@
                                ]
             }
 }
+

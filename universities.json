@@ -8632,204 +8632,204 @@
     {
         "name":  "Universiti Teknikal Malaysia Melaka (UTeM)",
         "campuses":  [
-                         "Main Campus [cite: 71]",
-                         "Technology Campus [cite: 72]"
+                         "Main Campus",
+                         "Technology Campus"
                      ],
         "programs":  [
                          {
-                             "name":  "Bachelor Of Electronic Engineering with Honours [cite: 59]",
+                             "name":  "Bachelor Of Electronic Engineering with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 68]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor of Computer Engineering with honours [cite: 60]",
+                             "name":  "Bachelor of Computer Engineering with honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 68]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Electronics Engineering Technology (Industrial Electronics) with Honours [cite: 61, 62]",
+                             "name":  "Bachelor Of Electronics Engineering Technology (Industrial Electronics) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 68]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Computer Engineering Technology (Computer Systems) with Honours [cite: 63]",
+                             "name":  "Bachelor Of Computer Engineering Technology (Computer Systems) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 68]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor of Electronics Engineering Technology (Telecommunications) with Honours [cite: 64]",
+                             "name":  "Bachelor of Electronics Engineering Technology (Telecommunications) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 68]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Electronics Engineering Technology with Hanours [cite: 65]",
+                             "name":  "Bachelor Of Electronics Engineering Technology with Hanours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 68]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor of Technology In Industrial Electronic Automation with Honours [cite: 66]",
+                             "name":  "Bachelor of Technology In Industrial Electronic Automation with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 68]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Electrical Engineering with Honours [cite: 79]",
+                             "name":  "Bachelor Of Electrical Engineering with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 83]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Mechatronics Engineering with Honours [cite: 80]",
+                             "name":  "Bachelor Of Mechatronics Engineering with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 83]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Electrical Engineering Technology (Industrial Power) with Hanours [cite: 81]",
+                             "name":  "Bachelor Of Electrical Engineering Technology (Industrial Power) with Hanours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 83]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Electrical Engineering Technology (Industrial Automation And Robotics) with Honours [cite: 82]",
+                             "name":  "Bachelor Of Electrical Engineering Technology (Industrial Automation And Robotics) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 83]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Electrics Engineering Technology with Honours [cite: 84]",
+                             "name":  "Bachelor Of Electrics Engineering Technology with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 83]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology In Electrical Maintenance System with Honours [cite: 85]",
+                             "name":  "Bachelor Of Technology In Electrical Maintenance System with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 83]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Manufacturing Engineering with Honours [cite: 86]",
+                             "name":  "Bachelor Of Manufacturing Engineering with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 92]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Industrial Engineering with Honours [cite: 87]",
+                             "name":  "Bachelor Of Industrial Engineering with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 92]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Manufacturing Engineering Technology (Process And Technology) with Honours [cite: 88]",
+                             "name":  "Bachelor Of Manufacturing Engineering Technology (Process And Technology) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 92]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Manufacturing Engineering Technalogy (Product Design) with Honours [cite: 90, 91]",
+                             "name":  "Bachelor Of Manufacturing Engineering Technalogy (Product Design) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 92]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Manufacturing Engineering Technology with Honours [cite: 93]",
+                             "name":  "Bachelor Of Manufacturing Engineering Technology with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 92]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology In Industrial Machining with Honours. [cite: 94]",
+                             "name":  "Bachelor Of Technology In Industrial Machining with Honours.",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 92]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology In Welding with Honours [cite: 95]",
+                             "name":  "Bachelor Of Technology In Welding with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 92]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology Management with Honours Technology Innovation) [cite: 97]",
+                             "name":  "Bachelor Of Technology Management with Honours Technology Innovation)",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 98]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology Management with Honours (High Technology Marketing) [cite: 97]",
+                             "name":  "Bachelor Of Technology Management with Honours (High Technology Marketing)",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 98]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technopreneurship with Honours [cite: 97]",
+                             "name":  "Bachelor Of Technopreneurship with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 98]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology Management (Supply Chain Management \u0026 Logistics) with Honours [cite: 97]",
+                             "name":  "Bachelor Of Technology Management (Supply Chain Management \u0026 Logistics) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 98]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor if Computer Science Software Development) witti Hondura [cite: 100]",
+                             "name":  "Bachelor if Computer Science Software Development) witti Hondura",
                              "level":  "Degree",
-                             "duration":  "3.5 years [cite: 101]"
+                             "duration":  "3.5 years"
                          },
                          {
-                             "name":  "Banner Of Computer Science (Computes Networking) with Honours [cite: 100]",
+                             "name":  "Banner Of Computer Science (Computes Networking) with Honours",
                              "level":  "Degree",
-                             "duration":  "3.5 years [cite: 101]"
+                             "duration":  "3.5 years"
                          },
                          {
-                             "name":  "Bachelor of Computer Science (latabase Management) with Honours [cite: 100]",
+                             "name":  "Bachelor of Computer Science (latabase Management) with Honours",
                              "level":  "Degree",
-                             "duration":  "3.5 years [cite: 101]"
+                             "duration":  "3.5 years"
                          },
                          {
-                             "name":  "Bachelor of Computer Science Interactive Medin with Hormors [cite: 100]",
+                             "name":  "Bachelor of Computer Science Interactive Medin with Hormors",
                              "level":  "Degree",
-                             "duration":  "3.5 years [cite: 101]"
+                             "duration":  "3.5 years"
                          },
                          {
-                             "name":  "Bachelor of Computer Science (Artificial Intelligence) with Honours [cite: 100]",
+                             "name":  "Bachelor of Computer Science (Artificial Intelligence) with Honours",
                              "level":  "Degree",
-                             "duration":  "3.5 years [cite: 101]"
+                             "duration":  "3.5 years"
                          },
                          {
-                             "name":  "Rachater Of Computer Science Computer Security) with Hottours [cite: 100]",
+                             "name":  "Rachater Of Computer Science Computer Security) with Hottours",
                              "level":  "Degree",
-                             "duration":  "3.5 years [cite: 101]"
+                             "duration":  "3.5 years"
                          },
                          {
-                             "name":  "Bacheliy Of Information Technology (Game Tetraligy with Honcurs [cite: 100]",
+                             "name":  "Bacheliy Of Information Technology (Game Tetraligy with Honcurs",
                              "level":  "Degree",
-                             "duration":  "3.5 years [cite: 101]"
+                             "duration":  "3.5 years"
                          },
                          {
-                             "name":  "Bachelor Of Mechanical Engineering with Honours [cite: 102]",
+                             "name":  "Bachelor Of Mechanical Engineering with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Automotive Engineering with Honours [cite: 103]",
+                             "name":  "Bachelor Of Automotive Engineering with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Mechanical Engineering Technology (Automotive Technology) with Honours [cite: 104]",
+                             "name":  "Bachelor Of Mechanical Engineering Technology (Automotive Technology) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Mechanical Engineering Technology (Refrigeration And Air Conditioning Systems) with Hangurs [cite: 108]",
+                             "name":  "Bachelor Of Mechanical Engineering Technology (Refrigeration And Air Conditioning Systems) with Hangurs",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Mechanical Engineering Technology (Maintenance Technology) with Honours [cite: 109, 111]",
+                             "name":  "Bachelor Of Mechanical Engineering Technology (Maintenance Technology) with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor of Mechanical Engineering Technology with Honours [cite: 110]",
+                             "name":  "Bachelor of Mechanical Engineering Technology with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology in Automotive with Honours [cite: 113]",
+                             "name":  "Bachelor Of Technology in Automotive with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          },
                          {
-                             "name":  "Bachelor Of Technology In Air Conditioning And Refrigeration with Honours [cite: 114]",
+                             "name":  "Bachelor Of Technology In Air Conditioning And Refrigeration with Honours",
                              "level":  "Degree",
-                             "duration":  "4 years [cite: 116]"
+                             "duration":  "4 years"
                          }
                      ]
     },
@@ -9443,5 +9443,6 @@
                      ]
     }
 ]
+
 
 

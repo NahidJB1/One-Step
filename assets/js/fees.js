@@ -57,6 +57,9 @@ function renderDynamicFees(uni) {
             <h1>${uni.title || ''}</h1>
             <h2>${uni.subtitle || ''}</h2>
             <p>${uni.validity || ''}</p>
+            <p style="font-size: 0.85rem; color: var(--theme-light); margin-top: 10px; opacity: 0.9;">
+              Official tuition fees per semester for Local and International students (including Bangladesh, India, China, etc.). Find the exact cost of studying at ${uni.title || 'this university'}.
+            </p>
         `;
     }
     

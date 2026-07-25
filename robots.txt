@@ -1,4 +1,5 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://nahidjb1.github.io/One-Step/sitemap.xml
+Sitemap: https://www.onestepmy.com/sitemap.xml
+

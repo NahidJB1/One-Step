@@ -193,6 +193,8 @@ function downloadPDF(filename) {
     const link = document.createElement("a");
     if(filename.includes('/')) {
         link.href = filename;
+    } else if(filename.includes('.')) {
+        link.href = `../assets/documents/fees/${filename}`;
     } else {
         link.href = `../assets/documents/fees/${filename}.pdf`;
     }

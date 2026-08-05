@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isInSubdirectory) {
             return `../${pageName}`;
         }
+        
+        // If we are on the homepage and trying to link to a section on the same page
+        if ((page === 'index.html' || page === '') && pageName.startsWith('index.html#')) {
+            return pageName.replace('index.html', '');
+        }
+        
         return pageName;
     };
 

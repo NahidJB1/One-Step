@@ -1,4 +1,4 @@
-﻿/* assets/css/fees.css */
+/* assets/css/fees.css */
 
 /* --- VARIABLES --- */
 :root {
@@ -15,7 +15,7 @@
 body { background-color: var(--bg-color); color: var(--text-color); padding-bottom: 0; overflow-x: hidden; }
 
 /* --- HEADER --- */
-header {
+header:not(.main-header) {
   background: linear-gradient(135deg, #000000 0%, var(--theme-color) 100%);
   color: white;
   padding: 50px 20px;
@@ -24,9 +24,9 @@ header {
   box-shadow: 0 4px 15px rgba(0,0,0, 0.3);
 }
 
-header h1 { font-size: 36px; margin-bottom: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
-header h2 { font-size: 20px; font-weight: 400; color: var(--theme-accent); margin-bottom: 15px; }
-header p { font-size: 14px; opacity: 0.8; }
+header:not(.main-header) h1 { font-size: 36px; margin-bottom: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+header:not(.main-header) h2 { font-size: 20px; font-weight: 400; color: var(--theme-accent); margin-bottom: 15px; }
+header:not(.main-header) p { font-size: 14px; opacity: 0.8; }
 
 .header-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
 .logo-container { width: 100px; height: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
@@ -198,9 +198,9 @@ tr.highlight { background-color: #fff9c4 !important; color: #000; font-weight: b
 
 @media (max-width: 768px) {
   /* Header Adjustments */
-  header { padding: 40px 15px; }
-  header h1 { font-size: 22px; line-height: 1.2; }
-  header h2 { font-size: 15px; }
+  header:not(.main-header) { padding: 40px 15px; }
+  header:not(.main-header) h1 { font-size: 22px; line-height: 1.2; }
+  header:not(.main-header) h2 { font-size: 15px; }
   .header-content { flex-direction: column; gap: 15px; }
   .logo-container { width: 80px; height: 80px; }
 

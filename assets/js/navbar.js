@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <nav class="nav-links" id="navLinks">
           <a href="${getNavLink('index.html')}" class="nav-link ${page === 'index.html' || page === '' || page.includes('index.html') ? 'active' : ''}">Home</a>
           <a href="${getNavLink('scholarship.html')}" class="nav-link ${page === 'scholarship.html' || page.includes('scholarship') ? 'active' : ''}">Scholarships</a>
-          <a href="${getNavLink('index.html#contact')}" class="nav-link">Contact</a>
+          <a href="${getNavLink('contact.html')}" class="nav-link ${page === 'contact.html' ? 'active' : ''}">Contact</a>
           <a href="${getNavLink('application.html')}" class="nav-link" style="background-color: #0066CC; color: white; padding: 8px 20px; border-radius: 25px; font-weight: 600; margin-left: 10px; white-space: nowrap; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0, 102, 204, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">Apply Now</a>
         </nav>
         

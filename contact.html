@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - ONE STEP</title>
+  <meta name="description" content="Contact ONE STEP for university application assistance, scholarships, and more.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/index.css">
+  
+  <style>
+    .contact-hero {
+      background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.9)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop') center/cover;
+      padding: 150px 20px 80px;
+      text-align: center;
+      color: white;
+    }
+    .contact-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .contact-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    
+    .contact-wrapper {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+    
+    .contact-info-card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,102,204,0.1);
+    }
+    
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+    .info-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(0, 102, 204, 0.1);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .info-content h3 {
+      font-size: 1.2rem;
+      color: var(--dark);
+      margin-bottom: 5px;
+    }
+    .info-content p, .info-content a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .info-content a:hover {
+      color: var(--primary);
+    }
+    
+    .contact-form-card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-top: 5px solid var(--primary);
+    }
+    
+    .contact-form-card h2 {
+      margin-bottom: 25px;
+      color: var(--dark);
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--dark);
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+    }
+    
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+    
+    .btn-submit {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s ease;
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    .btn-submit:hover {
+      background: #0052a3;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+    }
+    
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .contact-hero {
+        padding-top: 120px;
+      }
+      .contact-hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="global-nav-placeholder"></div>
+
+  <header class="contact-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>We're here to help you take the first step towards your dream education in Malaysia.</p>
+    </div>
+  </header>
+
+  <section class="contact-wrapper">
+    <div class="contact-info-card">
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="info-content">
+          <h3>Our Location</h3>
+          <p>Kuala Lumpur, Malaysia</p>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+        <div class="info-content">
+          <h3>Email Us</h3>
+          <a href="mailto:info@onestepmy.com">info@onestepmy.com</a>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+        <div class="info-content">
+          <h3>WhatsApp</h3>
+          <a href="https://wa.me/601119359497" target="_blank">+60 11-1935 9497</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-form-card">
+      <h2>Student Application Form</h2>
+      <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted! We will contact you soon.');">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone / WhatsApp Number</label>
+          <input type="tel" id="phone" class="form-control" placeholder="+xx xxxxxxxxxx" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="program">Program of Interest</label>
+          <input type="text" id="program" class="form-control" placeholder="e.g. Computer Science, Business, MBBS">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control" placeholder="How can we help you?"></textarea>
+        </div>
+        
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="global-footer-placeholder"></div>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+</body>
+</html>

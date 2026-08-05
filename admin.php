@@ -87,8 +87,60 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
             mkdir('data', 0777, true);
         }
         
-        file_put_contents('data/fees_data.json', $json);
+        // Prevent saving empty or invalid data
+        if (!empty($json)) {
+            file_put_contents('data/fees_data.json', $json);
+        }
         header("Location: admin.php?view=fees&uni=" . urlencode($_POST['uni_id']));
+        exit;
+    }
+    
+    if ($_POST['action'] === 'upload_file') {
+        $uni_id = $_POST['uni_id'];
+        
+        $fees_data = [];
+        if (file_exists('data/fees_data.json')) {
+            $fees_data = json_decode(file_get_contents('data/fees_data.json'), true);
+        }
+        
+        if (isset($_FILES['fee_file']) && $_FILES['fee_file']['error'] === UPLOAD_ERR_OK && isset($fees_data[$uni_id])) {
+            $upload_dir = 'assets/documents/fees/';
+            if (!is_dir($upload_dir)) {
+                mkdir($upload_dir, 0777, true);
+            }
+            
+            // Delete existing files
+            $pdf_path = $upload_dir . $uni_id . '-fees.pdf';
+            $zip_path = $upload_dir . $uni_id . '-fees.zip';
+            if (file_exists($pdf_path)) unlink($pdf_path);
+            if (file_exists($zip_path)) unlink($zip_path);
+            
+            // Get new extension
+            $ext = strtolower(pathinfo($_FILES['fee_file']['name'], PATHINFO_EXTENSION));
+            if ($ext !== 'pdf' && $ext !== 'zip') {
+                $ext = 'pdf'; // Fallback
+            }
+            
+            $new_filename = $uni_id . '-fees.' . $ext;
+            $destination = $upload_dir . $new_filename;
+            
+            if (move_uploaded_file($_FILES['fee_file']['tmp_name'], $destination)) {
+                $fees_data[$uni_id]['file_link'] = $new_filename;
+                
+                // Cleanup old multi-pdf categories structure
+                if (isset($fees_data[$uni_id]['categories']) && is_array($fees_data[$uni_id]['categories'])) {
+                    foreach ($fees_data[$uni_id]['categories'] as &$cat) {
+                        if (isset($cat['pdf_link'])) unset($cat['pdf_link']);
+                    }
+                }
+                
+                $encoded = json_encode($fees_data, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_SUBSTITUTE);
+                if ($encoded) {
+                    file_put_contents('data/fees_data.json', $encoded);
+                }
+            }
+        }
+        header("Location: admin.php?view=fees&uni=" . urlencode($uni_id));
         exit;
     }
 }
@@ -132,7 +184,13 @@ if ($current_view == 'applications') {
     // Load existing fees data
     $fees_data = [];
     if (file_exists('data/fees_data.json')) {
-        $fees_data = json_decode(file_get_contents('data/fees_data.json'), true);
+        $content = file_get_contents('data/fees_data.json');
+        if (!empty($content)) {
+            $decoded = json_decode($content, true);
+            if (is_array($decoded)) {
+                $fees_data = $decoded;
+            }
+        }
     }
 } else {
     $page_title = "Scholarship Exams";
@@ -654,6 +712,16 @@ $result = $conn->query($sql);
             th.action-col, td.action-col { display: none; }
         }
 
+        /* Toast Notification */
+        .toast {
+            visibility: hidden; min-width: 250px; background-color: #333; color: #fff;
+            text-align: center; border-radius: 8px; padding: 16px; position: fixed;
+            z-index: 9999; left: 50%; bottom: 30px; font-size: 1rem; transform: translateX(-50%);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); transition: opacity 0.3s, bottom 0.3s;
+            opacity: 0; font-weight: 600;
+        }
+        .toast.show { visibility: visible; bottom: 50px; opacity: 1; }
+        .toast.unsaved { background-color: #f59e0b; color: white; }
                 
     </style>
 </head>
@@ -946,9 +1014,9 @@ $result = $conn->query($sql);
                         <input type="hidden" name="view" value="fees">
                         <select name="uni" class="form-control" style="padding: 10px; border-radius: 6px; border: 1px solid var(--border); width: 100%; max-width: 400px; font-family: inherit;" onchange="this.form.submit()">
                             <option value="">Select a University...</option>
-                            <?php foreach ($fees_data as $key => $uni): ?>
-                                <option value="<?php echo $key; ?>" <?php echo (isset($_GET['uni']) && $_GET['uni'] == $key) ? 'selected' : ''; ?>>
-                                    <?php echo htmlspecialchars($uni['title']); ?>
+                            <?php foreach ((array)$fees_data as $key => $uni): ?>
+                                <option value="<?php echo htmlspecialchars($key); ?>" <?php echo (isset($_GET['uni']) && $_GET['uni'] == $key) ? 'selected' : ''; ?>>
+                                    <?php echo htmlspecialchars($uni['title'] ?? 'Unknown'); ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>
@@ -987,25 +1055,26 @@ $result = $conn->query($sql);
 
                         <hr style="border: none; border-top: 1px solid var(--border); margin: 30px 0;">
                         
-                        <h4>Manage PDFs</h4>
-                        <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <?php 
-                            $unique_pdfs = [];
-                            foreach ($uni['categories'] as $cat) {
-                                if (!empty($cat['pdf_link']) && !in_array($cat['pdf_link'], $unique_pdfs)) {
-                                    $unique_pdfs[] = $cat['pdf_link'];
-                                }
-                            }
-                        ?>
-                        <?php foreach ($unique_pdfs as $pdf_link): ?>
-                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid var(--border); border-radius: 8px;">
-                                    <div>
-                                        <strong style="display: block; margin-bottom: 5px;">PDF Identifier: <?php echo htmlspecialchars($pdf_link); ?></strong>
-                                        <span style="font-size: 0.85rem; color: #64748b;">Filename: <?php echo htmlspecialchars($pdf_link); ?>.pdf</span>
-                                    </div>
-                                    <button class="btn-outline" onclick="alert('PDF Upload requires a dedicated endpoint. This UI allows the admin to initiate the upload.')"><i class="fas fa-upload"></i> Replace PDF</button>
+                        <div style="background: white; padding: 25px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+                            <h4 style="margin-top: 0; color: var(--primary); display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-file-archive"></i> Manage Fees File (PDF/ZIP)
+                            </h4>
+                            <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 20px;">Upload a single PDF file containing the fees chart, or a ZIP file if there are multiple documents. The old file will be automatically replaced.</p>
+                            
+                            <form method="POST" action="admin.php" enctype="multipart/form-data" style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                                <input type="hidden" name="action" value="upload_file">
+                                <input type="hidden" name="uni_id" value="<?php echo htmlspecialchars($_GET['uni']); ?>">
+                                
+                                <input type="file" name="fee_file" accept=".pdf,.zip" required style="flex-grow: 1; min-width: 250px; padding: 10px; border: 1px dashed var(--primary); border-radius: 8px; background: #f8fafc; font-family: inherit;">
+                                <button type="submit" class="btn-primary" style="background: var(--primary); white-space: nowrap;"><i class="fas fa-upload"></i> Upload</button>
+                            </form>
+                            
+                            <?php if (isset($uni['file_link'])): ?>
+                                <div style="margin-top: 15px; padding: 10px 15px; background: #dcfce7; color: #166534; border-radius: 8px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 10px;">
+                                    <i class="fas fa-check-circle"></i> Current file: <strong><?php echo htmlspecialchars($uni['file_link']); ?></strong>
                                 </div>
-                        <?php endforeach; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
 
@@ -1037,29 +1106,41 @@ $result = $conn->query($sql);
                             
                             if (uniData.categories) {
                                 uniData.categories.forEach((cat, catIndex) => {
-                                    html += `<div style="margin-bottom: 30px; background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; overflow-x: auto;">`;
-                                    html += `<h4 style="margin-top:0;">${cat.category_name || 'Programs'}</h4>`;
+                                    html += `<div style="margin-bottom: 30px; background: white; padding: 25px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); overflow-x: auto;">`;
+                                    html += `<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                                <h4 style="margin: 0; color: var(--secondary); font-size: 1.1rem;">${cat.category_name || 'Programs'}</h4>
+                                                <button type="button" onclick="addRow(${catIndex})" class="btn-outline" style="font-size: 0.8rem; padding: 5px 12px;"><i class="fas fa-plus"></i> Add Row</button>
+                                             </div>`;
                                     
                                     if (cat.table && cat.table.rows) {
-                                        html += `<table style="background: white; min-width: 800px;"><thead><tr>`;
+                                        html += `<table style="width: 100%; border-collapse: collapse; min-width: 800px;">
+                                                    <thead style="background: #f1f5f9; border-bottom: 2px solid var(--border);"><tr>`;
                                         if (cat.table.headers) {
-                                            cat.table.headers.forEach(h => { html += `<th>${h}</th>`; });
+                                            cat.table.headers.forEach(h => { html += `<th style="padding: 12px; text-align: left; font-size: 0.85rem; color: #64748b; text-transform: uppercase;">${h}</th>`; });
                                         }
-                                        html += `<th width="50">Action</th></tr></thead><tbody>`;
+                                        html += `<th width="60" style="padding: 12px; text-align: center;">Action</th></tr></thead><tbody>`;
                                         
                                         cat.table.rows.forEach((row, rowIndex) => {
-                                            html += `<tr>`;
+                                            html += `<tr style="border-bottom: 1px solid var(--border); transition: background 0.2s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">`;
                                             row.forEach((cell, cellIndex) => {
-                                                // Prevent quotes from breaking HTML input
                                                 let safeCell = cell.toString().replace(/"/g, '&quot;');
-                                                html += `<td><input type="text" value="${safeCell}" style="width: 100%; border: 1px solid #e2e8f0; padding: 8px; border-radius: 4px; font-family: inherit;" onchange="updateCell(${catIndex}, ${rowIndex}, ${cellIndex}, this.value)"></td>`;
+                                                html += `<td style="padding: 8px;">
+                                                            <input type="text" value="${safeCell}" 
+                                                            style="width: 100%; border: 1px solid transparent; padding: 8px 10px; border-radius: 6px; font-family: inherit; font-size: 0.95rem; background: transparent; transition: all 0.2s;" 
+                                                            onfocus="this.style.border='1px solid var(--primary)'; this.style.background='white'; showUnsavedIndicator();"
+                                                            onblur="this.style.border='1px solid transparent'; this.style.background='transparent';"
+                                                            onchange="updateCell(${catIndex}, ${rowIndex}, ${cellIndex}, this.value)">
+                                                         </td>`;
                                             });
-                                            html += `<td><button type="button" onclick="deleteRow(${catIndex}, ${rowIndex})" style="color: #ef4444; background: none; border: none; cursor: pointer; padding: 5px;"><i class="fas fa-trash"></i></button></td>`;
+                                            html += `<td style="padding: 8px; text-align: center;">
+                                                        <button type="button" onclick="deleteRow(${catIndex}, ${rowIndex})" style="color: #94a3b8; background: none; border: none; cursor: pointer; padding: 8px; border-radius: 6px; transition: 0.2s;" onmouseover="this.style.color='#ef4444'; this.style.background='#fee2e2';" onmouseout="this.style.color='#94a3b8'; this.style.background='transparent';">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </button>
+                                                     </td>`;
                                             html += `</tr>`;
                                         });
                                         html += `</tbody></table>`;
                                     }
-                                    html += `<button type="button" onclick="addRow(${catIndex})" class="btn-outline" style="margin-top: 15px; font-size: 0.85rem;"><i class="fas fa-plus"></i> Add Row</button>`;
                                     html += `</div>`;
                                 });
                             }
@@ -1068,14 +1149,27 @@ $result = $conn->query($sql);
                             document.getElementById('devJsonArea').value = JSON.stringify(uniData, null, 2);
                         }
                         
+                        function showUnsavedIndicator() {
+                            let toast = document.getElementById("unsavedToast");
+                            if(toast) {
+                                toast.className = "toast unsaved show";
+                            }
+                        }
+
+                        function hideUnsavedIndicator() {
+                            let toast = document.getElementById("unsavedToast");
+                            if(toast) toast.className = "toast unsaved";
+                        }
+                        
                         function updateCell(catIdx, rowIdx, cellIdx, val) {
                             uniData.categories[catIdx].table.rows[rowIdx][cellIdx] = val;
                         }
                         
                         function deleteRow(catIdx, rowIdx) {
-                            if (confirm("Delete this row?")) {
+                            if (confirm("Are you sure you want to delete this row? This cannot be undone until you reload without saving.")) {
                                 uniData.categories[catIdx].table.rows.splice(rowIdx, 1);
                                 renderGuiEditor();
+                                showUnsavedIndicator();
                             }
                         }
                         
@@ -1084,6 +1178,7 @@ $result = $conn->query($sql);
                             let newRow = new Array(colCount).fill('');
                             uniData.categories[catIdx].table.rows.push(newRow);
                             renderGuiEditor();
+                            showUnsavedIndicator();
                         }
 
                         function toggleDevMode() {
@@ -1193,6 +1288,8 @@ $result = $conn->query($sql);
             </div>
         </div>
     </div>
+    
+    <div id="unsavedToast" class="toast unsaved">You have unsaved changes!</div>
 
     <script>
         const modal = document.getElementById('receiptModal');

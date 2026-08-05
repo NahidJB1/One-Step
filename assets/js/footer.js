@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="${root}Fees_Chart/amu-fees.html">AMU Fees</a></li>
                     <li><a href="${root}Fees_Chart/apu-fees.html">APU Fees</a></li>
                     <li><a href="${root}Fees_Chart/bac-fees.html">BAC Fees</a></li>
-                    <li><a href="${root}Fees_Chart/city-university-fees.html">City U Fees</a></li>
+                    <li><a href="${root}Fees_Chart/cityu-fees.html">City U Fees</a></li>
                     <li><a href="${root}Fees_Chart/cyberjaya-fees.html">Cyberjaya Fees</a></li>
                     <li><a href="${root}Fees_Chart/help-fees.html">HELP Fees</a></li>
                     <li><a href="${root}Fees_Chart/icms-fees.html">ICMS Fees</a></li>
@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   <h3>Quick Actions</h3>
                   <ul class="footer-links" style="margin-bottom: 20px;">
                      <li><a href="${root}index.html" style="color: #FFD700; font-weight: bold;">Home</a></li>
+                     <li><a href="${root}Articles/top-10-universities-in-malaysia.html" style="color: #00C2FF; font-weight: bold;">Top 10 Universities</a></li>
                      <li><a href="${root}scholarship.html" style="color: #FFD700; font-weight: bold;">Scholarships</a></li>
                      <li><a href="${root}register.html" style="color: #FFD700; font-weight: bold;">Register for Exam</a></li>
                      <li><a href="${root}application.html" style="color: #FFD700; font-weight: bold;">Apply Now</a></li>

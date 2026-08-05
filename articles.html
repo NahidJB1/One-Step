@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="canonical" href="https://www.onestepmy.com/articles.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Guides & Articles | One Step MY</title>
+  <meta name="description" content="Read our expertly curated guides and articles on studying in Malaysia. Find the top universities, cheapest tuition fees, and fastest visa processing times.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #3b82f6;
+      --accent: #f59e0b;
+      --bg: #f8fafc;
+      --text: #334155;
+      --light: #ffffff;
+      --border: #e2e8f0;
+      --glass-bg: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.4);
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .articles-hero {
+      padding: 120px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .articles-hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .articles-hero p {
+      font-size: 1.1rem;
+      color: #64748b;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Grid Layout */
+    .articles-container {
+      max-width: 1200px;
+      margin: 0 auto 100px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    /* Glassmorphic Article Card */
+    .article-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 30px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.8), transparent);
+      transform: translateX(-100%);
+      transition: 0.6s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .article-card:hover::before {
+      transform: translateX(100%);
+    }
+
+    .article-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: white;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+      transition: var(--transition);
+    }
+
+    .article-card:hover .article-icon {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    .article-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+
+    .article-desc {
+      font-size: 0.95rem;
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      flex-grow: 1;
+    }
+
+    .article-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      padding-top: 20px;
+      font-weight: 500;
+      color: var(--secondary);
+    }
+
+    .article-footer i {
+      transition: transform 0.3s ease;
+    }
+
+    .article-card:hover .article-footer i {
+      transform: translateX(5px);
+    }
+
+    /* HCI Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .articles-hero {
+        padding: 100px 20px 50px;
+      }
+      .articles-hero h1 {
+        font-size: 2.5rem;
+      }
+      .articles-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .article-card {
+        padding: 25px;
+        /* Larger tap targets for mobile */
+        min-height: 250px; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="global-nav-placeholder"></div>
+
+  <!-- Hero -->
+  <section class="articles-hero">
+    <h1>Our Knowledge Hub</h1>
+    <p>Expert guides, deeply researched lists, and actionable advice to help you choose the best university and country for your future.</p>
+  </section>
+
+  <!-- Articles Grid -->
+  <main class="articles-container">
+
+    <!-- Article 1 -->
+    <a href="Articles/top-10-universities-in-malaysia.html" class="article-card">
+      <div class="article-icon"><i class="fas fa-trophy"></i></div>
+      <h2 class="article-title">Top 10 Universities in Malaysia</h2>
+      <p class="article-desc">Discover the highest-ranked universities in Malaysia for 2026. Compare their global rankings, state-of-the-art facilities, and best-performing academic fields.</p>
+      <div class="article-footer">
+        <span>Read Guide</span>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </a>
+
+    <!-- Article 2 -->
+    <a href="Articles/cheapest-universities.html" class="article-card">
+      <div class="article-icon"><i class="fas fa-wallet"></i></div>
+      <h2 class="article-title">10 Cheapest Universities in Malaysia</h2>
+      <p class="article-desc">Quality education doesn't have to break the bank. Explore the top 10 most affordable, fully accredited universities for international and local students.</p>
+      <div class="article-footer">
+        <span>Read Guide</span>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </a>
+
+    <!-- Article 3 -->
+    <a href="Articles/fast-processing-universities.html" class="article-card">
+      <div class="article-icon"><i class="fas fa-bolt"></i></div>
+      <h2 class="article-title">Fast Processing Universities</h2>
+      <p class="article-desc">In a rush? These top universities have streamlined their admissions and visa processing pipelines to get you enrolled and approved in record time.</p>
+      <div class="article-footer">
+        <span>Read Guide</span>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </a>
+
+    <!-- Article 4 -->
+    <a href="Articles/affordable-countries.html" class="article-card">
+      <div class="article-icon"><i class="fas fa-globe-asia"></i></div>
+      <h2 class="article-title">10 Affordable Countries for Study</h2>
+      <p class="article-desc">Expand your horizons beyond Malaysia. We've compiled a list of the top 10 most affordable countries offering world-class higher education to international students.</p>
+      <div class="article-footer">
+        <span>Read Guide</span>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="global-footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/universityData.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="canonical" href="https://www.onestepmy.com/Articles/top-10-universities-in-malaysia.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 Universities in Malaysia for International Students | One Step MY</title>
+  <meta name="description" content="Discover the top 10 best universities in Malaysia for international students. Explore rankings, tuition fees, and admission details for UTM, UPM, IIUM, APU, and more.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    .article-hero {
+      padding: 160px 0 80px;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      text-align: center;
+    }
+    .article-hero .hero-subtitle { color: rgba(255,255,255,0.9); max-width: 700px; margin: 15px auto 0; }
+    .article-body { padding: 60px 0 80px; background: var(--light); }
+    .article-body .container { max-width: 1100px; }
+    .article-intro { text-align: center; max-width: 800px; margin: 0 auto 50px; color: var(--gray); font-size: 1.1rem; line-height: 1.8; }
+    
+    .uni-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .uni-card {
+      background: white; border-radius: 20px; overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+      position: relative;
+    }
+    .uni-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,102,204,0.15); }
+    
+    .uni-logo-badge {
+      position: absolute;
+      top: 15px; left: 15px;
+      width: 65px; height: 65px;
+      background: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      padding: 8px;
+      z-index: 2;
+    }
+    .uni-logo-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    
+    .uni-rank-badge {
+      position: absolute;
+      top: 15px; right: 15px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 1rem;
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    
+    .uni-card-img { width: 100%; height: 220px; object-fit: cover; }
+    
+    .uni-card-body { padding: 25px 25px 30px; }
+    .uni-card-body h2 { font-size: 1.3rem; color: var(--dark); margin-bottom: 10px; }
+    .uni-card-body p { font-size: 0.95rem; color: var(--gray); margin-bottom: 20px; line-height: 1.5; }
+    
+    .rank-stats { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; background: rgba(0,102,204,0.04); padding: 12px; border-radius: 8px; }
+    .rank-stat { font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
+    .rank-stat i { color: var(--primary); }
+    .rank-stat strong { color: var(--dark); }
+    
+    .uni-card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .uni-card-actions .btn { padding: 10px 18px; font-size: 0.85rem; flex: 1; text-align: center; }
+    
+    /* More Options Section */
+    .explore-tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 60px 0 20px; }
+    .explore-tool-card {
+      background: white; border-radius: 16px; padding: 30px;
+      text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: all 0.3s ease; display: block; text-decoration: none;
+    }
+    .explore-tool-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,102,204,0.1); }
+    .explore-tool-icon { width: 60px; height: 60px; margin: 0 auto 20px; background: rgba(0,102,204,0.1); color: var(--primary); font-size: 1.5rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+    .explore-tool-title { font-size: 1.3rem; color: var(--dark); margin-bottom: 10px; }
+    .explore-tool-desc { font-size: 0.95rem; color: var(--gray); margin-bottom: 20px; }
+
+    .article-cta {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white; text-align: center; padding: 80px 0;
+    }
+    .article-cta h2 { font-size: 2.5rem; margin-bottom: 15px; }
+    .article-cta p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 35px; opacity: 0.9; }
+    .article-cta .cta-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    
+    @media (max-width: 768px) {
+      .article-hero { padding: 130px 20px 60px; }
+      .article-hero .hero-title { font-size: 2rem; }
+      .article-hero .hero-subtitle { font-size: 1rem; }
+      .uni-grid, .explore-tools-grid { grid-template-columns: 1fr; }
+      .article-cta h2 { font-size: 1.8rem; }
+      .article-body { padding: 40px 0 60px; }
+      .uni-card-actions { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="global-nav-placeholder"></div>
+
+<header class="article-hero">
+  <div class="container">
+    <h1 class="hero-title">Top 10 Universities in <span>Malaysia</span></h1>
+    <p class="hero-subtitle">A curated selection of the most prestigious and globally recognized universities for international students looking to study in Malaysia.</p>
+  </div>
+</header>
+
+<section class="article-body">
+  <div class="container">
+    <p class="article-intro">Malaysia has quickly become a premier education hub in Asia, offering world-class facilities, globally recognized degrees, and an amazing multi-cultural experience. Here are 10 of the best institutions you can apply to right now, verified by the authentic QS World University Rankings 2024.</p>
+
+    <div class="uni-grid">
+
+      <!-- 1. UTM -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/utm/UTM_logo.png" alt="UTM Logo">
+        </div>
+        <div class="uni-rank-badge">#1</div>
+        <img src="../assets/images/universities/utm/utm_campus.webp" alt="UTM Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>Universiti Teknologi Malaysia (UTM)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #188</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top 5</div>
+          </div>
+          <p>A premier innovation-driven entrepreneurial research university in engineering, science and technology.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/utm-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/utm-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. UPM -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/upm/upm_logo.png" alt="UPM Logo">
+        </div>
+        <div class="uni-rank-badge">#2</div>
+        <img src="../assets/images/universities/upm/upm_campus.jpg" alt="UPM Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>Universiti Putra Malaysia (UPM)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #158</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top 3</div>
+          </div>
+          <p>Recognized globally for its research excellence, particularly in agriculture, forestry, and sciences.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/upm-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/upm-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. UCSI -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/ucsi/ucsi_logo.jfif" alt="UCSI Logo">
+        </div>
+        <div class="uni-rank-badge">#3</div>
+        <img src="../assets/images/universities/ucsi/ucsi_campus_1.jpg" alt="UCSI Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>UCSI University</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #300</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top Private Uni</div>
+          </div>
+          <p>A top-ranked private university in Malaysia with strong industry linkages and global recognitions.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/ucsi-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/ucsi-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. APU -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/apu/apu-logo.png" alt="APU Logo">
+        </div>
+        <div class="uni-rank-badge">#4</div>
+        <img src="../assets/images/universities/apu/APU-campus.jpg" alt="APU Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>Asia Pacific University (APU)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #621-630</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top Tech Uni</div>
+          </div>
+          <p>Award-winning university known for producing highly employable graduates in Technology and Business.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/apu-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/apu-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. IIUM -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/iium/iium_logo.png" alt="IIUM Logo">
+        </div>
+        <div class="uni-rank-badge">#5</div>
+        <img src="../assets/images/universities/iium/iium_campus_1.webp" alt="IIUM Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>International Islamic University (IIUM)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #711-720</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top 15</div>
+          </div>
+          <p>Blending modern academic disciplines with Islamic values, offering a unique multi-cultural environment.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/iium-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/iium-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. MMU -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/mmu/mmu_logo.png" alt="MMU Logo">
+        </div>
+        <div class="uni-rank-badge">#6</div>
+        <img src="../assets/images/universities/mmu/mmu_campus_1.webp" alt="MMU Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>Multimedia University (MMU)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #1001-1200</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top 20</div>
+          </div>
+          <p>The pioneer in ICT education, fostering creative multimedia and technological excellence in Malaysia.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/mmu-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/mmu-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. UniKL -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/unikl/unikl_logo.png" alt="UniKL Logo">
+        </div>
+        <div class="uni-rank-badge">#7</div>
+        <img src="../assets/images/universities/unikl/unikl_campus_1.jfif" alt="UniKL Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>Universiti Kuala Lumpur (UniKL)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #1001-1200</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top 20</div>
+          </div>
+          <p>The leading entrepreneurial technical university equipping graduates with strong technological knowledge.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/unikl-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/unikl-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. UTeM -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/utem/UTEM_logo.png" alt="UTeM Logo">
+        </div>
+        <div class="uni-rank-badge">#8</div>
+        <img src="../assets/images/universities/utem/utem_sky_view.jpeg" alt="UTeM Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>Universiti Teknikal Malaysia Melaka (UTeM)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>QS World Rank 2024:</strong> #1201-1400</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rank:</strong> Top 25</div>
+          </div>
+          <p>Malaysia's first technical public university, highly focused on practical and hands-on engineering programs.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/utem-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/utem-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. UOW -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/uow/UoW_logo.png" alt="UOW Logo">
+        </div>
+        <div class="uni-rank-badge">#9</div>
+        <img src="../assets/images/universities/uow/uow_campus_1.jpg" alt="UOW Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>University of Wollongong (UOW)</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>Global Status:</strong> Australian Campus</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rating:</strong> SETARA Tier 5</div>
+          </div>
+          <p>Experience an Australian-class education right here in Malaysia with UOW's premier global campus.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/uow-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/uow-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Limkokwing -->
+      <div class="uni-card">
+        <div class="uni-logo-badge">
+          <img src="../assets/images/universities/limkokwing/Limkokwing_logo.jpg" alt="Limkokwing Logo">
+        </div>
+        <div class="uni-rank-badge">#10</div>
+        <img src="../assets/images/universities/limkokwing/limkokwing_campus_1.jpg" alt="Limkokwing Campus" class="uni-card-img">
+        <div class="uni-card-body">
+          <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:8px;"></i>Limkokwing University</h2>
+          <div class="rank-stats">
+            <div class="rank-stat"><i class="fas fa-globe"></i> <strong>Global Status:</strong> Creative Hub</div>
+            <div class="rank-stat"><i class="fas fa-map-marker-alt"></i> <strong>Malaysia Rating:</strong> Innovation Leader</div>
+          </div>
+          <p>An international university empowering creative minds with an incredibly diverse global student community.</p>
+          <div class="uni-card-actions">
+            <a href="../Fees_Chart/limkokwing-fees.html" class="btn btn-primary"><i class="fas fa-money-bill-wave"></i> Programs & Fees</a>
+            <a href="../Universities/limkokwing-details.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Explore Tools -->
+    <div class="explore-tools-grid">
+      <a href="../compare.html" class="explore-tool-card">
+        <div class="explore-tool-icon"><i class="fas fa-balance-scale"></i></div>
+        <h3 class="explore-tool-title">Compare Universities</h3>
+        <p class="explore-tool-desc">Side-by-side comparison of tuition fees, rankings, and programs across our partner institutions.</p>
+        <span class="btn btn-secondary">Start Comparing</span>
+      </a>
+
+      <a href="../quiz.html" class="explore-tool-card">
+        <div class="explore-tool-icon"><i class="fas fa-magic"></i></div>
+        <h3 class="explore-tool-title">Find Your Match</h3>
+        <p class="explore-tool-desc">Take our quick assessment quiz and let our algorithm match you with the best universities for your profile.</p>
+        <span class="btn btn-secondary">Take the Quiz</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="article-cta">
+  <div class="container">
+    <h2>Find Your Perfect University</h2>
+    <p>Not sure which university is right for your budget and goals? Let our experts help you make the best choice.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/6011159497" target="_blank" class="btn cta-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      <a href="../application.html" class="btn btn-accent"><i class="fas fa-rocket"></i> Start Your Application</a>
+    </div>
+  </div>
+</section>
+
+<div id="global-footer-placeholder"></div>
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/navbar.js"></script>
+</body>
+</html>

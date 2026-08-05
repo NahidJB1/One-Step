@@ -61,6 +61,18 @@ function renderDynamicFees(uni) {
               Official tuition fees per semester for Local and International students (including Bangladesh, India, China, etc.). Find the exact cost of studying at ${uni.title || 'this university'}.
             </p>
         `;
+        
+        if (uni.file_link) {
+            let btnText = uni.file_link.endsWith('.zip') ? 'Download All Documents (ZIP)' : 'Download Fees (PDF)';
+            let btnIcon = uni.file_link.endsWith('.zip') ? 'fa-file-archive' : 'fa-file-pdf';
+            headerText.innerHTML += `
+                <div style="margin-top: 25px;">
+                    <button onclick="downloadPDF('${uni.file_link}')" style="background: var(--theme-accent); color: var(--theme-dark); border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); font-size: 0.95rem; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+                        <i class="fas ${btnIcon}"></i> ${btnText}
+                    </button>
+                </div>
+            `;
+        }
     }
     
     document.title = `${uni.title || 'University'} - International Fee Structure`;
@@ -100,8 +112,9 @@ function renderDynamicFees(uni) {
         if (cat.remarks || cat.pdf_link) {
             html += `<div class="note">`;
             if (cat.pdf_link) {
+                let dlText = cat.pdf_link.endsWith('.zip') ? 'Download ZIP' : 'Download PDF';
                 html += `<div class="download-bar" onclick="downloadPDF('${cat.pdf_link}')">
-                            <span>Download PDF</span>
+                            <span>${dlText}</span>
                             <span>⬇️</span>
                          </div>`;
             }

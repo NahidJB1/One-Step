@@ -255,7 +255,7 @@ if (!empty($relevantFees) && ($wantsFees || $wantsPrograms || $wantsMasters || $
                         $matchesSubject = false;
                         if (!empty($subjectKeywords)) {
                             foreach ($subjectKeywords as $kw) {
-                                if (strpos($pNameLower, $kw) !== false || (strlen($kw) > 4 && levenshtein($kw, $pNameLower) < 3)) {
+                                if (preg_match('/\\b' . preg_quote($kw, '/') . '\\b/i', $pNameLower) || (strlen($kw) > 4 && levenshtein($kw, $pNameLower) < 3)) {
                                     $matchesSubject = true;
                                     break;
                                 }
@@ -342,27 +342,25 @@ if (!empty($relevantFees) && ($wantsFees || $wantsPrograms || $wantsMasters || $
       }
   }
 
-// 5. Search for General University Info (Fallback if fees not requested OR if fee filtering left it empty)
-if (empty($reply) && !empty($relevantUnis)) {
-    foreach ($relevantUnis as $uni) {
-        $name = $uni['name'] ?? 'University';
-        $location = $uni['location'] ?? 'Malaysia';
-        $rank = $uni['ranking'] ?? 'N/A';
-        $reply .= "**" . strtoupper($name) . "**\nLocation: $location | Ranking: $rank\n";
-        if (isset($uni['programs']) && is_array($uni['programs'])) {
-            $reply .= "Popular Programs:\n";
-            $limit = 0;
-            foreach ($uni['programs'] as $prog) {
-                if ($limit >= 5) break;
-                $reply .= "- " . ($prog['name'] ?? '') . "\n";
-                $limit++;
-            }
-        }
+
         $reply .= "\n*To see tuition fees, ask: 'How much are the fees at $name?'*\n\n";
     }
 }
 
-// 6. Search FAQs (Enhanced with Scoring & Variations Support)
+
+  // 4.6 Visa Success Rate
+  if (empty($reply) && preg_match('/\b(visa ratio|visa success|success rate|visa approval rate|visa percentage)\b/i', $msg) && !empty($relevantUnis)) {
+      $metaFile = __DIR__ . '/../university_meta.json';
+      if (file_exists($metaFile)) {
+          $meta = json_decode(file_get_contents($metaFile), true);
+          $uniName = $relevantUnis[0]['name'];
+          if (isset($meta[$uniName]['visa'])) {
+              $reply = "The visa success rate (ratio) for **" . $uniName . "** is extremely high at **" . $meta[$uniName]['visa'] . "**. \n\n*Apply through One-Step to ensure a smooth and successful visa process!*";
+          }
+      }
+  }
+
+// 5. Search FAQs (Enhanced with Scoring & Variations Support)
 if (empty($reply) && is_array($faqs)) {
     $bestScore = 0;
     $bestReply = "";
@@ -413,6 +411,23 @@ if (empty($reply) && is_array($faqs)) {
         $reply = $bestReply;
     }
 }
+
+// 6. Search for General University Info (Fallback if fees not requested OR if fee filtering left it empty)
+if (empty($reply) && !empty($relevantUnis)) {
+    foreach ($relevantUnis as $uni) {
+        $name = $uni['name'] ?? 'University';
+        $location = $uni['location'] ?? 'Malaysia';
+        $rank = $uni['ranking'] ?? 'N/A';
+        $reply .= "**" . strtoupper($name) . "**\nLocation: $location | Ranking: $rank\n";
+        if (isset($uni['programs']) && is_array($uni['programs'])) {
+            $reply .= "Popular Programs:\n";
+            $limit = 0;
+            foreach ($uni['programs'] as $prog) {
+                if ($limit >= 5) break;
+                $reply .= "- " . ($prog['name'] ?? '') . "\n";
+                $limit++;
+            }
+        }
 
 // 7. Ultimate Fallback
 if (empty(trim($reply))) {

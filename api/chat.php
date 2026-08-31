@@ -171,6 +171,7 @@ if (!empty($relevantFees)) {
 }
 
 $wantsFees = preg_match('/fee|cost|price|tuition|how much|pay/i', $msg);
+$wantsPrograms = preg_match('/\b(subject|subjects|course|courses|program|programs|available|offer|ache|ki ki)\b/i', $msg);
 $wantsMasters = preg_match('/master|postgrad|mba|msc|ma\b/i', $msg);
 $wantsBachelors = preg_match('/bachelor|undergrad|degree|bsc|ba\b/i', $msg);
 $wantsDiploma = preg_match('/diploma/i', $msg);
@@ -201,7 +202,7 @@ foreach ($countriesList as $country) {
 }
 
 // 4. Search for University Fees
-if (!empty($relevantFees) && ($wantsFees || $wantsMasters || $wantsBachelors || $wantsDiploma || $wantsPhd || !empty($subjectKeywords))) {
+if (!empty($relevantFees) && ($wantsFees || $wantsPrograms || $wantsMasters || $wantsBachelors || $wantsDiploma || $wantsPhd || !empty($subjectKeywords))) {
     foreach ($relevantFees as $feeInfo) {
         $title = $feeInfo['title'] ?? 'University';
         
@@ -271,7 +272,7 @@ if (!empty($relevantFees) && ($wantsFees || $wantsMasters || $wantsBachelors || 
                         $uniReply .= "\n*" . ($cat['category_name'] ?? 'Programs') . "*\n";
                         
                         foreach ($filteredRows as $row) {
-                            if ($globalProgramLimit >= 7) {
+                            if ($globalProgramLimit >= ($wantsPrograms ? 15 : 7)) {
                                 $uniReply .= "- *...and more. Contact us for the full list.*\n";
                                 break 2;
                             }
@@ -290,7 +291,7 @@ if (!empty($relevantFees) && ($wantsFees || $wantsMasters || $wantsBachelors || 
                                 }
                             }
                             $detailStr = implode(' | ', $details);
-                            $uniReply .= "- **$pName**\n  ↳ " . $detailStr . "\n\n";
+                            $uniReply .= "- **$pName**\n  ? " . $detailStr . "\n\n";
                             $globalProgramLimit++;
                         }
                         
@@ -310,6 +311,36 @@ if (!empty($relevantFees) && ($wantsFees || $wantsMasters || $wantsBachelors || 
         // Silently skip if no matching category found — do NOT output a confusing fallback message
     }
 }
+
+
+  // 4.5 Compare Universities
+  if (preg_match('/\b(compare|vs)\b/i', $msg) && count($relevantUnis) >= 2) {
+      $metaFile = __DIR__ . '/../university_meta.json';
+      if (file_exists($metaFile)) {
+          $meta = json_decode(file_get_contents($metaFile), true);
+          
+          $uni1 = $relevantUnis[0]['name'];
+          $uni2 = $relevantUnis[1]['name'];
+          
+          $meta1 = $meta[$uni1] ?? null;
+          $meta2 = $meta[$uni2] ?? null;
+          
+          if ($meta1 && $meta2) {
+              $reply = "**Comparison: " . $meta1['name'] . " vs " . $meta2['name'] . "**\n\n";
+              
+              $reply .= "| Features | " . $meta1['name'] . " | " . $meta2['name'] . " |\n";
+              $reply .= "|---|---|---|\n";
+              $reply .= "| **Location** | " . ($meta1['location'] ?? 'N/A') . " | " . ($meta2['location'] ?? 'N/A') . " |\n";
+              $reply .= "| **Type** | " . ($meta1['type'] ?? 'N/A') . " | " . ($meta2['type'] ?? 'N/A') . " |\n";
+              $reply .= "| **Rank** | " . ($meta1['rank'] ?? 'N/A') . " | " . ($meta2['rank'] ?? 'N/A') . " |\n";
+              $reply .= "| **Popular** | " . ($meta1['popular'] ?? 'N/A') . " | " . ($meta2['popular'] ?? 'N/A') . " |\n";
+              $reply .= "| **Fees** | " . ($meta1['bachelorFee'] ?? 'N/A') . " | " . ($meta2['bachelorFee'] ?? 'N/A') . " |\n";
+              $reply .= "| **Visa** | " . ($meta1['visa'] ?? 'N/A') . " | " . ($meta2['visa'] ?? 'N/A') . " |\n\n";
+              
+              $reply .= "*Would you like to know the specific fees for any of their programs? Just ask!*";
+          }
+      }
+  }
 
 // 5. Search for General University Info (Fallback if fees not requested OR if fee filtering left it empty)
 if (empty($reply) && !empty($relevantUnis)) {
@@ -367,6 +398,8 @@ if (empty($reply) && is_array($faqs)) {
                 if (strlen($testQ) > 5 && strpos($msg, $testQ) !== false) {
                     $matches += 50;
                 }
+                
+                if ($uniSlug === 'global') { $matches += 10; }
                 
                 if ($matches >= $requiredMatches && $matches > $bestScore) {
                     $bestScore = $matches;
@@ -431,6 +464,11 @@ if (!$isFallback && preg_match('/\\bemgs\\b/i', $msg) && preg_match('/\\b(track|
       $buttons[] = ['label' => 'View Details', 'url' => '../Universities/' . $key . '-details.html', 'class' => 'os-details-btn', 'icon' => 'fas fa-university'];
   }
 
+
+  if (empty($buttons) && !$isFallback) {
+      $buttons[] = ['label' => 'Chat with official', 'url' => 'https://wa.me/601119359497', 'class' => 'os-wa-btn', 'icon' => 'fab fa-whatsapp'];
+  }
+  
   $suggestions = [
       "Tell me about studying in Finland",
       "How much are City University masters fees?",

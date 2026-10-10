@@ -78,6 +78,88 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         exit;
     }
     
+    // --- BOT UNMATCHED QUERY ANSWERING ---
+    if ($_POST['action'] === 'answer_unmatched') {
+        $question = trim($_POST['question']);
+        $answer = trim($_POST['answer']);
+        $category = trim($_POST['category'] ?? 'global');
+
+        if (!empty($question) && !empty($answer)) {
+            // 1. Add to myfaqs.json
+            $faqs_file = __DIR__ . '/myfaqs.json';
+            $faqs_data = file_exists($faqs_file) ? json_decode(file_get_contents($faqs_file), true) : [];
+            
+            if (!isset($faqs_data[$category])) {
+                $faqs_data[$category] = [];
+            }
+            
+            // Check if exact question already exists to prevent duplicates
+            $exists = false;
+            foreach ($faqs_data[$category] as $faq) {
+                if ($faq['q'] === $question) { 
+                    $exists = true; 
+                    break; 
+                }
+            }
+            
+            if (!$exists) {
+                array_unshift($faqs_data[$category], ["q" => $question, "a" => $answer]);
+                file_put_contents($faqs_file, json_encode($faqs_data, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_SUBSTITUTE));
+            }
+
+            // 2. Remove from unmatched_queries.log
+            $logFile = __DIR__ . '/api/unmatched_queries.log';
+            if (file_exists($logFile)) {
+                $lines = file($logFile);
+                $new_lines = [];
+                foreach ($lines as $line) {
+                    if (strpos($line, "User Query: " . $question) === false) {
+                        $new_lines[] = $line;
+                    }
+                }
+                file_put_contents($logFile, implode("", $new_lines));
+            }
+        }
+        header("Location: admin.php?view=bot_unmatched");
+        exit;
+    }
+    
+    // --- CHAT HISTORY EXPORT ---
+    if ($_POST['action'] === 'export_chats') {
+        $session_ids = $_POST['session_ids'] ?? [];
+        if (empty($session_ids)) {
+            header("Location: admin.php?view=chat_history");
+            exit;
+        }
+        
+        // Sanitize IDs
+        $ids = array_map('intval', $session_ids);
+        $ids_str = implode(',', $ids);
+        
+        // Build export text
+        $output = "";
+        foreach ($ids as $sid) {
+            $session = $conn->query("SELECT * FROM chat_sessions WHERE id = $sid")->fetch_assoc();
+            if (!$session) continue;
+            
+            $output .= "=== Chat with " . $session['user_name'] . " (" . $session['phone'] . ") ===\n";
+            $output .= "Started: " . $session['started_at'] . "\n";
+            $output .= str_repeat("-", 60) . "\n\n";
+            
+            $messages = $conn->query("SELECT * FROM chat_messages WHERE session_id = $sid ORDER BY sent_at ASC");
+            while ($msg = $messages->fetch_assoc()) {
+                $role_label = $msg['role'] === 'user' ? $session['user_name'] : 'Bot';
+                $output .= "[" . $msg['sent_at'] . "] " . $role_label . ": " . $msg['message'] . "\n";
+            }
+            $output .= "\n" . str_repeat("=", 60) . "\n\n";
+        }
+        
+        header('Content-Type: text/plain; charset=utf-8');
+        header('Content-Disposition: attachment; filename="chat_export_' . date('Y-m-d_His') . '.txt"');
+        echo $output;
+        exit;
+    }
+    
     // --- FEES & PDFs MANAGEMENT ---
     if ($_POST['action'] === 'save_fees') {
         $json = $_POST['fees_json'];
@@ -175,6 +257,39 @@ if ($current_view == 'applications') {
     $sql = "SELECT * FROM certificates ORDER BY id DESC LIMIT $limit OFFSET $offset";
     $page_title = "Manage Certificates";
     $page_desc = "Add numbers, edit details, and manage verify records";
+} elseif ($current_view == 'bot_unmatched') {
+    $page_title = "Unmatched Bot Queries";
+    $page_desc = "Review questions the bot could not answer";
+    $total_records = 0;
+    $sql = "SELECT 1"; 
+} elseif ($current_view == 'bot_popular') {
+    $count_res = @$conn->query("SELECT COUNT(*) as cnt FROM bot_analytics");
+    $total_records = $count_res ? $count_res->fetch_assoc()['cnt'] : 0;
+    
+    $allowed_sorts = ['asked_count', 'likes', 'dislikes', 'last_asked'];
+    $sort = isset($_GET['sort']) && in_array($_GET['sort'], $allowed_sorts) ? $_GET['sort'] : 'asked_count';
+    $order = (isset($_GET['order']) && strtoupper($_GET['order']) === 'ASC') ? 'ASC' : 'DESC';
+    
+    $sql = "SELECT * FROM bot_analytics ORDER BY $sort $order LIMIT 30";
+    $page_title = "Popular Bot Questions";
+    $page_desc = "Top 30 most frequently asked questions and feedback";
+} elseif ($current_view == 'chat_history') {
+    $page_title = "Chat History";
+    $page_desc = "View user conversations with the chatbot";
+    
+    // Auto-create tables
+    $conn->query("CREATE TABLE IF NOT EXISTS chat_sessions (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        user_name VARCHAR(255) NOT NULL,
+        phone VARCHAR(50) NOT NULL,
+        started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        last_activity TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        message_count INT DEFAULT 0
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+    
+    $count_res = @$conn->query("SELECT COUNT(*) as cnt FROM chat_sessions");
+    $total_records = $count_res ? $count_res->fetch_assoc()['cnt'] : 0;
+    $sql = "SELECT * FROM chat_sessions ORDER BY last_activity DESC LIMIT $limit OFFSET $offset";
 } elseif ($current_view == 'fees') {
     $page_title = "Fees & PDFs Management";
     $page_desc = "Update university fee charts and manage PDF files";
@@ -192,6 +307,28 @@ if ($current_view == 'applications') {
             }
         }
     }
+} elseif ($current_view == 'tracking') {
+    $page_title = "Visitor Tracking";
+    $page_desc = "Monitor live visitors and historical data";
+    
+    // Auto-create tracking table if not exists (safeguard)
+    $conn->query("CREATE TABLE IF NOT EXISTS visitor_logs (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        session_id VARCHAR(64) NOT NULL,
+        page_url VARCHAR(500) NOT NULL,
+        referrer_url VARCHAR(500) DEFAULT '',
+        entry_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+        last_ping DATETIME DEFAULT CURRENT_TIMESTAMP,
+        time_spent INT DEFAULT 0,
+        INDEX (session_id),
+        INDEX (last_ping),
+        INDEX (page_url(191)),
+        INDEX (entry_time)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+    
+    $count_res = @$conn->query("SELECT COUNT(*) as cnt FROM visitor_logs");
+    $total_records = $count_res ? $count_res->fetch_assoc()['cnt'] : 0;
+    $sql = "SELECT * FROM visitor_logs ORDER BY last_ping DESC LIMIT $limit OFFSET $offset";
 } else {
     $page_title = "Scholarship Exams";
     $page_desc = "Manage exam registrations & payments";
@@ -231,23 +368,35 @@ $result = $conn->query($sql);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>Admin Dashboard | One Step</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
         :root {
             --primary: #0066CC;
             --primary-dark: #004C99;
-            --secondary: #0A192F;
+            --secondary: #00C2FF;
+            --accent: #FFD700;
+            --accent-dark: #FFB800;
+            --dark: #0A192F;
+            --light: #F8FAFF;
+            --gray: #64748B;
+            --gray-light: #E2E8F0;
+            --success: #10B981;
             --active-bg: #e0f2fe;
             --active-text: #0066CC;
             --border: #e2e8f0;
-            --bg: #F8FAFC;
+            --bg: #F8FAFF;
+            --border-radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
         }
         
         * { box-sizing: border-box; }
@@ -257,10 +406,16 @@ $result = $conn->query($sql);
             background-color: var(--bg);
             margin: 0;
             padding: 0;
-            color: var(--secondary);
+            color: var(--dark);
             height: 100vh;
             display: flex;
             overflow: hidden; /* Prevent body scroll, we scroll content */
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
         }
 
         /* --- LAYOUT: Sidebar + Main Content --- */
@@ -270,6 +425,7 @@ $result = $conn->query($sql);
             width: 260px;
             background: white;
             border-right: 1px solid var(--border);
+            box-shadow: 4px 0 15px rgba(0,0,0,0.02);
             display: flex;
             flex-direction: column;
             padding: 20px;
@@ -287,6 +443,10 @@ $result = $conn->query($sql);
             align-items: center;
             gap: 10px;
         }
+        
+        .brand span {
+            color: var(--secondary);
+        }
 
         .nav-menu {
             display: flex;
@@ -298,18 +458,19 @@ $result = $conn->query($sql);
         .nav-item {
             text-decoration: none;
             padding: 12px 16px;
-            border-radius: 10px;
-            color: #64748b;
+            border-radius: 12px;
+            color: var(--gray);
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 12px;
-            transition: all 0.3s ease;
+            transition: var(--transition);
         }
 
         .nav-item:hover {
-            background-color: #f1f5f9;
-            color: var(--secondary);
+            background-color: var(--gray-light);
+            color: var(--primary);
+            transform: translateX(4px);
         }
 
         .nav-item.active {
@@ -398,9 +559,9 @@ $result = $conn->query($sql);
 
         .stat-badge {
             background: white;
-            padding: 10px 20px;
+            padding: 10px 24px;
             border-radius: 50px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            box-shadow: var(--shadow);
             font-weight: 700;
             color: var(--primary);
             border: 1px solid var(--border);
@@ -409,8 +570,8 @@ $result = $conn->query($sql);
         /* --- TABLE STYLES --- */
         .table-card {
             background: white;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
             border: 1px solid var(--border);
             overflow: hidden;
         }
@@ -462,13 +623,15 @@ $result = $conn->query($sql);
         .btn-view {
             text-decoration: none; background: white;
             border: 1px solid var(--primary); color: var(--primary);
-            padding: 6px 14px; border-radius: 8px;
-            font-size: 0.85rem; font-weight: 500;
+            padding: 8px 16px; border-radius: 50px;
+            font-size: 0.85rem; font-weight: 600;
             display: inline-flex; align-items: center; gap: 6px;
-            cursor: pointer; transition: all 0.2s;
+            cursor: pointer; transition: var(--transition);
         }
         .btn-view:hover {
             background: var(--primary); color: white;
+            box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2);
+            transform: translateY(-2px);
         }
 
         /* --- MODAL STYLES (Unchanged logic) --- */
@@ -651,52 +814,58 @@ $result = $conn->query($sql);
         }
 
 
-        /* --- NEW CSS FOR ADMIN CERTIFICATES --- */
         .header-actions { display: flex; align-items: center; justify-content: space-between; }
-        .btn-primary { background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.2s; }
-        .btn-primary:hover { background: #0056b3; }
+        .btn-primary { background: var(--primary); color: white; border: none; padding: 10px 24px; border-radius: 50px; font-weight: 600; cursor: pointer; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; }
+        .btn-primary:hover { background: var(--primary-dark); box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2); transform: translateY(-2px); }
 
         /* 3-Dot Dropdown */
         .dropdown { position: relative; display: inline-block; }
-        .dropbtn { background: none; border: none; font-size: 1.2rem; color: #64748b; cursor: pointer; padding: 5px 10px; }
-        .dropdown-content { display: none; position: absolute; right: 0; background-color: white; min-width: 120px; box-shadow: 0px 8px 16px rgba(0,0,0,0.1); border-radius: 8px; z-index: 1; border: 1px solid var(--border); }
-        .dropdown-content button { color: var(--secondary); padding: 12px 16px; text-decoration: none; display: block; width: 100%; text-align: left; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 0.9rem; }
-        .dropdown-content button:hover { background-color: #f1f5f9; }
+        .dropbtn { background: none; border: none; font-size: 1.2rem; color: var(--gray); cursor: pointer; padding: 5px 10px; }
+        .dropdown-content { display: none; position: absolute; right: 0; background-color: white; min-width: 120px; box-shadow: var(--shadow); border-radius: 12px; z-index: 1; border: 1px solid var(--border); overflow: hidden; }
+        .dropdown-content button { color: var(--dark); padding: 12px 16px; text-decoration: none; display: block; width: 100%; text-align: left; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 0.9rem; transition: var(--transition); }
+        .dropdown-content button:hover { background-color: var(--light); color: var(--primary); }
         .dropdown-content button.text-danger { color: #ef4444; }
+        .dropdown-content button.text-danger:hover { background-color: #fef2f2; }
         .dropdown:hover .dropdown-content { display: block; }
 
         /* Form Modal */
-        .form-modal { background: white; padding: 30px; border-radius: 12px; width: 100%; max-width: 450px; position: relative; }
+        .form-modal { background: white; padding: 30px; border-radius: var(--border-radius); width: 100%; max-width: 450px; position: relative; box-shadow: var(--shadow-lg); }
         .form-modal h3 { margin-top: 0; margin-bottom: 20px; color: var(--primary); }
         .form-group { margin-bottom: 15px; text-align: left; }
-        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; color: #64748b; }
-        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; color: var(--gray); }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; outline: none; transition: var(--transition); }
+        .form-group input:focus, .form-group select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1); }
         .form-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 25px; }
-        .btn-secondary { background: #e2e8f0; color: #475569; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+        .btn-secondary { background: var(--gray-light); color: var(--gray); border: none; padding: 10px 24px; border-radius: 50px; cursor: pointer; font-weight: 600; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; }
+        .btn-secondary:hover { background: #cbd5e1; color: var(--dark); transform: translateY(-2px); }
 
 /* --- FILTERS & ACTIONS --- */
         .filter-bar {
-            background: white; padding: 15px; border-radius: 12px; margin-bottom: 20px;
+            background: white; padding: 15px; border-radius: var(--border-radius); margin-bottom: 20px;
             display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
             border: 1px solid var(--border);
+            box-shadow: var(--shadow);
         }
         .filter-bar select {
-            padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border); font-family: inherit; outline: none;
+            padding: 10px 16px; border-radius: 50px; border: 1px solid var(--border); font-family: inherit; outline: none; transition: var(--transition);
         }
+        .filter-bar select:focus { border-color: var(--primary); }
         .btn-outline {
-            background: white; border: 1px solid var(--border); color: var(--secondary); padding: 8px 15px;
-            border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 5px; text-decoration: none; font-size: 0.9rem;
+            background: white; border: 1px solid var(--border); color: var(--dark); padding: 10px 20px;
+            border-radius: 50px; cursor: pointer; display: flex; align-items: center; gap: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: var(--transition);
         }
-        .btn-outline:hover { background: #f1f5f9; }
+        .btn-outline:hover {
+            border-color: var(--primary); color: var(--primary); transform: translateY(-2px); background: #f8fafc;
+        }
         
         .cash-checkbox { display: flex; align-items: center; gap: 5px; cursor: pointer; font-size: 0.85rem; font-weight: 600;}
         .cash-checkbox input { cursor: pointer; width: 16px; height: 16px; accent-color: #166534; margin:0;}
 
         /* Pagination */
-        .pagination { display: flex; justify-content: center; padding: 20px; gap: 5px; }
-        .pagination a { padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; text-decoration: none; color: var(--secondary); }
-        .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
-        .pagination a:hover:not(.active) { background: #f1f5f9; }
+        .pagination { display: flex; justify-content: center; padding: 20px; gap: 8px; }
+        .pagination a { padding: 8px 16px; border: 1px solid var(--border); border-radius: 50px; text-decoration: none; color: var(--dark); font-weight: 500; transition: var(--transition); }
+        .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2); }
+        .pagination a:hover:not(.active) { background: var(--gray-light); color: var(--primary); border-color: var(--primary); transform: translateY(-2px); }
 
         /* --- PRINT TO PDF STYLES --- */
         @media print {
@@ -762,7 +931,28 @@ $result = $conn->query($sql);
                 <span>Fees & PDFs</span>
             </a>
 
-            <a href="logout.php" class="nav-item logout-btn">
+            <a href="?view=tracking" class="nav-item <?php echo ($current_view == 'tracking') ? 'active' : ''; ?>">
+                <i class="fas fa-eye"></i>
+                <span>Visitor Tracking</span>
+            </a>
+
+            <!-- Bot Menu -->
+            <div style="margin: 15px 0 5px 15px; font-size: 0.75rem; text-transform: uppercase; color: #94a3b8; font-weight: 700; letter-spacing: 0.5px;">Chatbot Analytics</div>
+            <a href="?view=bot_popular" class="nav-item <?php echo ($current_view == 'bot_popular') ? 'active' : ''; ?>">
+                <i class="fas fa-chart-line"></i>
+                <span>Popular Questions</span>
+            </a>
+            <a href="?view=bot_unmatched" class="nav-item <?php echo ($current_view == 'bot_unmatched') ? 'active' : ''; ?>">
+                <i class="fas fa-question-circle"></i>
+                <span>Unmatched Queries</span>
+            </a>
+
+            <a href="?view=chat_history" class="nav-item <?php echo ($current_view == 'chat_history') ? 'active' : ''; ?>">
+                <i class="fas fa-comments"></i>
+                <span>Chat History</span>
+            </a>
+
+            <a href="logout.php" class="nav-item logout-btn" style="margin-top: 20px;">
                 <i class="fas fa-sign-out-alt"></i>
                 <span>Logout</span>
             </a>
@@ -895,13 +1085,83 @@ $result = $conn->query($sql);
                                                 </label>
                                             </form>
                                         <?php else: ?>
-                                            <span style="color: #94a3b8;">—</span>
+                                            <span style="color: #94a3b8;">â€”</span>
                                         <?php endif; ?>
                                     </td>
                                 </tr>
                             <?php endwhile; ?>
                         <?php else: ?>
                             <tr><td colspan="7" style="text-align:center; padding: 40px;">No registrations found.</td></tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+
+                <?php elseif ($current_view == 'tracking'): ?>
+                <table class="mobile-scholarship">
+                    <thead>
+                        <tr>
+                            <th width="5%">ID</th>
+                            <th width="15%">Session ID</th>
+                            <th width="35%">Page URL</th>
+                            <th width="20%">Referrer</th>
+                            <th width="15%">Entry Time</th>
+                            <th width="10%">Time Spent (s)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php 
+                        // Realtime stats
+                        $online_query = $conn->query("SELECT COUNT(DISTINCT session_id) as cnt FROM visitor_logs WHERE last_ping >= NOW() - INTERVAL 1 MINUTE");
+                        $online_now = $online_query ? $online_query->fetch_assoc()['cnt'] : 0;
+                        ?>
+                        <div style="padding: 15px; background: #e0f2fe; color: #0284c7; font-weight: bold; border-bottom: 1px solid var(--border); font-size: 1.1rem;">
+                            <i class="fas fa-circle" style="color: #10b981; font-size: 0.8rem; margin-right: 5px;"></i> Users Online Now (Last 1 min): <?php echo $online_now; ?>
+                        </div>
+                        
+                        <?php if ($result && $result->num_rows > 0): ?>
+                            <?php while($row = $result->fetch_assoc()): ?>
+                                <tr>
+                                    <td>#<?php echo $row['id']; ?></td>
+                                    <td><span title="<?php echo htmlspecialchars($row['session_id']); ?>" style="font-family: monospace; font-size: 0.8rem;"><?php echo substr($row['session_id'], 0, 8); ?>...</span></td>
+                                    <td style="word-break: break-all; font-size: 0.85rem;"><a href="<?php echo htmlspecialchars($row['page_url']); ?>" target="_blank" style="color: var(--primary);"><?php echo htmlspecialchars($row['page_url']); ?></a></td>
+                                    <td>
+                                        <?php 
+                                            $ref = $row['referrer_url'];
+                                            $source_type = 'Direct';
+                                            $badge_bg = '#f1f5f9';
+                                            $badge_color = '#64748b';
+                                            
+                                            if (empty($ref)) {
+                                                $source_type = 'Direct / Typed';
+                                            } elseif (strpos($ref, 'google.') !== false || strpos($ref, 'bing.') !== false || strpos($ref, 'yahoo.') !== false) {
+                                                $source_type = 'Search Engine';
+                                                $badge_bg = '#ede9fe';
+                                                $badge_color = '#8b5cf6';
+                                            } elseif (strpos($ref, $_SERVER['HTTP_HOST'] ?? 'onestepmy.com') !== false) {
+                                                $source_type = 'Internal';
+                                                $badge_bg = '#dbeafe';
+                                                $badge_color = '#3b82f6';
+                                            } else {
+                                                $source_type = 'External Link';
+                                                $badge_bg = '#fef3c7';
+                                                $badge_color = '#d97706';
+                                            }
+                                        ?>
+                                        <div style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; background: <?php echo $badge_bg; ?>; color: <?php echo $badge_color; ?>; margin-bottom: 4px;">
+                                            <?php echo $source_type; ?>
+                                        </div>
+                                        <div style="word-break: break-all; font-size: 0.75rem; color: #94a3b8;">
+                                            <?php echo htmlspecialchars($ref) ?: 'No referrer data'; ?>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="font-size: 0.85rem;"><?php echo date('M d, H:i', strtotime($row['entry_time'])); ?></div>
+                                    </td>
+                                    <td><strong><?php echo $row['time_spent']; ?>s</strong></td>
+                                </tr>
+                            <?php endwhile; ?>
+                        <?php else: ?>
+                            <tr><td colspan="6" style="text-align:center; padding: 40px;">No tracking data available yet.</td></tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
@@ -1007,6 +1267,167 @@ $result = $conn->query($sql);
                         <?php endif; ?>
                     </tbody>
                 </table>
+
+                <?php elseif ($current_view == 'bot_unmatched'): ?>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;">Timestamp</th>
+                            <th>Raw User Query</th>
+                            <th style="width: 120px; text-align: center;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $logFile = __DIR__ . '/api/unmatched_queries.log';
+                        if (file_exists($logFile)) {
+                            $lines = array_reverse(file($logFile)); // Show newest first
+                            foreach ($lines as $line) {
+                                if (preg_match('/^\[(.*?)\] User Query: (.*)$/', trim($line), $matches)) {
+                                    $raw_q = $matches[2];
+                                    $js_arg = htmlspecialchars(json_encode($raw_q), ENT_QUOTES, 'UTF-8');
+                                    
+                                    echo "<tr>";
+                                    echo "<td>" . htmlspecialchars($matches[1]) . "</td>";
+                                    echo "<td>" . htmlspecialchars($raw_q) . "</td>";
+                                    echo "<td style='text-align: center;'><button class='btn-view' onclick='openAnswerModal(" . $js_arg . ")'>Answer</button></td>";
+                                    echo "</tr>";
+                                }
+                            }
+                        } else {
+                            echo "<tr><td colspan='3' style='text-align:center;'>No unmatched queries logged yet.</td></tr>";
+                        }
+                        ?>
+                    </tbody>
+                </table>
+                
+                <?php elseif ($current_view == 'bot_popular'): 
+                    $cur_sort = $_GET['sort'] ?? 'asked_count';
+                    $cur_order = $_GET['order'] ?? 'DESC';
+                    $next_order = ($cur_order === 'DESC') ? 'ASC' : 'DESC';
+                    
+                    function sortLink($field, $label, $cur_sort, $cur_order, $next_order) {
+                        $icon = '';
+                        if ($cur_sort === $field) {
+                            $icon = $cur_order === 'DESC' ? ' &darr;' : ' &uarr;';
+                        }
+                        return "<a href='?view=bot_popular&sort=$field&order=" . ($cur_sort === $field ? $next_order : 'DESC') . "' style='color: inherit; text-decoration: none;'>$label$icon</a>";
+                    }
+                ?>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>FAQ Question Matched</th>
+                            <th style="text-align: center; width: 100px;"><?php echo sortLink('asked_count', 'Asked', $cur_sort, $cur_order, $next_order); ?></th>
+                            <th style="text-align: center; width: 100px;"><?php echo sortLink('likes', 'Likes', $cur_sort, $cur_order, $next_order); ?></th>
+                            <th style="text-align: center; width: 100px;"><?php echo sortLink('dislikes', 'Dislikes', $cur_sort, $cur_order, $next_order); ?></th>
+                            <th style="text-align: center; width: 150px;"><?php echo sortLink('last_asked', 'Last Asked', $cur_sort, $cur_order, $next_order); ?></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if ($result && $result->num_rows > 0): ?>
+                            <?php while ($row = $result->fetch_assoc()): ?>
+                            <tr>
+                                <td><strong><?php echo htmlspecialchars($row['question']); ?></strong></td>
+                                <td style="text-align: center;"><span style="background: #e2e8f0; padding: 2px 8px; border-radius: 12px; font-weight: 600; font-size: 0.85rem;"><?php echo $row['asked_count']; ?></span></td>
+                                <td style="text-align: center; color: #10b981; font-weight: 600;"><i class="fas fa-thumbs-up"></i> <?php echo $row['likes']; ?></td>
+                                <td style="text-align: center; color: #ef4444; font-weight: 600;"><i class="fas fa-thumbs-down"></i> <?php echo $row['dislikes']; ?></td>
+                                <td style="text-align: center; font-size: 0.85rem; color: #64748b;"><?php echo date('M d, Y H:i', strtotime($row['last_asked'])); ?></td>
+                            </tr>
+                            <?php endwhile; ?>
+                        <?php else: ?>
+                            <tr><td colspan='5' style='text-align:center;'>No analytics data available yet.</td></tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+
+                <?php elseif ($current_view == 'chat_history'): ?>
+
+                <?php if (isset($_GET['session'])): 
+                    // View single conversation
+                    $sid = (int)$_GET['session'];
+                    $session_info = $conn->query("SELECT * FROM chat_sessions WHERE id = $sid")->fetch_assoc();
+                    if ($session_info):
+                ?>
+                <div style="margin-bottom: 20px;">
+                    <a href="?view=chat_history" class="btn-outline" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                        <i class="fas fa-arrow-left"></i> Back to All Chats
+                    </a>
+                </div>
+                <div style="background: white; border-radius: 12px; border: 1px solid var(--border); padding: 25px; margin-bottom: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--primary);"><?php echo htmlspecialchars($session_info['user_name']); ?></h3>
+                            <p style="margin: 5px 0 0; color: #64748b;"><i class="fas fa-phone-alt"></i> <?php echo htmlspecialchars($session_info['phone']); ?> &middot; <?php echo date('M d, Y H:i', strtotime($session_info['started_at'])); ?></p>
+                        </div>
+                        <span class="stat-badge"><i class="fas fa-comments"></i> <?php echo $session_info['message_count']; ?> messages</span>
+                    </div>
+                </div>
+                <div style="background: #f8fafc; border-radius: 12px; border: 1px solid var(--border); padding: 20px; max-height: 600px; overflow-y: auto;">
+                    <?php
+                    $msgs = $conn->query("SELECT * FROM chat_messages WHERE session_id = $sid ORDER BY sent_at ASC");
+                    if ($msgs && $msgs->num_rows > 0):
+                        while ($msg = $msgs->fetch_assoc()):
+                            $isUser = $msg['role'] === 'user';
+                    ?>
+                    <div style="display: flex; justify-content: <?php echo $isUser ? 'flex-end' : 'flex-start'; ?>; margin-bottom: 12px;">
+                        <div style="max-width: 75%; padding: 12px 16px; border-radius: 12px; font-size: 0.9rem; line-height: 1.5; <?php echo $isUser ? 'background: var(--primary); color: white; border-bottom-right-radius: 4px;' : 'background: white; color: #333; border: 1px solid var(--border); border-bottom-left-radius: 4px;'; ?>">
+                            <?php echo nl2br(htmlspecialchars($msg['message'])); ?>
+                            <div style="font-size: 0.75rem; margin-top: 6px; <?php echo $isUser ? 'color: rgba(255,255,255,0.7);' : 'color: #94a3b8;'; ?>">
+                                <?php echo date('H:i', strtotime($msg['sent_at'])); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endwhile; ?>
+                    <?php else: ?>
+                    <p style="text-align: center; color: #94a3b8; padding: 40px 0;">No messages in this conversation.</p>
+                    <?php endif; ?>
+                </div>
+                <?php else: ?>
+                <p style="text-align: center; color: #94a3b8; padding: 40px 0;">Session not found.</p>
+                <?php endif; ?>
+
+                <?php else: ?>
+                <!-- Chat sessions list with select/download -->
+                <form id="chatExportForm" method="POST" action="admin.php">
+                    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                    <input type="hidden" name="action" value="export_chats">
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 15px; gap: 10px;">
+                        <button type="button" id="selectAllChats" class="btn-outline" onclick="toggleSelectAll()"><i class="fas fa-check-double"></i> Select All</button>
+                        <button type="submit" class="btn-primary" onclick="return confirmExport()"><i class="fas fa-download"></i> Download Selected</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 40px; text-align: center;"><input type="checkbox" id="masterCheckbox" onchange="toggleSelectAll()"></th>
+                                <th>User</th>
+                                <th>Phone</th>
+                                <th style="text-align: center;">Messages</th>
+                                <th>Started</th>
+                                <th>Last Active</th>
+                                <th style="text-align: center;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if ($result && $result->num_rows > 0): ?>
+                                <?php while ($row = $result->fetch_assoc()): ?>
+                                <tr>
+                                    <td style="text-align: center;"><input type="checkbox" name="session_ids[]" value="<?php echo $row['id']; ?>" class="chat-checkbox"></td>
+                                    <td><strong><?php echo htmlspecialchars($row['user_name']); ?></strong></td>
+                                    <td><?php echo htmlspecialchars($row['phone']); ?></td>
+                                    <td style="text-align: center;"><span style="background: #e2e8f0; padding: 2px 8px; border-radius: 12px; font-weight: 600; font-size: 0.85rem;"><?php echo $row['message_count']; ?></span></td>
+                                    <td style="font-size: 0.85rem; color: #64748b;"><?php echo date('M d, Y H:i', strtotime($row['started_at'])); ?></td>
+                                    <td style="font-size: 0.85rem; color: #64748b;"><?php echo date('M d, Y H:i', strtotime($row['last_activity'])); ?></td>
+                                    <td style="text-align: center;"><a href="?view=chat_history&session=<?php echo $row['id']; ?>" class="btn-view"><i class="fas fa-eye"></i> View</a></td>
+                                </tr>
+                                <?php endwhile; ?>
+                            <?php else: ?>
+                                <tr><td colspan="7" style="text-align: center; padding: 40px;">No chat sessions recorded yet.</td></tr>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </form>
+                <?php endif; ?>
 
                 <?php elseif ($current_view == 'fees'): ?>
                 <div style="padding: 20px;">
@@ -1313,6 +1734,50 @@ $result = $conn->query($sql);
     </script>
 
 
+    <script>
+        function openAnswerModal(q) {
+            document.getElementById('bot_answer_question').value = q;
+            document.getElementById('bot_answer_question_display').textContent = q;
+            document.getElementById('answerBotModal').style.display = 'flex';
+        }
+        function closeAnswerModal() {
+            document.getElementById('answerBotModal').style.display = 'none';
+        }
+    </script>
+    <div id="answerBotModal" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:9999;">
+        <div class="modal-container" style="background:white; padding:30px; border-radius:12px; max-width:500px; width:90%;">
+            <h3 style="margin-top:0;">Answer User Query</h3>
+            <p><strong>Query:</strong> <span id="bot_answer_question_display" style="color:var(--primary);"></span></p>
+            <form method="POST">
+                <input type="hidden" name="action" value="answer_unmatched">
+                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                <input type="hidden" name="question" id="bot_answer_question">
+                
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label style="display:block; font-weight:600; margin-bottom:5px;">Category</label>
+                    <select name="category" class="form-control" style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;">
+                        <option value="global">Global (General FAQ)</option>
+                        <option value="city">City University</option>
+                        <option value="alfa">ALFA University</option>
+                        <option value="segi">SEGi University</option>
+                        <option value="apu">APU</option>
+                        <option value="mmu">MMU</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="display:block; font-weight:600; margin-bottom:5px;">Your Answer</label>
+                    <textarea name="answer" required class="form-control" style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc; height: 120px;" placeholder="Type the answer the bot should give..."></textarea>
+                </div>
+                
+                <div style="display:flex; justify-content:flex-end; gap:10px;">
+                    <button type="button" class="btn-secondary" onclick="closeAnswerModal()" style="padding:10px 15px; border-radius:6px; border:none; background:#e2e8f0; cursor:pointer;">Cancel</button>
+                    <button type="submit" class="btn-primary" style="padding:10px 15px; border-radius:6px; border:none; background:var(--primary); color:white; cursor:pointer;">Save Answer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div id="addCertModal" class="modal-overlay" onclick="closeModals(event)">
     <div class="modal-container" style="display: flex; justify-content: center;">
         <div class="form-modal" onclick="event.stopPropagation()">
@@ -1450,6 +1915,22 @@ $result = $conn->query($sql);
         if(typeof modal !== 'undefined') modal.classList.remove('active');
         addCertModal.classList.remove('active');
         editCertModal.classList.remove('active');
+    }
+    function toggleSelectAll() {
+        const master = document.getElementById('masterCheckbox');
+        const checkboxes = document.querySelectorAll('.chat-checkbox');
+        if (master) {
+            checkboxes.forEach(cb => cb.checked = master.checked);
+        }
+    }
+
+    function confirmExport() {
+        const checked = document.querySelectorAll('.chat-checkbox:checked');
+        if (checked.length === 0) {
+            alert('Please select at least one conversation to download.');
+            return false;
+        }
+        return true;
     }
 </script>
 </body>

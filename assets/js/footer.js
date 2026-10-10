@@ -2,14 +2,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const footerContainer = document.getElementById("global-footer-placeholder");
 
-    // 1. PATH LOGIC: Auto-detect if we are in a subfolder
-    const path = window.location.pathname;
-    const hostname = window.location.hostname;
-    let root = ""; 
-
-    if (path.includes("/Universities/") || path.includes("/Fees_Chart/") || path.includes("/countries/") || path.includes("/Articles/")) {
-        root = "../";
-    }
+    // Shared navigation and assets always start at the site root.
+    const root = "/";
 
     if (footerContainer) {
         footerContainer.innerHTML = `
@@ -25,93 +19,94 @@ document.addEventListener("DOMContentLoaded", function() {
                   
                   <h4 style="color: #00C2FF; font-size: 1rem; margin-top: 20px; margin-bottom: 10px;">Study Destinations</h4>
                   <ul class="footer-links two-col-list">
-                    <li><a href="${root}countries/china.html">China</a></li>
-                    <li><a href="${root}countries/cyprus.html">Cyprus</a></li>
-                    <li><a href="${root}countries/denmark.html">Denmark</a></li>
-                    <li><a href="${root}countries/finland.html">Finland</a></li>
-                    <li><a href="${root}countries/hungary.html">Hungary</a></li>
-                    <li><a href="${root}countries/italy.html">Italy</a></li>
-                    <li><a href="${root}countries/norway.html">Norway</a></li>
-                    <li><a href="${root}countries/spain.html">Spain</a></li>
-                    <li><a href="${root}countries/sweden.html">Sweden</a></li>
-                    <li><a href="${root}countries/uzbekistan.html">Uzbekistan</a></li>
+                    <li><a href="${root}countries/china">China</a></li>
+                    <li><a href="${root}countries/cyprus">Cyprus</a></li>
+                    <li><a href="${root}countries/denmark">Denmark</a></li>
+                    <li><a href="${root}countries/finland">Finland</a></li>
+                    <li><a href="${root}countries/hungary">Hungary</a></li>
+                    <li><a href="${root}countries/italy">Italy</a></li>
+                    <li><a href="${root}countries/norway">Norway</a></li>
+                    <li><a href="${root}countries/spain">Spain</a></li>
+                    <li><a href="${root}countries/sweden">Sweden</a></li>
+                    <li><a href="${root}countries/uzbekistan">Uzbekistan</a></li>
                   </ul>
                 </div>
                 
                 <div class="footer-col">
                   <h3>University Details</h3>
                   <ul class="footer-links two-col-list">
-                    <li><a href="${root}Universities/alfa-details.html">Alfa University</a></li>
-                    <li><a href="${root}Universities/amu-details.html">AMU</a></li>
-                    <li><a href="${root}Universities/apu-details.html">APU</a></li>
-                    <li><a href="${root}Universities/bac-details.html">BAC</a></li>
-                    <li><a href="${root}Universities/cityu-details.html">City University</a></li>
-                    <li><a href="${root}Universities/cyberjaya-details.html">Cyberjaya Uni</a></li>
-                    <li><a href="${root}Universities/help-details.html">HELP</a></li>
-                    <li><a href="${root}Universities/icms-details.html">ICMS</a></li>
-                    <li><a href="${root}Universities/inti-details.html">INTI University</a></li>
-                    <li><a href="${root}Universities/kings-details.html">Kings College</a></li>
-                    <li><a href="${root}Universities/klust-details.html">KLUST</a></li>
-                    <li><a href="${root}Universities/limkokwing-details.html">Limkokwing</a></li>
-                    <li><a href="${root}Universities/lincoln-details.html">Lincoln</a></li>
-                    <li><a href="${root}Universities/mmu-details.html">MMU</a></li>
-                    <li><a href="${root}Universities/segi-details.html">SEGi University</a></li>
-                    <li><a href="${root}Universities/taylors-details.html">Taylor's Uni</a></li>
-                    <li><a href="${root}Universities/ucsi-details.html">UCSI</a></li>
-                    <li><a href="${root}Universities/umw-details.html">UMW</a></li>
-                    <li><a href="${root}Universities/unikl-details.html">UniKL</a></li>
-                    <li><a href="${root}Universities/unirazak-details.html">UNIRAZAK</a></li>
-                    <li><a href="${root}Universities/iium-details.html">IIUM</a></li>
-                    <li><a href="${root}Universities/uow-details.html">UOW</a></li>
-                    <li><a href="${root}Universities/upm-details.html">UPM</a></li>
-                    <li><a href="${root}Universities/utem-details.html">UTeM</a></li>
-                    <li><a href="${root}Universities/utm-details.html">UTM</a></li>
+                    <li><a href="${root}Universities/alfa-details">Alfa University</a></li>
+                    <li><a href="${root}Universities/amu-details">AMU</a></li>
+                    <li><a href="${root}Universities/apu-details">APU</a></li>
+                    <li><a href="${root}Universities/bac-details">BAC</a></li>
+                    <li><a href="${root}Universities/cityu-details">City University</a></li>
+                    <li><a href="${root}Universities/cyberjaya-details">Cyberjaya Uni</a></li>
+                    <li><a href="${root}Universities/help-details">HELP</a></li>
+                    <li><a href="${root}Universities/icms-details">ICMS</a></li>
+                    <li><a href="${root}Universities/inti-details">INTI University</a></li>
+                    <li><a href="${root}Universities/kings-details">Kings College</a></li>
+                    <li><a href="${root}Universities/klust-details">KLUST</a></li>
+                    <li><a href="${root}Universities/limkokwing-details">Limkokwing</a></li>
+                    <li><a href="${root}Universities/lincoln-details">Lincoln</a></li>
+                    <li><a href="${root}Universities/mmu-details">MMU</a></li>
+                    <li><a href="${root}Universities/segi-details">SEGi University</a></li>
+                    <li><a href="${root}Universities/taylors-details">Taylor's Uni</a></li>
+                    <li><a href="${root}Universities/ucsi-details">UCSI</a></li>
+                    <li><a href="${root}Universities/umw-details">UMW</a></li>
+                    <li><a href="${root}Universities/unikl-details">UniKL</a></li>
+                    <li><a href="${root}Universities/unirazak-details">UNIRAZAK</a></li>
+                    <li><a href="${root}Universities/iium-details">IIUM</a></li>
+                    <li><a href="${root}Universities/uow-details">UOW</a></li>
+                    <li><a href="${root}Universities/upm-details">UPM</a></li>
+                    <li><a href="${root}Universities/utem-details">UTeM</a></li>
+                    <li><a href="${root}Universities/utm-details">UTM</a></li>
                   </ul>
                 </div>
                 
                 <div class="footer-col">
                   <h3>Tuition Fees</h3>
                   <ul class="footer-links two-col-list">
-                    <li><a href="${root}Fees_Chart/alfa-fees.html">Alfa Fees</a></li>
-                    <li><a href="${root}Fees_Chart/amu-fees.html">AMU Fees</a></li>
-                    <li><a href="${root}Fees_Chart/apu-fees.html">APU Fees</a></li>
-                    <li><a href="${root}Fees_Chart/bac-fees.html">BAC Fees</a></li>
-                    <li><a href="${root}Fees_Chart/cityu-fees.html">City U Fees</a></li>
-                    <li><a href="${root}Fees_Chart/cyberjaya-fees.html">Cyberjaya Fees</a></li>
-                    <li><a href="${root}Fees_Chart/help-fees.html">HELP Fees</a></li>
-                    <li><a href="${root}Fees_Chart/icms-fees.html">ICMS Fees</a></li>
-                    <li><a href="${root}Fees_Chart/inti-fees.html">INTI Fees</a></li>
-                    <li><a href="${root}Fees_Chart/kings-fees.html">Kings Fees</a></li>
-                    <li><a href="${root}Fees_Chart/klust-fees.html">KLUST Fees</a></li>
-                    <li><a href="${root}Fees_Chart/limkokwing-fees.html">Limkokwing Fees</a></li>
-                    <li><a href="${root}Fees_Chart/lincoln-fees.html">Lincoln Fees</a></li>
-                    <li><a href="${root}Fees_Chart/mmu-fees.html">MMU Fees</a></li>
-                    <li><a href="${root}Fees_Chart/segi-fees.html">SEGi Fees</a></li>
-                    <li><a href="${root}Fees_Chart/taylors-fees.html">Taylor's Fees</a></li>
-                    <li><a href="${root}Fees_Chart/ucsi-fees.html">UCSI Fees</a></li>
-                    <li><a href="${root}Fees_Chart/umw-fees.html">UMW Fees</a></li>
-                    <li><a href="${root}Fees_Chart/unikl-fees.html">UniKL Fees</a></li>
-                    <li><a href="${root}Fees_Chart/unirazak-fees.html">UNIRAZAK Fees</a></li>
-                    <li><a href="${root}Fees_Chart/iium-fees.html">IIUM Fees</a></li>
-                    <li><a href="${root}Fees_Chart/uow-fees.html">UOW Fees</a></li>
-                    <li><a href="${root}Fees_Chart/upm-fees.html">UPM Fees</a></li>
-                    <li><a href="${root}Fees_Chart/utem-fees.html">UTeM Fees</a></li>
-                    <li><a href="${root}Fees_Chart/utm-fees.html">UTM Fees</a></li>
+                    <li><a href="${root}Fees_Chart/alfa-fees">Alfa Fees</a></li>
+                    <li><a href="${root}Fees_Chart/amu-fees">AMU Fees</a></li>
+                    <li><a href="${root}Fees_Chart/apu-fees">APU Fees</a></li>
+                    <li><a href="${root}Fees_Chart/bac-fees">BAC Fees</a></li>
+                    <li><a href="${root}Fees_Chart/cityu-fees">City U Fees</a></li>
+                    <li><a href="${root}Fees_Chart/cyberjaya-fees">Cyberjaya Fees</a></li>
+                    <li><a href="${root}Fees_Chart/help-fees">HELP Fees</a></li>
+                    <li><a href="${root}Fees_Chart/icms-fees">ICMS Fees</a></li>
+                    <li><a href="${root}Fees_Chart/inti-fees">INTI Fees</a></li>
+                    <li><a href="${root}Fees_Chart/kings-fees">Kings Fees</a></li>
+                    <li><a href="${root}Fees_Chart/klust-fees">KLUST Fees</a></li>
+                    <li><a href="${root}Fees_Chart/limkokwing-fees">Limkokwing Fees</a></li>
+                    <li><a href="${root}Fees_Chart/lincoln-fees">Lincoln Fees</a></li>
+                    <li><a href="${root}Fees_Chart/mmu-fees">MMU Fees</a></li>
+                    <li><a href="${root}Fees_Chart/segi-fees">SEGi Fees</a></li>
+                    <li><a href="${root}Fees_Chart/taylors-fees">Taylor's Fees</a></li>
+                    <li><a href="${root}Fees_Chart/ucsi-fees">UCSI Fees</a></li>
+                    <li><a href="${root}Fees_Chart/umw-fees">UMW Fees</a></li>
+                    <li><a href="${root}Fees_Chart/unikl-fees">UniKL Fees</a></li>
+                    <li><a href="${root}Fees_Chart/unirazak-fees">UNIRAZAK Fees</a></li>
+                    <li><a href="${root}Fees_Chart/iium-fees">IIUM Fees</a></li>
+                    <li><a href="${root}Fees_Chart/uow-fees">UOW Fees</a></li>
+                    <li><a href="${root}Fees_Chart/upm-fees">UPM Fees</a></li>
+                    <li><a href="${root}Fees_Chart/utem-fees">UTeM Fees</a></li>
+                    <li><a href="${root}Fees_Chart/utm-fees">UTM Fees</a></li>
                   </ul>
                 </div>
                 
                 <div class="footer-col">
                   <h3>Quick Actions</h3>
                   <ul class="footer-links" style="margin-bottom: 20px;">
-                     <li><a href="${root}index.html" style="color: #FFD700; font-weight: bold;">Home</a></li>
-                     <li><a href="${root}Articles/top-10-universities-in-malaysia.html" style="color: #00C2FF; font-weight: bold;">Top 10 Universities</a></li>
-                     <li><a href="${root}scholarship.html" style="color: #FFD700; font-weight: bold;">Scholarships</a></li>
-                     <li><a href="${root}register.html" style="color: #FFD700; font-weight: bold;">Register for Exam</a></li>
-                     <li><a href="${root}application.html" style="color: #FFD700; font-weight: bold;">Apply Now</a></li>
-                     <li><a href="${root}compare.html" style="color: #FFD700; font-weight: bold;">Compare Universities</a></li>
-                     <li><a href="${root}quiz.html" style="color: #FFD700; font-weight: bold;">Career Quiz</a></li>
+                     <li><a href="${root}student-support-malaysia">Student Support in Malaysia</a></li>
+                     <li><a href="${root}" style="color: #FFD700; font-weight: bold;">Home</a></li>
+                     <li><a href="${root}Articles/top-10-universities-in-malaysia" style="color: #00C2FF; font-weight: bold;">Top Universities</a></li>
+                     <li><a href="${root}scholarship" style="color: #FFD700; font-weight: bold;">Scholarships</a></li>
+                     <li><a href="${root}register" style="color: #FFD700; font-weight: bold;">Register for Exam</a></li>
+                     <li><a href="${root}application" style="color: #FFD700; font-weight: bold;">Apply Now</a></li>
+                     <li><a href="${root}compare" style="color: #FFD700; font-weight: bold;">Compare Universities</a></li>
+                     <li><a href="${root}quiz" style="color: #FFD700; font-weight: bold;">Career Quiz</a></li>
                      <li><a href="https://ieltsmock.onestepmy.com/" target="_blank" style="color: #FFD700; font-weight: bold;">Free IELTS Mock Test</a></li>
-                     <li><a href="${root}verify.html" style="color: #FFD700; font-weight: bold;">Verify Certificate</a></li>
+                     <li><a href="${root}verify" style="color: #FFD700; font-weight: bold;">Verify Certificate</a></li>
                   </ul>
 
                   <h3>Contact Us</h3>
@@ -137,53 +132,8 @@ Bhuiyan Mohamed Nahid Jahan</a>
                 </p>
               </div>
             </div>
-
-            <!-- Floating WhatsApp Button -->
-            <a href="https://wa.me/601119359497" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-            </a>
             
             <style>
-                            /* WHATSAPP FLOATING BUTTON */
-              .floating-whatsapp {
-                  position: fixed;
-                  bottom: 30px;
-                  right: 30px;
-                  width: 60px;
-                  height: 60px;
-                  background-color: #25D366;
-                  color: white;
-                  border-radius: 50%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 32px;
-                  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
-                  z-index: 9999;
-                  text-decoration: none;
-                  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                  animation: pulse-whatsapp 2s infinite;
-              }
-              .floating-whatsapp:hover {
-                  transform: scale(1.1) translateY(-5px);
-                  color: white;
-                  box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
-              }
-              @keyframes pulse-whatsapp {
-                  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-                  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-                  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-              }
-              @media (max-width: 768px) {
-                  .floating-whatsapp {
-                      bottom: 20px;
-                      right: 20px;
-                      width: 50px;
-                      height: 50px;
-                      font-size: 28px;
-                  }
-              }
-              
               /* Existing Styles */
               .two-col-list {
                 display: grid;
@@ -260,13 +210,21 @@ Bhuiyan Mohamed Nahid Jahan</a>
               }
             </style>
         </footer>
-        
-        <!-- Floating WhatsApp Button -->
-        <a href="https://wa.me/601119359497" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
         `;
     }
+    
+    // Inject Custom Chatbot CSS and JS with cache-buster to force browser update
+    const cacheBuster = '?v=' + new Date().getTime();
+    
+    const chatbotCss = document.createElement('link');
+    chatbotCss.rel = 'stylesheet';
+    chatbotCss.href = root + 'assets/css/chatbot.css' + cacheBuster;
+    document.head.appendChild(chatbotCss);
+
+    const chatbotJs = document.createElement('script');
+    chatbotJs.src = root + 'assets/js/chatbot.js' + cacheBuster;
+    document.body.appendChild(chatbotJs);
+
     /* --- NEW UPDATE END --- */
 });
 // --- Image Lightbox Logic ---
@@ -309,3 +267,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+
+
+// Inject Visitor Tracking script asynchronously to prevent blocking SEO/Core Web Vitals
+(function() {
+    var trackingScript = document.createElement('script');
+    trackingScript.src = '/tracking.js';
+    trackingScript.defer = true; // Non-blocking
+    document.body.appendChild(trackingScript);
+})();

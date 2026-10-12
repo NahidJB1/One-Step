@@ -19,6 +19,9 @@ const feeId = id => id === 'cityu' ? 'city-university' : id;
 const short = id => rankings.universities[id]?.short_name || fees[feeId(id)]?.title || id;
 const feeFile = id => `Fees_Chart/${id}-fees.html`;
 const detailFile = id => `Universities/${id}-details.html`;
+const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya']);
+const publicDetailFile = id => combinedIds.has(id) ? `Universities/${id}-university.html` : detailFile(id);
+const publicFeeHref = id => combinedIds.has(id) ? `/${publicDetailFile(id).replace('.html','')}#courses-fees` : `/${feeFile(id).replace('.html','')}`;
 function save(file, html) {
     if (file.endsWith('.html')) html = html.replace(/(href="[^"\n]*\/Fees_Chart\/)city-university-fees(?=[".?#])/g,'$1cityu-fees');
     html = html.replace(/\r\n/g, '\n').trimEnd() + '\n';
@@ -121,7 +124,7 @@ for (const [key,uni] of Object.entries(fees)) {
 
 const directoryItems = Object.keys(rankings.universities).filter(id=>rankings.universities[id].page).sort((a,b)=>short(a).localeCompare(short(b)));
 function directory() {
-    return '<ul class="study-directory">' + directoryItems.map(id=>`<li><a href="/${detailFile(id).replace('.html','')}">${esc(rankings.universities[id].name)}</a><small><a href="/${feeFile(id).replace('.html','')}">Tuition fees and fee chart</a> · <a href="/${detailFile(id).replace('.html','')}#rankings">QS rankings</a></small></li>`).join('\n') + '</ul>';
+    return '<ul class="study-directory">' + directoryItems.map(id=>`<li><a href="/${publicDetailFile(id).replace('.html','')}">${esc(rankings.universities[id].name)}</a><small><a href="${publicFeeHref(id)}">Tuition fees and fee chart</a> · <a href="/${publicDetailFile(id).replace('.html','')}#rankings">QS rankings</a></small></li>`).join('\n') + '</ul>';
 }
 for (const id of directoryItems) {
     const file = detailFile(id), uni = fees[feeId(id)], name = short(id);

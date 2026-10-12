@@ -26,8 +26,11 @@ module.exports = function studentGuides({H, rankings, fees}) {
   };
   const cite = key => `<a href="${source[key][1]}">${esc(source[key][0])}</a>`;
   const link = (href,label) => `<a href="${href}">${esc(label)}</a>`;
+  const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya']);
+  const universityPath = id => combinedIds.has(id) ? `/Universities/${id}-university` : `/Universities/${id}-details`;
+  const feesPath = id => combinedIds.has(id) ? `${universityPath(id)}#courses-fees` : `/Fees_Chart/${id}-fees`;
   const buttons = links => `<div class="guide-actions">${links.map(([href,label],i)=>`<a class="guide-button${i ? ' secondary' : ''}" href="${href}">${esc(label)} <span aria-hidden="true">→</span></a>`).join('')}</div>`;
-  const uniButtons = id => buttons([[`/Fees_Chart/${id}-fees`,`${rankings.universities[id]?.short_name || fees[id].title} fees`],[`/Universities/${id}-details`,'University details']]);
+  const uniButtons = id => buttons([[feesPath(id),`${rankings.universities[id]?.short_name || fees[id].title} fees`],[universityPath(id),'University details']]);
   const table = (caption,headers,rows) => `<div class="guide-table" role="region" aria-label="${esc(caption)}" tabindex="0"><table><caption>${esc(caption)}</caption><thead><tr>${headers.map(h=>`<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(row=>`<tr>${row.map((c,i)=>i===0?`<th scope="row">${c}</th>`:`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
   const section = (id,title,html) => ({id,title,html});
   const note = (title,text) => `<aside class="guide-note"><strong>${title}</strong><p>${text}</p></aside>`;

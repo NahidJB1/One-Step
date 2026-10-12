@@ -732,7 +732,8 @@
                     url.pathname = base.pathname + page.slice(0, -5);
                 }
                 if (url.pathname === base.pathname + 'Fees_Chart/city-university-fees') {
-                    url.pathname = base.pathname + 'Fees_Chart/cityu-fees';
+                    url.pathname = base.pathname + 'Universities/cityu-university';
+                    url.hash = 'courses-fees';
                 }
             }
             return ['http:', 'https:'].includes(url.protocol) ? url.href : null;

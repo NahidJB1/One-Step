@@ -35,17 +35,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="footer-col">
                   <h3>University Details</h3>
                   <ul class="footer-links two-col-list">
-                    <li><a href="${root}Universities/alfa-details">Alfa University</a></li>
+                    <li><a href="${root}Universities/alfa-university">Alfa University</a></li>
                     <li><a href="${root}Universities/amu-details">AMU</a></li>
                     <li><a href="${root}Universities/apu-details">APU</a></li>
-                    <li><a href="${root}Universities/bac-details">BAC</a></li>
-                    <li><a href="${root}Universities/cityu-details">City University</a></li>
-                    <li><a href="${root}Universities/cyberjaya-details">Cyberjaya Uni</a></li>
+                    <li><a href="${root}Universities/bac-university">BAC</a></li>
+                    <li><a href="${root}Universities/cityu-university">City University</a></li>
+                    <li><a href="${root}Universities/cyberjaya-university">Cyberjaya Uni</a></li>
                     <li><a href="${root}Universities/help-details">HELP</a></li>
                     <li><a href="${root}Universities/icms-details">ICMS</a></li>
-                    <li><a href="${root}Universities/inti-details">INTI University</a></li>
+                    <li><a href="${root}Universities/inti-university">INTI University</a></li>
                     <li><a href="${root}Universities/kings-details">Kings College</a></li>
-                    <li><a href="${root}Universities/klust-details">KLUST</a></li>
+                    <li><a href="${root}Universities/klust-university">KLUST</a></li>
                     <li><a href="${root}Universities/limkokwing-details">Limkokwing</a></li>
                     <li><a href="${root}Universities/lincoln-details">Lincoln</a></li>
                     <li><a href="${root}Universities/mmu-details">MMU</a></li>
@@ -66,17 +66,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="footer-col">
                   <h3>Tuition Fees</h3>
                   <ul class="footer-links two-col-list">
-                    <li><a href="${root}Fees_Chart/alfa-fees">Alfa Fees</a></li>
+                    <li><a href="${root}Universities/alfa-university#courses-fees">Alfa Fees</a></li>
                     <li><a href="${root}Fees_Chart/amu-fees">AMU Fees</a></li>
                     <li><a href="${root}Fees_Chart/apu-fees">APU Fees</a></li>
-                    <li><a href="${root}Fees_Chart/bac-fees">BAC Fees</a></li>
-                    <li><a href="${root}Fees_Chart/cityu-fees">City U Fees</a></li>
-                    <li><a href="${root}Fees_Chart/cyberjaya-fees">Cyberjaya Fees</a></li>
+                    <li><a href="${root}Universities/bac-university#courses-fees">BAC Fees</a></li>
+                    <li><a href="${root}Universities/cityu-university#courses-fees">City U Fees</a></li>
+                    <li><a href="${root}Universities/cyberjaya-university#courses-fees">Cyberjaya Fees</a></li>
                     <li><a href="${root}Fees_Chart/help-fees">HELP Fees</a></li>
                     <li><a href="${root}Fees_Chart/icms-fees">ICMS Fees</a></li>
-                    <li><a href="${root}Fees_Chart/inti-fees">INTI Fees</a></li>
+                    <li><a href="${root}Universities/inti-university#courses-fees">INTI Fees</a></li>
                     <li><a href="${root}Fees_Chart/kings-fees">Kings Fees</a></li>
-                    <li><a href="${root}Fees_Chart/klust-fees">KLUST Fees</a></li>
+                    <li><a href="${root}Universities/klust-university#courses-fees">KLUST Fees</a></li>
                     <li><a href="${root}Fees_Chart/limkokwing-fees">Limkokwing Fees</a></li>
                     <li><a href="${root}Fees_Chart/lincoln-fees">Lincoln Fees</a></li>
                     <li><a href="${root}Fees_Chart/mmu-fees">MMU Fees</a></li>

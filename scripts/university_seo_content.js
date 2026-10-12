@@ -4,8 +4,10 @@
 const content = require('../data/university_seo_content.json');
 const H = require('./seo_helpers');
 const {esc, plain, block, breadcrumbHtml, replaceElement} = H;
-const feePath = id => `/Fees_Chart/${id}-fees`;
-const detailPath = id => `/Universities/${id}-details`;
+const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya']);
+const feePath = id => combinedIds.has(id) ? `/Universities/${id}-university#courses-fees` : `/Fees_Chart/${id}-fees`;
+const feeCategoryPath = (id, category) => combinedIds.has(id) ? `/Universities/${id}-university#fee-category-${category}` : `/Fees_Chart/${id}-fees#fee-category-${category}`;
+const detailPath = id => combinedIds.has(id) ? `/Universities/${id}-university` : `/Universities/${id}-details`;
 const links = items => `<ul class="study-link-list">${items.map(item => `<li><a href="${esc(item.path || item.url)}">${esc(item.label)}</a></li>`).join('')}</ul>`;
 const faq = items => items.map(f => `<details class="study-faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n');
 
@@ -74,7 +76,7 @@ function courseExamples(id, uni) {
     if (verified) {
         const c = content[id];
         return `<h3>${esc(c.programme_heading)}</h3><p>${esc(c.programme_note)}</p>
-<p>On a small screen, scroll the table horizontally to view every column.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Verified programme references"><table style="min-width:760px"><caption>Selected official programme references; checked ${esc(c.programme_checked)}</caption><thead><tr><th scope="col">Qualification</th><th scope="col">Institution and location</th><th scope="col">Study information</th><th scope="col">Official evidence</th><th scope="col">Fee section</th></tr></thead><tbody>${verified.map(p=>`<tr><th scope="row">${esc(p.programme)}</th><td>${esc(p.institution)}<br>${esc(p.location)}</td><td>${esc(p.study)}</td><td><a href="${esc(p.source)}">${esc(p.source_label)}</a></td><td><a href="${feePath(id)}#fee-category-${p.fee_category}">${esc(p.fee_label)}</a></td></tr>`).join('')}</tbody></table></div>`;
+<p>On a small screen, scroll the table horizontally to view every column.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Verified programme references"><table style="min-width:760px"><caption>Selected official programme references; checked ${esc(c.programme_checked)}</caption><thead><tr><th scope="col">Qualification</th><th scope="col">Institution and location</th><th scope="col">Study information</th><th scope="col">Official evidence</th><th scope="col">Fee section</th></tr></thead><tbody>${verified.map(p=>`<tr><th scope="row">${esc(p.programme)}</th><td>${esc(p.institution)}<br>${esc(p.location)}</td><td>${esc(p.study)}</td><td><a href="${esc(p.source)}">${esc(p.source_label)}</a></td><td><a href="${feeCategoryPath(id,p.fee_category)}">${esc(p.fee_label)}</a></td></tr>`).join('')}</tbody></table></div>`;
     }
     if (id === 'cyberjaya') return ''; // Its authored chart has broader coverage than JSON.
     const examples = [];
@@ -86,7 +88,7 @@ function courseExamples(id, uni) {
         if (nameIndex < 0) continue;
         const row = cat.table.rows.find(r => /bachelor|^ba\b|^bsc\b|^bsc\s*\(|^diploma|^foundation/i.test(plain(r[nameIndex])));
         if (!row) continue;
-        examples.push(`<tr><th scope="row">${esc(plain(row[nameIndex]))}</th><td>${esc(plain(cat.category_name))}</td><td>${durationIndex >= 0 ? esc(plain(row[durationIndex])) : 'See programme source'}</td><td>${intakeIndex >= 0 ? esc(plain(row[intakeIndex])) : 'Confirm for this programme'}</td><td><a href="${feePath(id)}#fee-category-${i}">View relevant fee section</a></td></tr>`);
+        examples.push(`<tr><th scope="row">${esc(plain(row[nameIndex]))}</th><td>${esc(plain(cat.category_name))}</td><td>${durationIndex >= 0 ? esc(plain(row[durationIndex])) : 'See programme source'}</td><td>${intakeIndex >= 0 ? esc(plain(row[intakeIndex])) : 'Confirm for this programme'}</td><td><a href="${feeCategoryPath(id,i)}">View relevant fee section</a></td></tr>`);
         if (examples.length === 4) break;
     }
     if (!examples.length) return '';

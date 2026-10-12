@@ -10,8 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:seo": "node scripts/build_site_seo.js",
+    "build:combined-universities": "node scripts/build_combined_university_pages.js",
     "check:seo": "node scripts/build_site_seo.js --check",
-    "test:seo": "node tests/seo_pages_test.js"
+    "test:seo": "node tests/seo_pages_test.js",
+    "test:combined-universities": "node tests/combined_university_pages_test.cjs && node tests/combined_university_responsive_test.cjs"
   },
   "repository": {
     "type": "git",

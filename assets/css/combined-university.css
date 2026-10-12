@@ -1,0 +1,51 @@
+:root { --combined-ink:#14213d; --combined-muted:#586579; --combined-accent:#ed1c24; --combined-surface:#fff; --combined-line:#e7ebf1; }
+.combined-university-page { background:#f5f7fa; color:var(--combined-ink); }
+.combined-university-page main { overflow:hidden; }
+.combined-hero { min-height:520px; display:flex; align-items:flex-end; position:relative; background:linear-gradient(120deg,#16243b,#314968); background-image:var(--hero-image); background-position:center; background-size:cover; }
+.combined-hero-overlay { position:absolute; inset:0; background:linear-gradient(90deg,rgba(9,19,35,.9) 0%,rgba(9,19,35,.55) 52%,rgba(9,19,35,.2) 100%); }
+.combined-hero-content { position:relative; z-index:1; width:min(1180px,calc(100% - 40px)); margin:0 auto; padding:150px 0 64px; display:flex; align-items:center; gap:28px; color:#fff; }
+.combined-logo { width:128px; height:128px; object-fit:contain; background:#fff; border-radius:22px; padding:14px; box-shadow:0 18px 45px rgba(0,0,0,.25); }
+.combined-eyebrow,.section-heading>p { margin:0 0 8px; text-transform:uppercase; letter-spacing:.14em; font-weight:700; font-size:.78rem; }
+.combined-hero h1 { margin:0; max-width:820px; color:#fff; font:700 clamp(2.2rem,5vw,4.6rem)/1.05 Outfit,sans-serif; }
+.combined-hero-actions { display:flex; gap:12px; margin-top:24px; }
+.combined-primary,.combined-secondary { display:inline-flex; align-items:center; justify-content:center; padding:12px 22px; border-radius:999px; font-weight:700; text-decoration:none; }
+.combined-primary { background:var(--combined-accent); color:#fff; }
+.combined-secondary { border:1px solid rgba(255,255,255,.65); color:#fff; backdrop-filter:blur(8px); }
+.combined-tabs { position:sticky; top:0; z-index:20; display:flex; justify-content:center; gap:8px; padding:12px 20px; background:rgba(255,255,255,.96); border-bottom:1px solid var(--combined-line); box-shadow:0 6px 20px rgba(20,33,61,.06); overflow-x:auto; }
+.combined-tabs a,.combined-tabs span { flex:0 0 auto; padding:10px 18px; color:#526075; border-radius:999px; text-decoration:none; font-weight:600; }
+.combined-tabs .active { background:#14213d; color:#fff; }
+.combined-tabs span { opacity:.62; cursor:default; }
+.combined-tabs small { margin-left:5px; font-size:.62rem; text-transform:uppercase; }
+.combined-shell { width:min(1180px,calc(100% - 32px)); margin:40px auto 80px; display:grid; gap:26px; }
+.combined-section,.combined-university-page .university-rankings { padding:clamp(24px,4vw,48px); background:var(--combined-surface); border:1px solid var(--combined-line); border-radius:24px; box-shadow:0 14px 36px rgba(24,39,64,.06); }
+.section-heading { margin-bottom:24px; }
+.section-heading>p { color:var(--combined-accent); }
+.section-heading h2,.combined-university-page .university-rankings h2 { margin:0; font:700 clamp(1.7rem,3vw,2.55rem)/1.15 Outfit,sans-serif; color:var(--combined-ink); }
+.about-copy,.international-section>p { max-width:850px; color:var(--combined-muted); font-size:1.05rem; line-height:1.8; }
+.about-section .gallery-grid { margin-top:30px; }
+.about-section .gallery-item:nth-child(n+4) { display:none; }
+.combined-university-page .gallery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.combined-university-page .gallery-item { min-height:220px; border-radius:16px; overflow:hidden; cursor:zoom-in; }
+.combined-university-page .gallery-item img { width:100%; height:100%; min-height:220px; object-fit:cover; transition:transform .35s ease; cursor:zoom-in; }
+.combined-university-page .gallery-item:hover img { transform:scale(1.035); }
+.fees-section { scroll-margin-top:90px; }
+.fees-section .search-container { margin:0 0 24px; }
+.fees-section .university-header,.fees-section .logo-container { display:none; }
+.fees-section .table-container { overflow-x:auto; border-radius:14px; border:1px solid var(--combined-line); }
+.fees-section table { margin:0; }
+.combined-faq details { border:1px solid var(--combined-line); border-radius:14px; margin:12px 0; background:#fbfcfe; }
+.combined-faq summary { padding:18px 52px 18px 20px; cursor:pointer; font-weight:650; color:var(--combined-ink); }
+.combined-faq details>:not(summary) { margin-left:20px; margin-right:20px; }
+.combined-faq details>:last-child { margin-bottom:20px; }
+.combined-university-page .lightbox { z-index:1000; }
+@media (max-width:760px) {
+  .combined-hero { min-height:470px; }
+  .combined-hero-content { align-items:flex-start; flex-direction:column; padding-bottom:42px; }
+  .combined-logo { width:96px; height:96px; border-radius:18px; }
+  .combined-hero-actions { flex-wrap:wrap; }
+  .combined-tabs { justify-content:flex-start; }
+  .combined-shell { width:min(100% - 20px,1180px); margin-top:20px; }
+  .combined-section,.combined-university-page .university-rankings { padding:22px 16px; border-radius:18px; }
+  .combined-university-page .gallery-grid { grid-template-columns:1fr; }
+  .combined-university-page .gallery-item,.combined-university-page .gallery-item img { min-height:210px; }
+}

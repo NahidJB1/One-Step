@@ -1,8 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019" crossorigin="anonymous"></script>
   <meta name="description" content="Compare top Malaysian universities side-by-side. View fees, rankings, and campus details to choose the right university for you.">
-  <link rel="canonical" href="https://www.onestepmy.com/compare.html">
+  <meta name="keywords" content="Compare, Universities, study in Malaysia, Malaysia university, international students Malaysia, One Step MY, study abroad">
+  <link rel="canonical" href="https://www.onestepmy.com/compare">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compare Universities | One Step MY</title>
@@ -11,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/compare.css">
+<link rel="stylesheet" href="/assets/css/mobile.css">
 </head>
 <body>
 
@@ -177,7 +180,7 @@
       for(let i=0; i<3; i++) {
         if(selectedUnis[i]) {
            const slug = UNIVERSITY_META[selectedUnis[i]].slug;
-           html += `<td><a href="Universities/${slug}-details.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">View Details</a></td>`;
+           html += `<td><a href="Universities/${slug}-details" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">View Details</a></td>`;
         } else {
            html += `<td></td>`;
         }
@@ -189,4 +192,7 @@
   </script>
 </body>
 </html>
+
+
+
 

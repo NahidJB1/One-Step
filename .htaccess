@@ -2,14 +2,136 @@ Options -Indexes -MultiViews
 RewriteEngine On
 RewriteBase /
 
-# 1. Remove .html from visible URL (redirect to extensionless)
+# Normalize literal repeated slashes in the raw external request path only.
+# THE_REQUEST preserves percent escapes; the query is excluded and retained.
+# 308 preserves the request method/body for API requests. Each redirect removes
+# one slash run, so multiple runs converge without an internal rewrite loop.
+RewriteCond %{THE_REQUEST} "\s/{2,}([^?\s]*)[?\s]"
+RewriteRule ^ /%1 [R=308,L,NE]
+
+RewriteCond %{THE_REQUEST} "\s(/[^?\s]*?)/{2,}([^?\s]*)[?\s]"
+RewriteRule ^ %1/%2 [R=308,L,NE]
+
+# Send known production aliases straight to their final canonical URL.
+# This must precede hostname and .html normalization to avoid redirect chains.
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Fees_Chart/city-university-fees(?:\.html)?$ https://www.onestepmy.com/Fees_Chart/cityu-fees [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/cybernetics-malaysia-\(ktac\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/cybernetics-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/genovasi-university-malaysia-details(?:\.html)?$ https://www.onestepmy.com/Universities/genovasi-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/binary-university-of-management-&-entrepreneurship-details(?:\.html)?$ https://www.onestepmy.com/Universities/binary-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/lincoln-university-college-details(?:\.html)?$ https://www.onestepmy.com/Universities/lincoln-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/asia-metropolitan-university-\(amu\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/amu-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/universiti-kuala-lumpur-\(unikl\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/unikl-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/universiti-putra-malaysia-\(upm\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/upm-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/limkokwing-university-of-creative-technology-details(?:\.html)?$ https://www.onestepmy.com/Universities/limkokwing-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/asia-pacific-university-of-technology-&-innovation-\(apu\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/apu-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/international-university-of-malaya-wales-\(iumw\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/umw-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/ucsi-university-details(?:\.html)?$ https://www.onestepmy.com/Universities/ucsi-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/multimedia-university-\(mmu\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/mmu-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/international-islamic-university-malaysia-\(iium\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/iium-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/universiti-teknologi-malaysia-\(utm\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/utm-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/kl-university-of-science-&-technology-\(klust\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/klust-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/universiti-teknikal-malaysia-melaka-\(utem\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/utem-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/university-of-wollongong-\(uow\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/uow-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/help-university-details(?:\.html)?$ https://www.onestepmy.com/Universities/help-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/university-college-maiwp-international-\(ucmi\)-details(?:\.html)?$ https://www.onestepmy.com/Universities/ucmi-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/vision-university-college-details(?:\.html)?$ https://www.onestepmy.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Fees_Chart/KLUST-fees(?:\.html)?$ https://www.onestepmy.com/Fees_Chart/klust-fees [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Fees_Chart/iukl-fees(?:\.html)?$ https://www.onestepmy.com/Fees_Chart/klust-fees [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^segi-university(?:\.html)?$ https://www.onestepmy.com/Universities/segi-details [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/login\.php$ https://www.onestepmy.com/login.php [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/application(?:\.html)?$ https://www.onestepmy.com/application [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/index(?:\.html)?$ https://www.onestepmy.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteRule ^Universities/scholarship(?:\.html)?$ https://www.onestepmy.com/scholarship [R=301,L]
+
+# Force HTTPS and WWW on the production domain (leave local previews usable).
+RewriteCond %{HTTP_HOST} ^(?:www\.)?onestepmy\.com$ [NC]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.onestepmy\.com$ [NC]
+RewriteRule ^ https://www.onestepmy.com%{REQUEST_URI} [L,R=301,NE]
+
+# Consolidate homepage aliases before the general extension redirect.
+RewriteCond %{THE_REQUEST} \s/+index(?:\.html)?[\s?] [NC]
+RewriteRule ^index(?:\.html)?$ / [R=301,L]
+
+# Remove .html from visible URL (redirect to extensionless).
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
 
-# 2. Add .html internally to serve the file
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^.]+)$ $1.html [NC,L]
-
 # Custom 404 Error Page
 ErrorDocument 404 /404.html
+
+# 301 Redirects for Old URLs (Safe for ModSecurity)
+RewriteRule ^Fees_Chart/city-university-fees(?:\.html)?$ /Fees_Chart/cityu-fees [R=301,L]
+RewriteRule ^Universities/cybernetics-malaysia-\(ktac\)-details(?:\.html)?$ /Universities/cybernetics-details [R=301,L]
+RewriteRule ^Universities/genovasi-university-malaysia-details(?:\.html)?$ /Universities/genovasi-details [R=301,L]
+RewriteRule ^Universities/binary-university-of-management-&-entrepreneurship-details(?:\.html)?$ /Universities/binary-details [R=301,L]
+RewriteRule ^Universities/lincoln-university-college-details(?:\.html)?$ /Universities/lincoln-details [R=301,L]
+RewriteRule ^Universities/asia-metropolitan-university-\(amu\)-details(?:\.html)?$ /Universities/amu-details [R=301,L]
+RewriteRule ^Universities/universiti-kuala-lumpur-\(unikl\)-details(?:\.html)?$ /Universities/unikl-details [R=301,L]
+RewriteRule ^Universities/universiti-putra-malaysia-\(upm\)-details(?:\.html)?$ /Universities/upm-details [R=301,L]
+RewriteRule ^Universities/limkokwing-university-of-creative-technology-details(?:\.html)?$ /Universities/limkokwing-details [R=301,L]
+RewriteRule ^Universities/asia-pacific-university-of-technology-&-innovation-\(apu\)-details(?:\.html)?$ /Universities/apu-details [R=301,L]
+RewriteRule ^Universities/international-university-of-malaya-wales-\(iumw\)-details(?:\.html)?$ /Universities/umw-details [R=301,L]
+RewriteRule ^Universities/ucsi-university-details(?:\.html)?$ /Universities/ucsi-details [R=301,L]
+RewriteRule ^Universities/multimedia-university-\(mmu\)-details(?:\.html)?$ /Universities/mmu-details [R=301,L]
+RewriteRule ^Universities/international-islamic-university-malaysia-\(iium\)-details(?:\.html)?$ /Universities/iium-details [R=301,L]
+RewriteRule ^Universities/universiti-teknologi-malaysia-\(utm\)-details(?:\.html)?$ /Universities/utm-details [R=301,L]
+RewriteRule ^Universities/kl-university-of-science-&-technology-\(klust\)-details(?:\.html)?$ /Universities/klust-details [R=301,L]
+RewriteRule ^Universities/universiti-teknikal-malaysia-melaka-\(utem\)-details(?:\.html)?$ /Universities/utem-details [R=301,L]
+RewriteRule ^Universities/university-of-wollongong-\(uow\)-details(?:\.html)?$ /Universities/uow-details [R=301,L]
+RewriteRule ^Universities/help-university-details(?:\.html)?$ /Universities/help-details [R=301,L]
+RewriteRule ^Universities/university-college-maiwp-international-\(ucmi\)-details(?:\.html)?$ /Universities/ucmi-details [R=301,L]
+RewriteRule ^Universities/vision-university-college-details(?:\.html)?$ / [R=301,L]
+RewriteRule ^Fees_Chart/KLUST-fees(?:\.html)?$ /Fees_Chart/klust-fees [R=301,L]
+RewriteRule ^Fees_Chart/iukl-fees(?:\.html)?$ /Fees_Chart/klust-fees [R=301,L]
+RewriteRule ^segi-university(?:\.html)?$ /Universities/segi-details [R=301,L]
+RewriteRule ^Universities/login\.php$ /login.php [R=301,L]
+RewriteRule ^Universities/application(?:\.html)?$ /application [R=301,L]
+RewriteRule ^Universities/index(?:\.html)?$ / [R=301,L]
+RewriteRule ^Universities/scholarship(?:\.html)?$ /scholarship [R=301,L]
+
+# Serve only existing extensionless pages after the legacy redirects.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^.]+)$ $1.html [L]
+
+# Utility endpoints should remain usable without appearing as search results.
+# Allow crawling so search engines can observe the noindex response header.
+<IfModule mod_headers.c>
+  <FilesMatch "^(?:admin|login|logout|submit|submit_application|submit_malaysia_scholarship|debug|original_chat|rewrite_chat2?|test_php|verify_api)\.php$">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </FilesMatch>
+  <FilesMatch "^(?:404|bot_tester|dev|verify|register|application)\.html$">
+    Header set X-Robots-Tag "noindex, follow"
+  </FilesMatch>
+</IfModule>
+

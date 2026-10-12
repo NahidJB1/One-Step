@@ -1,0 +1,291 @@
+{
+  "schema": 1,
+  "checked_at": "2026-09-12",
+  "sources": {
+    "counselor": {
+      "title": "One-Step counseling guidance and data limitations",
+      "url": "contact.html",
+      "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation"
+    },
+    "scholarships": {
+      "title": "Local scholarship options",
+      "url": "scholarship-options.html",
+      "origin": "Local guidance; current awards, amounts, deadlines and eligibility not independently verified"
+    },
+    "living": {
+      "title": "Local Malaysia living-cost FAQ",
+      "url": "myfaqs.json",
+      "origin": "myfaqs.json /global/304; general undated estimate, not a city-specific quote"
+    },
+    "english_admission": {
+      "title": "EMGS English-certificate guidance",
+      "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+      "origin": "data/emgs_source.txt; university admission decisions are separate"
+    }
+  },
+  "concepts": {
+    "gap": [
+      "study gap",
+      "education gap",
+      "year gap",
+      "years gap",
+      "gap of",
+      "gap impact"
+    ],
+    "scholarship": [
+      "scholarship",
+      "financial aid",
+      "fully funded",
+      "funding",
+      "tuition waiver",
+      "need money",
+      "no money"
+    ],
+    "living": [
+      "living cost",
+      "cost of living",
+      "living expenses",
+      "monthly expenses",
+      "food and rent"
+    ],
+    "bank_balance": [
+      "bank balance",
+      "proof of funds",
+      "financial proof",
+      "bank statement",
+      "financial statement"
+    ],
+    "ranking": [
+      "ranking",
+      "ranked",
+      "rank",
+      "top ranking"
+    ],
+    "admission_fee": [
+      "admission fee",
+      "application fee",
+      "registration fee",
+      "initial fee"
+    ],
+    "profile": [
+      "finished my",
+      "completed my",
+      "passed hsc",
+      "passed my hsc",
+      "completed hsc",
+      "my hsc",
+      "i completed",
+      "completed a diploma",
+      "completed bba",
+      "i have a bsc",
+      "i have a bachelor",
+      "graduated five years ago",
+      "my bba",
+      "my qualification",
+      "hsc from"
+    ],
+    "admission_check": [
+      "get admission",
+      "eligible for admission",
+      "accept what i have",
+      "will you accept",
+      "admission with",
+      "can i apply"
+    ],
+    "outcome": [
+      "visa success",
+      "visa approval rate",
+      "visa success rate",
+      "visa guaranteed",
+      "visa guarantee",
+      "guarantee admission"
+    ],
+    "transfer_abroad": [
+      "transfer to uk",
+      "transfer to the uk",
+      "transfer to british",
+      "uk transfer",
+      "transfer to a uk",
+      "transfer to an uk",
+      "transfer to a british"
+    ],
+    "credit_transfer": [
+      "credit transfer",
+      "transfer credits",
+      "credit exemption",
+      "advanced standing",
+      "diploma credit",
+      "enter with diploma"
+    ],
+    "government_scholarship": [
+      "malaysian government scholarship",
+      "malaysia international scholarship",
+      "mis scholarship"
+    ]
+  },
+  "entries": [
+    {
+      "id": "study-gap",
+      "q": "How does a study gap affect admission or a Student Pass?",
+      "all": [
+        "gap"
+      ],
+      "family": "gap",
+      "source": "counselor",
+      "a": "A study gap needs to be assessed with your qualification, grades, intended level/program and what you did during the gap. Prepare a timeline, CV and supporting work/study records. Working during a gap can help explain it, but neither a CV nor a particular gap length guarantees admission or a visa. Tell me the target university and program so a counselor can review the institution's actual requirements.",
+      "a_bn": "Study gap মূল্যায়নে আগের ডিগ্রি, ফল, যে প্রোগ্রামে পড়তে চান এবং gap-এর সময় কী করেছেন—এসব দেখতে হয়। সময়ক্রম, CV ও কাজ/পড়াশোনার প্রমাণ প্রস্তুত করুন। কাজের অভিজ্ঞতা gap ব্যাখ্যা করতে পারে, কিন্তু CV বা নির্দিষ্ট gap-এর দৈর্ঘ্য দিয়ে ভর্তি বা ভিসা নিশ্চিত হয় না। লক্ষ্য বিশ্ববিদ্যালয় ও প্রোগ্রাম জানান।"
+    },
+    {
+      "id": "scholarship-advice",
+      "q": "What scholarships or funding can I consider?",
+      "all": [
+        "scholarship"
+      ],
+      "family": "scholarship",
+      "source": "scholarships",
+      "a": "The local information describes merit-based scholarships and partial tuition discounts at some institutions. It does not verify a currently open fully funded award, a guaranteed discount, or nationality-specific eligibility. Compare tuition after any confirmed award, living costs, visa charges and deposits. Tell me your university/program, grades, nationality and budget; a counselor can check actual award terms. You can also review the [local scholarship options](scholarship-options.html).",
+      "a_bn": "স্থানীয় তথ্যে কিছু প্রতিষ্ঠানের merit-based scholarship ও আংশিক tuition discount-এর উল্লেখ আছে। বর্তমানে খোলা fully funded award, নিশ্চিত ছাড় বা জাতীয়তাভিত্তিক যোগ্যতা যাচাই করা নেই। নিশ্চিত scholarship-এর পরের tuition, থাকা-খাওয়া, visa ও deposit মিলিয়ে বাজেট করুন। বিশ্ববিদ্যালয়/প্রোগ্রাম, ফল, জাতীয়তা ও বাজেট দিলে কাউন্সেলর আসল শর্ত মিলিয়ে দেখতে পারবেন। [Scholarship options](scholarship-options.html)-ও দেখতে পারেন।"
+    },
+    {
+      "id": "living-cost",
+      "q": "How much should I budget for living costs?",
+      "all": [
+        "living"
+      ],
+      "family": "living",
+      "source": "living",
+      "a": "The local Malaysia FAQ gives a broad estimate of **RM1,500–RM2,500 per month** for accommodation, food, transport and personal expenses. This is an undated Malaysia-wide estimate, **not a verified Kuala Lumpur or campus-specific quote**, and tuition is separate. Rent, room sharing, transport and lifestyle can change the amount substantially. Confirm current accommodation and transport costs for your chosen campus.",
+      "a_bn": "স্থানীয় Malaysia FAQ-তে থাকা, খাবার, যাতায়াত ও ব্যক্তিগত খরচ মিলিয়ে আনুমানিক **মাসে RM1,500–RM2,500** বলা আছে। এটি তারিখ-যাচাইবিহীন সাধারণ Malaysia estimate—**Kuala Lumpur বা নির্দিষ্ট campus-এর নিশ্চিত quote নয়**; tuition আলাদা। বাসা ভাগাভাগি, পরিবহন ও জীবনযাত্রায় খরচ বদলায়।"
+    },
+    {
+      "id": "bank-balance",
+      "q": "Do I need to show a bank balance?",
+      "all": [
+        "bank_balance"
+      ],
+      "family": "finance-proof",
+      "source": "counselor",
+      "none": [
+        "graduate",
+        "refund"
+      ],
+      "a": "I do not have a verified universal bank-balance amount for every Malaysian Student Pass or university. Financial evidence can depend on the institution, sponsor, nationality and application type. Ask the institution for its exact document checklist and any required statement period or sponsor letter. Do not confuse proof of funds with opening a bank account or the personal-bond deposit.",
+      "a_bn": "সব Malaysian Student Pass বা বিশ্ববিদ্যালয়ের জন্য এক নির্দিষ্ট bank balance-এর যাচাইকৃত অঙ্ক আমার কাছে নেই। প্রতিষ্ঠান, sponsor, জাতীয়তা ও আবেদনের ধরন অনুযায়ী financial evidence বদলাতে পারে। Statement-এর সময়কাল, sponsor letter ও সঠিক checklist বিশ্ববিদ্যালয় থেকে নিন। এটি bank account খোলা বা personal bond-এর একই বিষয় নয়।"
+    },
+    {
+      "id": "english-admission",
+      "q": "Can I study without IELTS or with a low English-test score?",
+      "all": [
+        "english"
+      ],
+      "family": "english",
+      "source": "english_admission",
+      "none": [
+        "refund",
+        "visa"
+      ],
+      "a": "IELTS is not the only English qualification listed by EMGS, but an admission waiver depends on the exact university and program. A conditional offer or English pathway must be confirmed by the institution, including progression criteria and fees; a failed test does not establish direct-entry eligibility. EMGS requires an accepted English certificate for the VAL; missing it can delay processing or affect pass duration. Tell me the university, level/program and any English qualification you hold.",
+      "a_bn": "EMGS-এর তালিকায় IELTS ছাড়াও ইংরেজি পরীক্ষার সনদ আছে। তবে admission waiver নির্দিষ্ট বিশ্ববিদ্যালয় ও প্রোগ্রামের নিয়মের ওপর নির্ভর করে। Conditional offer বা English pathway, পরের ধাপের শর্ত ও ফি প্রতিষ্ঠান থেকে নিশ্চিত করতে হবে; test-এ ফেল করলে direct entry ধরে নেওয়া যাবে না। VAL-এর জন্য গ্রহণযোগ্য সনদ না থাকলে processing বা pass-এর মেয়াদে প্রভাব পড়তে পারে। বিশ্ববিদ্যালয়, প্রোগ্রাম ও আপনার ইংরেজি সনদের তথ্য জানান।"
+    },
+    {
+      "id": "rankings",
+      "q": "Which university has the best ranking?",
+      "all": [
+        "ranking"
+      ],
+      "family": "ranking",
+      "source": "counselor",
+      "a": "Name the university and ranking system you want to compare. The local ranking dataset contains dated, sourced QS World and QS Asia results and Malaysia positions calculated within the QS World table. Missing editions and subject rankings need separate verification. For a study shortlist, share your intended subject, level and budget.",
+      "a_bn": "যে বিশ্ববিদ্যালয় ও র‍্যাঙ্কিং সিস্টেম তুলনা করতে চান তার নাম জানান। স্থানীয় ডেটায় সূত্রসহ নির্দিষ্ট সংস্করণের QS World, QS Asia এবং QS World তালিকা থেকে গণনা করা Malaysia-তে অবস্থান আছে। অনুপস্থিত সংস্করণ ও বিষয়ভিত্তিক র‍্যাঙ্ক আলাদা করে যাচাই করতে হবে। পড়াশোনার জন্য বাছাই করতে বিষয়, শিক্ষাস্তর ও বাজেট জানান।"
+    },
+    {
+      "id": "admission-fee",
+      "q": "What is the admission or application fee?",
+      "all": [
+        "admission_fee"
+      ],
+      "family": "admission-fee",
+      "source": "counselor",
+      "a": "There is no single admission fee for every university. Application/registration fees, EMGS charges, deposits and tuition are different items. Tell me the university and program, and whether you mean the application fee, EMGS payment or the first payment before enrolment, so the correct published charge can be checked.",
+      "a_bn": "সব বিশ্ববিদ্যালয়ের admission fee এক নয়। Application/registration fee, EMGS, deposit ও tuition আলাদা। বিশ্ববিদ্যালয় ও প্রোগ্রাম জানান এবং application fee, EMGS payment নাকি ভর্তির আগে প্রথম payment বোঝাচ্ছেন তা বলুন—তাহলে সঠিক খরচ মিলিয়ে দেওয়া যাবে।"
+    },
+    {
+      "id": "profile",
+      "q": "How do I check admission with my academic background?",
+      "all": [
+        "profile"
+      ],
+      "family": "profile",
+      "source": "counselor",
+      "none": [
+        "graduate",
+        "scholarship"
+      ],
+      "a": "Thanks for sharing your academic background. Admission depends on your qualification, grades, relevant subjects, English evidence and the target program’s entry rules. Tell me what you want to study next and your grades; I can help find the recorded programs, while the institution must confirm eligibility.",
+      "a_bn": "আপনার শিক্ষাগত তথ্য জানানোর জন্য ধন্যবাদ। ভর্তি নির্ভর করে ডিগ্রি, ফল, সংশ্লিষ্ট বিষয়, ইংরেজির সনদ ও লক্ষ্য প্রোগ্রামের শর্তের ওপর। আগে BBA শেষ করেছেন মানেই আবার BBA পড়তে চাইছেন ধরে নিচ্ছি না। এরপর কী পড়তে চান ও ফল জানান; সংরক্ষিত প্রোগ্রাম খুঁজে দিতে পারব, যোগ্যতা বিশ্ববিদ্যালয় নিশ্চিত করবে।"
+    },
+    {
+      "id": "admission-check",
+      "q": "Can you confirm whether my qualifications are accepted?",
+      "all": [
+        "admission_check"
+      ],
+      "family": "profile",
+      "source": "counselor",
+      "a": "Please give your academic qualification, grades, target university, study level and program. I cannot confirm acceptance from an unspecified document or profile; the institution decides against the program's entry requirements.",
+      "a_bn": "আপনার ডিগ্রি, ফল, লক্ষ্য বিশ্ববিদ্যালয়, শিক্ষাস্তর ও প্রোগ্রাম জানান। কোন কাগজ বা যোগ্যতা তা না জেনে গ্রহণযোগ্যতা নিশ্চিত করা যায় না; নির্দিষ্ট প্রোগ্রামের শর্ত অনুযায়ী প্রতিষ্ঠান সিদ্ধান্ত নেয়।",
+      "none": [
+        "english",
+        "profile",
+        "graduate",
+        "scholarship",
+        "gap",
+        "visa"
+      ]
+    },
+    {
+      "id": "visa-outcome",
+      "q": "What is my chance of visa approval?",
+      "all": [
+        "outcome"
+      ],
+      "family": "outcome",
+      "source": "counselor",
+      "a": "The local data does not provide a reliable visa-success percentage for your nationality or study-gap profile. Admission, document completeness, academic history and immigration checks must be reviewed for the actual application. No university choice, counselor or chat answer can guarantee visa approval.",
+      "a_bn": "আপনার জাতীয়তা বা study-gap profile-এর জন্য নির্ভরযোগ্য visa-success শতাংশ স্থানীয় তথ্যে নেই। আসল আবেদনে ভর্তি, কাগজপত্র, শিক্ষাগত ইতিহাস ও Immigration যাচাই হয়। বিশ্ববিদ্যালয় নির্বাচন, কাউন্সেলর বা chat-এর উত্তর দিয়ে visa নিশ্চিত করা যায় না।"
+    },
+    {
+      "id": "credit-transfer",
+      "q": "Can prior study or a diploma give me credit transfer?",
+      "all": [
+        "credit_transfer"
+      ],
+      "family": "credit-transfer",
+      "source": "counselor",
+      "a": "Credit transfer is not guaranteed. The receiving institution must map your official transcript, detailed subject syllabi, contact hours, grades and prior accreditation against the exact target program, then confirm the exempted subjects, remaining duration and fees in writing. The local catalog does not contain individual APU, UCSI or other university credit decisions. Ask the target university for a formal credit assessment before relying on a shorter course or lower fee.",
+      "a_bn": "Credit transfer নিশ্চিত নয়। যে প্রতিষ্ঠানে ভর্তি হবেন, তারা official transcript, প্রতিটি বিষয়ের বিস্তারিত syllabus, contact hours, ফল ও আগের প্রতিষ্ঠানের accreditation লক্ষ্য প্রোগ্রামের সঙ্গে মিলিয়ে দেখবে। কোন বিষয় ছাড় পাবে, বাকি সময় ও ফি কত হবে—লিখিত formal credit assessment নিন। স্থানীয় catalog-এ APU, UCSI বা অন্য বিশ্ববিদ্যালয়ের ব্যক্তিভিত্তিক credit decision নেই।"
+    },
+    {
+      "id": "uk-transfer",
+      "q": "Can I transfer from my Malaysian university to the UK?",
+      "all": [
+        "transfer_abroad"
+      ],
+      "family": "transfer-abroad",
+      "source": "counselor",
+      "a": "A UK transfer depends on the exact program, partner agreement, credits completed, grades and the receiving university's decision. I do not have a verified current articulation agreement for your specific course. Ask your university for the named UK partner, transferable credits, remaining study duration and fees before relying on a transfer pathway."
+    },
+    {
+      "id": "government-scholarship",
+      "priority": 2,
+      "q": "How do I apply for a Malaysian Government Scholarship?",
+      "all": [
+        "government_scholarship"
+      ],
+      "family": "scholarship",
+      "source": "scholarships",
+      "a": "The local data does not verify the current Malaysian Government/Malaysia International Scholarship application window, eligible nationalities or official application requirements. Review the [local Malaysia scholarship guide](malaysia-scholarship.html), then confirm the current official call for the exact award before applying. Have your qualifications, transcripts, English evidence and proposed program details ready for review; this is preparation guidance, not an official checklist or a promise of funding.",
+      "status": "partial"
+    }
+  ]
+}

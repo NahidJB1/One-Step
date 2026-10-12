@@ -1,0 +1,1246 @@
+{
+  "schema": 1,
+  "checked_at": "2026-09-12",
+  "note": "Offline, reviewed summaries of the user-supplied EMGS snapshot. Links are references, not live network requests. Rules can change.",
+  "sources": {
+    "documents": {
+      "title": "EMGS required documents",
+      "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+      "origin": "data/emgs_source.txt"
+    },
+    "photos": {
+      "title": "EMGS passport photo guidelines",
+      "url": "https://visa.educationmalaysia.gov.my/guidelines/passport-photo-guidelines",
+      "origin": "data/emgs_source.txt"
+    },
+    "graduate": {
+      "title": "EMGS Graduate Pass",
+      "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
+      "origin": "data/emgs_source.txt"
+    },
+    "refund": {
+      "title": "EMGS refund policy",
+      "url": "https://visa.educationmalaysia.gov.my/legal/refund-policy.html",
+      "origin": "data/emgs_source.txt"
+    },
+    "sev": {
+      "title": "EMGS Single Entry Visa guidance",
+      "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+      "origin": "data/emgs_source.txt"
+    },
+    "medical": {
+      "title": "EMGS medical screening",
+      "url": "https://visa.educationmalaysia.gov.my/guidelines/medical-screening",
+      "origin": "Official EMGS guidance checked 2026-09-12"
+    },
+    "work": {
+      "title": "Education Malaysia student FAQ",
+      "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+      "origin": "Official Education Malaysia FAQ checked 2026-09-12"
+    },
+    "fees": {
+      "title": "Supplied institution EMGS fee estimates",
+      "url": "data/emgs_source.txt",
+      "origin": "User-supplied table; effective date and inclusions not verified"
+    },
+    "tracker": {
+      "title": "Official EMGS application tracker",
+      "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
+      "origin": "Official tracker; no live lookup by chatbot"
+    },
+    "status_faq": {
+      "title": "Local EMGS status FAQ",
+      "url": "myfaqs.json",
+      "origin": "myfaqs.json /global/17; undated local guidance, not a live application check"
+    }
+  },
+  "concepts": {
+    "visa": [
+      "visa",
+      "emgs",
+      "student pass",
+      "eval",
+      "val",
+      "immigration"
+    ],
+    "graduate": [
+      "graduate pass",
+      "post study",
+      "post graduation",
+      "after graduation",
+      "after i graduate",
+      "after i finish my studies",
+      "after studies",
+      "after my studies"
+    ],
+    "photo": [
+      "photo",
+      "photograph",
+      "picture",
+      "selfie"
+    ],
+    "passport": [
+      "passport"
+    ],
+    "pages": [
+      "pages",
+      "page",
+      "blank",
+      "scan"
+    ],
+    "validity": [
+      "valid",
+      "validity",
+      "expire",
+      "expiry",
+      "months",
+      "month"
+    ],
+    "document": [
+      "document",
+      "checklist",
+      "papers",
+      "paperwork",
+      "requirement"
+    ],
+    "renewal": [
+      "renewal",
+      "renew",
+      "extend",
+      "extension"
+    ],
+    "progress": [
+      "progression",
+      "variation",
+      "change course",
+      "change university",
+      "transfer university",
+      "change my course",
+      "change my university"
+    ],
+    "bond": [
+      "personal bond",
+      "security bond"
+    ],
+    "offer": [
+      "offer letter",
+      "acceptance letter"
+    ],
+    "health": [
+      "health declaration"
+    ],
+    "yellow": [
+      "yellow fever"
+    ],
+    "noc": [
+      "noc",
+      "no objection"
+    ],
+    "loe": [
+      "loe",
+      "eligibility letter",
+      "letter of eligibility"
+    ],
+    "english": [
+      "ielts",
+      "toefl",
+      "pte",
+      "english test",
+      "english certificate",
+      "english requirement",
+      "english exam",
+      "english proficiency",
+      "muet",
+      "linguaskill",
+      "oet",
+      "ciep"
+    ],
+    "conduct": [
+      "good conduct",
+      "police clearance"
+    ],
+    "sarawak": [
+      "sarawak"
+    ],
+    "dependent": [
+      "dependent",
+      "dependant",
+      "spouse",
+      "wife",
+      "husband",
+      "children"
+    ],
+    "sev": [
+      "sev",
+      "single entry visa",
+      "entry visa"
+    ],
+    "fees": [
+      "fee",
+      "cost",
+      "price",
+      "charge",
+      "how much",
+      "pay",
+      "payment"
+    ],
+    "refund": [
+      "refund",
+      "money back",
+      "reimburse"
+    ],
+    "medical": [
+      "medical",
+      "clinic",
+      "screening"
+    ],
+    "insurance": [
+      "insurance"
+    ],
+    "ikad": [
+      "ikad",
+      "i kad"
+    ],
+    "courier": [
+      "courier"
+    ],
+    "processing": [
+      "processing",
+      "eval",
+      "first year"
+    ],
+    "delay": [
+      "delay",
+      "stuck",
+      "late",
+      "long time",
+      "waiting"
+    ],
+    "additional": [
+      "additional document",
+      "missing document",
+      "pending document",
+      "incomplete document"
+    ],
+    "status": [
+      "status",
+      "percentage",
+      "percent",
+      "32%",
+      "15%",
+      "70%"
+    ],
+    "track": [
+      "track",
+      "check",
+      "update",
+      "monitor"
+    ],
+    "sponsor": [
+      "sponsor",
+      "sponsorship",
+      "salary",
+      "income"
+    ],
+    "apply": [
+      "apply",
+      "application",
+      "process",
+      "steps",
+      "procedure"
+    ],
+    "attendance": [
+      "attendance",
+      "absent"
+    ],
+    "grades": [
+      "cgpa",
+      "gpa",
+      "grades"
+    ],
+    "work": [
+      "part time",
+      "parttime",
+      "work",
+      "job",
+      "employment"
+    ],
+    "holiday": [
+      "holiday",
+      "break",
+      "semester"
+    ],
+    "bank": [
+      "bank account",
+      "bank detail",
+      "credit card",
+      "bank transfer",
+      "tt"
+    ],
+    "deadline": [
+      "deadline",
+      "how long",
+      "when",
+      "days",
+      "months",
+      "window"
+    ],
+    "cancel": [
+      "cancel",
+      "withdraw",
+      "withdrawal",
+      "rejected",
+      "reject",
+      "expired",
+      "expire"
+    ],
+    "delay_only": [
+      "because of delay",
+      "due to delay",
+      "processing delay"
+    ],
+    "country": [
+      "nationality",
+      "eligible countries",
+      "which countries",
+      "country",
+      "countries",
+      "bangladesh",
+      "bangladeshi",
+      "indian",
+      "india",
+      "china",
+      "chinese",
+      "pakistan",
+      "pakistani",
+      "nigeria",
+      "nigerian",
+      "iran",
+      "iranian",
+      "sudan",
+      "sudanese",
+      "finland"
+    ],
+    "price_table": [
+      "emgs fee",
+      "visa fee",
+      "visa cost",
+      "emgs cost",
+      "visa costs",
+      "emgs payment"
+    ],
+    "emergency": [
+      "medical appeal",
+      "lung scar",
+      "tuberculosis",
+      "hiv",
+      "hepatitis",
+      "pregnant",
+      "pregnancy",
+      "fail medical",
+      "failed medical",
+      "unfit"
+    ],
+    "not_approved": [
+      "not approved",
+      "unapproved",
+      "not yet approved",
+      "rejected by institution",
+      "institution rejected",
+      "institution has not approved"
+    ],
+    "degree_mode": [
+      "part time degree",
+      "parttime degree",
+      "part time master",
+      "parttime master",
+      "part time bachelor",
+      "parttime bachelor"
+    ],
+    "work_details": [
+      "income tax",
+      "salary",
+      "hourly pay",
+      "hourly wage",
+      "how much can i earn",
+      "remote job",
+      "remote work"
+    ]
+  },
+  "entries": [
+    {
+      "id": "new-documents",
+      "q": "What documents are needed for a new Student Pass?",
+      "a": "For a new Student Pass, prepare a recent white-background photo, passport copies, the university offer letter, health declaration, academic certificates/transcripts, and an accepted English certificate for the VAL. Passport validity must be at least 18 months. Personal bond arrangements are handled through your institution. Yellow-fever vaccination, a special-pass/exit stamp, and nationality-specific documents apply only where relevant. The institution can request additional program-specific documents. Tell me your nationality and whether this is a new, renewal, or progression application to narrow the checklist.",
+      "all": [
+        "visa",
+        "document"
+      ],
+      "source": "documents",
+      "family": "new-documents",
+      "none": [
+        "graduate",
+        "renewal",
+        "progress",
+        "photo",
+        "passport",
+        "conduct",
+        "english",
+        "sarawak",
+        "refund",
+        "medical",
+        "health",
+        "yellow",
+        "noc",
+        "loe",
+        "dependent",
+        "additional"
+      ],
+      "a_bn": "নতুন Student Pass-এর জন্য সাদা ব্যাকগ্রাউন্ডের সাম্প্রতিক ছবি, পাসপোর্টের কপি, বিশ্ববিদ্যালয়ের অফার লেটার, স্বাস্থ্য ঘোষণাপত্র, শিক্ষাগত সনদ ও ট্রান্সক্রিপ্ট এবং VAL-এর জন্য গ্রহণযোগ্য ইংরেজি পরীক্ষার সনদ প্রস্তুত করুন। পাসপোর্টের মেয়াদ অন্তত ১৮ মাস হতে হবে। Personal bond বিশ্ববিদ্যালয়ের মাধ্যমে হয়। Yellow fever টিকা ও জাতীয়তাভিত্তিক অতিরিক্ত কাগজ সবার জন্য নয়। আপনার জাতীয়তা এবং আবেদন নতুন, নবায়ন নাকি progression—জানালে নির্দিষ্ট তালিকা দিতে পারব।"
+    },
+    {
+      "id": "passport-pages",
+      "q": "Which passport pages must I submit?",
+      "a": "Normally submit the passport bio-data page, every page containing visa information, and the observation page (name clarifications, extensions or previous passport numbers). Blank pages are normally unnecessary. Applicants from **Libya, Iran, Iraq, Somalia, Sudan, Syria and Yemen** must submit **all passport pages**, including blank pages. Include a Special Pass or exit stamp where applicable.",
+      "all": [
+        "passport",
+        "pages"
+      ],
+      "source": "documents",
+      "family": "passport",
+      "a_bn": "সাধারণভাবে পাসপোর্টের বায়োডাটা পৃষ্ঠা, ভিসার তথ্য থাকা সব পৃষ্ঠা এবং observation পৃষ্ঠা দিতে হয়; খালি পৃষ্ঠা লাগে না। তবে **Libya, Iran, Iraq, Somalia, Sudan, Syria ও Yemen**-এর আবেদনকারীদের খালি পৃষ্ঠাসহ **সব পৃষ্ঠা** দিতে হয়। প্রযোজ্য হলে Special Pass বা exit stamp-ও দিন।"
+    },
+    {
+      "id": "passport-validity",
+      "none": ["photo"],
+      "q": "How long must my passport be valid?",
+      "a": "For a **new Student Pass**, EMGS specifies passport validity of **18 months or more**. For a one-off pass covering the course, validity of the course duration plus 12 months is recommended. For **renewal**, the supplied guidance recommends at least 12 months. The **Graduate Pass** requires at least 18 months. These are different application types; do not substitute one period for another.",
+      "all": [
+        "passport"
+      ],
+      "source": "documents",
+      "family": "passport",
+      "a_bn": "**নতুন Student Pass**-এর জন্য পাসপোর্টের মেয়াদ **অন্তত ১৮ মাস** হতে হবে। পুরো কোর্সের one-off pass-এর জন্য কোর্সের মেয়াদের সঙ্গে আরও ১২ মাস রাখার পরামর্শ দেওয়া হয়েছে। **নবায়নের** ক্ষেত্রে অন্তত ১২ মাস মেয়াদ রাখার পরামর্শ রয়েছে; **Graduate Pass**-এ অন্তত ১৮ মাস প্রয়োজন।"
+    },
+    {
+      "id": "photo",
+      "q": "What photo does EMGS accept?",
+      "a": "Use a recent professional studio colour photo on a plain white background, facing forward with closed lips and a clear, unobstructed face. No selfies, digital alterations, eyeglasses, shadows or red-eye. Religious head coverings may be worn if the face remains visible. **The supplied EMGS pages conflict on print dimensions:** the document checklist says 35 × 45 mm, while the detailed photo guide says 35 mm wide × 50 mm high. Confirm the required upload format with your institution and the [official photo checker](https://visa.educationmalaysia.gov.my/guidelines/online-photo-checker). Passing the checker does not guarantee manual acceptance.",
+      "all": [
+        "photo"
+      ],
+      "source": "photos",
+      "family": "photo",
+      "none": [
+        "refund"
+      ],
+      "a_bn": "সাদা ব্যাকগ্রাউন্ডে সাম্প্রতিক স্টুডিওতে তোলা রঙিন ছবি দিন। মুখ ও চোখ স্পষ্ট থাকতে হবে; সেলফি, এডিট, চশমা, ছায়া বা red-eye গ্রহণযোগ্য নয়। মুখ দৃশ্যমান থাকলে ধর্মীয় মাথার আবরণ চলতে পারে। **EMGS-এর দেওয়া দুই পাতায় মাপের অমিল আছে:** checklist-এ ৩৫×৪৫ মিমি, বিস্তারিত photo guide-এ প্রস্থ ৩৫×উচ্চতা ৫০ মিমি। বিশ্ববিদ্যালয় ও [অফিশিয়াল photo checker](https://visa.educationmalaysia.gov.my/guidelines/online-photo-checker) দিয়ে বর্তমান upload format নিশ্চিত করুন।"
+    },
+    {
+      "id": "offer-letter",
+      "q": "Can I apply for a Student Pass without an offer letter?",
+      "a": "A university/college acceptance or offer letter is required for the Student Pass application. For a self-created online application, receive the offer first before submitting the application. A provisional discussion with a counselor is not an offer letter.",
+      "all": [
+        "offer"
+      ],
+      "source": "documents",
+      "family": "offer-letter",
+      "none": [
+        "refund"
+      ],
+      "a_bn": "Student Pass-এর আবেদন করতে বিশ্ববিদ্যালয় বা কলেজের offer/acceptance letter লাগে। নিজে অনলাইনে আবেদন করলে জমা দেওয়ার আগে অফার লেটার নিতে হবে। কাউন্সেলরের সঙ্গে আলোচনা অফার লেটারের বিকল্প নয়।"
+    },
+    {
+      "id": "health-declaration",
+      "q": "Do I need a health declaration?",
+      "a": "A completed Health Declaration Form is required for a new Student Pass application; self-applicants upload a scanned copy. This declaration is separate from the medical screening after arrival. Use the form linked on the official EMGS required-documents page.",
+      "all": [
+        "health"
+      ],
+      "source": "documents",
+      "family": "health-declaration"
+    },
+    {
+      "id": "yellow-fever",
+      "q": "Who needs a yellow fever vaccination certificate?",
+      "a": "Yellow-fever inoculation and the vaccination booklet/card apply to arrivals from countries considered at risk of yellow-fever transmission. The card may be required at Immigration on entry. This is conditional, not a vaccination requirement for every nationality; confirm the current risk-country/travel-history rules before travel.",
+      "all": [
+        "yellow"
+      ],
+      "source": "documents",
+      "family": "yellow-fever"
+    },
+    {
+      "id": "noc",
+      "q": "Who needs a No Objection Certificate?",
+      "a": "The supplied EMGS checklist requires a **No Objection Certificate (NOC) for Sudanese students only**. The institution applies for and collects it through the Sudanese Embassy in Kuala Lumpur. Do not add this requirement to every nationality.",
+      "all": [
+        "noc"
+      ],
+      "source": "documents",
+      "family": "noc",
+      "a_bn": "সরবরাহকৃত EMGS checklist অনুযায়ী **শুধু Sudan-এর শিক্ষার্থীদের NOC** লাগে। বিশ্ববিদ্যালয় Kuala Lumpur-এর Sudanese Embassy থেকে আবেদন ও সংগ্রহ করে। এটি সব দেশের শিক্ষার্থীর জন্য নয়।"
+    },
+    {
+      "id": "loe",
+      "q": "Who needs a Letter of Eligibility?",
+      "a": "The supplied EMGS checklist requires a **Letter of Eligibility (LOE) for Iranian students only**. The institution applies at the Iranian Embassy in Kuala Lumpur; the embassy sends the LOE directly to EMGS.",
+      "all": [
+        "loe"
+      ],
+      "source": "documents",
+      "family": "loe"
+    },
+    {
+      "id": "renewal",
+      "q": "What are Student Pass renewal requirements?",
+      "a": "For renewal, provide the passport copies and validity, academic results, and attendance record requested by the institution. EMGS recommends passport validity of at least 12 months. The academic benchmark is **CGPA at least 2.0** and **attendance at least 80%**. If either is below the benchmark, the institution must provide an explanation letter. This is not an automatic approval or rejection decision; the authorities assess the application.",
+      "all": [
+        "renewal"
+      ],
+      "source": "documents",
+      "family": "renewal",
+      "none": [
+        "graduate",
+        "refund",
+        "passport"
+      ],
+      "a_bn": "Student Pass নবায়নে পাসপোর্ট, পরীক্ষার ফল ও উপস্থিতির রেকর্ড লাগে। পাসপোর্টে অন্তত ১২ মাস মেয়াদ রাখার পরামর্শ রয়েছে। মানদণ্ড হলো **CGPA অন্তত ২.০** এবং **উপস্থিতি অন্তত ৮০%**। কম হলে বিশ্ববিদ্যালয়কে ব্যাখ্যাপত্র দিতে হয়। এতে স্বয়ংক্রিয়ভাবে অনুমোদন বা প্রত্যাখ্যান হয় না; কর্তৃপক্ষ সিদ্ধান্ত নেয়।"
+    },
+    {
+      "id": "renewal-grades",
+      "q": "Can low CGPA or attendance affect my Student Pass?",
+      "a": "For Student Pass renewal, the EMGS benchmarks are **CGPA ≥ 2.0** and **attendance ≥ 80%**. If a student falls below either, the institution must submit an explanation letter. A score or percentage alone cannot determine your renewal outcome.",
+      "all": [
+        "attendance"
+      ],
+      "source": "documents",
+      "family": "renewal",
+      "none": [
+        "refund"
+      ]
+    },
+    {
+      "id": "progression",
+      "q": "What documents are needed when changing course or progressing?",
+      "a": "Variation/progression applications use the new Student Pass documents plus the relevant release/clearance/completion letter. A release letter is required when changing institution; completion evidence is relevant when moving to the next level. Confirm with both institutions which application type applies before cancelling a pass or transferring.",
+      "all": [
+        "progress"
+      ],
+      "source": "documents",
+      "family": "progression",
+      "none": [
+        "graduate",
+        "refund"
+      ]
+    },
+    {
+      "id": "sarawak",
+      "q": "Are there extra documents for Sarawak?",
+      "a": "Sarawak applications can additionally require an authorisation letter, cover letter and pre-VAL medical report where applicable. These are Sarawak-specific requirements, not the default checklist for all Malaysian campuses. Graduate Pass applications in Sarawak also have state-specific sponsor/form conditions.",
+      "all": [
+        "sarawak",
+        "document"
+      ],
+      "source": "documents",
+      "family": "sarawak",
+      "none": [
+        "refund"
+      ]
+    },
+    {
+      "id": "bond",
+      "q": "What is the personal bond?",
+      "a": "The personal bond is a nationality-based deposit lodged through the institution, which signs the bond for the student. It is refundable on completion or withdrawal if there is no breach of Malaysian immigration law. It is separate from tuition and normal processing fees. The bond form can be supplied after arrival for endorsement; errors must be corrected before the Student Pass sticker endorsement.",
+      "all": [
+        "bond"
+      ],
+      "source": "documents",
+      "family": "bond",
+      "none": [
+        "graduate"
+      ],
+      "a_bn": "Personal bond জাতীয়তা অনুযায়ী নির্ধারিত জামানত; বিশ্ববিদ্যালয় শিক্ষার্থীর পক্ষে বন্ড জমা দেয়। পড়াশোনা শেষ বা প্রত্যাহারের পর অভিবাসন আইন ভঙ্গ না করলে ফেরত পাওয়া যায়। এটি টিউশন বা processing fee নয়। বন্ড ফর্ম আগমনের পর endorsement-এর জন্যও দেওয়া যায়; sticker endorsement-এর আগে ভুল ঠিক করতে হবে।"
+    },
+    {
+      "id": "english-val",
+      "q": "Which English certificates does EMGS accept for the VAL?",
+      "a": "The supplied EMGS checklist lists MUET; IELTS/IELTS Online; TOEFL iBT/Essentials; PTE Academic/Online; Cambridge B1 Preliminary, B2 First, C1 Advanced, C2 Proficiency and Linguaskill; OET; and ELS CIEP. Upload the accepted certificate for the VAL. Without it, processing may be delayed and a full-duration Student Pass may not be issued. Admission waivers or a conditional offer do not guarantee a visa English exemption; confirm the exact program and certificate requirements with your institution.",
+      "all": [
+        "english",
+        "visa"
+      ],
+      "source": "documents",
+      "family": "english",
+      "none": [
+        "refund"
+      ],
+      "a_bn": "EMGS-এর তালিকায় MUET, IELTS/Online, TOEFL iBT/Essentials, PTE Academic/Online, Cambridge B1/B2/C1/C2 ও Linguaskill, OET এবং ELS CIEP আছে। VAL-এর আবেদনে গ্রহণযোগ্য সনদ দিন। সনদ না থাকলে processing দেরি হতে পারে বা পুরো কোর্সের মেয়াদের Student Pass নাও হতে পারে। বিশ্ববিদ্যালয়ের IELTS waiver বা conditional offer ভিসার ইংরেজি শর্ত থেকে ছাড়ের নিশ্চয়তা নয়।"
+    },
+    {
+      "id": "graduate",
+      "q": "What is the Graduate Pass?",
+      "a": "The Graduate Pass is a **12-month Social Visit Pass** for eligible international graduates who complete a Bachelor's degree or higher in Malaysia. It permits part-time work in approved sectors without employer sponsorship; it does not promise unrestricted full-time employment. Apply while the Student Pass is still valid, with a passport valid for at least 18 months, completion evidence, 12-month local health insurance, a Malaysian sponsor earning at least RM1,500/month, and the personal bond. Nationality restrictions apply. Tell me your nationality and current pass status to check the supplied eligibility rules.",
+      "all": [
+        "graduate"
+      ],
+      "source": "graduate",
+      "family": "graduate",
+      "none": [
+        "refund"
+      ],
+      "a_bn": "Graduate Pass হলো মালয়েশিয়ায় Bachelor বা উচ্চতর ডিগ্রি শেষ করা যোগ্য আন্তর্জাতিক গ্র্যাজুয়েটদের **১২ মাসের Social Visit Pass**। অনুমোদিত খাতে খণ্ডকালীন কাজ করা যায়; এটি যেকোনো পূর্ণকালীন চাকরির অনুমতি নয়। আবেদনের সময় Student Pass বৈধ, পাসপোর্টে অন্তত ১৮ মাস মেয়াদ, completion letter, ১২ মাসের স্থানীয় স্বাস্থ্যবিমা, মাসে অন্তত RM1,500 আয়ের Malaysian sponsor এবং personal bond লাগে। জাতীয়তার শর্তও আছে। আপনার জাতীয়তা ও বর্তমান pass status জানান।"
+    },
+    {
+      "id": "graduate-work",
+      "priority": 3,
+      "q": "Can I work full time on the Graduate Pass?",
+      "a": "The supplied Graduate Pass guidance permits **part-time work in approved sectors** without employer sponsorship. It does **not** grant unrestricted full-time employment. Confirm the current permitted sectors and work conditions with your institution and Immigration before accepting a job.",
+      "all": [
+        "graduate",
+        "work"
+      ],
+      "source": "graduate",
+      "family": "graduate",
+      "a_bn": "সরবরাহকৃত Graduate Pass নির্দেশনায় অনুমোদিত খাতে **part-time কাজের** সুযোগ আছে এবং employer sponsorship লাগে না। এটি unrestricted full-time চাকরির অনুমতি **নয়**। চাকরি নেওয়ার আগে বিশ্ববিদ্যালয় ও Immigration-এর কাছে বর্তমান খাত ও শর্ত নিশ্চিত করুন।"
+    },
+    {
+      "id": "graduate-documents",
+      "q": "What documents do I need for a Graduate Pass?",
+      "a": "Prepare a passport valid at least 18 months and a valid Student Pass, completion letter, passport photo (the Graduate Pass checklist specifies 217 × 280 pixels), 12-month locally issued health-insurance certificate, and the personal bond. The Malaysian sponsor supplies a certified declaration, NRIC front/back, and three months of payslips with supporting EPF/SOCSO/tax evidence. Self-employed sponsors provide SSM registration, three months of bank statements and tax evidence. Sarawak has additional resident-sponsor/BK-form conditions. Dependent applications require their passport/pass and insurance documents as well.",
+      "all": [
+        "graduate",
+        "document"
+      ],
+      "source": "graduate",
+      "family": "graduate"
+    },
+    {
+      "id": "graduate-sponsor",
+      "priority": 1,
+      "q": "What sponsor is needed for the Graduate Pass?",
+      "a": "A Malaysian citizen sponsor must earn at least **RM1,500 per month** and provide a certified declaration, NRIC copies and three months of salary records with EPF/SOCSO/tax support. Payment vouchers are not accepted as payslips and a part-time job cannot be used as the sponsor's employment evidence. A self-employed sponsor provides SSM registration, three months of bank statements and tax records. Sarawak applications require a sponsor resident in Sarawak plus the specified state form.",
+      "all": [
+        "graduate",
+        "sponsor"
+      ],
+      "source": "graduate",
+      "family": "graduate"
+    },
+    {
+      "id": "graduate-pass-status",
+      "q": "Can I apply for the Graduate Pass after my Student Pass expires?",
+      "a": "The Student Pass must be valid when applying for the Graduate Pass. Applicants already issued a Check Out Memo, or holding a Social Visit Pass while their Graduate Pass application is processed, are not eligible under the supplied guidance. Contact your institution before pass expiry; the bot cannot extend a pass or authorise an overstay.",
+      "all": [
+        "graduate",
+        "cancel"
+      ],
+      "source": "graduate",
+      "family": "graduate"
+    },
+    {
+      "id": "conduct",
+      "q": "Is a letter of good conduct required?",
+      "a": "The supplied EMGS **Graduate Pass** rules specifically require a letter of good conduct from the institution or embassy for **Chinese and Indian nationals** under the extension through **31 December 2026**, assessed case by case. This is not a universal requirement for every new Student Pass applicant. Tell me your nationality and whether you mean a Student Pass or Graduate Pass; an institution can separately ask for additional documents.",
+      "all": [
+        "conduct"
+      ],
+      "source": "graduate",
+      "family": "conduct",
+      "a_bn": "সরবরাহকৃত **Graduate Pass** নীতিতে **China ও India**-এর আবেদনকারীদের জন্য প্রতিষ্ঠান বা দূতাবাসের good conduct letter-এর শর্ত আছে; এই extension **৩১ ডিসেম্বর ২০২৬** পর্যন্ত এবং আবেদন case by case বিবেচিত হয়। এটি সব দেশের নতুন Student Pass আবেদনকারীর জন্য সার্বজনীন শর্ত নয়। আপনার জাতীয়তা ও pass-এর ধরন জানান।"
+    },
+    {
+      "id": "dependents",
+      "q": "Can I bring my spouse or dependents?",
+      "a": "Dependent eligibility depends on the main pass type, study level, nationality and Immigration approval; I cannot confirm it from 'student' alone. For a **Graduate Pass**, the supplied rules allow eligible dependents whose existing dependent passes remain valid, with passport/pass documents, health insurance for the pass period and bond arrangements. For a regular Student Pass, ask the university's international office to confirm spouse/dependent eligibility for your exact program before planning travel.",
+      "all": [
+        "dependent"
+      ],
+      "source": "graduate",
+      "family": "dependents",
+      "a_bn": "স্বামী/স্ত্রী বা dependent আনার যোগ্যতা মূল pass, শিক্ষাস্তর, জাতীয়তা ও Immigration-এর অনুমোদনের ওপর নির্ভর করে। **Graduate Pass**-এর ক্ষেত্রে যোগ্য dependent-এর বিদ্যমান pass বৈধ থাকতে হবে; পাসপোর্ট/pass, মেয়াদ অনুযায়ী স্বাস্থ্যবিমা ও bond লাগে। সাধারণ Student Pass-এর জন্য আপনার নির্দিষ্ট প্রোগ্রামে spouse/dependent-এর সুযোগ বিশ্ববিদ্যালয়ের international office থেকে নিশ্চিত করুন।"
+    },
+    {
+      "id": "sev",
+      "q": "Do I need a Single Entry Visa?",
+      "a": "A Single Entry Visa (SEV) is nationality-dependent and is separate from the eVAL and Student Pass. The supplied list includes Bangladesh, India, China, Pakistan and many other countries. Check the current Malaysian embassy/consulate requirements for your nationality after eVAL approval and before travel. Tell me your nationality to check the supplied list; do not assume every nationality has the same entry rule.",
+      "all": [
+        "sev"
+      ],
+      "source": "sev",
+      "family": "sev",
+      "none": [
+        "refund"
+      ],
+      "a_bn": "Single Entry Visa (SEV) জাতীয়তার ওপর নির্ভর করে; এটি eVAL বা Student Pass-এর একই জিনিস নয়। সরবরাহকৃত তালিকায় Bangladesh, India, China, Pakistan-সহ অনেক দেশ আছে। eVAL পাওয়ার পর ভ্রমণের আগে সংশ্লিষ্ট Malaysian embassy/consulate-এর বর্তমান নিয়ম নিশ্চিত করুন। আপনার জাতীয়তা জানালে সংরক্ষিত তালিকা মিলিয়ে দিতে পারব।"
+    },
+    {
+      "id": "medical-fee",
+      "q": "Do I pay the clinic or is screening included in my EMGS payment?",
+      "a": "Check your EMGS/institution invoice for a **Medical Screening Fee**. If that screening has already been paid through EMGS, confirm the arrangement with the appointed panel clinic before paying again. Additional tests, a different clinic or services outside that invoice may have separate charges. The supplied refund policy treats the medical-screening charge as a distinct fee; it does not establish that every clinic service is free.",
+      "all": [
+        "medical",
+        "fees"
+      ],
+      "source": "refund",
+      "family": "medical",
+      "none": [
+        "refund",
+        "emergency"
+      ],
+      "a_bn": "EMGS বা বিশ্ববিদ্যালয়ের invoice-এ **Medical Screening Fee** দেওয়া আছে কি না দেখুন। EMGS-এর মাধ্যমে ওই screening-এর টাকা দেওয়া থাকলে আবার দেওয়ার আগে নির্ধারিত panel clinic-এ নিশ্চিত করুন। অতিরিক্ত test, অন্য clinic বা invoice-এর বাইরের সেবায় আলাদা খরচ হতে পারে।"
+    },
+    {
+      "id": "medical-screening",
+      "q": "When is medical screening required?",
+      "a": "New international students must complete the required medical screening within **7 working days of arrival** in Malaysia through the prescribed arrangements. Variation/progression applicants may need a new examination if their last screening was more than 90 days earlier. Confirm the appointment and instructions with your institution. A medical result requires assessment by the authorised medical team.",
+      "all": [
+        "medical"
+      ],
+      "source": "medical",
+      "family": "medical",
+      "none": [
+        "refund",
+        "emergency",
+        "health"
+      ]
+    },
+    {
+      "id": "medical-outcome",
+      "q": "Can you decide whether I will pass medical screening?",
+      "a": "I cannot diagnose a condition or predict a fit/unfit or appeal decision from a chat message. Follow the result and any further-testing/appeal instructions from the authorised screening clinic and your institution. If you share the status wording without sensitive medical identifiers, I can explain the administrative step.",
+      "all": [
+        "emergency"
+      ],
+      "source": "medical",
+      "family": "medical"
+    },
+    {
+      "id": "part-time",
+      "q": "Can international students work part time?",
+      "a": "International students may work up to **20 hours per week only during semester breaks or holidays longer than 7 days**, in permitted sectors such as restaurants, petrol kiosks, mini-markets and hotels. A valid Student Pass and prior Immigration approval through the institution are required. This is not permission to work throughout teaching weeks, and income is not guaranteed; plan tuition and living costs without relying on a job. The Graduate Pass has separate eligibility rules.",
+      "all": [
+        "work"
+      ],
+      "source": "work",
+      "family": "part-time",
+      "none": [
+        "graduate",
+        "sponsor",
+        "emergency",
+        "degree_mode",
+        "work_details"
+      ],
+      "a_bn": "আন্তর্জাতিক শিক্ষার্থীরা **শুধু semester break বা ৭ দিনের বেশি ছুটিতে সপ্তাহে সর্বোচ্চ ২০ ঘণ্টা** অনুমোদিত খাতে—যেমন restaurant, petrol kiosk, mini-market ও hotel—কাজ করতে পারেন। বৈধ Student Pass এবং বিশ্ববিদ্যালয়ের মাধ্যমে আগাম Immigration অনুমোদন লাগে। ক্লাস চলাকালে নিয়মিত কাজের অনুমতি ধরে নেবেন না; চাকরি বা আয় নিশ্চিত নয়। টিউশন ও থাকা-খাওয়ার বাজেট চাকরির ওপর নির্ভর করে করবেন না।",
+      "phrases": [
+        "parttime",
+        "part time",
+        "students work",
+        "can work",
+        "hours per week",
+        "weekly",
+        "work while studying",
+        "work while i study",
+        "work during study"
+      ]
+    },
+    {
+      "id": "student-insurance",
+      "q": "Does a Student Pass application include health insurance?",
+      "a": "The supplied EMGS material defines an **Insurance Premium Fee** as the fee paid to EMGS to purchase insurance coverage for the student. It does not give one universal policy, premium or coverage period for every Student Pass in this snapshot. Check the current EMGS or institution invoice, insurer, policy dates and benefits before applying or paying. Graduate Pass applicants have a separate requirement for one year of locally purchased medical health insurance.",
+      "all": [
+        "insurance"
+      ],
+      "source": "refund",
+      "family": "insurance",
+      "none": [
+        "refund",
+        "graduate"
+      ],
+      "a_bn": "সরবরাহকৃত EMGS তথ্যে **Insurance Premium Fee** বলতে শিক্ষার্থীর insurance coverage কেনার জন্য EMGS-কে দেওয়া ফি বোঝানো হয়েছে। এই snapshot-এ সব Student Pass-এর জন্য একটিমাত্র policy, premium বা coverage period দেওয়া নেই। আবেদন বা payment-এর আগে বর্তমান EMGS/বিশ্ববিদ্যালয়ের invoice, insurer, policy-এর তারিখ ও সুবিধা মিলিয়ে নিন। Graduate Pass-এর জন্য এক বছরের locally purchased medical health insurance-এর আলাদা শর্ত আছে।"
+    },
+    {
+      "id": "visa-process",
+      "q": "What is the EMGS Student Pass process?",
+      "a": "Start with an offer from your institution, then submit the application, required documents and applicable fees through the institution or the permitted EMGS online route. EMGS checks documents before Immigration considers the eVAL. If your nationality requires it, obtain an SEV before travel. After arrival, complete medical screening and the institution's Student Pass endorsement/iKad steps. Additional-document requests or authority checks can change timing; the bot cannot guarantee a completion date or approval.",
+      "all": [
+        "visa",
+        "apply"
+      ],
+      "source": "documents",
+      "family": "visa-process",
+      "none": [
+        "graduate",
+        "refund",
+        "english",
+        "document",
+        "offer",
+        "passport",
+        "progress",
+        "renewal",
+        "medical",
+        "sev",
+        "dependent"
+      ],
+      "a_bn": "প্রথমে বিশ্ববিদ্যালয়ের offer নিন। তারপর প্রতিষ্ঠান বা অনুমোদিত EMGS online পদ্ধতিতে কাগজপত্র ও প্রযোজ্য ফি জমা দিন। EMGS কাগজ যাচাই করে; Immigration eVAL বিবেচনা করে। আপনার জাতীয়তায় প্রয়োজন হলে ভ্রমণের আগে SEV নিন। মালয়েশিয়ায় পৌঁছে medical screening এবং প্রতিষ্ঠানের মাধ্যমে Student Pass endorsement/iKad-এর ধাপ শেষ করুন। অতিরিক্ত কাগজ বা যাচাইয়ের কারণে সময় বদলাতে পারে; অনুমোদন বা নির্দিষ্ট তারিখ নিশ্চিত করা যায় না।"
+    },
+    {
+      "id": "tracking",
+      "q": "How do I check my EMGS status?",
+      "a": "I cannot access your application or check live EMGS status. Use the [official EMGS application tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). Share the displayed status wording or percentage, without your passport number, and I can explain the available guidance. A percentage alone is not proof of approval or a travel authorisation.",
+      "all": [
+        "visa",
+        "track"
+      ],
+      "source": "tracker",
+      "family": "status",
+      "status": "partial",
+      "a_bn": "আমি আপনার আবেদন বা live EMGS status দেখতে পারি না। [অফিশিয়াল EMGS tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S) ব্যবহার করুন। পাসপোর্ট নম্বর না দিয়ে সেখানে দেখানো status-এর লেখা বা শতাংশ জানালে নির্দেশনা ব্যাখ্যা করতে পারব। শুধু শতাংশ অনুমোদন বা ভ্রমণের অনুমতি নয়।"
+    },
+    {
+      "id": "additional-documents",
+      "q": "What does pending additional documents mean?",
+      "a": "'Pending additional documents' means the application needs the specific information listed in the portal request. Read that request and ask your institution to submit the correct, complete documents. This wording alone does not mean a visa rejection. A percentage such as 15% cannot identify which document is missing. I cannot see your live file or promise when the percentage will change.",
+      "all": [
+        "additional"
+      ],
+      "source": "tracker",
+      "family": "status",
+      "status": "partial",
+      "a_bn": "“Pending additional documents” মানে portal-এ চাওয়া অতিরিক্ত তথ্য বা কাগজ বাকি আছে। নির্দিষ্ট request পড়ে বিশ্ববিদ্যালয়ের মাধ্যমে সঠিক কাগজ দিন। এই লেখা দেখালেই visa reject হয়েছে বলা যায় না। ১৫% দেখে কোন কাগজ বাকি তা জানা যায় না; আমি আপনার live file বা পরিবর্তনের সময় দেখতে পারি না।"
+    },
+    {
+      "id": "status-explanation",
+      "q": "What does an EMGS percentage mean?",
+      "a": "Use the status wording alongside the percentage in the [official EMGS tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). I cannot check your live application. The supplied EMGS document does not define a reliable percentage-to-stage table, so I will not infer approval, rejection or a completion date from the number. Paste the displayed wording, such as 'pending additional documents', for a more useful explanation.",
+      "all": [
+        "visa",
+        "status"
+      ],
+      "source": "tracker",
+      "family": "status",
+      "status": "partial",
+      "none": [
+        "outcome"
+      ],
+      "a_bn": "[অফিশিয়াল EMGS tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S)-এ শতাংশের পাশে থাকা status-এর লেখাও দেখুন। আমি live আবেদন দেখতে পারি না। সরবরাহকৃত EMGS নথিতে সব শতাংশের নির্ভরযোগ্য stage mapping নেই, তাই সংখ্যা দেখে অনুমোদন, প্রত্যাখ্যান বা শেষ হওয়ার তারিখ বলব না। পাশে লেখা status জানালে আরও নির্দিষ্ট ব্যাখ্যা দিতে পারব।"
+    },
+    {
+      "id": "refund-overview",
+      "q": "How do EMGS refunds work?",
+      "a": "Refunds depend on the fee component, who created the application, and its processing/endorsement/cancellation stage. A student can request a refund for their own self-created, paid website application; institutions request refunds for applications they created. Processing and eVAL fees are generally non-refundable after invoicing, subject to the self-created/unapproved exception. Medical, insurance, iKad, courier and unused Immigration charges have separate rules. Tell me the component, application creator, status and relevant dates; I cannot calculate a refund from the total paid alone.",
+      "all": [
+        "refund"
+      ],
+      "source": "refund",
+      "family": "refund",
+      "a_bn": "EMGS refund নির্ভর করে কোন ফি, কে আবেদন করেছে এবং আবেদন/endorsement/cancellation-এর অবস্থার ওপর। নিজের তৈরি ও paid website application-এর refund শিক্ষার্থী চাইতে পারেন; প্রতিষ্ঠানের তৈরি আবেদনে প্রতিষ্ঠানকে করতে হয়। Processing/eVAL fee সাধারণত invoice হওয়ার পর ফেরতযোগ্য নয়, নির্দিষ্ট ব্যতিক্রম আছে। Medical, insurance, iKad, courier ও unused Immigration fee-এর নিয়ম আলাদা। কোন ফি, কে আবেদন করেছে, status ও তারিখ জানান।"
+    },
+    {
+      "id": "refund-self",
+      "q": "Can I get a refund before the institution approves my application?",
+      "a": "For a self-created and paid online application that the institution has not yet approved, or has rejected, the supplied policy permits a full refund request within **90 days of application creation/payment**. Once approved/invoiced, the component-specific refund rules apply. Applications created by an institution must be handled by that institution; do not assume the self-created exception applies.",
+      "all": [
+        "refund",
+        "not_approved"
+      ],
+      "source": "refund",
+      "family": "refund",
+      "priority": 3
+    },
+    {
+      "id": "refund-processing",
+      "q": "Are processing and eVAL fees refundable?",
+      "a": "The first-year processing fee and eVAL processing fee are generally non-refundable once invoiced, except the policy's self-created, institution-unapproved/rejected application exception. If a multi-year application is approved for a shorter duration, unused subsequent-year processing fees may be refundable; request within **90 days of the application closing/processing ending**, as applicable. Processing delay alone is not a refund entitlement.",
+      "all": [
+        "refund",
+        "processing"
+      ],
+      "source": "refund",
+      "family": "refund"
+    },
+    {
+      "id": "refund-medical",
+      "q": "Can I refund the medical screening fee?",
+      "a": "The medical-screening component can be refundable if the eVAL is cancelled and screening has not been used. A request after eVAL expiry can incur a **RM50 administration fee** and is subject to the policy's **90-day** limit. Screening already performed is not an unused fee. The exact route/deadline depends on your cancellation and application dates.",
+      "all": [
+        "refund",
+        "medical"
+      ],
+      "source": "refund",
+      "family": "refund-medical"
+    },
+    {
+      "id": "refund-insurance",
+      "q": "Can I refund the insurance fee?",
+      "a": "Insurance refund depends on pass/eVAL cancellation, whether cover started and whether there were claims; a pro-rata refund may apply. Requests after eVAL expiry can incur a **RM100 administration fee**, subject to the stated **90-day** limit. Provide the policy, cancellation date and claims history to the institution/insurer for the actual calculation.",
+      "all": [
+        "refund",
+        "insurance"
+      ],
+      "source": "refund",
+      "family": "refund-insurance"
+    },
+    {
+      "id": "refund-ikad",
+      "q": "Is the iKad fee refundable?",
+      "a": "The iKad fee can be refundable if the Student Pass has not been endorsed. Requests after eVAL expiry can incur a **RM10 administration fee** and are subject to the **90-day** limit in the policy. It is not automatically refundable after endorsement.",
+      "all": [
+        "refund",
+        "ikad"
+      ],
+      "source": "refund",
+      "family": "refund-ikad"
+    },
+    {
+      "id": "refund-courier",
+      "q": "Can I refund the courier fee?",
+      "a": "The unused iKad courier fee can be refunded when the courier service has not been used. A **RM2 administration fee** can apply after eVAL expiry, with the policy's **90-day** request limit.",
+      "all": [
+        "refund",
+        "courier"
+      ],
+      "source": "refund",
+      "family": "refund-courier"
+    },
+    {
+      "id": "refund-delay",
+      "q": "Is a delay enough to get my processing fee back?",
+      "a": "Processing delay alone does not make the processing fee refundable. The application stage, unused fee components and any specific exception determine eligibility. Ask your institution to review the refund policy against the actual dates; the bot cannot promise reimbursement.",
+      "all": [
+        "refund",
+        "delay_only"
+      ],
+      "source": "refund",
+      "family": "refund"
+    },
+    {
+      "id": "refund-deadlines",
+      "q": "What are the EMGS refund deadlines?",
+      "a": "The applicable window depends on the event: certain applications closed for non-submission/institution closure allow **6 months**; endorsement-related requests/rejections and unused charges commonly have **90-day** windows from the specified notification or processing-end event. Self-created unapproved applications use their own 90-day creation/payment rule. If EMGS asks the institution for additional refund documents, they must be supplied within **60 days**, or the request closes. Share the exact fee, closure reason and dates before choosing a deadline.",
+      "all": [
+        "refund",
+        "deadline"
+      ],
+      "source": "refund",
+      "family": "refund",
+      "priority": -0.5
+    },
+    {
+      "id": "refund-payment",
+      "q": "How are EMGS refunds paid?",
+      "a": "Self-applicant refunds must go to the student's own bank account, not another person's account. International telegraphic transfers are paid in USD or the destination currency; incoming amounts are in MYR. Credit-card payments can be refunded by bank transfer under the policy rather than necessarily back to the same card. Institution-created applications are refunded to the institution's account. Provide the account details through the official refund process, not in chat.",
+      "all": [
+        "refund",
+        "bank"
+      ],
+      "source": "refund",
+      "family": "refund-payment"
+    },
+    {
+      "id": "refund-tax",
+      "q": "Are convenience fees and service tax refundable?",
+      "a": "Convenience fees and service tax are non-refundable under the supplied policy. A refund of an eligible unused component does not imply a refund of these charges.",
+      "all": [
+        "refund"
+      ],
+      "source": "refund",
+      "family": "refund-tax",
+      "phrases": [
+        "convenience fee",
+        "service tax"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "status-32",
+      "none": ["refund", "cancel"],
+      "q": "What does EMGS 32% mean?",
+      "all": [
+        "visa"
+      ],
+      "phrases": [
+        "32%",
+        "32 percent"
+      ],
+      "family": "status",
+      "source": "status_faq",
+      "priority": 4,
+      "status": "partial",
+      "a": "The local FAQ describes **32%** as the stage when the file is with Malaysian Immigration for eVAL consideration. This is **not final visa approval**, and I cannot check your live application or promise a completion date. Read the wording in the [official EMGS tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S); if documents or action are requested, follow that instruction through your institution. Share the displayed wording to clarify the next step.",
+      "a_bn": "স্থানীয় FAQ অনুযায়ী **৩২%** পর্যায়ে আবেদন eVAL বিবেচনার জন্য Malaysian Immigration-এর কাছে থাকে। এটি **চূড়ান্ত visa approval নয়**। আমি live আবেদন বা শেষ হওয়ার তারিখ দেখতে পারি না। [অফিশিয়াল EMGS tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S)-এ লেখা নির্দেশনা দেখুন এবং কাগজ চাইলে বিশ্ববিদ্যালয়ের মাধ্যমে দিন।"
+    }
+  ],
+  "tables": {
+    "personal_bond": {
+      "200": [
+        "Singapore"
+      ],
+      "300": [
+        "Thailand"
+      ],
+      "500": [
+        "Indonesia"
+      ],
+      "750": [
+        "Bangladesh",
+        "Philippines",
+        "India",
+        "Myanmar",
+        "Nepal",
+        "Pakistan",
+        "Sri Lanka"
+      ],
+      "1000": [
+        "Japan",
+        "South Korea",
+        "Macao",
+        "Hong Kong"
+      ],
+      "1500": [
+        "Saudi Arabia",
+        "Australia",
+        "British C.I",
+        "Brunei",
+        "China",
+        "Europe",
+        "Iran",
+        "Iraq",
+        "Portugal",
+        "Taiwan",
+        "Tunisia",
+        "Vietnam"
+      ],
+      "2000": [
+        "Canada",
+        "USA",
+        "Colombia",
+        "Angola",
+        "Burkina Faso",
+        "Burundi",
+        "Cameroon",
+        "Central African Republic",
+        "Republic of the Congo",
+        "Democratic Republic of Congo",
+        "Cote d'Ivoire",
+        "Djibouti",
+        "Equatorial Guinea",
+        "Eritrea",
+        "Ethiopia",
+        "Guinea-Bissau",
+        "Ghana",
+        "Liberia",
+        "Mali",
+        "Mozambique",
+        "Niger",
+        "Nigeria",
+        "Rwanda",
+        "Western Sahara"
+      ]
+    },
+    "personal_bond_default": 1500,
+    "graduate_countries": [
+      "Australia",
+      "Bahrain",
+      "Brunei",
+      "Cambodia",
+      "Canada",
+      "China",
+      "Denmark",
+      "Finland",
+      "France",
+      "Germany",
+      "India",
+      "Indonesia",
+      "Japan",
+      "Kuwait",
+      "Laos",
+      "Myanmar",
+      "Netherlands",
+      "New Zealand",
+      "Norway",
+      "Oman",
+      "Philippines",
+      "Qatar",
+      "Saudi Arabia",
+      "Singapore",
+      "South Korea",
+      "Sweden",
+      "Switzerland",
+      "Thailand",
+      "United Arab Emirates",
+      "United Kingdom",
+      "USA",
+      "Vietnam"
+    ],
+    "graduate_conditional_until": {
+      "China": "2026-12-31",
+      "India": "2026-12-31"
+    },
+    "institution_fees_myr": {
+      "inti": 3483,
+      "apu": 3350,
+      "segi": 3860,
+      "cityu": 3000,
+      "cyberjaya": 4390,
+      "mahsa": 3850,
+      "bac": 4800,
+      "taylors": 2968,
+      "ucsi": 3700,
+      "lincoln": 3500,
+      "unikl": 2900,
+      "uow": 4240,
+      "icms": 3000,
+      "amu": 3000,
+      "alfa": 3500
+    },
+    "institution_fee_notes": {
+      "bac": "RM3,000 first payment is recorded; RM4,800 is the listed total, not an additional charge.",
+      "ucsi": "The supplied table lists RM3,750 for engineering instead of RM3,700."
+    },
+    "sev_countries": [
+      "Afghanistan",
+      "Albania",
+      "Algeria",
+      "Angola",
+      "Argentina",
+      "Armenia",
+      "Austria",
+      "Azerbaijan",
+      "Bahrain",
+      "Bangladesh",
+      "Belarus",
+      "Belgium",
+      "Benin",
+      "Bhutan",
+      "Bolivia",
+      "Bosnia and Herzegovina",
+      "Brazil",
+      "Bulgaria",
+      "Burkina Faso",
+      "Burundi",
+      "Cambodia",
+      "Cameroon",
+      "Cape Verde",
+      "Central African Republic",
+      "Chad",
+      "Chile",
+      "China",
+      "Colombia",
+      "Comoros",
+      "Congo - Brazzaville",
+      "Congo - Kinshasa",
+      "Costa Rica",
+      "Côte d’Ivoire",
+      "Croatia",
+      "Cuba",
+      "Czech Republic",
+      "Denmark",
+      "Djibouti",
+      "Ecuador",
+      "Egypt",
+      "El Salvador",
+      "Equatorial Guinea",
+      "Eritrea",
+      "Estonia",
+      "Ethiopia",
+      "Finland",
+      "France",
+      "Gabon",
+      "Georgia",
+      "Germany",
+      "Ghana",
+      "Greece",
+      "Guatemala",
+      "Guinea",
+      "Guinea-Bissau",
+      "Haiti",
+      "Honduras",
+      "Hong Kong SAR China",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Iraq",
+      "Ireland",
+      "Italy",
+      "Japan",
+      "Jordan",
+      "Kazakhstan",
+      "Kosovo",
+      "Kuwait",
+      "Kyrgyzstan",
+      "Laos",
+      "Latvia",
+      "Lebanon",
+      "Liberia",
+      "Libya",
+      "Lithuania",
+      "Luxembourg",
+      "Macau SAR China",
+      "Macedonia",
+      "Madagascar",
+      "Mali",
+      "Mauritania",
+      "Mexico",
+      "Moldova",
+      "Monaco",
+      "Mongolia",
+      "Morocco",
+      "Mozambique",
+      "Myanmar (Burma)",
+      "Nepal",
+      "Nicaragua",
+      "Niger",
+      "Nigeria",
+      "Norway",
+      "Oman",
+      "Pakistan",
+      "Palestinian Territories",
+      "Panama",
+      "Paraguay",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Qatar",
+      "Romania",
+      "Russia",
+      "Rwanda",
+      "São Tomé and Príncipe",
+      "Saudi Arabia",
+      "Senegal",
+      "Serbia",
+      "Slovakia",
+      "Slovenia",
+      "Somalia",
+      "South Korea",
+      "South Sudan",
+      "Spain",
+      "Sri Lanka",
+      "Sudan",
+      "Suriname",
+      "Sweden",
+      "Syria",
+      "Taiwan",
+      "Tajikistan",
+      "Thailand",
+      "Timor-Leste",
+      "Togo",
+      "Tunisia",
+      "Turkey",
+      "Turkmenistan",
+      "Ukraine",
+      "United Arab Emirates",
+      "Uruguay",
+      "Uzbekistan",
+      "Vatican City",
+      "Venezuela",
+      "Vietnam",
+      "Western Sahara",
+      "Yemen",
+      "Zimbabwe"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+/* Visible study guidance, using the site's existing fonts and colour palette. */
+.study-content { max-width: 1200px; margin: 28px auto; padding: 24px; background: #fff; color: #334155; border: 1px solid #e2e8f0; border-radius: 12px; line-height: 1.75; }
+.study-content h2, .study-content h3 { color: #0b1b3d; margin: 0 0 12px; line-height: 1.35; }
+.study-content h2 { font-size: 1.5rem; }
+.study-content h3 { font-size: 1.15rem; margin-top: 22px; }
+.study-content p, .study-content ul, .study-content ol { margin: 12px 0; }
+.study-content ul, .study-content ol { padding-left: 24px; }
+.study-content a, .study-breadcrumb a { color: #0057ad; text-decoration: underline; text-underline-offset: 3px; }
+.study-breadcrumb { font-size: .9rem; padding: 12px 0; color: #475569; display: flex; flex-wrap: wrap; gap: 8px; }
+.study-directory { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; list-style: none; padding: 0 !important; }
+.study-directory li { min-width: 0; }
+.study-directory small { display: block; }
+.study-faq { border-top: 1px solid #e2e8f0; padding: 14px 0; }
+.study-faq summary { cursor: pointer; font-weight: 600; color: #0b1b3d; }
+.study-faq p { margin-bottom: 0; }
+.fee-source-note { white-space: normal; overflow-wrap: anywhere; background: var(--theme-light, #f0f8ff); border-left: 4px solid var(--theme-color, #0066cc); padding: 15px; margin: 15px 0 25px; line-height: 1.6; }
+.fee-source-note p { margin: 10px 0; }
+.fee-source-links { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0; }
+.fee-source-links a { color: #0057ad; text-decoration: underline; }
+.fee-category-title { font: inherit; margin: 0; }
+.fee-category-title .accordion { margin: 15px 0 0; }
+header:not(.main-header) .fee-header-subtitle { color: #f8fafc; }
+/* Tables stay readable without JavaScript; enhanced accordions start collapsed. */
+body[data-fees-prerendered] .panel { display: block; }
+body[data-fees-prerendered].fees-enhanced .panel { display: none; }
+body[data-fees-prerendered].fees-enhanced .panel.open { display: block; }
+.fee-search-status { color: #475569; padding: 8px 0; }
+.resources-card { text-decoration: none; color: inherit; }
+.study-content .table-responsive { overflow-x: auto; }
+.study-content table { border-collapse: collapse; width: 100%; }
+.study-content th, .study-content td { text-align: left; padding: 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+.study-eyebrow { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #475569; }
+/* Keep the shared dark navigation text readable over university hero images. */
+body[data-university-guide] .main-header { background: #fff; }
+.study-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+.study-actions a { display: inline-flex; align-items: center; padding: 9px 14px; border: 1px solid #cbd5e1; border-radius: 6px; font-weight: 600; line-height: 1.5; }
+.study-content .study-actions a:first-child, .study-content a.study-primary-link { background: #0b1b3d; color: #fff; border-radius: 6px; padding: 10px 16px; display: inline-block; }
+.study-content a:focus-visible, .study-content summary:focus-visible, .study-content [tabindex]:focus-visible { outline: 3px solid #0057ad; outline-offset: 4px; }
+.study-section-links { columns: 2; column-gap: 28px; }
+.study-section-links li { break-inside: avoid; margin-bottom: 8px; }
+.study-planning-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.study-link-list { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.study-content caption { text-align: left; font-weight: 600; padding: 8px 12px; color: #0b1b3d; }
+.study-content .table-responsive { max-width: 100%; }
+.university-intent { overflow-wrap: anywhere; }
+.study-anchor, .university-intent [id], .panel[id], #rankings { scroll-margin-top: 110px; }
+@media (max-width: 768px) {
+    .study-directory { grid-template-columns: 1fr; }
+    .study-content { padding: 18px; }
+    .study-content h2 { font-size: 1.3rem; }
+    .study-section-links { columns: 1; }
+    .study-planning-grid { grid-template-columns: 1fr; gap: 0; }
+    .study-actions a { flex: 1 1 180px; }
+    .study-decision { width: calc(100% - 32px); margin: 20px 16px; }
+}

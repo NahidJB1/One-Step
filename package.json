@@ -1,0 +1,31 @@
+{
+  "name": "one-step",
+  "version": "1.0.0",
+  "description": "> **To Reach Dream** – A comprehensive portal for local and international students to discover university programs, explore campuses, and view detailed tuition fee structures across Malaysia's top universities.",
+  "main": "add_grad_pass_faqs.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:seo": "node scripts/build_site_seo.js",
+    "check:seo": "node scripts/build_site_seo.js --check",
+    "test:seo": "node tests/seo_pages_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NahidJB1/One-Step.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NahidJB1/One-Step/issues"
+  },
+  "homepage": "https://github.com/NahidJB1/One-Step#readme",
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

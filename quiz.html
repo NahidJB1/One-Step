@@ -1,8 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019" crossorigin="anonymous"></script>
   <meta name="description" content="One Step MY provides expert guidance for students seeking world-class education in Malaysia. Access quiz resources today.">
-  <link rel="canonical" href="https://www.onestepmy.com/quiz.html">
+  <meta name="keywords" content="Smart, Program, Recommender, study in Malaysia, Malaysia university, international students Malaysia, One Step MY, study abroad">
+  <link rel="canonical" href="https://www.onestepmy.com/quiz">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Program Recommender | One Step MY</title>
@@ -11,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/quiz.css">
+<link rel="stylesheet" href="/assets/css/mobile.css">
 </head>
 <body>
 
@@ -138,8 +141,8 @@
           
           <div class="quiz-actions" style="justify-content: center; gap: 15px; margin-top: 40px; flex-wrap:wrap;">
             <button class="btn btn-back" onclick="location.reload()"><i class="fas fa-redo"></i> Retake Quiz</button>
-            <a href="compare.html" class="btn btn-primary"><i class="fas fa-balance-scale"></i> Compare These</a>
-            <a href="application.html" class="btn btn-accent"><i class="fas fa-paper-plane"></i> Apply Now</a>
+            <a href="compare" class="btn btn-primary"><i class="fas fa-balance-scale"></i> Compare These</a>
+            <a href="application" class="btn btn-accent"><i class="fas fa-paper-plane"></i> Apply Now</a>
           </div>
         </div>
 
@@ -204,7 +207,7 @@
                     id: uni.slug,
                     name: uni.name,
                     img: uni.img,
-                    link: `Universities/${uni.slug}-details.html`,
+                    link: `/Universities/${uni.slug}-details`,
                     fields: uni.fields || [],
                     budget: uni.budget || 'any',
                     location: uni.locationCode || 'any',
@@ -280,4 +283,7 @@
   </script>
 </body>
 </html>
+
+
+
 

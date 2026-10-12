@@ -1,0 +1,982 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-12",
+  "editions": {
+    "world": 2027,
+    "asia": 2026,
+    "malaysia": 2027
+  },
+  "malaysia_basis": {
+    "edition": 2027,
+    "ranking": "QS World University Rankings",
+    "country": "Malaysia",
+    "sources": [
+      "world_table",
+      "corrections"
+    ],
+    "method": "Position among institutions listed by QS under Malaysia in the 2027 World table. Same world-rank bands share a national position range; exact ties share a position. Overseas parent institutions are excluded.",
+    "institutions": [
+      {
+        "name": "Universiti Malaya (UM)",
+        "rank": "56",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Sains Malaysia (USM)",
+        "rank": "=128",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Kebangsaan Malaysia (UKM)",
+        "rank": "130",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Putra Malaysia (UPM)",
+        "rank": "138",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Teknologi Malaysia",
+        "rank": "=158",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Teknologi PETRONAS (UTP)",
+        "rank": "=261",
+        "sector": "Private not for Profit"
+      },
+      {
+        "name": "Taylor's University",
+        "rank": "272",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "UCSI University",
+        "rank": "282",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Sunway University",
+        "rank": "=354",
+        "sector": "Private not for Profit"
+      },
+      {
+        "name": "INTI International University",
+        "rank": "=406",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Universiti Tenaga Nasional (UNITEN)",
+        "rank": "=518",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Asia Pacific University of Technology and Innovation (APU) Malaysia",
+        "rank": "=528",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Universiti Utara Malaysia (UUM)",
+        "rank": "=540",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Teknologi MARA - UiTM",
+        "rank": "=549",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)",
+        "rank": "=588",
+        "sector": "Public"
+      },
+      {
+        "name": "Management and Science University",
+        "rank": "=608",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "International Islamic University Malaysia (IIUM)",
+        "rank": "=691",
+        "sector": "Public"
+      },
+      {
+        "name": "Lincoln University College",
+        "rank": "701-710",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "SEGi UNIVERSITY",
+        "rank": "701-710",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Universiti Malaysia Terengganu (UMT)",
+        "rank": "701-710",
+        "sector": "Public"
+      },
+      {
+        "name": "Multimedia University (MMU)",
+        "rank": "771-780",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Universiti Tunku Abdul Rahman (UTAR)",
+        "rank": "801-850",
+        "sector": "Private not for Profit"
+      },
+      {
+        "name": "Universiti Pendidikan Sultan Idris (UPSI)",
+        "rank": "851-900",
+        "sector": "Public"
+      },
+      {
+        "name": "IMU University",
+        "rank": "951-1000",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "University of Cyberjaya",
+        "rank": "951-1000",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Universiti Malaysia Perlis",
+        "rank": "1001-1200",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Malaysia Sabah (UMS)",
+        "rank": "1001-1200",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Malaysia Sarawak (UNIMAS)",
+        "rank": "1001-1200",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Tun Hussein Onn  Malaysia (UTHM)",
+        "rank": "1001-1200",
+        "sector": "Public"
+      },
+      {
+        "name": "UNIVERSITI TEKNIKAL MALAYSIA MELAKA",
+        "rank": "1201-1400",
+        "sector": "Public"
+      },
+      {
+        "name": "Universiti Kuala Lumpur (UniKL)",
+        "rank": "1401+",
+        "sector": "Private for Profit"
+      },
+      {
+        "name": "Universiti Malaysia Kelantan",
+        "rank": "1401+",
+        "sector": "Public"
+      }
+    ]
+  },
+  "sources": {
+    "world": {
+      "title": "QS World University Rankings 2027",
+      "url": "https://www.topuniversities.com/world-university-rankings"
+    },
+    "world_table": {
+      "title": "QS World University Rankings 2027 - official results spreadsheet (v1.1)",
+      "url": "https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx"
+    },
+    "corrections": {
+      "title": "QS World University Rankings 2027 - release corrections",
+      "url": "https://www.topuniversities.com/rankings-release-summaries/world-university-rankings-2027-release-summary"
+    },
+    "asia": {
+      "title": "QS Asia University Rankings 2026 - Malaysia",
+      "url": "https://www.topuniversities.com/asia-university-rankings?countries=my"
+    },
+    "stars": {
+      "title": "QS Stars rating system",
+      "url": "https://www.topuniversities.com/qs-stars"
+    },
+    "apu_asia": {
+      "title": "APU 2026 brochure - QS Asia 2026 results",
+      "url": "https://publicwebsite-media.apu.edu.my/assets/2026-03/2026_MI%26P-v2.pdf?VersionId=4RNqC_DnwZDX.FLeMFPEUbDqV9PS2XT8"
+    },
+    "segi_asia": {
+      "title": "SEGi University - QS Asia 2026 result",
+      "url": "https://www.segi.edu.my/segi-university-celebrates-100-place-rise-in-qs-asia-rankings/"
+    },
+    "mmu_asia": {
+      "title": "MMU - QS Asia 2026 result",
+      "url": "https://www.mmu.edu.my/2025/11/depeche-buzz-mmu-achieves-highest-standing-in-its-history-in-qs-asia-university-rankings-2026/"
+    },
+    "cyberjaya_asia": {
+      "title": "University of Cyberjaya - 2026 prospectus",
+      "url": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/04/LOW-RESISR_BROCHURE_17APR26.pdf"
+    },
+    "lincoln_asia": {
+      "title": "Lincoln University College - QS Asia 2026 result",
+      "url": "https://www.lincoln.edu.my/"
+    },
+    "utem_asia": {
+      "title": "UTeM - QS Asia 2026 result",
+      "url": "https://www.utem.edu.my/ms/allcategories-ms-my/laman/reputasi-quacquarelli-symonds-qs-rankings-2026.html"
+    },
+    "yearbook": {
+      "title": "QS Yearbook 2026, Asia table page 99 (hosted copy)",
+      "url": "https://www.scribd.com/document/1051975906/QS-Yearbook-2026"
+    },
+    "apu_profile": {
+      "title": "Asia Pacific University of Technology & Innovation (APU) - QS profile",
+      "url": "https://www.topuniversities.com/universities/asia-pacific-university-technology-innovation-apu-malaysia"
+    },
+    "cityu_profile": {
+      "title": "City University Malaysia - QS profile",
+      "url": "https://www.topuniversities.com/universities/city-university-malaysia"
+    },
+    "cyberjaya_profile": {
+      "title": "University of Cyberjaya - QS profile",
+      "url": "https://www.topuniversities.com/universities/university-cyberjaya"
+    },
+    "help_profile": {
+      "title": "HELP University - QS profile",
+      "url": "https://www.topuniversities.com/universities/help-university"
+    },
+    "iium_profile": {
+      "title": "International Islamic University Malaysia (IIUM) - QS profile",
+      "url": "https://www.topuniversities.com/universities/international-islamic-university-malaysia-iium"
+    },
+    "inti_profile": {
+      "title": "INTI International University - QS profile",
+      "url": "https://www.topuniversities.com/universities/inti-international-university"
+    },
+    "klust_profile": {
+      "title": "Kuala Lumpur University of Science & Technology (KLUST) - QS profile",
+      "url": "https://www.topuniversities.com/universities/kuala-lumpur-university-science-technology-formerly-infrastructure-university-kuala-lumpur"
+    },
+    "limkokwing_profile": {
+      "title": "Limkokwing University of Creative Technology - QS profile",
+      "url": "https://www.topuniversities.com/universities/limkokwing-university-creative-technology"
+    },
+    "lincoln_profile": {
+      "title": "Lincoln University College - QS profile",
+      "url": "https://www.topuniversities.com/universities/lincoln-university-college"
+    },
+    "mmu_profile": {
+      "title": "Multimedia University (MMU) - QS profile",
+      "url": "https://www.topuniversities.com/universities/multimedia-university-mmu"
+    },
+    "segi_profile": {
+      "title": "SEGi University - QS profile",
+      "url": "https://www.topuniversities.com/universities/segi-university"
+    },
+    "taylors_profile": {
+      "title": "Taylor's University - QS profile",
+      "url": "https://www.topuniversities.com/universities/taylors-university"
+    },
+    "ucsi_profile": {
+      "title": "UCSI University - QS profile",
+      "url": "https://www.topuniversities.com/universities/ucsi-university"
+    },
+    "unikl_profile": {
+      "title": "Universiti Kuala Lumpur (UniKL) - QS profile",
+      "url": "https://www.topuniversities.com/universities/universiti-kuala-lumpur-unikl"
+    },
+    "unirazak_profile": {
+      "title": "Universiti Tun Abdul Razak (UNIRAZAK) - QS profile",
+      "url": "https://www.topuniversities.com/universities/universiti-tun-abdul-razak-unirazak"
+    },
+    "uow_profile": {
+      "title": "University of Wollongong Malaysia (UOW Malaysia) - QS profile",
+      "url": "https://www.topuniversities.com/universities/university-wollongong"
+    },
+    "upm_profile": {
+      "title": "Universiti Putra Malaysia (UPM) - QS profile",
+      "url": "https://www.topuniversities.com/universities/universiti-putra-malaysia-upm"
+    },
+    "utem_profile": {
+      "title": "Universiti Teknikal Malaysia Melaka (UTeM) - QS profile",
+      "url": "https://www.topuniversities.com/universities/universiti-teknikal-malaysia-melaka"
+    },
+    "utm_profile": {
+      "title": "Universiti Teknologi Malaysia (UTM) - QS profile",
+      "url": "https://www.topuniversities.com/universities/universiti-teknologi-malaysia-utm"
+    },
+    "um_profile": {
+      "title": "Universiti Malaya (UM) - QS profile",
+      "url": "https://www.topuniversities.com/universities/universiti-malaya-um"
+    }
+  },
+  "universities": {
+    "alfa": {
+      "name": "Alfa University College",
+      "short_name": "Alfa University College",
+      "page": "Universities/alfa-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      }
+    },
+    "amu": {
+      "name": "Asia Metropolitan University (AMU)",
+      "short_name": "Asia Metropolitan University (AMU)",
+      "page": "Universities/amu-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      }
+    },
+    "apu": {
+      "name": "Asia Pacific University of Technology & Innovation (APU)",
+      "short_name": "APU",
+      "page": "Universities/apu-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "=528",
+        "scope": "institution",
+        "sources": [
+          "apu_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "147",
+        "sources": [
+          "apu_asia"
+        ]
+      },
+      "qs_name": "Asia Pacific University of Technology and Innovation (APU) Malaysia"
+    },
+    "bac": {
+      "name": "BAC Education Group",
+      "short_name": "BAC Education Group",
+      "page": "Universities/bac-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      },
+      "note": "BAC Education Group includes different colleges and partner degree pathways. A partner or awarding university ranking is not a ranking for BAC as a group."
+    },
+    "binary": {
+      "name": "Binary University",
+      "short_name": "Binary University",
+      "page": "Universities/binary-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      }
+    },
+    "cityu": {
+      "name": "City University Malaysia",
+      "short_name": "City University Malaysia",
+      "page": "Universities/cityu-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "=558",
+        "sources": [
+          "cityu_profile"
+        ]
+      },
+      "note": "This entry is City University Malaysia in Petaling Jaya. City University of Hong Kong and City University of Macau are different institutions."
+    },
+    "cyberjaya": {
+      "name": "University of Cyberjaya",
+      "short_name": "University of Cyberjaya",
+      "page": "Universities/cyberjaya-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "951-1000",
+        "scope": "institution",
+        "sources": [
+          "cyberjaya_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "434",
+        "sources": [
+          "cyberjaya_asia"
+        ]
+      },
+      "qs_name": "University of Cyberjaya"
+    },
+    "cybernetics": {
+      "name": "Cybernetics International College of Technology (KTAC)",
+      "short_name": "Cybernetics (KTAC)",
+      "page": "Universities/cybernetics-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      }
+    },
+    "genovasi": {
+      "name": "Genovasi University College",
+      "short_name": "Genovasi University College",
+      "page": "Universities/genovasi-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      }
+    },
+    "help": {
+      "name": "HELP University",
+      "short_name": "HELP University",
+      "page": "Universities/help-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "761-770",
+        "sources": [
+          "help_profile"
+        ]
+      }
+    },
+    "icms": {
+      "name": "ICMS",
+      "short_name": "ICMS",
+      "page": "Universities/icms-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      }
+    },
+    "iium": {
+      "name": "International Islamic University Malaysia (IIUM)",
+      "short_name": "IIUM",
+      "page": "Universities/iium-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "=691",
+        "scope": "institution",
+        "sources": [
+          "iium_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "=142",
+        "sources": [
+          "asia"
+        ]
+      },
+      "qs_name": "International Islamic University Malaysia (IIUM)"
+    },
+    "inti": {
+      "name": "INTI International University",
+      "short_name": "INTI",
+      "page": "Universities/inti-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "=406",
+        "scope": "institution",
+        "sources": [
+          "inti_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "=122",
+        "sources": [
+          "inti_profile"
+        ]
+      },
+      "qs_name": "INTI International University"
+    },
+    "kings": {
+      "name": "King's University College",
+      "short_name": "King's University College",
+      "page": "Universities/kings-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      },
+      "note": "This entry is King's University College in Malaysia. A ranking for King's College London does not apply to it."
+    },
+    "klust": {
+      "name": "Kuala Lumpur University of Science & Technology (KLUST)",
+      "short_name": "KLUST (IUKL)",
+      "page": "Universities/klust-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "contributor",
+        "sources": [
+          "klust_profile"
+        ]
+      },
+      "note": "QS lists KLUST under its current name and former name, Infrastructure University Kuala Lumpur (IUKL). Its QS Contributor status for Asia 2026 does not award a numerical rank."
+    },
+    "limkokwing": {
+      "name": "Limkokwing University of Creative Technology",
+      "short_name": "Limkokwing",
+      "page": "Universities/limkokwing-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "951-1000",
+        "sources": [
+          "limkokwing_profile"
+        ]
+      }
+    },
+    "lincoln": {
+      "name": "Lincoln University College",
+      "short_name": "Lincoln University College",
+      "page": "Universities/lincoln-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "701-710",
+        "scope": "institution",
+        "sources": [
+          "lincoln_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "196",
+        "sources": [
+          "lincoln_asia"
+        ]
+      },
+      "qs_name": "Lincoln University College"
+    },
+    "mmu": {
+      "name": "Multimedia University (MMU)",
+      "short_name": "MMU",
+      "page": "Universities/mmu-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "771-780",
+        "scope": "institution",
+        "sources": [
+          "mmu_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "148",
+        "sources": [
+          "mmu_asia"
+        ]
+      },
+      "qs_name": "Multimedia University (MMU)"
+    },
+    "segi": {
+      "name": "SEGi University",
+      "short_name": "SEGi University",
+      "page": "Universities/segi-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "701-710",
+        "scope": "institution",
+        "sources": [
+          "segi_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "350",
+        "sources": [
+          "segi_asia"
+        ]
+      },
+      "qs_name": "SEGi UNIVERSITY"
+    },
+    "taylors": {
+      "name": "Taylor's University",
+      "short_name": "Taylor's University",
+      "page": "Universities/taylors-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "272",
+        "scope": "institution",
+        "sources": [
+          "taylors_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "27",
+        "sources": [
+          "asia"
+        ]
+      },
+      "qs_name": "Taylor's University"
+    },
+    "ucmi": {
+      "name": "University College MAIWP International (UCMI)",
+      "short_name": "University College MAIWP International (UCMI)",
+      "page": "Universities/ucmi-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      }
+    },
+    "ucsi": {
+      "name": "UCSI University",
+      "short_name": "UCSI University",
+      "page": "Universities/ucsi-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "282",
+        "scope": "institution",
+        "sources": [
+          "ucsi_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "30",
+        "sources": [
+          "asia"
+        ]
+      },
+      "qs_name": "UCSI University"
+    },
+    "umw": {
+      "name": "International University of Malaya-Wales (IUMW)",
+      "short_name": "UM-Wales (IUMW)",
+      "page": "Universities/umw-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      },
+      "note": "University of Malaya-Wales (formerly IUMW) is a separate institution from Universiti Malaya (UM). The QS rank of UM must not be presented as the rank of UM-Wales."
+    },
+    "unikl": {
+      "name": "Universiti Kuala Lumpur (UniKL)",
+      "short_name": "UniKL",
+      "page": "Universities/unikl-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "1401+",
+        "scope": "institution",
+        "sources": [
+          "unikl_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "=396",
+        "sources": [
+          "yearbook"
+        ]
+      },
+      "qs_name": "Universiti Kuala Lumpur (UniKL)"
+    },
+    "unirazak": {
+      "name": "Universiti Tun Abdul Razak (UNIRAZAK)",
+      "short_name": "UNIRAZAK",
+      "page": "Universities/unirazak-details.html",
+      "world": {
+        "year": 2027,
+        "status": "not_listed",
+        "sources": [
+          "world_table",
+          "corrections"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      },
+      "note": "The QS profile displays a historical South-Eastern Asia rank of =139 for 2024. That is a different region and edition from the QS Asia 2026 table."
+    },
+    "uow": {
+      "name": "University of Wollongong Malaysia (UOW Malaysia)",
+      "short_name": "UOW Malaysia",
+      "page": "Universities/uow-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "195",
+        "scope": "parent",
+        "sources": [
+          "uow_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "unverified",
+        "sources": [
+          "asia"
+        ]
+      },
+      "qs_name": "University of Wollongong",
+      "note": "The QS World figure shown here belongs to the University of Wollongong in Australia, the parent institution. It is not a separate rank for UOW Malaysia and does not give UOW Malaysia a national position."
+    },
+    "upm": {
+      "name": "Universiti Putra Malaysia (UPM)",
+      "short_name": "UPM",
+      "page": "Universities/upm-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "138",
+        "scope": "institution",
+        "sources": [
+          "upm_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "22",
+        "sources": [
+          "asia"
+        ]
+      },
+      "qs_name": "Universiti Putra Malaysia (UPM)"
+    },
+    "utem": {
+      "name": "Universiti Teknikal Malaysia Melaka (UTeM)",
+      "short_name": "UTeM",
+      "page": "Universities/utem-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "1201-1400",
+        "scope": "institution",
+        "sources": [
+          "utem_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "=262",
+        "sources": [
+          "utem_asia"
+        ]
+      },
+      "qs_name": "UNIVERSITI TEKNIKAL MALAYSIA MELAKA"
+    },
+    "utm": {
+      "name": "Universiti Teknologi Malaysia (UTM)",
+      "short_name": "UTM",
+      "page": "Universities/utm-details.html",
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "=158",
+        "scope": "institution",
+        "sources": [
+          "utm_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "25",
+        "sources": [
+          "asia"
+        ]
+      },
+      "qs_name": "Universiti Teknologi Malaysia"
+    },
+    "um": {
+      "name": "Universiti Malaya (UM)",
+      "short_name": "Universiti Malaya (UM)",
+      "page": null,
+      "world": {
+        "year": 2027,
+        "status": "ranked",
+        "rank": "56",
+        "scope": "institution",
+        "sources": [
+          "um_profile",
+          "world_table"
+        ]
+      },
+      "asia": {
+        "year": 2026,
+        "status": "ranked",
+        "rank": "15",
+        "sources": [
+          "asia"
+        ]
+      },
+      "qs_name": "Universiti Malaya (UM)"
+    }
+  }
+}

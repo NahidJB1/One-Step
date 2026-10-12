@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-06",
+  "status": "Prepared locally; not deployed",
+  "files": [
+    {
+      "path": "Fees_Chart/alfa-fees.html",
+      "sha256": "984B92EF4E57B43D3DF62EC7FAAD3309814CBD5CC9839E67A2773F44106C346B",
+      "bytes": 34670
+    },
+    {
+      "path": "Universities/alfa-details.html",
+      "sha256": "A7730334D6EE7B1AFC2C0EF1AA3D01E70B4C43C386C714FCAA15DD3B02BF9EE9",
+      "bytes": 25324
+    },
+    {
+      "path": "Fees_Chart/taylors-fees.html",
+      "sha256": "2AD4FC56274A2EB793BBC155AD0CF4341079287D76A7FA099AC0EA7BFEE696DC",
+      "bytes": 26123
+    },
+    {
+      "path": "Universities/taylors-details.html",
+      "sha256": "F69547D6871853CC927C0A27D83CA90FDB523D5B0A1584BA8DBF3EB8E8E8B843",
+      "bytes": 25821
+    },
+    {
+      "path": "Fees_Chart/segi-fees.html",
+      "sha256": "EE6D99E7CFF9756D4DA811BB621816B8E8F2371023F550A9A5A76A9F8FFCF8A2",
+      "bytes": 25762
+    },
+    {
+      "path": "Universities/segi-details.html",
+      "sha256": "EA72AF924F1B802D823D04D6B83DA1042A4CA6E603C366E4FA2F9FC067D087FE",
+      "bytes": 25400
+    },
+    {
+      "path": "Fees_Chart/cityu-fees.html",
+      "sha256": "03405DF6402F643CF93C452F892B1004BF7C00B1A3B3E16A01F718A79F7D31D4",
+      "bytes": 43398
+    },
+    {
+      "path": "Universities/cityu-details.html",
+      "sha256": "FCCBD7820812980273859BA32C57054560216EFC5D86F17AE887CFAAA9E9DB5F",
+      "bytes": 25052
+    },
+    {
+      "path": "Fees_Chart/inti-fees.html",
+      "sha256": "BF0213A6A31277A51A4F1E4BDCB72B2B5FF01A949045C4B0D9C55DDB1CB09B51",
+      "bytes": 28859
+    },
+    {
+      "path": "Universities/inti-details.html",
+      "sha256": "A4C50EACC0A1A63959FC60CCC8DEA01F7E507A0DDCDE8E5C14736C6D3615F0E4",
+      "bytes": 25925
+    }
+  ]
+}

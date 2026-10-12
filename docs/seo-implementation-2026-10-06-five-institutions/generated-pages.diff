@@ -1,0 +1,752 @@
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\alfa-fees.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\alfa-fees.html"
+index 165e200..1e1c86f 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\alfa-fees.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\alfa-fees.html"
+@@ -51,10 +51,11 @@
+ <nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="/Universities/alfa-details">Alfa University College</a> <span aria-hidden="true">/</span> <a href="/Fees_Chart/alfa-fees">Tuition fees</a></nav><section class="study-content university-intent" id="fees-guide" aria-labelledby="fees-guide-title">
+ <p class="study-eyebrow">International tuition &amp; programme costs</p>
+ <h2 id="fees-guide-title">Plan your ALFA University College study budget</h2>
+-<p>Use the ALFA University College international-student schedule for Malaysia. Foundation, diploma, bachelor&#39;s and postgraduate sections use different fee columns; no single validity year is confirmed across every table here.</p>
++<p>This chart retains ALFA University College international-student fees by qualification. Schedule validity has not been confirmed for your intake; keep each section’s original currency, fee period and initial-charge notes.</p>
++<p class="fee-source-note">The current issuing edition and intake validity have not been confirmed. The displayed amounts are retained from the stored schedule; obtain the applicable written fee schedule before accepting an offer or paying.</p>
+ <nav class="study-actions" aria-label="Fee page sections"><a href="#fee-tables">Browse fee chart</a><a href="#payment-planning">Initial payments &amp; other costs</a><a href="#faq">Fee questions &amp; documents</a></nav>
+ <details class="study-faq"><summary>Choose a programme or campus section</summary><ul class="study-section-links"><li><a href="#fee-category-0">FOUNDATION PROGRAMS</a></li><li><a href="#fee-category-1">DIPLOMA PROGRAMS</a></li><li><a href="#fee-category-2">BACHELOR PROGRAMS</a></li><li><a href="#fee-category-3">GRADUATE CERTIFICATE &amp; DIPLOMA</a></li><li><a href="#fee-category-4">MASTER PROGRAMS</a></li><li><a href="#fee-category-5">DOCTORATE PROGRAMMES</a></li></ul></details>
+-<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/alfa-details">Explore ALFA University College courses, campuses and admissions guidance</a>.</p>
++<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/alfa-details#courses-intakes">Explore ALFA University College courses, campuses and admissions guidance</a>.</p>
+ </section>
+ <!-- seo:fee-guide:end -->
+ <!-- seo:fee-table-anchor:start -->
+@@ -69,10 +70,18 @@
+ 
+   <div id="dynamicFeesContainer" data-source="fees_data.json">
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-0">FOUNDATION PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-0"><div class="table-responsive"><table aria-label="FOUNDATION PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Tuition Fees</th><th scope="col">Resource Fee/Sem</th><th scope="col">Total</th></tr></thead><tbody><tr><td>F1</td><td>Foundation in Business</td><td>1 Year</td><td>RM 14,000</td><td>RM 700</td><td>RM 14,700</td></tr>
++<div class="panel" id="fee-category-0"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> ALFA University College.<br><strong>Section:</strong> FOUNDATION PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Not confirmed for the intended intake.<br><strong>Fee basis:</strong> Read tuition, resource and annual/total columns separately; initial charges remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://alfa.edu.my/international-students/">ALFA official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="FOUNDATION PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Tuition Fees</th><th scope="col">Resource Fee/Sem</th><th scope="col">Total</th></tr></thead><tbody><tr><td>F1</td><td>Foundation in Business</td><td>1 Year</td><td>RM 14,000</td><td>RM 700</td><td>RM 14,700</td></tr>
+ <tr><td>F2</td><td>Foundation in Arts &amp; Design</td><td>1 Year</td><td>RM 14,000</td><td>RM 700</td><td>RM 14,700</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Initial Fees (International Student):<br>EMGS and VISA Processing Fee: RM 3,500<br>Registration Fee: RM 1,000<br>International Student Fee: RM 1,500<br>Total Initial Fees Payment Upon Application: RM 6,000<br><br>Remarks:<br>New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL. All payments are non-refundable.</p></div><p class="fee-source-links"><a href="/assets/documents/fees/alfa-fees.pdf" download>Download FOUNDATION PROGRAMS (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-1">DIPLOMA PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-1"><div class="table-responsive"><table aria-label="DIPLOMA PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>D1</td><td>Diploma in Accountancy</td><td>2.5 Years</td><td>RM 10,500</td><td>RM 1,000</td><td>RM 9,500</td><td>RM 9,500</td><td>RM 30,500</td></tr>
++<div class="panel" id="fee-category-1"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> ALFA University College.<br><strong>Section:</strong> DIPLOMA PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Not confirmed for the intended intake.<br><strong>Fee basis:</strong> Read tuition, resource and annual/total columns separately; initial charges remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://alfa.edu.my/international-students/">ALFA official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="DIPLOMA PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>D1</td><td>Diploma in Accountancy</td><td>2.5 Years</td><td>RM 10,500</td><td>RM 1,000</td><td>RM 9,500</td><td>RM 9,500</td><td>RM 30,500</td></tr>
+ <tr><td>D2</td><td>Diploma in Business Administration</td><td>2.5 Years</td><td>RM 10,500</td><td>RM 1,000</td><td>RM 9,500</td><td>RM 9,500</td><td>RM 30,500</td></tr>
+ <tr><td>D3</td><td>Diploma in E-Business</td><td>2.5 Years</td><td>RM 10,500</td><td>RM 1,000</td><td>RM 9,500</td><td>RM 9,500</td><td>RM 30,500</td></tr>
+ <tr><td>D4</td><td>Diploma in Information Technology</td><td>2.5 Years</td><td>RM 11,500</td><td>RM 1,000</td><td>RM 10,500</td><td>RM 10,500</td><td>RM 33,500</td></tr>
+@@ -93,7 +102,11 @@
+ <tr><td>D19</td><td>Diploma in Health Care Management</td><td>3 Years</td><td>RM 15,000</td><td>RM 1,000</td><td>RM 13,000</td><td>RM 13,000</td><td>RM 42,000</td></tr>
+ <tr><td>D20</td><td>Diploma in Pharmacy</td><td>3 Years</td><td>RM 15,500</td><td>RM 1,000</td><td>RM 15,500</td><td>RM 15,500</td><td>RM 47,500</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Initial Fees (International Student):<br>EMGS and VISA Processing Fee: RM 3,500<br>Registration Fee: RM 1,000<br>International Student Fee: RM 1,500<br>Total Initial Fees Payment Upon Application: RM 6,000<br><br>Remarks:<br>New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.</p></div><p class="fee-source-links"><a href="/assets/documents/fees/alfa-fees.pdf" download>Download DIPLOMA PROGRAMS (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-2">BACHELOR PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-2"><div class="table-responsive"><table aria-label="BACHELOR PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>B1</td><td>BA (HONOURS) Business Administration</td><td>3 Years</td><td>RM 13,500</td><td>RM 2,000</td><td>RM 12,500</td><td>RM 12,500</td><td>RM 40,500</td></tr>
++<div class="panel" id="fee-category-2"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> ALFA University College.<br><strong>Section:</strong> BACHELOR PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Not confirmed for the intended intake.<br><strong>Fee basis:</strong> Read tuition, resource and annual/total columns separately; initial charges remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://alfa.edu.my/international-students/">ALFA official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="BACHELOR PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>B1</td><td>BA (HONOURS) Business Administration</td><td>3 Years</td><td>RM 13,500</td><td>RM 2,000</td><td>RM 12,500</td><td>RM 12,500</td><td>RM 40,500</td></tr>
+ <tr><td>B2</td><td>BA (HONOURS) Business Administration (ODL)</td><td>3 Years</td><td>RM 10,000</td><td></td><td>RM 11,000</td><td>RM 11,000</td><td>RM 32,000</td></tr>
+ <tr><td>B3</td><td>Bachelor of Early Childhood Education (HONOURS)</td><td>3 Years</td><td>RM 13,500</td><td>RM 2,000</td><td>RM 12,500</td><td>RM 12,500</td><td>RM 40,500</td></tr>
+ <tr><td>B4</td><td>Bachelor of E-Business (HONOURS)</td><td>3 Years</td><td>RM 13,500</td><td>RM 2,000</td><td>RM 12,500</td><td>RM 12,500</td><td>RM 40,500</td></tr>
+@@ -106,11 +119,19 @@
+ <tr><td>B11</td><td>Bachelor of Law Enforcement</td><td>3 Years</td><td>RM 13,500</td><td>RM 2,000</td><td>RM 13,500</td><td>RM 13,500</td><td>RM 42,500</td></tr>
+ <tr><td>B12</td><td>Bachelor in Computer Science (Cyber Security &amp; Networks) (HONOURS)</td><td>3 Years</td><td>RM 16,000</td><td>RM 2,000</td><td>RM 15,000</td><td>RM 15,000</td><td>RM 48,000</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Initial Fees (International Student):<br>EMGS and VISA Processing Fee: RM 3,500<br>Registration Fee: RM 1,000<br>International Student Fee: RM 1,500<br>Total Initial Fees Payment Upon Application: RM 6,000</p></div><p class="fee-source-links"><a href="/assets/documents/fees/alfa-fees.pdf" download>Download BACHELOR PROGRAMS (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-3">GRADUATE CERTIFICATE &amp; DIPLOMA</button></h2>
+-<div class="panel" id="fee-category-3"><div class="table-responsive"><table aria-label="GRADUATE CERTIFICATE &amp; DIPLOMA"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Total</th></tr></thead><tbody><tr><td>GC1</td><td>Graduate Certificate in English Proficiency</td><td>1 Year</td><td>RM 14,500</td><td>RM 2,000</td><td></td><td>RM 16,500</td></tr>
++<div class="panel" id="fee-category-3"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> ALFA University College.<br><strong>Section:</strong> GRADUATE CERTIFICATE &amp; DIPLOMA.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Not confirmed for the intended intake.<br><strong>Fee basis:</strong> Read tuition, resource and annual/total columns separately; initial charges remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://alfa.edu.my/international-students/">ALFA official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="GRADUATE CERTIFICATE &amp; DIPLOMA"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Total</th></tr></thead><tbody><tr><td>GC1</td><td>Graduate Certificate in English Proficiency</td><td>1 Year</td><td>RM 14,500</td><td>RM 2,000</td><td></td><td>RM 16,500</td></tr>
+ <tr><td>GD1</td><td>Graduate Diploma in Teaching as Second Language (TSL)</td><td>1.5 Year</td><td>RM 13,500</td><td>RM 2,000</td><td>RM 12,500</td><td>RM 28,000</td></tr>
+ <tr><td>GD2</td><td>Graduate Diploma in Business Management</td><td>1.5 Year</td><td>RM 10,000</td><td>RM 2,000</td><td>RM 11,500</td><td>RM 23,500</td></tr></tbody></table></div><p class="fee-source-links"><a href="/assets/documents/fees/alfa-fees.pdf" download>Download GRADUATE CERTIFICATE &amp; DIPLOMA (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-4">MASTER PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-4"><div class="table-responsive"><table aria-label="MASTER PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>M1</td><td>Master of Business Administration</td><td>1 Years &amp; 4 Months</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td></td><td>RM 27,500</td></tr>
++<div class="panel" id="fee-category-4"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> ALFA University College.<br><strong>Section:</strong> MASTER PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Not confirmed for the intended intake.<br><strong>Fee basis:</strong> Read tuition, resource and annual/total columns separately; initial charges remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://alfa.edu.my/international-students/">ALFA official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="MASTER PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>M1</td><td>Master of Business Administration</td><td>1 Years &amp; 4 Months</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td></td><td>RM 27,500</td></tr>
+ <tr><td>M2</td><td>Master of Business Administration (International Business)</td><td>1 Years &amp; 3 Months</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td></td><td>RM 27,500</td></tr>
+ <tr><td>M3</td><td>Master of Business Administration (ODL)</td><td>1 Years &amp; 4 Months</td><td>RM 13,500</td><td></td><td>RM 12,500</td><td></td><td>RM 26,000</td></tr>
+ <tr><td>M4</td><td>Master of Project Management</td><td>1 Years &amp; 3 Months</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 13,500</td><td></td><td>RM 28,500</td></tr>
+@@ -125,7 +146,11 @@
+ <tr><td>M13</td><td>Master of Business Administration in Oil &amp; Gas</td><td>1 Years &amp; 3 Months</td><td>RM 16,000</td><td>RM 1,500</td><td>RM 16,000</td><td></td><td>RM 33,500</td></tr>
+ <tr><td>M14</td><td>Master of Music (By Research)</td><td>2 Years</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td>RM 12,500</td><td>RM 40,000</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>INITIAL FEES (INTERNATIONAL STUDENT)<br>EMGS and VISA Processing Fee: RM 3,500<br>Registration Fee: RM 1,000<br>International Student Fee: RM 1,500<br>Total Initial Fees Payment Upon Application: RM 6,000</p></div><p class="fee-source-links"><a href="/assets/documents/fees/alfa-fees.pdf" download>Download MASTER PROGRAMS (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-5">DOCTORATE PROGRAMMES</button></h2>
+-<div class="panel" id="fee-category-5"><div class="table-responsive"><table aria-label="DOCTORATE PROGRAMMES"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>P1</td><td>Doctor of Philosophy in Management (By Research)</td><td>3 Years</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td>RM 12,000</td><td>RM 39,500</td></tr>
++<div class="panel" id="fee-category-5"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> ALFA University College.<br><strong>Section:</strong> DOCTORATE PROGRAMMES.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Not confirmed for the intended intake.<br><strong>Fee basis:</strong> Read tuition, resource and annual/total columns separately; initial charges remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://alfa.edu.my/international-students/">ALFA official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="DOCTORATE PROGRAMMES"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Year 1</th><th scope="col">Resource Fee</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Total</th></tr></thead><tbody><tr><td>P1</td><td>Doctor of Philosophy in Management (By Research)</td><td>3 Years</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td>RM 12,000</td><td>RM 39,500</td></tr>
+ <tr><td>P2</td><td>Doctor of Philosophy in Social Sciences (By Research)</td><td>3 Years</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td>RM 12,000</td><td>RM 39,500</td></tr>
+ <tr><td>P3</td><td>Doctor of Philosophy in Information Technology (By Research)</td><td>3 Years</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td>RM 12,000</td><td>RM 39,500</td></tr>
+ <tr><td>P4</td><td>Doctor of Philosophy in Education (By Research)</td><td>3 Years</td><td>RM 13,500</td><td>RM 1,500</td><td>RM 12,500</td><td>RM 12,000</td><td>RM 39,500</td></tr>
+@@ -179,7 +204,7 @@
+ <!-- seo:fee-planning:start -->
+ <section class="study-content university-intent" id="payment-planning" aria-labelledby="payment-planning-title">
+ <h2 id="payment-planning-title">Understand your ALFA University College fee breakdown</h2>
+-<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>Foundation rows distinguish tuition and a resource-fee column. Other sections use year-by-year amounts and a total. Initial international-student charges appear in the notes; do not assume they are included in every row total.</p></div><div><h3>Initial payments and additional charges</h3><p>Read the initial-fee notes for the chosen qualification alongside the first-year column. Ask the university to reconcile any amount due on application with the amount due after eVAL approval, so the same charge is not counted twice.</p></div></div>
++<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>A Year 1 amount is not the full programme cost. The foundation section uses Resource Fee/Sem, while other sections have Resource Fee and annual columns. Do not create a semester instalment by dividing a programme total.</p></div><div><h3>Initial payments and additional charges</h3><p>Resource and initial international-student charges have separate labels. Request a written payment schedule showing which charges are already included and when each payment is due, so the same charge is not counted twice.</p></div></div>
+ <h3>Budgeting from Bangladesh</h3><p>Use the currency and payment period printed in your programme's schedule. Keep accommodation, travel and living expenses separate from tuition. A BDT estimate needs a dated exchange rate and may differ from the amount your bank charges.</p>
+ <p>Compare scholarship or adjusted-fee columns only after your eligibility is confirmed. Your written offer should identify the award, covered charges and renewal conditions.</p>
+ <ul class="study-link-list"><li><a href="/Universities/alfa-details#scholarships">Scholarship eligibility and conditions</a></li><li><a href="/Articles/cost-of-living-malaysia-international-students">Malaysia living-cost guide</a></li><li><a href="/Articles/visas-and-requirements-malaysia">Student visa process and cost stages</a></li></ul>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\alfa-details.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\alfa-details.html"
+index 7d711b9..8060173 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\alfa-details.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\alfa-details.html"
+@@ -72,7 +72,7 @@
+ <!-- seo:university-decision:start -->
+ <section class="container study-content university-intent study-decision" aria-labelledby="study-decision-title">
+ <p class="study-eyebrow">University guide for Bangladeshi applicants</p>
+-<h2 id="study-decision-title">Study at ALFA University College</h2><p>Explore ALFA University College in Subang Jaya, Malaysia. Start with your intended qualification and course, then check the study mode, intake and programme accreditation rather than relying on a general university ranking claim.</p>
++<h2 id="study-decision-title">Study at ALFA University College</h2><p>Explore ALFA University College in Subang Jaya. Match the exact qualification and study mode to the official programme source before comparing entry requirements, intakes or accreditation.</p>
+ <nav class="study-actions" aria-label="University guide sections"><a href="#courses-intakes">Courses &amp; intakes</a><a href="#bangladesh-entry">Entry planning</a><a href="#rankings">Ranking evidence</a><a href="/Fees_Chart/alfa-fees">International fee chart</a></nav>
+ </section>
+ <!-- seo:university-decision:end -->
+@@ -90,8 +90,8 @@
+         
+         <div id="overview" class="tab-content active" data-aos="fade-up" data-aos-delay="200">
+           <h2 class="section-head">About the University</h2>
+-          <p>Alfa University College (AUC) is a premier boutique institution known for its hands-on approach to creative arts and education. Originally established as a design academy, it has grown into a full-fledged university college that emphasizes close mentorship and industry-relevant skills.</p>
+-          <p>It is particularly famous for its <strong>Early Childhood Education (ECE)</strong> program (linked with REAL Kids) and its award-winning <strong>School of Visual Communication</strong>.</p>
++          <p>ALFA University College is based in Subang Jaya, Selangor. Compare the exact qualification, study mode and programme source before choosing a course.</p>
++          <p><a href="https://alfa.edu.my/contact-us/">ALFA’s official contact page</a> lists its current address. Use the Malaysian Qualifications Register to check the individual qualification rather than treating institutional marketing claims as accreditation.</p>
+ 
+           <div class="divider"></div>
+ 
+@@ -137,11 +137,11 @@
+ 
+         <div id="location" class="tab-content">
+           <h2 class="section-head">The Boutique Campus</h2>
+-          <p>Located in USJ 1, Subang Jaya, the campus is designed to foster creativity. Unlike massive universities, Alfa offers a close-knit environment where lecturers know every student by name. The location is easily accessible and surrounded by student conveniences.</p>
++          <p>ALFA’s official contact page lists 13, Persiaran Kewajipan, USJ 1, Subang Jaya. Confirm the programme’s teaching location before arranging accommodation or travel.</p>
+           
+           <div class="map-container" data-aos="zoom-in">
+             <iframe 
+-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy" 
++              title="ALFA University College in Subang Jaya" src="https://maps.google.com/maps?q=ALFA%20University%20College%2C%2013%20Persiaran%20Kewajipan%2C%20USJ%201%2C%2047600%20Subang%20Jaya%2C%20Selangor&amp;output=embed" 
+               width="100%" 
+               height="400" 
+               style="border:0;" 
+@@ -259,8 +259,9 @@
+ <section class="container study-content university-intent" id="fees-and-scholarships">
+ <nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="/Universities/alfa-details">Alfa University College</a></nav>
+ <h2 id="courses-intakes">ALFA University College courses and intake planning</h2>
+-<ul><li>Foundation and diploma pathways: compare the qualification level and progression route for your intended degree.</li><li>Bachelor&#39;s programmes: use ALFA&#39;s current catalogue to confirm the exact course, study mode and duration.</li><li>Postgraduate study: distinguish coursework, research and ODL options before comparing admission requirements.</li></ul>
+-<details class="study-faq"><summary>Programme examples in the stored fee schedule</summary><p>These examples retain the stored schedule's wording. They are not a complete course catalogue or confirmation of the next open intake. Use the official programme sources below to confirm current availability.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Programme examples"><table><caption>Selected programme examples; schedule information only</caption><thead><tr><th scope="col">Programme</th><th scope="col">Schedule section</th><th scope="col">Duration</th><th scope="col">Intake in schedule</th><th scope="col">Tuition</th></tr></thead><tbody><tr><th scope="row">Foundation in Business</th><td>FOUNDATION PROGRAMS</td><td>1 Year</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/alfa-fees#fee-category-0">View relevant fee section</a></td></tr><tr><th scope="row">Diploma in Accountancy</th><td>DIPLOMA PROGRAMS</td><td>2.5 Years</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/alfa-fees#fee-category-1">View relevant fee section</a></td></tr><tr><th scope="row">BA (HONOURS) Business Administration</th><td>BACHELOR PROGRAMS</td><td>3 Years</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/alfa-fees#fee-category-2">View relevant fee section</a></td></tr></tbody></table></div></details>
++<ul><li>ALFA is a University College. Use the named qualification and study mode when checking programme information; an accreditation record does not confirm that applications are open.</li></ul>
++<h3>Courses and accreditation: check the exact qualification</h3><p>The official programme page and Malaysian Qualifications Register serve different purposes. Confirm the next available intake and any entry conditions for your programme; do not treat an old printed registration month as proof that accreditation has ended.</p>
++<p>On a small screen, scroll the table horizontally to view every column.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Verified programme references"><table style="min-width:760px"><caption>Selected official programme references; checked 6 October 2026</caption><thead><tr><th scope="col">Qualification</th><th scope="col">Institution and location</th><th scope="col">Study information</th><th scope="col">Official evidence</th><th scope="col">Fee section</th></tr></thead><tbody><tr><th scope="row">Diploma in Business Administration</th><td>ALFA University College<br>Subang Jaya, Selangor</td><td>Full-time; 2.5 years. Published intake months: January, May, September. Availability requires confirmation.</td><td><a href="https://alfa.edu.my/diploma-in-business-administration/">Official programme information</a></td><td><a href="/Fees_Chart/alfa-fees#fee-category-1">Diploma fee section</a></td></tr></tbody></table></div>
+ <h3>Choosing your intake</h3><p>ALFA publishes intake and study-mode information on individual programme pages. Use the calendar for your selected programme; do not apply a diploma intake calendar to every postgraduate or research course.</p>
+ <h3 id="bangladesh-entry">Entry planning for Bangladeshi students</h3><p>Ask for an assessment of your Bangladesh SSC/HSC or previous diploma against the exact programme. Check subject requirements, English evidence and whether a foundation or diploma pathway is appropriate before choosing a start date.</p>
+ <p>Prepare your qualification certificates, subject transcripts and any English-test results for assessment. Confirm the exact programme, campus, study mode, academic conditions and international application deadline together. This guide does not establish a universal HSC grade or IELTS waiver.</p>
+@@ -269,7 +270,7 @@
+ <h3>Tuition and study budget</h3><p><a href="/Fees_Chart/alfa-fees">View ALFA University College international tuition fees and payment notes</a>. The separate fee chart explains the published payment periods and additional charges for financial planning.</p>
+ <h3>Questions about studying at ALFA University College</h3><details class="study-faq"><summary>Where is ALFA University College in Malaysia?</summary><p>ALFA&#39;s official programme website lists its address at 13, Persiaran Kewajipan, USJ 1, Subang Jaya, Selangor. Confirm your programme&#39;s teaching location before arranging accommodation.</p></details>
+ <details class="study-faq"><summary>How do I check an ALFA programme&#39;s accreditation?</summary><p>Match the exact qualification title and programme reference with the Malaysian Qualifications Register or the relevant provisional accreditation record. An institution-level ranking does not replace programme accreditation.</p></details>
+-<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://alfa.edu.my/category/programmes/">ALFA official programmes and campus address</a></li><li><a href="https://alfa.edu.my/international-students/">ALFA international admissions</a></li><li><a href="https://www.mqa.gov.my/mqr/english/eakrKPList.cfm?IDAkrIPTS=211">ALFA Malaysian Qualifications Register</a></li></ul>
++<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://alfa.edu.my/contact-us/">ALFA official current contact address</a></li><li><a href="https://alfa.edu.my/diploma-in-business-administration/">ALFA Diploma in Business Administration</a></li><li><a href="https://alfa.edu.my/category/programmes/">ALFA official programmes and campus address</a></li><li><a href="https://alfa.edu.my/international-students/">ALFA international admissions</a></li><li><a href="https://www.mqa.gov.my/mqr/english/eakrKPList.cfm?IDAkrIPTS=211">ALFA Malaysian Qualifications Register</a></li></ul>
+ <h3>Compare your study options</h3><ul class="study-link-list"><li><a href="/Articles/cheapest-universities">Compare affordable Malaysian study options</a></li><li><a href="/Articles/popular-programs-of-study-malaysia">Explore Malaysian courses and pathways</a></li></ul>
+ <p><a class="study-primary-link" href="/contact">Discuss my course, campus and intake</a></p>
+ </section>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\taylors-fees.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\taylors-fees.html"
+index a1da8e9..7a5ff0f 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\taylors-fees.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\taylors-fees.html"
+@@ -51,10 +51,11 @@
+ <nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="/Universities/taylors-details">Taylor&#39;s University</a> <span aria-hidden="true">/</span> <a href="/Fees_Chart/taylors-fees">Tuition fees</a></nav><section class="study-content university-intent" id="fees-guide" aria-labelledby="fees-guide-title">
+ <p class="study-eyebrow">International tuition &amp; programme costs</p>
+ <h2 id="fees-guide-title">Plan your Taylor&#39;s University study budget</h2>
+-<p>The chart groups stored Taylor&#39;s schedules by qualification. Confirm whether a foundation or pre-university offer belongs to Taylor&#39;s College or the university, and use the matching international schedule.</p>
++<p>These stored Taylor’s schedules are grouped by qualification. Match the institution and programme in your offer: Taylor’s University and Taylor’s College publish separate information. The edition of the stored amounts has not been confirmed for your intake.</p>
++<p class="fee-source-note">The official programme schedules include edition-specific payment and tax information. The stored amounts have not yet been reconciled against those editions and are retained unchanged. Select the institution, international category and programme before comparing totals.</p>
+ <nav class="study-actions" aria-label="Fee page sections"><a href="#fee-tables">Browse fee chart</a><a href="#payment-planning">Initial payments &amp; other costs</a><a href="#faq">Fee questions &amp; documents</a></nav>
+ <details class="study-faq"><summary>Choose a programme or campus section</summary><ul class="study-section-links"><li><a href="#fee-category-0">FOUNDATION PROGRAMS</a></li><li><a href="#fee-category-1">DIPLOMA PROGRAMS</a></li><li><a href="#fee-category-2">BACHELOR PROGRAMS</a></li><li><a href="#fee-category-3">MASTERS PROGRAMS</a></li><li><a href="#fee-category-4">PHD PROGRAMS</a></li></ul></details>
+-<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/taylors-details">Explore Taylor&#39;s University courses, campuses and admissions guidance</a>.</p>
++<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/taylors-details#courses-intakes">Explore Taylor&#39;s University courses, campuses and admissions guidance</a>.</p>
+ </section>
+ <!-- seo:fee-guide:end -->
+ <!-- seo:fee-table-anchor:start -->
+@@ -69,7 +70,11 @@
+ 
+   <div id="dynamicFeesContainer" data-source="fees_data.json">
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-0">FOUNDATION PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-0"><div class="table-responsive"><table aria-label="FOUNDATION PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Tuition Fees (Total)</th><th scope="col">Enrolment Fee</th><th scope="col">Total (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation in Business</td><td>1 year</td><td>RM28,600</td><td>RM2,800</td><td>RM44,044</td></tr>
++<div class="panel" id="fee-category-0"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> Taylor&#39;s institution not independently confirmed for these stored foundation rows; match University or College to your offer.<br><strong>Section:</strong> FOUNDATION PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored amount edition not confirmed for the intended intake.<br><strong>Fee basis:</strong> Foundation tuition/enrolment totals and other MYR/USD totals have different inclusions; use each table’s labels.</p>
++
++<ul class="study-link-list"><li><a href="https://college.taylors.edu.my/en/study/explore-all-programmes/school-of-pre-university-studies/foundation/foundation-in-business.html">Taylor’s College official foundation information</a></li><li><a href="https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html">Taylor’s University official fee-schedule selector</a></li></ul>
++</details><div class="table-responsive"><table aria-label="FOUNDATION PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Tuition Fees (Total)</th><th scope="col">Enrolment Fee</th><th scope="col">Total (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation in Business</td><td>1 year</td><td>RM28,600</td><td>RM2,800</td><td>RM44,044</td></tr>
+ <tr><td>2</td><td>Foundation in Arts</td><td>1 year</td><td>RM28,600</td><td>RM2,800</td><td>RM44,044</td></tr>
+ <tr><td>3</td><td>Foundation in Design</td><td>1 year</td><td>RM28,600</td><td>RM2,800</td><td>RM44,044</td></tr>
+ <tr><td>4</td><td>Foundation in Computing</td><td>1 year</td><td>RM25,600</td><td>RM2,800</td><td>RM41,044</td></tr>
+@@ -77,7 +82,11 @@
+ <tr><td>6</td><td>Foundation in Engineering</td><td>1 year</td><td>RM31,600</td><td>RM2,800</td><td>RM47,044</td></tr>
+ <tr><td>7</td><td>Foundation in Natural &amp; Built Environments</td><td>1 year</td><td>RM28,600</td><td>RM2,800</td><td>RM44,044</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>International Entry Fees (Paid in Sem 1):<br>Enrolment Fee: RM2,800<br>International Student Charge: RM3,000<br>EMGS Visa Application Fee: RM1,360<br>Security Deposit (ISD): RM3,000<br>Note: Total fees are approximate and subject to a 6% Service Tax starting 1 July 2025.</p></div></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-1">DIPLOMA PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-1"><div class="table-responsive"><table aria-label="DIPLOMA PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Diploma in Accounting</td><td>2 years</td><td>RM73,806</td><td>$17,164</td></tr>
++<div class="panel" id="fee-category-1"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> Taylor&#39;s institution not independently confirmed for these stored diploma rows; match University or College to your offer.<br><strong>Section:</strong> DIPLOMA PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored amount edition not confirmed for the intended intake.<br><strong>Fee basis:</strong> Foundation tuition/enrolment totals and other MYR/USD totals have different inclusions; use each table’s labels.</p>
++
++<ul class="study-link-list"><li><a href="https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html">Taylor’s University official fee-schedule selector</a></li></ul>
++</details><div class="table-responsive"><table aria-label="DIPLOMA PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Diploma in Accounting</td><td>2 years</td><td>RM73,806</td><td>$17,164</td></tr>
+ <tr><td>2</td><td>Diploma in Business</td><td>2 years</td><td>RM73,806</td><td>$17,164</td></tr>
+ <tr><td>3</td><td>Diploma in Communication</td><td>2 years</td><td>RM73,806</td><td>$17,164</td></tr>
+ <tr><td>4</td><td>Diploma in Information Technology</td><td>2 years</td><td>RM73,806</td><td>$17,164</td></tr>
+@@ -86,7 +95,11 @@
+ <tr><td>7</td><td>Diploma in Culinary Arts</td><td>2 years</td><td>RM79,136</td><td>$18,404</td></tr>
+ <tr><td>8</td><td>Diploma in Early Childhood Education</td><td>2 years</td><td>RM55,848</td><td>$12,988</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Note: Grand totals include tuition, enrolment, EMGS visa, and medical insurance for the minimum duration.</p></div></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-2">BACHELOR PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-2"><div class="table-responsive"><table aria-label="BACHELOR PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Bachelor of Business (Hons)</td><td>3 years</td><td>RM143,946</td><td>$33,476</td></tr>
++<div class="panel" id="fee-category-2"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> Taylor&#39;s University.<br><strong>Section:</strong> BACHELOR PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored amount edition not confirmed for the intended intake.<br><strong>Fee basis:</strong> Foundation tuition/enrolment totals and other MYR/USD totals have different inclusions; use each table’s labels.</p>
++
++<ul class="study-link-list"><li><a href="https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html">Taylor’s University official fee-schedule selector</a></li></ul>
++</details><div class="table-responsive"><table aria-label="BACHELOR PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Bachelor of Business (Hons)</td><td>3 years</td><td>RM143,946</td><td>$33,476</td></tr>
+ <tr><td>2</td><td>Bachelor of Accounting &amp; Finance (Hons)</td><td>3 years</td><td>RM139,042</td><td>$32,335</td></tr>
+ <tr><td>3</td><td>Bachelor of Laws (Hons)</td><td>3 years</td><td>RM146,106</td><td>$33,978</td></tr>
+ <tr><td>4</td><td>Bachelor of Computer Science (Hons)</td><td>3 years</td><td>RM135,738</td><td>$31,567</td></tr>
+@@ -97,7 +110,11 @@
+ <tr><td>9</td><td>Bachelor of Psychology (Hons)</td><td>3 years</td><td>RM124,506</td><td>$28,955</td></tr>
+ <tr><td>10</td><td>Bachelor of Mass Communication (Hons)</td><td>3 years</td><td>RM133,794</td><td>$31,115</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Dual Awards: Many programs offer Dual Awards with University of the West of England (UK) or University of Toulouse (France).</p></div></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-3">MASTERS PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-3"><div class="table-responsive"><table aria-label="MASTERS PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Master of Business Administration (MBA)</td><td>1 year</td><td>RM70,014</td><td>$16,282</td></tr>
++<div class="panel" id="fee-category-3"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> Taylor&#39;s University.<br><strong>Section:</strong> MASTERS PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored amount edition not confirmed for the intended intake.<br><strong>Fee basis:</strong> Foundation tuition/enrolment totals and other MYR/USD totals have different inclusions; use each table’s labels.</p>
++
++<ul class="study-link-list"><li><a href="https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html">Taylor’s University official fee-schedule selector</a></li></ul>
++</details><div class="table-responsive"><table aria-label="MASTERS PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Master of Business Administration (MBA)</td><td>1 year</td><td>RM70,014</td><td>$16,282</td></tr>
+ <tr><td>2</td><td>Master of Management</td><td>1 year</td><td>RM70,014</td><td>$16,282</td></tr>
+ <tr><td>3</td><td>Master of Communication</td><td>1.5 years</td><td>RM59,284</td><td>$13,787</td></tr>
+ <tr><td>4</td><td>Master of Applied Computing</td><td>1 year</td><td>RM61,105</td><td>$14,210</td></tr>
+@@ -106,7 +123,11 @@
+ <tr><td>7</td><td>Master of Science (Research)</td><td>2 years</td><td>RM50,694</td><td>$11,789</td></tr>
+ <tr><td>8</td><td>Postgraduate Certificate in Teaching &amp; Learning</td><td>9 months</td><td>RM35,474</td><td>$8,250</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Masters Misc Fees: Application &amp; EMGS: RM3,810; Student Charge: RM8,000.</p></div></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-4">PHD PROGRAMS</button></h2>
+-<div class="panel" id="fee-category-4"><div class="table-responsive"><table aria-label="PHD PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Doctor of Business Administration (DBA)</td><td>3 years</td><td>RM91,614</td><td>$21,306</td></tr>
++<div class="panel" id="fee-category-4"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> Taylor&#39;s University.<br><strong>Section:</strong> PHD PROGRAMS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored amount edition not confirmed for the intended intake.<br><strong>Fee basis:</strong> Foundation tuition/enrolment totals and other MYR/USD totals have different inclusions; use each table’s labels.</p>
++
++<ul class="study-link-list"><li><a href="https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html">Taylor’s University official fee-schedule selector</a></li></ul>
++</details><div class="table-responsive"><table aria-label="PHD PROGRAMS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (RM)</th><th scope="col">Total Fee (USD)</th></tr></thead><tbody><tr><td>1</td><td>Doctor of Business Administration (DBA)</td><td>3 years</td><td>RM91,614</td><td>$21,306</td></tr>
+ <tr><td>2</td><td>PhD in Business (Research)</td><td>3 years</td><td>RM68,944</td><td>$16,033</td></tr>
+ <tr><td>3</td><td>PhD in Computer Science (Research)</td><td>3 years</td><td>RM68,944</td><td>$16,033</td></tr>
+ <tr><td>4</td><td>PhD in Education (Research)</td><td>3 years</td><td>RM68,944</td><td>$16,033</td></tr>
+@@ -158,7 +179,7 @@
+ <!-- seo:fee-planning:start -->
+ <section class="study-content university-intent" id="payment-planning" aria-labelledby="payment-planning-title">
+ <h2 id="payment-planning-title">Understand your Taylor&#39;s University fee breakdown</h2>
+-<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>Foundation rows separate tuition, enrolment and a total, while other sections may show MYR and USD totals. Preserve those currencies and inclusions; a stored USD equivalent is not a current BDT conversion.</p></div><div><h3>Initial payments and additional charges</h3><p>Use the official fee-schedule selector for your programme and student category. Reconcile enrolment, international-student charges, deposits and tax notes with the schedule&#39;s stated total and payment dates.</p></div></div>
++<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>A tuition-only figure, total programme cost and first-semester payment are different amounts. Preserve the MYR and USD column labels and inclusion notes; a stored USD equivalent is not a current BDT conversion.</p></div><div><h3>Initial payments and additional charges</h3><p>Select the official international schedule for the institution and programme in your offer. Reconcile enrolment, international-student charges, deposits and tax notes with its stated total and payment dates.</p></div></div>
+ <h3>Budgeting from Bangladesh</h3><p>Use the currency and payment period printed in your programme's schedule. Keep accommodation, travel and living expenses separate from tuition. A BDT estimate needs a dated exchange rate and may differ from the amount your bank charges.</p>
+ <p>Compare scholarship or adjusted-fee columns only after your eligibility is confirmed. Your written offer should identify the award, covered charges and renewal conditions.</p>
+ <ul class="study-link-list"><li><a href="/Universities/taylors-details#scholarships">Scholarship eligibility and conditions</a></li><li><a href="/Articles/cost-of-living-malaysia-international-students">Malaysia living-cost guide</a></li><li><a href="/Articles/visas-and-requirements-malaysia">Student visa process and cost stages</a></li></ul>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\taylors-details.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\taylors-details.html"
+index 516e94f..0e26752 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\taylors-details.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\taylors-details.html"
+@@ -257,8 +257,9 @@
+ <section class="container study-content university-intent" id="fees-and-scholarships">
+ <nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="/Universities/taylors-details">Taylor&#39;s University</a></nav>
+ <h2 id="courses-intakes">Taylor&#39;s University courses and intake planning</h2>
+-<ul><li>Hospitality and other degree programmes: compare the exact award, curriculum and study requirements.</li><li>Computing, business and other disciplines: check the programme-specific entry and intake pages rather than a single university calendar.</li><li>Pre-university pathways: distinguish Taylor&#39;s College information from Taylor&#39;s University admissions.</li></ul>
+-<details class="study-faq"><summary>Programme examples in the stored fee schedule</summary><p>These examples retain the stored schedule's wording. They are not a complete course catalogue or confirmation of the next open intake. Use the official programme sources below to confirm current availability.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Programme examples"><table><caption>Selected programme examples; schedule information only</caption><thead><tr><th scope="col">Programme</th><th scope="col">Schedule section</th><th scope="col">Duration</th><th scope="col">Intake in schedule</th><th scope="col">Tuition</th></tr></thead><tbody><tr><th scope="row">Foundation in Business</th><td>FOUNDATION PROGRAMS</td><td>1 year</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/taylors-fees#fee-category-0">View relevant fee section</a></td></tr><tr><th scope="row">Diploma in Accounting</th><td>DIPLOMA PROGRAMS</td><td>2 years</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/taylors-fees#fee-category-1">View relevant fee section</a></td></tr><tr><th scope="row">Bachelor of Business (Hons)</th><td>BACHELOR PROGRAMS</td><td>3 years</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/taylors-fees#fee-category-2">View relevant fee section</a></td></tr></tbody></table></div></details>
++<ul><li>Taylor’s University degree information and Taylor’s College pathway information belong to different institutions. Check which institution is named on your offer.</li></ul>
++<h3>University degree or College pathway?</h3><p>The selected University programme below has its own study and intake information. Taylor’s College publishes separate foundation and pre-university sources; the degree’s intake pattern does not apply to every pathway.</p>
++<p>On a small screen, scroll the table horizontally to view every column.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Verified programme references"><table style="min-width:760px"><caption>Selected official programme references; checked 6 October 2026</caption><thead><tr><th scope="col">Qualification</th><th scope="col">Institution and location</th><th scope="col">Study information</th><th scope="col">Official evidence</th><th scope="col">Fee section</th></tr></thead><tbody><tr><th scope="row">Bachelor of Computer Science (Honours)</th><td>Taylor’s University<br>Lakeside campus, Subang Jaya</td><td>Full-time; 3 years. Programme information for 2026 lists February, April and September. This does not confirm open applications.</td><td><a href="https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-computer-science.html">Official 2026 programme information</a></td><td><a href="/Fees_Chart/taylors-fees#fee-category-2">University bachelor fee section</a></td></tr></tbody></table></div>
+ <h3>Choosing your intake</h3><p>Taylor&#39;s publishes a programme-by-programme key-intakes page. University and College intake pages are separate; use the appropriate institution and confirm the application deadline for international applicants.</p>
+ <h3 id="bangladesh-entry">Entry planning for Bangladeshi students</h3><p>Request a programme assessment using your HSC or other qualification and English evidence. A pre-university pathway and direct degree entry are different routes; confirm which applies before selecting the fee schedule.</p>
+ <p>Prepare your qualification certificates, subject transcripts and any English-test results for assessment. Confirm the exact programme, campus, study mode, academic conditions and international application deadline together. This guide does not establish a universal HSC grade or IELTS waiver.</p>
+@@ -267,7 +268,7 @@
+ <h3>Tuition and study budget</h3><p><a href="/Fees_Chart/taylors-fees">View Taylor&#39;s University international tuition fees and payment notes</a>. The separate fee chart explains the published payment periods and additional charges for financial planning.</p>
+ <h3>Questions about studying at Taylor&#39;s University</h3><details class="study-faq"><summary>Do all Taylor&#39;s programmes start in the same intake?</summary><p>Use the official key-intakes page for the selected qualification. A general intake month does not establish availability for every undergraduate, postgraduate or College programme.</p></details>
+ <details class="study-faq"><summary>Where can I compare Taylor&#39;s with another university?</summary><p>The MMU versus Taylor&#39;s guide linked below compares study considerations. Compare the same subject, qualification and campus, then use each university&#39;s fee chart for the relevant cost basis.</p></details>
+-<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://university.taylors.edu.my/en/study/how-to-apply/key-intakes.html">Taylor&#39;s University official key intakes</a></li><li><a href="https://college.taylors.edu.my/en/study/how-to-apply/key-intakes.html">Taylor&#39;s College key intakes</a></li><li><a href="https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html">Taylor&#39;s official fee schedules</a></li></ul>
++<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-computer-science.html">Taylor’s University Bachelor of Computer Science</a></li><li><a href="https://college.taylors.edu.my/en/study/explore-all-programmes/school-of-pre-university-studies/foundation/foundation-in-business.html">Taylor’s College Foundation in Business</a></li><li><a href="https://university.taylors.edu.my/en/study/how-to-apply/key-intakes.html">Taylor&#39;s University official key intakes</a></li><li><a href="https://college.taylors.edu.my/en/study/how-to-apply/key-intakes.html">Taylor&#39;s College key intakes</a></li><li><a href="https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html">Taylor&#39;s official fee schedules</a></li></ul>
+ <h3>Compare your study options</h3><ul class="study-link-list"><li><a href="/Articles/mmu-vs-taylors">Compare MMU and Taylor&#39;s</a></li><li><a href="/Articles/best-engineering-universities-malaysia">Compare engineering study options</a></li></ul>
+ <p><a class="study-primary-link" href="/contact">Discuss my course, campus and intake</a></p>
+ </section>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\segi-fees.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\segi-fees.html"
+index 75b9bec..13552f9 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\segi-fees.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\segi-fees.html"
+@@ -52,9 +52,10 @@
+ <p class="study-eyebrow">International tuition &amp; programme costs</p>
+ <h2 id="fees-guide-title">Plan your SEGi University study budget</h2>
+ <p>The degree and postgraduate tables are labelled SEGi University KD. Do not apply these fees to SEGi College Kuala Lumpur or another SEGi college without its own applicable schedule.</p>
++<p class="fee-source-note">The current issuing edition and intake validity have not been confirmed. The displayed amounts are retained from the stored schedule; obtain the applicable written fee schedule before accepting an offer or paying.</p>
+ <nav class="study-actions" aria-label="Fee page sections"><a href="#fee-tables">Browse fee chart</a><a href="#payment-planning">Initial payments &amp; other costs</a><a href="#faq">Fee questions &amp; documents</a></nav>
+ <details class="study-faq"><summary>Choose a programme or campus section</summary><ul class="study-section-links"><li><a href="#fee-category-0">FOUNDATION &amp; LANGUAGES</a></li><li><a href="#fee-category-1">BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)</a></li><li><a href="#fee-category-2">MASTER&#39;S PROGRAMS (SEGi University KD)</a></li><li><a href="#fee-category-3">DOCTORAL PROGRAMS (SEGi University KD)</a></li></ul></details>
+-<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/segi-details">Explore SEGi University courses, campuses and admissions guidance</a>.</p>
++<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/segi-details#courses-intakes">Explore SEGi University courses, campuses and admissions guidance</a>.</p>
+ </section>
+ <!-- seo:fee-guide:end -->
+ <!-- seo:fee-table-anchor:start -->
+@@ -69,11 +70,19 @@
+ 
+   <div id="dynamicFeesContainer" data-source="fees_data.json">
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-0">FOUNDATION &amp; LANGUAGES</button></h2>
+-<div class="panel" id="fee-category-0"><div class="table-responsive"><table aria-label="FOUNDATION &amp; LANGUAGES"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (MYR)</th><th scope="col">Upon Reg (MYR)</th><th scope="col">Year 1 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>FOUNDATION IN SCIENCE</td><td>1 Year</td><td>36,910</td><td>3,150</td><td>33,760</td></tr>
++<div class="panel" id="fee-category-0"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> SEGi provider not independently confirmed for these stored foundation/language rows; use the institution named on your offer.<br><strong>Section:</strong> FOUNDATION &amp; LANGUAGES.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Current issuing edition and intake validity not confirmed.<br><strong>Fee basis:</strong> Total, annual and upon-registration amounts retain the table’s MYR labels; exclusions remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://www.segi.edu.my/">SEGi official University and College directory</a></li><li><a href="https://university.segi.edu.my/international-students/">SEGi University international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="FOUNDATION &amp; LANGUAGES"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Total Fee (MYR)</th><th scope="col">Upon Reg (MYR)</th><th scope="col">Year 1 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>FOUNDATION IN SCIENCE</td><td>1 Year</td><td>36,910</td><td>3,150</td><td>33,760</td></tr>
+ <tr><td>2</td><td>FOUNDATION IN ARTS</td><td>1 Year</td><td>35,250</td><td>3,150</td><td>32,100</td></tr>
+ <tr><td>3</td><td>INTENSIVE ENGLISH PROGRAMME (Full Module)</td><td>-</td><td>27,625</td><td>3,150</td><td>24,475</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>International Admin Fee: MYR 8,640<br>Visa Fee: MYR 2,150<br>Initial Payment: MYR 3,150</p></div><p class="fee-source-links"><a href="/assets/documents/fees/segi-fees.pdf" download>Download FOUNDATION &amp; LANGUAGES (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-1">BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)</button></h2>
+-<div class="panel" id="fee-category-1"><div class="table-responsive"><table aria-label="BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Total Fee (MYR)</th><th scope="col">Year 1 (MYR)</th><th scope="col">Year 2 (MYR)</th><th scope="col">Year 3 (MYR)</th><th scope="col">Year 4 (MYR)</th><th scope="col">Year 5 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>Bachelor of Medicine &amp; Bachelor of Surgery (MBBS)</td><td>378,400</td><td>89,020</td><td>71,820</td><td>71,820</td><td>71,820</td><td>70,770</td></tr>
++<div class="panel" id="fee-category-1"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> SEGi University.<br><strong>Section:</strong> BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD).<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Current issuing edition and intake validity not confirmed.<br><strong>Fee basis:</strong> Total, annual and upon-registration amounts retain the table’s MYR labels; exclusions remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://www.segi.edu.my/">SEGi official University and College directory</a></li><li><a href="https://university.segi.edu.my/international-students/">SEGi University international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Total Fee (MYR)</th><th scope="col">Year 1 (MYR)</th><th scope="col">Year 2 (MYR)</th><th scope="col">Year 3 (MYR)</th><th scope="col">Year 4 (MYR)</th><th scope="col">Year 5 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>Bachelor of Medicine &amp; Bachelor of Surgery (MBBS)</td><td>378,400</td><td>89,020</td><td>71,820</td><td>71,820</td><td>71,820</td><td>70,770</td></tr>
+ <tr><td>2</td><td>Bachelor of Dental Surgery (BDS)</td><td>382,150</td><td>87,960</td><td>72,760</td><td>72,760</td><td>72,760</td><td>72,760</td></tr>
+ <tr><td>3</td><td>Bachelor of Optometry (Hons)</td><td>128,250</td><td>44,180</td><td>26,980</td><td>26,980</td><td>26,960</td><td>-</td></tr>
+ <tr><td>4</td><td>Bachelor of Pharmacy (Hons)</td><td>158,250</td><td>51,680</td><td>34,480</td><td>34,480</td><td>34,460</td><td>-</td></tr>
+@@ -92,7 +101,11 @@
+ <tr><td>17</td><td>Bachelor of Quantity Surveying (Hons)</td><td>84,175</td><td>34,880</td><td>18,280</td><td>18,280</td><td>9,585</td><td>-</td></tr>
+ <tr><td>18</td><td>Bachelor of Engineering (Hons) - Mechanical/Civil/Chemical/Electrical</td><td>113,625</td><td>40,080</td><td>23,480</td><td>23,480</td><td>23,435</td><td>-</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Initial Payment (Upon Registration): MYR 3,150.00<br>International Admin Fee: MYR 8,640<br>Technology Fee: Included in Facility fees</p></div><p class="fee-source-links"><a href="/assets/documents/fees/segi-fees.pdf" download>Download BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD) (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-2">MASTER&#39;S PROGRAMS (SEGi University KD)</button></h2>
+-<div class="panel" id="fee-category-2"><div class="table-responsive"><table aria-label="MASTER&#39;S PROGRAMS (SEGi University KD)"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Total Fee (MYR)</th><th scope="col">Year 1 (MYR)</th><th scope="col">Year 2 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)</td><td>54,350</td><td>51,200</td><td>-</td></tr>
++<div class="panel" id="fee-category-2"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> SEGi University.<br><strong>Section:</strong> MASTER&#39;S PROGRAMS (SEGi University KD).<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Current issuing edition and intake validity not confirmed.<br><strong>Fee basis:</strong> Total, annual and upon-registration amounts retain the table’s MYR labels; exclusions remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://www.segi.edu.my/">SEGi official University and College directory</a></li><li><a href="https://university.segi.edu.my/international-students/">SEGi University international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="MASTER&#39;S PROGRAMS (SEGi University KD)"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Total Fee (MYR)</th><th scope="col">Year 1 (MYR)</th><th scope="col">Year 2 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)</td><td>54,350</td><td>51,200</td><td>-</td></tr>
+ <tr><td>2</td><td>Master of Accountancy / Financial Planning</td><td>56,900</td><td>53,750</td><td>-</td></tr>
+ <tr><td>3</td><td>MA in Corporate Communication</td><td>49,650</td><td>34,740</td><td>11,760</td></tr>
+ <tr><td>4</td><td>Master of Education (Research)</td><td>51,150</td><td>35,740</td><td>12,260</td></tr>
+@@ -103,7 +116,11 @@
+ <tr><td>9</td><td>MSc Pharmaceutical Sciences</td><td>51,950</td><td>31,500</td><td>17,300</td></tr>
+ <tr><td>10</td><td>Master of Laws</td><td>54,250</td><td>51,100</td><td>-</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Initial Payment: MYR 3,150.00<br>Note: Masters fees exclude EMGS/Visa renewal fees</p></div><p class="fee-source-links"><a href="/assets/documents/fees/segi-fees.pdf" download>Download MASTER&#39;S PROGRAMS (SEGi University KD) (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-3">DOCTORAL PROGRAMS (SEGi University KD)</button></h2>
+-<div class="panel" id="fee-category-3"><div class="table-responsive"><table aria-label="DOCTORAL PROGRAMS (SEGi University KD)"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Total Fee (MYR)</th><th scope="col">Year 1 (MYR)</th><th scope="col">Year 2 (MYR)</th><th scope="col">Year 3 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>Doctor of Business Administration (DBA)</td><td>81,850</td><td>35,700</td><td>21,500</td><td>21,500</td></tr>
++<div class="panel" id="fee-category-3"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> SEGi University.<br><strong>Section:</strong> DOCTORAL PROGRAMS (SEGi University KD).<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Current issuing edition and intake validity not confirmed.<br><strong>Fee basis:</strong> Total, annual and upon-registration amounts retain the table’s MYR labels; exclusions remain in the section notes.</p>
++
++<ul class="study-link-list"><li><a href="https://www.segi.edu.my/">SEGi official University and College directory</a></li><li><a href="https://university.segi.edu.my/international-students/">SEGi University international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="DOCTORAL PROGRAMS (SEGi University KD)"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Total Fee (MYR)</th><th scope="col">Year 1 (MYR)</th><th scope="col">Year 2 (MYR)</th><th scope="col">Year 3 (MYR)</th></tr></thead><tbody><tr><td>1</td><td>Doctor of Business Administration (DBA)</td><td>81,850</td><td>35,700</td><td>21,500</td><td>21,500</td></tr>
+ <tr><td>2</td><td>PhD (Management)</td><td>70,650</td><td>31,960</td><td>17,760</td><td>17,780</td></tr>
+ <tr><td>3</td><td>PhD (Information Technology)</td><td>60,550</td><td>28,600</td><td>14,400</td><td>14,400</td></tr>
+ <tr><td>4</td><td>PhD (Education / Engineering)</td><td>78,450</td><td>34,560</td><td>20,360</td><td>20,380</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Initial Payment: MYR 3,150.00<br>Technology Fee: Included in Facility fees</p></div><p class="fee-source-links"><a href="/assets/documents/fees/segi-fees.pdf" download>Download DOCTORAL PROGRAMS (SEGi University KD) (PDF)</a></p></div>
+@@ -153,7 +170,7 @@
+ <!-- seo:fee-planning:start -->
+ <section class="study-content university-intent" id="payment-planning" aria-labelledby="payment-planning-title">
+ <h2 id="payment-planning-title">Understand your SEGi University fee breakdown</h2>
+-<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>The tables distinguish total fees from annual and registration amounts. Read international administration and visa notes for each level; some postgraduate notes exclude visa-renewal costs.</p></div><div><h3>Initial payments and additional charges</h3><p>Match the upon-registration or initial-payment note to the chosen programme. Establish whether international administration, visa and recurring charges are included in the total before estimating your first payment.</p></div></div>
++<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>The tables distinguish total fees from annual and registration amounts. Read administration and visa notes for each level; a total does not automatically include every renewal or living expense.</p></div><div><h3>Initial payments and additional charges</h3><p>These sections identify the stored SEGi University schedule. Do not apply them to a SEGi College or online offer without the matching schedule. Establish which initial, administration and recurring charges are already included.</p></div></div>
+ <h3>Budgeting from Bangladesh</h3><p>Use the currency and payment period printed in your programme's schedule. Keep accommodation, travel and living expenses separate from tuition. A BDT estimate needs a dated exchange rate and may differ from the amount your bank charges.</p>
+ <p>Compare scholarship or adjusted-fee columns only after your eligibility is confirmed. Your written offer should identify the award, covered charges and renewal conditions.</p>
+ <ul class="study-link-list"><li><a href="/Universities/segi-details#scholarships">Scholarship eligibility and conditions</a></li><li><a href="/Articles/cost-of-living-malaysia-international-students">Malaysia living-cost guide</a></li><li><a href="/Articles/visas-and-requirements-malaysia">Student visa process and cost stages</a></li></ul>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\segi-details.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\segi-details.html"
+index 1395214..589c37b 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\segi-details.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\segi-details.html"
+@@ -61,7 +61,7 @@
+       <div data-aos="fade-up" data-aos-duration="1000">
+         <h1 class="uni-title">SEGi University</h1>
+         <div class="uni-meta">
+-          <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Kota Damansara, KL</span>
++          <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Kota Damansara, Selangor</span>
+           <span class="meta-tag"><i class="fas fa-star"></i> QS 5-Star Plus</span>
+           <span class="meta-tag"><i class="fas fa-university"></i> Est. 1977</span>
+         </div>
+@@ -72,7 +72,7 @@
+ <!-- seo:university-decision:start -->
+ <section class="container study-content university-intent study-decision" aria-labelledby="study-decision-title">
+ <p class="study-eyebrow">University guide for Bangladeshi applicants</p>
+-<h2 id="study-decision-title">Study at SEGi University</h2><p>Explore SEGi University with the Kota Damansara campus in focus. Distinguish the university from SEGi colleges when checking the programme, awarding institution, intake and ranking record.</p>
++<h2 id="study-decision-title">Study at SEGi University</h2><p>Explore SEGi University in Kota Damansara, Petaling Jaya, Selangor. SEGi colleges are separately named institutions. Check the teaching institution, programme, study mode and location on your offer.</p>
+ <nav class="study-actions" aria-label="University guide sections"><a href="#courses-intakes">Courses &amp; intakes</a><a href="#bangladesh-entry">Entry planning</a><a href="#rankings">Ranking evidence</a><a href="/Fees_Chart/segi-fees">International fee chart</a></nav>
+ </section>
+ <!-- seo:university-decision:end -->
+@@ -90,8 +90,8 @@
+         
+         <div id="overview" class="tab-content active" data-aos="fade-up" data-aos-delay="200">
+           <h2 class="section-head">About the University</h2>
+-          <p>SEGi University is one of the largest private education providers in Malaysia. Known for its iconic Roman-style architecture in Kota Damansara, it offers a complete learning ecosystem from Foundation to PhD levels.</p>
+-          <p>SEGi is particularly renowned for its Health Sciences programs (Medicine, Dentistry, Optometry) and its diverse international community, making quality education accessible to all.</p>
++          <p>SEGi University is based in Kota Damansara, Petaling Jaya, Selangor. SEGi colleges are separately named institutions; check the teaching institution and location for your exact programme.</p>
++          <p><a href="https://www.segi.edu.my/">SEGi’s official institution directory</a> and the <a href="https://www.mqa.gov.my/mqr/english/eakrKPList.cfm?IDAkrIPTS=307">University’s MQR record</a> provide institution and qualification references. Programme availability and teaching arrangements require separate confirmation.</p>
+ 
+           <div class="divider"></div>
+ 
+@@ -137,11 +137,11 @@
+ 
+         <div id="location" class="tab-content">
+           <h2 class="section-head">Our Locations</h2>
+-          <p>The flagship campus is located in Kota Damansara, directly connected to the MRT station, making it highly accessible. SEGi also has key college campuses in Subang, Kuala Lumpur, Penang, and Sarawak.</p>
++          <p>The registered University address is No. 9, Jalan Teknologi, Taman Sains Selangor, Kota Damansara PJU 5, 47810 Petaling Jaya, Selangor. Confirm the teaching location and travel route for your programme rather than assuming a College address applies.</p>
+           
+           <div class="map-container" data-aos="zoom-in">
+             <iframe 
+-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy" 
++              title="SEGi University in Kota Damansara" src="https://maps.google.com/maps?q=SEGi%20University%2C%20No.%209%20Jalan%20Teknologi%2C%20Taman%20Sains%20Selangor%2C%20Kota%20Damansara%20PJU%205%2C%2047810%20Petaling%20Jaya%2C%20Selangor&amp;output=embed" 
+               width="100%" 
+               height="400" 
+               style="border:0;" 
+@@ -155,7 +155,7 @@
+               <i class="fas fa-map-marker-alt location-sign-anim"></i>
+               <div>
+                 <h4>Main Campus (Kota Damansara)</h4>
+-                <p>No. 9, Jalan Teknologi, Taman Sains Selangor, Kota Damansara</p>
++                <p>No. 9, Jalan Teknologi, Taman Sains Selangor, Kota Damansara PJU 5, 47810 Petaling Jaya, Selangor</p>
+               </div>
+             </div>
+             
+@@ -163,7 +163,7 @@
+               <i class="fas fa-subway"></i>
+               <div>
+                 <h4>Accessibility</h4>
+-                <p>Direct bridge to MRT Kota Damansara Station</p>
++                <p>Confirm your route to the registered University address</p>
+               </div>
+             </div>
+ 
+@@ -261,8 +261,9 @@
+ <section class="container study-content university-intent" id="fees-and-scholarships">
+ <nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="/Universities/segi-details">SEGi University</a></nav>
+ <h2 id="courses-intakes">SEGi University courses and intake planning</h2>
+-<ul><li>University programmes: match the qualification to SEGi University and the teaching campus.</li><li>College and partner options: confirm whether the programme belongs to a SEGi college and which institution awards it.</li><li>Health and other professional courses: check programme-level accreditation and entry conditions independently of the university ranking.</li></ul>
+-<details class="study-faq"><summary>Programme examples in the stored fee schedule</summary><p>These examples retain the stored schedule's wording. They are not a complete course catalogue or confirmation of the next open intake. Use the official programme sources below to confirm current availability.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Programme examples"><table><caption>Selected programme examples; schedule information only</caption><thead><tr><th scope="col">Programme</th><th scope="col">Schedule section</th><th scope="col">Duration</th><th scope="col">Intake in schedule</th><th scope="col">Tuition</th></tr></thead><tbody><tr><th scope="row">FOUNDATION IN SCIENCE</th><td>FOUNDATION &amp; LANGUAGES</td><td>1 Year</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/segi-fees#fee-category-0">View relevant fee section</a></td></tr><tr><th scope="row">Bachelor of Medicine &amp; Bachelor of Surgery (MBBS)</th><td>BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)</td><td>See programme source</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/segi-fees#fee-category-1">View relevant fee section</a></td></tr></tbody></table></div></details>
++<ul><li>Check the exact qualification and study mode. A SEGi University accreditation record should not be transferred to a similarly named College or online programme.</li></ul>
++<h3>Verified qualification and teaching-institution reference</h3><p>The MQR reference below records a specific conventional qualification, not the generic or online Computer Science titles. Its recorded study modes do not establish availability for an international intake. Confirm an exact fee-row match with the University.</p>
++<p>On a small screen, scroll the table horizontally to view every column.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Verified programme references"><table style="min-width:760px"><caption>Selected official programme references; checked 6 October 2026</caption><thead><tr><th scope="col">Qualification</th><th scope="col">Institution and location</th><th scope="col">Study information</th><th scope="col">Official evidence</th><th scope="col">Fee section</th></tr></thead><tbody><tr><th scope="row">Bachelor of Computer Science (Honours) in Cyber Security</th><td>SEGi University<br>Kota Damansara, Petaling Jaya, Selangor</td><td>MQR: conventional delivery; 3 years full-time or 4 years part-time. Current intake and international study-mode availability require confirmation.</td><td><a href="https://www.mqa.gov.my/mqr/english/epapar.cfm?IdAkrKP=11381&amp;NoRujA=MQA%2FFA11188">MQR record MQA/FA11188</a></td><td><a href="/Fees_Chart/segi-fees#fee-category-1">University bachelor schedule; confirm course match</a></td></tr></tbody></table></div>
+ <h3>Choosing your intake</h3><p>Use the intake information for the exact SEGi institution and programme. A college intake calendar is not automatically the calendar for a SEGi University course at Kota Damansara.</p>
+ <h3 id="bangladesh-entry">Entry planning for Bangladeshi students</h3><p>Send your academic transcripts and English evidence for an individual programme assessment. Have the institution name, campus, award and international-student conditions stated clearly in the offer before using the fee chart.</p>
+ <p>Prepare your qualification certificates, subject transcripts and any English-test results for assessment. Confirm the exact programme, campus, study mode, academic conditions and international application deadline together. This guide does not establish a universal HSC grade or IELTS waiver.</p>
+@@ -271,7 +272,7 @@
+ <h3>Tuition and study budget</h3><p><a href="/Fees_Chart/segi-fees">View SEGi University international tuition fees and payment notes</a>. The separate fee chart explains the published payment periods and additional charges for financial planning.</p>
+ <h3>Questions about studying at SEGi University</h3><details class="study-faq"><summary>What is the difference between SEGi University and SEGi colleges?</summary><p>They are distinct institutions within SEGi&#39;s education network. Check the teaching institution, campus and awarding body on the programme page and offer; their course availability and admissions information should not be mixed.</p></details>
+ <details class="study-faq"><summary>Which campus should I use when researching SEGi University?</summary><p>Start with the university&#39;s Kota Damansara information and confirm the programme&#39;s actual teaching arrangements. A SEGi college location or partner award may require a separate comparison.</p></details>
+-<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://www.segi.edu.my/">SEGi official university and college directory</a></li><li><a href="https://university.segi.edu.my/international-students/">SEGi University international admissions</a></li></ul>
++<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://www.mqa.gov.my/mqr/english/eakrKPList.cfm?IDAkrIPTS=307">SEGi University registered institution and address</a></li><li><a href="https://www.mqa.gov.my/mqr/english/epapar.cfm?IdAkrKP=11381&amp;NoRujA=MQA%2FFA11188">SEGi Cyber Security qualification record</a></li><li><a href="https://www.segi.edu.my/">SEGi official university and college directory</a></li><li><a href="https://university.segi.edu.my/international-students/">SEGi University international admissions</a></li></ul>
+ <h3>Compare your study options</h3><ul class="study-link-list"><li><a href="/Articles/top-10-universities-in-malaysia">Compare university rankings</a></li><li><a href="/Articles/cheapest-universities">Compare programme study budgets</a></li></ul>
+ <p><a class="study-primary-link" href="/contact">Discuss my course, campus and intake</a></p>
+ </section>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\cityu-fees.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\cityu-fees.html"
+index cadfc61..72cdbe4 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\cityu-fees.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\cityu-fees.html"
+@@ -64,9 +64,10 @@
+ <p class="study-eyebrow">International tuition &amp; programme costs</p>
+ <h2 id="fees-guide-title">Plan your City University Malaysia study budget</h2>
+ <p>This fee chart is for City University Malaysia. It separates Johor Bahru from the Petaling Jaya/Cyberjaya sections; it should not be used for a similarly named university in another country.</p>
++<p class="fee-source-note">The stored edition is retained unchanged. City University’s official international-admissions page directs applicants to its International Marketing Office or representatives for the latest fee structure. Confirm the exact edition and conditional reduction before paying.</p>
+ <nav class="study-actions" aria-label="Fee page sections"><a href="#fee-tables">Browse fee chart</a><a href="#payment-planning">Initial payments &amp; other costs</a><a href="#faq">Fee questions &amp; documents</a></nav>
+ <details class="study-faq"><summary>Choose a programme or campus section</summary><ul class="study-section-links"><li><a href="#fee-category-0">JOHOR BAHRU CAMPUS</a></li><li><a href="#fee-category-1">PJ &amp; CYBERJAYA CAMPUS - FOUNDATION &amp; DIPLOMA</a></li><li><a href="#fee-category-2">PJ &amp; CYBERJAYA CAMPUS - BACHELOR</a></li><li><a href="#fee-category-3">PETALING JAYA CAMPUS | CYBER JAYA CAMPUS - MASTER &amp; PHD</a></li></ul></details>
+-<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/cityu-details">Explore City University Malaysia courses, campuses and admissions guidance</a>.</p>
++<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/cityu-details#courses-intakes">Explore City University Malaysia courses, campuses and admissions guidance</a>.</p>
+ </section>
+ <!-- seo:fee-guide:end -->
+ <!-- seo:fee-table-anchor:start -->
+@@ -81,7 +82,11 @@
+ 
+   <div id="dynamicFeesContainer" data-source="fees_data.json">
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-0">JOHOR BAHRU CAMPUS</button></h2>
+-<div class="panel" id="fee-category-0"><div class="table-responsive"><table aria-label="JOHOR BAHRU CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Diploma in Business</td><td>3 Years</td><td>8</td><td>RM52,350</td><td>RM32,224</td><td>RM300</td><td>RM23,054</td><td>RM11,554</td><td>RM11,236</td><td>-</td><td>RM45,844</td></tr>
++<div class="panel" id="fee-category-0"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> City University Malaysia — Johor Bahru.<br><strong>Section:</strong> JOHOR BAHRU CAMPUS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored schedule states 1 January–31 December 2026; applicability to your offer requires confirmation.<br><strong>Fee basis:</strong> Published fees, scholarship tuition, resource charges and annual/total columns remain distinct; retain the original payment and tax notes.</p>
++
++<ul class="study-link-list"><li><a href="https://city.edu.my/admission-scholarships/international-students/">City University official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="JOHOR BAHRU CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Diploma in Business</td><td>3 Years</td><td>8</td><td>RM52,350</td><td>RM32,224</td><td>RM300</td><td>RM23,054</td><td>RM11,554</td><td>RM11,236</td><td>-</td><td>RM45,844</td></tr>
+ <tr><td>2</td><td>Diploma in Early Childhood Education</td><td>3 Years</td><td>8</td><td>RM52,350</td><td>RM32,224</td><td>RM300</td><td>RM23,054</td><td>RM11,554</td><td>RM11,236</td><td>-</td><td>RM45,844</td></tr>
+ <tr><td>3</td><td>Bachelor of Business Administration (Honours)</td><td>3 Years</td><td>9</td><td>RM78,000</td><td>RM44,626</td><td>RM500</td><td>RM23,690</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM58,246</td></tr>
+ <tr><td>4</td><td>Bachelor of Education (Early Childhood Education) Honours</td><td>3 Years</td><td>9</td><td>RM80,850</td><td>RM44,626</td><td>RM500</td><td>RM23,690</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM58,246</td></tr>
+@@ -92,7 +97,11 @@
+ <tr><td>9</td><td>Doctor of Philosophy in Business Administration (PhDBA)</td><td>3 Years</td><td>9</td><td>RM70,000</td><td>RM41,128</td><td>RM22,100</td><td>RM16,324</td><td>RM16,324</td><td>-</td><td>-</td><td>RM54,748</td></tr>
+ <tr><td>10</td><td>Doctor of Philosophy in Education (PhD Edu)</td><td>3 Years</td><td>9</td><td>RM66,600</td><td>RM41,128</td><td>RM22,100</td><td>RM16,324</td><td>RM16,324</td><td>-</td><td>-</td><td>RM54,748</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Initial fees:</strong><br>VISA (EMGS) FEE: RM3,000<br>APPLICATION PROCESSING FEE: RM1,060<br>INTERNATIONAL STUDENT FEE: RM8,000<br>COMPLETION PROCESSING FEE: RM1,060<br>TOTAL INITIAL FEES: RM13,120</p><p><strong>Schedule remarks:</strong><br>Payment Schedule:<br>1. Payment: Visa (EMGS) Fee RM 3000<br>2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.<br><br>*All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.</p></div><p class="fee-source-links"><a href="/assets/documents/fees/cityu-fees.pdf" download>Download JOHOR BAHRU CAMPUS (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-1">PJ &amp; CYBERJAYA CAMPUS - FOUNDATION &amp; DIPLOMA</button></h2>
+-<div class="panel" id="fee-category-1"><div class="table-responsive"><table aria-label="PJ &amp; CYBERJAYA CAMPUS - FOUNDATION &amp; DIPLOMA"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Foundation in Business</td><td>1 Year</td><td>3</td><td>RM35,000</td><td>RM12,969</td><td>RM300</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RM26,089</td></tr>
++<div class="panel" id="fee-category-1"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> City University Malaysia — stored PJ/Cyberjaya grouping.<br><strong>Section:</strong> PJ &amp; CYBERJAYA CAMPUS - FOUNDATION &amp; DIPLOMA.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored schedule states 1 January–31 December 2026; applicability to your offer requires confirmation.<br><strong>Fee basis:</strong> Published fees, scholarship tuition, resource charges and annual/total columns remain distinct; retain the original payment and tax notes.</p>
++
++<ul class="study-link-list"><li><a href="https://city.edu.my/admission-scholarships/international-students/">City University official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="PJ &amp; CYBERJAYA CAMPUS - FOUNDATION &amp; DIPLOMA"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Foundation in Business</td><td>1 Year</td><td>3</td><td>RM35,000</td><td>RM12,969</td><td>RM300</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RM26,089</td></tr>
+ <tr><td>2</td><td>Foundation in Arts (Communication)</td><td>1 Year</td><td>3</td><td>RM35,000</td><td>RM12,969</td><td>RM300</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RM26,089</td></tr>
+ <tr><td>3</td><td>Foundation in Arts (English)</td><td>1 Year</td><td>3</td><td>RM35,000</td><td>RM12,969</td><td>RM300</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RM26,089</td></tr>
+ <tr><td>4</td><td>Foundation in Arts (Graphic Design &amp; Multimedia)</td><td>1 Year</td><td>3</td><td>RM35,000</td><td>RM12,969</td><td>RM300</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RM26,089</td></tr>
+@@ -123,7 +132,11 @@
+ <tr><td>21</td><td>Diploma in Architectural Technology</td><td>3 Years</td><td>8</td><td>RM52,350</td><td>RM32,224</td><td>RM300</td><td>RM22,554</td><td>RM11,554</td><td>RM11,236</td><td>-</td><td>RM45,344</td></tr>
+ <tr><td>22</td><td>Diploma in Interior Design</td><td>3 Years</td><td>8</td><td>RM52,350</td><td>RM32,224</td><td>RM300</td><td>RM22,554</td><td>RM11,554</td><td>RM11,236</td><td>-</td><td>RM45,344</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Initial fees:</strong><br>VISA (EMGS) FEE: RM3,000<br>APPLICATION PROCESSING FEE: RM1,060<br>INTERNATIONAL STUDENT FEE: RM8,000<br>COMPLETION PROCESSING FEE: RM1,060<br>TOTAL INITIAL FEES: RM13,120</p><p><strong>Schedule remarks:</strong><br>Payment Schedule:<br>1. Payment: Visa (EMGS) Fee RM 3000<br>2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.<br><br>*All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.</p></div><p class="fee-source-links"><a href="/assets/documents/fees/cityu-fees.pdf" download>Download PJ &amp; CYBERJAYA CAMPUS - FOUNDATION &amp; DIPLOMA (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-2">PJ &amp; CYBERJAYA CAMPUS - BACHELOR</button></h2>
+-<div class="panel" id="fee-category-2"><div class="table-responsive"><table aria-label="PJ &amp; CYBERJAYA CAMPUS - BACHELOR"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Bachelor of Graphic Design (Hons)</td><td>3 Years</td><td>9</td><td>RM80,850</td><td>RM44,626</td><td>RM500</td><td>RM23,190</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM57,746</td></tr>
++<div class="panel" id="fee-category-2"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> City University Malaysia — stored PJ/Cyberjaya grouping.<br><strong>Section:</strong> PJ &amp; CYBERJAYA CAMPUS - BACHELOR.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored schedule states 1 January–31 December 2026; applicability to your offer requires confirmation.<br><strong>Fee basis:</strong> Published fees, scholarship tuition, resource charges and annual/total columns remain distinct; retain the original payment and tax notes.</p>
++
++<ul class="study-link-list"><li><a href="https://city.edu.my/admission-scholarships/international-students/">City University official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="PJ &amp; CYBERJAYA CAMPUS - BACHELOR"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Bachelor of Graphic Design (Hons)</td><td>3 Years</td><td>9</td><td>RM80,850</td><td>RM44,626</td><td>RM500</td><td>RM23,190</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM57,746</td></tr>
+ <tr><td>2</td><td>Bachelor of Fashion Design (Hons)</td><td>3 Years</td><td>9</td><td>RM48,800</td><td>RM44,626</td><td>RM500</td><td>RM23,190</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM57,746</td></tr>
+ <tr><td>3</td><td>Bachelor of Multimedia (Hons)</td><td>3 Years</td><td>9</td><td>RM80,850</td><td>RM44,626</td><td>RM500</td><td>RM23,190</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM57,746</td></tr>
+ <tr><td>4</td><td>Bachelor of Communication (Hons) Corporate Communication</td><td>3 Years</td><td>9</td><td>RM80,850</td><td>RM44,626</td><td>RM500</td><td>RM23,190</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM57,746</td></tr>
+@@ -152,7 +165,11 @@
+ <tr><td>24</td><td>Bachelor of Science (Hons) Architectural Design</td><td>3 Years</td><td>9</td><td>RM85,850</td><td>RM44,626</td><td>RM500</td><td>RM23,190</td><td>RM17,278</td><td>RM17,278</td><td>-</td><td>RM57,746</td></tr>
+ <tr><td>25</td><td>Bachelor of Interior Design (Hons)</td><td>3 1/2 Years</td><td>11</td><td>RM85,850</td><td>RM45,686</td><td>RM500</td><td>RM23,190</td><td>RM17,278</td><td>RM18,338</td><td>-</td><td>RM58,806</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Initial fees:</strong><br>VISA (EMGS) FEE: RM3,000<br>APPLICATION PROCESSING FEE: RM1,060<br>INTERNATIONAL STUDENT FEE: RM8,000<br>COMPLETION PROCESSING FEE: RM1,060<br>TOTAL INITIAL FEES: RM13,120</p><p><strong>Schedule remarks:</strong><br>Payment Schedule:<br>1. Payment: Visa (EMGS) Fee RM 3000<br>2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.<br><br>*All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.</p></div><p class="fee-source-links"><a href="/assets/documents/fees/cityu-fees.pdf" download>Download PJ &amp; CYBERJAYA CAMPUS - BACHELOR (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-3">PETALING JAYA CAMPUS | CYBER JAYA CAMPUS - MASTER &amp; PHD</button></h2>
+-<div class="panel" id="fee-category-3"><div class="table-responsive"><table aria-label="PETALING JAYA CAMPUS | CYBER JAYA CAMPUS - MASTER &amp; PHD"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Master of Business Administration (MBA)</td><td>1 Year</td><td>3</td><td>RM52,000</td><td>RM22,403</td><td>RM500</td><td>RM35,523</td><td>-</td><td>-</td><td>-</td><td>RM35,523</td></tr>
++<div class="panel" id="fee-category-3"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> City University Malaysia — stored PJ/Cyberjaya postgraduate grouping.<br><strong>Section:</strong> PETALING JAYA CAMPUS | CYBER JAYA CAMPUS - MASTER &amp; PHD.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored schedule states 1 January–31 December 2026; applicability to your offer requires confirmation.<br><strong>Fee basis:</strong> Published fees, scholarship tuition, resource charges and annual/total columns remain distinct; retain the original payment and tax notes.</p>
++
++<ul class="study-link-list"><li><a href="https://city.edu.my/admission-scholarships/international-students/">City University official international admissions</a></li></ul>
++</details><div class="table-responsive"><table aria-label="PETALING JAYA CAMPUS | CYBER JAYA CAMPUS - MASTER &amp; PHD"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Semester</th><th scope="col">Published Fees</th><th scope="col">Tuition Fees Special Scholarship</th><th scope="col">Resource Fee</th><th scope="col">Year 1</th><th scope="col">Year 2</th><th scope="col">Year 3</th><th scope="col">Year 4</th><th scope="col">TOTAL</th></tr></thead><tbody><tr><td>1</td><td>Master of Business Administration (MBA)</td><td>1 Year</td><td>3</td><td>RM52,000</td><td>RM22,403</td><td>RM500</td><td>RM35,523</td><td>-</td><td>-</td><td>-</td><td>RM35,523</td></tr>
+ <tr><td>2</td><td>Master of Science in Business Administration (By Research) (MSCBA)</td><td>2 Years</td><td>6</td><td>RM50,000</td><td>RM23,993</td><td>RM500</td><td>RM23,190</td><td>RM13,923</td><td>-</td><td>-</td><td>RM37,113</td></tr>
+ <tr><td>3</td><td>Master of Information Technology (MIT)</td><td>1 Year</td><td>3</td><td>RM43,700</td><td>RM22,403</td><td>RM500</td><td>RM35,523</td><td>-</td><td>-</td><td>-</td><td>RM35,523</td></tr>
+ <tr><td>4</td><td>Master of Accounting (MACC)</td><td>1 Year</td><td>3</td><td>RM55,000</td><td>RM22,403</td><td>RM500</td><td>RM35,523</td><td>-</td><td>-</td><td>-</td><td>RM35,523</td></tr>
+@@ -203,7 +220,7 @@
+ <!-- seo:fee-planning:start -->
+ <section class="study-content university-intent" id="payment-planning" aria-labelledby="payment-planning-title">
+ <h2 id="payment-planning-title">Understand your City University Malaysia fee breakdown</h2>
+-<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>Published Fees, Tuition Fees Special Scholarship, Year 1 and TOTAL are different columns. A scholarship-labelled amount is conditional, and a row total should not be treated as tuition alone or have initial charges added again without checking its inclusions.</p></div><div><h3>Initial payments and additional charges</h3><p>The section notes describe an initial visa payment and a later payment associated with eVAL. Match those stages to your written offer, and check whether the quoted total already includes international-student, processing, resource and tax charges.</p></div></div>
++<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>Published fees and scholarship tuition are separate columns. Compare the exact programme, campus and fee period. A listed reduction is not an award to every applicant; obtain its conditions and final payment schedule in writing.</p></div><div><h3>Initial payments and additional charges</h3><p>The section notes describe an initial visa payment and a later payment associated with eVAL. Match those stages to your written offer, and check whether the quoted total already includes international-student, processing, resource and tax charges.</p></div></div>
+ <h3>Budgeting from Bangladesh</h3><p>Use the currency and payment period printed in your programme's schedule. Keep accommodation, travel and living expenses separate from tuition. A BDT estimate needs a dated exchange rate and may differ from the amount your bank charges.</p>
+ <p>Compare scholarship or adjusted-fee columns only after your eligibility is confirmed. Your written offer should identify the award, covered charges and renewal conditions.</p>
+ <ul class="study-link-list"><li><a href="/Universities/cityu-details#scholarships">Scholarship eligibility and conditions</a></li><li><a href="/Articles/cost-of-living-malaysia-international-students">Malaysia living-cost guide</a></li><li><a href="/Articles/visas-and-requirements-malaysia">Student visa process and cost stages</a></li></ul>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\cityu-details.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\cityu-details.html"
+index 5f8cdd8..11a3a84 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\cityu-details.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\cityu-details.html"
+@@ -71,7 +71,7 @@
+ <!-- seo:university-decision:start -->
+ <section class="container study-content university-intent study-decision" aria-labelledby="study-decision-title">
+ <p class="study-eyebrow">University guide for Bangladeshi applicants</p>
+-<h2 id="study-decision-title">Study at City University Malaysia</h2><p>Explore City University Malaysia by programme and campus. Use the dated ranking information below alongside course availability, location and entry requirements to decide whether it fits your study plans.</p>
++<h2 id="study-decision-title">Study at City University Malaysia</h2><p>Explore City University Malaysia by programme and teaching location. Petaling Jaya, Cyberjaya and Johor Bahru campus information and the Kota Kinabalu regional centre should not be treated as proof that every programme is offered at every location.</p>
+ <nav class="study-actions" aria-label="University guide sections"><a href="#courses-intakes">Courses &amp; intakes</a><a href="#bangladesh-entry">Entry planning</a><a href="#rankings">Ranking evidence</a><a href="/Fees_Chart/cityu-fees">International fee chart</a></nav>
+ </section>
+ <!-- seo:university-decision:end -->
+@@ -91,7 +91,7 @@
+ 
+         <div id="overview" class="tab-content active" data-aos="fade-up" data-aos-delay="200">
+           <h2 class="section-head">About the University</h2>
+-          <p>City University Malaysia is a leading private university with a strong reputation for academic excellence and industry relevance. Located in the heart of Petaling Jaya, it offers a vibrant campus life and easy access to the city center.</p>
++          <p>City University Malaysia publishes campus information for Petaling Jaya, Cyberjaya and Johor Bahru, and identifies Kota Kinabalu as a regional centre. Select the programme and teaching location together; not every location label establishes availability for every course.</p>
+           <p>With over 35 years of experience in producing employability-ready graduates, City U provides a wide range of programs from Foundation to PhD levels.</p>
+ 
+           <div class="divider"></div>
+@@ -111,9 +111,9 @@
+   </div>
+ 
+   <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+-    <img src="../assets/images/universities/cityu/cityu_main.jpg" alt="Campus KotaKinabalu">
++    <img src="../assets/images/universities/cityu/cityu_main.jpg" alt="Kota Kinabalu regional centre">
+     <div class="overlay"><i class="fas fa-expand"></i></div>
+-    <div class="gallery-title">Campus KotaKinabalu</div>
++    <div class="gallery-title">Kota Kinabalu Regional Centre</div>
+   </div>
+ 
+   <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+@@ -138,11 +138,11 @@
+ 
+         <div id="location" class="tab-content">
+   <h2 class="section-head">Our Campuses</h2>
+-  <p>City University operates across several strategic locations in Malaysia, with its main hub in Petaling Jaya.</p>
++  <p>The <a href="https://city.edu.my/about/contact-us/">official contact page</a> lists Menara City U in Petaling Jaya and the Cyberjaya campus address. The <a href="https://city.edu.my/">official location directory</a> labels Kota Kinabalu a regional centre. Confirm the location on your offer.</p>
+   
+   <div class="map-container" data-aos="zoom-in">
+     <iframe 
+-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9453!2d101.6358!3d3.1042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4be675555555%3A0x6a0a0a0a0a0a0a0a!2sCity%20University%20Malaysia!5e0!3m2!1sen!2smy!4v1700000000000" 
++      title="City University Malaysia in Petaling Jaya" src="https://maps.google.com/maps?q=City%20University%20Malaysia%2C%20Menara%20City%20U%2C%20No.%208%20Jalan%2051A%2F223%2C%2046100%20Petaling%20Jaya%2C%20Selangor&amp;output=embed" 
+       width="100%" 
+       height="400" 
+       style="border:0;" 
+@@ -156,14 +156,14 @@
+       <i class="fas fa-map-marker-alt location-sign-anim"></i>
+       <div>
+         <h4>Main Campus (Petaling Jaya)</h4>
+-        <p>8, Jalan 51a/223, Seksyen 51a, 46100 Petaling Jaya, Selangor</p>
++        <p>Menara City U, No. 8, Jalan 51A/223, 46100 Petaling Jaya, Selangor</p>
+       </div>
+     </div>
+     <div class="loc-card" data-aos="fade-left">
+       <i class="fas fa-laptop-code"></i>
+       <div>
+         <h4>Cyberjaya Campus</h4>
+-        <p>Cyberjaya, Selangor</p>
++        <p>3500, Jalan Teknokrat 3, Cyber 4, 63000 Cyberjaya, Selangor</p>
+       </div>
+     </div>
+     <div class="loc-card" data-aos="fade-right">
+@@ -176,7 +176,7 @@
+     <div class="loc-card" data-aos="fade-left">
+       <i class="fas fa-mountain"></i>
+       <div>
+-        <h4>Sabah Campus</h4>
++        <h4>Kota Kinabalu Regional Centre</h4>
+         <p>Kota Kinabalu, Sabah</p>
+       </div>
+     </div>
+@@ -259,8 +259,9 @@
+ <section class="container study-content university-intent" id="fees-and-scholarships">
+ <nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="/Universities/cityu-details">City University Malaysia</a></nav>
+ <h2 id="courses-intakes">City University Malaysia courses and intake planning</h2>
+-<ul><li>Business and management: compare the exact qualification and campus rather than a university-wide course name.</li><li>Computing, engineering and design: check subject prerequisites and where the programme is taught.</li><li>Postgraduate study: distinguish coursework, research and ODL routes before selecting a start date.</li></ul>
+-<details class="study-faq"><summary>Programme examples in the stored fee schedule</summary><p>These examples retain the stored schedule's wording. They are not a complete course catalogue or confirmation of the next open intake. Use the official programme sources below to confirm current availability.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Programme examples"><table><caption>Selected programme examples; schedule information only</caption><thead><tr><th scope="col">Programme</th><th scope="col">Schedule section</th><th scope="col">Duration</th><th scope="col">Intake in schedule</th><th scope="col">Tuition</th></tr></thead><tbody><tr><th scope="row">Diploma in Business</th><td>JOHOR BAHRU CAMPUS</td><td>3 Years</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/cityu-fees#fee-category-0">View relevant fee section</a></td></tr><tr><th scope="row">Foundation in Business</th><td>PJ &amp; CYBERJAYA CAMPUS - FOUNDATION &amp; DIPLOMA</td><td>1 Year</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/cityu-fees#fee-category-1">View relevant fee section</a></td></tr><tr><th scope="row">Bachelor of Graphic Design (Hons)</th><td>PJ &amp; CYBERJAYA CAMPUS - BACHELOR</td><td>3 Years</td><td>Confirm for this programme</td><td><a href="/Fees_Chart/cityu-fees#fee-category-2">View relevant fee section</a></td></tr></tbody></table></div></details>
++<ul><li>Choose the programme and teaching location together. A grouped PJ/Cyberjaya fee section does not establish that every course is taught at both locations.</li></ul>
++<h3>Choose the programme and teaching location together</h3><p>City University Malaysia’s official MBA page names Petaling Jaya. Confirm the location, international study mode and intake availability on your offer before arranging accommodation.</p>
++<p>On a small screen, scroll the table horizontally to view every column.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Verified programme references"><table style="min-width:760px"><caption>Selected official programme references; checked 6 October 2026</caption><thead><tr><th scope="col">Qualification</th><th scope="col">Institution and location</th><th scope="col">Study information</th><th scope="col">Official evidence</th><th scope="col">Fee section</th></tr></thead><tbody><tr><th scope="row">Master of Business Administration</th><td>City University Malaysia<br>Petaling Jaya</td><td>Coursework; published duration 12 months. Page lists full/part-time modes and Jan/Feb, May/June, Sept/Oct intakes; confirm international availability.</td><td><a href="https://city.edu.my/master-of-business-administration/">Official MBA programme information</a></td><td><a href="/Fees_Chart/cityu-fees#fee-category-3">Postgraduate fee section and payment notes</a></td></tr></tbody></table></div>
+ <h3>Choosing your intake</h3><p>Use the selected programme and campus to confirm the next international intake. The fee chart&#39;s validity period describes the fee schedule; it is not an admissions deadline or proof that all programmes start in the same month.</p>
+ <h3 id="bangladesh-entry">Entry planning for Bangladeshi students</h3><p>Have your HSC subjects or previous qualification assessed for the selected programme. Request the campus, study mode, English condition and intended intake in the same written assessment so the admissions and fee information refer to one offer.</p>
+ <p>Prepare your qualification certificates, subject transcripts and any English-test results for assessment. Confirm the exact programme, campus, study mode, academic conditions and international application deadline together. This guide does not establish a universal HSC grade or IELTS waiver.</p>
+@@ -269,7 +270,7 @@
+ <h3>Tuition and study budget</h3><p><a href="/Fees_Chart/cityu-fees">View City University Malaysia international tuition fees and payment notes</a>. The separate fee chart explains the published payment periods and additional charges for financial planning.</p>
+ <h3>Questions about studying at City University Malaysia</h3><details class="study-faq"><summary>Is City University Malaysia public or private?</summary><p>The QS institutional profile identifies City University Malaysia as a private institution in Petaling Jaya, Malaysia. Confirm the teaching campus for your selected programme separately.</p></details>
+ <details class="study-faq"><summary>Is CityU&#39;s QS Asia position a QS World ranking?</summary><p>No. QS Asia and QS World are separate ranking tables. Use the publisher, edition and table label shown in the ranking section; a QS Stars rating is also a different assessment.</p></details>
+-<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://city.edu.my/programmes/bachelor/">CityU official bachelor&#39;s programmes</a></li><li><a href="https://city.edu.my/admission-scholarships/international-students/">CityU international admissions</a></li><li><a href="https://www.topuniversities.com/universities/city-university-malaysia">City University Malaysia QS profile</a></li></ul>
++<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://city.edu.my/about/contact-us/">City University official campus/contact information</a></li><li><a href="https://city.edu.my/">City University official locations including regional centre</a></li><li><a href="https://city.edu.my/master-of-business-administration/">City University official MBA programme</a></li><li><a href="https://city.edu.my/programmes/bachelor/">CityU official bachelor&#39;s programmes</a></li><li><a href="https://city.edu.my/admission-scholarships/international-students/">CityU international admissions</a></li><li><a href="https://www.topuniversities.com/universities/city-university-malaysia">City University Malaysia QS profile</a></li></ul>
+ <h3>Compare your study options</h3><ul class="study-link-list"><li><a href="/Articles/cheapest-universities">Compare affordable university options</a></li><li><a href="/Articles/top-10-universities-in-malaysia">Compare Malaysian university rankings</a></li></ul>
+ <p><a class="study-primary-link" href="/contact">Discuss my course, campus and intake</a></p>
+ </section>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\inti-fees.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\inti-fees.html"
+index a2415fc..bd0c3f5 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Fees_Chart\\inti-fees.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Fees_Chart\\inti-fees.html"
+@@ -52,9 +52,10 @@
+ <p class="study-eyebrow">International tuition &amp; programme costs</p>
+ <h2 id="fees-guide-title">Plan your INTI International University &amp; Colleges study budget</h2>
+ <p>The chart separates INTI Penang, Nilai and Subang. Use the campus section matching your offer; the tables cover university and college programmes rather than a single Nilai fee list.</p>
++<p class="fee-source-note">Current official programme information includes campus-specific approximate fees and tax exclusions. The stored amounts have not yet been reconciled against that information and are retained unchanged. Obtain the exact campus schedule and payable charges for your offer.</p>
+ <nav class="study-actions" aria-label="Fee page sections"><a href="#fee-tables">Browse fee chart</a><a href="#payment-planning">Initial payments &amp; other costs</a><a href="#faq">Fee questions &amp; documents</a></nav>
+ <details class="study-faq"><summary>Choose a programme or campus section</summary><ul class="study-section-links"><li><a href="#fee-category-0">INTI  -  PENANG CAMPUS</a></li><li><a href="#fee-category-1">INTI  -  NILAI CAMPUS</a></li><li><a href="#fee-category-2">INTI  -  SUBANG CAMPUS</a></li></ul></details>
+-<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/inti-details">Explore INTI International University &amp; Colleges courses, campuses and admissions guidance</a>.</p>
++<p class="study-counterpart">Choosing a course or intake? <a href="/Universities/inti-details#courses-intakes">Explore INTI International University &amp; Colleges courses, campuses and admissions guidance</a>.</p>
+ </section>
+ <!-- seo:fee-guide:end -->
+ <!-- seo:fee-table-anchor:start -->
+@@ -69,7 +70,11 @@
+ 
+   <div id="dynamicFeesContainer" data-source="fees_data.json">
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-0">INTI  -  PENANG CAMPUS</button></h2>
+-<div class="panel" id="fee-category-0"><div class="table-responsive"><table aria-label="INTI  -  PENANG CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Intake</th><th scope="col">Total Tuition Fee (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation in Business</td><td>1 year</td><td>Jan, Apr, Aug</td><td>RM17,810</td></tr>
++<div class="panel" id="fee-category-0"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> INTI International College Penang.<br><strong>Section:</strong> INTI  -  PENANG CAMPUS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored campus schedule issue date and intake validity not confirmed.<br><strong>Fee basis:</strong> Total Tuition Fee (RM); duration and intake are separate columns and miscellaneous charges remain in campus notes.</p>
++
++<ul class="study-link-list"><li><a href="https://newinti.edu.my/programme/diploma-in-computer-science/">INTI official programme and campus fee information</a></li><li><a href="https://newinti.edu.my/campuses/">INTI official institution/campus directory</a></li></ul>
++</details><div class="table-responsive"><table aria-label="INTI  -  PENANG CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Intake</th><th scope="col">Total Tuition Fee (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation in Business</td><td>1 year</td><td>Jan, Apr, Aug</td><td>RM17,810</td></tr>
+ <tr><td>2</td><td>Foundation in Information Technology</td><td>1 year</td><td>Jan, Apr, Aug</td><td>RM17,810</td></tr>
+ <tr><td>3</td><td>Foundation in Science</td><td>1 year</td><td>Jan, Apr, Aug</td><td>RM19,305</td></tr>
+ <tr><td>4</td><td>Cambridge A-Level (3 Subjects)</td><td>1.5 years</td><td>Jan, Jul</td><td>RM21,087</td></tr>
+@@ -101,7 +106,11 @@
+ <tr><td>30</td><td>American Degree Transfer Program (AUP)</td><td>2 years</td><td>Jan, May, Aug</td><td>RM41,858</td></tr>
+ <tr><td>31</td><td>Intensive English Programme (per level)</td><td>8 weeks</td><td>Jan, Mar, Jun, Aug, Oct</td><td>RM5,000</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Misc Fees:<br>Application Fee: RM600<br>EMGS Fee: RM2,520<br>Registration Fee: RM2,400<br>Administration Fee: RM4,000<br>General Deposit: RM600<br>Total Misc Fees: RM10,120</p></div><p class="fee-source-links"><a href="/assets/documents/fees/inti-penang-fees.pdf" download>Download INTI  -  PENANG CAMPUS (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-1">INTI  -  NILAI CAMPUS</button></h2>
+-<div class="panel" id="fee-category-1"><div class="table-responsive"><table aria-label="INTI  -  NILAI CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Intake</th><th scope="col">Total Tuition Fee (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation (Business/Arts/Science/IT)</td><td>1 year</td><td>Jan, May, Aug</td><td>RM19,942</td></tr>
++<div class="panel" id="fee-category-1"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> INTI International University, Nilai.<br><strong>Section:</strong> INTI  -  NILAI CAMPUS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored campus schedule issue date and intake validity not confirmed.<br><strong>Fee basis:</strong> Total Tuition Fee (RM); duration and intake are separate columns and miscellaneous charges remain in campus notes.</p>
++
++<ul class="study-link-list"><li><a href="https://newinti.edu.my/programme/diploma-in-computer-science/">INTI official programme and campus fee information</a></li><li><a href="https://newinti.edu.my/campuses/">INTI official institution/campus directory</a></li></ul>
++</details><div class="table-responsive"><table aria-label="INTI  -  NILAI CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Intake</th><th scope="col">Total Tuition Fee (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation (Business/Arts/Science/IT)</td><td>1 year</td><td>Jan, May, Aug</td><td>RM19,942</td></tr>
+ <tr><td>2</td><td>Diploma in Business / Accounting</td><td>2 years</td><td>Jan, May, Aug</td><td>RM38,264</td></tr>
+ <tr><td>3</td><td>Bachelor of Business (Hons) (All Majors)</td><td>3 years</td><td>Jan, May, Aug</td><td>RM75,854</td></tr>
+ <tr><td>4</td><td>Bachelor of Accountancy (Hons)</td><td>4 years</td><td>Jan, May, Aug</td><td>RM89,190</td></tr>
+@@ -127,7 +136,11 @@
+ <tr><td>24</td><td>Doctor of Philosophy (PhD) (By Research)</td><td>3 years</td><td>Jan, May, Sep</td><td>RM59,796</td></tr>
+ <tr><td>25</td><td>Intensive English Program (per level)</td><td>8 weeks</td><td>Jan, Mar, Jun, Aug, Oct</td><td>RM5,000</td></tr></tbody></table></div><div class="fee-source-note"><p><strong>Schedule remarks:</strong><br>Misc Fees:<br>Application Fee: RM600<br>EMGS Fee: RM2,520<br>Registration Fee: RM2,400<br>Administration Fee (Pre-U/Diploma/Degree): RM4,000<br>Administration Fee (Master/PhD): RM10,000<br>General Deposit: RM600<br>Total Misc Fees: RM10,120  -  RM16,120</p></div><p class="fee-source-links"><a href="/assets/documents/fees/inti-nilai-fees.pdf" download>Download INTI  -  NILAI CAMPUS (PDF)</a></p></div>
+ <h2 class="fee-category-title"><button type="button" class="accordion" aria-expanded="false" aria-controls="fee-category-2">INTI  -  SUBANG CAMPUS</button></h2>
+-<div class="panel" id="fee-category-2"><div class="table-responsive"><table aria-label="INTI  -  SUBANG CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Intake</th><th scope="col">Total Tuition Fee (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation (Business/IT/Design/Arts/Science)</td><td>1 year</td><td>Jan, Apr, Aug</td><td>RM21,112</td></tr>
++<div class="panel" id="fee-category-2"><details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
++<p><strong>Institution/campus in the stored schedule:</strong> INTI International College Subang.<br><strong>Section:</strong> INTI  -  SUBANG CAMPUS.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> Stored campus schedule issue date and intake validity not confirmed.<br><strong>Fee basis:</strong> Total Tuition Fee (RM); duration and intake are separate columns and miscellaneous charges remain in campus notes.</p>
++
++<ul class="study-link-list"><li><a href="https://newinti.edu.my/programme/diploma-in-computer-science/">INTI official programme and campus fee information</a></li><li><a href="https://newinti.edu.my/campuses/">INTI official institution/campus directory</a></li></ul>
++</details><div class="table-responsive"><table aria-label="INTI  -  SUBANG CAMPUS"><thead><tr><th scope="col">No</th><th scope="col">Programme</th><th scope="col">Duration</th><th scope="col">Intake</th><th scope="col">Total Tuition Fee (RM)</th></tr></thead><tbody><tr><td>1</td><td>Foundation (Business/IT/Design/Arts/Science)</td><td>1 year</td><td>Jan, Apr, Aug</td><td>RM21,112</td></tr>
+ <tr><td>2</td><td>Cambridge A-Level (3 Subjects)</td><td>1.5 years</td><td>Jan, Jul</td><td>RM29,997</td></tr>
+ <tr><td>3</td><td>Cambridge A-Level (4 Subjects)</td><td>1.5 years</td><td>Jan, Jul</td><td>RM39,996</td></tr>
+ <tr><td>4</td><td>Diploma in Graphic Design</td><td>2.3 years</td><td>Jan, Apr, Aug</td><td>RM47,625</td></tr>
+@@ -193,7 +206,7 @@
+ <!-- seo:fee-planning:start -->
+ <section class="study-content university-intent" id="payment-planning" aria-labelledby="payment-planning-title">
+ <h2 id="payment-planning-title">Understand your INTI International University &amp; Colleges fee breakdown</h2>
+-<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>The main tuition column is labelled Total Tuition Fee (RM). Duration and intake are separate columns. Application, registration, administration and deposit information appears in the campus notes.</p></div><div><h3>Initial payments and additional charges</h3><p>Compare the same programme level at the correct campus. Nilai notes distinguish administration charges by qualification level, so a pre-university miscellaneous-fee example should not be reused for a master&#39;s or PhD application.</p></div></div>
++<div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>The main column is Total Tuition Fee (RM), not an annual or semester instalment. Tuition is not automatically the amount payable before arrival; additional application, registration, administration and deposit charges remain in the campus notes.</p></div><div><h3>Initial payments and additional charges</h3><p>Nilai, Subang and Penang schedules belong to different INTI institutions. Compare the exact programme, international-student category and fee period. Use the applicable source’s payment and tax notes; do not infer that a current official approximation has the same inclusions as a stored total.</p></div></div>
+ <h3>Budgeting from Bangladesh</h3><p>Use the currency and payment period printed in your programme's schedule. Keep accommodation, travel and living expenses separate from tuition. A BDT estimate needs a dated exchange rate and may differ from the amount your bank charges.</p>
+ <p>Compare scholarship or adjusted-fee columns only after your eligibility is confirmed. Your written offer should identify the award, covered charges and renewal conditions.</p>
+ <ul class="study-link-list"><li><a href="/Universities/inti-details#scholarships">Scholarship eligibility and conditions</a></li><li><a href="/Articles/cost-of-living-malaysia-international-students">Malaysia living-cost guide</a></li><li><a href="/Articles/visas-and-requirements-malaysia">Student visa process and cost stages</a></li></ul>
+diff --git "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\inti-details.html" "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\inti-details.html"
+index 7991b43..e6592f5 100644
+--- "a/C:\\Users\\User\\AppData\\Local\\Temp\\onestep-scope-a-20261006-before\\Universities\\inti-details.html"
++++ "b/C:\\Users\\User\\Desktop\\Projects\\One-Step\\Universities\\inti-details.html"
+@@ -59,7 +59,7 @@
+     <div class="uni-header-overlay"></div>
+     <div class="container uni-header-content">
+       <div data-aos="fade-up" data-aos-duration="1000">
+-        <h1 class="uni-title">INTI International University</h1>
++        <h1>INTI International University &amp; Colleges</h1>
+         <div class="uni-meta">
+           <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Nilai, Subang, KL</span>
+           <span class="meta-tag"><i class="fas fa-globe-americas"></i> 450+ Global Partners</span>
+@@ -72,7 +72,7 @@
+ <!-- seo:university-decision:start -->
+ <section class="container study-content university-intent study-decision" aria-labelledby="study-decision-title">
+ <p class="study-eyebrow">University guide for Bangladeshi applicants</p>
+-<h2 id="study-decision-title">Study at INTI International University &amp; Colleges</h2><p>Choose an INTI programme and campus together. This guide covers INTI International University and college options; a course offered in Nilai should not be assumed to be available at Subang or Penang.</p>
++<h2 id="study-decision-title">Study at INTI International University &amp; Colleges</h2><p>Choose the INTI institution and programme together. Nilai is home to INTI International University; Subang and Penang are separate INTI colleges. Similar course names do not establish the same award, intake or fee.</p>
+ <nav class="study-actions" aria-label="University guide sections"><a href="#courses-intakes">Courses &amp; intakes</a><a href="#bangladesh-entry">Entry planning</a><a href="#rankings">Ranking evidence</a><a href="/Fees_Chart/inti-fees">International fee chart</a></nav>
+ </section>
+ <!-- seo:university-decision:end -->
+@@ -90,7 +90,7 @@
+         
+         <div id="overview" class="tab-content active" data-aos="fade-up" data-aos-delay="200">
+           <h2 class="section-head">About the University</h2>
+-          <p>INTI International University & Colleges is one of Malaysia's most respected education groups. Known for its "International" focus, INTI offers the widest range of pathways to graduate with prestigious degrees from the UK, USA, Australia, and New Zealand.</p>
++          <p>INTI International University &amp; Colleges includes separately named institutions. Nilai is home to INTI International University, while Subang and Penang are INTI International Colleges. Match the institution and awarding body to your selected programme.</p>
+           <p>The flagship campus in Nilai is a sprawling 82-acre township university, offering a complete campus lifestyle with on-site accommodation, sports facilities, and international diversity.</p>
+ 
+           <div class="divider"></div>
+@@ -137,11 +137,11 @@
+ 
+         <div id="location" class="tab-content">
+           <h2 class="section-head">Our Campuses</h2>
+-          <p>INTI has a strong presence across Malaysia. The main university campus is in Nilai, while the Subang campus is a popular hub for pre-university and business programs in the city.</p>
++          <p>Use the <a href="https://newinti.edu.my/campuses/">official INTI campus directory</a> to distinguish the University in Nilai from its colleges. The fee chart covers Nilai, Subang and Penang schedules; it does not provide a Sabah fee schedule.</p>
+           
+           <div class="map-container" data-aos="zoom-in">
+             <iframe 
+-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy" 
++              title="INTI International University in Nilai" src="https://maps.google.com/maps?q=INTI%20International%20University%2C%20Persiaran%20Perdana%20BBN%2C%20Putra%20Nilai%2C%2071800%20Nilai%2C%20Negeri%20Sembilan&amp;output=embed" 
+               width="100%" 
+               height="400" 
+               style="border:0;" 
+@@ -162,15 +162,15 @@
+             <div class="loc-card" data-aos="fade-left">
+               <i class="fas fa-city"></i>
+               <div>
+-                <h4>INTI College Subang</h4>
+-                <p>SS15, Subang Jaya (Famous student hub)</p>
++                <h4>INTI International College Subang</h4>
++                <p>Subang Jaya, Selangor</p>
+               </div>
+             </div>
+ 
+             <div class="loc-card" data-aos="fade-right">
+               <i class="fas fa-building"></i>
+               <div>
+-                <h4>INTI College Penang</h4>
++                <h4>INTI International College Penang</h4>
+                 <p>Bukit Jambul, Penang</p>
+               </div>
+             </div>
+@@ -261,8 +261,9 @@
+ <section class="container study-content university-intent" id="fees-and-scholarships">
+ <nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="/Universities/inti-details">INTI</a></nav>
+ <h2 id="courses-intakes">INTI International University &amp; Colleges courses and intake planning</h2>
+-<ul><li>Nilai: select INTI International University in the official course finder to see its programmes.</li><li>Subang and Penang: select the relevant college; similarly named courses can have different awards and intakes.</li><li>Partner and transfer programmes: confirm both the teaching institution and awarding university for the chosen route.</li></ul>
+-<details class="study-faq"><summary>Programme examples in the stored fee schedule</summary><p>These examples retain the stored schedule's wording. They are not a complete course catalogue or confirmation of the next open intake. Use the official programme sources below to confirm current availability.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Programme examples"><table><caption>Selected programme examples; schedule information only</caption><thead><tr><th scope="col">Programme</th><th scope="col">Schedule section</th><th scope="col">Duration</th><th scope="col">Intake in schedule</th><th scope="col">Tuition</th></tr></thead><tbody><tr><th scope="row">Foundation in Business</th><td>INTI  -  PENANG CAMPUS</td><td>1 year</td><td>Jan, Apr, Aug</td><td><a href="/Fees_Chart/inti-fees#fee-category-0">View relevant fee section</a></td></tr><tr><th scope="row">Foundation (Business/Arts/Science/IT)</th><td>INTI  -  NILAI CAMPUS</td><td>1 year</td><td>Jan, May, Aug</td><td><a href="/Fees_Chart/inti-fees#fee-category-1">View relevant fee section</a></td></tr><tr><th scope="row">Foundation (Business/IT/Design/Arts/Science)</th><td>INTI  -  SUBANG CAMPUS</td><td>1 year</td><td>Jan, Apr, Aug</td><td><a href="/Fees_Chart/inti-fees#fee-category-2">View relevant fee section</a></td></tr></tbody></table></div></details>
++<ul><li>Match the teaching institution and any awarding partner to your offer. INTI International University’s ranking does not establish a separate ranking for each college or partner award.</li></ul>
++<h3>Which INTI institution offers your course?</h3><p>The official Diploma in Computer Science page identifies the three institutions below and gives a minimum two-year programme duration. Confirm each institution’s next international intake and exact award; the stored fee chart’s month lists are not a current availability guarantee.</p>
++<p>On a small screen, scroll the table horizontally to view every column.</p><div class="table-responsive" tabindex="0" role="region" aria-label="Verified programme references"><table style="min-width:760px"><caption>Selected official programme references; checked 6 October 2026</caption><thead><tr><th scope="col">Qualification</th><th scope="col">Institution and location</th><th scope="col">Study information</th><th scope="col">Official evidence</th><th scope="col">Fee section</th></tr></thead><tbody><tr><th scope="row">Diploma in Computer Science</th><td>INTI International College Penang<br>Penang</td><td>Minimum 2 years. Confirm the institution-specific next international intake and award.</td><td><a href="https://newinti.edu.my/programme/diploma-in-computer-science/">Official programme and campus information</a></td><td><a href="/Fees_Chart/inti-fees#fee-category-0">Penang tuition section</a></td></tr><tr><th scope="row">Diploma in Computer Science</th><td>INTI International University<br>Nilai, Negeri Sembilan</td><td>Minimum 2 years. Confirm the institution-specific next international intake and award.</td><td><a href="https://newinti.edu.my/programme/diploma-in-computer-science/">Official programme and campus information</a></td><td><a href="/Fees_Chart/inti-fees#fee-category-1">Nilai tuition section</a></td></tr><tr><th scope="row">Diploma in Computer Science</th><td>INTI International College Subang<br>Subang Jaya, Selangor</td><td>Minimum 2 years. Confirm the institution-specific next international intake and award.</td><td><a href="https://newinti.edu.my/programme/diploma-in-computer-science/">Official programme and campus information</a></td><td><a href="/Fees_Chart/inti-fees#fee-category-2">Subang Jaya tuition section</a></td></tr></tbody></table></div>
+ <h3>Choosing your intake</h3><p>INTI&#39;s course finder separates programmes by campus. The stored fee chart also carries programme-specific intake columns. Treat these as schedule information and confirm the next available international intake with the selected campus.</p>
+ <h3 id="bangladesh-entry">Entry planning for Bangladeshi students</h3><p>Submit your HSC subjects and results for the exact programme and campus. For a partner award or transfer route, request the progression requirements as well as the initial entry requirements and English-language conditions.</p>
+ <p>Prepare your qualification certificates, subject transcripts and any English-test results for assessment. Confirm the exact programme, campus, study mode, academic conditions and international application deadline together. This guide does not establish a universal HSC grade or IELTS waiver.</p>
+@@ -271,7 +272,7 @@
+ <h3>Tuition and study budget</h3><p><a href="/Fees_Chart/inti-fees">View INTI International University &amp; Colleges international tuition fees and payment notes</a>. The separate fee chart explains the published payment periods and additional charges for financial planning.</p>
+ <h3>Questions about studying at INTI International University &amp; Colleges</h3><details class="study-faq"><summary>Are INTI Nilai and INTI Subang the same campus?</summary><p>No. Nilai and Subang are separate study locations. The INTI course finder identifies the institution offering each programme; confirm this before comparing accommodation, intakes or awards.</p></details>
+ <details class="study-faq"><summary>Does INTI&#39;s university ranking apply to every college programme?</summary><p>The ranking record identifies INTI International University. A university ranking does not establish a separate ranking for every INTI college, partner award or individual programme.</p></details>
+-<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://newinti.edu.my/academic-programmes/undergraduate/">INTI official undergraduate course finder</a></li><li><a href="https://www.topuniversities.com/universities/inti-international-university">INTI QS university profile</a></li></ul>
++<h3>Official programme and institution sources</h3><ul class="study-link-list"><li><a href="https://newinti.edu.my/campuses/">INTI official institutions and campuses</a></li><li><a href="https://newinti.edu.my/programme/diploma-in-computer-science/">INTI official Diploma in Computer Science</a></li><li><a href="https://newinti.edu.my/academic-programmes/undergraduate/">INTI official undergraduate course finder</a></li><li><a href="https://www.topuniversities.com/universities/inti-international-university">INTI QS university profile</a></li></ul>
+ <h3>Compare your study options</h3><ul class="study-link-list"><li><a href="/Articles/best-engineering-universities-malaysia">Compare engineering study options</a></li><li><a href="/Articles/cost-of-living-malaysia-international-students">Plan living costs by study location</a></li></ul>
+ <p><a class="study-primary-link" href="/contact">Discuss my course, campus and intake</a></p>
+ </section>

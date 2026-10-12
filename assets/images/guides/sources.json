@@ -1,0 +1,23 @@
+{
+  "note": "Resized derivatives of existing One-Step gallery assets and the existing article cover URL; original attribution and rights remain with their owners. Not newly licensed images.",
+  "width": 800,
+  "height": 520,
+  "images": {
+    "upm": "upm/upm_campus_sky_view.jfif",
+    "utm": "utm/utm_campus.webp",
+    "taylors": "taylors/taylors-main.jpg",
+    "ucsi": "ucsi/ucsi_campus_1.jpg",
+    "inti": "inti/inti_main.jpg",
+    "apu": "apu/APU-campus.jpg",
+    "iium": "iium/iium_campus_1.webp",
+    "lincoln": "lincoln/lincoln_campus_1.jpg",
+    "segi": "segi/segi_main.jpg",
+    "mmu": "mmu/mmu_campus_1.webp",
+    "lab": "apu/facilities_engineering_labs.jpg",
+    "library": "taylors/taylors_library.jpg",
+    "accommodation": "taylors/taylors_accommodation.jpg",
+    "iium-library": "iium/iium_library.jpg",
+    "countries-cover": "https://images.unsplash.com/photo-1488085061387-422e29b40080",
+    "medical-lab": "cyberjaya/uoc_anatomy.jpg"
+  }
+}

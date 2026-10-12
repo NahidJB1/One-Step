@@ -3,6 +3,39 @@
    ========================================= */
 
 /* 1. GLOBAL PAGE SETTINGS */
+/* Ranking content is scoped to its own section so existing page controls keep their styles. */
+.university-rankings {
+  box-sizing: border-box;
+  scroll-margin-top: 110px;
+  margin-bottom: 40px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #fff;
+  color: #263248;
+}
+.university-rankings h2 { font-family: 'Outfit', sans-serif; font-size: 1.7rem; line-height: 1.3; margin: 0 0 12px; }
+.university-rankings p { line-height: 1.75; margin: 12px 0; }
+.university-rankings a { color: #164d8d; text-decoration: underline; overflow-wrap: anywhere; }
+.university-rankings .ranking-reviewed { color: #526174; font-size: .9rem; }
+.university-rankings .ranking-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0; }
+.university-rankings .ranking-stat { padding: 20px; background: #f3f6fa; border: 1px solid #dbe3ee; border-radius: 12px; }
+.university-rankings dt { font-weight: 600; font-size: .9rem; color: #465670; }
+.university-rankings dd { margin: 10px 0 0; font-family: 'Outfit', sans-serif; font-size: 1.9rem; line-height: 1.3; font-weight: 600; }
+.university-rankings .ranking-parent { display: block; font-family: 'Poppins', sans-serif; font-size: .8rem; margin-top: 8px; }
+.university-rankings .ranking-scope { padding: 14px 18px; border-left: 3px solid #446487; background: #f6f8fb; }
+.university-rankings .ranking-method, .university-rankings .ranking-faq-sources { font-size: .85rem; color: #526174; }
+.university-rankings #ranking-faqs { margin-top: 32px; }
+.university-rankings details { border-top: 1px solid #dbe3ee; padding: 16px 0; }
+.university-rankings summary { cursor: pointer; font-weight: 600; line-height: 1.6; }
+.university-rankings summary:focus-visible, .university-rankings a:focus-visible { outline: 3px solid #2161a9; outline-offset: 4px; }
+.university-rankings .ranking-source-list { font-size: .85rem; }
+@media (max-width: 760px) {
+  .university-rankings { padding: 22px; }
+  .university-rankings .ranking-grid { grid-template-columns: 1fr; gap: 10px; }
+  .university-rankings .ranking-stat { padding: 16px; }
+  .university-rankings h2 { font-size: 1.4rem; }
+}
+
 html, body {
   width: 100%;
   max-width: 100%;

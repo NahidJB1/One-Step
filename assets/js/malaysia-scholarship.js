@@ -347,13 +347,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let uniData = window.UNIVERSITY_META[uniKey];
                 if (uniData) {
-                    let feesSlug = uniData.feesSlug || uniData.slug;
+                    const feesSlug = (uniData.feesSlug || uniData.slug) === 'city-university' ? 'cityu' : (uniData.feesSlug || uniData.slug);
                     document.getElementById("dashIntakes").textContent = uniData.intakes || "Varies";
                     document.getElementById("dashDuration").textContent = "3 - 4 Years"; 
                     document.getElementById("dashFees").textContent = uniData.bachelorFee || "Contact for details";
                     
-                    document.getElementById("btnUniDetail").href = `Universities/${uniData.slug}-details.html`;
-                    document.getElementById("btnUniFees").href = `Fees_Chart/${feesSlug}-fees.html`;
+                    document.getElementById("btnUniDetail").href = `/Universities/${uniData.slug}-details`;
+                    document.getElementById("btnUniFees").href = `/Fees_Chart/${feesSlug}-fees`;
                 }
 
                 window.scrollTo(0, 0);

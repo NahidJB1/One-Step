@@ -1,0 +1,3641 @@
+[
+    {
+        "number": 1,
+        "question": "hi",
+        "story": null,
+        "reply": "Hello! I can help you find programs, check published fees, compare universities, and search our student FAQs.",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "APU master fees",
+            "Compare APU and MMU",
+            "Can I study without IELTS?"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 2,
+        "question": "?",
+        "story": null,
+        "reply": "I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 3,
+        "question": "fees",
+        "story": null,
+        "reply": "Which university and study level or program do you mean? For example, \"APU master fees\" or \"computer science bachelor programs\".",
+        "context": {
+            "intent": "fees",
+            "pending": "university",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "clarification",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "APU master fees",
+            "City University MBA fees",
+            "Computer science bachelor programs"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 4,
+        "question": "asdfghjkl",
+        "story": null,
+        "reply": "I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 5,
+        "question": "@@@ !!! ???",
+        "story": null,
+        "reply": "I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 6,
+        "question": "What are the fees for both Taylor's and UCSI?",
+        "story": null,
+        "reply": "Which program or study level should I check? Fees differ by program, campus, and student category.",
+        "context": {
+            "universities": [
+                "taylors",
+                "ucsi"
+            ],
+            "intent": "fees",
+            "pending": "level",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "clarification",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            },
+            {
+                "label": "UCSI fees",
+                "url": "Fees_Chart/ucsi-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Foundation",
+            "Diploma",
+            "Bachelor",
+            "Master",
+            "PhD"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 7,
+        "question": "Which is cheaper, APU or SEGI or Cybernetics?",
+        "story": null,
+        "reply": "Which program or study level should I check? Fees differ by program, campus, and student category.",
+        "context": {
+            "universities": [
+                "cybernetics",
+                "segi",
+                "apu"
+            ],
+            "intent": "fees",
+            "pending": "level",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "clarification",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "CYBERNETICS fees",
+                "url": "Fees_Chart/cybernetics-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            },
+            {
+                "label": "SEGI fees",
+                "url": "Fees_Chart/segi-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            },
+            {
+                "label": "APU fees",
+                "url": "Fees_Chart/apu-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Foundation",
+            "Diploma",
+            "Bachelor",
+            "Master",
+            "PhD"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 8,
+        "question": "Tell me about Universiti Malaya, UTM, and UniKL.",
+        "story": null,
+        "reply": "| University | Location | Type | Campuses | Catalog programs |\n|---|---|---|---|---|\n| Universiti Kuala Lumpur (UniKL) | Kuala Lumpur (Multiple Campuses) | Private | Main Campus | 146 |\n| Universiti Teknologi Malaysia (UTM) | Johor Bahru, Johor | Public | UTM Johor Bahru, UTM Kuala Lumpur | 120 |\n\nNo program or fee catalog is available for **UM** in our local data.\n\nTell me the program, study level, and budget to narrow the comparison. The catalog does not establish a universal best university or guarantee visa approval.",
+        "context": {
+            "universities": [
+                "um",
+                "unikl",
+                "utm"
+            ],
+            "intent": "overview",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "university",
+                "file": "university_meta.json / universities.json",
+                "title": "Universiti Kuala Lumpur (UniKL)",
+                "url": "Universities/unikl-details.html"
+            },
+            {
+                "type": "university",
+                "file": "university_meta.json / universities.json",
+                "title": "Universiti Teknologi Malaysia (UTM)",
+                "url": "Universities/utm-details.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "UNIKL fees",
+                "url": "Fees_Chart/unikl-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            },
+            {
+                "label": "UTM fees",
+                "url": "Fees_Chart/utm-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Master fees",
+            "Bachelor computer science programs"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 9,
+        "question": "I want a Bachelor degree, or maybe a Master's, or even a PhD?",
+        "story": null,
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Bachelor of Graphic Design (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Fashion Design (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Multimedia (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Corporate Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Mass Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Journalism**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\nShowing 6 of 3151 matching entries.",
+        "context": {
+            "levels": [
+                "bachelor",
+                "master",
+                "phd"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "City University Malaysia programs",
+                "url": "Universities/cityu-details.html",
+                "program_index": 35
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 3151
+    },
+    {
+        "number": 10,
+        "question": "What is the diploma and undergrad cost?",
+        "story": null,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Accountancy**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Business Administration**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in E-Business**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Information Technology**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 11,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 10,500\n- **Year 3:** RM 10,500\n- **Total:** RM 33,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Early Childhood**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Early Childhood (ODL)**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\nShowing 6 of 1077 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "levels": [
+                "diploma",
+                "bachelor"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/1/table/rows/0",
+                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/1/table/rows/1",
+                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/1/table/rows/2",
+                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/1/table/rows/3",
+                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/1/table/rows/4",
+                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/1/table/rows/5",
+                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 1077
+    },
+    {
+        "number": 11,
+        "question": "bhai kemon acho?",
+        "story": null,
+        "reply": "হ্যালো! প্রোগ্রাম খোঁজা, সংরক্ষিত ফি দেখা, বিশ্ববিদ্যালয় তুলনা ও শিক্ষার্থীদের প্রশ্নের উত্তর পেতে সাহায্য করতে পারি।",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "bn"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "APU master fees",
+            "Compare APU and MMU",
+            "Can I study without IELTS?"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 12,
+        "question": "vaiya amar taka nai, ki korbo?",
+        "story": null,
+        "reply": "স্থানীয় তথ্যে কিছু প্রতিষ্ঠানের merit-based scholarship ও আংশিক tuition discount-এর উল্লেখ আছে। বর্তমানে খোলা fully funded award, নিশ্চিত ছাড় বা জাতীয়তাভিত্তিক যোগ্যতা যাচাই করা নেই। নিশ্চিত scholarship-এর পরের tuition, থাকা-খাওয়া, visa ও deposit মিলিয়ে বাজেট করুন। বিশ্ববিদ্যালয়/প্রোগ্রাম, ফল, জাতীয়তা ও বাজেট দিলে কাউন্সেলর আসল শর্ত মিলিয়ে দেখতে পারবেন। [Scholarship options](scholarship-options.html)-ও দেখতে পারেন।",
+        "context": {
+            "intent": "faq",
+            "language": "bn",
+            "guide": "scholarship-advice",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "What scholarships or funding can I consider?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/1",
+                "title": "Local scholarship options",
+                "url": "scholarship-options.html",
+                "origin": "Local guidance; current awards, amounts, deadlines and eligibility not independently verified",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 13,
+        "question": "malaysia te porte jabo, admission fee koto hobe?",
+        "story": null,
+        "reply": "সব বিশ্ববিদ্যালয়ের admission fee এক নয়। Application/registration fee, EMGS, deposit ও tuition আলাদা। বিশ্ববিদ্যালয় ও প্রোগ্রাম জানান এবং application fee, EMGS payment নাকি ভর্তির আগে প্রথম payment বোঝাচ্ছেন তা বলুন—তাহলে সঠিক খরচ মিলিয়ে দেওয়া যাবে।",
+        "context": {
+            "intent": "faq",
+            "language": "bn",
+            "guide": "admission-fee",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/6",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 14,
+        "question": "apni ki bangla bujhen?",
+        "story": null,
+        "reply": "হ্যাঁ, বাংলা ও Banglish-এ বিশ্ববিদ্যালয়, ফি, প্রোগ্রাম ও EMGS নিয়ে প্রশ্ন করতে পারেন। অস্পষ্ট হলে নির্দিষ্ট তথ্য জানতে চাইব।",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "bn"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 15,
+        "question": "My emgs is stuck at 32% update me please.",
+        "story": null,
+        "reply": "The local FAQ describes **32%** as the stage when the file is with Malaysian Immigration for eVAL consideration. This is **not final visa approval**, and I cannot check your live application or promise a completion date. Read the wording in the [official EMGS tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S); if documents or action are requested, follow that instruction through your institution. Share the displayed wording to clarify the next step.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "status-32",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": "What does EMGS 32% mean?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/41",
+                "title": "Local EMGS status FAQ",
+                "url": "myfaqs.json",
+                "origin": "myfaqs.json /global/17; undated local guidance, not a live application check",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 16,
+        "question": "emgs track",
+        "story": null,
+        "reply": "I cannot access your application or check live EMGS status. Use the [official EMGS application tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). Share the displayed status wording or percentage, without your passport number, and I can explain the available guidance. A percentage alone is not proof of approval or a travel authorisation.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "tracking",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": "How do I check my EMGS status?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/27",
+                "title": "Official EMGS application tracker",
+                "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
+                "origin": "Official tracker; no live lookup by chatbot",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 17,
+        "question": "check emgs status",
+        "story": null,
+        "reply": "I cannot access your application or check live EMGS status. Use the [official EMGS application tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). Share the displayed status wording or percentage, without your passport number, and I can explain the available guidance. A percentage alone is not proof of approval or a travel authorisation.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "tracking",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": "How do I check my EMGS status?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/27",
+                "title": "Official EMGS application tracker",
+                "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
+                "origin": "Official tracker; no live lookup by chatbot",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 18,
+        "question": "How do I track my visa progress?",
+        "story": null,
+        "reply": "I cannot access your application or check live EMGS status. Use the [official EMGS application tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). Share the displayed status wording or percentage, without your passport number, and I can explain the available guidance. A percentage alone is not proof of approval or a travel authorisation.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "tracking",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": "How do I check my EMGS status?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/27",
+                "title": "Official EMGS application tracker",
+                "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
+                "origin": "Official tracker; no live lookup by chatbot",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 19,
+        "question": "Show me every single Science program at UTM.",
+        "story": null,
+        "reply": "Here are matching entries from our local catalog.\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Computer Networks and Security) with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Graphics and Multimedia Software) with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Architecture with Honours**\n- **Duration:** 6 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Construction with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Geoinformatics with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Land Administration and Development with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\nShowing 6 of 154 matching entries.",
+        "context": {
+            "universities": [
+                "utm"
+            ],
+            "subjects": [
+                "science"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Universiti Teknologi Malaysia (UTM) programs",
+                "url": "Universities/utm-details.html",
+                "program_index": 25
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "UTM fees",
+                "url": "Fees_Chart/utm-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 154
+    },
+    {
+        "number": 20,
+        "question": "List all the engineering and management degrees at APU.",
+        "story": null,
+        "reply": "Here are matching entries from our local catalog.\n\n**Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**\n- **Duration:** 4 Years\n\n[Source: program details](Universities/apu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**\n- **Duration:** 4 Years\n\n[Source: program details](Fees_Chart/apu-fees.html)\n\nNo specific local match was found for **management** with these filters.\n\nShowing 2 of 2 matching entries.",
+        "context": {
+            "universities": [
+                "apu"
+            ],
+            "levels": [
+                "bachelor"
+            ],
+            "subjects": [
+                "engineering",
+                "management"
+            ],
+            "subject_groups": [
+                [
+                    "engineering"
+                ],
+                [
+                    "management"
+                ]
+            ],
+            "intent": "programs",
+            "subject_mode": "any",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Asia Pacific University of Technology & Innovation (APU) programs",
+                "url": "Universities/apu-details.html",
+                "program_index": 13
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/3/table/rows/2",
+                "title": "Asia Pacific University of Technology & Innovation (APU): BACHELOR PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "APU fees",
+                "url": "Fees_Chart/apu-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 2
+    },
+    {
+        "number": 21,
+        "question": "Give me all diploma courses in Malaysia.",
+        "story": null,
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Diploma in Fashion Design**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Graphic Design**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Mass Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Corporate Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Accounting**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Business Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\nShowing 6 of 579 matching entries.",
+        "context": {
+            "levels": [
+                "diploma"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "City University Malaysia programs",
+                "url": "Universities/cityu-details.html",
+                "program_index": 13
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 579
+    },
+    {
+        "number": 22,
+        "question": "How much are the fes at taylors u?",
+        "story": null,
+        "reply": "Which program or study level should I check? Fees differ by program, campus, and student category.",
+        "context": {
+            "universities": [
+                "taylors"
+            ],
+            "intent": "fees",
+            "pending": "level",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "clarification",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Foundation",
+            "Diploma",
+            "Bachelor",
+            "Master",
+            "PhD"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 23,
+        "question": "A.P.U universiti cost for mastres?",
+        "story": null,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**\nMASTER PROGRAMS\n- **Duration:** 1-1.5 Years (3 Semesters)\n- **Total Tuition Fees:** RM 38,800\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Science in Artificial Intelligence, Master of Science in Cyber Security**\nMASTER PROGRAMS\n- **Duration:** 1-1.5 Years (3 Semesters)\n- **Total Tuition Fees:** RM 40,800\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — MSc in Data Science and Business Analytics**\nMASTER PROGRAMS\n- **Duration:** 1-1.5 Years (3 Semesters)\n- **Total Tuition Fees:** RM 44,800\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Education in Learning Design and Technology**\nMASTER PROGRAMS\n- **Duration:** 1-1.5 Years (3 Semesters)\n- **Total Tuition Fees:** RM 34,000\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Philosophy (MPhil) in Engineering, Management, Computing**\nMASTER PROGRAMS\n- **Duration:** Up to 2 Years\n- **Total Tuition Fees:** RM 29,800\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**\nMASTER PROGRAMS\n- **Duration:** 2 Years\n- **Total Tuition Fees:** RM 31,000\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\nShowing 6 of 8 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "universities": [
+                "apu"
+            ],
+            "levels": [
+                "master"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/0",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/1",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/2",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/3",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/4",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/5",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "APU fees",
+                "url": "Fees_Chart/apu-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Show more"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 8
+    },
+    {
+        "number": 24,
+        "question": "cyber netics diploma?",
+        "story": null,
+        "reply": "Here are matching entries from our local catalog.\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Creative Multimedia**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Aviation Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Halal Industry Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Accounting**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Early Childhood Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Business Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\nShowing 6 of 9 matching entries.",
+        "context": {
+            "universities": [
+                "cybernetics"
+            ],
+            "levels": [
+                "diploma"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "CYBERNETICS MALAYSIA (KTAC) programs",
+                "url": "Universities/cybernetics-details.html",
+                "program_index": 8
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "CYBERNETICS fees",
+                "url": "Fees_Chart/cybernetics-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 9
+    },
+    {
+        "number": 25,
+        "question": "tarc fee structur",
+        "story": null,
+        "reply": "I recognized **TARC**, but no program or fee catalog for it is available in our local data. A counselor can help confirm the details.",
+        "context": {
+            "universities": [
+                "tarc"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 26,
+        "question": "I have a very long story. I graduated back in 2018. Since then I was doing some random jobs. I have a 4 year study gap. Will this be a problem?",
+        "story": null,
+        "reply": "A study gap needs to be assessed with your qualification, grades, intended level/program and what you did during the gap. Prepare a timeline, CV and supporting work/study records. Working during a gap can help explain it, but neither a CV nor a particular gap length guarantees admission or a visa. Tell me the target university and program so a counselor can review the institution's actual requirements.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "study-gap",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "How does a study gap affect admission or a Student Pass?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/0",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 27,
+        "question": "I want to know about the post study work visa or graduate pass in malaysia after I finish my studies.",
+        "story": null,
+        "reply": "The Graduate Pass is a **12-month Social Visit Pass** for eligible international graduates who complete a Bachelor's degree or higher in Malaysia. It permits part-time work in approved sectors without employer sponsorship; it does not promise unrestricted full-time employment. Apply while the Student Pass is still valid, with a passport valid for at least 18 months, completion evidence, 12-month local health insurance, a Malaysian sponsor earning at least RM1,500/month, and the personal bond. Nationality restrictions apply. Tell me your nationality and current pass status to check the supplied eligibility rules.",
+        "context": {
+            "intent": "faq",
+            "subject_mode": "any",
+            "language": "en",
+            "guide": "graduate",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "What is the Graduate Pass?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/15",
+                "title": "EMGS Graduate Pass",
+                "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
+                "origin": "data/emgs_source.txt",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 28,
+        "question": "Pending additional documents at 15%, I am very scared.",
+        "story": null,
+        "reply": "'Pending additional documents' means the application needs the specific information listed in the portal request. Read that request and ask your institution to submit the correct, complete documents. This wording alone does not mean a visa rejection. A percentage such as 15% cannot identify which document is missing. I cannot see your live file or promise when the percentage will change.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "additional-documents",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": "What does pending additional documents mean?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/28",
+                "title": "Official EMGS application tracker",
+                "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
+                "origin": "Official tracker; no live lookup by chatbot",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 29,
+        "question": "Can I go without IELTS? I failed my English test.",
+        "story": null,
+        "reply": "IELTS is not the only English qualification listed by EMGS, but an admission waiver depends on the exact university and program. A conditional offer or English pathway must be confirmed by the institution, including progression criteria and fees; a failed test does not establish direct-entry eligibility. EMGS requires an accepted English certificate for the VAL; missing it can delay processing or affect pass duration. Tell me the university, level/program and any English qualification you hold.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "english-admission",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can I study without IELTS or with a low English-test score?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/4",
+                "title": "EMGS English-certificate guidance",
+                "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+                "origin": "data/emgs_source.txt; university admission decisions are separate",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 30,
+        "question": "letter of good conduct required?",
+        "story": null,
+        "reply": "The supplied EMGS **Graduate Pass** rules specifically require a letter of good conduct from the institution or embassy for **Chinese and Indian nationals** under the extension through **31 December 2026**, assessed case by case. This is not a universal requirement for every new Student Pass applicant. Tell me your nationality and whether you mean a Student Pass or Graduate Pass; an institution can separately ask for additional documents.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "conduct",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Is a letter of good conduct required?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/19",
+                "title": "EMGS Graduate Pass",
+                "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
+                "origin": "data/emgs_source.txt",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 31,
+        "question": "How will it cost me to study in the university?",
+        "story": null,
+        "reply": "Which university and study level or program do you mean? For example, \"APU master fees\" or \"computer science bachelor programs\".",
+        "context": {
+            "intent": "fees",
+            "pending": "university",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "clarification",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "APU master fees",
+            "City University MBA fees",
+            "Computer science bachelor programs"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 32,
+        "question": "What is it about and can you tell me what I want to know?",
+        "story": null,
+        "reply": "**What is it about**\nI could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).\n\n**can you tell me what I want to know**\nI could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 33,
+        "question": "Will you accept what I have?",
+        "story": null,
+        "reply": "Please give your academic qualification, grades, target university, study level and program. I cannot confirm acceptance from an unspecified document or profile; the institution decides against the program's entry requirements.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "admission-check",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can you confirm whether my qualifications are accepted?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/8",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 34,
+        "question": "I want to study in China, what are the options?",
+        "story": null,
+        "reply": "Our local guides cover these destinations: [China study guide](countries/china.html). I do not have a structured answer to this question for those destinations.",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guide",
+                "file": "countries/china.html",
+                "title": "China study guide",
+                "url": "countries/china.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 35,
+        "question": "Tell me about studying in Finland or Sweden.",
+        "story": null,
+        "reply": "Our local guides cover these destinations: [Finland study guide](countries/finland.html), [Sweden study guide](countries/sweden.html). I do not have a structured answer to this question for those destinations.",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guide",
+                "file": "countries/finland.html",
+                "title": "Finland study guide",
+                "url": "countries/finland.html"
+            },
+            {
+                "type": "guide",
+                "file": "countries/sweden.html",
+                "title": "Sweden study guide",
+                "url": "countries/sweden.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 36,
+        "question": "Cyprus universities?",
+        "story": null,
+        "reply": "Our local guides cover these destinations: [Cyprus study guide](countries/cyprus.html). I do not have a structured answer to this question for those destinations.",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guide",
+                "file": "countries/cyprus.html",
+                "title": "Cyprus study guide",
+                "url": "countries/cyprus.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 37,
+        "question": "hello i want to study in malaysia but i do not have enough money so i am looking for a cheap university that offers a bachelor degree in computer science preferably with a scholarship or some kind of discount because my family cannot support me and i also need to know how much the visa costs and if i can work part time while studying thank you",
+        "story": null,
+        "reply": "**Fees**\nThese are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**\nBACHELOR PROGRAMS\n- **Duration:** 3 Years\n- **Year 1:** RM 16,000\n- **Resource Fee:** RM 2,000\n- **Year 2:** RM 15,000\n- **Year 3:** RM 15,000\n- **Total:** RM 48,000\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**\nAll Programs\n- **Level:** Bachelor\n- **Duration:** 3 Years\n- **Year 1 (RM):** 10,920\n- **Year 2 (RM):** 10,920\n- **Year 3 (RM):** 10,920\n- **Total (RM):** 32,760\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**\nUNIMY\n- **Duration:** 3 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year\n- **Total Tuition Fee:** RM46,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**\nUNIMY\n- **Duration:** 3 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year\n- **Total Tuition Fee:** RM46,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\n**City University Malaysia — Bachelor of Computer Science (Artificial Intelligence) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\n**City University Malaysia — Bachelor of Computer Science (Cyber Security) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\nShowing 6 of 49 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.\n\n**Can international students work part time?**\nInternational students may work up to **20 hours per week only during semester breaks or holidays longer than 7 days**, in permitted sectors such as restaurants, petrol kiosks, mini-markets and hotels. A valid Student Pass and prior Immigration approval through the institution are required. This is not permission to work throughout teaching weeks, and income is not guaranteed; plan tuition and living costs without relying on a job. The Graduate Pass has separate eligibility rules.\n\n**Scholarships**\nThe local information describes merit-based scholarships and partial tuition discounts at some institutions. It does not verify a currently open fully funded award, a guaranteed discount, or nationality-specific eligibility. Compare tuition after any confirmed award, living costs, visa charges and deposits. Tell me your university/program, grades, nationality and budget; a counselor can check actual award terms. You can also review the [local scholarship options](scholarship-options.html).\n\n**What are the institution EMGS fee estimates?**\nThese are **institution EMGS fee estimates from the supplied table**, not universal government charges or tuition. Their effective date and included components are unverified; confirm the invoice and refund conditions with the institution.\n\nWhich university should I check?",
+        "context": {
+            "levels": [
+                "bachelor"
+            ],
+            "subjects": [
+                "computing"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/2/table/rows/11",
+                "title": "ALFA UNIVERSITY MALAYSIA: BACHELOR PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/binary/categories/0/table/rows/7",
+                "title": "Binary University of Management & Entrepreneurship: All Programs",
+                "url": "Fees_Chart/binary-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/bac/categories/0/table/rows/7",
+                "title": "BAC EDUCATION GROUP: UNIMY",
+                "url": "Fees_Chart/bac-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/bac/categories/0/table/rows/9",
+                "title": "BAC EDUCATION GROUP: UNIMY",
+                "url": "Fees_Chart/bac-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/city-university/categories/2/table/rows/14",
+                "title": "City University Malaysia: PJ & CYBERJAYA CAMPUS - BACHELOR",
+                "url": "Fees_Chart/cityu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/city-university/categories/2/table/rows/15",
+                "title": "City University Malaysia: PJ & CYBERJAYA CAMPUS - BACHELOR",
+                "url": "Fees_Chart/cityu-fees.html"
+            },
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/25",
+                "title": "Education Malaysia student FAQ",
+                "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+                "origin": "Official Education Malaysia FAQ checked 2026-09-12",
+                "checked_at": "2026-09-12"
+            },
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/1",
+                "title": "Local scholarship options",
+                "url": "scholarship-options.html",
+                "origin": "Local guidance; current awards, amounts, deadlines and eligibility not independently verified",
+                "checked_at": "2026-09-12"
+            },
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/tables/institution_fees_myr",
+                "title": "Supplied institution EMGS fee estimates",
+                "url": "data/emgs_source.txt",
+                "origin": "User-supplied table; effective date and inclusions not verified"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 38,
+        "question": "Are you a real human or a bot?",
+        "story": null,
+        "reply": "I am One-Step’s custom automated assistant. I answer from our stored information and can connect you with a counselor for individual advice.",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 39,
+        "question": "Can I talk to a real agent on Whatsapp?",
+        "story": null,
+        "reply": "You can [speak with a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 40,
+        "question": "Goodbye, thanks for the help.",
+        "story": null,
+        "reply": "You’re welcome. Come back whenever you have another study question.",
+        "context": {
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 41,
+        "question": "Compare the cheapest options for me.",
+        "story": null,
+        "reply": "Which university and study level or program do you mean? For example, \"APU master fees\" or \"computer science bachelor programs\".",
+        "context": {
+            "intent": "fees",
+            "pending": "university",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "clarification",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "APU master fees",
+            "City University MBA fees",
+            "Computer science bachelor programs"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 42,
+        "question": "Do I pay the medical clinic directly or is it in the EMGS fee?",
+        "story": null,
+        "reply": "Check your EMGS/institution invoice for a **Medical Screening Fee**. If that screening has already been paid through EMGS, confirm the arrangement with the appointed panel clinic before paying again. Additional tests, a different clinic or services outside that invoice may have separate charges. The supplied refund policy treats the medical-screening charge as a distinct fee; it does not establish that every clinic service is free.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "medical-fee",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Do I pay the clinic or is screening included in my EMGS payment?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/22",
+                "title": "EMGS refund policy",
+                "url": "https://visa.educationmalaysia.gov.my/legal/refund-policy.html",
+                "origin": "data/emgs_source.txt",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 43,
+        "question": "<script>alert(\"hacked\")</script>",
+        "story": null,
+        "reply": "I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 44,
+        "question": "<b>bold text</b> and <i>italic</i>",
+        "story": null,
+        "reply": "I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 45,
+        "question": "DROP TABLE faqs;",
+        "story": null,
+        "reply": "I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 46,
+        "question": "Hello ?????! Tell me about Taylor's ??",
+        "story": null,
+        "reply": "**Hello**\nHello! I can help you find programs, check published fees, compare universities, and search our student FAQs.\n\n**Tell me about Taylor's**\n| University | Location | Type | Campuses | Catalog programs |\n|---|---|---|---|---|\n| Taylor's University | Subang Jaya, Selangor | Private | Main Campus | 40 |\n\nTell me the program, study level, and budget to narrow the comparison. The catalog does not establish a universal best university or guarantee visa approval.",
+        "context": {
+            "universities": [
+                "taylors"
+            ],
+            "intent": "overview",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "university",
+                "file": "university_meta.json / universities.json",
+                "title": "Taylor's University",
+                "url": "Universities/taylors-details.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Master fees",
+            "Bachelor computer science programs"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 47,
+        "question": "?? fees for MBA?",
+        "story": null,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 4 Months\n- **Year 1:** RM 13,500\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 12,500\n- **Total:** RM 27,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration (International Business)**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 3 Months\n- **Year 1:** RM 13,500\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 12,500\n- **Total:** RM 27,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration (ODL)**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 4 Months\n- **Year 1:** RM 13,500\n- **Year 2:** RM 12,500\n- **Total:** RM 26,000\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration in Oil & Gas**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 3 Months\n- **Year 1:** RM 16,000\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 16,000\n- **Total:** RM 33,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**Binary University of Management & Entrepreneurship — Master of Business Administration (MBA)**\nAll Programs\n- **Level:** Master\n- **Duration:** 1.6 Years\n- **Year 1 (RM):** 15,120\n- **Year 2 (RM):** 15,120\n- **Total (RM):** 30,240\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\n**Binary University of Management & Entrepreneurship — MBA (Specialisations: Engineering Mgt, Finance, Business)**\nAll Programs\n- **Level:** Master\n- **Duration:** 2 Years\n- **Year 1 (RM):** 15,120\n- **Year 2 (RM):** 15,120\n- **Total (RM):** 30,240\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\nShowing 6 of 66 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "levels": [
+                "master"
+            ],
+            "subjects": [
+                "businessadministration"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/4/table/rows/0",
+                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/4/table/rows/1",
+                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/4/table/rows/2",
+                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/alfa/categories/4/table/rows/12",
+                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "url": "Fees_Chart/alfa-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/binary/categories/0/table/rows/8",
+                "title": "Binary University of Management & Entrepreneurship: All Programs",
+                "url": "Fees_Chart/binary-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/binary/categories/0/table/rows/9",
+                "title": "Binary University of Management & Entrepreneurship: All Programs",
+                "url": "Fees_Chart/binary-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 66
+    },
+    {
+        "number": 48,
+        "question": "I want to study at Taylor's.",
+        "story": 1,
+        "reply": "Here are matching entries from our local catalog.\n\n**Taylor's University — Bachelor of Business (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Accounting & Finance (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Laws (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Computer Science (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Software Engineering (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Mechanical Engineering (Hons)**\n- **Duration:** 4 Years\n\n[Source: program details](Universities/taylors-details.html)\n\nShowing 6 of 80 matching entries.",
+        "context": {
+            "universities": [
+                "taylors"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Taylor's University programs",
+                "url": "Universities/taylors-details.html",
+                "program_index": 20
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 80
+    },
+    {
+        "number": 49,
+        "question": "How much are the Master fees?",
+        "story": 1,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**Taylor's University — Master of Business Administration (MBA)**\nMASTERS PROGRAMS\n- **Duration:** 1 year\n- **Total Fee (RM):** RM70,014\n- **Total Fee (USD):** $16,282\n\n> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.\n\n[Source: fee table](Fees_Chart/taylors-fees.html)\n\n**Taylor's University — Master of Management**\nMASTERS PROGRAMS\n- **Duration:** 1 year\n- **Total Fee (RM):** RM70,014\n- **Total Fee (USD):** $16,282\n\n> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.\n\n[Source: fee table](Fees_Chart/taylors-fees.html)\n\n**Taylor's University — Master of Communication**\nMASTERS PROGRAMS\n- **Duration:** 1.5 years\n- **Total Fee (RM):** RM59,284\n- **Total Fee (USD):** $13,787\n\n> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.\n\n[Source: fee table](Fees_Chart/taylors-fees.html)\n\n**Taylor's University — Master of Applied Computing**\nMASTERS PROGRAMS\n- **Duration:** 1 year\n- **Total Fee (RM):** RM61,105\n- **Total Fee (USD):** $14,210\n\n> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.\n\n[Source: fee table](Fees_Chart/taylors-fees.html)\n\n**Taylor's University — Master of International Hospitality Management**\nMASTERS PROGRAMS\n- **Duration:** 1.5 years\n- **Total Fee (RM):** RM73,724\n- **Total Fee (USD):** $17,145\n\n> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.\n\n[Source: fee table](Fees_Chart/taylors-fees.html)\n\n**Taylor's University — Master of Computer Science (Research)**\nMASTERS PROGRAMS\n- **Duration:** 2 years\n- **Total Fee (RM):** RM50,694\n- **Total Fee (USD):** $11,789\n\n> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.\n\n[Source: fee table](Fees_Chart/taylors-fees.html)\n\nShowing 6 of 7 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "universities": [
+                "taylors"
+            ],
+            "levels": [
+                "master"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/taylors/categories/3/table/rows/0",
+                "title": "Taylor's University: MASTERS PROGRAMS",
+                "url": "Fees_Chart/taylors-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/taylors/categories/3/table/rows/1",
+                "title": "Taylor's University: MASTERS PROGRAMS",
+                "url": "Fees_Chart/taylors-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/taylors/categories/3/table/rows/2",
+                "title": "Taylor's University: MASTERS PROGRAMS",
+                "url": "Fees_Chart/taylors-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/taylors/categories/3/table/rows/3",
+                "title": "Taylor's University: MASTERS PROGRAMS",
+                "url": "Fees_Chart/taylors-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/taylors/categories/3/table/rows/4",
+                "title": "Taylor's University: MASTERS PROGRAMS",
+                "url": "Fees_Chart/taylors-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/taylors/categories/3/table/rows/5",
+                "title": "Taylor's University: MASTERS PROGRAMS",
+                "url": "Fees_Chart/taylors-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Show more"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 7
+    },
+    {
+        "number": 50,
+        "question": "Tell me about UCSI.",
+        "story": 2,
+        "reply": "| University | Location | Type | Campuses | Catalog programs |\n|---|---|---|---|---|\n| UCSI University | Kuala Lumpur & Springhill, Negeri Sembilan | Private | Main Campus | 180 |\n\nTell me the program, study level, and budget to narrow the comparison. The catalog does not establish a universal best university or guarantee visa approval.",
+        "context": {
+            "universities": [
+                "ucsi"
+            ],
+            "intent": "overview",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "university",
+                "file": "university_meta.json / universities.json",
+                "title": "UCSI University",
+                "url": "Universities/ucsi-details.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "UCSI fees",
+                "url": "Fees_Chart/ucsi-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Master fees",
+            "Bachelor computer science programs"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 51,
+        "question": "What about their engineering programs?",
+        "story": 2,
+        "reply": "Here are matching entries from our local catalog.\n\n**UCSI University — Bachelor of Chemical Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Civil Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Electrical and Electronic Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Computer Engineering (Artificial Intelligence) with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Energy Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Mechanical Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\nShowing 6 of 30 matching entries.",
+        "context": {
+            "universities": [
+                "ucsi"
+            ],
+            "subjects": [
+                "engineering"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "UCSI University programs",
+                "url": "Universities/ucsi-details.html",
+                "program_index": 11
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "UCSI fees",
+                "url": "Fees_Chart/ucsi-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 30
+    },
+    {
+        "number": 52,
+        "question": "Hello bhai, I just passed HSC from Dhaka. Can I get admission in Malaysia?",
+        "story": 3,
+        "reply": "আপনার শিক্ষাগত তথ্য জানানোর জন্য ধন্যবাদ। ভর্তি নির্ভর করে ডিগ্রি, ফল, সংশ্লিষ্ট বিষয়, ইংরেজির সনদ ও লক্ষ্য প্রোগ্রামের শর্তের ওপর। আগে BBA শেষ করেছেন মানেই আবার BBA পড়তে চাইছেন ধরে নিচ্ছি না। এরপর কী পড়তে চান ও ফল জানান; সংরক্ষিত প্রোগ্রাম খুঁজে দিতে পারব, যোগ্যতা বিশ্ববিদ্যালয় নিশ্চিত করবে।",
+        "context": {
+            "intent": "faq",
+            "language": "bn",
+            "guide": "profile",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "How do I check admission with my academic background?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/7",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 53,
+        "question": "I want to study Bachelor of Computer Science.",
+        "story": 3,
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Bachelor of Computer Science (Hons) Software Engineering**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Computing, Business, Tourism, Accounting & Finance, Actuarial, Banking, International Relations, Media, Psychology**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/apu-details.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/bac-details.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/bac-details.html)\n\n**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/alfa-details.html)\n\n**INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/inti-details.html)\n\nShowing 6 of 101 matching entries.",
+        "context": {
+            "levels": [
+                "bachelor"
+            ],
+            "subjects": [
+                "computing"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "City University Malaysia programs",
+                "url": "Universities/cityu-details.html",
+                "program_index": 41
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Asia Pacific University of Technology & Innovation (APU) programs",
+                "url": "Universities/apu-details.html",
+                "program_index": 11
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "BAC EDUCATION GROUP programs",
+                "url": "Universities/bac-details.html",
+                "program_index": 9
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "ALFA UNIVERSITY MALAYSIA programs",
+                "url": "Universities/alfa-details.html",
+                "program_index": 33
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "INTI International University programs",
+                "url": "Universities/inti-details.html",
+                "program_index": 24
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 101
+    },
+    {
+        "number": 54,
+        "question": "Which is the cheapest university for CS?",
+        "story": 3,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**\nAll Programs\n- **Level:** Bachelor\n- **Duration:** 3 Years\n- **Year 1 (RM):** 10,920\n- **Year 2 (RM):** 10,920\n- **Year 3 (RM):** 10,920\n- **Total (RM):** 32,760\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\n**KL University of Science & Technology (KLUST) — Bachelor of Computer Science (Hons)**\nBACHELOR PROGRAMS\n- **Duration:** 3 years\n- **Published Fees:** RM 62,400\n- **Scholarship:** RM 18,720\n- **Total Fees:** RM 40,752\n\n> **Published conditions:** Initial Fees:\n> EMGS Fees: RM3,200 (Non-refundable)\n> International Student Fees: RM8,000\n> Caution Fees (Refundable): RM1,500\n> \n> Total Initial Payment: RM18,000\n> (Includes EMGS, Intl Fee, Caution Fee, and 1st Semester Tuition Fees)\n> \n> Payment Schedule:\n> 1st Payment: RM18,000 (Total Initial Payment)\n> Visa Renewal Fee: RM1,000 per annum (from 2nd year onwards)\n> Study Extension: Regular fees apply.\n\n[Source: fee table](Fees_Chart/klust-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor if Computer Science Software Development) witti Hondura**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Banner Of Computer Science (Computes Networking) with Honours**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science (latabase Management) with Honours**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science Interactive Medin with Hormors**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\nFee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.\n\nEntries with an explicit comparable total are shown in ascending order; unpriced or differently labelled entries cannot establish the cheapest overall cost. Tuition, living costs and visa charges must be checked separately.\n\nShowing 6 of 49 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "levels": [
+                "bachelor"
+            ],
+            "subjects": [
+                "computing"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/binary/categories/0/table/rows/7",
+                "title": "Binary University of Management & Entrepreneurship: All Programs",
+                "url": "Fees_Chart/binary-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/klust/categories/2/table/rows/5",
+                "title": "KL University of Science & Technology (KLUST): BACHELOR PROGRAMS",
+                "url": "Fees_Chart/klust-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utem/categories/7/table/rows/24",
+                "title": "Universiti Teknikal Malaysia Melaka (UTeM): UNDERGRADUATE DEGREE PROGRAMMES",
+                "url": "Fees_Chart/utem-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utem/categories/7/table/rows/25",
+                "title": "Universiti Teknikal Malaysia Melaka (UTeM): UNDERGRADUATE DEGREE PROGRAMMES",
+                "url": "Fees_Chart/utem-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utem/categories/7/table/rows/26",
+                "title": "Universiti Teknikal Malaysia Melaka (UTeM): UNDERGRADUATE DEGREE PROGRAMMES",
+                "url": "Fees_Chart/utem-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utem/categories/7/table/rows/27",
+                "title": "Universiti Teknikal Malaysia Melaka (UTeM): UNDERGRADUATE DEGREE PROGRAMMES",
+                "url": "Fees_Chart/utem-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 49
+    },
+    {
+        "number": 55,
+        "question": "What is the total fee for City University?",
+        "story": 3,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**City University Malaysia — Bachelor of Computer Science (Artificial Intelligence) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\n**City University Malaysia — Bachelor of Computer Science (Cyber Security) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\nShowing 2 of 2 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "universities": [
+                "cityu"
+            ],
+            "levels": [
+                "bachelor"
+            ],
+            "subjects": [
+                "computing"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "fee_period": "total",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/city-university/categories/2/table/rows/14",
+                "title": "City University Malaysia: PJ & CYBERJAYA CAMPUS - BACHELOR",
+                "url": "Fees_Chart/cityu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/city-university/categories/2/table/rows/15",
+                "title": "City University Malaysia: PJ & CYBERJAYA CAMPUS - BACHELOR",
+                "url": "Fees_Chart/cityu-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "CITYU fees",
+                "url": "Fees_Chart/cityu-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3",
+        "result_count": 2
+    },
+    {
+        "number": 56,
+        "question": "Do they provide any scholarship for Bangladeshi students?",
+        "story": 3,
+        "reply": "**City University Malaysia**\nThe local information describes merit-based scholarships and partial tuition discounts at some institutions. It does not verify a currently open fully funded award, a guaranteed discount, or nationality-specific eligibility. Compare tuition after any confirmed award, living costs, visa charges and deposits. Tell me your university/program, grades, nationality and budget; a counselor can check actual award terms. You can also review the [local scholarship options](scholarship-options.html).",
+        "context": {
+            "universities": [
+                "cityu"
+            ],
+            "levels": [
+                "bachelor"
+            ],
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "scholarship-advice",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "What scholarships or funding can I consider?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/1",
+                "title": "Local scholarship options",
+                "url": "scholarship-options.html",
+                "origin": "Local guidance; current awards, amounts, deadlines and eligibility not independently verified",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "CITYU fees",
+                "url": "Fees_Chart/cityu-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 57,
+        "question": "How much is the living cost in Kuala Lumpur per month?",
+        "story": 3,
+        "reply": "The local Malaysia FAQ gives a broad estimate of **RM1,500–RM2,500 per month** for accommodation, food, transport and personal expenses. This is an undated Malaysia-wide estimate, **not a verified Kuala Lumpur or campus-specific quote**, and tuition is separate. Rent, room sharing, transport and lifestyle can change the amount substantially. Confirm current accommodation and transport costs for your chosen campus.",
+        "context": {
+            "universities": [
+                "cityu"
+            ],
+            "levels": [
+                "bachelor"
+            ],
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "living-cost",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "How much should I budget for living costs?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/2",
+                "title": "Local Malaysia living-cost FAQ",
+                "url": "myfaqs.json",
+                "origin": "myfaqs.json /global/304; general undated estimate, not a city-specific quote",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "CITYU fees",
+                "url": "Fees_Chart/cityu-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 58,
+        "question": "My budget is very low, is it possible to work part time?",
+        "story": 3,
+        "reply": "International students may work up to **20 hours per week only during semester breaks or holidays longer than 7 days**, in permitted sectors such as restaurants, petrol kiosks, mini-markets and hotels. A valid Student Pass and prior Immigration approval through the institution are required. This is not permission to work throughout teaching weeks, and income is not guaranteed; plan tuition and living costs without relying on a job. The Graduate Pass has separate eligibility rules.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "part-time",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can international students work part time?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/25",
+                "title": "Education Malaysia student FAQ",
+                "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+                "origin": "Official Education Malaysia FAQ checked 2026-09-12",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 59,
+        "question": "What is the EMGS process for visa?",
+        "story": 3,
+        "reply": "Start with an offer from your institution, then submit the application, required documents and applicable fees through the institution or the permitted EMGS online route. EMGS checks documents before Immigration considers the eVAL. If your nationality requires it, obtain an SEV before travel. After arrival, complete medical screening and the institution's Student Pass endorsement/iKad steps. Additional-document requests or authority checks can change timing; the bot cannot guarantee a completion date or approval.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "visa-process",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "What is the EMGS Student Pass process?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/26",
+                "title": "EMGS required documents",
+                "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+                "origin": "data/emgs_source.txt",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 60,
+        "question": "Do I need to show bank balance?",
+        "story": 3,
+        "reply": "I do not have a verified universal bank-balance amount for every Malaysian Student Pass or university. Financial evidence can depend on the institution, sponsor, nationality and application type. Ask the institution for its exact document checklist and any required statement period or sponsor letter. Do not confuse proof of funds with opening a bank account or the personal-bond deposit.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "bank-balance",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Do I need to show a bank balance?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/3",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 61,
+        "question": "Can I apply without IELTS?",
+        "story": 3,
+        "reply": "IELTS is not the only English qualification listed by EMGS, but an admission waiver depends on the exact university and program. A conditional offer or English pathway must be confirmed by the institution, including progression criteria and fees; a failed test does not establish direct-entry eligibility. EMGS requires an accepted English certificate for the VAL; missing it can delay processing or affect pass duration. Tell me the university, level/program and any English qualification you hold.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "english-admission",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can I study without IELTS or with a low English-test score?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/4",
+                "title": "EMGS English-certificate guidance",
+                "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+                "origin": "data/emgs_source.txt; university admission decisions are separate",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 62,
+        "question": "Hi, I finished my BBA in 2021 from National University.",
+        "story": 4,
+        "reply": "Thanks for sharing your academic background. Admission depends on your qualification, grades, relevant subjects, English evidence and the target program’s entry rules. Tell me what you want to study next and your grades; I can help find the recorded programs, while the institution must confirm eligibility.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "profile",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "How do I check admission with my academic background?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/7",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 63,
+        "question": "I have a 3 years study gap because I was working. Will it be a problem?",
+        "story": 4,
+        "reply": "A study gap needs to be assessed with your qualification, grades, intended level/program and what you did during the gap. Prepare a timeline, CV and supporting work/study records. Working during a gap can help explain it, but neither a CV nor a particular gap length guarantees admission or a visa. Tell me the target university and program so a counselor can review the institution's actual requirements.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "study-gap",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "How does a study gap affect admission or a Student Pass?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/0",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 64,
+        "question": "I am looking for a Master's or MBA program in Malaysia.",
+        "story": 4,
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Master of Business Administration (MBA)**\n- **Duration:** 1 Year\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**\n- **Duration:** 2 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**\n- **Duration:** 1-1.5 Years (3 Semesters)\n\n[Source: program details](Universities/apu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**\n- **Duration:** 2 Years\n\n[Source: program details](Universities/apu-details.html)\n\n**University College MAIWP International (UCMI) — Master of Business Administration (MBA)**\n- **Duration:** 1-3 Years\n\n[Source: program details](Universities/ucmi-details.html)\n\n**GENOVASI UNIVERSITY MALAYSIA — Master of Business Administration**\n- **Duration:** 1.5 Years\n\n[Source: program details](Universities/genovasi-details.html)\n\nShowing 6 of 140 matching entries.",
+        "context": {
+            "levels": [
+                "master"
+            ],
+            "subjects": [
+                "businessadministration"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "City University Malaysia programs",
+                "url": "Universities/cityu-details.html",
+                "program_index": 56
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Asia Pacific University of Technology & Innovation (APU) programs",
+                "url": "Universities/apu-details.html",
+                "program_index": 19
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "University College MAIWP International (UCMI) programs",
+                "url": "Universities/ucmi-details.html",
+                "program_index": 26
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "GENOVASI UNIVERSITY MALAYSIA programs",
+                "url": "Universities/genovasi-details.html",
+                "program_index": 8
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 140
+    },
+    {
+        "number": 65,
+        "question": "What are the fees for MBA in SEGi?",
+        "story": 4,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**\nMASTER'S PROGRAMS (SEGi University KD)\n- **Total Fee (MYR):** 54,350\n- **Year 1 (MYR):** 51,200\n\n> **Published conditions:** Initial Payment: MYR 3,150.00\n> Note: Masters fees exclude EMGS/Visa renewal fees\n\n[Source: fee table](Fees_Chart/segi-fees.html)\n\nShowing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "universities": [
+                "segi"
+            ],
+            "levels": [
+                "master"
+            ],
+            "subjects": [
+                "businessadministration"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/segi/categories/2/table/rows/0",
+                "title": "SEGI UNIVERSITY MALAYSIA: MASTER'S PROGRAMS (SEGi University KD)",
+                "url": "Fees_Chart/segi-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "SEGI fees",
+                "url": "Fees_Chart/segi-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3",
+        "result_count": 1
+    },
+    {
+        "number": 66,
+        "question": "Can you compare SEGi and APU for MBA?",
+        "story": 4,
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**\nMASTER'S PROGRAMS (SEGi University KD)\n- **Total Fee (MYR):** 54,350\n- **Year 1 (MYR):** 51,200\n\n> **Published conditions:** Initial Payment: MYR 3,150.00\n> Note: Masters fees exclude EMGS/Visa renewal fees\n\n[Source: fee table](Fees_Chart/segi-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**\nMASTER PROGRAMS\n- **Duration:** 1-1.5 Years (3 Semesters)\n- **Total Tuition Fees:** RM 38,800\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**\nMASTER PROGRAMS\n- **Duration:** 2 Years\n- **Total Tuition Fees:** RM 31,000\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\nFee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.\n\nShowing 3 of 3 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "context": {
+            "universities": [
+                "segi",
+                "apu"
+            ],
+            "levels": [
+                "master"
+            ],
+            "subjects": [
+                "businessadministration"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/segi/categories/2/table/rows/0",
+                "title": "SEGI UNIVERSITY MALAYSIA: MASTER'S PROGRAMS (SEGi University KD)",
+                "url": "Fees_Chart/segi-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/0",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/apu/categories/4/table/rows/5",
+                "title": "Asia Pacific University of Technology & Innovation (APU): MASTER PROGRAMS",
+                "url": "Fees_Chart/apu-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "SEGI fees",
+                "url": "Fees_Chart/segi-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            },
+            {
+                "label": "APU fees",
+                "url": "Fees_Chart/apu-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3",
+        "result_count": 3
+    },
+    {
+        "number": 67,
+        "question": "Is IELTS mandatory for Master's in Malaysia?",
+        "story": 4,
+        "reply": "IELTS is not the only English qualification listed by EMGS, but an admission waiver depends on the exact university and program. A conditional offer or English pathway must be confirmed by the institution, including progression criteria and fees; a failed test does not establish direct-entry eligibility. EMGS requires an accepted English certificate for the VAL; missing it can delay processing or affect pass duration. Tell me the university, level/program and any English qualification you hold.",
+        "context": {
+            "levels": [
+                "master"
+            ],
+            "intent": "faq",
+            "language": "en",
+            "guide": "english-admission",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can I study without IELTS or with a low English-test score?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/4",
+                "title": "EMGS English-certificate guidance",
+                "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+                "origin": "data/emgs_source.txt; university admission decisions are separate",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 68,
+        "question": "Do I need a letter of good conduct?",
+        "story": 4,
+        "reply": "The supplied EMGS **Graduate Pass** rules specifically require a letter of good conduct from the institution or embassy for **Chinese and Indian nationals** under the extension through **31 December 2026**, assessed case by case. This is not a universal requirement for every new Student Pass applicant. Tell me your nationality and whether you mean a Student Pass or Graduate Pass; an institution can separately ask for additional documents.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "conduct",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Is a letter of good conduct required?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/19",
+                "title": "EMGS Graduate Pass",
+                "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
+                "origin": "data/emgs_source.txt",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 69,
+        "question": "What is the visa success rate for Bangladeshi students with a study gap?",
+        "story": 4,
+        "reply": "**How does a study gap affect admission or a Student Pass?**\nA study gap needs to be assessed with your qualification, grades, intended level/program and what you did during the gap. Prepare a timeline, CV and supporting work/study records. Working during a gap can help explain it, but neither a CV nor a particular gap length guarantees admission or a visa. Tell me the target university and program so a counselor can review the institution's actual requirements.\n\n**What is my chance of visa approval?**\nThe local data does not provide a reliable visa-success percentage for your nationality or study-gap profile. Admission, document completeness, academic history and immigration checks must be reviewed for the actual application. No university choice, counselor or chat answer can guarantee visa approval.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "visa-outcome",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/0",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            },
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/9",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 70,
+        "question": "Can I bring my spouse with me?",
+        "story": 4,
+        "reply": "Dependent eligibility depends on the main pass type, study level, nationality and Immigration approval; I cannot confirm it from 'student' alone. For a **Graduate Pass**, the supplied rules allow eligible dependents whose existing dependent passes remain valid, with passport/pass documents, health insurance for the pass period and bond arrangements. For a regular Student Pass, ask the university's international office to confirm spouse/dependent eligibility for your exact program before planning travel.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "dependents",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can I bring my spouse or dependents?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/20",
+                "title": "EMGS Graduate Pass",
+                "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
+                "origin": "data/emgs_source.txt",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 71,
+        "question": "Is there any post study work visa available?",
+        "story": 4,
+        "reply": "**Bangladesh** is **not on the supplied Graduate Pass eligible-nationality list**. I cannot confirm eligibility for this nationality.\n\nThe Graduate Pass is a **12-month Social Visit Pass** for eligible international graduates who complete a Bachelor's degree or higher in Malaysia. It permits part-time work in approved sectors without employer sponsorship; it does not promise unrestricted full-time employment. Apply while the Student Pass is still valid, with a passport valid for at least 18 months, completion evidence, 12-month local health insurance, a Malaysian sponsor earning at least RM1,500/month, and the personal bond. Nationality restrictions apply. Tell me your nationality and current pass status to check the supplied eligibility rules.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "nationality": "Bangladesh",
+            "guide": "graduate",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "What is the Graduate Pass?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/emgs_knowledge.json",
+                "pointer": "/entries/15",
+                "title": "EMGS Graduate Pass",
+                "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
+                "origin": "data/emgs_source.txt",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 72,
+        "question": "Hi, I want to pursue higher studies in top ranking universities.",
+        "story": 5,
+        "reply": "Which university ranking would you like? Name an institution such as APU, SEGi, CityU or UM. I can distinguish QS World, QS Asia and the Malaysia position.",
+        "context": {
+            "intent": "rankings",
+            "ranking_scope": "all",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16",
+            "language": "en"
+        },
+        "status": "clarification",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "APU QS ranking",
+            "SEGi Asia ranking",
+            "Compare APU and SEGi rankings"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 73,
+        "question": "Tell me about Universiti Malaya and UTM.",
+        "story": 5,
+        "reply": "| University | Location | Type | Campuses | Catalog programs |\n|---|---|---|---|---|\n| Universiti Teknologi Malaysia (UTM) | Johor Bahru, Johor | Public | UTM Johor Bahru, UTM Kuala Lumpur | 120 |\n\nNo program or fee catalog is available for **UM** in our local data.\n\nTell me the program, study level, and budget to narrow the comparison. The catalog does not establish a universal best university or guarantee visa approval.",
+        "context": {
+            "universities": [
+                "um",
+                "utm"
+            ],
+            "intent": "overview",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "university",
+                "file": "university_meta.json / universities.json",
+                "title": "Universiti Teknologi Malaysia (UTM)",
+                "url": "Universities/utm-details.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "UTM fees",
+                "url": "Fees_Chart/utm-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "Master fees",
+            "Bachelor computer science programs"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 74,
+        "question": "I am interested in MSc in Electrical Engineering.",
+        "story": 5,
+        "reply": "Here are matching entries from our local catalog.\n\n**Lincoln University College — Master of Science in Electrical & Electronics Engineering**\n\n[Source: program details](Universities/lincoln-details.html)\n\n**Universiti Kuala Lumpur (UniKL) — Master of Electrical Engineering**\n\n[Source: program details](Universities/unikl-details.html)\n\n**Universiti Kuala Lumpur (UniKL) — Master of Engineering Technology (Electrical and Electronics)**\n\n[Source: program details](Universities/unikl-details.html)\n\n**Universiti Putra Malaysia (UPM) — Master in Electrical Power Engineering**\n- **Duration:** 2 Years\n\n[Source: program details](Universities/upm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**\n\n[Source: program details](Universities/utm-details.html)\n\n**Lincoln University College — Master of Science in Electrical & Electronics Engineering**\n- **Duration:** Year 1 Year 2\n\n[Source: program details](Fees_Chart/lincoln-fees.html)\n\nShowing 6 of 12 matching entries.",
+        "context": {
+            "levels": [
+                "master"
+            ],
+            "subjects": [
+                "electrical",
+                "engineering"
+            ],
+            "intent": "programs",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Lincoln University College programs",
+                "url": "Universities/lincoln-details.html",
+                "program_index": 65
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Universiti Kuala Lumpur (UniKL) programs",
+                "url": "Universities/unikl-details.html",
+                "program_index": 127
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Universiti Putra Malaysia (UPM) programs",
+                "url": "Universities/upm-details.html",
+                "program_index": 105
+            },
+            {
+                "type": "program",
+                "file": "universities.json",
+                "title": "Universiti Teknologi Malaysia (UTM) programs",
+                "url": "Universities/utm-details.html",
+                "program_index": 47
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/lincoln/categories/5/table/rows/6",
+                "title": "Lincoln University College: Faculty of Engineering",
+                "url": "Fees_Chart/lincoln-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [
+            "Show more",
+            "What are the fees?"
+        ],
+        "engine": "local-retrieval-v3",
+        "result_count": 12
+    },
+    {
+        "number": 75,
+        "question": "How much does it cost at UTM for engineering?",
+        "story": 5,
+        "reply": "Matching program entries exist, but their local fee rows contain **no monetary fee amount**. I cannot quote a cost from study-mode or duration labels. Please ask the university or a counselor for the current fee schedule.",
+        "context": {
+            "universities": [
+                "utm"
+            ],
+            "levels": [
+                "master"
+            ],
+            "subjects": [
+                "engineering"
+            ],
+            "intent": "fees",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utm/categories/15/table/rows/0",
+                "title": "Universiti Teknologi Malaysia (UTM): FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)",
+                "url": "Fees_Chart/utm-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utm/categories/15/table/rows/1",
+                "title": "Universiti Teknologi Malaysia (UTM): FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)",
+                "url": "Fees_Chart/utm-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utm/categories/15/table/rows/2",
+                "title": "Universiti Teknologi Malaysia (UTM): FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)",
+                "url": "Fees_Chart/utm-fees.html"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "UTM fees",
+                "url": "Fees_Chart/utm-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 76,
+        "question": "Are there any fully funded scholarships available?",
+        "story": 5,
+        "reply": "**Universiti Teknologi Malaysia (UTM)**\nThe local information describes merit-based scholarships and partial tuition discounts at some institutions. It does not verify a currently open fully funded award, a guaranteed discount, or nationality-specific eligibility. Compare tuition after any confirmed award, living costs, visa charges and deposits. Tell me your university/program, grades, nationality and budget; a counselor can check actual award terms. You can also review the [local scholarship options](scholarship-options.html).",
+        "context": {
+            "universities": [
+                "utm"
+            ],
+            "levels": [
+                "master"
+            ],
+            "intent": "faq",
+            "language": "en",
+            "guide": "scholarship-advice",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "What scholarships or funding can I consider?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/1",
+                "title": "Local scholarship options",
+                "url": "scholarship-options.html",
+                "origin": "Local guidance; current awards, amounts, deadlines and eligibility not independently verified",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "UTM fees",
+                "url": "Fees_Chart/utm-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 77,
+        "question": "How do I apply for the Malaysian Government Scholarship?",
+        "story": 5,
+        "reply": "The local data does not verify the current Malaysian Government/Malaysia International Scholarship application window, eligible nationalities or official application requirements. Review the [local Malaysia scholarship guide](malaysia-scholarship.html), then confirm the current official call for the exact award before applying. Have your qualifications, transcripts, English evidence and proposed program details ready for review; this is preparation guidance, not an official checklist or a promise of funding.",
+        "context": {
+            "intent": "faq",
+            "language": "en",
+            "guide": "government-scholarship",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "partial",
+        "isFallback": true,
+        "matched_q": "How do I apply for a Malaysian Government Scholarship?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/11",
+                "title": "Local scholarship options",
+                "url": "scholarship-options.html",
+                "origin": "Local guidance; current awards, amounts, deadlines and eligibility not independently verified",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 78,
+        "question": "What is the global ranking of UM compared to Taylor's?",
+        "story": 5,
+        "reply": "**Universiti Malaya (UM)**\n- Universiti Malaya (UM) is ranked #56 in QS World University Rankings 2027.\n\n**Taylor's University**\n- Taylor's University is ranked #272 in QS World University Rankings 2027.\n[Rankings and FAQs](Universities/taylors-details.html#rankings)\n\nUniversiti Malaya (UM) has the higher position in QS World University Rankings 2027 (a smaller rank number).\n\nVerified 2026-09-12. An = sign means a tied rank; a range is a band, not an exact position.\n\nSources: [Universiti Malaya (UM) - QS profile](https://www.topuniversities.com/universities/universiti-malaya-um) · [QS World University Rankings 2027 - official results spreadsheet (v1.1)](https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx) · [Taylor's University - QS profile](https://www.topuniversities.com/universities/taylors-university)",
+        "context": {
+            "universities": [
+                "um",
+                "taylors"
+            ],
+            "intent": "rankings",
+            "ranking_scope": "world",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [
+            {
+                "type": "ranking",
+                "file": "data/university_rankings.json",
+                "pointer": "/sources/um_profile",
+                "title": "Universiti Malaya (UM) - QS profile",
+                "url": "https://www.topuniversities.com/universities/universiti-malaya-um"
+            },
+            {
+                "type": "ranking",
+                "file": "data/university_rankings.json",
+                "pointer": "/sources/world_table",
+                "title": "QS World University Rankings 2027 - official results spreadsheet (v1.1)",
+                "url": "https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx"
+            },
+            {
+                "type": "ranking",
+                "file": "data/university_rankings.json",
+                "pointer": "/sources/taylors_profile",
+                "title": "Taylor's University - QS profile",
+                "url": "https://www.topuniversities.com/universities/taylors-university"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [
+            "APU QS ranking",
+            "SEGi Asia ranking",
+            "Compare APU and SEGi rankings"
+        ],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 79,
+        "question": "Does Taylor's require IELTS?",
+        "story": 5,
+        "reply": "IELTS is not the only English qualification listed by EMGS, but an admission waiver depends on the exact university and program. A conditional offer or English pathway must be confirmed by the institution, including progression criteria and fees; a failed test does not establish direct-entry eligibility. EMGS requires an accepted English certificate for the VAL; missing it can delay processing or affect pass duration. Tell me the university, level/program and any English qualification you hold.",
+        "context": {
+            "universities": [
+                "taylors"
+            ],
+            "intent": "faq",
+            "language": "en",
+            "guide": "english-admission",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can I study without IELTS or with a low English-test score?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/4",
+                "title": "EMGS English-certificate guidance",
+                "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
+                "origin": "data/emgs_source.txt; university admission decisions are separate",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 80,
+        "question": "What is the hostel fee in UM?",
+        "story": 5,
+        "reply": "I recognized **UM**, but no program or fee catalog for it is available in our local data. A counselor can help confirm the details.",
+        "context": {
+            "universities": [
+                "um"
+            ],
+            "intent": "faq",
+            "language": "en",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "not_found",
+        "isFallback": true,
+        "matched_q": null,
+        "confidence": null,
+        "sources": [],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    },
+    {
+        "number": 81,
+        "question": "Can I transfer to a UK university later from Taylor's?",
+        "story": 5,
+        "reply": "A UK transfer depends on the exact program, partner agreement, credits completed, grades and the receiving university's decision. I do not have a verified current articulation agreement for your specific course. Ask your university for the named UK partner, transferable credits, remaining study duration and fees before relying on a transfer pathway.",
+        "context": {
+            "universities": [
+                "taylors"
+            ],
+            "intent": "faq",
+            "language": "en",
+            "nationality": "United Kingdom",
+            "guide": "uk-transfer",
+            "version": 3,
+            "knowledge_version": "2ee1d58e3a54de16"
+        },
+        "status": "answered",
+        "isFallback": false,
+        "matched_q": "Can I transfer from my Malaysian university to the UK?",
+        "confidence": null,
+        "sources": [
+            {
+                "type": "guidance",
+                "file": "data/counselor_knowledge.json",
+                "pointer": "/entries/10",
+                "title": "One-Step counseling guidance and data limitations",
+                "url": "contact.html",
+                "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",
+                "checked_at": "2026-09-12"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Speak with a counselor",
+                "url": "https://wa.me/601119359497",
+                "class": "os-wa-btn",
+                "icon": "fab fa-whatsapp"
+            },
+            {
+                "label": "TAYLORS fees",
+                "url": "Fees_Chart/taylors-fees.html",
+                "class": "os-fee-btn",
+                "icon": "fas fa-coins"
+            }
+        ],
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
+    }
+]

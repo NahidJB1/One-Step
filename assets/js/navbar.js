@@ -5,28 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const path = window.location.pathname;
     const page = path.split("/").pop();
     
-    // Fix for logo link in subdirectories - use relative path to root
-    const isInSubdirectory = path.includes('/countries/') || path.includes('/universities/') || path.includes('/scholarship/') || path.includes('/Fees_Chart/') || path.includes('/Articles/');
-    const logoHref = isInSubdirectory ? '../index.html' : 'index.html';
-    
-    // Fix navigation links for subdirectories
-    const getNavLink = (pageName) => {
-        if (isInSubdirectory) {
-            return `../${pageName}`;
-        }
-        
-        // If we are on the homepage and trying to link to a section on the same page
-        if ((page === 'index.html' || page === '') && pageName.startsWith('index.html#')) {
-            return pageName.replace('index.html', '');
-        }
-        
-        return pageName;
-    };
+    // Navigation is rooted at the site origin on every page.
+    const getNavLink = pageName => pageName.startsWith('/') ? pageName : `/${pageName}`;
 
     const navbarHTML = `
     <header class="main-header">
       <div class="container nav-container">
-        <a href="${logoHref}" class="logo">
+        <a href="/" class="logo">
           <svg width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-img">
             <circle cx="50" cy="50" r="48" stroke="#0066CC" stroke-width="4"/>
             <path d="M30 70L50 50L70 30" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
@@ -40,10 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </a>
         
         <nav class="nav-links" id="navLinks">
-          <a href="${getNavLink('index.html')}" class="nav-link ${page === 'index.html' || page === '' || page.includes('index.html') ? 'active' : ''}">Home</a>
-          <a href="${getNavLink('scholarship.html')}" class="nav-link ${page === 'scholarship.html' || page.includes('scholarship') ? 'active' : ''}">Scholarships</a>
-          <a href="${getNavLink('contact.html')}" class="nav-link ${page === 'contact.html' ? 'active' : ''}">Contact</a>
-          <a href="${getNavLink('application.html')}" class="nav-link" style="background-color: #0066CC; color: white; padding: 8px 20px; border-radius: 25px; font-weight: 600; margin-left: 10px; white-space: nowrap; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0, 102, 204, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">Apply Now</a>
+          <a href="/" class="nav-link ${page === '/' || page === '' || page.includes('/') ? 'active' : ''}">Home</a>
+          <a href="${getNavLink('explore-universities')}" class="nav-link ${page === 'explore-universities' || page.includes('explore-universities') ? 'active' : ''}">Universities</a>
+          <a href="${getNavLink('student-support-malaysia')}" class="nav-link" aria-label="Student support in Malaysia">Support</a>
+          <a href="${getNavLink('contact')}" class="nav-link ${page === 'contact' ? 'active' : ''}">Contact</a>
+          <a href="${getNavLink('application')}" class="nav-link" style="background-color: #0066CC; color: white; padding: 8px 20px; border-radius: 25px; font-weight: 600; margin-left: 10px; white-space: nowrap; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0, 102, 204, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">Apply Now</a>
+          <a href="${getNavLink('login.php')}" class="nav-link student-portal-menu-link"><i class="fas fa-user-circle" aria-hidden="true"></i> Student Portal</a>
         </nav>
         
         <div class="nav-actions">
@@ -53,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="${getNavLink('login.php')}" class="nav-icon student-portal-icon" title="Student Portal">
             <i class="fas fa-user-circle"></i>
           </a>
-          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
             <span class="menu-icon">
               <span class="menu-line"></span>
               <span class="menu-line"></span>
@@ -113,6 +100,16 @@ function initNavbarLogic() {
         }
     });
 
+    // Escape closes the mobile menu and restores the trigger focus.
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.focus();
+        }
+    });
+
     // 4. Scroll Effect (Background appears on scroll)
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -132,3 +129,4 @@ function initNavbarLogic() {
         }
     });
 }
+

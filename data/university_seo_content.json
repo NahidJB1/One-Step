@@ -1,0 +1,666 @@
+{
+  "bac": {
+    "name": "BAC Education Group",
+    "fee_title": "BAC Education Group Fees for International Students | One-Step",
+    "fee_description": "Explore BAC Education Group international fees by institution and programme. Check tuition, resource charges and overseas transfer cost considerations.",
+    "detail_title": "BAC Malaysia: Courses, Intakes & Study Pathways | One-Step",
+    "detail_description": "Explore BAC Malaysia courses, awarding institutions and study pathways. Plan your intake and find application guidance for Bangladeshi students.",
+    "detail_intro": "Explore BAC Education Group by institution and study pathway. A BAC College law programme, a UNIMY computing degree and a Reliance hospitality programme are different choices: identify the teaching institution and awarding body before selecting an intake.",
+    "scope": "This chart covers several BAC Education Group institutions, including BAC College, UNIMY, IACT, Veritas and Reliance. Select the institution first; a group-wide fee is not a single BAC College price.",
+    "fee_reading": "The tables distinguish first-year tuition, following-year tuition and total tuition. Resource and visa-renewal charges appear in the notes and may recur. An overseas transfer stage needs its own university fee schedule and living budget.",
+    "payment": "For a Malaysia-only route, read the tuition row alongside that institution's miscellaneous charges. For a transfer route, request separate Malaysia and overseas payment schedules, including any partner-university charges and currency.",
+    "courses": ["Law and UK transfer pathways: compare where each stage is taught and who awards the qualification.", "Computing at UNIMY: the official group catalogue includes computer science, software engineering and related specialisms.", "Business, media and hospitality: distinguish the provider and award within the group rather than treating every course as BAC College."],
+    "intakes": "Intakes differ between institutions, programmes and study modes. Choose the exact programme in the official course catalogue and check its intake information; a group intake month does not establish availability for every course.",
+    "bangladesh": "For a law or transfer pathway, submit your Bangladesh qualifications for the specific route and ask whether later entry to the awarding or overseas university requires a separate assessment. Admission and professional recognition are separate questions.",
+    "fee_faqs": [
+      {"q": "Are these BAC College fees or BAC Education Group fees?", "a": "The chart contains separate sections for BAC College and other BAC Education Group institutions. Match the institution and programme to your offer before using a tuition figure."},
+      {"q": "Does a BAC transfer programme fee include study overseas?", "a": "Do not assume a Malaysia tuition total includes the overseas stage. Check the programme's transfer arrangement, then obtain the partner university's tuition, compulsory charges and living-cost information separately."}
+    ],
+    "detail_faqs": [
+      {"q": "Who awards a BAC Education Group qualification?", "a": "It depends on the programme. The official group catalogue identifies different providers and partner awards, including transfer routes. Use the exact course title and awarding institution when comparing offers."},
+      {"q": "Is BAC a single university?", "a": "BAC Education Group includes several education institutions. This guide covers the group; the institution delivering your course and the body awarding your qualification must be identified separately."}
+    ],
+    "sources": [{"label": "BAC official degree catalogue", "url": "https://www.bac.edu.my/degree/"}, {"label": "BAC pre-university pathways", "url": "https://www.bac.edu.my/pre-university/"}],
+    "related": [{"label": "Explore subjects to study in Malaysia", "path": "/Articles/popular-programs-of-study-malaysia"}, {"label": "Compare university study budgets", "path": "/Articles/cheapest-universities"}]
+  },
+  "alfa": {
+    "name": "ALFA University College",
+    "fee_title": "ALFA University College Fees & International Tuition | One-Step",
+    "fee_description": "Check ALFA University College tuition, programme duration and initial-fee notes. Compare the published fee periods before planning study from Bangladesh.",
+    "detail_title": "ALFA University College Malaysia: Courses & Intakes | One-Step",
+    "detail_description": "Explore ALFA University College courses, Subang Jaya campus and intake planning. Find programme sources and application guidance for Bangladeshi students.",
+    "detail_intro": "Explore ALFA University College in Subang Jaya. Match the exact qualification and study mode to the official programme source before comparing entry requirements, intakes or accreditation.",
+    "scope": "This chart retains ALFA University College international-student fees by qualification. Schedule validity has not been confirmed for your intake; keep each section’s original currency, fee period and initial-charge notes.",
+    "fee_reading": "A Year 1 amount is not the full programme cost. The foundation section uses Resource Fee/Sem, while other sections have Resource Fee and annual columns. Do not create a semester instalment by dividing a programme total.",
+    "payment": "Resource and initial international-student charges have separate labels. Request a written payment schedule showing which charges are already included and when each payment is due, so the same charge is not counted twice.",
+    "courses": [
+      "ALFA is a University College. Use the named qualification and study mode when checking programme information; an accreditation record does not confirm that applications are open."
+    ],
+    "intakes": "ALFA publishes intake and study-mode information on individual programme pages. Use the calendar for your selected programme; do not apply a diploma intake calendar to every postgraduate or research course.",
+    "bangladesh": "Ask for an assessment of your Bangladesh SSC/HSC or previous diploma against the exact programme. Check subject requirements, English evidence and whether a foundation or diploma pathway is appropriate before choosing a start date.",
+    "fee_faqs": [
+      {
+        "q": "Does the ALFA total include initial international-student fees?",
+        "a": "Initial fees are listed separately in several section notes. Read the relevant row and notes together, then obtain a written payable total that identifies which initial and resource charges are already included."
+      },
+      {
+        "q": "Are ALFA resource charges presented the same way for every qualification?",
+        "a": "No. The foundation section uses a Resource Fee/Sem heading, while other sections use a Resource Fee column alongside annual amounts. Keep each section's labels and confirm how the resource charge contributes to the stated total."
+      }
+    ],
+    "detail_faqs": [
+      {
+        "q": "Where is ALFA University College in Malaysia?",
+        "a": "ALFA's official programme website lists its address at 13, Persiaran Kewajipan, USJ 1, Subang Jaya, Selangor. Confirm your programme's teaching location before arranging accommodation."
+      },
+      {
+        "q": "How do I check an ALFA programme's accreditation?",
+        "a": "Match the exact qualification title and programme reference with the Malaysian Qualifications Register or the relevant provisional accreditation record. An institution-level ranking does not replace programme accreditation."
+      }
+    ],
+    "sources": [
+      {
+        "label": "ALFA official current contact address",
+        "url": "https://alfa.edu.my/contact-us/"
+      },
+      {
+        "label": "ALFA Diploma in Business Administration",
+        "url": "https://alfa.edu.my/diploma-in-business-administration/"
+      },
+      {
+        "label": "ALFA official programmes and campus address",
+        "url": "https://alfa.edu.my/category/programmes/"
+      },
+      {
+        "label": "ALFA international admissions",
+        "url": "https://alfa.edu.my/international-students/"
+      },
+      {
+        "label": "ALFA Malaysian Qualifications Register",
+        "url": "https://www.mqa.gov.my/mqr/english/eakrKPList.cfm?IDAkrIPTS=211"
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare affordable Malaysian study options",
+        "path": "/Articles/cheapest-universities"
+      },
+      {
+        "label": "Explore Malaysian courses and pathways",
+        "path": "/Articles/popular-programs-of-study-malaysia"
+      }
+    ],
+    "programme_heading": "Courses and accreditation: check the exact qualification",
+    "programme_note": "The official programme page and Malaysian Qualifications Register serve different purposes. Confirm the next available intake and any entry conditions for your programme; do not treat an old printed registration month as proof that accreditation has ended.",
+    "programme_checked": "6 October 2026",
+    "verified_programmes": [
+      {
+        "programme": "Diploma in Business Administration",
+        "institution": "ALFA University College",
+        "location": "Subang Jaya, Selangor",
+        "study": "Full-time; 2.5 years. Published intake months: January, May, September. Availability requires confirmation.",
+        "source": "https://alfa.edu.my/diploma-in-business-administration/",
+        "source_label": "Official programme information",
+        "fee_category": 1,
+        "fee_label": "Diploma fee section"
+      }
+    ],
+    "fee_provenance": {
+      "edition": "Not confirmed for the intended intake",
+      "basis": "Read tuition, resource and annual/total columns separately; initial charges remain in the section notes",
+      "status": "The current issuing edition and intake validity have not been confirmed. The displayed amounts are retained from the stored schedule; obtain the applicable written fee schedule before accepting an offer or paying.",
+      "sources": [
+        {
+          "label": "ALFA official international admissions",
+          "url": "https://alfa.edu.my/international-students/"
+        }
+      ],
+      "sections": []
+    }
+  },
+  "inti": {
+    "name": "INTI International University & Colleges",
+    "fee_title": "INTI International Student Fees by Campus | One-Step",
+    "fee_description": "Compare INTI international tuition at Nilai, Subang and Penang. Read programme fees, intake columns and additional charges before applying.",
+    "detail_title": "INTI Malaysia: Ranking, Courses & Campuses | One-Step",
+    "detail_description": "Explore INTI rankings, courses and campus differences. Plan your programme and intake at Nilai, Subang or Penang with guidance for Bangladesh applicants.",
+    "detail_intro": "Choose the INTI institution and programme together. Nilai is home to INTI International University; Subang and Penang are separate INTI colleges. Similar course names do not establish the same award, intake or fee.",
+    "scope": "The chart separates INTI Penang, Nilai and Subang. Use the campus section matching your offer; the tables cover university and college programmes rather than a single Nilai fee list.",
+    "fee_reading": "The main column is Total Tuition Fee (RM), not an annual or semester instalment. Tuition is not automatically the amount payable before arrival; additional application, registration, administration and deposit charges remain in the campus notes.",
+    "payment": "Nilai, Subang and Penang schedules belong to different INTI institutions. Compare the exact programme, international-student category and fee period. Use the applicable source’s payment and tax notes; do not infer that a current official approximation has the same inclusions as a stored total.",
+    "courses": [
+      "Match the teaching institution and any awarding partner to your offer. INTI International University’s ranking does not establish a separate ranking for each college or partner award."
+    ],
+    "intakes": "INTI's course finder separates programmes by campus. The stored fee chart also carries programme-specific intake columns. Treat these as schedule information and confirm the next available international intake with the selected campus.",
+    "bangladesh": "Submit your HSC subjects and results for the exact programme and campus. For a partner award or transfer route, request the progression requirements as well as the initial entry requirements and English-language conditions.",
+    "fee_faqs": [
+      {
+        "q": "Do INTI Nilai, Subang and Penang use the same fees?",
+        "a": "This chart has separate campus schedules. Compare the exact programme, qualification and campus; matching subject names do not establish identical tuition or additional charges."
+      },
+      {
+        "q": "Is the INTI tuition amount a yearly payment?",
+        "a": "The tables label the amount as Total Tuition Fee (RM). Do not treat it as an annual or semester instalment. Use the campus notes and a written payment schedule for amounts due at each stage."
+      }
+    ],
+    "detail_faqs": [
+      {
+        "q": "Are INTI Nilai and INTI Subang the same campus?",
+        "a": "No. Nilai and Subang are separate study locations. The INTI course finder identifies the institution offering each programme; confirm this before comparing accommodation, intakes or awards."
+      },
+      {
+        "q": "Does INTI's university ranking apply to every college programme?",
+        "a": "The ranking record identifies INTI International University. A university ranking does not establish a separate ranking for every INTI college, partner award or individual programme."
+      }
+    ],
+    "sources": [
+      {
+        "label": "INTI official institutions and campuses",
+        "url": "https://newinti.edu.my/campuses/"
+      },
+      {
+        "label": "INTI official Diploma in Computer Science",
+        "url": "https://newinti.edu.my/programme/diploma-in-computer-science/"
+      },
+      {
+        "label": "INTI official undergraduate course finder",
+        "url": "https://newinti.edu.my/academic-programmes/undergraduate/"
+      },
+      {
+        "label": "INTI QS university profile",
+        "url": "https://www.topuniversities.com/universities/inti-international-university"
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare engineering study options",
+        "path": "/Articles/best-engineering-universities-malaysia"
+      },
+      {
+        "label": "Plan living costs by study location",
+        "path": "/Articles/cost-of-living-malaysia-international-students"
+      }
+    ],
+    "detail_h1": "INTI International University & Colleges",
+    "programme_heading": "Which INTI institution offers your course?",
+    "programme_note": "The official Diploma in Computer Science page identifies the three institutions below and gives a minimum two-year programme duration. Confirm each institution’s next international intake and exact award; the stored fee chart’s month lists are not a current availability guarantee.",
+    "programme_checked": "6 October 2026",
+    "verified_programmes": [
+      {
+        "programme": "Diploma in Computer Science",
+        "institution": "INTI International College Penang",
+        "location": "Penang",
+        "study": "Minimum 2 years. Confirm the institution-specific next international intake and award.",
+        "source": "https://newinti.edu.my/programme/diploma-in-computer-science/",
+        "source_label": "Official programme and campus information",
+        "fee_category": 0,
+        "fee_label": "Penang tuition section"
+      },
+      {
+        "programme": "Diploma in Computer Science",
+        "institution": "INTI International University",
+        "location": "Nilai, Negeri Sembilan",
+        "study": "Minimum 2 years. Confirm the institution-specific next international intake and award.",
+        "source": "https://newinti.edu.my/programme/diploma-in-computer-science/",
+        "source_label": "Official programme and campus information",
+        "fee_category": 1,
+        "fee_label": "Nilai tuition section"
+      },
+      {
+        "programme": "Diploma in Computer Science",
+        "institution": "INTI International College Subang",
+        "location": "Subang Jaya, Selangor",
+        "study": "Minimum 2 years. Confirm the institution-specific next international intake and award.",
+        "source": "https://newinti.edu.my/programme/diploma-in-computer-science/",
+        "source_label": "Official programme and campus information",
+        "fee_category": 2,
+        "fee_label": "Subang Jaya tuition section"
+      }
+    ],
+    "fee_provenance": {
+      "edition": "Stored campus schedule issue date and intake validity not confirmed",
+      "basis": "Total Tuition Fee (RM); duration and intake are separate columns and miscellaneous charges remain in campus notes",
+      "status": "Current official programme information includes campus-specific approximate fees and tax exclusions. The stored amounts have not yet been reconciled against that information and are retained unchanged. Obtain the exact campus schedule and payable charges for your offer.",
+      "sources": [
+        {
+          "label": "INTI official programme and campus fee information",
+          "url": "https://newinti.edu.my/programme/diploma-in-computer-science/"
+        },
+        {
+          "label": "INTI official institution/campus directory",
+          "url": "https://newinti.edu.my/campuses/"
+        }
+      ],
+      "sections": [
+        {
+          "institution": "INTI International College Penang"
+        },
+        {
+          "institution": "INTI International University, Nilai"
+        },
+        {
+          "institution": "INTI International College Subang"
+        }
+      ]
+    }
+  },
+  "cityu": {
+    "name": "City University Malaysia",
+    "fee_title": "City University Malaysia Fees for International Students",
+    "fee_description": "View City University Malaysia international fees by programme and campus. Understand published tuition, scholarship columns and initial-payment notes.",
+    "detail_title": "City University Malaysia: Ranking, Courses & Intakes",
+    "detail_description": "Explore City University Malaysia rankings, courses and campuses. Understand ranking systems and plan your programme and intake from Bangladesh.",
+    "detail_intro": "Explore City University Malaysia by programme and teaching location. Petaling Jaya, Cyberjaya and Johor Bahru campus information and the Kota Kinabalu regional centre should not be treated as proof that every programme is offered at every location.",
+    "scope": "This fee chart is for City University Malaysia. It separates Johor Bahru from the Petaling Jaya/Cyberjaya sections; it should not be used for a similarly named university in another country.",
+    "fee_reading": "Published fees and scholarship tuition are separate columns. Compare the exact programme, campus and fee period. A listed reduction is not an award to every applicant; obtain its conditions and final payment schedule in writing.",
+    "payment": "The section notes describe an initial visa payment and a later payment associated with eVAL. Match those stages to your written offer, and check whether the quoted total already includes international-student, processing, resource and tax charges.",
+    "courses": [
+      "Choose the programme and teaching location together. A grouped PJ/Cyberjaya fee section does not establish that every course is taught at both locations."
+    ],
+    "intakes": "Use the selected programme and campus to confirm the next international intake. The fee chart's validity period describes the fee schedule; it is not an admissions deadline or proof that all programmes start in the same month.",
+    "bangladesh": "Have your HSC subjects or previous qualification assessed for the selected programme. Request the campus, study mode, English condition and intended intake in the same written assessment so the admissions and fee information refer to one offer.",
+    "fee_faqs": [
+      {
+        "q": "Are City University Malaysia fees the same at every campus?",
+        "a": "The stored chart uses separate campus sections. Select the programme within its named campus section and check the notes; do not apply a Johor Bahru row to a Petaling Jaya or Cyberjaya offer."
+      },
+      {
+        "q": "Is the CityU scholarship fee available to every applicant?",
+        "a": "The chart includes a Tuition Fees Special Scholarship column. That label does not establish your eligibility. Obtain written award conditions and the final payable amount for your programme, campus and intake."
+      }
+    ],
+    "detail_faqs": [
+      {
+        "q": "Is City University Malaysia public or private?",
+        "a": "The QS institutional profile identifies City University Malaysia as a private institution in Petaling Jaya, Malaysia. Confirm the teaching campus for your selected programme separately."
+      },
+      {
+        "q": "Is CityU's QS Asia position a QS World ranking?",
+        "a": "No. QS Asia and QS World are separate ranking tables. Use the publisher, edition and table label shown in the ranking section; a QS Stars rating is also a different assessment."
+      }
+    ],
+    "sources": [
+      {
+        "label": "City University official campus/contact information",
+        "url": "https://city.edu.my/about/contact-us/"
+      },
+      {
+        "label": "City University official locations including regional centre",
+        "url": "https://city.edu.my/"
+      },
+      {
+        "label": "City University official MBA programme",
+        "url": "https://city.edu.my/master-of-business-administration/"
+      },
+      {
+        "label": "CityU official bachelor's programmes",
+        "url": "https://city.edu.my/programmes/bachelor/"
+      },
+      {
+        "label": "CityU international admissions",
+        "url": "https://city.edu.my/admission-scholarships/international-students/"
+      },
+      {
+        "label": "City University Malaysia QS profile",
+        "url": "https://www.topuniversities.com/universities/city-university-malaysia"
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare affordable university options",
+        "path": "/Articles/cheapest-universities"
+      },
+      {
+        "label": "Compare Malaysian university rankings",
+        "path": "/Articles/top-10-universities-in-malaysia"
+      }
+    ],
+    "programme_heading": "Choose the programme and teaching location together",
+    "programme_note": "City University Malaysia’s official MBA page names Petaling Jaya. Confirm the location, international study mode and intake availability on your offer before arranging accommodation.",
+    "programme_checked": "6 October 2026",
+    "verified_programmes": [
+      {
+        "programme": "Master of Business Administration",
+        "institution": "City University Malaysia",
+        "location": "Petaling Jaya",
+        "study": "Coursework; published duration 12 months. Page lists full/part-time modes and Jan/Feb, May/June, Sept/Oct intakes; confirm international availability.",
+        "source": "https://city.edu.my/master-of-business-administration/",
+        "source_label": "Official MBA programme information",
+        "fee_category": 3,
+        "fee_label": "Postgraduate fee section and payment notes"
+      }
+    ],
+    "fee_provenance": {
+      "edition": "Stored schedule states 1 January–31 December 2026; applicability to your offer requires confirmation",
+      "basis": "Published fees, scholarship tuition, resource charges and annual/total columns remain distinct; retain the original payment and tax notes",
+      "status": "The stored edition is retained unchanged. City University’s official international-admissions page directs applicants to its International Marketing Office or representatives for the latest fee structure. Confirm the exact edition and conditional reduction before paying.",
+      "sources": [
+        {
+          "label": "City University official international admissions",
+          "url": "https://city.edu.my/admission-scholarships/international-students/"
+        }
+      ],
+      "sections": [
+        {
+          "institution": "City University Malaysia — Johor Bahru"
+        },
+        {
+          "institution": "City University Malaysia — stored PJ/Cyberjaya grouping"
+        },
+        {
+          "institution": "City University Malaysia — stored PJ/Cyberjaya grouping"
+        },
+        {
+          "institution": "City University Malaysia — stored PJ/Cyberjaya postgraduate grouping"
+        }
+      ]
+    }
+  },
+  "cyberjaya": {
+    "name": "University of Cyberjaya",
+    "fee_title": "University of Cyberjaya Fees for International Students",
+    "fee_description": "Review University of Cyberjaya international tuition and payment notes. Compare programme fees and additional charges, including medicine study costs.",
+    "detail_title": "University of Cyberjaya: Ranking, Courses & Intakes",
+    "detail_description": "Explore University of Cyberjaya rankings, courses and campus information. Plan programme-specific entry requirements and intakes from Bangladesh.",
+    "detail_intro": "Explore the University of Cyberjaya in Cyberjaya, Selangor. Compare health-related and other study pathways using the exact course requirements, campus information and dated ranking evidence.",
+    "scope": "These are University of Cyberjaya international-student fee tables. The authored chart includes separate qualification sections and payment notes; domestic fee schedules and related colleges must be checked separately.",
+    "fee_reading": "Read tuition, year-by-year charges and any final total using the labels in each table. Medicine and other health programmes need their own complete cost assessment; do not generalise a foundation or business example to MBBS.",
+    "payment": "The university's public international fee page and the stored schedule may describe different amounts or editions. Confirm the applicable schedule in writing, including registration, administration, resources and tuition due before arrival.",
+    "courses": ["Medicine and pharmacy: check the qualification's academic subjects, English conditions and professional requirements.", "Other health programmes: compare the exact course and teaching requirements rather than assuming medicine rules apply.", "Business and other disciplines: use the university's programme finder for the relevant qualification and study mode."],
+    "intakes": "Confirm the next intake for the exact programme, especially for health qualifications. A general university campaign or intake announcement should not be used as the start date for every course.",
+    "bangladesh": "For a health qualification, request an assessment of your HSC science subjects and results. If you plan to practise in Bangladesh, independently verify the relevant regulator's current qualification and registration requirements before committing.",
+    "fee_faqs": [
+      {"q": "Can I use the University of Cyberjaya domestic fee schedule?", "a": "Bangladeshi applicants should use the applicable international-student schedule. The university publishes separate domestic and international fee information, which can have different charges and conditions."},
+      {"q": "Why might the UoC website and stored chart show different fees?", "a": "A stored schedule can differ from a public webpage in edition, programme scope or included charges. Compare the original labels and dates, then obtain the schedule and payable total applicable to your offer."}
+    ],
+    "detail_faqs": [
+      {"q": "Where is the University of Cyberjaya?", "a": "The university lists its campus at Persiaran Bestari, Cyber 11, Cyberjaya, Selangor. Use the campus information and your programme's teaching arrangements when planning accommodation."},
+      {"q": "Do all University of Cyberjaya courses share medicine entry requirements?", "a": "No single medicine requirement should be applied to every course. Identify the exact programme and ask for its academic, subject and English requirements, including any professional conditions."}
+    ],
+    "sources": [{"label": "UoC official university background", "url": "https://cyberjaya.edu.my/university/background/about"}, {"label": "UoC international admissions", "url": "https://cyberjaya.edu.my/admission/international-admissions"}, {"label": "UoC public international fee schedule", "url": "https://cyberjaya.edu.my/admission/fees/international-fees-structure"}],
+    "related": [{"label": "Plan medicine study in Malaysia", "path": "/Articles/study-medicine-mbbs-malaysia"}, {"label": "Explore other study programmes", "path": "/Articles/popular-programs-of-study-malaysia"}]
+  },
+  "segi": {
+    "name": "SEGi University",
+    "fee_title": "SEGi University Fees for International Students | One-Step",
+    "fee_description": "Check SEGi University international tuition and Kota Damansara programme sections. Review registration, administration and additional-fee notes.",
+    "detail_title": "SEGi University: Ranking, Courses & Kota Damansara",
+    "detail_description": "Explore SEGi University courses, rankings and Kota Damansara campus. Distinguish university and college options before planning your intake.",
+    "detail_intro": "Explore SEGi University in Kota Damansara, Petaling Jaya, Selangor. SEGi colleges are separately named institutions. Check the teaching institution, programme, study mode and location on your offer.",
+    "scope": "The degree and postgraduate tables are labelled SEGi University KD. Do not apply these fees to SEGi College Kuala Lumpur or another SEGi college without its own applicable schedule.",
+    "fee_reading": "The tables distinguish total fees from annual and registration amounts. Read administration and visa notes for each level; a total does not automatically include every renewal or living expense.",
+    "payment": "These sections identify the stored SEGi University schedule. Do not apply them to a SEGi College or online offer without the matching schedule. Establish which initial, administration and recurring charges are already included.",
+    "courses": [
+      "Check the exact qualification and study mode. A SEGi University accreditation record should not be transferred to a similarly named College or online programme."
+    ],
+    "intakes": "Use the intake information for the exact SEGi institution and programme. A college intake calendar is not automatically the calendar for a SEGi University course at Kota Damansara.",
+    "bangladesh": "Send your academic transcripts and English evidence for an individual programme assessment. Have the institution name, campus, award and international-student conditions stated clearly in the offer before using the fee chart.",
+    "fee_faqs": [
+      {
+        "q": "Are these SEGi University or SEGi College Kuala Lumpur fees?",
+        "a": "The degree and postgraduate sections are labelled SEGi University KD. SEGi College Kuala Lumpur is a different institution; use its own schedule for a college offer."
+      },
+      {
+        "q": "Does SEGi's listed total include visa renewals?",
+        "a": "Read the notes for your qualification. Some postgraduate notes expressly exclude EMGS or visa-renewal charges, so a total-fee column should not be treated as a complete multi-year budget."
+      }
+    ],
+    "detail_faqs": [
+      {
+        "q": "What is the difference between SEGi University and SEGi colleges?",
+        "a": "They are distinct institutions within SEGi's education network. Check the teaching institution, campus and awarding body on the programme page and offer; their course availability and admissions information should not be mixed."
+      },
+      {
+        "q": "Which campus should I use when researching SEGi University?",
+        "a": "Start with the university's Kota Damansara information and confirm the programme's actual teaching arrangements. A SEGi college location or partner award may require a separate comparison."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SEGi University registered institution and address",
+        "url": "https://www.mqa.gov.my/mqr/english/eakrKPList.cfm?IDAkrIPTS=307"
+      },
+      {
+        "label": "SEGi Cyber Security qualification record",
+        "url": "https://www.mqa.gov.my/mqr/english/epapar.cfm?IdAkrKP=11381&NoRujA=MQA%2FFA11188"
+      },
+      {
+        "label": "SEGi official university and college directory",
+        "url": "https://www.segi.edu.my/"
+      },
+      {
+        "label": "SEGi University international admissions",
+        "url": "https://university.segi.edu.my/international-students/"
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare university rankings",
+        "path": "/Articles/top-10-universities-in-malaysia"
+      },
+      {
+        "label": "Compare programme study budgets",
+        "path": "/Articles/cheapest-universities"
+      }
+    ],
+    "programme_heading": "Verified qualification and teaching-institution reference",
+    "programme_note": "The MQR reference below records a specific conventional qualification, not the generic or online Computer Science titles. Its recorded study modes do not establish availability for an international intake. Confirm an exact fee-row match with the University.",
+    "programme_checked": "6 October 2026",
+    "verified_programmes": [
+      {
+        "programme": "Bachelor of Computer Science (Honours) in Cyber Security",
+        "institution": "SEGi University",
+        "location": "Kota Damansara, Petaling Jaya, Selangor",
+        "study": "MQR: conventional delivery; 3 years full-time or 4 years part-time. Current intake and international study-mode availability require confirmation.",
+        "source": "https://www.mqa.gov.my/mqr/english/epapar.cfm?IdAkrKP=11381&NoRujA=MQA%2FFA11188",
+        "source_label": "MQR record MQA/FA11188",
+        "fee_category": 1,
+        "fee_label": "University bachelor schedule; confirm course match"
+      }
+    ],
+    "fee_provenance": {
+      "edition": "Current issuing edition and intake validity not confirmed",
+      "basis": "Total, annual and upon-registration amounts retain the table’s MYR labels; exclusions remain in the section notes",
+      "status": "The current issuing edition and intake validity have not been confirmed. The displayed amounts are retained from the stored schedule; obtain the applicable written fee schedule before accepting an offer or paying.",
+      "sources": [
+        {
+          "label": "SEGi official University and College directory",
+          "url": "https://www.segi.edu.my/"
+        },
+        {
+          "label": "SEGi University international admissions",
+          "url": "https://university.segi.edu.my/international-students/"
+        }
+      ],
+      "sections": [
+        {
+          "institution": "SEGi provider not independently confirmed for these stored foundation/language rows; use the institution named on your offer"
+        }
+      ]
+    }
+  },
+  "taylors": {
+    "name": "Taylor's University",
+    "fee_title": "Taylor's University International Tuition Fees | One-Step",
+    "fee_description": "Review Taylor's University international fees by programme. Check MYR and USD labels, additional charges and the relevant official fee schedule.",
+    "detail_title": "Taylor's University: Ranking, Courses & Intakes | One-Step",
+    "detail_description": "Explore Taylor's University rankings, courses and Lakeside campus. Use programme-specific intake sources to plan your application from Bangladesh.",
+    "detail_intro": "Explore Taylor's University and its Lakeside campus. Select the exact qualification before comparing intakes, entry requirements or rankings, and distinguish university programmes from Taylor's College pathways.",
+    "scope": "These stored Taylor’s schedules are grouped by qualification. Match the institution and programme in your offer: Taylor’s University and Taylor’s College publish separate information. The edition of the stored amounts has not been confirmed for your intake.",
+    "fee_reading": "A tuition-only figure, total programme cost and first-semester payment are different amounts. Preserve the MYR and USD column labels and inclusion notes; a stored USD equivalent is not a current BDT conversion.",
+    "payment": "Select the official international schedule for the institution and programme in your offer. Reconcile enrolment, international-student charges, deposits and tax notes with its stated total and payment dates.",
+    "courses": [
+      "Taylor’s University degree information and Taylor’s College pathway information belong to different institutions. Check which institution is named on your offer."
+    ],
+    "intakes": "Taylor's publishes a programme-by-programme key-intakes page. University and College intake pages are separate; use the appropriate institution and confirm the application deadline for international applicants.",
+    "bangladesh": "Request a programme assessment using your HSC or other qualification and English evidence. A pre-university pathway and direct degree entry are different routes; confirm which applies before selecting the fee schedule.",
+    "fee_faqs": [
+      {
+        "q": "Should I use Taylor's MYR or USD fee schedule?",
+        "a": "Select the international-student schedule for your programme on Taylor's official fee page and follow its payment-currency instructions. Do not substitute a Malaysian-student schedule or treat an old conversion as today's exchange rate."
+      },
+      {
+        "q": "Are Taylor's College fees the same as Taylor's University fees?",
+        "a": "Use the schedule for the institution and qualification in your offer. Foundation and pre-university pathways need particular care because College and University information should not be treated as interchangeable."
+      }
+    ],
+    "detail_faqs": [
+      {
+        "q": "Do all Taylor's programmes start in the same intake?",
+        "a": "Use the official key-intakes page for the selected qualification. A general intake month does not establish availability for every undergraduate, postgraduate or College programme."
+      },
+      {
+        "q": "Where can I compare Taylor's with another university?",
+        "a": "The MMU versus Taylor's guide linked below compares study considerations. Compare the same subject, qualification and campus, then use each university's fee chart for the relevant cost basis."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Taylor’s University Bachelor of Computer Science",
+        "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-computer-science.html"
+      },
+      {
+        "label": "Taylor’s College Foundation in Business",
+        "url": "https://college.taylors.edu.my/en/study/explore-all-programmes/school-of-pre-university-studies/foundation/foundation-in-business.html"
+      },
+      {
+        "label": "Taylor's University official key intakes",
+        "url": "https://university.taylors.edu.my/en/study/how-to-apply/key-intakes.html"
+      },
+      {
+        "label": "Taylor's College key intakes",
+        "url": "https://college.taylors.edu.my/en/study/how-to-apply/key-intakes.html"
+      },
+      {
+        "label": "Taylor's official fee schedules",
+        "url": "https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html"
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare MMU and Taylor's",
+        "path": "/Articles/mmu-vs-taylors"
+      },
+      {
+        "label": "Compare engineering study options",
+        "path": "/Articles/best-engineering-universities-malaysia"
+      }
+    ],
+    "programme_heading": "University degree or College pathway?",
+    "programme_note": "The selected University programme below has its own study and intake information. Taylor’s College publishes separate foundation and pre-university sources; the degree’s intake pattern does not apply to every pathway.",
+    "programme_checked": "6 October 2026",
+    "verified_programmes": [
+      {
+        "programme": "Bachelor of Computer Science (Honours)",
+        "institution": "Taylor’s University",
+        "location": "Lakeside campus, Subang Jaya",
+        "study": "Full-time; 3 years. Programme information for 2026 lists February, April and September. This does not confirm open applications.",
+        "source": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-computer-science.html",
+        "source_label": "Official 2026 programme information",
+        "fee_category": 2,
+        "fee_label": "University bachelor fee section"
+      }
+    ],
+    "fee_provenance": {
+      "edition": "Stored amount edition not confirmed for the intended intake",
+      "basis": "Foundation tuition/enrolment totals and other MYR/USD totals have different inclusions; use each table’s labels",
+      "status": "The official programme schedules include edition-specific payment and tax information. The stored amounts have not yet been reconciled against those editions and are retained unchanged. Select the institution, international category and programme before comparing totals.",
+      "sources": [
+        {
+          "label": "Taylor’s University official fee-schedule selector",
+          "url": "https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html"
+        }
+      ],
+      "sections": [
+        {
+          "institution": "Taylor's institution not independently confirmed for these stored foundation rows; match University or College to your offer",
+          "sources": [
+            {
+              "label": "Taylor’s College official foundation information",
+              "url": "https://college.taylors.edu.my/en/study/explore-all-programmes/school-of-pre-university-studies/foundation/foundation-in-business.html"
+            },
+            {
+              "label": "Taylor’s University official fee-schedule selector",
+              "url": "https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html"
+            }
+          ]
+        },
+        {
+          "institution": "Taylor's institution not independently confirmed for these stored diploma rows; match University or College to your offer"
+        }
+      ]
+    }
+  },
+  "apu": {
+    "name": "APU Malaysia",
+    "fee_title": "APU Malaysia Fees: International Tuition by Programme",
+    "fee_description": "Compare APU Malaysia international tuition by programme. Read computing-course fees, payment-period guidance and additional-charge notes before applying.",
+    "detail_title": "APU Malaysia: Ranking, Courses & Intakes | One-Step",
+    "detail_description": "Explore APU Malaysia rankings, computing and other courses, and Bukit Jalil campus. Plan your programme and international application from Bangladesh.",
+    "detail_intro": "Explore Asia Pacific University of Technology & Innovation in Malaysia. Compare the exact computing or other qualification, its entry requirements and award options before choosing your intake.",
+    "scope": "These fee sections cover Asia Pacific University in Malaysia, with APIIT-labelled certificate options identified separately. They do not describe another university using the APU abbreviation.",
+    "fee_reading": "Several tables label amounts as Total Tuition Fees. Compare the exact computing specialism or qualification and read the course notes. A programme total is not an official semester instalment or a complete living budget.",
+    "payment": "Check international application and registration charges separately from course tuition. Ask whether a partner-award option, deposit or other charge applies to your offer and request the actual payment stages before arrival.",
+    "courses": ["Computer science and related specialisms: compare the programme curriculum and entry conditions, not just the shared computing label.", "Business, engineering and creative courses: use the exact programme page and award name.", "APU and APIIT options: check the provider and any partner-award arrangement on the official programme information."],
+    "intakes": "Confirm the next intake on the selected programme's official information. Foundation, degree, postgraduate and language pathways need not share the same start date or English requirements.",
+    "bangladesh": "Provide your HSC subjects and results for a programme-level assessment, including any mathematics prerequisites. APU's international merit awards have eligibility and continuation conditions; request an assessment rather than assuming an advertised award applies.",
+    "fee_faqs": [
+      {"q": "How much is APU Malaysia tuition per semester?", "a": "Where the chart gives total tuition, it does not establish the amount invoiced each semester. Select your programme and obtain its payment schedule; dividing the total into equal instalments can misstate the amount due."},
+      {"q": "Is APU Malaysia expensive for a Bangladeshi student?", "a": "Compare the exact programme's tuition and compulsory charges with your available budget, then allow separately for accommodation and living costs. Assess any scholarship only after its eligibility and continuation conditions are confirmed."}
+    ],
+    "detail_faqs": [
+      {"q": "Which Asia Pacific University does this guide cover?", "a": "This guide covers Asia Pacific University of Technology & Innovation in Bukit Jalil, Kuala Lumpur, Malaysia. It does not cover other institutions using the Asia Pacific University name or APU abbreviation."},
+      {"q": "Are APU international merit awards automatic?", "a": "No automatic award is established by this guide. APU publishes international merit-award conditions and retains award discretion. Check your qualification, eligible programme and continuation requirements against the current official terms."}
+    ],
+    "sources": [{"label": "APU official university overview", "url": "https://apu.edu.my/the-university"}, {"label": "APU Computer Science programme", "url": "https://www.apu.edu.my/course/bsc-hons-in-computer-science"}, {"label": "APU international merit-award conditions", "url": "https://apu.edu.my/apu-international-students-scholarships-merit-awards"}, {"label": "APU fee and refund policy", "url": "https://www.apu.edu.my/fees-refund-policy"}],
+    "related": [{"label": "Compare engineering study options", "path": "/Articles/best-engineering-universities-malaysia"}, {"label": "Plan living costs in Malaysia", "path": "/Articles/cost-of-living-malaysia-international-students"}]
+  },
+  "unikl": {
+    "name": "Universiti Kuala Lumpur (UniKL)",
+    "fee_title": "UniKL Fees for International Students by Programme | One-Step",
+    "fee_description": "Review UniKL international tuition by programme and institute. Check campus, intake, fee period and the initial-payment notes in the stored schedule.",
+    "detail_title": "UniKL Malaysia: Courses, Intakes & Campus Guide | One-Step",
+    "detail_description": "Explore Universiti Kuala Lumpur courses, specialist institutes and campus choices. Plan your international entry pathway and intake from Bangladesh.",
+    "detail_intro": "Explore Universiti Kuala Lumpur (UniKL), also searched as University of Kuala Lumpur. Choose the programme and specialist institute together: the university name alone does not identify where your course is taught.",
+    "scope": "The UniKL chart identifies the institute in its CAMPUS column. Match the programme, institute and study level before comparing tuition; specialist institutes can be located in different parts of Malaysia.",
+    "fee_reading": "Use the full fee-column label, including any one-year, semester or total basis. The campus, intake and duration columns describe the programme separately. Do not compare an annual foundation amount with a full-degree total as if they were equivalent.",
+    "payment": "The stored notes distinguish a first payment from a second payment after visa approval. Security-bond and accommodation items can depend on nationality and campus; use the Bangladesh category and your selected institute's offer.",
+    "courses": ["Engineering and engineering technology: compare the precise award and professional accreditation route.", "Computing and multimedia: identify the specialist institute and location for the selected programme.", "Business, health and other disciplines: use the campus code and exact course title to locate the correct admissions information."],
+    "intakes": "The stored UniKL chart includes an INTAKE column beside the institute. Confirm the next available international intake and application deadline with that institute rather than assuming all campuses follow one timetable.",
+    "bangladesh": "Use UniKL's international entry-requirement guidance as a starting point and request the detailed requirements for your selected programme. Confirm qualification equivalence, subjects and English evidence; do not assume domestic funding schemes apply to Bangladeshi applicants.",
+    "fee_faqs": [
+      {"q": "Which UniKL campus fee should I use?", "a": "Use the institute named in the CAMPUS column of your exact programme row and match it to your offer. UniKL's institution name does not mean every programme is taught at the same location."},
+      {"q": "Are UniKL fees annual or for the whole programme?", "a": "The fee basis is printed in each table heading. Some sections expressly identify a one-year amount. Retain that label and request a payment schedule if the period you need is not provided."}
+    ],
+    "detail_faqs": [
+      {"q": "Are all UniKL courses taught in Kuala Lumpur?", "a": "UniKL operates through specialist institutes in different locations. Use the programme's institute and campus information, rather than the university name, when planning where to live."},
+      {"q": "Are engineering and engineering technology the same qualification?", "a": "Treat them as distinct awards when comparing programmes. Check the curriculum, exact qualification title and relevant accreditation or professional-registration route for your intended career."}
+    ],
+    "sources": [{"label": "UniKL official international student guide", "url": "https://www.unikl.edu.my/international-student/"}, {"label": "UniKL international entry requirements", "url": "https://www.unikl.edu.my/entry-requirement-international-student-2/"}, {"label": "UniKL international admissions", "url": "https://www.unikl.edu.my/international-admission/"}],
+    "related": [{"label": "Compare engineering study options", "path": "/Articles/best-engineering-universities-malaysia"}, {"label": "Explore Malaysian programme pathways", "path": "/Articles/popular-programs-of-study-malaysia"}]
+  },
+  "ucsi": {
+    "name": "UCSI University Malaysia",
+    "fee_title": "UCSI Malaysia Fees: International Tuition by Programme",
+    "fee_description": "Check UCSI Malaysia international fees by programme and campus. Read tuition, laboratory charges and first-time payments for study from Bangladesh.",
+    "detail_title": "UCSI University Malaysia: Ranking, Courses & Intakes",
+    "detail_description": "Explore UCSI University's Malaysian campuses, rankings and courses. Plan your intake from Bangladesh and distinguish Malaysia study from the Dhaka branch.",
+    "detail_intro": "This guide is for study at UCSI University's Malaysian campuses. UCSI also has a Bangladesh branch in Dhaka; confirm the country and teaching campus before comparing admission requirements, intakes or fees.",
+    "scope": "This is the UCSI Malaysia international fee chart, not a Dhaka-campus fee schedule. Faculty sections identify campus differences, including Kuala Lumpur, Kuching and Springhill where stated.",
+    "fee_reading": "Tuition, laboratory or other charges, facilities fees and FIRST TIME PAYMENT are separate items. The first-time payment is a payment-stage figure, not another tuition total to add automatically to the course cost.",
+    "payment": "Match the programme's first-time payment to the relevant administration and facilities notes. Check which charges are recurring, which are refundable and whether the offer includes a bridging course before comparing totals.",
+    "courses": ["Malaysian-campus programmes: confirm whether your course is taught in Kuala Lumpur, Kuching, Springhill or another stated location.", "Medicine and other health qualifications: use the exact award and campus; programme names and charges differ.", "Computing, business, music and other fields: compare the programme requirements and any audition, portfolio or bridging condition that applies."],
+    "intakes": "Confirm the intake for the exact Malaysian programme and campus. Do not use the Bangladesh branch's academic calendar or a general campus intake month as proof of availability for a Malaysian course.",
+    "bangladesh": "State clearly that you are applying from Bangladesh to study in Malaysia. Request assessment of your qualification and English evidence for the Malaysian programme, and keep Dhaka-campus costs and admission conditions out of that comparison.",
+    "fee_faqs": [
+      {"q": "Are these UCSI Malaysia fees or UCSI Bangladesh fees?", "a": "This page covers the stored international schedules for UCSI's Malaysian programmes. It does not quote the Bangladesh branch's fees. Match the country and campus to your offer."},
+      {"q": "Is UCSI's first-time payment the total tuition fee?", "a": "No: the chart labels first-time payments separately from tuition and other charges. Use the administration, facilities and programme notes to establish what is included, and avoid adding an already included payment twice."}
+    ],
+    "detail_faqs": [
+      {"q": "Does UCSI have a campus in Bangladesh?", "a": "Yes. UCSI publishes separate information for its Bangladesh branch in Dhaka. This One-Step guide focuses on Malaysian study options for applicants travelling from Bangladesh."},
+      {"q": "Can I use one UCSI intake calendar for every campus?", "a": "Confirm the programme, campus and country first. A Malaysia programme and a Dhaka-branch programme should not be assumed to have the same availability, academic calendar or admission conditions."}
+    ],
+    "sources": [{"label": "UCSI official campus directory", "url": "https://www.bangladesh.ucsiuniversity.edu.my/campuses"}, {"label": "UCSI Bangladesh branch information", "url": "https://www.bangladesh.ucsiuniversity.edu.my/bangladesh-branch-campus"}, {"label": "UCSI official international fee schedule", "url": "https://www.ucsiuniversity.edu.my/sites/default/files/ucsi_international_fee_structures.pdf"}, {"label": "UCSI QS university profile", "url": "https://www.topuniversities.com/universities/ucsi-university"}],
+    "related": [{"label": "Compare Malaysian university rankings", "path": "/Articles/top-10-universities-in-malaysia"}, {"label": "Explore medicine study in Malaysia", "path": "/Articles/study-medicine-mbbs-malaysia"}]
+  }
+}

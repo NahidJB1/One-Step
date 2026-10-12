@@ -474,6 +474,8 @@
   }
   
 
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) {
   .layout-grid { grid-template-columns: 1fr; margin-top: 0; }

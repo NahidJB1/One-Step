@@ -1,0 +1,704 @@
+{
+  "International Islamic University Malaysia (IIUM)": {
+    "slug": "iium",
+    "name": "International Islamic University Malaysia (IIUM)",
+    "img": "iium/iium_campus_1.webp",
+    "badge": "Public",
+    "loc": "Gombak",
+    "type": "Public",
+    "rank": "Top Islamic Uni",
+    "foundationFee": "-",
+    "bachelorFee": "-",
+    "intakes": "-",
+    "popular": "Islamic Studies, Law, Engineering",
+    "visa": "95%",
+    "location": "Gombak, Selangor",
+    "fields": [
+      "arts",
+      "engineering"
+    ],
+    "budget": "affordable",
+    "locationCode": "selangor",
+    "tags": [
+      "Public Uni",
+      "Islamic"
+    ],
+    "desc": "A premier international Islamic university offering comprehensive programs."
+  },
+  "University of Wollongong (UOW)": {
+    "slug": "uow",
+    "name": "University of Wollongong (UOW)",
+    "img": "uow/uow_campus_1.jpg",
+    "badge": "Australian",
+    "loc": "Shah Alam",
+    "type": "Private",
+    "rank": "Top Australian Uni in MY",
+    "foundationFee": "-",
+    "bachelorFee": "-",
+    "intakes": "-",
+    "popular": "Business, Engineering, Computing",
+    "visa": "98%",
+    "location": "Shah Alam, Selangor",
+    "fields": [
+      "business",
+      "engineering",
+      "it"
+    ],
+    "budget": "standard",
+    "locationCode": "selangor",
+    "tags": [
+      "Australian Degree",
+      "Global"
+    ],
+    "desc": "An Australian campus in Malaysia providing high-quality global education."
+  },
+  "Universiti Putra Malaysia (UPM)": {
+    "slug": "upm",
+    "name": "Universiti Putra Malaysia (UPM)",
+    "img": "upm/upm_campus_sky_view.jfif",
+    "badge": "Public",
+    "loc": "Serdang",
+    "type": "Public",
+    "rank": "Top Research Uni",
+    "foundationFee": "-",
+    "bachelorFee": "-",
+    "intakes": "-",
+    "popular": "Agriculture, Engineering, Sciences",
+    "visa": "95%",
+    "location": "Serdang, Selangor",
+    "fields": [
+      "science",
+      "engineering"
+    ],
+    "budget": "affordable",
+    "locationCode": "selangor",
+    "tags": [
+      "Public Uni",
+      "Research"
+    ],
+    "desc": "A leading research university recognized globally for agriculture and sciences."
+  },
+  "Universiti Teknikal Malaysia Melaka (UTeM)": {
+    "slug": "utem",
+    "name": "Universiti Teknikal Malaysia Melaka (UTeM)",
+    "img": "utem/utem_sky_view.jpeg",
+    "badge": "Public",
+    "loc": "Melaka",
+    "type": "Public",
+    "rank": "Top Technical Uni",
+    "foundationFee": "-",
+    "bachelorFee": "-",
+    "intakes": "-",
+    "popular": "Engineering, Computing, Technology",
+    "visa": "95%",
+    "location": "Durian Tunggal, Melaka",
+    "fields": [
+      "engineering",
+      "it"
+    ],
+    "budget": "affordable",
+    "locationCode": "melaka",
+    "tags": [
+      "Public Uni",
+      "Technical"
+    ],
+    "desc": "Malaysia's first technical public university offering specialized engineering and tech programs."
+  },
+  "Universiti Teknologi Malaysia (UTM)": {
+    "slug": "utm",
+    "name": "Universiti Teknologi Malaysia (UTM)",
+    "img": "utm/utm_campus.webp",
+    "badge": "Public",
+    "loc": "Johor Bahru",
+    "type": "Public",
+    "rank": "Top Technology Uni",
+    "foundationFee": "-",
+    "bachelorFee": "-",
+    "intakes": "-",
+    "popular": "Engineering, Technology, Sciences",
+    "visa": "95%",
+    "location": "Johor Bahru, Johor",
+    "fields": [
+      "engineering",
+      "science",
+      "it"
+    ],
+    "budget": "affordable",
+    "locationCode": "johor",
+    "tags": [
+      "Public Uni",
+      "Technology"
+    ],
+    "desc": "A premier university in engineering and technology in Malaysia."
+  },
+  "Taylor's University": {
+    "slug": "taylors",
+    "name": "Taylor's University",
+    "img": "taylors/taylors-main.jpg",
+    "badge": "Hospitality",
+    "loc": "Subang Jaya",
+    "type": "Private",
+    "rank": "#1 Private Uni in SE Asia",
+    "foundationFee": "RM 30,000 - RM 35,000",
+    "bachelorFee": "RM 80,000 - RM 120,000",
+    "intakes": "January, March, August",
+    "popular": "Hospitality, Business, Culinary, Law",
+    "visa": "99%",
+    "location": "Subang Jaya, Selangor",
+    "fields": [
+      "business",
+      "arts"
+    ],
+    "budget": "premium",
+    "locationCode": "subang",
+    "tags": [
+      "#1 Private Uni in SE Asia",
+      "Premium Facilities"
+    ],
+    "desc": "Globally recognized, ideal for premium Arts, Hospitality and Business programs."
+  },
+  "SEGI UNIVERSITY MALAYSIA": {
+    "slug": "segi",
+    "name": "SEGi University",
+    "img": "segi/segi_main.jpg",
+    "badge": "Industry Driven",
+    "loc": "Kota Damansara",
+    "type": "Private",
+    "rank": "QS 5-Star Plus",
+    "foundationFee": "RM 20,000 - RM 25,000",
+    "bachelorFee": "RM 45,000 - RM 65,000",
+    "intakes": "January, May, September",
+    "popular": "Engineering, Optometry, Dentistry",
+    "visa": "98%",
+    "location": "Kota Damansara, Selangor",
+    "fields": [
+      "engineering",
+      "healthcare",
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "subang",
+    "tags": [
+      "QS 5-Star Plus",
+      "Dual Degrees"
+    ],
+    "desc": "Offers excellent Engineering and Health science programs with great value."
+  },
+  "INTI International University": {
+    "slug": "inti",
+    "name": "INTI International University",
+    "img": "inti/inti_main.jpg",
+    "badge": "Global Partner",
+    "loc": "Nilai / Subang",
+    "type": "Private",
+    "rank": "Top Tier",
+    "foundationFee": "RM 22,000 - RM 28,000",
+    "bachelorFee": "RM 60,000 - RM 90,000",
+    "intakes": "January, May, August",
+    "popular": "Business, Computing, Design",
+    "visa": "98%",
+    "location": "Nilai, Negeri Sembilan",
+    "fields": [
+      "business",
+      "engineering"
+    ],
+    "budget": "premium",
+    "locationCode": "any",
+    "tags": [
+      "Global Partnerships",
+      "High Employability"
+    ],
+    "desc": "Offers great value and extensive global partnerships in Business and Tech."
+  },
+  "UNIVERSITY OF CYBERJAYA": {
+    "slug": "cyberjaya",
+    "name": "University of Cyberjaya",
+    "img": "cyberjaya/cyberjaya_main.jpg",
+    "badge": "Healthcare",
+    "loc": "Cyberjaya",
+    "type": "Private",
+    "rank": "QS 5-Star (Teaching & Employability)",
+    "foundationFee": "RM 25,000",
+    "bachelorFee": "RM 54,000",
+    "intakes": "October, February, July",
+    "popular": "Medicine, Pharmacy, Psychology",
+    "visa": "98%",
+    "location": "Cyberjaya, Selangor",
+    "fields": [
+      "healthcare",
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "subang",
+    "tags": [
+      "Top for Medicine",
+      "Tech Hub"
+    ],
+    "desc": "Top choice for Healthcare, Pharmacy, and Medicine, located in Malaysia's tech hub."
+  },
+  "City University Malaysia": {
+    "slug": "cityu",
+    "feesSlug": "city-university",
+    "name": "City University Malaysia",
+    "img": "cityu/cityu_main.jpg",
+    "badge": "Top Ranked",
+    "loc": "Petaling Jaya, Cyberjaya",
+    "type": "Private",
+    "rank": "Very Affordable",
+    "foundationFee": "RM 25,839",
+    "bachelorFee": "RM 45,000 - RM 55,000",
+    "intakes": "January, May, September",
+    "popular": "Business, IT, Architecture",
+    "visa": "99%",
+    "location": "Petaling Jaya, Selangor",
+    "fields": [
+      "business",
+      "arts"
+    ],
+    "budget": "budget",
+    "locationCode": "subang",
+    "tags": [
+      "Highly Affordable",
+      "Industry Focused"
+    ],
+    "desc": "Highly affordable with strong industry-focused Business and IT programs."
+  },
+  "BAC EDUCATION GROUP": {
+    "slug": "bac",
+    "name": "BAC Education Group",
+    "img": "bac/bac_main.jpg",
+    "badge": "Law & Business",
+    "loc": "Petaling Jaya",
+    "type": "Private",
+    "rank": "Premier Law & Business",
+    "foundationFee": "RM 25,000",
+    "bachelorFee": "RM 45,000 - RM 70,000",
+    "intakes": "February, June, September",
+    "popular": "Law, Business, Mass Comm",
+    "visa": "97%",
+    "location": "Petaling Jaya & KL",
+    "fields": [
+      "business",
+      "arts"
+    ],
+    "budget": "mid",
+    "locationCode": "kl",
+    "tags": [
+      "Premier Law",
+      "Business Pros"
+    ],
+    "desc": "Premier institution globally recognized for Law, Business, and Mass Communication."
+  },
+  "ALFA UNIVERSITY MALAYSIA": {
+    "slug": "alfa",
+    "name": "Alfa University College",
+    "img": "alfa/alfa_main.jpg",
+    "badge": "Creative Arts",
+    "loc": "Subang Jaya",
+    "type": "Private",
+    "rank": "Affordable Choice",
+    "foundationFee": "RM 14,700",
+    "bachelorFee": "RM 32,000",
+    "intakes": "January, May, September",
+    "popular": "Design, Accountancy, Early Childhood",
+    "visa": "98%",
+    "location": "Subang Jaya, Selangor",
+    "fields": [
+      "arts",
+      "business"
+    ],
+    "budget": "budget",
+    "locationCode": "subang",
+    "tags": [
+      "Design Experts",
+      "Affordable"
+    ],
+    "desc": "Budget-friendly option excellent for Design and Early Childhood programs."
+  },
+  "Universiti Tun Abdul Razak (UNIRAZAK)": {
+    "slug": "unirazak",
+    "name": "UNIRAZAK",
+    "img": "unirazak/unirazak-main.jpg",
+    "badge": "Public-Private",
+    "loc": "Kuala Lumpur",
+    "type": "Private",
+    "rank": "Specialized in Management",
+    "foundationFee": "RM 29,000",
+    "bachelorFee": "RM 50,000 - RM 60,000",
+    "intakes": "January, May, September",
+    "popular": "Management, Public Policy, Accounting",
+    "visa": "98%",
+    "location": "Kuala Lumpur",
+    "fields": [
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "kl",
+    "tags": [
+      "Management Experts",
+      "Boutique Uni"
+    ],
+    "desc": "Specialized boutique institution focusing heavily on Management and Public Policy."
+  },
+  "King's University": {
+    "slug": "kings",
+    "name": "King's University College",
+    "img": "kings/kings-main.jpg",
+    "badge": "Practical",
+    "loc": "Kuala Lumpur",
+    "type": "Private",
+    "rank": "Highly Accessible",
+    "foundationFee": "RM 18,000",
+    "bachelorFee": "RM 45,000",
+    "intakes": "January, March, June, October",
+    "popular": "Accounting, AI, Business",
+    "visa": "99%",
+    "location": "Kuala Lumpur",
+    "fields": [
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "kl",
+    "tags": [
+      "Fast Processing",
+      "Accessible"
+    ],
+    "desc": "Rapid processing and highly accessible AI, Accounting, and Business programs."
+  },
+  "Kings University College": {
+    "slug": "kings",
+    "name": "King's University College",
+    "img": "kings/kings-main.jpg",
+    "badge": "Practical",
+    "loc": "Kuala Lumpur",
+    "type": "Private",
+    "rank": "Highly Accessible",
+    "foundationFee": "RM 18,000",
+    "bachelorFee": "RM 45,000",
+    "intakes": "January, March, June, October",
+    "popular": "Accounting, AI, Business",
+    "visa": "99%",
+    "location": "Kuala Lumpur",
+    "fields": [
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "kl",
+    "tags": [
+      "Fast Processing",
+      "Accessible"
+    ],
+    "desc": "Rapid processing and highly accessible AI, Accounting, and Business programs."
+  },
+  "KLUST": {
+    "slug": "klust",
+    "name": "KLUST",
+    "img": "klust/klust-main.webp",
+    "badge": "Tech Focus",
+    "loc": "Kuala Lumpur",
+    "type": "Private",
+    "rank": "Affordable Tech Hub",
+    "foundationFee": "RM 10,143 - RM 11,844",
+    "bachelorFee": "RM 35,744",
+    "intakes": "January, May, September",
+    "popular": "Engineering, Computer Science",
+    "visa": "99%",
+    "location": "Kuala Lumpur",
+    "fields": [
+      "engineering",
+      "business"
+    ],
+    "budget": "budget",
+    "locationCode": "kl",
+    "tags": [
+      "Tech Focus",
+      "Budget Friendly"
+    ],
+    "desc": "Highly affordable engineering and tech programs right in the capital."
+  },
+  "KL University of Science & Technology (KLUST)": {
+    "slug": "klust",
+    "name": "KL University of Science & Technology (KLUST)",
+    "img": "iukl/iukl_main.jpg",
+    "badge": "Engineering",
+    "loc": "Kajang",
+    "type": "Private",
+    "rank": "Top Engineering Hub",
+    "foundationFee": "RM 20,000",
+    "bachelorFee": "RM 60,000",
+    "intakes": "March, June, October",
+    "popular": "Civil Engineering, Architecture",
+    "visa": "98%",
+    "location": "Kajang, Selangor",
+    "fields": [
+      "engineering"
+    ],
+    "budget": "mid",
+    "locationCode": "any",
+    "tags": [
+      "Infrastructure",
+      "Engineering Hub"
+    ],
+    "desc": "Malaysia's first infrastructure university, excellent for Civil Engineering."
+  },
+  "Asia Metropolitan University (AMU)": {
+    "slug": "amu",
+    "name": "Asia Metropolitan University",
+    "img": "amu/amu_gallery_3.png",
+    "badge": "Business & Tech",
+    "loc": "Kuala Lumpur / Johor Bahru",
+    "type": "Private",
+    "rank": "Top for Business & IT",
+    "foundationFee": "RM 12,000 - RM 15,000",
+    "bachelorFee": "RM 38,000 - RM 55,000",
+    "intakes": "January, May, September",
+    "popular": "Business, IT, Hospitality",
+    "visa": "97%",
+    "location": "Kuala Lumpur & Johor Bahru",
+    "fields": [
+      "business",
+      "engineering"
+    ],
+    "budget": "budget",
+    "locationCode": "kl",
+    "tags": [
+      "Affordable",
+      "Multiple Campuses"
+    ],
+    "desc": "Affordable private university offering broad programmes across Business, IT and Hospitality."
+  },
+  "Asia Pacific University of Technology & Innovation (APU)": {
+    "slug": "apu",
+    "name": "Asia Pacific University (APU)",
+    "img": "apu/APU-campus.jpg",
+    "badge": "Technology",
+    "loc": "Bukit Jalil, KL",
+    "type": "Private",
+    "rank": "QS 5-Star for Teaching",
+    "foundationFee": "RM 18,000 - RM 22,000",
+    "bachelorFee": "RM 55,000 - RM 80,000",
+    "intakes": "January, April, August",
+    "popular": "Computing, Cybersecurity, Engineering",
+    "visa": "98%",
+    "location": "Bukit Jalil, Kuala Lumpur",
+    "fields": [
+      "engineering",
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "kl",
+    "tags": [
+      "QS 5-Star Teaching",
+      "Tech Hub"
+    ],
+    "desc": "A leading technology-focused university rated QS 5-Star, renowned for Computing and Engineering."
+  },
+  "HELP University": {
+    "slug": "help",
+    "name": "HELP University",
+    "img": "help/help_campus_1.jpg",
+    "badge": "Psychology & Business",
+    "loc": "Subang 2 / Damansara",
+    "type": "Private",
+    "rank": "Premier Business & Psychology",
+    "foundationFee": "RM 16,000 - RM 20,000",
+    "bachelorFee": "RM 50,000 - RM 75,000",
+    "intakes": "January, March, July, October",
+    "popular": "Psychology, Business, Law",
+    "visa": "97%",
+    "location": "Subang 2 & Damansara, Selangor",
+    "fields": [
+      "business",
+      "arts"
+    ],
+    "budget": "mid",
+    "locationCode": "subang",
+    "tags": [
+      "Top for Psychology",
+      "British Curriculum"
+    ],
+    "desc": "Premier private university with outstanding Psychology, Business, and Law programmes."
+  },
+  "ICMS": {
+    "slug": "icms",
+    "name": "ICMS",
+    "img": "icms/icms_Campus.jfif",
+    "badge": "Management",
+    "loc": "Kuala Lumpur",
+    "type": "Private",
+    "rank": "Management Specialist",
+    "foundationFee": "RM 10,000 - RM 12,000",
+    "bachelorFee": "RM 35,000 - RM 45,000",
+    "intakes": "January, May, September",
+    "popular": "Business Management, Hospitality",
+    "visa": "96%",
+    "location": "Kuala Lumpur",
+    "fields": [
+      "business"
+    ],
+    "budget": "budget",
+    "locationCode": "kl",
+    "tags": [
+      "Specialist College",
+      "Management Focus"
+    ],
+    "desc": "Specialist college delivering focused Business and Hospitality Management programmes."
+  },
+  "Limkokwing University of Creative Technology": {
+    "slug": "limkokwing",
+    "name": "Limkokwing University",
+    "img": "limkokwing/limkokwing_campus_1.jpg",
+    "badge": "Creative Arts",
+    "loc": "Cyberjaya, Selangor",
+    "type": "Private",
+    "rank": "Global Creative Hub",
+    "foundationFee": "RM 14,000 - RM 18,000",
+    "bachelorFee": "RM 45,000 - RM 60,000",
+    "intakes": "February, June, September",
+    "popular": "Design, Architecture, Mass Communication",
+    "visa": "97%",
+    "location": "Cyberjaya, Selangor",
+    "fields": [
+      "arts",
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "subang",
+    "tags": [
+      "Global Creative Network",
+      "Design Hub"
+    ],
+    "desc": "A globally recognised creative university with campuses across Africa, Europe, and Asia."
+  },
+  "Lincoln University College": {
+    "slug": "lincoln",
+    "name": "Lincoln University College",
+    "img": "lincoln/lincoln_campus_1.jpg",
+    "badge": "Healthcare",
+    "loc": "Petaling Jaya / Kelana Jaya",
+    "type": "Private",
+    "rank": "Top for Medicine & Health",
+    "foundationFee": "RM 12,000 - RM 16,000",
+    "bachelorFee": "RM 40,000 - RM 65,000",
+    "intakes": "January, May, September",
+    "popular": "Medicine, Pharmacy, Nursing, Business",
+    "visa": "98%",
+    "location": "Petaling Jaya & Kelana Jaya, Selangor",
+    "fields": [
+      "healthcare",
+      "business"
+    ],
+    "budget": "budget",
+    "locationCode": "subang",
+    "tags": [
+      "Medical Programmes",
+      "Affordable"
+    ],
+    "desc": "An affordable private university strong in Medicine, Pharmacy, and Health Science."
+  },
+  "Multimedia University (MMU)": {
+    "slug": "mmu",
+    "name": "Multimedia University (MMU)",
+    "img": "mmu/mmu_campus_1.webp",
+    "badge": "Engineering & IT",
+    "loc": "Cyberjaya / Melaka",
+    "type": "Private",
+    "rank": "QS 5-Star for Teaching",
+    "foundationFee": "RM 18,000 - RM 22,000",
+    "bachelorFee": "RM 50,000 - RM 70,000",
+    "intakes": "February, June, October",
+    "popular": "Engineering, Computing, Business",
+    "visa": "98%",
+    "location": "Cyberjaya, Selangor & Melaka",
+    "fields": [
+      "engineering",
+      "business"
+    ],
+    "budget": "mid",
+    "locationCode": "subang",
+    "tags": [
+      "QS 5-Star",
+      "Research Excellence"
+    ],
+    "desc": "A leading tech and engineering university established by Telekom Malaysia, QS 5-Star rated."
+  },
+  "UCSI University": {
+    "slug": "ucsi",
+    "name": "UCSI University",
+    "img": "ucsi/ucsi_campus_1.jpg",
+    "badge": "Medicine & Nursing",
+    "loc": "Kuala Lumpur / Springhill",
+    "type": "Private",
+    "rank": "QS 5-Star",
+    "foundationFee": "RM 16,000 - RM 22,000",
+    "bachelorFee": "RM 55,000 - RM 90,000",
+    "intakes": "January, April, August",
+    "popular": "Medicine, Music, Architecture, Nursing",
+    "visa": "97%",
+    "location": "Kuala Lumpur & Springhill, Negeri Sembilan",
+    "fields": [
+      "healthcare",
+      "arts",
+      "engineering"
+    ],
+    "budget": "mid",
+    "locationCode": "kl",
+    "tags": [
+      "QS 5-Star",
+      "Top for Medicine"
+    ],
+    "desc": "A QS 5-Star rated private university known for Medicine, Nursing, and Creative Arts."
+  },
+  "International University of Malaya-Wales (IUMW)": {
+    "slug": "umw",
+    "name": "University Malaya-Wales (IUMW)",
+    "img": "umw/umw_campus_1.avif",
+    "badge": "International",
+    "loc": "Kuala Lumpur",
+    "type": "Private",
+    "rank": "UK-Malaysian Partnership",
+    "foundationFee": "RM 15,000 - RM 18,000",
+    "bachelorFee": "RM 42,000 - RM 60,000",
+    "intakes": "January, May, September",
+    "popular": "Business, Law, Engineering, ICT",
+    "visa": "97%",
+    "location": "Kuala Lumpur",
+    "fields": [
+      "business",
+      "engineering"
+    ],
+    "budget": "mid",
+    "locationCode": "kl",
+    "tags": [
+      "UK Partnership",
+      "International Accreditation"
+    ],
+    "desc": "A unique UK-Malaysian partnership university offering internationally recognised degrees."
+  },
+  "Universiti Kuala Lumpur (UniKL)": {
+    "slug": "unikl",
+    "name": "Universiti Kuala Lumpur (UniKL)",
+    "img": "unikl/unikl_campus_1.jfif",
+    "badge": "Applied Technology",
+    "loc": "Kuala Lumpur",
+    "type": "Private",
+    "rank": "Top Applied Tech Uni",
+    "foundationFee": "RM 10,143 - RM 14,000",
+    "bachelorFee": "RM 35,000 - RM 55,000",
+    "intakes": "January, May, September",
+    "popular": "Engineering, Aviation, Business, IT",
+    "visa": "97%",
+    "location": "Kuala Lumpur (Multiple Campuses)",
+    "fields": [
+      "engineering",
+      "business"
+    ],
+    "budget": "budget",
+    "locationCode": "kl",
+    "tags": [
+      "Applied Technology",
+      "Industry-Linked"
+    ],
+    "desc": "Malaysia's applied technology university with strong industry links and specialised campuses."
+  }
+}

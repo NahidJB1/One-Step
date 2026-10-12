@@ -11,23 +11,25 @@
     
     // Create floating particles in CTA section
     const particlesContainer = document.getElementById('particlesContainer');
-    for (let i = 0; i < 30; i++) {
-      const particle = document.createElement('div');
-      particle.classList.add('particle');
-      
-      // Random properties
-      const size = Math.random() * 8 + 2;
-      const left = Math.random() * 100;
-      const duration = Math.random() * 10 + 10;
-      const delay = Math.random() * 5;
-      
-      particle.style.width = `${size}px`;
-      particle.style.height = `${size}px`;
-      particle.style.left = `${left}%`;
-      particle.style.animationDuration = `${duration}s`;
-      particle.style.animationDelay = `${delay}s`;
-      
-      particlesContainer.appendChild(particle);
+    if (particlesContainer) {
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        // Random properties
+        const size = Math.random() * 8 + 2;
+        const left = Math.random() * 100;
+        const duration = Math.random() * 10 + 10;
+        const delay = Math.random() * 5;
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${left}%`;
+        particle.style.animationDuration = `${duration}s`;
+        particle.style.animationDelay = `${delay}s`;
+        
+        particlesContainer.appendChild(particle);
+      }
     }
 
     // Animated counter for stats
@@ -56,8 +58,19 @@
           const universityCount = document.getElementById('universityCount');
           const studentCount = document.getElementById('studentCount');
           
-          animateCounter(universityCount, 15);
-          animateCounter(studentCount, 150);
+          let targetUniCount = 15;
+          if (typeof window.UNIVERSITY_META !== 'undefined') {
+              targetUniCount = Object.keys(window.UNIVERSITY_META).length;
+          }
+
+          const baseDate = new Date(Date.UTC(2026, 7, 10));
+          const baseCount = 151;
+          const diffTime = Math.max(0, new Date() - baseDate);
+          const diffWeeks = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 7));
+          const currentStudentCount = baseCount + diffWeeks;
+          
+          animateCounter(universityCount, targetUniCount);
+          animateCounter(studentCount, currentStudentCount);
           
           observer.unobserve(entry.target);
         }
@@ -66,7 +79,9 @@
 
     // Observe the hero section
     const heroSection = document.querySelector('.hero-section');
-    observer.observe(heroSection);
+    if (heroSection) {
+      observer.observe(heroSection);
+    }
 
 // Mobile menu toggle with smooth animation
 // Mobile menu logic has been centralized in navbar.js to avoid duplicate events.
@@ -100,6 +115,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch('universities.json?v=2');
         if (!response.ok) throw new Error("JSON not found");
         ALL_PROGRAMS_DATA = await response.json();
+        
+        // Map levels to user preferred terminology
+        ALL_PROGRAMS_DATA.forEach(uni => {
+            if (uni.programs) {
+                uni.programs.forEach(prog => {
+                    if (prog.level === 'Degree') prog.level = 'Bachelor';
+                    if (prog.level === 'Master') prog.level = "Master's";
+                    if (prog.level === 'Doctorate') prog.level = 'PhD';
+                });
+            }
+        });
+
         console.log("Enhanced Search Engine: Ready with responsive display");
         
         renderFeaturedUniversities();
@@ -122,19 +149,22 @@ function renderFeaturedUniversities() {
         const meta = window.UNIVERSITY_META[uni.name];
         
         const isHidden = count >= 6 ? ' hidden-card' : '';
-        const detailsLink = `Universities/${meta.slug}-details.html`;
-        const feesLink = `Fees_Chart/${meta.slug}-fees.html`;
+        const detailsLink = `/Universities/${meta.slug}-details`;
+        // Reserved for the dedicated university application page, to be built next.
+        const applyLink = `/apply?university=${encodeURIComponent(meta.slug)}`;
 
         html += `
           <div class="university-card${isHidden}">
             <div class="university-badge">${meta.badge}</div>
-            <img src="assets/images/universities/${meta.img}" alt="${uni.name}" class="university-img" onerror="this.src='https://via.placeholder.com/400x250?text=University'">
+            <a href="${detailsLink}" class="university-image-link">
+              <img src="assets/images/universities/${meta.img}" alt="${uni.name}" class="university-img" onerror="this.src='https://via.placeholder.com/400x250?text=University'">
+            </a>
             <div class="university-content">
-              <h3 class="university-name">${uni.name}</h3>
+              <h3 class="university-name"><a href="${detailsLink}" class="university-name-link">${uni.name}</a></h3>
               <div class="university-location"><i class="fas fa-map-marker-alt"></i><span>${meta.loc}</span></div>
               <div class="university-card-buttons">
-                <a href="${feesLink}" class="card-btn programs">
-                  <i class="fas fa-list-ul"></i> Programs
+                <a href="${applyLink}" class="card-btn apply">
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i> Apply
                 </a>
                 <a href="${detailsLink}" class="card-btn details">
                   Details <i class="fas fa-arrow-right"></i>
@@ -178,7 +208,7 @@ function triggerSearch() {
         const uniName = uni.name;
         if (!window.UNIVERSITY_META || !window.UNIVERSITY_META[uniName]) return;
         const meta = window.UNIVERSITY_META[uniName];
-        const uniLink = `Fees_Chart/${meta.slug}-fees.html`;
+        const uniLink = `/Fees_Chart/${meta.slug}-fees`;
 
         uni.programs.forEach(program => {
             const progName = program.name;
@@ -241,15 +271,24 @@ function generateFilters(results) {
         filterBox.style.display = "flex";
         
         // "All" Button
-        let html = `<button class="filter-btn active" onclick="applyFilter('All', this)">All (${results.length})</button>`;
+        let html = `<button class="filter-btn active" data-category="All">All (${results.length})</button>`;
         
         // Dynamic Buttons
         levels.forEach(level => {
             const count = results.filter(r => r.level === level).length;
-            html += `<button class="filter-btn" onclick="applyFilter('${level}', this)">${level} (${count})</button>`;
+            // Use data-category to safely pass values with quotes like "Master's"
+            const safeLevel = level.replace(/"/g, '&quot;');
+            html += `<button class="filter-btn" data-category="${safeLevel}">${level} (${count})</button>`;
         });
 
         filterBox.innerHTML = html;
+        
+        // Attach event listeners instead of using inline onclick
+        filterBox.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                applyFilter(this.getAttribute('data-category'), this);
+            });
+        });
     }
 }
 
@@ -322,11 +361,14 @@ function renderResultsBatch() {
 }
 
 // Add event listener for Enter key on search input
-document.getElementById('programSearchInput').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-        triggerSearch();
-    }
-});  
+const searchInput = document.getElementById('programSearchInput');
+if (searchInput) {
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            triggerSearch();
+        }
+    });
+}  
 
 
 /* =========================================
@@ -345,7 +387,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 15,000€",
     visa: "90-100%",
-    link: "countries/finland.html"
+    link: "countries/finland"
   },
   {
     name: "Italy",
@@ -355,7 +397,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 5,000€",
     visa: "40-50%",
-    link: "countries/italy.html"
+    link: "countries/italy"
   },
   {
     name: "Hungary",
@@ -365,7 +407,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 10,000€",
     visa: "60-70%",
-    link: "countries/hungary.html"
+    link: "countries/hungary"
   },
   {
     name: "Spain",
@@ -375,7 +417,7 @@ const countriesData = [
     programs: "Vocational, Language",
     fee: "Under 13,000€",
     visa: "90-100%",
-    link: "countries/spain.html"
+    link: "countries/spain"
   },
   {
     name: "Cyprus",
@@ -385,7 +427,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 10,000€",
     visa: "60-70%",
-    link: "countries/cyprus.html"
+    link: "countries/cyprus"
   },
   {
     name: "Uzbekistan",
@@ -395,7 +437,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 5,000$",
     visa: "98%",
-    link: "countries/uzbekistan.html"
+    link: "countries/uzbekistan"
   },
   {
     name: "China",
@@ -405,7 +447,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 5,000$",
     visa: "90-100%",
-    link: "countries/china.html"
+    link: "countries/china"
   },
   {
     name: "Norway",
@@ -415,7 +457,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 15,000€",
     visa: "90-100%",
-    link: "countries/norway.html"
+    link: "countries/norway"
   },
   {
     name: "Sweden",
@@ -425,7 +467,7 @@ const countriesData = [
     programs: "Bachelor, Master",
     fee: "Under 15,000€",
     visa: "90-100%",
-    link: "countries/sweden.html"
+    link: "countries/sweden"
   },
   {
     name: "Denmark",
@@ -435,7 +477,7 @@ const countriesData = [
     programs: "Bachelor, Master, PhD",
     fee: "Under 15,000€",
     visa: "90-100%",
-    link: "countries/denmark.html"
+    link: "countries/denmark"
   }
 ];
 
@@ -443,8 +485,10 @@ let currentCountryIndex = 0;
 
 // Initialize Carousel
 document.addEventListener('DOMContentLoaded', () => {
-  renderFlags();
-  updateCountryDisplay();
+  if (document.getElementById('flagCarousel')) {
+    renderFlags();
+    updateCountryDisplay();
+  }
 });
 
 function renderFlags() {
@@ -571,3 +615,4 @@ if (viewAllBtn) {
         // (But usually hiding is cleaner for this layout)
     });
 }
+

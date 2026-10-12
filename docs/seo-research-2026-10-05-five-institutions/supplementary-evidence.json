@@ -1,0 +1,262 @@
+{
+  "checked": "2026-10-06 Asia/Kuala_Lumpur",
+  "pages": [
+    {
+      "url": "https://www.onestepmy.com/Fees_Chart/alfa-fees",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Fees_Chart/alfa-fees",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Universities/alfa-details",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Universities/alfa-details",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Fees_Chart/taylors-fees",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Fees_Chart/taylors-fees",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Universities/taylors-details",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Universities/taylors-details",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Fees_Chart/segi-fees",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Fees_Chart/segi-fees",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Universities/segi-details",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Universities/segi-details",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Fees_Chart/cityu-fees",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Fees_Chart/cityu-fees",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Universities/cityu-details",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Universities/cityu-details",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Fees_Chart/inti-fees",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Fees_Chart/inti-fees",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    },
+    {
+      "url": "https://www.onestepmy.com/Universities/inti-details",
+      "status": 200,
+      "canonical": "https://www.onestepmy.com/Universities/inti-details",
+      "localUnchangedSinceOctober5": true,
+      "liveIdenticalToLocal": true
+    }
+  ],
+  "destinations": [
+    {
+      "path": "/",
+      "existsLocally": true
+    },
+    {
+      "path": "/explore-universities",
+      "existsLocally": true
+    },
+    {
+      "path": "/Universities/alfa-details",
+      "existsLocally": true
+    },
+    {
+      "path": "/Fees_Chart/alfa-fees",
+      "existsLocally": true
+    },
+    {
+      "path": "/assets/documents/fees/alfa-fees.pdf",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/cost-of-living-malaysia-international-students",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/visas-and-requirements-malaysia",
+      "existsLocally": true
+    },
+    {
+      "path": "/contact",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/malaysia-student-visa-requirements",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/scholarships-for-international-students-malaysia",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/cheapest-universities",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/popular-programs-of-study-malaysia",
+      "existsLocally": true
+    },
+    {
+      "path": "/student-support-malaysia",
+      "existsLocally": true
+    },
+    {
+      "path": "/Universities/taylors-details",
+      "existsLocally": true
+    },
+    {
+      "path": "/Fees_Chart/taylors-fees",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/mmu-vs-taylors",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/best-engineering-universities-malaysia",
+      "existsLocally": true
+    },
+    {
+      "path": "/Universities/segi-details",
+      "existsLocally": true
+    },
+    {
+      "path": "/Fees_Chart/segi-fees",
+      "existsLocally": true
+    },
+    {
+      "path": "/assets/documents/fees/segi-fees.pdf",
+      "existsLocally": true
+    },
+    {
+      "path": "/Articles/top-10-universities-in-malaysia",
+      "existsLocally": true
+    },
+    {
+      "path": "/Universities/cityu-details",
+      "existsLocally": true
+    },
+    {
+      "path": "/Fees_Chart/cityu-fees",
+      "existsLocally": true
+    },
+    {
+      "path": "/assets/documents/fees/cityu-fees.pdf",
+      "existsLocally": true
+    },
+    {
+      "path": "/Universities/inti-details",
+      "existsLocally": true
+    },
+    {
+      "path": "/Fees_Chart/inti-fees",
+      "existsLocally": true
+    },
+    {
+      "path": "/assets/documents/fees/inti-penang-fees.pdf",
+      "existsLocally": true
+    },
+    {
+      "path": "/assets/documents/fees/inti-nilai-fees.pdf",
+      "existsLocally": true
+    },
+    {
+      "path": "/assets/documents/fees/inti-subang-fees.pdf",
+      "existsLocally": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "/assets/documents/fees/alfa-fees.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 207193,
+      "pdfSignature": true
+    },
+    {
+      "path": "/assets/documents/fees/segi-fees.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 151644,
+      "pdfSignature": true
+    },
+    {
+      "path": "/assets/documents/fees/cityu-fees.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 1871471,
+      "pdfSignature": true
+    },
+    {
+      "path": "/assets/documents/fees/inti-penang-fees.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 206098,
+      "pdfSignature": true
+    },
+    {
+      "path": "/assets/documents/fees/inti-nilai-fees.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 334384,
+      "pdfSignature": true
+    },
+    {
+      "path": "/assets/documents/fees/inti-subang-fees.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 309756,
+      "pdfSignature": true
+    }
+  ],
+  "contact": {
+    "url": "https://www.onestepmy.com/contact",
+    "status": 200,
+    "formTag": "<form action=\"#\" method=\"POST\" onsubmit=\"event.preventDefault(); alert('Form submitted! We will contact you soon.');\">",
+    "scriptSources": [
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019",
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019",
+      "https://unpkg.com/aos@2.3.1/dist/aos.js",
+      "assets/js/navbar.js",
+      "assets/js/footer.js"
+    ],
+    "targetPagesLinkingContact": [
+      "https://www.onestepmy.com/Fees_Chart/alfa-fees",
+      "https://www.onestepmy.com/Universities/alfa-details",
+      "https://www.onestepmy.com/Fees_Chart/taylors-fees",
+      "https://www.onestepmy.com/Universities/taylors-details",
+      "https://www.onestepmy.com/Fees_Chart/segi-fees",
+      "https://www.onestepmy.com/Universities/segi-details",
+      "https://www.onestepmy.com/Fees_Chart/cityu-fees",
+      "https://www.onestepmy.com/Universities/cityu-details",
+      "https://www.onestepmy.com/Fees_Chart/inti-fees",
+      "https://www.onestepmy.com/Universities/inti-details"
+    ],
+    "liveNoAnalyticsScriptInTargetHTML": true
+  }
+}

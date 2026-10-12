@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/search.css">
+  <link rel="stylesheet" href="/assets/css/mobile.css">
+<!-- seo:metadata:start -->
+  <title>Search Courses & Subjects | One-Step</title>
+  <meta name="description" content="Search from hundreds of courses across Malaysia's top universities. Find the right program by subject, university, or degree level.">
+  <link rel="canonical" href="https://www.onestepmy.com/search">
+  <meta property="og:title" content="Search Courses & Subjects | One-Step">
+  <meta property="og:description" content="Search from hundreds of courses across Malaysia's top universities. Find the right program by subject, university, or degree level.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.onestepmy.com/search">
+<!-- seo:metadata:end -->
+</head>
+<body>
+
+<div id="global-nav-placeholder"></div>
+
+  <!-- Search Hero Section -->
+  <section class="search-hero-section">
+    <div class="search-hero-bg">
+      <div class="search-floating-shape shape-1"></div>
+      <div class="search-floating-shape shape-2"></div>
+      <div class="search-floating-shape shape-3"></div>
+    </div>
+
+    <div class="container search-hero-container">
+      <div class="search-hero-badge">
+        <i class="fas fa-search"></i> Course Finder
+      </div>
+      <h1 class="search-hero-title">Find Your Perfect <span>Subject</span></h1>
+      <p class="search-hero-subtitle">Search from hundreds of courses across Malaysia's top universities. We'll match you with the best programs.</p>
+
+      <div class="search-page-stats">
+        <div class="search-stat">
+          <i class="fas fa-university"></i>
+          <span id="searchUniCount">20+</span>
+          <small>Universities</small>
+        </div>
+        <div class="search-stat">
+          <i class="fas fa-book-open"></i>
+          <span id="searchProgCount">500+</span>
+          <small>Programs</small>
+        </div>
+        <div class="search-stat">
+          <i class="fas fa-layer-group"></i>
+          <span>All Levels</span>
+          <small>Foundation to PhD</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section class="search-page-section">
+    <div class="container">
+      <div class="search-card">
+        <div class="search-container-wrapper">
+          <div class="search-input-group">
+            <input 
+              type="text" 
+              id="programSearchInput" 
+              class="search-input" 
+              placeholder="What do you want to study? (e.g. Business, City U, IT)" 
+              onkeyup="triggerSearch()"
+              autofocus
+            >
+            <button type="button" class="search-btn" onclick="triggerSearch()">
+              <i class="fas fa-search"></i> <span class="btn-text">Search</span>
+            </button>
+          </div>
+
+          <div id="filterContainer" class="filter-buttons-container" style="display: none;"></div>
+          <div id="searchResults" class="search-results-grid"></div>
+          
+          <div id="seeMoreContainer" class="see-more-wrapper" style="display: none;">
+            <button id="seeMoreBtn" class="btn btn-primary see-more-custom">See More Results</button>
+          </div>
+        </div>
+
+        <!-- Popular Searches -->
+        <div class="popular-searches" id="popularSearches">
+          <p class="popular-label"><i class="fas fa-fire"></i> Popular Searches:</p>
+          <div class="popular-tags">
+            <button class="popular-tag" onclick="quickSearch('Business')">Business</button>
+            <button class="popular-tag" onclick="quickSearch('Computer Science')">Computer Science</button>
+            <button class="popular-tag" onclick="quickSearch('Engineering')">Engineering</button>
+            <button class="popular-tag" onclick="quickSearch('MBA')">MBA</button>
+            <button class="popular-tag" onclick="quickSearch('Accounting')">Accounting</button>
+            <button class="popular-tag" onclick="quickSearch('IT')">IT</button>
+            <button class="popular-tag" onclick="quickSearch('Law')">Law</button>
+            <button class="popular-tag" onclick="quickSearch('Medicine')">Medicine</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <h2 class="cta-title">Can't Find What You're Looking For?</h2>
+      <p class="cta-subtitle">Contact us today for personalized guidance. We'll help you find the perfect program.</p>
+      
+      <div class="cta-buttons">
+        <a href="https://wa.me/6011159497" target="_blank" class="btn cta-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <a href="application" class="btn btn-accent">
+        <i class="fas fa-rocket"></i> Start Your Application
+       </a>
+      </div>
+    </div>
+  </section>
+
+<div id="global-footer-placeholder"></div>
+<script src="assets/js/universityData.js"></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/search.js"></script>
+
+</body>
+</html>

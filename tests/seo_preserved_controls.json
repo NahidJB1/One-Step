@@ -1,0 +1,162 @@
+{
+  "Universities/alfa-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \n              title=\"ALFA University College in Subang Jaya\" src=\"https://maps.google.com/maps?q=ALFA%20University%20College%2C%2013%20Persiaran%20Kewajipan%2C%20USJ%201%2C%2047600%20Subang%20Jaya%2C%20Selangor&amp;output=embed\" \n              width=\"100%\" \n              height=\"400\" \n              style=\"border:0;\" \n              allowfullscreen=\"\" \n              loading=\"lazy\">"
+  ],
+  "Universities/amu-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/apu-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/bac-details.html": [
+    "<button class=\"inst-tab-btn active\" data-inst=\"bac\">",
+    "<button class=\"inst-tab-btn\" data-inst=\"unimy\">",
+    "<button class=\"inst-tab-btn\" data-inst=\"iact\">",
+    "<button class=\"inst-tab-btn\" data-inst=\"veritas\">",
+    "<button class=\"inst-tab-btn\" data-inst=\"reliance\">"
+  ],
+  "Universities/binary-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/cityu-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \n      title=\"City University Malaysia in Petaling Jaya\" src=\"https://maps.google.com/maps?q=City%20University%20Malaysia%2C%20Menara%20City%20U%2C%20No.%208%20Jalan%2051A%2F223%2C%2046100%20Petaling%20Jaya%2C%20Selangor&amp;output=embed\" \n      width=\"100%\" \n      height=\"400\" \n      style=\"border:0;\" \n      allowfullscreen=\"\" \n      loading=\"lazy\">"
+  ],
+  "Universities/cyberjaya-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/cybernetics-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/genovasi-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/help-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/icms-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/iium-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/inti-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \n              title=\"INTI International University in Nilai\" src=\"https://maps.google.com/maps?q=INTI%20International%20University%2C%20Persiaran%20Perdana%20BBN%2C%20Putra%20Nilai%2C%2071800%20Nilai%2C%20Negeri%20Sembilan&amp;output=embed\" \n              width=\"100%\" \n              height=\"400\" \n              style=\"border:0;\" \n              allowfullscreen=\"\" \n              loading=\"lazy\">"
+  ],
+  "Universities/kings-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/klust-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/limkokwing-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/lincoln-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/mmu-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/segi-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \n              title=\"SEGi University in Kota Damansara\" src=\"https://maps.google.com/maps?q=SEGi%20University%2C%20No.%209%20Jalan%20Teknologi%2C%20Taman%20Sains%20Selangor%2C%20Kota%20Damansara%20PJU%205%2C%2047810%20Petaling%20Jaya%2C%20Selangor&amp;output=embed\" \n              width=\"100%\" \n              height=\"400\" \n              style=\"border:0;\" \n              allowfullscreen=\"\" \n              loading=\"lazy\">"
+  ],
+  "Universities/taylors-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/ucmi-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/ucsi-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/umw-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/unikl-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/unirazak-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"location\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">",
+    "<iframe \r\n              src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0343362624133!2d101.6148383749709!3d3.064571996911364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612faeb356a608!2sTaylor's%20University%20Lakeside%20Campus!5e0!3m2!1sen!2smy!4v1706625841000!5m2!1sen!2smy\" \r\n              width=\"100%\" \r\n              height=\"400\" \r\n              style=\"border:0;\" \r\n              allowfullscreen=\"\" \r\n              loading=\"lazy\">"
+  ],
+  "Universities/uow-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/upm-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/utem-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ],
+  "Universities/utm-details.html": [
+    "<button class=\"tab-btn active\" data-tab=\"overview\">",
+    "<button class=\"tab-btn\" data-tab=\"campus\">",
+    "<button class=\"tab-btn\" data-tab=\"faculties\">"
+  ]
+}

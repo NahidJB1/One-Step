@@ -24,7 +24,8 @@ $conn->query("CREATE TABLE IF NOT EXISTS visitor_logs (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
 
 // Get JSON payload
-$data = json_decode(file_get_contents('php://input'), true);
+$raw_input = file_get_contents('php://input');
+$data = json_decode($raw_input, true);
 
 if (!$data && isset($_POST['action'])) {
     $data = $_POST;
@@ -32,6 +33,7 @@ if (!$data && isset($_POST['action'])) {
 
 if (!$data) {
     http_response_code(400);
+    echo json_encode(['error' => 'No data received', 'raw' => $raw_input, 'post' => $_POST, 'method' => $_SERVER['REQUEST_METHOD']]);
     exit;
 }
 
@@ -40,6 +42,7 @@ $session_id = $data['session_id'] ?? '';
 
 if (empty($session_id)) {
     http_response_code(400);
+    echo json_encode(['error' => 'Missing session_id', 'data' => $data]);
     exit;
 }
 
@@ -68,5 +71,6 @@ if ($action === 'page_view') {
 }
 
 http_response_code(400);
+echo json_encode(['error' => 'Invalid action', 'action' => $action]);
 exit;
 ?>

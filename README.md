@@ -52,3 +52,7 @@ One-Step/
 
 ## 📝 License
 This project is proprietary. All university logos, brochures, and data belong to their respective institutions.
+
+## Local student counselor
+
+The PHP chatbot uses local FAQ retrieval, structured program and fee searches, and conversation state without external AI APIs. See [the chatbot guide](docs/chatbot.md) for setup, tests, supported questions, and the data review workflow. The chatbot requires PHP hosting even when the rest of the site is served statically.

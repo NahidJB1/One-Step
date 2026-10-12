@@ -5,3 +5,11 @@ mingit.zip
 work_on/
 
 os-v2.zip
+
+# Local browser verification images and temporary comparison snapshots.
+.codex-preview/
+
+node_modules/
+node.exe
+onestepmy.com-Performance-on-Search-*/
+api/test.php

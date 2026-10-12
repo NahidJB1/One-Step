@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
 
     // --- 1. LANGUAGE TRANSLATION LOGIC ---
     function applyLanguage(lang) {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Redirect simulation
             setTimeout(() => {
-                window.location.href = 'index.html'; 
+                window.location.href = '/'; 
             }, 3000);
         });
     }

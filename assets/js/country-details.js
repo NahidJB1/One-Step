@@ -1,14 +1,14 @@
-/* assets/js/country-details.js */
+﻿/* assets/js/country-details.js */
 
 // 1. COUNTRY DATA
 const countries = [
-    { name: "Finland", flag: "https://flagcdn.com/w160/fi.png", link: "finland.html" },
-    { name: "Italy", flag: "https://flagcdn.com/w160/it.png", link: "italy.html" },
-    { name: "Hungary", flag: "https://flagcdn.com/w160/hu.png", link: "hungary.html" },
-    { name: "Spain", flag: "https://flagcdn.com/w160/es.png", link: "spain.html" },
-    { name: "China", flag: "https://flagcdn.com/w160/cn.png", link: "china.html" },
-    { name: "Sweden", flag: "https://flagcdn.com/w160/se.png", link: "sweden.html" },
-    { name: "Norway", flag: "https://flagcdn.com/w160/no.png", link: "norway.html" }
+    { name: "Finland", flag: "https://flagcdn.com/w160/fi.png", link: "finland" },
+    { name: "Italy", flag: "https://flagcdn.com/w160/it.png", link: "italy" },
+    { name: "Hungary", flag: "https://flagcdn.com/w160/hu.png", link: "hungary" },
+    { name: "Spain", flag: "https://flagcdn.com/w160/es.png", link: "spain" },
+    { name: "China", flag: "https://flagcdn.com/w160/cn.png", link: "china" },
+    { name: "Sweden", flag: "https://flagcdn.com/w160/se.png", link: "sweden" },
+    { name: "Norway", flag: "https://flagcdn.com/w160/no.png", link: "norway" }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -89,3 +89,4 @@ function scrollCountries(direction) {
         }, 400);
     }
 }
+

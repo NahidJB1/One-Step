@@ -1,0 +1,1119 @@
+CHATBOT TEST RESULTS:
+
+Q1: hi
+A1: Hello! I can help you find programs, check published fees, compare universities, and search our student FAQs.
+
+-------------------------------------------------
+
+Q2: ?
+A2: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q3: fees
+A3: Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+-------------------------------------------------
+
+Q4: asdfghjkl
+A4: Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+-------------------------------------------------
+
+Q5: @@@ !!! ???
+A5: Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+-------------------------------------------------
+
+Q6: What are the fees for both Taylor's and UCSI?
+A6: Which program or study level should I check? Fees differ by program, campus, and student category.
+
+-------------------------------------------------
+
+Q7: Which is cheaper, APU or SEGI or Cybernetics?
+A7: Which program or study level should I check? Fees differ by program, campus, and student category.
+
+-------------------------------------------------
+
+Q8: Tell me about Universiti Malaya, UTM, and UniKL.
+A8: I recognized **UM**, but no program or fee catalog for it is available in our local data. A counselor can help confirm the details.
+
+-------------------------------------------------
+
+Q9: I want a Bachelor degree, or maybe a Master's, or even a PhD?
+A9: I could not match this part to a program or supported filter: **maybe, even**. Please give the program name or rephrase that condition so I do not ignore it.
+
+-------------------------------------------------
+
+Q10: What is the diploma and undergrad cost?
+A10: I could not match this part to a program or supported filter: **maybe, even**. Please give the program name or rephrase that condition so I do not ignore it.
+
+-------------------------------------------------
+
+Q11: bhai kemon acho?
+A11: I could not match this part to a program or supported filter: **bhai, kemon, acho**. Please give the program name or rephrase that condition so I do not ignore it.
+
+-------------------------------------------------
+
+Q12: vaiya amar taka nai, ki korbo?
+A12: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q13: malaysia te porte jabo, admission fee koto hobe?
+A13: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q14: apni ki bangla bujhen?
+A14: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q15: My emgs is stuck at 32% update me please.
+A15: I cannot access your application or check live EMGS status. Use the [official EMGS application tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). If you share the status wording or percentage, I can search our FAQs to help explain it.
+
+-------------------------------------------------
+
+Q16: emgs track
+A16: You can track your real-time visa progress using the official EMGS portal. 
+
+If your application is stuck or you need help understanding the percentages, just ask your **One-Step** counselor! We monitor your application daily.
+
+-------------------------------------------------
+
+Q17: check emgs status
+A17: You can track your real-time visa progress using the official EMGS portal. 
+
+If your application is stuck or you need help understanding the percentages, just ask your **One-Step** counselor! We monitor your application daily.
+
+-------------------------------------------------
+
+Q18: How do I track my visa progress?
+A18: I cannot access your application or check live EMGS status. Use the [official EMGS application tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). If you share the status wording or percentage, I can search our FAQs to help explain it.
+
+-------------------------------------------------
+
+Q19: Show me every single Science program at UTM.
+A19: I could not match this part to a program or supported filter: **every**. Please give the program name or rephrase that condition so I do not ignore it.
+
+-------------------------------------------------
+
+Q20: List all the engineering and management degrees at APU.
+A20: Here are matching entries from our local catalog.
+
+**Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**
+- **Duration:** 4 Years
+
+[Source: program details](Fees_Chart/apu-fees.html)
+
+Showing 1 of 1 matching entries.
+
+-------------------------------------------------
+
+Q21: Give me all diploma courses in Malaysia.
+A21: Here are matching entries from our local catalog.
+
+**City University Malaysia — Diploma in Fashion Design**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+**City University Malaysia — Diploma in Graphic Design**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+**City University Malaysia — Diploma in Mass Communication**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+**City University Malaysia — Diploma in Corporate Communication**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+**City University Malaysia — Diploma in Accounting**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+**City University Malaysia — Diploma in Business Management**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+Showing 6 of 579 matching entries.
+
+-------------------------------------------------
+
+Q22: How much are the fes at taylors u?
+A22: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
+
+**Taylor's University — Diploma in Accounting**
+DIPLOMA PROGRAMS
+- **Duration:** 2 years
+- **Total Fee (RM):** RM73,806
+- **Total Fee (USD):** $17,164
+
+> **Published conditions:** Note: Grand totals include tuition, enrolment, EMGS visa, and medical insurance for the minimum duration.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Diploma in Business**
+DIPLOMA PROGRAMS
+- **Duration:** 2 years
+- **Total Fee (RM):** RM73,806
+- **Total Fee (USD):** $17,164
+
+> **Published conditions:** Note: Grand totals include tuition, enrolment, EMGS visa, and medical insurance for the minimum duration.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Diploma in Communication**
+DIPLOMA PROGRAMS
+- **Duration:** 2 years
+- **Total Fee (RM):** RM73,806
+- **Total Fee (USD):** $17,164
+
+> **Published conditions:** Note: Grand totals include tuition, enrolment, EMGS visa, and medical insurance for the minimum duration.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Diploma in Information Technology**
+DIPLOMA PROGRAMS
+- **Duration:** 2 years
+- **Total Fee (RM):** RM73,806
+- **Total Fee (USD):** $17,164
+
+> **Published conditions:** Note: Grand totals include tuition, enrolment, EMGS visa, and medical insurance for the minimum duration.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Diploma in Interior Design**
+DIPLOMA PROGRAMS
+- **Duration:** 2.5 years
+- **Total Fee (RM):** RM73,806
+- **Total Fee (USD):** $17,164
+
+> **Published conditions:** Note: Grand totals include tuition, enrolment, EMGS visa, and medical insurance for the minimum duration.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Diploma in Hotel Management**
+DIPLOMA PROGRAMS
+- **Duration:** 2 years
+- **Total Fee (RM):** RM73,806
+- **Total Fee (USD):** $17,164
+
+> **Published conditions:** Note: Grand totals include tuition, enrolment, EMGS visa, and medical insurance for the minimum duration.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+Showing 6 of 8 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+
+-------------------------------------------------
+
+Q23: A.P.U universiti cost for mastres?
+A23: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
+
+**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
+MASTER PROGRAMS
+- **Duration:** 1-1.5 Years (3 Semesters)
+- **Total Tuition Fees:** RM 38,800
+
+> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.
+
+[Source: fee table](Fees_Chart/apu-fees.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — Master of Science in Artificial Intelligence, Master of Science in Cyber Security**
+MASTER PROGRAMS
+- **Duration:** 1-1.5 Years (3 Semesters)
+- **Total Tuition Fees:** RM 40,800
+
+> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.
+
+[Source: fee table](Fees_Chart/apu-fees.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — MSc in Data Science and Business Analytics**
+MASTER PROGRAMS
+- **Duration:** 1-1.5 Years (3 Semesters)
+- **Total Tuition Fees:** RM 44,800
+
+> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.
+
+[Source: fee table](Fees_Chart/apu-fees.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — Master of Education in Learning Design and Technology**
+MASTER PROGRAMS
+- **Duration:** 1-1.5 Years (3 Semesters)
+- **Total Tuition Fees:** RM 34,000
+
+> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.
+
+[Source: fee table](Fees_Chart/apu-fees.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — Master of Philosophy (MPhil) in Engineering, Management, Computing**
+MASTER PROGRAMS
+- **Duration:** Up to 2 Years
+- **Total Tuition Fees:** RM 29,800
+
+> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.
+
+[Source: fee table](Fees_Chart/apu-fees.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**
+MASTER PROGRAMS
+- **Duration:** 2 Years
+- **Total Tuition Fees:** RM 31,000
+
+> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.
+
+[Source: fee table](Fees_Chart/apu-fees.html)
+
+Showing 6 of 8 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+
+-------------------------------------------------
+
+Q24: cyber netics diploma?
+A24: Here are matching entries from our local catalog.
+
+**CYBERNETICS MALAYSIA (KTAC) — Diploma in Creative Multimedia**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cybernetics-details.html)
+
+**CYBERNETICS MALAYSIA (KTAC) — Diploma in Aviation Management**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cybernetics-details.html)
+
+**CYBERNETICS MALAYSIA (KTAC) — Diploma in Halal Industry Management**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cybernetics-details.html)
+
+**CYBERNETICS MALAYSIA (KTAC) — Diploma in Accounting**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cybernetics-details.html)
+
+**CYBERNETICS MALAYSIA (KTAC) — Diploma in Early Childhood Management**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cybernetics-details.html)
+
+**CYBERNETICS MALAYSIA (KTAC) — Diploma in Business Management**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cybernetics-details.html)
+
+Showing 6 of 9 matching entries.
+
+-------------------------------------------------
+
+Q25: tarc fee structur
+A25: I recognized **TARC**, but no program or fee catalog for it is available in our local data. A counselor can help confirm the details.
+
+-------------------------------------------------
+
+Q26: I have a very long story. I graduated back in 2018. Since then I was doing some random jobs. I have a 4 year study gap. Will this be a problem?
+A26: **I have a very long story**
+I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+**I graduated back in 2018. Since then I was doing some random jobs**
+I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+**I have a 4 year study gap**
+Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+**Will this be a problem**
+I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Can One-Step help me if I have a problem with my university later on?
+
+-------------------------------------------------
+
+Q27: I want to know about the post study work visa or graduate pass in malaysia after I finish my studies.
+A27: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. How does the Graduate Pass (Post-Study Work Visa) work in Malaysia?
+2. Post-study work visas (Talent Pass)?
+
+-------------------------------------------------
+
+Q28: Pending additional documents at 15%, I am very scared.
+A28: I could not match this part to a program or supported filter: **pending, document, scared**. Please give the program name or rephrase that condition so I do not ignore it.
+
+-------------------------------------------------
+
+Q29: Can I go without IELTS? I failed my English test.
+A29: **Can I go without IELTS**
+I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Can I study in Malaysia without IELTS? How do English Language Programs work?
+
+**I failed my English test**
+I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Can I study in Malaysia without IELTS? How do English Language Programs work?
+2. Is an English test (IELTS, TOEFL) required for the EMGS student visa?
+
+-------------------------------------------------
+
+Q30: letter of good conduct required?
+A30: Depending on your nationality (for example, applicants from China or certain other regions), EMGS may require a notarized **Letter of Good Conduct** (No Criminal Record Certificate). 
+
+This is a standard security procedure. The document usually needs to be translated into English and officially notarized. At **One-Step**, our VIP visa team will provide you with the exact format required and guide you step-by-step so your application sails through EMGS without delays!
+
+-------------------------------------------------
+
+Q31: How will it cost me to study in the university?
+A31: Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+-------------------------------------------------
+
+Q32: What is it about and can you tell me what I want to know?
+A32: **What is it about**
+Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+**can you tell me what I want to know**
+I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q33: Will you accept what I have?
+A33: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Does the university accept credit card payments for tuition fees?
+2. Does the university finance office accept USD, or must it be in RM?
+3. Will public universities accept an MBA by Coursework for direct entry into a PhD program, or do they strictly demand research publications/thesis work?
+
+-------------------------------------------------
+
+Q34: I want to study in China, what are the options?
+A34: Our local guides cover these destinations: [China study guide](countries/china.html). I do not have a structured answer to this question for those destinations.
+
+-------------------------------------------------
+
+Q35: Tell me about studying in Finland or Sweden.
+A35: Our local guides cover these destinations: [Finland study guide](countries/finland.html), [Sweden study guide](countries/sweden.html). I do not have a structured answer to this question for those destinations.
+
+-------------------------------------------------
+
+Q36: Cyprus universities?
+A36: Our local guides cover these destinations: [Cyprus study guide](countries/cyprus.html). I do not have a structured answer to this question for those destinations.
+
+-------------------------------------------------
+
+Q37: hello i want to study in malaysia but i do not have enough money so i am looking for a cheap university that offers a bachelor degree in computer science preferably with a scholarship or some kind of discount because my family cannot support me and i also need to know how much the visa costs and if i can work part time while studying thank you
+A37: **Fees**
+I could not match this part to a program or supported filter: **enough, money, cheap, preferably**. Please give the program name or rephrase that condition so I do not ignore it.
+
+**Scholarships**
+I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. How do I know if an offer letter is fake?
+2. Time from offer to VAL?
+3. Can I study in Malaysia without IELTS? How do English Language Programs work?
+
+-------------------------------------------------
+
+Q38: Are you a real human or a bot?
+A38: No matching fee entries were found in the local catalog for these filters. This does not establish that the program is unavailable. Try a different program or study level, or confirm with a counselor.
+
+-------------------------------------------------
+
+Q39: Can I talk to a real agent on Whatsapp?
+A39: I could not match this part to a program or supported filter: **talk, agent, whatsapp**. Please give the program name or rephrase that condition so I do not ignore it.
+
+-------------------------------------------------
+
+Q40: Goodbye, thanks for the help.
+A40: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q41: Compare the cheapest options for me.
+A41: Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+-------------------------------------------------
+
+Q42: Do I pay the medical clinic directly or is it in the EMGS fee?
+A42: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Do I have to pay extra for the post-arrival medical checkup at the clinic?
+2. Which EMGS panel clinic should I go to for my post-arrival medical?
+3. How long does it take for the clinic to upload my medical results to EMGS?
+
+-------------------------------------------------
+
+Q43: <script>alert("hacked")</script>
+A43: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q44: <b>bold text</b> and <i>italic</i>
+A44: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q45: DROP TABLE faqs;
+A45: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q46: Hello ?????! Tell me about Taylor's ??
+A46: **Hello**
+I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+**Tell me about Taylor's**
+I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q47: ?? fees for MBA?
+A47: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
+
+**Taylor's University — Master of Business Administration (MBA)**
+MASTERS PROGRAMS
+- **Duration:** 1 year
+- **Total Fee (RM):** RM70,014
+- **Total Fee (USD):** $16,282
+
+> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+
+-------------------------------------------------
+
+Q48: I want to study at Taylor's.
+A48: Here are matching entries from our local catalog.
+
+**Taylor's University — Foundation in Business**
+- **Duration:** 1 Year
+
+[Source: program details](Universities/taylors-details.html)
+
+**Taylor's University — Foundation in Arts**
+- **Duration:** 1 Year
+
+[Source: program details](Universities/taylors-details.html)
+
+**Taylor's University — Foundation in Design**
+- **Duration:** 1 Year
+
+[Source: program details](Universities/taylors-details.html)
+
+**Taylor's University — Foundation in Computing**
+- **Duration:** 1 Year
+
+[Source: program details](Universities/taylors-details.html)
+
+**Taylor's University — Foundation in Science**
+- **Duration:** 1 Year
+
+[Source: program details](Universities/taylors-details.html)
+
+**Taylor's University — Foundation in Engineering**
+- **Duration:** 1 Year
+
+[Source: program details](Universities/taylors-details.html)
+
+Showing 6 of 80 matching entries.
+
+-------------------------------------------------
+
+Q49: How much are the Master fees?
+A49: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
+
+**Taylor's University — Master of Business Administration (MBA)**
+MASTERS PROGRAMS
+- **Duration:** 1 year
+- **Total Fee (RM):** RM70,014
+- **Total Fee (USD):** $16,282
+
+> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Master of Management**
+MASTERS PROGRAMS
+- **Duration:** 1 year
+- **Total Fee (RM):** RM70,014
+- **Total Fee (USD):** $16,282
+
+> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Master of Communication**
+MASTERS PROGRAMS
+- **Duration:** 1.5 years
+- **Total Fee (RM):** RM59,284
+- **Total Fee (USD):** $13,787
+
+> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Master of Applied Computing**
+MASTERS PROGRAMS
+- **Duration:** 1 year
+- **Total Fee (RM):** RM61,105
+- **Total Fee (USD):** $14,210
+
+> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Master of International Hospitality Management**
+MASTERS PROGRAMS
+- **Duration:** 1.5 years
+- **Total Fee (RM):** RM73,724
+- **Total Fee (USD):** $17,145
+
+> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+**Taylor's University — Master of Computer Science (Research)**
+MASTERS PROGRAMS
+- **Duration:** 2 years
+- **Total Fee (RM):** RM50,694
+- **Total Fee (USD):** $11,789
+
+> **Published conditions:** Masters Misc Fees: Application & EMGS: RM3,810; Student Charge: RM8,000.
+
+[Source: fee table](Fees_Chart/taylors-fees.html)
+
+Showing 6 of 7 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+
+-------------------------------------------------
+
+Q50: Tell me about UCSI.
+A50: | University | Location | Type | Campuses | Catalog programs |
+|---|---|---|---|---|
+| UCSI University | Not recorded | Not recorded | Main Campus | 180 |
+
+Tell me the program, study level, and budget to narrow the comparison. The catalog does not establish a universal best university or guarantee visa approval.
+
+-------------------------------------------------
+
+Q51: What about their engineering programs?
+A51: Here are matching entries from our local catalog.
+
+**UCSI University — Doctor of Philosophy in Engineering (PhD)**
+- **Duration:** 3 Years (min 9 semesters with bridging course)
+
+[Source: program details](Universities/ucsi-details.html)
+
+**UCSI University — Doctor of Philosophy (Engineering) by Prior Publication**
+- **Duration:** 2 Years (without bridging / with bridging course)
+
+[Source: program details](Universities/ucsi-details.html)
+
+**UCSI University — Industrial PhD In Engineering**
+- **Duration:** 3 Years (min 9 semesters with bridging course)
+
+[Source: program details](Universities/ucsi-details.html)
+
+**UCSI University — Master of Philosophy in Engineering (M.Phil)**
+- **Duration:** 2 Years (min 6 semesters with bridging course)
+
+[Source: program details](Universities/ucsi-details.html)
+
+**UCSI University — Master in Engineering (Smart Engineering Management)**
+- **Duration:** 1 Years (min 3 semesters with bridging course)
+
+[Source: program details](Universities/ucsi-details.html)
+
+**UCSI University — Master of Petroleum Engineering**
+- **Duration:** 1 Years (min 3 semesters with bridging course)
+
+[Source: program details](Universities/ucsi-details.html)
+
+Showing 6 of 30 matching entries.
+
+-------------------------------------------------
+
+Q52: Hello bhai, I just passed HSC from Dhaka. Can I get admission in Malaysia?
+A52: **Hello bhai, I just passed HSC from Dhaka**
+I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+**Can I get admission in Malaysia**
+I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Exact admission criteria and minimum CGPA for public universities?
+
+-------------------------------------------------
+
+Q53: I want to study Bachelor of Computer Science.
+A53: Here are matching entries from our local catalog.
+
+**City University Malaysia — Bachelor of Computer Science (Hons) Software Engineering**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/bac-details.html)
+
+**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/bac-details.html)
+
+**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/alfa-details.html)
+
+**INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/inti-details.html)
+
+**INTI International University — Bachelor of Computer Science (Hons)**
+- **Duration:** 3 Years
+
+[Source: program details](Universities/inti-details.html)
+
+Showing 6 of 100 matching entries.
+
+-------------------------------------------------
+
+Q54: Which is the cheapest university for CS?
+A54: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
+
+**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
+BACHELOR PROGRAMS
+- **Duration:** 3 Years
+- **Year 1:** RM 16,000
+- **Resource Fee:** RM 2,000
+- **Year 2:** RM 15,000
+- **Year 3:** RM 15,000
+- **Total:** RM 48,000
+
+> **Published conditions:** Initial Fees (International Student):
+> EMGS and VISA Processing Fee: RM 3,500
+> Registration Fee: RM 1,000
+> International Student Fee: RM 1,500
+> Total Initial Fees Payment Upon Application: RM 6,000
+
+[Source: fee table](Fees_Chart/alfa-fees.html)
+
+**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**
+All Programs
+- **Level:** Bachelor
+- **Duration:** 3 Years
+- **Year 1 (RM):** 10,920
+- **Year 2 (RM):** 10,920
+- **Year 3 (RM):** 10,920
+- **Total (RM):** 32,760
+
+> **Published conditions:** First Payment (Upon Registration):
+> Diploma: RM14,500
+> Bachelor / Master / PhD: RM17,500
+> 
+> Important Notes:
+> â€¢ EMGS fee is non-refundable.
+> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
+> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
+> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
+> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
+> 
+> Important Notes:
+> â€¢ Fees listed include 6% SST.
+> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
+> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
+
+[Source: fee table](Fees_Chart/binary-fees.html)
+
+**BAC EDUCATION GROUP — Foundation in Computing & Engineering**
+UNIMY
+- **Duration:** 1 year
+- **Tuition Fees (1st Year):** RM17,168
+- **Total Tuition Fee:** RM17,168
+
+> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
+
+[Source: fee table](Fees_Chart/bac-fees.html)
+
+**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
+UNIMY
+- **Duration:** 3 years
+- **Tuition Fees (1st Year):** RM16,168
+- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year
+- **Total Tuition Fee:** RM46,168
+
+> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
+
+[Source: fee table](Fees_Chart/bac-fees.html)
+
+**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**
+UNIMY
+- **Duration:** 3 years
+- **Tuition Fees (1st Year):** RM16,168
+- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year
+- **Total Tuition Fee:** RM46,168
+
+> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
+
+[Source: fee table](Fees_Chart/bac-fees.html)
+
+**BAC EDUCATION GROUP — Master in Computing (By research)**
+UNIMY
+- **Duration:** 2 years
+- **Tuition Fees (1st Year):** RM16,168
+- **Tuition Fees (Following Years):** RM9,000
+- **Total Tuition Fee:** RM25,168
+
+> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
+
+[Source: fee table](Fees_Chart/bac-fees.html)
+
+Fee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.
+
+Showing 6 of 99 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+
+-------------------------------------------------
+
+Q55: What is the total fee for City University?
+A55: Which program or study level should I check? Fees differ by program, campus, and student category.
+
+-------------------------------------------------
+
+Q56: Do they provide any scholarship for Bangladeshi students?
+A56: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q57: How much is the living cost in Kuala Lumpur per month?
+A57: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q58: My budget is very low, is it possible to work part time?
+A58: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q59: What is the EMGS process for visa?
+A59: The EMGS Visa Approval Letter (VAL) process typically takes 3 to 6 weeks, progressing through milestones (15%, 32%, 70%). 
+
+As an official partner, **One-Step** handles the heavy lifting! We review your documents perfectly before submission to avoid 15% errors, liaise with the universities, and track your progress daily until you hit 100% and are ready to fly. Apply through us for a stress-free VIP experience!
+
+-------------------------------------------------
+
+Q60: Do I need to show bank balance?
+A60: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Do I need a letter from the university to open a bank account?
+
+-------------------------------------------------
+
+Q61: Can I apply without IELTS?
+A61: Yes, you can secure admission without an IELTS score! Top universities like Taylor's, UCSI, and APU offer intensive on-campus English programs (like ELS or CIEP). 
+
+You will be issued a student visa specifically for the English program. Once you arrive and pass the internal placement test or complete the required levels, you smoothly transition into your Bachelor's or Master's degree! 
+
+Let **One-Step** handle your dual-application process to secure your premium English pathway today.
+
+-------------------------------------------------
+
+Q62: Hi, I finished my BBA in 2021 from National University.
+A62: I could not match this part to a program or supported filter: **finished, national**. Please give the program name or rephrase that condition so I do not ignore it.
+
+-------------------------------------------------
+
+Q63: I have a 3 years study gap because I was working. Will it be a problem?
+A63: **I have a 3 years study gap because I was working**
+Which university and study level or program do you mean? For example, "APU master fees" or "computer science bachelor programs".
+
+**Will it be a problem**
+I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Can One-Step help me if I have a problem with my university later on?
+
+-------------------------------------------------
+
+Q64: I am looking for a Master's or MBA program in Malaysia.
+A64: Here are matching entries from our local catalog.
+
+**City University Malaysia — Master of Business Administration (MBA)**
+- **Duration:** 1 Year
+
+[Source: program details](Universities/cityu-details.html)
+
+**City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**
+- **Duration:** 2 Years
+
+[Source: program details](Universities/cityu-details.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
+- **Duration:** 1-1.5 Years (3 Semesters)
+
+[Source: program details](Universities/apu-details.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**
+- **Duration:** 2 Years
+
+[Source: program details](Universities/apu-details.html)
+
+**University College MAIWP International (UCMI) — Master of Business Administration (MBA)**
+- **Duration:** 1-3 Years
+
+[Source: program details](Universities/ucmi-details.html)
+
+**GENOVASI UNIVERSITY MALAYSIA — Master of Business Administration**
+- **Duration:** 1.5 Years
+
+[Source: program details](Universities/genovasi-details.html)
+
+Showing 6 of 144 matching entries.
+
+-------------------------------------------------
+
+Q65: What are the fees for MBA in SEGi?
+A65: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
+
+**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
+MASTER'S PROGRAMS (SEGi University KD)
+- **Total Fee (MYR):** 54,350
+- **Year 1 (MYR):** 51,200
+
+> **Published conditions:** Initial Payment: MYR 3,150.00
+> Note: Masters fees exclude EMGS/Visa renewal fees
+
+[Source: fee table](Fees_Chart/segi-fees.html)
+
+Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+
+-------------------------------------------------
+
+Q66: Can you compare SEGi and APU for MBA?
+A66: Here are matching entries from our local catalog.
+
+**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
+- **Duration:** N/A
+
+[Source: program details](Universities/segi-details.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
+- **Duration:** 1-1.5 Years (3 Semesters)
+
+[Source: program details](Universities/apu-details.html)
+
+**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
+
+[Source: program details](Fees_Chart/segi-fees.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**
+- **Duration:** 2 Years
+
+[Source: program details](Universities/apu-details.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
+- **Duration:** 1-1.5 Years (3 Semesters)
+
+[Source: program details](Fees_Chart/apu-fees.html)
+
+**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**
+- **Duration:** 2 Years
+
+[Source: program details](Fees_Chart/apu-fees.html)
+
+Showing 6 of 6 matching entries.
+
+-------------------------------------------------
+
+Q67: Is IELTS mandatory for Master's in Malaysia?
+A67: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q68: Do I need a letter of good conduct?
+A68: Depending on your nationality (for example, applicants from China or certain other regions), EMGS may require a notarized **Letter of Good Conduct** (No Criminal Record Certificate). 
+
+This is a standard security procedure. The document usually needs to be translated into English and officially notarized. At **One-Step**, our VIP visa team will provide you with the exact format required and guide you step-by-step so your application sails through EMGS without delays!
+
+-------------------------------------------------
+
+Q69: What is the visa success rate for Bangladeshi students with a study gap?
+A69: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q70: Can I bring my spouse with me?
+A70: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Can I bring my spouse or family with me to Malaysia on my student visa?
+2. Can Master's student bring spouse/children?
+
+-------------------------------------------------
+
+Q71: Is there any post study work visa available?
+A71: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Post-study work visas (Talent Pass)?
+
+-------------------------------------------------
+
+Q72: Hi, I want to pursue higher studies in top ranking universities.
+A72: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q73: Tell me about Universiti Malaya and UTM.
+A73: I recognized **UM**, but no program or fee catalog for it is available in our local data. A counselor can help confirm the details.
+
+-------------------------------------------------
+
+Q74: I am interested in MSc in Electrical Engineering.
+A74: Here are matching entries from our local catalog.
+
+**Lincoln University College — Master of Science in Electrical & Electronics Engineering**
+- **Duration:** Master
+
+[Source: program details](Universities/lincoln-details.html)
+
+**Universiti Kuala Lumpur (UniKL) — Master of Electrical Engineering**
+- **Duration:** BMI
+
+[Source: program details](Universities/unikl-details.html)
+
+**Universiti Kuala Lumpur (UniKL) — Master of Engineering Technology (Electrical and Electronics)**
+- **Duration:** BMI
+
+[Source: program details](Universities/unikl-details.html)
+
+**Universiti Putra Malaysia (UPM) — Master in Electrical Power Engineering**
+- **Duration:** 2 Years
+
+[Source: program details](Universities/upm-details.html)
+
+**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**
+- **Duration:** N/A
+
+[Source: program details](Universities/utm-details.html)
+
+**Lincoln University College — Master of Science in Electrical & Electronics Engineering**
+- **Duration:** Year 1 Year 2
+
+[Source: program details](Fees_Chart/lincoln-fees.html)
+
+Showing 6 of 12 matching entries.
+
+-------------------------------------------------
+
+Q75: How much does it cost at UTM for engineering?
+A75: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
+
+**Universiti Teknologi Malaysia (UTM) — Master of Science (Biomedical Engineering)**
+FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)
+- **Study Mode:** Taught Course
+
+> **Published conditions:** Areas of Research include: Biomedical Engineering, Rehabilitation Technology, Electrical Engineering, Health Science, Wireless Communication, RF and Microwave, Optical Communication, Artificial Intelligence, Robotics, Control and Instrumentation, High Voltage and High Current, Power System, Power Electronics and Drives, Computer Vision, Digital Signal Processing, Biomedical Devices and Technology, VLSI and Embedded Computing, Microelectronics, Diagnostics and Rehabilitation, Tissue Engineering, Cardiovascular Engineering, Sports Innovation and Technology.
+> 
+> Notes: 1. A comprehensive list of research areas can be found at the respective faculty websites. 2. Areas and disciplines for Masters by Research and PhD study other than listed above will be offered as Generic Programmes at faculties and schools.
+
+[Source: fee table](Fees_Chart/utm-fees.html)
+
+**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Wireless Communication and Network)**
+FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)
+- **Study Mode:** Taught Course
+
+> **Published conditions:** Areas of Research include: Biomedical Engineering, Rehabilitation Technology, Electrical Engineering, Health Science, Wireless Communication, RF and Microwave, Optical Communication, Artificial Intelligence, Robotics, Control and Instrumentation, High Voltage and High Current, Power System, Power Electronics and Drives, Computer Vision, Digital Signal Processing, Biomedical Devices and Technology, VLSI and Embedded Computing, Microelectronics, Diagnostics and Rehabilitation, Tissue Engineering, Cardiovascular Engineering, Sports Innovation and Technology.
+> 
+> Notes: 1. A comprehensive list of research areas can be found at the respective faculty websites. 2. Areas and disciplines for Masters by Research and PhD study other than listed above will be offered as Generic Programmes at faculties and schools.
+
+[Source: fee table](Fees_Chart/utm-fees.html)
+
+**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Computer and Microelectronic Systems)**
+FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)
+- **Study Mode:** Taught Course
+
+> **Published conditions:** Areas of Research include: Biomedical Engineering, Rehabilitation Technology, Electrical Engineering, Health Science, Wireless Communication, RF and Microwave, Optical Communication, Artificial Intelligence, Robotics, Control and Instrumentation, High Voltage and High Current, Power System, Power Electronics and Drives, Computer Vision, Digital Signal Processing, Biomedical Devices and Technology, VLSI and Embedded Computing, Microelectronics, Diagnostics and Rehabilitation, Tissue Engineering, Cardiovascular Engineering, Sports Innovation and Technology.
+> 
+> Notes: 1. A comprehensive list of research areas can be found at the respective faculty websites. 2. Areas and disciplines for Masters by Research and PhD study other than listed above will be offered as Generic Programmes at faculties and schools.
+
+[Source: fee table](Fees_Chart/utm-fees.html)
+
+**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**
+FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)
+- **Study Mode:** Taught Course
+
+> **Published conditions:** Areas of Research include: Biomedical Engineering, Rehabilitation Technology, Electrical Engineering, Health Science, Wireless Communication, RF and Microwave, Optical Communication, Artificial Intelligence, Robotics, Control and Instrumentation, High Voltage and High Current, Power System, Power Electronics and Drives, Computer Vision, Digital Signal Processing, Biomedical Devices and Technology, VLSI and Embedded Computing, Microelectronics, Diagnostics and Rehabilitation, Tissue Engineering, Cardiovascular Engineering, Sports Innovation and Technology.
+> 
+> Notes: 1. A comprehensive list of research areas can be found at the respective faculty websites. 2. Areas and disciplines for Masters by Research and PhD study other than listed above will be offered as Generic Programmes at faculties and schools.
+
+[Source: fee table](Fees_Chart/utm-fees.html)
+
+**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Mechatronics and Automatic Control)**
+FACULTY OF ELECTRICAL ENGINEERING (POSTGRADUATE)
+- **Study Mode:** Taught Course
+
+> **Published conditions:** Areas of Research include: Biomedical Engineering, Rehabilitation Technology, Electrical Engineering, Health Science, Wireless Communication, RF and Microwave, Optical Communication, Artificial Intelligence, Robotics, Control and Instrumentation, High Voltage and High Current, Power System, Power Electronics and Drives, Computer Vision, Digital Signal Processing, Biomedical Devices and Technology, VLSI and Embedded Computing, Microelectronics, Diagnostics and Rehabilitation, Tissue Engineering, Cardiovascular Engineering, Sports Innovation and Technology.
+> 
+> Notes: 1. A comprehensive list of research areas can be found at the respective faculty websites. 2. Areas and disciplines for Masters by Research and PhD study other than listed above will be offered as Generic Programmes at faculties and schools.
+
+[Source: fee table](Fees_Chart/utm-fees.html)
+
+**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Civil)**
+FACULTY OF CIVIL ENGINEERING (POSTGRADUATE)
+- **Study Mode:** Taught Course
+
+> **Published conditions:** Areas of Research include: Coastal and Maritime, Materials, Construction, Geotechnics, Transportation, Highway and Traffic, Structures and Materials, Environment, Hydrology and Water Resources, Hydraulics and Hydrology, Structures, Hydraulics, Civil Engineering.
+> 
+> Notes: 1. A comprehensive list of research areas can be found at the respective faculty websites. 2. Areas and disciplines for Masters by Research and PhD study other than listed above will be offered as Generic Programmes at faculties and schools.
+
+[Source: fee table](Fees_Chart/utm-fees.html)
+
+Showing 6 of 55 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+
+-------------------------------------------------
+
+Q76: Are there any fully funded scholarships available?
+A76: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q77: How do I apply for the Malaysian Government Scholarship?
+A77: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q78: What is the global ranking of UM compared to Taylor's?
+A78: I could not find a reliable answer in our local information. Please include the university and the specific issue, or [ask a One-Step counselor](https://wa.me/601119359497).
+
+-------------------------------------------------
+
+Q79: Does Taylor's require IELTS?
+A79: Yes, you can secure admission without an IELTS score! Top universities like Taylor's, UCSI, and APU offer intensive on-campus English programs (like ELS or CIEP). 
+
+You will be issued a student visa specifically for the English program. Once you arrive and pass the internal placement test or complete the required levels, you smoothly transition into your Bachelor's or Master's degree! 
+
+Let **One-Step** handle your dual-application process to secure your premium English pathway today.
+
+-------------------------------------------------
+
+Q80: What is the hostel fee in UM?
+A80: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Are there any hidden fees besides tuition and accommodation I should know about?
+
+-------------------------------------------------
+
+Q81: Can I transfer to a UK university later from Taylor's?
+A81: I found related FAQs, but I am not sure which answers your question. Which one did you mean?
+
+1. Can I transfer to another country later?
+
+-------------------------------------------------
+

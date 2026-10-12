@@ -26,7 +26,7 @@ module.exports = function studentGuides({H, rankings, fees}) {
   };
   const cite = key => `<a href="${source[key][1]}">${esc(source[key][0])}</a>`;
   const link = (href,label) => `<a href="${href}">${esc(label)}</a>`;
-  const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya']);
+  const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
   const universityPath = id => combinedIds.has(id) ? `/Universities/${id}-university` : `/Universities/${id}-details`;
   const feesPath = id => combinedIds.has(id) ? `${universityPath(id)}#courses-fees` : `/Fees_Chart/${id}-fees`;
   const buttons = links => `<div class="guide-actions">${links.map(([href,label],i)=>`<a class="guide-button${i ? ' secondary' : ''}" href="${href}">${esc(label)} <span aria-hidden="true">→</span></a>`).join('')}</div>`;

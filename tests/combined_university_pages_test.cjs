@@ -6,7 +6,7 @@ const path = require('node:path');
 const { execFileSync } = require('node:child_process');
 
 const root = path.resolve(__dirname, '..');
-const ids = ['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya'];
+const ids = ['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm'];
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const plain = html => html.replace(/<[^>]+>/g, ' ').replace(/&(?:nbsp|amp);/g, ' ').replace(/\s+/g, ' ').trim();
 const tables = html => [...html.matchAll(/<table\b[\s\S]*?<\/table>/gi)].map(match => plain(match[0]));
@@ -55,7 +55,15 @@ for (const id of ids) {
 }
 
 const sitemap = read('sitemap.xml');
+const redirectRules = [...read('.htaccess').matchAll(/^RewriteRule (\S+) (https:\/\/www\.onestepmy\.com\/\S+) \[R=301,L\]$/gm)]
+  .map(([,pattern,target]) => ({pattern:new RegExp(pattern),target}));
 for (const id of ids) {
+  for (const legacy of [`Universities/${id}-details`, `Fees_Chart/${id}-fees`]) {
+    for (const suffix of ['', '.html']) {
+      const rule = redirectRules.find(rule => rule.pattern.test(legacy + suffix));
+      assert.equal(rule?.target, `https://www.onestepmy.com/Universities/${id}-university`, `${legacy}${suffix}: direct permanent redirect missing`);
+    }
+  }
   assert.ok(sitemap.includes(`/Universities/${id}-university</loc>`), `${id}: new URL missing from sitemap`);
   assert.ok(!sitemap.includes(`/Universities/${id}-details</loc>`), `${id}: legacy detail URL remains in sitemap`);
   assert.ok(!sitemap.includes(`/Fees_Chart/${id}-fees</loc>`), `${id}: legacy fee URL remains in sitemap`);

@@ -19,7 +19,7 @@ const feeId = id => id === 'cityu' ? 'city-university' : id;
 const short = id => rankings.universities[id]?.short_name || fees[feeId(id)]?.title || id;
 const feeFile = id => `Fees_Chart/${id}-fees.html`;
 const detailFile = id => `Universities/${id}-details.html`;
-const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya']);
+const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
 const publicDetailFile = id => combinedIds.has(id) ? `Universities/${id}-university.html` : detailFile(id);
 const publicFeeHref = id => combinedIds.has(id) ? `/${publicDetailFile(id).replace('.html','')}#courses-fees` : `/${feeFile(id).replace('.html','')}`;
 function save(file, html) {
@@ -194,7 +194,8 @@ require('./student_support')({H,save,rendered});
 
 // Public content only. The previous sitemap omitted every article and hub page.
 const rootPages = ['index.html','explore-universities.html','articles.html','student-support-malaysia.html','compare.html','contact.html','scholarship-options.html','scholarship.html','malaysia-scholarship.html'];
-const pages = [...rootPages, ...['Universities','Fees_Chart','Articles','countries'].flatMap(dir=>fs.readdirSync(path.join(root,dir)).filter(f=>f.endsWith('.html')).map(f=>`${dir}/${f}`))];
+const mergedLegacyFiles = new Set([...combinedIds].flatMap(id => [detailFile(id), feeFile(id)]));
+const pages = [...rootPages, ...['Universities','Fees_Chart','Articles','countries'].flatMap(dir=>fs.readdirSync(path.join(root,dir)).filter(f=>f.endsWith('.html')).map(f=>`${dir}/${f}`))].filter(file => !mergedLegacyFiles.has(file));
 // Omit lastmod until per-page source/editorial dates can be maintained accurately.
 // File copy times and the build date are not evidence that a fee was reviewed.
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + [...new Set(pages)].filter(file=>rendered.has(file) || fs.existsSync(path.join(root,file))).map(file=>`  <url><loc>${esc(urlFor(file))}</loc></url>`).join('\n') + '\n</urlset>\n';

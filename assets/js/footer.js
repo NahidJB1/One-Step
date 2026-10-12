@@ -36,30 +36,30 @@ document.addEventListener("DOMContentLoaded", function() {
                   <h3>University Details</h3>
                   <ul class="footer-links two-col-list">
                     <li><a href="${root}Universities/alfa-university">Alfa University</a></li>
-                    <li><a href="${root}Universities/amu-details">AMU</a></li>
-                    <li><a href="${root}Universities/apu-details">APU</a></li>
+                    <li><a href="${root}Universities/amu-university">AMU</a></li>
+                    <li><a href="${root}Universities/apu-university">APU</a></li>
                     <li><a href="${root}Universities/bac-university">BAC</a></li>
                     <li><a href="${root}Universities/cityu-university">City University</a></li>
                     <li><a href="${root}Universities/cyberjaya-university">Cyberjaya Uni</a></li>
-                    <li><a href="${root}Universities/help-details">HELP</a></li>
-                    <li><a href="${root}Universities/icms-details">ICMS</a></li>
+                    <li><a href="${root}Universities/help-university">HELP</a></li>
+                    <li><a href="${root}Universities/icms-university">ICMS</a></li>
                     <li><a href="${root}Universities/inti-university">INTI University</a></li>
-                    <li><a href="${root}Universities/kings-details">Kings College</a></li>
+                    <li><a href="${root}Universities/kings-university">Kings College</a></li>
                     <li><a href="${root}Universities/klust-university">KLUST</a></li>
-                    <li><a href="${root}Universities/limkokwing-details">Limkokwing</a></li>
-                    <li><a href="${root}Universities/lincoln-details">Lincoln</a></li>
-                    <li><a href="${root}Universities/mmu-details">MMU</a></li>
-                    <li><a href="${root}Universities/segi-details">SEGi University</a></li>
-                    <li><a href="${root}Universities/taylors-details">Taylor's Uni</a></li>
-                    <li><a href="${root}Universities/ucsi-details">UCSI</a></li>
-                    <li><a href="${root}Universities/umw-details">UMW</a></li>
-                    <li><a href="${root}Universities/unikl-details">UniKL</a></li>
-                    <li><a href="${root}Universities/unirazak-details">UNIRAZAK</a></li>
-                    <li><a href="${root}Universities/iium-details">IIUM</a></li>
-                    <li><a href="${root}Universities/uow-details">UOW</a></li>
-                    <li><a href="${root}Universities/upm-details">UPM</a></li>
-                    <li><a href="${root}Universities/utem-details">UTeM</a></li>
-                    <li><a href="${root}Universities/utm-details">UTM</a></li>
+                    <li><a href="${root}Universities/limkokwing-university">Limkokwing</a></li>
+                    <li><a href="${root}Universities/lincoln-university">Lincoln</a></li>
+                    <li><a href="${root}Universities/mmu-university">MMU</a></li>
+                    <li><a href="${root}Universities/segi-university">SEGi University</a></li>
+                    <li><a href="${root}Universities/taylors-university">Taylor's Uni</a></li>
+                    <li><a href="${root}Universities/ucsi-university">UCSI</a></li>
+                    <li><a href="${root}Universities/umw-university">UMW</a></li>
+                    <li><a href="${root}Universities/unikl-university">UniKL</a></li>
+                    <li><a href="${root}Universities/unirazak-university">UNIRAZAK</a></li>
+                    <li><a href="${root}Universities/iium-university">IIUM</a></li>
+                    <li><a href="${root}Universities/uow-university">UOW</a></li>
+                    <li><a href="${root}Universities/upm-university">UPM</a></li>
+                    <li><a href="${root}Universities/utem-university">UTeM</a></li>
+                    <li><a href="${root}Universities/utm-university">UTM</a></li>
                   </ul>
                 </div>
                 
@@ -67,30 +67,30 @@ document.addEventListener("DOMContentLoaded", function() {
                   <h3>Tuition Fees</h3>
                   <ul class="footer-links two-col-list">
                     <li><a href="${root}Universities/alfa-university#courses-fees">Alfa Fees</a></li>
-                    <li><a href="${root}Fees_Chart/amu-fees">AMU Fees</a></li>
-                    <li><a href="${root}Fees_Chart/apu-fees">APU Fees</a></li>
+                    <li><a href="${root}Universities/amu-university#courses-fees">AMU Fees</a></li>
+                    <li><a href="${root}Universities/apu-university#courses-fees">APU Fees</a></li>
                     <li><a href="${root}Universities/bac-university#courses-fees">BAC Fees</a></li>
                     <li><a href="${root}Universities/cityu-university#courses-fees">City U Fees</a></li>
                     <li><a href="${root}Universities/cyberjaya-university#courses-fees">Cyberjaya Fees</a></li>
-                    <li><a href="${root}Fees_Chart/help-fees">HELP Fees</a></li>
-                    <li><a href="${root}Fees_Chart/icms-fees">ICMS Fees</a></li>
+                    <li><a href="${root}Universities/help-university#courses-fees">HELP Fees</a></li>
+                    <li><a href="${root}Universities/icms-university#courses-fees">ICMS Fees</a></li>
                     <li><a href="${root}Universities/inti-university#courses-fees">INTI Fees</a></li>
-                    <li><a href="${root}Fees_Chart/kings-fees">Kings Fees</a></li>
+                    <li><a href="${root}Universities/kings-university#courses-fees">Kings Fees</a></li>
                     <li><a href="${root}Universities/klust-university#courses-fees">KLUST Fees</a></li>
-                    <li><a href="${root}Fees_Chart/limkokwing-fees">Limkokwing Fees</a></li>
-                    <li><a href="${root}Fees_Chart/lincoln-fees">Lincoln Fees</a></li>
-                    <li><a href="${root}Fees_Chart/mmu-fees">MMU Fees</a></li>
-                    <li><a href="${root}Fees_Chart/segi-fees">SEGi Fees</a></li>
-                    <li><a href="${root}Fees_Chart/taylors-fees">Taylor's Fees</a></li>
-                    <li><a href="${root}Fees_Chart/ucsi-fees">UCSI Fees</a></li>
-                    <li><a href="${root}Fees_Chart/umw-fees">UMW Fees</a></li>
-                    <li><a href="${root}Fees_Chart/unikl-fees">UniKL Fees</a></li>
-                    <li><a href="${root}Fees_Chart/unirazak-fees">UNIRAZAK Fees</a></li>
-                    <li><a href="${root}Fees_Chart/iium-fees">IIUM Fees</a></li>
-                    <li><a href="${root}Fees_Chart/uow-fees">UOW Fees</a></li>
-                    <li><a href="${root}Fees_Chart/upm-fees">UPM Fees</a></li>
-                    <li><a href="${root}Fees_Chart/utem-fees">UTeM Fees</a></li>
-                    <li><a href="${root}Fees_Chart/utm-fees">UTM Fees</a></li>
+                    <li><a href="${root}Universities/limkokwing-university#courses-fees">Limkokwing Fees</a></li>
+                    <li><a href="${root}Universities/lincoln-university#courses-fees">Lincoln Fees</a></li>
+                    <li><a href="${root}Universities/mmu-university#courses-fees">MMU Fees</a></li>
+                    <li><a href="${root}Universities/segi-university#courses-fees">SEGi Fees</a></li>
+                    <li><a href="${root}Universities/taylors-university#courses-fees">Taylor's Fees</a></li>
+                    <li><a href="${root}Universities/ucsi-university#courses-fees">UCSI Fees</a></li>
+                    <li><a href="${root}Universities/umw-university#courses-fees">UMW Fees</a></li>
+                    <li><a href="${root}Universities/unikl-university#courses-fees">UniKL Fees</a></li>
+                    <li><a href="${root}Universities/unirazak-university#courses-fees">UNIRAZAK Fees</a></li>
+                    <li><a href="${root}Universities/iium-university#courses-fees">IIUM Fees</a></li>
+                    <li><a href="${root}Universities/uow-university#courses-fees">UOW Fees</a></li>
+                    <li><a href="${root}Universities/upm-university#courses-fees">UPM Fees</a></li>
+                    <li><a href="${root}Universities/utem-university#courses-fees">UTeM Fees</a></li>
+                    <li><a href="${root}Universities/utm-university#courses-fees">UTM Fees</a></li>
                   </ul>
                 </div>
                 

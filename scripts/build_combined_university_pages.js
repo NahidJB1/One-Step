@@ -11,7 +11,26 @@ const configs = {
   inti: {name:'INTI International University', short:'INTI', logo:'inti/inti-logo.png', hero:'inti/inti_main.jpg'},
   klust: {name:'KL University of Science & Technology', short:'KLUST', logo:'klust/klust-logo.png', hero:'klust/klust-main.webp'},
   cityu: {name:'City University Malaysia', short:'CityU', logo:'cityu/cityu_main.jpg', hero:'cityu/cityu_main.jpg'},
-  cyberjaya: {name:'University of Cyberjaya', short:'UoC', logo:'cyberjaya/University-of-Cyberjaya-logo.png', hero:'cyberjaya/cyberjaya_main.jpg'}
+  cyberjaya: {name:'University of Cyberjaya', short:'UoC', logo:'cyberjaya/University-of-Cyberjaya-logo.png', hero:'cyberjaya/cyberjaya_main.jpg'},
+  segi: {name:'SEGi University Malaysia', short:'SEGi', logo:'segi/segi-logo.png', hero:'segi/segi_main.jpg'},
+  kings: {name:'Kings University College', short:'Kings', logo:'kings/kings-logo.png', hero:'kings/kings-main.jpg'},
+  taylors: {name:"Taylor's University", short:"Taylor's", logo:'taylors/taylors-logo.png', hero:'taylors/taylors-main.jpg'},
+  unirazak: {name:'Universiti Tun Abdul Razak', short:'UNIRAZAK', logo:'unirazak/unirazak-logo.png.png', hero:'unirazak/unirazak-main.jpg'},
+  amu: {name:'Asia Metropolitan University', short:'AMU', logo:'amu/amu_logo.png', hero:'amu/amu_gallery_3.png'},
+  apu: {name:'Asia Pacific University of Technology & Innovation', short:'APU', logo:'apu/apu-logo.png', hero:'apu/APU-campus.jpg'},
+  help: {name:'HELP University', short:'HELP', logo:'help/help_logo.webp', hero:'help/help_campus_1.jpg'},
+  icms: {name:'International College of Management and Sports', short:'ICMS', logo:'icms/icms_logo.webp', hero:'icms/icms_Campus.jfif'},
+  limkokwing: {name:'Limkokwing University of Creative Technology', short:'Limkokwing', logo:'limkokwing/Limkokwing_logo.jpg', hero:'limkokwing/limkokwing_campus_1.jpg'},
+  lincoln: {name:'Lincoln University College', short:'LUC', logo:'lincoln/lincoln_logo.jfif', hero:'lincoln/lincoln_campus_1.jpg'},
+  mmu: {name:'Multimedia University', short:'MMU', logo:'mmu/mmu_logo.png', hero:'mmu/mmu_campus_1.webp'},
+  ucsi: {name:'UCSI University', short:'UCSI', logo:'ucsi/ucsi_logo.png', hero:'ucsi/ucsi_campus_1.jpg'},
+  unikl: {name:'Universiti Kuala Lumpur', short:'UniKL', logo:'unikl/unikl_logo.png', hero:'unikl/unikl_campus_1.jfif'},
+  umw: {name:'International University of Malaya-Wales', short:'IUMW', logo:'umw/umw_logo.png', hero:'umw/umw_campus_1.avif'},
+  iium: {name:'International Islamic University Malaysia', short:'IIUM', logo:'iium/iium_logo.png', hero:'iium/iium_campus_1.webp'},
+  uow: {name:'University of Wollongong Malaysia', short:'UOW', logo:'uow/UoW_logo.png', hero:'uow/uow_campus_1.jpg'},
+  upm: {name:'Universiti Putra Malaysia', short:'UPM', logo:'upm/upm_logo.png', hero:'upm/upm_campus_sky_view.jfif'},
+  utem: {name:'Universiti Teknikal Malaysia Melaka', short:'UTeM', logo:'utem/UTEM_logo.png', hero:'utem/utem_sky_view.jpeg'},
+  utm: {name:'Universiti Teknologi Malaysia', short:'UTM', logo:'utm/UTM_logo.png', hero:'utm/utm_campus.webp'}
 };
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
@@ -81,7 +100,7 @@ function faqSchema(items) {
 }
 function ranking(detail) {
   let section = between(detail, '<!-- rankings:content:start -->', '<!-- rankings:content:end -->');
-  section = section.replace(/<h2 id="ranking-faqs">[\s\S]*$/i, '');
+  section = section.replace(/<h2 id="ranking-faqs">[\s\S]*$/i, '</section>');
   return section.replace(/<section class="container university-rankings"/, '<section class="university-rankings"');
 }
 function studyCopy(data, cfg) {
@@ -133,7 +152,13 @@ function documentFor(id, cfg, detail, fee, data) {
 const editorial = JSON.parse(read('data/university_seo_content.json'));
 let outdated = 0;
 for (const [id,cfg] of Object.entries(configs)) {
-  const detail = read(`Universities/${id}-details.html`), fee = read(`Fees_Chart/${id}-fees.html`);
+  let detail = read(`Universities/${id}-details.html`);
+  const fee = read(`Fees_Chart/${id}-fees.html`);
+  for (const mergedId of Object.keys(configs)) {
+    detail = detail.replaceAll(`/Universities/${mergedId}-details`, `/Universities/${mergedId}-university`)
+      .replaceAll(`/Fees_Chart/${mergedId}-fees#`, `/Universities/${mergedId}-university#`)
+      .replaceAll(`/Fees_Chart/${mergedId}-fees`, `/Universities/${mergedId}-university#courses-fees`);
+  }
   const output = documentFor(id,cfg,detail,fee,editorial[id] || {});
   const file = path.join(root, 'Universities', `${id}-university.html`);
   if (!fs.existsSync(file) || fs.readFileSync(file,'utf8') !== output) {

@@ -115,9 +115,9 @@ img { max-width: 100%; height: auto; border: 1px solid #cbd5e1; border-radius: 8
 <tr><td>/Fees_Chart/bac-fees</td><td>2</td><td>193</td><td>1.0%</td><td>8.4</td></tr>
 <tr><td>/Fees_Chart/icms-fees</td><td>2</td><td>120</td><td>1.7%</td><td>10.5</td></tr>
 <tr><td>/Fees_Chart/cityu-fees</td><td>2</td><td>105</td><td>1.9%</td><td>7.5</td></tr>
-<tr><td>/Universities/icms-details</td><td>2</td><td>70</td><td>2.9%</td><td>8.5</td></tr>
+<tr><td>/Universities/icms-university</td><td>2</td><td>70</td><td>2.9%</td><td>8.5</td></tr>
 <tr><td>/Fees_Chart/utm-fees</td><td>1</td><td>208</td><td>0.5%</td><td>8.7</td></tr>
-<tr><td>/Universities/bac-details</td><td>1</td><td>190</td><td>0.5%</td><td>12.0</td></tr>
+<tr><td>/Universities/bac-university</td><td>1</td><td>190</td><td>0.5%</td><td>12.0</td></tr>
 <tr><td>/Articles/best-engineering-universities-malaysia</td><td>1</td><td>158</td><td>0.6%</td><td>20.9</td></tr>
 <tr><td>/Articles/affordable-countries</td><td>1</td><td>142</td><td>0.7%</td><td>27.8</td></tr>
 </tbody>

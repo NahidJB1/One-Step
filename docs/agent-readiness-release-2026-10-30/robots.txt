@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+Sitemap: https://www.onestepmy.com/sitemap.xml
+
+# Internal data and development files are not landing pages.
+Disallow: /api/
+Disallow: /db/
+Disallow: /tests/
+Disallow: /scripts/
+Disallow: /docs/
+Disallow: /node_modules/

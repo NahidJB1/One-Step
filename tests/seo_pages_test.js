@@ -128,7 +128,7 @@ const eq = (a,b,message) => { assert.deepEqual(a,b,message); checks++; };
         const errors=[];
         live.on('pageerror',error=>errors.push(error.message));
         fs.mkdirSync(snapshotDir,{recursive:true});
-        for(const id of (selectedIds.length ? selectedIds : [...priorityIds,'cybernetics','genovasi','upm','utm'])) {
+        for(const id of (selectedIds.length ? selectedIds : [...priorityIds,'genovasi','upm','utm'])) {
             const requests=[];const onRequest=req=>requests.push(req.url());live.on('request',onRequest);
             await live.goto(base+'/Fees_Chart/'+id+'-fees.html',{waitUntil:'networkidle'});
             ok(await live.locator('body').getAttribute('data-fees-initialized'),id+' enhancement initialized');
@@ -164,7 +164,7 @@ const eq = (a,b,message) => { assert.deepEqual(a,b,message); checks++; };
             await live.locator('#faqToggleBtn').click();
             await live.locator('#faq summary').first().click();
             ok(await live.locator('#faq .study-faq p').first().isVisible(),id+' FAQ button and expansion');
-            if (['apu','cityu','cybernetics'].includes(id)) {
+            if (['apu','cityu'].includes(id)) {
                 const link=live.locator('#faq a[download]').first();
                 const href=await link.getAttribute('href');
                 const downloadEvent=live.waitForEvent('download');
@@ -175,7 +175,7 @@ const eq = (a,b,message) => { assert.deepEqual(a,b,message); checks++; };
             }
             await live.setViewportSize({width:390,height:844});
             ok(await live.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),id+' mobile page width');
-            if(['apu','cityu','cybernetics'].includes(id)) {
+            if(['apu','cityu'].includes(id)) {
                 await live.screenshot({path:path.join(snapshotDir,id+'-mobile.png'),fullPage:true});
                 await live.evaluate(()=>scrollTo(0,0));
                 await live.screenshot({path:path.join(snapshotDir,id+'-mobile-top.png')});

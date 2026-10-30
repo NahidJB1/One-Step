@@ -247,8 +247,10 @@ $markdown = "# Summary\n\n" .
     "- Response statuses: **" . implode('**, **', array_map(static function ($k,$v) { return "$k $v"; }, array_keys($statusCounts), $statusCounts)) . "**\n\n" .
     "A PASS means the response met the turn-specific safety/fact/context assertions. It is not a general accuracy percentage and does not replace review of source data or real-user evaluation.\n\n" . $markdown;
 
-file_put_contents(__DIR__ . '/CHATBOT_5_STUDENTS_SIMULATION.md', $markdown);
-file_put_contents(__DIR__ . '/chatbot_5_students_simulation.json', json_encode(['summary'=>$summary,'students'=>$allResults], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+if (!in_array('--no-write', $argv ?? [], true)) {
+    file_put_contents(__DIR__ . '/CHATBOT_5_STUDENTS_SIMULATION.md', $markdown);
+    file_put_contents(__DIR__ . '/chatbot_5_students_simulation.json', json_encode(['summary'=>$summary,'students'=>$allResults], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+}
 echo json_encode($summary, JSON_UNESCAPED_SLASHES) . "\n";
 foreach ($allResults as $student) echo $student['name'] . ': ' . $student['passed_turns'] . "/20, max context " . $student['max_context_bytes'] . " bytes\n";
 exit($failedChecks ? 1 : 0);

@@ -13,3 +13,8 @@ node_modules/
 node.exe
 onestepmy.com-Performance-on-Search-*/
 api/test.php
+
+# Local/server secrets and the permitted cached Google Place IDs.
+.env.local
+data/google_place_ids.local.json
+*.log

@@ -37,7 +37,7 @@ module.exports = function buildArticles({H,fees,rankings,short,feeId,feeFile,det
         return candidates[0];
     }
     function affordableArticle(html) {
-        const ids = ['klust','kings','alfa','cyberjaya','unirazak','cityu','binary','segi','amu','inti'];
+        const ids = ['klust','kings','alfa','cyberjaya','unirazak','cityu','lincoln','segi','amu','inti'];
         const cards = ids.map(id=>{
             const sample = sampleProgram(id);
             const image = read(detailFile(id)).match(/<img\b[^>]*src="([^"]+)"[^>]*>/)?.[1];

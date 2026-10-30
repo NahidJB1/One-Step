@@ -1,0 +1,829 @@
+{
+  "cityu": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Amcorp Service Suites",
+        "location": "Pjs 52, 46700 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, Studio",
+        "travel": [
+          "Walk: 1 min",
+          "Car: 2 min",
+          "Bus: 1 min",
+          "Train: 17 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 400",
+          "Medium Room: ~MYR 500",
+          "Master Room: ~MYR 720"
+        ]
+      },
+      {
+        "name": "AraTre’ Residences @ Ara Damansara",
+        "location": "Jalan PJU 1a/46, Pusat Perdagangan Dana 1, 47301 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR",
+        "travel": [
+          "Walk: 6 min",
+          "Car: 10 min",
+          "Bus: 6 min",
+          "Train: 37 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 630",
+          "Medium Room: ~MYR 630",
+          "Master Room: ~MYR 1,030"
+        ]
+      },
+      {
+        "name": "Eclipse Residence @ Cyberjaya",
+        "location": "Eclipse @ Pan'gaea, Persiaran Multimedia, Cyber 11, 63000 Cyberjaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, Studio",
+        "travel": [
+          "Walk: 24 min",
+          "Car: 33 min",
+          "Bus: 42 min",
+          "Train: 110 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 360",
+          "Medium Room: ~MYR 540",
+          "Master Room: ~MYR 630",
+          "Studio: ~MYR 990"
+        ]
+      }
+    ]
+  },
+  "mmu": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Eclipse Residence @ Cyberjaya",
+        "location": "Eclipse @ Pan'gaea, Persiaran Multimedia, Cyber 11, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, Studio",
+        "travel": [
+          "Walk: 13 min",
+          "Drive: 3 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 520",
+          "Medium Room: ~MYR 720",
+          "Master Room: ~MYR 830",
+          "Studio Apartment: ~MYR 1,080"
+        ]
+      },
+      {
+        "name": "Aspire Residence @ Cyberjaya",
+        "location": "Aspire Residence, Persiaran Aspirasi, Cyberjaya, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Apartment",
+        "unitTypes": "3BR, 4BR",
+        "travel": [
+          "Walk: 50 min",
+          "Drive: 7 min",
+          "Transit: 48 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 360",
+          "Medium Room: ~MYR 500",
+          "Master Room: ~MYR 580"
+        ]
+      },
+      {
+        "name": "Centrus Soho @ Cyberjaya",
+        "location": "Centrus SOHO, Lingkaran Cyber Point Timur, Cyberjaya, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR, Studio",
+        "travel": [
+          "Walk: 13 min",
+          "Drive: 5 min",
+          "Transit: 11 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 560",
+          "Medium Room: ~MYR 790",
+          "Master Room: ~MYR 900",
+          "1BR Apartment: ~MYR 1,030"
+        ]
+      }
+    ]
+  },
+  "ucsi": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Altitude 236",
+        "location": "No. 9, Persiaran Alam Damai, Alam Damai, 56000 Cheras, Federal Territory of Kuala Lumpur",
+        "type": "Condominium",
+        "unitTypes": "3BR",
+        "travel": [
+          "Walk: 10 min",
+          "Drive: 3 min",
+          "Transit: 10 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 470",
+          "Medium Room: ~MYR 660",
+          "Master Room: ~MYR 760"
+        ]
+      },
+      {
+        "name": "Angkasa Condominium",
+        "location": "Jalan Puncak Menara Gading, Taman Connaught, 56000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+        "type": "Condominium",
+        "unitTypes": "2BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 4 min",
+          "Drive: 2 min",
+          "Bus: 4 min",
+          "Train: 5 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 320",
+          "Medium Room: ~MYR 440",
+          "Master Room: ~MYR 500"
+        ]
+      },
+      {
+        "name": "Armani Residence Cheras",
+        "location": "Bukit Mandarina, Taman Connaught, 56000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR",
+        "travel": [
+          "Walk: 9 min",
+          "Drive: 2 min",
+          "Transit: 9 min"
+        ],
+        "amenities": [
+          "24 Hr Security"
+        ],
+        "rent": [
+          "Small Room: ~MYR 450",
+          "Medium Room: ~MYR 630",
+          "Master Room: ~MYR 720"
+        ]
+      }
+    ]
+  },
+  "taylors": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Saujana Residency",
+        "location": "Jalan SS 16/1, Ss 16, 47500 Subang Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 73 min",
+          "Drive: 11 min",
+          "Bus: 46 min",
+          "Train: 47 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 720",
+          "Medium Room: ~MYR 860",
+          "Master Room: ~MYR 1,300"
+        ]
+      },
+      {
+        "name": "Casa Tiara",
+        "location": "Jalan Kemajuan Subang, Ss 16, 47500 Subang Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR, Studio",
+        "travel": [
+          "Not specified on page"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 500",
+          "Medium Room: ~MYR 590",
+          "Master Room: ~MYR 890"
+        ]
+      },
+      {
+        "name": "D'Latour Bandar Sunway @ Subang Jaya",
+        "location": "D'LATOUR condo, Jalan Taylors Bandar Sunway, Pjs 7, 47500 Subang Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 0 min",
+          "Drive: 1 min",
+          "Bus: 0 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 790",
+          "Medium Room: ~MYR 1,100",
+          "Master Room: ~MYR 1,260",
+          "1BR Apartment: ~MYR 2,160"
+        ]
+      }
+    ]
+  },
+  "apu": {
+    "rentPeriod": null,
+    "properties": [
+      {
+        "name": "APU University Malaysia Students Accommodation",
+        "location": "Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+        "type": "Dorm",
+        "unitTypes": "Single Room, Twin Sharing",
+        "travel": [
+          "Not specified on page"
+        ],
+        "amenities": [
+          "24 Hr Security"
+        ],
+        "rent": [
+          "Twin Sharing (2 pax): ~MYR 830",
+          "Single Room: ~MYR 950",
+          "Single Room Premium: ~MYR 1,080"
+        ]
+      },
+      {
+        "name": "City Times Inn Hotel",
+        "location": "No. 55-1, 55-2, 55-3, 55-4, Jalan SP 2/1, Seksyen 2, Taman Serdang Perdana, 43300 Seri Kembangan, Selangor",
+        "type": "Hotel",
+        "unitTypes": "1BR",
+        "travel": [
+          "Walk: 91 min",
+          "Drive: 9 min",
+          "Bus: 61 min"
+        ],
+        "amenities": [
+          "24 Hr Security"
+        ],
+        "rent": [
+          "Master Room: ~MYR 110"
+        ]
+      },
+      {
+        "name": "De Luna Hotel Sri Petaling",
+        "location": "130, Jln Radin, Bandar Baru Sri Petaling, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+        "type": "Hotel",
+        "unitTypes": "1BR",
+        "travel": [
+          "Walk: 62 min",
+          "Drive: 10 min",
+          "Bus: 63 min",
+          "Train: 66 min"
+        ],
+        "amenities": [
+          "24 Hr Security"
+        ],
+        "rent": [
+          "Master Room: ~MYR 100"
+        ]
+      }
+    ]
+  },
+  "cyberjaya": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Eclipse Residence @ Cyberjaya",
+        "location": "Eclipse @ Pan'gaea, Persiaran Multimedia, Cyber 11, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, Studio",
+        "travel": [
+          "Walk: 18 min",
+          "Drive: 4 min",
+          "Bus: 18 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 520",
+          "Medium Room: ~MYR 720",
+          "Master Room: ~MYR 830",
+          "Studio Apartment: ~MYR 1,080"
+        ]
+      },
+      {
+        "name": "Aspire Residence @ Cyberjaya",
+        "location": "Aspire Residence, Persiaran Aspirasi, Cyberjaya, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Apartment",
+        "unitTypes": "3BR, 4BR",
+        "travel": [
+          "Walk: 56 min",
+          "Drive: 8 min",
+          "Bus: 56 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 360",
+          "Medium Room: ~MYR 500",
+          "Master Room: ~MYR 580"
+        ]
+      },
+      {
+        "name": "Centrus Soho @ Cyberjaya",
+        "location": "Centrus SOHO, Lingkaran Cyber Point Timur, Cyberjaya, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR, Studio",
+        "travel": [
+          "Walk: 25 min",
+          "Drive: 7 min",
+          "Bus: 18 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 560",
+          "Medium Room: ~MYR 790",
+          "Master Room: ~MYR 900",
+          "1BR Apartment: ~MYR 1,030"
+        ]
+      }
+    ]
+  },
+  "segi": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "BSP21",
+        "location": "Jalan Saujana Putra, Bandar Saujana Putra, 42610 Jenjarom, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 34 min",
+          "Drive: 30 min",
+          "Bus: 0 min",
+          "Train: 0 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 360",
+          "Medium Room: ~MYR 430",
+          "Master Room: ~MYR 650"
+        ]
+      },
+      {
+        "name": "Casa Indah 1 Condominium",
+        "location": "Resort Homes, No. 2A, Persiaran Surian Tropicana Indah, PJU 3, Kota Damansara, 47410 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 1 min",
+          "Drive: 2 min",
+          "Bus: 1 min",
+          "Train: 22 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 540",
+          "Medium Room: ~MYR 650",
+          "Master Room: ~MYR 970"
+        ]
+      },
+      {
+        "name": "Casa Indah 2 Condominium",
+        "location": "Tropicana Indah, 47810 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "2BR, 3BR",
+        "travel": [
+          "Walk: 1 min",
+          "Drive: 1 min",
+          "Bus: 1 min",
+          "Train: 19 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 540",
+          "Medium Room: ~MYR 650",
+          "Master Room: ~MYR 970"
+        ]
+      }
+    ]
+  },
+  "limkokwing": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Sky Park @Cyberjaya",
+        "location": "Sky Park@Cyberjaya, Jalan Teknokrat 1, Cyberjaya, 63000 Cyberjaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 4BR, Studio",
+        "travel": [
+          "Walk: 2 min",
+          "Drive: 3 min",
+          "Bus: 2 min",
+          "Train: 16 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium"
+        ],
+        "rent": [
+          "Small Room: ~MYR 270",
+          "Medium Room: ~MYR 320",
+          "Master Room: ~MYR 490"
+        ]
+      },
+      {
+        "name": "Centrus Soho @ Cyberjaya",
+        "location": "Centrus SOHO, Lingkaran Cyber Point Timur, Cyberjaya, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR, Studio",
+        "travel": [
+          "Walk: 3 min",
+          "Drive: 4 min",
+          "Bus: 4 min",
+          "Train: 17 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 560",
+          "Medium Room: ~MYR 790",
+          "Master Room: ~MYR 900",
+          "1BR Apartment: ~MYR 1,030"
+        ]
+      },
+      {
+        "name": "CyberSquare SOHO @Cyberjaya",
+        "location": "CyberSquare SOHO, Jalan Teknokrat 7, Cyber 5, 63000 Cyberjaya, Selangor, Malaysia",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, Studio",
+        "travel": [
+          "Walk: 3 min",
+          "Drive: 3 min",
+          "Bus: 4 min",
+          "Train: 15 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Medium Room: ~MYR 470",
+          "Master Room: ~MYR 540",
+          "Studio Apartment: ~MYR 990"
+        ]
+      }
+    ]
+  },
+  "klust": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Clio 2 Residence",
+        "location": "Clio 2 Residence @ Lbh IRC, Ioi Resort, 62502 Putrajaya",
+        "type": "Condominium",
+        "unitTypes": "2BR, 3BR",
+        "travel": [
+          "Walk: 3 min",
+          "Drive: 7 min",
+          "Bus: 3 min",
+          "Train: 50 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 450",
+          "Medium Room: ~MYR 790",
+          "Master Room: ~MYR 900"
+        ]
+      },
+      {
+        "name": "Clio Residences",
+        "location": "Clio Residences, Lbh IRC, Ioi Resort, 62502 Putrajaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "2BR, 3BR",
+        "travel": [
+          "Walk: 5816 min",
+          "Drive: 6240 min",
+          "Bus: 0 min",
+          "Train: 0 min (raw portal data)"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 520",
+          "Medium Room: ~MYR 620",
+          "Master Room: ~MYR 930"
+        ]
+      },
+      {
+        "name": "Conezion Residences",
+        "location": "Ioi Resort, 62502 Putrajaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "2BR, 3BR",
+        "travel": [
+          "Walk: 6 min",
+          "Drive: 6 min",
+          "Bus: 7 min",
+          "Train: 72 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 470",
+          "Medium Room: ~MYR 660",
+          "Master Room: ~MYR 760"
+        ]
+      }
+    ]
+  },
+  "inti": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Bayu 2 Residence",
+        "location": "Persiaran Golf, Bandar Baru Nilai, 71800 Nilai, Negeri Sembilan",
+        "type": "Condominium",
+        "unitTypes": "3BR",
+        "travel": [
+          "Walk: 1 min",
+          "Drive: 1 min",
+          "Bus: 1 min",
+          "Train: 18 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 250",
+          "Medium Room: ~MYR 300",
+          "Master Room: ~MYR 450"
+        ]
+      },
+      {
+        "name": "Isola Serviced Residence",
+        "location": "Jalan SS 16/1, Ss 16, 47500 Subang Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "2BR, 3BR, 4BR, Studio",
+        "travel": [
+          "Walk: 1 min",
+          "Drive: 1 min",
+          "Bus: 2 min",
+          "Train: 21 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 430",
+          "Medium Room: ~MYR 510",
+          "Master Room: ~MYR 770"
+        ]
+      },
+      {
+        "name": "Mar Vista Resort",
+        "location": "Feringgi Plaza, Jalan Batu Ferringhi, 11100 Batu Ferringhi, Pulau Pinang",
+        "type": "Condominium",
+        "unitTypes": "2BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 36 min",
+          "Drive: 42 min",
+          "Bus: 47 min",
+          "Train: 203 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 250",
+          "Medium Room: ~MYR 300",
+          "Master Room: ~MYR 450"
+        ]
+      }
+    ]
+  },
+  "unikl": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "H2O @ Ara Damansara @Subang",
+        "location": "H2O Residences, 1, Jalan PJU 1a/1, Ara Damansara, 47301 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, 4BR, Studio",
+        "travel": [
+          "Walk: 19 min",
+          "Drive: 20 min",
+          "Bus: 19 min",
+          "Train: 74 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 500",
+          "Medium Room: ~MYR 590",
+          "Master Room: ~MYR 890"
+        ]
+      },
+      {
+        "name": "Anggun Residences Luxe",
+        "location": "Anggun Residences, No 8, Jalan Medan Tuanku Utama, Chow Kit, 50300 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, 3BR, Studio",
+        "travel": [
+          "Walk: 0 min",
+          "Drive: 2 min",
+          "Bus: 0 min",
+          "Train: 9 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 1,010",
+          "Medium Room: ~MYR 1,220",
+          "Master Room: ~MYR 1,820"
+        ]
+      },
+      {
+        "name": "Bungaraya Condominium @Subang",
+        "location": "Bungaraya Condominium, Persiaran Golf, Seksyen U2, 40150 Shah Alam, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 20 min",
+          "Drive: 19 min",
+          "Bus: 20 min",
+          "Train: 121 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 590",
+          "Medium Room: ~MYR 700",
+          "Master Room: ~MYR 1,050"
+        ]
+      }
+    ]
+  },
+  "lincoln": {
+    "rentPeriod": "month",
+    "properties": [
+      {
+        "name": "Kelana D'Putera",
+        "location": "Jalan SS 7/26, Ss 7, 47301 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 3BR, 4BR",
+        "travel": [
+          "Walk: 1 min",
+          "Drive: 2 min",
+          "Bus: 1 min",
+          "Train: 20 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 360",
+          "Medium Room: ~MYR 430",
+          "Master Room: ~MYR 650"
+        ]
+      },
+      {
+        "name": "Kelana Mahkota Condominium",
+        "location": "2, Jalan SS 7/19, Ss 7, 47301 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "3BR",
+        "travel": [
+          "Walk: 1 min",
+          "Drive: 2 min",
+          "Bus: 1 min",
+          "Train: 18 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 520",
+          "Medium Room: ~MYR 620",
+          "Master Room: ~MYR 930"
+        ]
+      },
+      {
+        "name": "High Park Suites",
+        "location": "Jln SS 6/7, Ss 6, 47301 Petaling Jaya, Selangor",
+        "type": "Condominium",
+        "unitTypes": "1BR, 2BR, Studio",
+        "travel": [
+          "Walk: 5 min",
+          "Drive: 1 min",
+          "Bus: 5 min",
+          "Train: 6 min"
+        ],
+        "amenities": [
+          "24 Hr Security",
+          "Gymnasium",
+          "Swimming Pool"
+        ],
+        "rent": [
+          "Small Room: ~MYR 430",
+          "Medium Room: ~MYR 510",
+          "Master Room: ~MYR 770"
+        ]
+      }
+    ]
+  }
+}

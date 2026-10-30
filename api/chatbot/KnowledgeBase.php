@@ -11,13 +11,31 @@ final class KnowledgeBase
     public $version;
     public $guidance = [];
     public $rankings = [];
+    public $accommodation = [];
+    public $articles = [];
+    public $referenceSections = [];
+    public $cachedIndex = [];
     private $root;
     private $stripCache = [];
     private $typoCache = [];
 
-    public function __construct(string $root)
+    public function __construct(string $root, bool $useCache = true)
     {
         $this->root = $root;
+        if ($useCache && is_file($root . '/data/chatbot_index.json')) {
+            $snapshot = json_decode((string)file_get_contents($root . '/data/chatbot_index.json'), true);
+            $valid = is_array($snapshot) && ($snapshot['fingerprint'] ?? '') === self::fingerprint($root);
+            if ($valid) {
+                foreach (self::snapshotFields() as $field) if ($field === 'version' ? !is_string($snapshot['knowledge'][$field] ?? null) : !is_array($snapshot['knowledge'][$field] ?? null)) $valid = false;
+                foreach (['docs','postings','exact'] as $field) if (!is_array($snapshot['index'][$field] ?? null)) $valid = false;
+                if (!is_numeric($snapshot['index']['averageLength'] ?? null) || $snapshot['index']['averageLength'] <= 0) $valid = false;
+            }
+            if ($valid) {
+                foreach (self::snapshotFields() as $field) $this->$field = $snapshot['knowledge'][$field];
+                $this->cachedIndex = $snapshot['index'];
+                return;
+            }
+        }
         $catalog = $this->read('universities.json');
         $fees = $this->read('data/fees_data.json');
         $faqs = $this->read('myfaqs.json');
@@ -31,6 +49,8 @@ final class KnowledgeBase
             foreach (['sources', 'concepts', 'entries'] as $part) $this->guidance[$part] = array_merge($this->guidance[$part], $advice[$part]);
         }
         $this->rankings = is_file($root . '/data/university_rankings.json') ? $this->read('data/university_rankings.json') : [];
+        $this->accommodation = is_file($root . '/data/university_accommodation.json') ? $this->read('data/university_accommodation.json') : [];
+        $this->articles = is_file($root . '/data/university_articles.json') ? $this->read('data/university_articles.json') : [];
         $this->version = substr(hash('sha256', json_encode(['v3-rankings', $catalog, $fees, $faqs, $meta, $this->guidance, $this->rankings, Lexicon::REPLACEMENTS, Language::PHRASES])), 0, 16);
         foreach (Lexicon::UNIVERSITIES as $id => $aliases) {
             $this->universities[$id] = ['id' => $id, 'name' => strtoupper($id), 'programs' => [], 'supported' => false];
@@ -51,6 +71,7 @@ final class KnowledgeBase
             $this->universities[$id]['name'] = $this->universities[$id]['supported'] ? $this->universities[$id]['name'] : $fee['title'];
             $this->universities[$id]['supported'] = true;
             $this->universities[$id]['fee_key'] = $key;
+            $this->universities[$id]['fee_validity'] = $fee['validity'] ?? null;
             $this->aliases[Text::normalize($fee['title'])] = $id;
             foreach ($fee['categories'] as $ci => $category) $this->addCategory($id, (string)$key, $ci, $category);
         }
@@ -81,7 +102,58 @@ final class KnowledgeBase
                     $program['duration'] ?? '', false);
             }
         }
+        // Published university FAQs supersede matching legacy answers for that institution.
+        foreach (glob($root . '/Universities/*-university.html') as $file) {
+            $id = basename($file, '-university.html');
+            $html = file_get_contents($file);
+            if (preg_match('/<section[^>]*class="combined-section about-section"[^>]*>(.*?)<\/section>/s', $html, $about)) {
+                preg_match_all('/<p\b[^>]*>(.*?)<\/p>/s', $about[1], $paragraphs);
+                foreach ($paragraphs[1] as $paragraph) {
+                    $paragraph = trim(html_entity_decode(strip_tags($paragraph), ENT_QUOTES | ENT_HTML5, 'UTF-8'));
+                    if (strlen($paragraph) > 80) $this->referenceSections[$id][] = ['text'=>$paragraph,'source'=>['type'=>'reference','file'=>'Universities/' . basename($file),'title'=>'About ' . $this->universities[$id]['name'],'url'=>$this->page($id, 'details') . '#overview']];
+                }
+            }
+            foreach ($this->articles[$id]['paragraphs'] ?? [] as $pi => $paragraph) $this->referenceSections[$id][] = ['text'=>$paragraph,'source'=>['type'=>'article','file'=>'data/university_articles.json','pointer'=>'/' . $id . '/paragraphs/' . $pi,'title'=>$this->articles[$id]['title'],'url'=>$this->page($id, 'details') . '#articles']];
+            if (!preg_match('/<section[^>]*class="combined-section combined-faq"[^>]*>(.*?)<\/section>/s', $html, $section)) continue;
+            preg_match_all('/<details\b[^>]*>\s*<summary>(.*?)<\/summary>(.*?)<\/details>/s', $section[1], $items, PREG_SET_ORDER);
+            foreach ($items as $i => $item) {
+                $question = html_entity_decode(strip_tags($item[1]), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+                $answer = preg_replace_callback('/<a\b[^>]*href="([^"]+)"[^>]*>(.*?)<\/a>/s', static function ($m) {
+                    return '[' . html_entity_decode(strip_tags($m[2]), ENT_QUOTES | ENT_HTML5, 'UTF-8') . '](' . html_entity_decode($m[1], ENT_QUOTES | ENT_HTML5, 'UTF-8') . ')';
+                }, $item[2]);
+                $answer = trim(html_entity_decode(strip_tags(str_replace(['</p>', '<br>', '<br/>', '<br />'], "\n", $answer)), ENT_QUOTES | ENT_HTML5, 'UTF-8'));
+                if (!$question || !$answer) continue;
+                $source = ['type'=>'faq', 'file'=>'Universities/' . basename($file), 'pointer'=>'#faq', 'title'=>$question, 'url'=>$this->page($id, 'details') . '#faq'];
+                $found = false;
+                foreach ($this->faqs as &$faq) {
+                    if ($faq['scope'] === $id && Text::normalize($faq['q']) === Text::normalize($question)) {
+                        $faq['a'] = $answer; $faq['source'] = $source; $found = true;
+                    }
+                }
+                unset($faq);
+                if (!$found) {
+                    $key = 'page-' . $id . ':' . $i;
+                    $this->faqs[$key] = ['id'=>$key, 'scope'=>$id, 'q'=>$question, 'a'=>$answer, 'variants'=>[$question], 'intent'=>'general', 'source'=>$source];
+                }
+            }
+        }
+        $this->version = substr(hash('sha256', json_encode([$this->version, $this->faqs, $this->accommodation, $this->articles, $this->referenceSections])), 0, 16);
         if (!$this->records || !$this->faqs) throw new \RuntimeException('Knowledge base has no usable records.');
+    }
+
+    public static function snapshotFields(): array
+    {
+        return ['universities','aliases','records','faqs','subjectVocabulary','version','guidance','rankings','accommodation','articles','referenceSections'];
+    }
+
+    public static function fingerprint(string $root): string
+    {
+        $files = array_merge(['universities.json','university_meta.json','myfaqs.json'], array_map(static function ($file) use ($root) { return substr($file, strlen($root) + 1); }, array_merge(glob($root . '/api/chatbot/*.php'), glob($root . '/Universities/*-university.html'))));
+        foreach (['fees_data','university_rankings','emgs_knowledge','counselor_knowledge','university_accommodation','university_articles'] as $name) $files[] = 'data/' . $name . '.json';
+        sort($files);
+        $hashes = [];
+        foreach ($files as $file) $hashes[$file] = is_file($root . '/' . $file) ? hash_file('sha256', $root . '/' . $file) : null;
+        return hash('sha256', json_encode($hashes));
     }
 
     private function read(string $file): array
@@ -166,8 +238,11 @@ final class KnowledgeBase
 
     public function page(string $id, string $kind): string
     {
-        $relative = $kind === 'fees' ? 'Fees_Chart/' . $id . '-fees.html' : 'Universities/' . $id . '-details.html';
-        return is_file($this->root . '/' . $relative) ? $relative : 'explore-universities.html';
+        $id = self::id($id);
+        $relative = 'Universities/' . $id . '-university';
+        return is_file($this->root . '/' . $relative . '.html')
+            ? $relative . ($kind === 'fees' ? '#courses-fees' : '')
+            : 'explore-universities';
     }
 
     private function addCategory(string $id, string $key, $ci, $cat): void
@@ -182,7 +257,7 @@ final class KnowledgeBase
             if (preg_match('/program|course name|cluster of fields|^cluster$/i', $header)) { $programColumn = $i; break; }
         }
         $source = ['type' => 'fees', 'file' => 'data/fees_data.json', 'pointer' => '/' . $key . '/categories/' . $ci,
-            'title' => $this->universities[$id]['name'] . ': ' . $name, 'url' => $this->page($id, 'fees')];
+            'title' => $this->universities[$id]['name'] . ': ' . $name, 'url' => $this->page($id, 'fees'), 'schedule_validity'=>$this->universities[$id]['fee_validity']];
         if ($programColumn === null) {
             // Vertical charge tables stay intact; a registration charge is never a program price.
             $this->addRecord($id, $name, $name, $headers, $rows, $remarks, $source, '', true);

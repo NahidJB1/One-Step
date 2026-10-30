@@ -24,6 +24,7 @@ header:not(.main-header) .fee-header-subtitle { color: #f8fafc; }
 body[data-fees-prerendered] .panel { display: block; }
 body[data-fees-prerendered].fees-enhanced .panel { display: none; }
 body[data-fees-prerendered].fees-enhanced .panel.open { display: block; }
+body.fees-enhanced .panel.open { display: block; }
 .fee-search-status { color: #475569; padding: 8px 0; }
 .resources-card { text-decoration: none; color: inherit; }
 .study-content .table-responsive { overflow-x: auto; }

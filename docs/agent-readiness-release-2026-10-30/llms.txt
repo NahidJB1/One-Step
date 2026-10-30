@@ -1,0 +1,24 @@
+# One-Step
+
+> Student guidance for studying in Malaysia, including university comparisons, tuition fee charts, scholarships and application planning for international students, including applicants from Bangladesh.
+
+One-Step is a student guidance business. University offers, current official fee schedules and government requirements determine admission, payments and visa outcomes. A page update is not a new verification of every underlying fee or ranking.
+
+## Key pages
+- [Home](https://www.onestepmy.com/)
+- [University directory](https://www.onestepmy.com/explore-universities)
+- [Student guides](https://www.onestepmy.com/articles)
+- [Student support](https://www.onestepmy.com/student-support-malaysia)
+- [Scholarship options](https://www.onestepmy.com/scholarship-options)
+- [About One-Step](https://www.onestepmy.com/about)
+- [Contact](https://www.onestepmy.com/contact): info@onestepmy.com; +60 11 1935 9497.
+- [Terms of use](https://www.onestepmy.com/terms)
+
+## Agent resources
+- [Homepage Markdown](https://www.onestepmy.com/index.md)
+- [Sitemap](https://www.onestepmy.com/sitemap.xml)
+- [Content signals](https://www.onestepmy.com/robots.txt): search=yes, ai-train=no.
+- [Read-only MCP server card](https://www.onestepmy.com/.well-known/mcp/server-card.json)
+
+## External profile
+- [One-Step on Facebook](https://www.facebook.com/profile.php?id=61587016386840)

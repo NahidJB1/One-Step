@@ -26,7 +26,7 @@ foreach ([['apu','world','=528'],['apu','asia','147'],['apu','malaysia','12'],
     ['help','asia','761-770'],['um','world','56'],['taylors','world','272']] as [$id,$scope,$value]) {
     expect(($rankings->metric($id,$scope)['rank'] ?? null) === $value, "$id $scope reviewed value");
 }
-expect(count($rankings->records()) === 30, 'All detail pages plus UM covered');
+expect(count($rankings->records()) === count(array_filter($kb->rankings['universities'], static function ($record) { return !empty($record['page']); })) + 1, 'All supported university pages plus UM covered');
 expect(count($kb->rankings['malaysia_basis']['institutions']) === 32, 'Complete Malaysia World 2027 population');
 foreach ($rankings->records() as $id=>$record) {
     foreach (['world','asia','malaysia'] as $scope) {

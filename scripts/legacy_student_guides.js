@@ -1,8 +1,8 @@
-﻿'use strict';
+'use strict';
 // Reviewed editorial copy for established article URLs. Never infer fee totals.
 module.exports = function ({esc,link,buttons,table,section,note,photos,paths}) {
   const guide=(key,label)=>['/Articles/'+paths[key],label];
-  const university=(id,label)=>buttons([[`/Fees_Chart/${id}-fees`,`${label} fees`],[`/Universities/${id}-details`,`${label} details`]]);
+  const university=(id,label)=>buttons([[`/Universities/${id}-university#courses-fees`,`${label} fees`],[`/Universities/${id}-university`,`${label} details`]]);
   const source=(label,url)=>[label,url];
   const emgs=source('EMGS processing terms','https://visa.educationmalaysia.gov.my/track-my-application-terms-and-conditions/');
   const mmc=source('MMC recognised medical qualifications','https://mmc.gov.my/list-of-recognised-medical-qualifications/');
@@ -21,7 +21,7 @@ module.exports = function ({esc,link,buttons,table,section,note,photos,paths}) {
     ['cyberjaya','University of Cyberjaya','Compare the exact discipline. A business tuition example cannot be used to estimate medicine or another clinical programme.'],
     ['unirazak','UNIRAZAK','Check how resource charges are applied and whether the quoted total includes every compulsory semester.'],
     ['cityu','City University','Match the campus and scholarship category. Different campus rows can have different totals.'],
-    ['binary','Binary University','Ask which programmes qualify for the published scholarship and whether renewal conditions apply.'],
+    ['lincoln','Lincoln University College','Compare the course total and the annual payment schedule, including registration and EMGS fees.'],
     ['segi','SEGi University','Compare the course total and the year-by-year payment plan, with any reconciliation confirmed in writing.'],
     ['amu','Asia Metropolitan University','Check the adjusted tuition, visa and registration charges separately. Do not infer a discount from a headline percentage.'],
     ['inti','INTI','Match the institution, campus and award. A Nilai degree fee is not interchangeable with a college or partner-award schedule.']

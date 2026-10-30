@@ -237,6 +237,11 @@ $offset = ($page - 1) * $limit;
 $total_records = 0;
 
 if ($current_view == 'applications') {
+    $universityApplicationDetails = [];
+    try {
+        $detailsResult = $conn->query("SELECT d.* FROM university_application_details d INNER JOIN (SELECT id FROM student_applications ORDER BY id DESC LIMIT $limit OFFSET $offset) a ON a.id = d.application_id");
+        while ($detailsRow = $detailsResult->fetch_assoc()) $universityApplicationDetails[$detailsRow['application_id']] = $detailsRow;
+    } catch (Throwable $ignored) { /* Existing installations may not have university applications yet. */ }
     $count_res = $conn->query("SELECT COUNT(*) as cnt FROM student_applications");
     $total_records = $count_res->fetch_assoc()['cnt'];
     $sql = "SELECT * FROM student_applications ORDER BY id DESC LIMIT $limit OFFSET $offset";
@@ -1196,13 +1201,15 @@ $result = $conn->query($sql);
                                     <td>
                                         <span style="font-weight: 500; color: var(--primary);">
                                             <?php echo htmlspecialchars($row['education_qualification']); ?>
+                                            <?php if (isset($universityApplicationDetails[$row['id']])): ?><br><small>Nationality: <?php echo htmlspecialchars($universityApplicationDetails[$row['id']]['nationality'], ENT_QUOTES, 'UTF-8'); ?></small><?php endif; ?>
                                         </span>
                                     </td>
                                     <td><?php echo htmlspecialchars($row['study_interest']); ?></td>
                                     <td>
                                         <span class="badge <?php echo $row['has_passport']; ?>">
-                                            <?php echo $row['has_passport']; ?>
+                                            <?php echo htmlspecialchars($row['has_passport'], ENT_QUOTES, 'UTF-8'); ?>
                                         </span>
+                                        <?php if (!empty($universityApplicationDetails[$row['id']]['passport_number'])): ?><br><small><?php echo htmlspecialchars($universityApplicationDetails[$row['id']]['passport_number'], ENT_QUOTES, 'UTF-8'); ?></small><?php endif; ?>
                                     </td>
                                 </tr>
                             <?php endwhile; ?>

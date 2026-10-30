@@ -4,10 +4,10 @@
 const content = require('../data/university_seo_content.json');
 const H = require('./seo_helpers');
 const {esc, plain, block, breadcrumbHtml, replaceElement} = H;
-const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
+const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'genovasi', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
 const feePath = id => combinedIds.has(id) ? `/Universities/${id}-university#courses-fees` : `/Fees_Chart/${id}-fees`;
 const feeCategoryPath = (id, category) => combinedIds.has(id) ? `/Universities/${id}-university#fee-category-${category}` : `/Fees_Chart/${id}-fees#fee-category-${category}`;
-const detailPath = id => combinedIds.has(id) ? `/Universities/${id}-university` : `/Universities/${id}-details`;
+const detailPath = id => `/Universities/${id}-university`;
 const links = items => `<ul class="study-link-list">${items.map(item => `<li><a href="${esc(item.path || item.url)}">${esc(item.label)}</a></li>`).join('')}</ul>`;
 const faq = items => items.map(f => `<details class="study-faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n');
 

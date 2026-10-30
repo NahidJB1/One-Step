@@ -117,32 +117,32 @@ A21: Here are matching entries from our local catalog.
 **City University Malaysia — Diploma in Fashion Design**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **City University Malaysia — Diploma in Graphic Design**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **City University Malaysia — Diploma in Mass Communication**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **City University Malaysia — Diploma in Corporate Communication**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **City University Malaysia — Diploma in Accounting**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **City University Malaysia — Diploma in Business Management**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 Showing 6 of 579 matching entries.
 
@@ -282,32 +282,32 @@ A24: Here are matching entries from our local catalog.
 **CYBERNETICS MALAYSIA (KTAC) — Diploma in Creative Multimedia**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cybernetics-details.html)
+[Source: program details](Universities/cybernetics-university)
 
 **CYBERNETICS MALAYSIA (KTAC) — Diploma in Aviation Management**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cybernetics-details.html)
+[Source: program details](Universities/cybernetics-university)
 
 **CYBERNETICS MALAYSIA (KTAC) — Diploma in Halal Industry Management**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cybernetics-details.html)
+[Source: program details](Universities/cybernetics-university)
 
 **CYBERNETICS MALAYSIA (KTAC) — Diploma in Accounting**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cybernetics-details.html)
+[Source: program details](Universities/cybernetics-university)
 
 **CYBERNETICS MALAYSIA (KTAC) — Diploma in Early Childhood Management**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cybernetics-details.html)
+[Source: program details](Universities/cybernetics-university)
 
 **CYBERNETICS MALAYSIA (KTAC) — Diploma in Business Management**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cybernetics-details.html)
+[Source: program details](Universities/cybernetics-university)
 
 Showing 6 of 9 matching entries.
 
@@ -496,32 +496,32 @@ A48: Here are matching entries from our local catalog.
 **Taylor's University — Foundation in Business**
 - **Duration:** 1 Year
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university)
 
 **Taylor's University — Foundation in Arts**
 - **Duration:** 1 Year
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university)
 
 **Taylor's University — Foundation in Design**
 - **Duration:** 1 Year
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university)
 
 **Taylor's University — Foundation in Computing**
 - **Duration:** 1 Year
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university)
 
 **Taylor's University — Foundation in Science**
 - **Duration:** 1 Year
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university)
 
 **Taylor's University — Foundation in Engineering**
 - **Duration:** 1 Year
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university)
 
 Showing 6 of 80 matching entries.
 
@@ -609,32 +609,32 @@ A51: Here are matching entries from our local catalog.
 **UCSI University — Doctor of Philosophy in Engineering (PhD)**
 - **Duration:** 3 Years (min 9 semesters with bridging course)
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Doctor of Philosophy (Engineering) by Prior Publication**
 - **Duration:** 2 Years (without bridging / with bridging course)
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Industrial PhD In Engineering**
 - **Duration:** 3 Years (min 9 semesters with bridging course)
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Master of Philosophy in Engineering (M.Phil)**
 - **Duration:** 2 Years (min 6 semesters with bridging course)
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Master in Engineering (Smart Engineering Management)**
 - **Duration:** 1 Years (min 3 semesters with bridging course)
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Master of Petroleum Engineering**
 - **Duration:** 1 Years (min 3 semesters with bridging course)
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 Showing 6 of 30 matching entries.
 
@@ -657,32 +657,32 @@ A53: Here are matching entries from our local catalog.
 **City University Malaysia — Bachelor of Computer Science (Hons) Software Engineering**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/bac-details.html)
+[Source: program details](Universities/bac-university)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/bac-details.html)
+[Source: program details](Universities/bac-university)
 
 **ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/alfa-details.html)
+[Source: program details](Universities/alfa-university)
 
 **INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/inti-details.html)
+[Source: program details](Universities/inti-university)
 
 **INTI International University — Bachelor of Computer Science (Hons)**
 - **Duration:** 3 Years
 
-[Source: program details](Universities/inti-details.html)
+[Source: program details](Universities/inti-university)
 
 Showing 6 of 100 matching entries.
 
@@ -849,32 +849,32 @@ A64: Here are matching entries from our local catalog.
 **City University Malaysia — Master of Business Administration (MBA)**
 - **Duration:** 1 Year
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**
 - **Duration:** 2 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university)
 
 **Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
 - **Duration:** 1-1.5 Years (3 Semesters)
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university)
 
 **Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**
 - **Duration:** 2 Years
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university)
 
 **University College MAIWP International (UCMI) — Master of Business Administration (MBA)**
 - **Duration:** 1-3 Years
 
-[Source: program details](Universities/ucmi-details.html)
+[Source: program details](Universities/ucmi-university)
 
 **GENOVASI UNIVERSITY MALAYSIA — Master of Business Administration**
 - **Duration:** 1.5 Years
 
-[Source: program details](Universities/genovasi-details.html)
+[Source: program details](Universities/genovasi-university)
 
 Showing 6 of 144 matching entries.
 
@@ -903,12 +903,12 @@ A66: Here are matching entries from our local catalog.
 **SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
 - **Duration:** N/A
 
-[Source: program details](Universities/segi-details.html)
+[Source: program details](Universities/segi-university)
 
 **Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
 - **Duration:** 1-1.5 Years (3 Semesters)
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university)
 
 **SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
 
@@ -917,7 +917,7 @@ A66: Here are matching entries from our local catalog.
 **Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**
 - **Duration:** 2 Years
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university)
 
 **Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
 - **Duration:** 1-1.5 Years (3 Semesters)
@@ -981,27 +981,27 @@ A74: Here are matching entries from our local catalog.
 **Lincoln University College — Master of Science in Electrical & Electronics Engineering**
 - **Duration:** Master
 
-[Source: program details](Universities/lincoln-details.html)
+[Source: program details](Universities/lincoln-university)
 
 **Universiti Kuala Lumpur (UniKL) — Master of Electrical Engineering**
 - **Duration:** BMI
 
-[Source: program details](Universities/unikl-details.html)
+[Source: program details](Universities/unikl-university)
 
 **Universiti Kuala Lumpur (UniKL) — Master of Engineering Technology (Electrical and Electronics)**
 - **Duration:** BMI
 
-[Source: program details](Universities/unikl-details.html)
+[Source: program details](Universities/unikl-university)
 
 **Universiti Putra Malaysia (UPM) — Master in Electrical Power Engineering**
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**
 - **Duration:** N/A
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 **Lincoln University College — Master of Science in Electrical & Electronics Engineering**
 - **Duration:** Year 1 Year 2

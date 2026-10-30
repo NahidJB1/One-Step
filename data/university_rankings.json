@@ -310,9 +310,9 @@
   },
   "universities": {
     "alfa": {
-      "name": "Alfa University College",
-      "short_name": "Alfa University College",
-      "page": "Universities/alfa-details.html",
+      "name": "ALFA University College",
+      "short_name": "ALFA University College",
+      "page": "Universities/alfa-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -332,7 +332,7 @@
     "amu": {
       "name": "Asia Metropolitan University (AMU)",
       "short_name": "Asia Metropolitan University (AMU)",
-      "page": "Universities/amu-details.html",
+      "page": "Universities/amu-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -352,7 +352,7 @@
     "apu": {
       "name": "Asia Pacific University of Technology & Innovation (APU)",
       "short_name": "APU",
-      "page": "Universities/apu-details.html",
+      "page": "Universities/apu-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -376,7 +376,7 @@
     "bac": {
       "name": "BAC Education Group",
       "short_name": "BAC Education Group",
-      "page": "Universities/bac-details.html",
+      "page": "Universities/bac-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -394,30 +394,10 @@
       },
       "note": "BAC Education Group includes different colleges and partner degree pathways. A partner or awarding university ranking is not a ranking for BAC as a group."
     },
-    "binary": {
-      "name": "Binary University",
-      "short_name": "Binary University",
-      "page": "Universities/binary-details.html",
-      "world": {
-        "year": 2027,
-        "status": "not_listed",
-        "sources": [
-          "world_table",
-          "corrections"
-        ]
-      },
-      "asia": {
-        "year": 2026,
-        "status": "unverified",
-        "sources": [
-          "asia"
-        ]
-      }
-    },
     "cityu": {
       "name": "City University Malaysia",
       "short_name": "City University Malaysia",
-      "page": "Universities/cityu-details.html",
+      "page": "Universities/cityu-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -439,7 +419,7 @@
     "cyberjaya": {
       "name": "University of Cyberjaya",
       "short_name": "University of Cyberjaya",
-      "page": "Universities/cyberjaya-details.html",
+      "page": "Universities/cyberjaya-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -460,30 +440,10 @@
       },
       "qs_name": "University of Cyberjaya"
     },
-    "cybernetics": {
-      "name": "Cybernetics International College of Technology (KTAC)",
-      "short_name": "Cybernetics (KTAC)",
-      "page": "Universities/cybernetics-details.html",
-      "world": {
-        "year": 2027,
-        "status": "not_listed",
-        "sources": [
-          "world_table",
-          "corrections"
-        ]
-      },
-      "asia": {
-        "year": 2026,
-        "status": "unverified",
-        "sources": [
-          "asia"
-        ]
-      }
-    },
     "genovasi": {
       "name": "Genovasi University College",
       "short_name": "Genovasi University College",
-      "page": "Universities/genovasi-details.html",
+      "page": "Universities/genovasi-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -503,7 +463,7 @@
     "help": {
       "name": "HELP University",
       "short_name": "HELP University",
-      "page": "Universities/help-details.html",
+      "page": "Universities/help-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -524,7 +484,7 @@
     "icms": {
       "name": "ICMS",
       "short_name": "ICMS",
-      "page": "Universities/icms-details.html",
+      "page": "Universities/icms-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -544,7 +504,7 @@
     "iium": {
       "name": "International Islamic University Malaysia (IIUM)",
       "short_name": "IIUM",
-      "page": "Universities/iium-details.html",
+      "page": "Universities/iium-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -568,7 +528,7 @@
     "inti": {
       "name": "INTI International University",
       "short_name": "INTI",
-      "page": "Universities/inti-details.html",
+      "page": "Universities/inti-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -592,7 +552,7 @@
     "kings": {
       "name": "King's University College",
       "short_name": "King's University College",
-      "page": "Universities/kings-details.html",
+      "page": "Universities/kings-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -613,7 +573,7 @@
     "klust": {
       "name": "Kuala Lumpur University of Science & Technology (KLUST)",
       "short_name": "KLUST (IUKL)",
-      "page": "Universities/klust-details.html",
+      "page": "Universities/klust-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -634,7 +594,7 @@
     "limkokwing": {
       "name": "Limkokwing University of Creative Technology",
       "short_name": "Limkokwing",
-      "page": "Universities/limkokwing-details.html",
+      "page": "Universities/limkokwing-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -655,7 +615,7 @@
     "lincoln": {
       "name": "Lincoln University College",
       "short_name": "Lincoln University College",
-      "page": "Universities/lincoln-details.html",
+      "page": "Universities/lincoln-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -679,7 +639,7 @@
     "mmu": {
       "name": "Multimedia University (MMU)",
       "short_name": "MMU",
-      "page": "Universities/mmu-details.html",
+      "page": "Universities/mmu-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -703,7 +663,7 @@
     "segi": {
       "name": "SEGi University",
       "short_name": "SEGi University",
-      "page": "Universities/segi-details.html",
+      "page": "Universities/segi-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -727,7 +687,7 @@
     "taylors": {
       "name": "Taylor's University",
       "short_name": "Taylor's University",
-      "page": "Universities/taylors-details.html",
+      "page": "Universities/taylors-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -748,30 +708,10 @@
       },
       "qs_name": "Taylor's University"
     },
-    "ucmi": {
-      "name": "University College MAIWP International (UCMI)",
-      "short_name": "University College MAIWP International (UCMI)",
-      "page": "Universities/ucmi-details.html",
-      "world": {
-        "year": 2027,
-        "status": "not_listed",
-        "sources": [
-          "world_table",
-          "corrections"
-        ]
-      },
-      "asia": {
-        "year": 2026,
-        "status": "unverified",
-        "sources": [
-          "asia"
-        ]
-      }
-    },
     "ucsi": {
       "name": "UCSI University",
       "short_name": "UCSI University",
-      "page": "Universities/ucsi-details.html",
+      "page": "Universities/ucsi-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -795,7 +735,7 @@
     "umw": {
       "name": "International University of Malaya-Wales (IUMW)",
       "short_name": "UM-Wales (IUMW)",
-      "page": "Universities/umw-details.html",
+      "page": "Universities/umw-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -816,7 +756,7 @@
     "unikl": {
       "name": "Universiti Kuala Lumpur (UniKL)",
       "short_name": "UniKL",
-      "page": "Universities/unikl-details.html",
+      "page": "Universities/unikl-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -840,7 +780,7 @@
     "unirazak": {
       "name": "Universiti Tun Abdul Razak (UNIRAZAK)",
       "short_name": "UNIRAZAK",
-      "page": "Universities/unirazak-details.html",
+      "page": "Universities/unirazak-university",
       "world": {
         "year": 2027,
         "status": "not_listed",
@@ -861,7 +801,7 @@
     "uow": {
       "name": "University of Wollongong Malaysia (UOW Malaysia)",
       "short_name": "UOW Malaysia",
-      "page": "Universities/uow-details.html",
+      "page": "Universities/uow-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -885,7 +825,7 @@
     "upm": {
       "name": "Universiti Putra Malaysia (UPM)",
       "short_name": "UPM",
-      "page": "Universities/upm-details.html",
+      "page": "Universities/upm-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -909,7 +849,7 @@
     "utem": {
       "name": "Universiti Teknikal Malaysia Melaka (UTeM)",
       "short_name": "UTeM",
-      "page": "Universities/utem-details.html",
+      "page": "Universities/utem-university",
       "world": {
         "year": 2027,
         "status": "ranked",
@@ -933,7 +873,7 @@
     "utm": {
       "name": "Universiti Teknologi Malaysia (UTM)",
       "short_name": "UTM",
-      "page": "Universities/utm-details.html",
+      "page": "Universities/utm-university",
       "world": {
         "year": 2027,
         "status": "ranked",

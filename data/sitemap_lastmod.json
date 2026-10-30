@@ -1,0 +1,238 @@
+{
+  "index.html": {
+    "sha256": "a3d1ffdacf21011368121d25eeb97d58e745ead414ee46249e739aa6cf44f3cb",
+    "lastmod": "2026-10-30"
+  },
+  "explore-universities.html": {
+    "sha256": "7ad56848548681f9cff35ea4a0b184cabeb7d0973b22b5fd8f6688b3a113dc34",
+    "lastmod": "2026-10-12"
+  },
+  "articles.html": {
+    "sha256": "0d2d60c7d256e538dae1e45328bfbd2ddc21219695ea86587477d216628995d0",
+    "lastmod": "2026-10-12"
+  },
+  "student-support-malaysia.html": {
+    "sha256": "fc4bb92cd5dcda984833fbc7cd1af1374b10da2a908d713198bee54e89cb8f61",
+    "lastmod": "2026-10-12"
+  },
+  "compare.html": {
+    "sha256": "b30832649c49299865356a487cc0de9726400e69a8a7d24e8c0647bfccb4fd95",
+    "lastmod": "2026-10-12"
+  },
+  "contact.html": {
+    "sha256": "1b947a9567d1ceaa73bd46d818578397b76d23bcdd0f4e337aa7e82a017913bd",
+    "lastmod": "2026-10-12"
+  },
+  "scholarship-options.html": {
+    "sha256": "03613523204cea4e2ae59b279dd2b6d89b28ef98470c5155df91e08264f10f05",
+    "lastmod": "2026-10-12"
+  },
+  "scholarship.html": {
+    "sha256": "1d9da4a6fdb8d9d46ef073c42c08e6ca05a17fbaa565f7e0626cd159878f3bff",
+    "lastmod": "2026-10-12"
+  },
+  "malaysia-scholarship.html": {
+    "sha256": "bc662c951c36d4a607a9ce24cb41d79d9bfc70ba55325f48c93175d5f7a7742f",
+    "lastmod": "2026-10-12"
+  },
+  "about.html": {
+    "sha256": "73c7e2a62e0fd997aab9d2598b3796e9a21ef2a15b4d81d479ca1e5cbc16f8c4",
+    "lastmod": "2026-10-30"
+  },
+  "terms.html": {
+    "sha256": "ad51b08ec08b32fc29c814b3bc8d4d0034723b25c6987876789b5ac1a69276bd",
+    "lastmod": "2026-10-30"
+  },
+  "Universities/alfa-university.html": {
+    "sha256": "d3efc09ed7fb1e90f60bfbf504611512c9e3b0816749f3ef807c0df5585ab872",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/amu-university.html": {
+    "sha256": "66f2c4f05fe543e4f551d5ce18fd20f4a5330ddeddde678feda32561f551cea3",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/apu-university.html": {
+    "sha256": "0aff825fc0bbcf94d6a8e49ea00c99ee176d225547ee263003504148a2f25bd0",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/bac-university.html": {
+    "sha256": "d452102968bbadd4a4a5ee11d97318ffcfa3be2d1079413f73e67c50d5d428c2",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/cityu-university.html": {
+    "sha256": "41290ed9ec60b6dbedc309a1d5a587ec5f8a89d41ee46ec557012e7009280382",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/cyberjaya-university.html": {
+    "sha256": "63879e9d62f02825838ca76b1d380bef4ad24cd489362f82ecab01324250751c",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/genovasi-university.html": {
+    "sha256": "e7b779f936b28dc5ffd42ec343207d0915d6dd988192d68ba75caa5f8eaae112",
+    "lastmod": "2026-10-30"
+  },
+  "Universities/help-university.html": {
+    "sha256": "a818a21fb1ae683d940e0e8a313d5254395b386c22fd5ab2aa7a50f6c3e99135",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/icms-university.html": {
+    "sha256": "d173a956f1ab7968f8a4d7c404bc9810cf51fc36ce327d2d94556b8d2abfcced",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/iium-university.html": {
+    "sha256": "aea65bc83467d4de3bf4143c37ed17a99771fe55fbc3c2e7efea40a6bc74e130",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/inti-university.html": {
+    "sha256": "85ea53da32fe27c1b59ec1af6fb54a85b8c8b933f3d00008d915d4c6acc47838",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/kings-university.html": {
+    "sha256": "b30e092cbaaf625dae384e020cb95a8a315ca7d0c5453ea415928929eafac3fd",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/klust-university.html": {
+    "sha256": "0340706f77df48d86c5808ec5cf4c9c7908dee58fb52bbd37e314b559571cda3",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/limkokwing-university.html": {
+    "sha256": "607ad667428d84a3c642ce7e617276725cdd373feb9ff738aa92bcd85afb026f",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/lincoln-university.html": {
+    "sha256": "5637e7af6cc9474c675f0b4c909d73006c1913eb545b0082b90d83e81f355098",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/mmu-university.html": {
+    "sha256": "61bbc860376b4a33d623cb4077233091789191580015bcd578ddd9fe3e931542",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/segi-university.html": {
+    "sha256": "bd8a0b3c04c442933102e0f2e37791afc504d9d47538b6a4e8e49bec2e1fd711",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/taylors-university.html": {
+    "sha256": "6ba89f577f202c6cbf48189ac91d57c01ee871a8e9ef9330eef6a3158c9e0900",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/ucsi-university.html": {
+    "sha256": "87398e6f16dd4b9ec77812856f9994fa2c19bcd34307ee5e0666dd9be54197ba",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/umw-university.html": {
+    "sha256": "1ef923ef2ffcf9dabd4357138df18843bb86c5613e1a9e752479bba0aa286ec3",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/unikl-university.html": {
+    "sha256": "dadd7f1d176f6c15467e7f563d806972c8beb9079ee616bf9cd4dec895076408",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/unirazak-university.html": {
+    "sha256": "c2317a3a68cdd0beccab36461cb343c0411ce92827dc0ddc60ee311bb7d76b9b",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/uow-university.html": {
+    "sha256": "83653aa6f71da6b6a0e91a79e9f2a66119f60721ee4ad7f3967c4a1fb63f1c05",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/upm-university.html": {
+    "sha256": "5061387b3b7f231038ccb5808caeb2cd867396c8779358ced8cfa96add1a4ebf",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/utem-university.html": {
+    "sha256": "c0832848153ccaeb6f002c401e28588ccf3d66456dfe8d586d8e57df04b2392e",
+    "lastmod": "2026-10-12"
+  },
+  "Universities/utm-university.html": {
+    "sha256": "8db4fa606c0d18b6c1352ee4b308c6beedd05d1a5099ab7bffcfd4c4018f1241",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/affordable-countries.html": {
+    "sha256": "b94a273c649cdda6772e1889c3af3d0c5ac54495dd02ad6bdd9ae467111c7b52",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/best-engineering-universities-malaysia.html": {
+    "sha256": "56da4b72c5f00ba6b92515c235078ef084dcc31b96b9efcf6f12400bcac6a817",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/cheapest-universities.html": {
+    "sha256": "878a0f1b6fd4b5d08c0761c4b5f7ff8f93d49c22dca7712015fd34c43ad2d283",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/cost-of-living-malaysia-international-students.html": {
+    "sha256": "09d3e23149b41336c93e4ebeb065396ea9f9fc1c2a87956968295eb148786c93",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/fast-processing-universities.html": {
+    "sha256": "11b69828e91da80c1686d7fb316fb2bd20223afb80c5e589cfdf2b0c6a1684da",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/malaysia-student-visa-requirements.html": {
+    "sha256": "c4a5ca797c60cde21701cb13688749cc7a4bb3fd12ddfd98426118ec626e5b72",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/mmu-vs-taylors.html": {
+    "sha256": "2a3a38bb4a8821c4ed37cb2c1881fbada7546028a8784f41186890fc36930b0b",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/popular-programs-of-study-malaysia.html": {
+    "sha256": "4795ffed82dbcb72dc2ffe03c0cc6deaf62ebb308f7dcb011b88beec5221ea74",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/scholarships-for-international-students-malaysia.html": {
+    "sha256": "56214f18ede7d35a97e57e06d0447660c17eb5f2025b7f9e33e82a1e0658f879",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/study-medicine-mbbs-malaysia.html": {
+    "sha256": "62159993449f1d919eefd3fbf89c4e46524b5fd3abfa30c5fde669dee83a77e2",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/top-10-universities-in-malaysia.html": {
+    "sha256": "efdbc3e9486a59cb91f22fa35d75735e8616d871c51d5ed98736343249a05a58",
+    "lastmod": "2026-10-12"
+  },
+  "Articles/visas-and-requirements-malaysia.html": {
+    "sha256": "ad016269d111d0c49e6dff2a7862960f434e49515ef7fc13ba7945fc80b05fce",
+    "lastmod": "2026-10-12"
+  },
+  "countries/china.html": {
+    "sha256": "c82abb3ccba7a1450a9b3fa791962a194831388d56b535a68d5c07bd0fd79afe",
+    "lastmod": "2026-10-12"
+  },
+  "countries/cyprus.html": {
+    "sha256": "4157a0c5603a720e2a94feebd8647c71c9bb2d8930b54f5b357e6bac2bde05ee",
+    "lastmod": "2026-10-12"
+  },
+  "countries/denmark.html": {
+    "sha256": "fa1cb15dcabe043b6eb86a0bef3d913392304df9acc56372d4968df0b6b4aa15",
+    "lastmod": "2026-10-12"
+  },
+  "countries/finland.html": {
+    "sha256": "cd456ec3b14712553793ab5a9c9b6f21cbd488d72c04af01edd3cce6b406ead3",
+    "lastmod": "2026-10-12"
+  },
+  "countries/hungary.html": {
+    "sha256": "9df8daed63bbc49f6181129a58e7119b42f007b2ef9bc9de68cd18d1647106b0",
+    "lastmod": "2026-10-12"
+  },
+  "countries/italy.html": {
+    "sha256": "3eb36e3ea430c24f7b3f28e8c3c17bccb36ee3c8cd586088bd579d9369792cbe",
+    "lastmod": "2026-10-12"
+  },
+  "countries/norway.html": {
+    "sha256": "10d4574463594d5746606675de2c3ea52a79eacedddb4dff7fc26be99101a279",
+    "lastmod": "2026-10-12"
+  },
+  "countries/spain.html": {
+    "sha256": "469c3f5d4394c095f17c5e3a3fe0c1f32e7478b8782205cae83353680efd6b77",
+    "lastmod": "2026-10-12"
+  },
+  "countries/sweden.html": {
+    "sha256": "dafadd2a5b878c7cfa1165c217bdeab4a8f00470d47534fe7637f27f085812b5",
+    "lastmod": "2026-10-12"
+  },
+  "countries/uzbekistan.html": {
+    "sha256": "7fe88ca7e81c4a2f9334b6496e9090c5e86b369c305690d45df7c73326900050",
+    "lastmod": "2026-10-12"
+  }
+}

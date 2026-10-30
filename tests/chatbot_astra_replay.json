@@ -6,7 +6,7 @@
         "reply": "Hello! I can help you find programs, check published fees, compare universities, and search our student FAQs.",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "answered",
@@ -38,7 +38,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -66,7 +66,7 @@
             "pending": "university",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "clarification",
         "isFallback": true,
@@ -97,7 +97,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -124,7 +124,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -156,7 +156,7 @@
             "pending": "level",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "clarification",
         "isFallback": true,
@@ -196,18 +196,20 @@
         "number": 7,
         "question": "Which is cheaper, APU or SEGI or Cybernetics?",
         "story": null,
-        "reply": "Which program or study level should I check? Fees differ by program, campus, and student category.",
+        "reply": "I could not match this part to a program or supported filter: **cybernetics**. Please give the program name or rephrase that condition so I do not ignore it.",
         "context": {
             "universities": [
-                "cybernetics",
                 "segi",
                 "apu"
             ],
+            "unknown": [
+                "cybernetics"
+            ],
             "intent": "fees",
-            "pending": "level",
+            "pending": "subject",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "clarification",
         "isFallback": true,
@@ -222,12 +224,6 @@
                 "icon": "fab fa-whatsapp"
             },
             {
-                "label": "CYBERNETICS fees",
-                "url": "Fees_Chart/cybernetics-fees.html",
-                "class": "os-fee-btn",
-                "icon": "fas fa-coins"
-            },
-            {
                 "label": "SEGI fees",
                 "url": "Fees_Chart/segi-fees.html",
                 "class": "os-fee-btn",
@@ -240,13 +236,7 @@
                 "icon": "fas fa-coins"
             }
         ],
-        "suggestions": [
-            "Foundation",
-            "Diploma",
-            "Bachelor",
-            "Master",
-            "PhD"
-        ],
+        "suggestions": [],
         "engine": "local-retrieval-v3"
     },
     {
@@ -263,7 +253,7 @@
             "intent": "overview",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -274,13 +264,13 @@
                 "type": "university",
                 "file": "university_meta.json / universities.json",
                 "title": "Universiti Kuala Lumpur (UniKL)",
-                "url": "Universities/unikl-details.html"
+                "url": "Universities/unikl-university.html"
             },
             {
                 "type": "university",
                 "file": "university_meta.json / universities.json",
                 "title": "Universiti Teknologi Malaysia (UTM)",
-                "url": "Universities/utm-details.html"
+                "url": "Universities/utm-university.html"
             }
         ],
         "buttons": [
@@ -313,7 +303,7 @@
         "number": 9,
         "question": "I want a Bachelor degree, or maybe a Master's, or even a PhD?",
         "story": null,
-        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Bachelor of Graphic Design (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Fashion Design (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Multimedia (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Corporate Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Mass Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Journalism**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\nShowing 6 of 3151 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Bachelor of Graphic Design (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Bachelor of Fashion Design (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Bachelor of Multimedia (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Corporate Communication**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Mass Communication**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Bachelor of Communication (Hons) Journalism**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\nShowing 6 of 3095 matching entries.",
         "context": {
             "levels": [
                 "bachelor",
@@ -323,7 +313,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -334,7 +324,7 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "City University Malaysia programs",
-                "url": "Universities/cityu-details.html",
+                "url": "Universities/cityu-university.html",
                 "program_index": 35
             }
         ],
@@ -351,13 +341,13 @@
             "What are the fees?"
         ],
         "engine": "local-retrieval-v3",
-        "result_count": 3151
+        "result_count": 3095
     },
     {
         "number": 10,
         "question": "What is the diploma and undergrad cost?",
         "story": null,
-        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Accountancy**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Business Administration**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in E-Business**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Information Technology**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 11,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 10,500\n- **Year 3:** RM 10,500\n- **Total:** RM 33,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Early Childhood**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Diploma in Early Childhood (ODL)**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\nShowing 6 of 1077 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA University College — Diploma in Accountancy**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Diploma in Business Administration**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Diploma in E-Business**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Diploma in Information Technology**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 11,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 10,500\n- **Year 3:** RM 10,500\n- **Total:** RM 33,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Diploma in Early Childhood**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Diploma in Early Childhood (ODL)**\nDIPLOMA PROGRAMS\n- **Duration:** 2.5 Years\n- **Year 1:** RM 10,500\n- **Resource Fee:** RM 1,000\n- **Year 2:** RM 9,500\n- **Year 3:** RM 9,500\n- **Total:** RM 30,500\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n> \n> Remarks:\n> New International students are required to pay the 1st year tuition fees and the Initial Fees in full upon approval from EMGS/e-VAL.\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\nShowing 6 of 1048 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
         "context": {
             "levels": [
                 "diploma",
@@ -366,7 +356,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -377,42 +367,42 @@
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/1/table/rows/0",
-                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "title": "ALFA University College: DIPLOMA PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/1/table/rows/1",
-                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "title": "ALFA University College: DIPLOMA PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/1/table/rows/2",
-                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "title": "ALFA University College: DIPLOMA PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/1/table/rows/3",
-                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "title": "ALFA University College: DIPLOMA PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/1/table/rows/4",
-                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "title": "ALFA University College: DIPLOMA PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/1/table/rows/5",
-                "title": "ALFA UNIVERSITY MALAYSIA: DIPLOMA PROGRAMS",
+                "title": "ALFA University College: DIPLOMA PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             }
         ],
@@ -428,7 +418,7 @@
             "Show more"
         ],
         "engine": "local-retrieval-v3",
-        "result_count": 1077
+        "result_count": 1048
     },
     {
         "number": 11,
@@ -437,7 +427,7 @@
         "reply": "হ্যালো! প্রোগ্রাম খোঁজা, সংরক্ষিত ফি দেখা, বিশ্ববিদ্যালয় তুলনা ও শিক্ষার্থীদের প্রশ্নের উত্তর পেতে সাহায্য করতে পারি।",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "bn"
         },
         "status": "answered",
@@ -470,7 +460,7 @@
             "language": "bn",
             "guide": "scholarship-advice",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -508,7 +498,7 @@
             "language": "bn",
             "guide": "admission-fee",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -543,7 +533,7 @@
         "reply": "হ্যাঁ, বাংলা ও Banglish-এ বিশ্ববিদ্যালয়, ফি, প্রোগ্রাম ও EMGS নিয়ে প্রশ্ন করতে পারেন। অস্পষ্ট হলে নির্দিষ্ট তথ্য জানতে চাইব।",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "bn"
         },
         "status": "answered",
@@ -572,7 +562,7 @@
             "language": "en",
             "guide": "status-32",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -582,7 +572,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/41",
+                "pointer": "/entries/43",
                 "title": "Local EMGS status FAQ",
                 "url": "myfaqs.json",
                 "origin": "myfaqs.json /global/17; undated local guidance, not a live application check",
@@ -610,7 +600,7 @@
             "language": "en",
             "guide": "tracking",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -620,7 +610,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/27",
+                "pointer": "/entries/29",
                 "title": "Official EMGS application tracker",
                 "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
                 "origin": "Official tracker; no live lookup by chatbot",
@@ -648,7 +638,7 @@
             "language": "en",
             "guide": "tracking",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -658,7 +648,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/27",
+                "pointer": "/entries/29",
                 "title": "Official EMGS application tracker",
                 "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
                 "origin": "Official tracker; no live lookup by chatbot",
@@ -686,7 +676,7 @@
             "language": "en",
             "guide": "tracking",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -696,7 +686,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/27",
+                "pointer": "/entries/29",
                 "title": "Official EMGS application tracker",
                 "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
                 "origin": "Official tracker; no live lookup by chatbot",
@@ -718,7 +708,7 @@
         "number": 19,
         "question": "Show me every single Science program at UTM.",
         "story": null,
-        "reply": "Here are matching entries from our local catalog.\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Computer Networks and Security) with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Graphics and Multimedia Software) with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Architecture with Honours**\n- **Duration:** 6 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Construction with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Geoinformatics with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Land Administration and Development with Honours**\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-details.html)\n\nShowing 6 of 154 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Computer Networks and Security) with Honours**\n- **Level:** Bachelor\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-university.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Graphics and Multimedia Software) with Honours**\n- **Level:** Bachelor\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-university.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Architecture with Honours**\n- **Level:** Bachelor\n- **Duration:** 6 Semesters\n\n[Source: program details](Universities/utm-university.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Construction with Honours**\n- **Level:** Bachelor\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-university.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Geoinformatics with Honours**\n- **Level:** Bachelor\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-university.html)\n\n**Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Land Administration and Development with Honours**\n- **Level:** Bachelor\n- **Duration:** 8 Semesters\n\n[Source: program details](Universities/utm-university.html)\n\nShowing 6 of 154 matching entries.",
         "context": {
             "universities": [
                 "utm"
@@ -729,7 +719,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -740,7 +730,7 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "Universiti Teknologi Malaysia (UTM) programs",
-                "url": "Universities/utm-details.html",
+                "url": "Universities/utm-university.html",
                 "program_index": 25
             }
         ],
@@ -769,7 +759,7 @@
         "number": 20,
         "question": "List all the engineering and management degrees at APU.",
         "story": null,
-        "reply": "Here are matching entries from our local catalog.\n\n**Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**\n- **Duration:** 4 Years\n\n[Source: program details](Universities/apu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**\n- **Duration:** 4 Years\n\n[Source: program details](Fees_Chart/apu-fees.html)\n\nNo specific local match was found for **management** with these filters.\n\nShowing 2 of 2 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\nThese matches are broad program-group rows, not separately named course confirmations. Confirm the exact course title and whether the displayed duration or fee applies to it.\n\n**Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**\n- **Level:** Bachelor\n- **Duration:** 4 Years\n\n[Source: program details](Universities/apu-university.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**\n- **Level:** Bachelor\n- **Duration:** 4 Years\n\n[Source: program details](Fees_Chart/apu-fees.html)\n\nNo specific local match was found for **management** with these filters.\n\nShowing 2 of 2 matching entries.",
         "context": {
             "universities": [
                 "apu"
@@ -793,7 +783,7 @@
             "subject_mode": "any",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -804,7 +794,7 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "Asia Pacific University of Technology & Innovation (APU) programs",
-                "url": "Universities/apu-details.html",
+                "url": "Universities/apu-university.html",
                 "program_index": 13
             },
             {
@@ -839,7 +829,7 @@
         "number": 21,
         "question": "Give me all diploma courses in Malaysia.",
         "story": null,
-        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Diploma in Fashion Design**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Graphic Design**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Mass Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Corporate Communication**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Accounting**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Diploma in Business Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\nShowing 6 of 579 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Diploma in Fashion Design**\n- **Level:** Diploma\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Diploma in Graphic Design**\n- **Level:** Diploma\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Diploma in Mass Communication**\n- **Level:** Diploma\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Diploma in Corporate Communication**\n- **Level:** Diploma\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Diploma in Accounting**\n- **Level:** Diploma\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Diploma in Business Management**\n- **Level:** Diploma\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\nShowing 6 of 540 matching entries.",
         "context": {
             "levels": [
                 "diploma"
@@ -847,7 +837,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -858,7 +848,7 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "City University Malaysia programs",
-                "url": "Universities/cityu-details.html",
+                "url": "Universities/cityu-university.html",
                 "program_index": 13
             }
         ],
@@ -875,7 +865,7 @@
             "What are the fees?"
         ],
         "engine": "local-retrieval-v3",
-        "result_count": 579
+        "result_count": 540
     },
     {
         "number": 22,
@@ -890,7 +880,7 @@
             "pending": "level",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "clarification",
         "isFallback": true,
@@ -935,7 +925,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1009,52 +999,36 @@
         "number": 24,
         "question": "cyber netics diploma?",
         "story": null,
-        "reply": "Here are matching entries from our local catalog.\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Creative Multimedia**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Aviation Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Halal Industry Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Accounting**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Early Childhood Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\n**CYBERNETICS MALAYSIA (KTAC) — Diploma in Business Management**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cybernetics-details.html)\n\nShowing 6 of 9 matching entries.",
+        "reply": "I could not match this part to a program or supported filter: **cyber, netics**. Please give the program name or rephrase that condition so I do not ignore it.",
         "context": {
-            "universities": [
-                "cybernetics"
-            ],
             "levels": [
                 "diploma"
             ],
+            "unknown": [
+                "cyber",
+                "netics"
+            ],
             "intent": "programs",
+            "pending": "subject",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
-        "status": "answered",
-        "isFallback": false,
+        "status": "clarification",
+        "isFallback": true,
         "matched_q": null,
         "confidence": null,
-        "sources": [
-            {
-                "type": "program",
-                "file": "universities.json",
-                "title": "CYBERNETICS MALAYSIA (KTAC) programs",
-                "url": "Universities/cybernetics-details.html",
-                "program_index": 8
-            }
-        ],
+        "sources": [],
         "buttons": [
             {
                 "label": "Speak with a counselor",
                 "url": "https://wa.me/601119359497",
                 "class": "os-wa-btn",
                 "icon": "fab fa-whatsapp"
-            },
-            {
-                "label": "CYBERNETICS fees",
-                "url": "Fees_Chart/cybernetics-fees.html",
-                "class": "os-fee-btn",
-                "icon": "fas fa-coins"
             }
         ],
-        "suggestions": [
-            "Show more",
-            "What are the fees?"
-        ],
-        "engine": "local-retrieval-v3",
-        "result_count": 9
+        "suggestions": [],
+        "engine": "local-retrieval-v3"
     },
     {
         "number": 25,
@@ -1068,7 +1042,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -1096,7 +1070,7 @@
             "language": "en",
             "guide": "study-gap",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1135,7 +1109,7 @@
             "language": "en",
             "guide": "graduate",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1173,7 +1147,7 @@
             "language": "en",
             "guide": "additional-documents",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -1183,7 +1157,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/28",
+                "pointer": "/entries/30",
                 "title": "Official EMGS application tracker",
                 "url": "https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S",
                 "origin": "Official tracker; no live lookup by chatbot",
@@ -1211,7 +1185,7 @@
             "language": "en",
             "guide": "english-admission",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1249,7 +1223,7 @@
             "language": "en",
             "guide": "conduct",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1259,7 +1233,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/19",
+                "pointer": "/entries/20",
                 "title": "EMGS Graduate Pass",
                 "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
                 "origin": "data/emgs_source.txt",
@@ -1287,7 +1261,7 @@
             "pending": "university",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "clarification",
         "isFallback": true,
@@ -1318,7 +1292,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -1346,7 +1320,7 @@
             "language": "en",
             "guide": "admission-check",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1381,7 +1355,7 @@
         "reply": "Our local guides cover these destinations: [China study guide](countries/china.html). I do not have a structured answer to this question for those destinations.",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "partial",
@@ -1414,7 +1388,7 @@
         "reply": "Our local guides cover these destinations: [Finland study guide](countries/finland.html), [Sweden study guide](countries/sweden.html). I do not have a structured answer to this question for those destinations.",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "partial",
@@ -1453,7 +1427,7 @@
         "reply": "Our local guides cover these destinations: [Cyprus study guide](countries/cyprus.html). I do not have a structured answer to this question for those destinations.",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "partial",
@@ -1483,7 +1457,7 @@
         "number": 37,
         "question": "hello i want to study in malaysia but i do not have enough money so i am looking for a cheap university that offers a bachelor degree in computer science preferably with a scholarship or some kind of discount because my family cannot support me and i also need to know how much the visa costs and if i can work part time while studying thank you",
         "story": null,
-        "reply": "**Fees**\nThese are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**\nBACHELOR PROGRAMS\n- **Duration:** 3 Years\n- **Year 1:** RM 16,000\n- **Resource Fee:** RM 2,000\n- **Year 2:** RM 15,000\n- **Year 3:** RM 15,000\n- **Total:** RM 48,000\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**\nAll Programs\n- **Level:** Bachelor\n- **Duration:** 3 Years\n- **Year 1 (RM):** 10,920\n- **Year 2 (RM):** 10,920\n- **Year 3 (RM):** 10,920\n- **Total (RM):** 32,760\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**\nUNIMY\n- **Duration:** 3 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year\n- **Total Tuition Fee:** RM46,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**\nUNIMY\n- **Duration:** 3 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year\n- **Total Tuition Fee:** RM46,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\n**City University Malaysia — Bachelor of Computer Science (Artificial Intelligence) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\n**City University Malaysia — Bachelor of Computer Science (Cyber Security) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\nShowing 6 of 49 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.\n\n**Can international students work part time?**\nInternational students may work up to **20 hours per week only during semester breaks or holidays longer than 7 days**, in permitted sectors such as restaurants, petrol kiosks, mini-markets and hotels. A valid Student Pass and prior Immigration approval through the institution are required. This is not permission to work throughout teaching weeks, and income is not guaranteed; plan tuition and living costs without relying on a job. The Graduate Pass has separate eligibility rules.\n\n**Scholarships**\nThe local information describes merit-based scholarships and partial tuition discounts at some institutions. It does not verify a currently open fully funded award, a guaranteed discount, or nationality-specific eligibility. Compare tuition after any confirmed award, living costs, visa charges and deposits. Tell me your university/program, grades, nationality and budget; a counselor can check actual award terms. You can also review the [local scholarship options](scholarship-options.html).\n\n**What are the institution EMGS fee estimates?**\nThese are **institution EMGS fee estimates from the supplied table**, not universal government charges or tuition. Their effective date and included components are unverified; confirm the invoice and refund conditions with the institution.\n\nWhich university should I check?",
+        "reply": "**Fees**\nThese are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA University College — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**\nBACHELOR PROGRAMS\n- **Duration:** 3 Years\n- **Year 1:** RM 16,000\n- **Resource Fee:** RM 2,000\n- **Year 2:** RM 15,000\n- **Year 3:** RM 15,000\n- **Total:** RM 48,000\n\n> **Published conditions:** Initial Fees (International Student):\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**\nUNIMY\n- **Duration:** 3 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year\n- **Total Tuition Fee:** RM46,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**\nUNIMY\n- **Duration:** 3 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year\n- **Total Tuition Fee:** RM46,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\n**City University Malaysia — Bachelor of Computer Science (Artificial Intelligence) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\n**City University Malaysia — Bachelor of Computer Science (Cyber Security) (Hons)**\nPJ & CYBERJAYA CAMPUS - BACHELOR\n- **Duration:** 3 Years\n- **Semester:** 9\n- **Published Fees:** RM78,000\n- **Tuition Fees Special Scholarship:** RM55,650\n- **Resource Fee:** RM500\n- **Year 1:** RM26,370\n- **Year 2:** RM21,200\n- **Year 3:** RM21,200\n- **TOTAL:** RM68,770\n\n> **Published conditions:** Payment Schedule:\n> 1. Payment: Visa (EMGS) Fee RM 3000\n> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.\n> \n> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.\n\n[Source: fee table](Fees_Chart/cityu-fees.html)\n\n**INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**\nINTI  -  PENANG CAMPUS\n- **Duration:** 3 years\n- **Intake:** Jan, Apr, Aug\n- **Total Tuition Fee (RM):** RM70,266\n\n> **Published conditions:** Misc Fees:\n> Application Fee: RM600\n> EMGS Fee: RM2,520\n> Registration Fee: RM2,400\n> Administration Fee: RM4,000\n> General Deposit: RM600\n> Total Misc Fees: RM10,120\n\n[Source: fee table](Fees_Chart/inti-fees.html)\n\nShowing 6 of 48 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.\n\n**Can international students work part time?**\nInternational students may work up to **20 hours per week only during semester breaks or holidays longer than 7 days**, in permitted sectors such as restaurants, petrol kiosks, mini-markets and hotels. A valid Student Pass and prior Immigration approval through the institution are required. This is not permission to work throughout teaching weeks, and income is not guaranteed; plan tuition and living costs without relying on a job. The Graduate Pass has separate eligibility rules.\n\n**Scholarships**\nThe local information describes merit-based scholarships and partial tuition discounts at some institutions. It does not verify a currently open fully funded award, a guaranteed discount, or nationality-specific eligibility. Compare tuition after any confirmed award, living costs, visa charges and deposits. Tell me your university/program, grades, nationality and budget; a counselor can check actual award terms. You can also review the [local scholarship options](scholarship-options.html).\n\n**What are the institution EMGS fee estimates?**\nThese are **institution EMGS fee estimates from the supplied table**, not universal government charges or tuition. Their effective date and included components are unverified; confirm the invoice and refund conditions with the institution.\n\nWhich university should I check?",
         "context": {
             "levels": [
                 "bachelor"
@@ -1494,7 +1468,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -1505,15 +1479,8 @@
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/2/table/rows/11",
-                "title": "ALFA UNIVERSITY MALAYSIA: BACHELOR PROGRAMS",
+                "title": "ALFA University College: BACHELOR PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
-            },
-            {
-                "type": "fees",
-                "file": "data/fees_data.json",
-                "pointer": "/binary/categories/0/table/rows/7",
-                "title": "Binary University of Management & Entrepreneurship: All Programs",
-                "url": "Fees_Chart/binary-fees.html"
             },
             {
                 "type": "fees",
@@ -1544,9 +1511,16 @@
                 "url": "Fees_Chart/cityu-fees.html"
             },
             {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/inti/categories/0/table/rows/24",
+                "title": "INTI International University: INTI  -  PENANG CAMPUS",
+                "url": "Fees_Chart/inti-fees.html"
+            },
+            {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/25",
+                "pointer": "/entries/26",
                 "title": "Education Malaysia student FAQ",
                 "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
                 "origin": "Official Education Malaysia FAQ checked 2026-09-12",
@@ -1590,7 +1564,7 @@
         "reply": "I am One-Step’s custom automated assistant. I answer from our stored information and can connect you with a counselor for individual advice.",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "answered",
@@ -1616,7 +1590,7 @@
         "reply": "You can [speak with a One-Step counselor](https://wa.me/601119359497).",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "answered",
@@ -1642,7 +1616,7 @@
         "reply": "You’re welcome. Come back whenever you have another study question.",
         "context": {
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "answered",
@@ -1671,7 +1645,7 @@
             "pending": "university",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "clarification",
         "isFallback": true,
@@ -1703,7 +1677,7 @@
             "language": "en",
             "guide": "medical-fee",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1713,7 +1687,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/22",
+                "pointer": "/entries/23",
                 "title": "EMGS refund policy",
                 "url": "https://visa.educationmalaysia.gov.my/legal/refund-policy.html",
                 "origin": "data/emgs_source.txt",
@@ -1740,7 +1714,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -1767,7 +1741,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -1794,7 +1768,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -1824,7 +1798,7 @@
             "intent": "overview",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1835,7 +1809,7 @@
                 "type": "university",
                 "file": "university_meta.json / universities.json",
                 "title": "Taylor's University",
-                "url": "Universities/taylors-details.html"
+                "url": "Universities/taylors-university.html"
             }
         ],
         "buttons": [
@@ -1862,7 +1836,7 @@
         "number": 47,
         "question": "?? fees for MBA?",
         "story": null,
-        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 4 Months\n- **Year 1:** RM 13,500\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 12,500\n- **Total:** RM 27,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration (International Business)**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 3 Months\n- **Year 1:** RM 13,500\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 12,500\n- **Total:** RM 27,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration (ODL)**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 4 Months\n- **Year 1:** RM 13,500\n- **Year 2:** RM 12,500\n- **Total:** RM 26,000\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA UNIVERSITY MALAYSIA — Master of Business Administration in Oil & Gas**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 3 Months\n- **Year 1:** RM 16,000\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 16,000\n- **Total:** RM 33,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**Binary University of Management & Entrepreneurship — Master of Business Administration (MBA)**\nAll Programs\n- **Level:** Master\n- **Duration:** 1.6 Years\n- **Year 1 (RM):** 15,120\n- **Year 2 (RM):** 15,120\n- **Total (RM):** 30,240\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\n**Binary University of Management & Entrepreneurship — MBA (Specialisations: Engineering Mgt, Finance, Business)**\nAll Programs\n- **Level:** Master\n- **Duration:** 2 Years\n- **Year 1 (RM):** 15,120\n- **Year 2 (RM):** 15,120\n- **Total (RM):** 30,240\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\nShowing 6 of 66 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**ALFA University College — Master of Business Administration**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 4 Months\n- **Year 1:** RM 13,500\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 12,500\n- **Total:** RM 27,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Master of Business Administration (International Business)**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 3 Months\n- **Year 1:** RM 13,500\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 12,500\n- **Total:** RM 27,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Master of Business Administration (ODL)**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 4 Months\n- **Year 1:** RM 13,500\n- **Year 2:** RM 12,500\n- **Total:** RM 26,000\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**ALFA University College — Master of Business Administration in Oil & Gas**\nMASTER PROGRAMS\n- **Duration:** 1 Years & 3 Months\n- **Year 1:** RM 16,000\n- **Resource Fee:** RM 1,500\n- **Year 2:** RM 16,000\n- **Total:** RM 33,500\n\n> **Published conditions:** INITIAL FEES (INTERNATIONAL STUDENT)\n> EMGS and VISA Processing Fee: RM 3,500\n> Registration Fee: RM 1,000\n> International Student Fee: RM 1,500\n> Total Initial Fees Payment Upon Application: RM 6,000\n\n[Source: fee table](Fees_Chart/alfa-fees.html)\n\n**BAC EDUCATION GROUP — Master of Business Administration (MBA) (By coursework)**\nUNIMY\n- **Duration:** 1.5 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM9,000\n- **Total Tuition Fee:** RM25,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\n**BAC EDUCATION GROUP — Masters of Business Administration**\nVERITAS UNIVERSITY\n- **Duration:** 1.5 years\n- **Tuition Fees (1st Year):** RM16,168\n- **Tuition Fees (Following Years):** RM9,000\n- **Total Tuition Fee:** RM25,168\n\n> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Undergraduate Programs Conventional: Jan, May, Sep<br>ODL: Jan, May, June, Sep<br>Bachelor of Communication (Branding & Digital Marketing): Conventional Jan, Jun, Aug; ODL Jan, Jun, Aug<br>Postgraduate Programs: Conventional Jan, May, Sep (MBA); ODL Jan, May, Sep (DBA, PhD); ODL Monthly (MBA, MBACL, MCLG, MA Law)\n\n[Source: fee table](Fees_Chart/bac-fees.html)\n\nShowing 6 of 63 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
         "context": {
             "levels": [
                 "master"
@@ -1873,7 +1847,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1884,43 +1858,43 @@
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/4/table/rows/0",
-                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "title": "ALFA University College: MASTER PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/4/table/rows/1",
-                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "title": "ALFA University College: MASTER PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/4/table/rows/2",
-                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "title": "ALFA University College: MASTER PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
                 "pointer": "/alfa/categories/4/table/rows/12",
-                "title": "ALFA UNIVERSITY MALAYSIA: MASTER PROGRAMS",
+                "title": "ALFA University College: MASTER PROGRAMS",
                 "url": "Fees_Chart/alfa-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
-                "pointer": "/binary/categories/0/table/rows/8",
-                "title": "Binary University of Management & Entrepreneurship: All Programs",
-                "url": "Fees_Chart/binary-fees.html"
+                "pointer": "/bac/categories/0/table/rows/12",
+                "title": "BAC EDUCATION GROUP: UNIMY",
+                "url": "Fees_Chart/bac-fees.html"
             },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
-                "pointer": "/binary/categories/0/table/rows/9",
-                "title": "Binary University of Management & Entrepreneurship: All Programs",
-                "url": "Fees_Chart/binary-fees.html"
+                "pointer": "/bac/categories/3/table/rows/6",
+                "title": "BAC EDUCATION GROUP: VERITAS UNIVERSITY",
+                "url": "Fees_Chart/bac-fees.html"
             }
         ],
         "buttons": [
@@ -1935,13 +1909,13 @@
             "Show more"
         ],
         "engine": "local-retrieval-v3",
-        "result_count": 66
+        "result_count": 63
     },
     {
         "number": 48,
         "question": "I want to study at Taylor's.",
         "story": 1,
-        "reply": "Here are matching entries from our local catalog.\n\n**Taylor's University — Bachelor of Business (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Accounting & Finance (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Laws (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Computer Science (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Software Engineering (Hons)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-details.html)\n\n**Taylor's University — Bachelor of Mechanical Engineering (Hons)**\n- **Duration:** 4 Years\n\n[Source: program details](Universities/taylors-details.html)\n\nShowing 6 of 80 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**Taylor's University — Bachelor of Business (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-university.html)\n\n**Taylor's University — Bachelor of Accounting & Finance (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-university.html)\n\n**Taylor's University — Bachelor of Laws (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-university.html)\n\n**Taylor's University — Bachelor of Computer Science (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-university.html)\n\n**Taylor's University — Bachelor of Software Engineering (Hons)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/taylors-university.html)\n\n**Taylor's University — Bachelor of Mechanical Engineering (Hons)**\n- **Level:** Bachelor\n- **Duration:** 4 Years\n\n[Source: program details](Universities/taylors-university.html)\n\nShowing 6 of 80 matching entries.",
         "context": {
             "universities": [
                 "taylors"
@@ -1949,7 +1923,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -1960,7 +1934,7 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "Taylor's University programs",
-                "url": "Universities/taylors-details.html",
+                "url": "Universities/taylors-university.html",
                 "program_index": 20
             }
         ],
@@ -2000,7 +1974,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2082,7 +2056,7 @@
             "intent": "overview",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2093,7 +2067,7 @@
                 "type": "university",
                 "file": "university_meta.json / universities.json",
                 "title": "UCSI University",
-                "url": "Universities/ucsi-details.html"
+                "url": "Universities/ucsi-university.html"
             }
         ],
         "buttons": [
@@ -2120,7 +2094,7 @@
         "number": 51,
         "question": "What about their engineering programs?",
         "story": 2,
-        "reply": "Here are matching entries from our local catalog.\n\n**UCSI University — Bachelor of Chemical Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Civil Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Electrical and Electronic Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Computer Engineering (Artificial Intelligence) with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Energy Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\n**UCSI University — Bachelor of Mechanical Engineering with Honours**\n\n[Source: program details](Universities/ucsi-details.html)\n\nShowing 6 of 30 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**UCSI University — Bachelor of Chemical Engineering with Honours**\n- **Level:** Bachelor\n\n[Source: program details](Universities/ucsi-university.html)\n\n**UCSI University — Bachelor of Civil Engineering with Honours**\n- **Level:** Bachelor\n\n[Source: program details](Universities/ucsi-university.html)\n\n**UCSI University — Bachelor of Electrical and Electronic Engineering with Honours**\n- **Level:** Bachelor\n\n[Source: program details](Universities/ucsi-university.html)\n\n**UCSI University — Bachelor of Computer Engineering (Artificial Intelligence) with Honours**\n- **Level:** Bachelor\n\n[Source: program details](Universities/ucsi-university.html)\n\n**UCSI University — Bachelor of Energy Engineering with Honours**\n- **Level:** Bachelor\n\n[Source: program details](Universities/ucsi-university.html)\n\n**UCSI University — Bachelor of Mechanical Engineering with Honours**\n- **Level:** Bachelor\n\n[Source: program details](Universities/ucsi-university.html)\n\nShowing 6 of 30 matching entries.",
         "context": {
             "universities": [
                 "ucsi"
@@ -2131,7 +2105,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2142,7 +2116,7 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "UCSI University programs",
-                "url": "Universities/ucsi-details.html",
+                "url": "Universities/ucsi-university.html",
                 "program_index": 11
             }
         ],
@@ -2177,7 +2151,7 @@
             "language": "bn",
             "guide": "profile",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2209,7 +2183,7 @@
         "number": 53,
         "question": "I want to study Bachelor of Computer Science.",
         "story": 3,
-        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Bachelor of Computer Science (Hons) Software Engineering**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Computing, Business, Tourism, Accounting & Finance, Actuarial, Banking, International Relations, Media, Psychology**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/apu-details.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/bac-details.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/bac-details.html)\n\n**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/alfa-details.html)\n\n**INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**\n- **Duration:** 3 Years\n\n[Source: program details](Universities/inti-details.html)\n\nShowing 6 of 101 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Bachelor of Computer Science (Hons) Software Engineering**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Computing, Business, Tourism, Accounting & Finance, Actuarial, Banking, International Relations, Media, Psychology**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/apu-university.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/bac-university.html)\n\n**BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/bac-university.html)\n\n**ALFA University College — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/alfa-university.html)\n\n**INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**\n- **Level:** Bachelor\n- **Duration:** 3 Years\n\n[Source: program details](Universities/inti-university.html)\n\nShowing 6 of 99 matching entries.",
         "context": {
             "levels": [
                 "bachelor"
@@ -2220,7 +2194,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2231,35 +2205,35 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "City University Malaysia programs",
-                "url": "Universities/cityu-details.html",
+                "url": "Universities/cityu-university.html",
                 "program_index": 41
             },
             {
                 "type": "program",
                 "file": "universities.json",
                 "title": "Asia Pacific University of Technology & Innovation (APU) programs",
-                "url": "Universities/apu-details.html",
+                "url": "Universities/apu-university.html",
                 "program_index": 11
             },
             {
                 "type": "program",
                 "file": "universities.json",
                 "title": "BAC EDUCATION GROUP programs",
-                "url": "Universities/bac-details.html",
+                "url": "Universities/bac-university.html",
                 "program_index": 9
             },
             {
                 "type": "program",
                 "file": "universities.json",
-                "title": "ALFA UNIVERSITY MALAYSIA programs",
-                "url": "Universities/alfa-details.html",
+                "title": "ALFA University College programs",
+                "url": "Universities/alfa-university.html",
                 "program_index": 33
             },
             {
                 "type": "program",
                 "file": "universities.json",
                 "title": "INTI International University programs",
-                "url": "Universities/inti-details.html",
+                "url": "Universities/inti-university.html",
                 "program_index": 24
             }
         ],
@@ -2276,13 +2250,13 @@
             "What are the fees?"
         ],
         "engine": "local-retrieval-v3",
-        "result_count": 101
+        "result_count": 99
     },
     {
         "number": 54,
         "question": "Which is the cheapest university for CS?",
         "story": 3,
-        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**\nAll Programs\n- **Level:** Bachelor\n- **Duration:** 3 Years\n- **Year 1 (RM):** 10,920\n- **Year 2 (RM):** 10,920\n- **Year 3 (RM):** 10,920\n- **Total (RM):** 32,760\n\n> **Published conditions:** First Payment (Upon Registration):\n> Diploma: RM14,500\n> Bachelor / Master / PhD: RM17,500\n> \n> Important Notes:\n> â€¢ EMGS fee is non-refundable.\n> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:\n> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) \n> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) \n> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.\n> \n> Important Notes:\n> â€¢ Fees listed include 6% SST.\n> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.\n> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.\n\n[Source: fee table](Fees_Chart/binary-fees.html)\n\n**KL University of Science & Technology (KLUST) — Bachelor of Computer Science (Hons)**\nBACHELOR PROGRAMS\n- **Duration:** 3 years\n- **Published Fees:** RM 62,400\n- **Scholarship:** RM 18,720\n- **Total Fees:** RM 40,752\n\n> **Published conditions:** Initial Fees:\n> EMGS Fees: RM3,200 (Non-refundable)\n> International Student Fees: RM8,000\n> Caution Fees (Refundable): RM1,500\n> \n> Total Initial Payment: RM18,000\n> (Includes EMGS, Intl Fee, Caution Fee, and 1st Semester Tuition Fees)\n> \n> Payment Schedule:\n> 1st Payment: RM18,000 (Total Initial Payment)\n> Visa Renewal Fee: RM1,000 per annum (from 2nd year onwards)\n> Study Extension: Regular fees apply.\n\n[Source: fee table](Fees_Chart/klust-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor if Computer Science Software Development) witti Hondura**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Banner Of Computer Science (Computes Networking) with Honours**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science (latabase Management) with Honours**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science Interactive Medin with Hormors**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\nFee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.\n\nEntries with an explicit comparable total are shown in ascending order; unpriced or differently labelled entries cannot establish the cheapest overall cost. Tuition, living costs and visa charges must be checked separately.\n\nShowing 6 of 49 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**Lowest comparable published total amount in these matches:** KL University of Science & Technology (KLUST) — Bachelor of Computer Science (Hons): **RM40,752**.\n\n**KL University of Science & Technology (KLUST) — Bachelor of Computer Science (Hons)**\nBACHELOR PROGRAMS\n- **Duration:** 3 years\n- **Published Fees:** RM 62,400\n- **Scholarship:** RM 18,720\n- **Total Fees:** RM 40,752\n\n> **Published conditions:** Initial Fees:\n> EMGS Fees: RM3,200 (Non-refundable)\n> International Student Fees: RM8,000\n> Caution Fees (Refundable): RM1,500\n> \n> Total Initial Payment: RM18,000\n> (Includes EMGS, Intl Fee, Caution Fee, and 1st Semester Tuition Fees)\n> \n> Payment Schedule:\n> 1st Payment: RM18,000 (Total Initial Payment)\n> Visa Renewal Fee: RM1,000 per annum (from 2nd year onwards)\n> Study Extension: Regular fees apply.\n\n[Source: fee table](Fees_Chart/klust-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor if Computer Science Software Development) witti Hondura**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Banner Of Computer Science (Computes Networking) with Honours**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science (latabase Management) with Honours**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science Interactive Medin with Hormors**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\n**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science (Artificial Intelligence) with Honours**\nUNDERGRADUATE DEGREE PROGRAMMES\n- **Level:** Degree\n- **Duration:** 3.5 years\n- **Total Tuition Fees:** RM 41,000.00\n\n> **Published conditions:** Entry Requirements for International Students:\n> - Have completed at least twelve (12) years of education.\n> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.\n> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).\n> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.\n> \n> Course Fees:\n> - All listed course fees are excluding student accommodation.\n\n[Source: fee table](Fees_Chart/utem-fees.html)\n\nFee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.\n\nEntries with an explicit comparable total are shown in ascending order; unpriced or differently labelled entries cannot establish the cheapest overall cost. Tuition, living costs and visa charges must be checked separately.\n\nShowing 6 of 48 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
         "context": {
             "levels": [
                 "bachelor"
@@ -2293,20 +2267,13 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
         "matched_q": null,
         "confidence": null,
         "sources": [
-            {
-                "type": "fees",
-                "file": "data/fees_data.json",
-                "pointer": "/binary/categories/0/table/rows/7",
-                "title": "Binary University of Management & Entrepreneurship: All Programs",
-                "url": "Fees_Chart/binary-fees.html"
-            },
             {
                 "type": "fees",
                 "file": "data/fees_data.json",
@@ -2341,6 +2308,13 @@
                 "pointer": "/utem/categories/7/table/rows/27",
                 "title": "Universiti Teknikal Malaysia Melaka (UTeM): UNDERGRADUATE DEGREE PROGRAMMES",
                 "url": "Fees_Chart/utem-fees.html"
+            },
+            {
+                "type": "fees",
+                "file": "data/fees_data.json",
+                "pointer": "/utem/categories/7/table/rows/28",
+                "title": "Universiti Teknikal Malaysia Melaka (UTeM): UNDERGRADUATE DEGREE PROGRAMMES",
+                "url": "Fees_Chart/utem-fees.html"
             }
         ],
         "buttons": [
@@ -2355,7 +2329,7 @@
             "Show more"
         ],
         "engine": "local-retrieval-v3",
-        "result_count": 49
+        "result_count": 48
     },
     {
         "number": 55,
@@ -2376,7 +2350,7 @@
             "language": "en",
             "fee_period": "total",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2433,7 +2407,7 @@
             "nationality": "Bangladesh",
             "guide": "scholarship-advice",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2484,7 +2458,7 @@
             "nationality": "Bangladesh",
             "guide": "living-cost",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2529,7 +2503,7 @@
             "nationality": "Bangladesh",
             "guide": "part-time",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2539,7 +2513,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/25",
+                "pointer": "/entries/26",
                 "title": "Education Malaysia student FAQ",
                 "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
                 "origin": "Official Education Malaysia FAQ checked 2026-09-12",
@@ -2568,7 +2542,7 @@
             "nationality": "Bangladesh",
             "guide": "visa-process",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2578,7 +2552,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/26",
+                "pointer": "/entries/28",
                 "title": "EMGS required documents",
                 "url": "https://visa.educationmalaysia.gov.my/guidelines/required-documents",
                 "origin": "data/emgs_source.txt",
@@ -2607,7 +2581,7 @@
             "nationality": "Bangladesh",
             "guide": "bank-balance",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2646,7 +2620,7 @@
             "nationality": "Bangladesh",
             "guide": "english-admission",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2684,7 +2658,7 @@
             "language": "en",
             "guide": "profile",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2722,7 +2696,7 @@
             "language": "en",
             "guide": "study-gap",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2754,7 +2728,7 @@
         "number": 64,
         "question": "I am looking for a Master's or MBA program in Malaysia.",
         "story": 4,
-        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Master of Business Administration (MBA)**\n- **Duration:** 1 Year\n\n[Source: program details](Universities/cityu-details.html)\n\n**City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**\n- **Duration:** 2 Years\n\n[Source: program details](Universities/cityu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**\n- **Duration:** 1-1.5 Years (3 Semesters)\n\n[Source: program details](Universities/apu-details.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**\n- **Duration:** 2 Years\n\n[Source: program details](Universities/apu-details.html)\n\n**University College MAIWP International (UCMI) — Master of Business Administration (MBA)**\n- **Duration:** 1-3 Years\n\n[Source: program details](Universities/ucmi-details.html)\n\n**GENOVASI UNIVERSITY MALAYSIA — Master of Business Administration**\n- **Duration:** 1.5 Years\n\n[Source: program details](Universities/genovasi-details.html)\n\nShowing 6 of 140 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**City University Malaysia — Master of Business Administration (MBA)**\n- **Level:** Master\n- **Duration:** 1 Year\n\n[Source: program details](Universities/cityu-university.html)\n\n**City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**\n- **Level:** Master\n- **Duration:** 2 Years\n\n[Source: program details](Universities/cityu-university.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**\n- **Level:** Master\n- **Duration:** 1-1.5 Years (3 Semesters)\n\n[Source: program details](Universities/apu-university.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**\n- **Level:** Master\n- **Duration:** 2 Years\n\n[Source: program details](Universities/apu-university.html)\n\n**GENOVASI UNIVERSITY MALAYSIA — Master of Business Administration**\n- **Level:** Master\n- **Duration:** 1.5 Years\n\n[Source: program details](Universities/genovasi-university.html)\n\n**BAC EDUCATION GROUP — Master of Business Administration (MBA) (By coursework)**\n- **Level:** Master\n- **Duration:** 1.5 Years\n\n[Source: program details](Universities/bac-university.html)\n\nShowing 6 of 134 matching entries.",
         "context": {
             "levels": [
                 "master"
@@ -2765,7 +2739,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2776,29 +2750,29 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "City University Malaysia programs",
-                "url": "Universities/cityu-details.html",
+                "url": "Universities/cityu-university.html",
                 "program_index": 56
             },
             {
                 "type": "program",
                 "file": "universities.json",
                 "title": "Asia Pacific University of Technology & Innovation (APU) programs",
-                "url": "Universities/apu-details.html",
+                "url": "Universities/apu-university.html",
                 "program_index": 19
             },
             {
                 "type": "program",
                 "file": "universities.json",
-                "title": "University College MAIWP International (UCMI) programs",
-                "url": "Universities/ucmi-details.html",
-                "program_index": 26
+                "title": "GENOVASI UNIVERSITY MALAYSIA programs",
+                "url": "Universities/genovasi-university.html",
+                "program_index": 8
             },
             {
                 "type": "program",
                 "file": "universities.json",
-                "title": "GENOVASI UNIVERSITY MALAYSIA programs",
-                "url": "Universities/genovasi-details.html",
-                "program_index": 8
+                "title": "BAC EDUCATION GROUP programs",
+                "url": "Universities/bac-university.html",
+                "program_index": 12
             }
         ],
         "buttons": [
@@ -2814,13 +2788,13 @@
             "What are the fees?"
         ],
         "engine": "local-retrieval-v3",
-        "result_count": 140
+        "result_count": 134
     },
     {
         "number": 65,
         "question": "What are the fees for MBA in SEGi?",
         "story": 4,
-        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**\nMASTER'S PROGRAMS (SEGi University KD)\n- **Total Fee (MYR):** 54,350\n- **Year 1 (MYR):** 51,200\n\n> **Published conditions:** Initial Payment: MYR 3,150.00\n> Note: Masters fees exclude EMGS/Visa renewal fees\n\n[Source: fee table](Fees_Chart/segi-fees.html)\n\nShowing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**\nMASTER'S PROGRAMS (SEGi University KD)\n- **Total Fee (MYR):** RM54,350\n- **Year 1 (MYR):** RM51,200\n\n> **Published conditions:** Initial Payment: MYR 3,150.00\n> Note: Masters fees exclude EMGS/Visa renewal fees\n\n[Source: fee table](Fees_Chart/segi-fees.html)\n\nShowing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
         "context": {
             "universities": [
                 "segi"
@@ -2834,7 +2808,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2871,7 +2845,7 @@
         "number": 66,
         "question": "Can you compare SEGi and APU for MBA?",
         "story": 4,
-        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**\nMASTER'S PROGRAMS (SEGi University KD)\n- **Total Fee (MYR):** 54,350\n- **Year 1 (MYR):** 51,200\n\n> **Published conditions:** Initial Payment: MYR 3,150.00\n> Note: Masters fees exclude EMGS/Visa renewal fees\n\n[Source: fee table](Fees_Chart/segi-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**\nMASTER PROGRAMS\n- **Duration:** 1-1.5 Years (3 Semesters)\n- **Total Tuition Fees:** RM 38,800\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**\nMASTER PROGRAMS\n- **Duration:** 2 Years\n- **Total Tuition Fees:** RM 31,000\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\nFee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.\n\nShowing 3 of 3 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
+        "reply": "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n**SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**\nMASTER'S PROGRAMS (SEGi University KD)\n- **Total Fee (MYR):** RM54,350\n- **Year 1 (MYR):** RM51,200\n\n> **Published conditions:** Initial Payment: MYR 3,150.00\n> Note: Masters fees exclude EMGS/Visa renewal fees\n\n[Source: fee table](Fees_Chart/segi-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**\nMASTER PROGRAMS\n- **Duration:** 1-1.5 Years (3 Semesters)\n- **Total Tuition Fees:** RM 38,800\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\n**Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**\nMASTER PROGRAMS\n- **Duration:** 2 Years\n- **Total Tuition Fees:** RM 31,000\n\n> **Published conditions:** Master's DMU Dual Degree requires an additional GBP 500 fee. Postgraduate fees exclude the 6% SST.\n\n[Source: fee table](Fees_Chart/apu-fees.html)\n\nFee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.\n\nShowing 3 of 3 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.",
         "context": {
             "universities": [
                 "segi",
@@ -2886,7 +2860,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2952,7 +2926,7 @@
             "language": "en",
             "guide": "english-admission",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -2990,7 +2964,7 @@
             "language": "en",
             "guide": "conduct",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3000,7 +2974,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/19",
+                "pointer": "/entries/20",
                 "title": "EMGS Graduate Pass",
                 "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
                 "origin": "data/emgs_source.txt",
@@ -3029,7 +3003,7 @@
             "nationality": "Bangladesh",
             "guide": "visa-outcome",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3077,7 +3051,7 @@
             "nationality": "Bangladesh",
             "guide": "dependents",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3087,7 +3061,7 @@
             {
                 "type": "guidance",
                 "file": "data/emgs_knowledge.json",
-                "pointer": "/entries/20",
+                "pointer": "/entries/21",
                 "title": "EMGS Graduate Pass",
                 "url": "https://visa.educationmalaysia.gov.my/graduate-pass",
                 "origin": "data/emgs_source.txt",
@@ -3116,7 +3090,7 @@
             "nationality": "Bangladesh",
             "guide": "graduate",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3153,7 +3127,7 @@
             "intent": "rankings",
             "ranking_scope": "all",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16",
+            "knowledge_version": "24620ae6eeeade6f",
             "language": "en"
         },
         "status": "clarification",
@@ -3189,7 +3163,7 @@
             "intent": "overview",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -3200,7 +3174,7 @@
                 "type": "university",
                 "file": "university_meta.json / universities.json",
                 "title": "Universiti Teknologi Malaysia (UTM)",
-                "url": "Universities/utm-details.html"
+                "url": "Universities/utm-university.html"
             }
         ],
         "buttons": [
@@ -3227,7 +3201,7 @@
         "number": 74,
         "question": "I am interested in MSc in Electrical Engineering.",
         "story": 5,
-        "reply": "Here are matching entries from our local catalog.\n\n**Lincoln University College — Master of Science in Electrical & Electronics Engineering**\n\n[Source: program details](Universities/lincoln-details.html)\n\n**Universiti Kuala Lumpur (UniKL) — Master of Electrical Engineering**\n\n[Source: program details](Universities/unikl-details.html)\n\n**Universiti Kuala Lumpur (UniKL) — Master of Engineering Technology (Electrical and Electronics)**\n\n[Source: program details](Universities/unikl-details.html)\n\n**Universiti Putra Malaysia (UPM) — Master in Electrical Power Engineering**\n- **Duration:** 2 Years\n\n[Source: program details](Universities/upm-details.html)\n\n**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**\n\n[Source: program details](Universities/utm-details.html)\n\n**Lincoln University College — Master of Science in Electrical & Electronics Engineering**\n- **Duration:** Year 1 Year 2\n\n[Source: program details](Fees_Chart/lincoln-fees.html)\n\nShowing 6 of 12 matching entries.",
+        "reply": "Here are matching entries from our local catalog.\n\n**Lincoln University College — Master of Science in Electrical & Electronics Engineering**\n- **Level:** Master\n\n[Source: program details](Universities/lincoln-university.html)\n\n**Universiti Kuala Lumpur (UniKL) — Master of Electrical Engineering**\n- **Level:** Master\n\n[Source: program details](Universities/unikl-university.html)\n\n**Universiti Kuala Lumpur (UniKL) — Master of Engineering Technology (Electrical and Electronics)**\n- **Level:** Master\n\n[Source: program details](Universities/unikl-university.html)\n\n**Universiti Putra Malaysia (UPM) — Master in Electrical Power Engineering**\n- **Level:** Master\n- **Duration:** 2 Years\n\n[Source: program details](Universities/upm-university.html)\n\n**Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**\n- **Level:** Master\n\n[Source: program details](Universities/utm-university.html)\n\n**Lincoln University College — Master of Science in Electrical & Electronics Engineering**\n- **Level:** Master\n- **Duration:** Year 1 Year 2\n\n[Source: program details](Fees_Chart/lincoln-fees.html)\n\nShowing 6 of 12 matching entries.",
         "context": {
             "levels": [
                 "master"
@@ -3239,7 +3213,7 @@
             "intent": "programs",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3250,28 +3224,28 @@
                 "type": "program",
                 "file": "universities.json",
                 "title": "Lincoln University College programs",
-                "url": "Universities/lincoln-details.html",
+                "url": "Universities/lincoln-university.html",
                 "program_index": 65
             },
             {
                 "type": "program",
                 "file": "universities.json",
                 "title": "Universiti Kuala Lumpur (UniKL) programs",
-                "url": "Universities/unikl-details.html",
+                "url": "Universities/unikl-university.html",
                 "program_index": 127
             },
             {
                 "type": "program",
                 "file": "universities.json",
                 "title": "Universiti Putra Malaysia (UPM) programs",
-                "url": "Universities/upm-details.html",
+                "url": "Universities/upm-university.html",
                 "program_index": 105
             },
             {
                 "type": "program",
                 "file": "universities.json",
                 "title": "Universiti Teknologi Malaysia (UTM) programs",
-                "url": "Universities/utm-details.html",
+                "url": "Universities/utm-university.html",
                 "program_index": 47
             },
             {
@@ -3301,7 +3275,7 @@
         "number": 75,
         "question": "How much does it cost at UTM for engineering?",
         "story": 5,
-        "reply": "Matching program entries exist, but their local fee rows contain **no monetary fee amount**. I cannot quote a cost from study-mode or duration labels. Please ask the university or a counselor for the current fee schedule.",
+        "reply": "Matching program entries for **Universiti Teknologi Malaysia (UTM)** exist, but their local fee rows contain **no monetary fee amount**. I cannot quote a cost from study-mode or duration labels. Please ask the university or a counselor for the current fee schedule.",
         "context": {
             "universities": [
                 "utm"
@@ -3315,7 +3289,7 @@
             "intent": "fees",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -3377,7 +3351,7 @@
             "language": "en",
             "guide": "scholarship-advice",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3421,7 +3395,7 @@
             "language": "en",
             "guide": "government-scholarship",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "partial",
         "isFallback": true,
@@ -3431,7 +3405,7 @@
             {
                 "type": "guidance",
                 "file": "data/counselor_knowledge.json",
-                "pointer": "/entries/11",
+                "pointer": "/entries/12",
                 "title": "Local scholarship options",
                 "url": "scholarship-options.html",
                 "origin": "Local guidance; current awards, amounts, deadlines and eligibility not independently verified",
@@ -3453,7 +3427,7 @@
         "number": 78,
         "question": "What is the global ranking of UM compared to Taylor's?",
         "story": 5,
-        "reply": "**Universiti Malaya (UM)**\n- Universiti Malaya (UM) is ranked #56 in QS World University Rankings 2027.\n\n**Taylor's University**\n- Taylor's University is ranked #272 in QS World University Rankings 2027.\n[Rankings and FAQs](Universities/taylors-details.html#rankings)\n\nUniversiti Malaya (UM) has the higher position in QS World University Rankings 2027 (a smaller rank number).\n\nVerified 2026-09-12. An = sign means a tied rank; a range is a band, not an exact position.\n\nSources: [Universiti Malaya (UM) - QS profile](https://www.topuniversities.com/universities/universiti-malaya-um) · [QS World University Rankings 2027 - official results spreadsheet (v1.1)](https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx) · [Taylor's University - QS profile](https://www.topuniversities.com/universities/taylors-university)",
+        "reply": "**Universiti Malaya (UM)**\n- Universiti Malaya (UM) is ranked #56 in QS World University Rankings 2027.\n\n**Taylor's University**\n- Taylor's University is ranked #272 in QS World University Rankings 2027.\n[Rankings and FAQs](Universities/taylors-university#rankings)\n\nUniversiti Malaya (UM) has the higher position in QS World University Rankings 2027 (a smaller rank number).\n\nVerified 2026-09-12. An = sign means a tied rank; a range is a band, not an exact position.\n\nSources: [Universiti Malaya (UM) - QS profile](https://www.topuniversities.com/universities/universiti-malaya-um) · [QS World University Rankings 2027 - official results spreadsheet (v1.1)](https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx) · [Taylor's University - QS profile](https://www.topuniversities.com/universities/taylors-university)",
         "context": {
             "universities": [
                 "um",
@@ -3463,7 +3437,7 @@
             "ranking_scope": "world",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3526,7 +3500,7 @@
             "language": "en",
             "guide": "english-admission",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3572,7 +3546,7 @@
             "intent": "faq",
             "language": "en",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "not_found",
         "isFallback": true,
@@ -3604,7 +3578,7 @@
             "nationality": "United Kingdom",
             "guide": "uk-transfer",
             "version": 3,
-            "knowledge_version": "2ee1d58e3a54de16"
+            "knowledge_version": "24620ae6eeeade6f"
         },
         "status": "answered",
         "isFallback": false,
@@ -3614,7 +3588,7 @@
             {
                 "type": "guidance",
                 "file": "data/counselor_knowledge.json",
-                "pointer": "/entries/10",
+                "pointer": "/entries/11",
                 "title": "One-Step counseling guidance and data limitations",
                 "url": "contact.html",
                 "origin": "Reviewed counseling responses; individual eligibility and unrecorded facts require confirmation",

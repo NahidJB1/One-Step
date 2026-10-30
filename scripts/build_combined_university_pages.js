@@ -2,16 +2,19 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const {renderCourses} = require('./university_course_cards');
+const {accommodation, renderAccommodation} = require('./university_accommodation');
 
 const root = path.resolve(__dirname, '..');
 const checkOnly = process.argv.includes('--check');
 const configs = {
   bac: {name:'BAC Education Group', short:'BAC', logo:'bac/bac-logo.png', hero:'bac/bac_main.jpg'},
-  alfa: {name:'ALFA University Malaysia', short:'ALFA', logo:'alfa/alfa-logo.png', hero:'alfa/alfa_main.jpg'},
+  alfa: {name:'ALFA University College', short:'ALFA', logo:'alfa/alfa-logo.png', hero:'alfa/alfa_main.jpg'},
   inti: {name:'INTI International University', short:'INTI', logo:'inti/inti-logo.png', hero:'inti/inti_main.jpg'},
   klust: {name:'KL University of Science & Technology', short:'KLUST', logo:'klust/klust-logo.png', hero:'klust/klust-main.webp'},
-  cityu: {name:'City University Malaysia', short:'CityU', logo:'cityu/cityu_main.jpg', hero:'cityu/cityu_main.jpg'},
+  cityu: {name:'City University Malaysia', short:'CityU', logo:'cityu/cityu-logo.png', hero:'cityu/cityu_main.jpg'},
   cyberjaya: {name:'University of Cyberjaya', short:'UoC', logo:'cyberjaya/University-of-Cyberjaya-logo.png', hero:'cyberjaya/cyberjaya_main.jpg'},
+  genovasi: {name:'Genovasi University College', short:'Genovasi', logo:'genovasi/genovasi-logo.png', hero:'genovasi/genovasi-main.jpg'},
   segi: {name:'SEGi University Malaysia', short:'SEGi', logo:'segi/segi-logo.png', hero:'segi/segi_main.jpg'},
   kings: {name:'Kings University College', short:'Kings', logo:'kings/kings-logo.png', hero:'kings/kings-main.jpg'},
   taylors: {name:"Taylor's University", short:"Taylor's", logo:'taylors/taylors-logo.png', hero:'taylors/taylors-main.jpg'},
@@ -33,7 +36,51 @@ const configs = {
   utm: {name:'Universiti Teknologi Malaysia', short:'UTM', logo:'utm/UTM_logo.png', hero:'utm/utm_campus.webp'}
 };
 
+// Search titles use the commonly recognized name while the on-page identity stays unchanged.
+const seoNames = {
+  bac:'BAC Education Group', alfa:'ALFA University College', inti:'INTI', klust:'KLUST',
+  cityu:'City University Malaysia', cyberjaya:'University of Cyberjaya', segi:'SEGi',
+  genovasi:'Genovasi University College',
+  kings:'Kings University College', taylors:"Taylor's University", unirazak:'UNIRAZAK',
+  amu:'Asia Metropolitan University', apu:'APU', help:'HELP University', icms:'ICMS',
+  limkokwing:'Limkokwing University', lincoln:'Lincoln University College', mmu:'MMU',
+  ucsi:'UCSI University', unikl:'UniKL', umw:'IUMW', iium:'IIUM', uow:'UOW Malaysia',
+  upm:'UPM', utem:'UTeM', utm:'UTM'
+};
+// Only these merged pages currently publish living-cost figures.
+const livingCostIds = new Set(['upm', 'utm']);
+
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
+const articles = JSON.parse(read('data/university_articles.json'));
+const researchFaqIds = {
+  'Multimedia University (MMU)':'mmu',
+  'UCSI University':'ucsi',
+  "Taylor's University":'taylors',
+  'Asia Pacific University of Technology & Innovation (APU)':'apu',
+  'City University Malaysia':'cityu',
+  'University of Cyberjaya':'cyberjaya',
+  'SEGi University':'segi',
+  'Limkokwing University of Creative Technology':'limkokwing',
+  'KL University of Science & Technology (KLUST)':'klust',
+  'INTI International University':'inti',
+  'Universiti Kuala Lumpur (UniKL)':'unikl',
+  'HELP University':'help',
+  'International University of Malaya-Wales (IUMW)':'umw',
+  'Universiti Teknologi Malaysia (UTM)':'utm',
+  'Universiti Teknikal Malaysia Melaka (UTeM)':'utem'
+};
+function researchFaqs() {
+  const markdown = read('docs/youruni-faq-research.md');
+  const output = {};
+  let id = null;
+  for (const line of markdown.split(/\r?\n/)) {
+    if (line.startsWith('## ')) id = researchFaqIds[line.slice(3).trim()] || null;
+    const match = line.match(/^- \*\*(.+?)\*\*\s+(.+)$/);
+    if (id && match) (output[id] ||= []).push({question:match[1], answer:match[2]});
+  }
+  return output;
+}
+const researchedFaqs = researchFaqs();
 const esc = value => String(value).replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const plain = html => html.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const between = (html, start, end) => {
@@ -72,11 +119,45 @@ function feeChart(fee, id) {
   if (fee.includes('id="dynamicFeesContainer"')) return balancedElement(fee, 'id="dynamicFeesContainer"');
   const start = fee.indexOf('<button class="accordion"');
   const end = fee.indexOf('<div class="view-details-btn-container"', start);
-  if (start < 0 || end < 0) throw new Error(`Unable to isolate authored fee chart: ${id}`);
+  if (start < 0 || end < 0) {
+    try { return `<div id="dynamicFeesContainer" class="authored-fee-chart">${balancedElement(fee, 'class="panel"')}</div>`; }
+    catch { throw new Error(`Unable to isolate authored fee chart: ${id}`); }
+  }
   return `<div id="dynamicFeesContainer" class="authored-fee-chart">${fee.slice(start, end)}</div>`;
 }
 function detailsFrom(markup) {
   return [...markup.matchAll(/<details\b[\s\S]*?<\/details>/gi)].map(m => m[0]);
+}
+function faqIntent(question) {
+  const text = plain(question).toLowerCase();
+  if (/ranking|ranked|qs world|qs asia/.test(text)) return 'ranking';
+  if (/where (?:is|are)|located|location/.test(text)) return 'location';
+  if (/accredit|recognis|recogniz/.test(text)) return 'accreditation';
+  if (/intake|registration date|programme start|program start/.test(text)) return 'intakes';
+  if (/ielts|toefl|english (?:score|language|requirement)/.test(text)) return 'english';
+  if (/documents? (?:are )?(?:required|requested)|registration documents/.test(text)) return 'documents';
+  if (/on-campus accommodation/.test(text)) return 'on-campus-accommodation';
+  if (/off-campus (?:accommodation|housing)/.test(text)) return 'off-campus-accommodation';
+  return '';
+}
+function expandResearchAnswer(question, answer, cfg) {
+  let copy = answer
+    .replace(/^The (?:source )?page says /, `${cfg.short} is described as `)
+    .replace(/^The source says /, `${cfg.short} is described as `)
+    .replace(/^It gives /, 'The listed requirement is ')
+    .replace(/^It lists /, 'The listed information includes ')
+    .replace(/^The FAQ gives /, 'The listed address is ');
+  const guidance = {
+    accreditation:'Accreditation applies to the individual qualification, so confirm the exact programme in the Malaysian Qualifications Register and on the current offer letter.',
+    intakes:'Intakes and application deadlines can differ by programme and campus; confirm the current dates before arranging travel or a visa application.',
+    english:'English requirements can be higher for particular programmes or professional fields, and the university must confirm which tests and score editions it accepts.',
+    documents:'The university may also request certified academic records, translations, English-language evidence or additional visa documents after reviewing the application.',
+    'on-campus-accommodation':'A room is not guaranteed until it is confirmed in writing, so check availability, room type, rent, deposit and included utilities for the intended intake.',
+    'off-campus-accommodation':'Compare the tenancy term, deposit, utilities, travel time and transport before committing to a private room.',
+    location:'Use the campus stated on the offer letter because teaching locations and available programmes can differ.',
+    ranking:'Rankings change by edition and subject, so compare the named table and year rather than treating one position as a permanent university-wide result.'
+  };
+  return `${copy} ${guidance[faqIntent(question)] || 'Confirm the current programme-specific details with the university before applying.'}`;
 }
 function faqParts(detail, fee) {
   const blocks = [
@@ -87,9 +168,25 @@ function faqParts(detail, fee) {
   const seen = new Set();
   return blocks.flatMap(detailsFrom).filter(item => {
     const summary = plain((item.match(/<summary>([\s\S]*?)<\/summary>/i) || [,''])[1]).toLowerCase();
-    if (!summary || seen.has(summary)) return false;
+    if (!summary || /^(view ranking sources|programme examples in the stored fee schedule)$/.test(summary.toLowerCase()) || seen.has(summary)) return false;
     seen.add(summary); return true;
   });
+}
+function mergedFaqParts(id, cfg, detail, fee) {
+  const existing = faqParts(detail, fee);
+  const intents = new Set(existing.map(item => faqIntent((item.match(/<summary>([\s\S]*?)<\/summary>/i) || [,''])[1])).filter(Boolean));
+  const exact = new Set(existing.map(item => plain((item.match(/<summary>([\s\S]*?)<\/summary>/i) || [,''])[1]).toLowerCase()));
+  const semanticDedupes = new Set(['ranking','location']);
+  const added = (researchedFaqs[id] || []).filter(item => {
+    if (/(?:does not give|gives no) dates|supplies no answer|does not provide a location answer|mismatched source answer/i.test(item.answer)) return false;
+    const normalized = plain(item.question).toLowerCase();
+    const intent = faqIntent(item.question);
+    if (exact.has(normalized) || (semanticDedupes.has(intent) && intents.has(intent))) return false;
+    exact.add(normalized);
+    if (intent) intents.add(intent);
+    return true;
+  }).map(item => `<details class="editorial-faq"><summary>${esc(item.question)}</summary><p>${esc(expandResearchAnswer(item.question,item.answer,cfg))}</p></details>`);
+  return [...existing, ...added];
 }
 function faqSchema(items) {
   return items.map(item => {
@@ -107,9 +204,22 @@ function studyCopy(data, cfg) {
   const copy = data.detail_intro || `Compare ${cfg.name} courses, campuses, fees and entry requirements for your intended intake.`;
   return `<p>${esc(copy)}</p>`;
 }
+function renderArticle(id, cfg) {
+  const article = articles[id];
+  if (!article) return '';
+  if (article.images.length < 2 || article.images.length !== article.captions.length) throw new Error(`Incomplete article images: ${id}`);
+  const figures = article.images.map((file, index) => {
+    const imagePath = `assets/images/universities/${file}`;
+    if (!fs.existsSync(path.join(root, imagePath))) throw new Error(`Missing article image: ${imagePath}`);
+    const caption = article.captions[index];
+    return `<figure class="article-photo"><img src="/${esc(imagePath)}" alt="${esc(cfg.name)}: ${esc(caption)}" loading="lazy" decoding="async"><figcaption>${esc(caption)}</figcaption></figure>`;
+  }).join('');
+  const photoClass = article.images.length === 2 ? 'article-photo-grid article-photo-grid--two' : 'article-photo-grid';
+  return `<section class="combined-shell article-tab" id="articles" hidden aria-labelledby="article-title"><article class="combined-section university-article"><div class="article-heading"><p class="article-kicker">University perspective <span aria-hidden="true">/</span> ${esc(cfg.short)}</p><h2 id="article-title">${esc(article.title)}</h2><p class="article-dek">${esc(article.dek)}</p></div><div class="${photoClass}">${figures}</div><div class="article-body">${article.paragraphs.map(paragraph => `<p>${esc(paragraph)}</p>`).join('')}</div></article></section>`;
+}
 function documentFor(id, cfg, detail, fee, data) {
   const canonical = `https://www.onestepmy.com/Universities/${id}-university`;
-  const faqs = faqParts(detail, fee);
+  const faqs = mergedFaqParts(id, cfg, detail, fee);
   const schema = {'@context':'https://schema.org','@graph':[
     {'@type':'CollegeOrUniversity','@id':canonical+'#university',name:cfg.name,url:canonical},
     {'@type':'BreadcrumbList',itemListElement:[]}
@@ -120,8 +230,12 @@ function documentFor(id, cfg, detail, fee, data) {
     {'@type':'ListItem',position:3,name:cfg.name,item:canonical}
   ]};
   schema['@graph'].push({'@type':'FAQPage','@id':canonical+'#faq',mainEntity:faqSchema(faqs)});
-  const title = `${cfg.name}: Courses, Fees & Rankings | One-Step`;
-  const description = `Explore ${cfg.name} courses and international tuition fees, QS rankings, campus gallery, accommodation information and application guidance.`;
+  const title = `${seoNames[id]} | Fees, Courses & Ranking 2026`;
+  const descriptionName = cfg.name;
+  const descriptionTopics = livingCostIds.has(id)
+    ? 'tuition fees, living costs, rankings and scholarships'
+    : 'tuition fees, courses, rankings and scholarships';
+  const description = `A clear guide to ${descriptionTopics} at ${descriptionName} for international students.`;
   return `<!DOCTYPE html>
 <html lang="en"><head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019" crossorigin="anonymous"></script>
@@ -130,14 +244,16 @@ function documentFor(id, cfg, detail, fee, data) {
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/index.css"><link rel="stylesheet" href="../assets/css/fees.css"><link rel="stylesheet" href="../assets/css/university-details.css"><link rel="stylesheet" href="../assets/css/study-content.css"><link rel="stylesheet" href="../assets/css/combined-university.css"><link rel="stylesheet" href="/assets/css/mobile.css">
+<link rel="stylesheet" href="../assets/css/index.css"><link rel="stylesheet" href="../assets/css/fees.css"><link rel="stylesheet" href="../assets/css/university-details.css"><link rel="stylesheet" href="../assets/css/study-content.css"><link rel="stylesheet" href="../assets/css/combined-university.css?v=20261016-accommodation-photos-1"><link rel="stylesheet" href="/assets/css/mobile.css"><!-- seo:support-style:start -->
+<link rel="stylesheet" href="/assets/css/student-support.css">
+<!-- seo:support-style:end -->
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}">
 <script type="application/ld+json">${JSON.stringify(schema)}</script></head>
 <body class="combined-university-page" data-university="${id}"><div id="global-nav-placeholder"></div>
 <main>
-<header class="combined-hero" style="--hero-image:url('../assets/images/universities/${cfg.hero}')"><div class="combined-hero-overlay"></div><div class="combined-hero-content"><img class="combined-logo" src="../assets/images/universities/${cfg.logo}" alt="${esc(cfg.name)} logo"><div><p class="combined-eyebrow">Study in Malaysia</p><h1>${esc(cfg.name)}</h1><div class="combined-hero-actions"><a class="combined-primary" href="/apply?university=${id}">Apply now</a><a class="combined-secondary" href="/contact">Ask us</a></div></div></div></header>
-<nav class="combined-tabs" aria-label="University sections"><a class="active" href="#overview">Overview</a><span aria-disabled="true">Courses <small>Later</small></span><span aria-disabled="true">Articles <small>Later</small></span><span aria-disabled="true">Accommodation <small>Later</small></span></nav>
+<header class="combined-hero" style="--hero-image:url('/assets/images/universities/${cfg.hero}')"><div class="combined-hero-overlay"></div><div class="combined-hero-content"><div class="combined-hero-identity"><img class="combined-logo" src="../assets/images/universities/${cfg.logo}" alt="${esc(cfg.name)} logo"><span class="combined-eyebrow">University guide <span aria-hidden="true">/</span> Malaysia</span></div><h1>${esc(cfg.name)}</h1><p class="combined-hero-lead">Explore courses, international fees, campus life and your path to applying.</p><div class="combined-hero-actions"><a class="combined-primary" href="/apply?university=${id}">Apply now <span aria-hidden="true">↗</span></a><a class="combined-secondary" href="#courses">Explore courses <span aria-hidden="true">→</span></a></div></div><span class="combined-hero-caption">${esc(cfg.short)} <span aria-hidden="true">·</span> Study in Malaysia</span></header>
+<div class="combined-tabs-wrap"><nav class="combined-tabs" aria-label="University sections"><a class="active" href="#overview">Overview</a><a href="#courses" aria-controls="courses">Courses</a>${articles[id] ? '<a href="#articles" aria-controls="articles">Articles</a>' : '<span aria-disabled="true">Articles</span>'}${accommodation[id] ? '<a href="#accommodation" aria-controls="accommodation">Accommodation</a>' : '<span aria-disabled="true">Accommodation</span>'}</nav><button class="combined-tabs-more" type="button" aria-label="Show more university sections" hidden>More <span aria-hidden="true">→</span></button></div>
 <div class="combined-shell" id="overview">
 <section class="combined-section about-section"><div class="section-heading"><p>University overview</p><h2>About ${esc(cfg.name)}</h2></div><div class="about-copy">${firstAbout(detail)}</div>${gallery(detail)}</section>
 <section class="combined-section international-section"><div class="section-heading"><p>International students</p><h2>Study at ${esc(cfg.name)} as an international student</h2></div>${studyCopy(data,cfg)}</section>
@@ -145,21 +261,25 @@ function documentFor(id, cfg, detail, fee, data) {
 <!-- rankings:content:start -->${ranking(detail)}<!-- rankings:content:end -->
 <section class="combined-section campus-gallery"><div class="section-heading"><p>Explore the campus</p><h2>Campus gallery</h2></div>${gallery(detail)}</section>
 <section class="combined-section combined-faq" id="faq"><div class="section-heading"><p>Questions and answers</p><h2>Frequently Asked Questions About ${esc(cfg.name)} ${esc(cfg.short)}</h2></div>${faqs.join('\n')}</section>
-</div></main><div id="lightbox" class="lightbox"><span class="close-lightbox">&times;</span><img id="lightbox-img" alt="Campus image preview"></div><div id="global-footer-placeholder"></div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="../assets/js/footer.js"></script><script src="../assets/js/navbar.js"></script><script src="../assets/js/fees.js"></script><script src="../assets/js/combined-university.js"></script><script src="../assets/js/chatbot.js"></script></body></html>\n`;
+</div>${renderCourses(id,cfg.name,feeChart(fee,id))}${renderArticle(id,cfg)}${renderAccommodation(id,cfg.name)}</main><div id="lightbox" class="lightbox"><span class="close-lightbox">&times;</span><img id="lightbox-img" alt="Campus image preview"></div><!-- seo:student-support:start -->
+<aside class="support-inline"><h2>Support after you arrive in Malaysia</h2><p>Need help with airport pickup, a room, your clinic visit or university registration? Plan the next steps with One-Step.</p><a href="/student-support-malaysia">Explore student support and arrival arrangements &#8594;</a></aside>
+<!-- seo:student-support:end -->
+<div id="global-footer-placeholder"></div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="../assets/js/footer.js"></script><script src="../assets/js/navbar.js"></script><script src="../assets/js/fees.js"></script><script src="../assets/js/combined-university.js?v=20261016-accommodation-photos-1"></script></body></html>\n`;
 }
 
 const editorial = JSON.parse(read('data/university_seo_content.json'));
 let outdated = 0;
 for (const [id,cfg] of Object.entries(configs)) {
-  let detail = read(`Universities/${id}-details.html`);
+  let detail = read(`data/university_details/${id}-details.html`);
   const fee = read(`Fees_Chart/${id}-fees.html`);
   for (const mergedId of Object.keys(configs)) {
     detail = detail.replaceAll(`/Universities/${mergedId}-details`, `/Universities/${mergedId}-university`)
       .replaceAll(`/Fees_Chart/${mergedId}-fees#`, `/Universities/${mergedId}-university#`)
       .replaceAll(`/Fees_Chart/${mergedId}-fees`, `/Universities/${mergedId}-university#courses-fees`);
   }
-  const output = documentFor(id,cfg,detail,fee,editorial[id] || {});
+  let output = documentFor(id,cfg,detail,fee,editorial[id] || {});
+  if (id === 'alfa') output = output.replaceAll('Alfa University College', cfg.name);
   const file = path.join(root, 'Universities', `${id}-university.html`);
   if (!fs.existsSync(file) || fs.readFileSync(file,'utf8') !== output) {
     outdated++;

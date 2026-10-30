@@ -728,7 +728,14 @@
             // as clean URLs. Keep external links, downloads and API paths intact.
             if (url.origin === base.origin && url.pathname.startsWith(base.pathname)) {
                 const page = url.pathname.slice(base.pathname.length);
-                if (/^(?:Universities\/[^/]+-details|Fees_Chart\/[^/]+-fees|Articles\/[^/]+|countries\/[^/]+|explore-universities)\.html$/.test(page)) {
+                const university = page.match(/^(?:Universities\/([a-z]+)-(?:details|university)|Fees_Chart\/([a-z-]+)-fees)(?:\.html)?$/);
+                const mergedIds = new Set(['bac','alfa','inti','klust','cityu','cyberjaya','genovasi','segi','kings','taylors','unirazak','amu','apu','help','icms','limkokwing','lincoln','mmu','ucsi','unikl','umw','iium','uow','upm','utem','utm']);
+                if (university) {
+                    const id = university[1] || (university[2] === 'city-university' ? 'cityu' : university[2]);
+                    url.pathname = base.pathname + (mergedIds.has(id) ? `Universities/${id}-university` : 'explore-universities');
+                    if (!mergedIds.has(id)) url.hash = '';
+                    else if (university[2] && !url.hash) url.hash = 'courses-fees';
+                } else if (/^(?:Articles\/[^/]+|countries\/[^/]+|explore-universities)\.html$/.test(page)) {
                     url.pathname = base.pathname + page.slice(0, -5);
                 }
                 if (url.pathname === base.pathname + 'Fees_Chart/city-university-fees') {

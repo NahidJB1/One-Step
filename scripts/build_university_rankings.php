@@ -149,7 +149,7 @@ foreach ($faqs as $group=>$list) {
             foreach ($rankings->sources($sources) as $s) $answers[] = '[' . $s['title'] . '](' . $s['url'] . ')';
             $answer = implode("\n\n",$answers);
         }
-        if ($id === 'taylors' && $faq['q'] === "What makes Taylor's University stand out?") $answer = $rankings->fact($id,'world') . " Its courses include Hospitality, Business and Culinary Arts. See [dated ranking sources and FAQs](Universities/taylors-details.html#rankings).";
+        if ($id === 'taylors' && $faq['q'] === "What makes Taylor's University stand out?") $answer = $rankings->fact($id,'world') . " Its courses include Hospitality, Business and Culinary Arts. See [dated ranking sources and FAQs](Universities/taylors-university#rankings).";
         if ($answer !== null && $answer !== $faq['a']) {
             $needle = jsonText($faq['a']);
             if (strpos($raw,$needle) === false) throw new RuntimeException('FAQ encoding differs; refusing a broad rewrite: ' . $group);

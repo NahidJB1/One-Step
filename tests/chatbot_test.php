@@ -59,13 +59,13 @@ check($r['status'] === 'answered' && ($r['context']['levels'] ?? []) === ['bache
 $next = $bot->answer('Show more', $r['context']);
 check($next['status'] === 'answered' && ($next['context']['offset'] ?? 0) === 6 && $next['reply'] !== $r['reply'], 'Pagination advances');
 $r = $bot->answer('Computer science bachelor programs under RM 60000 total');
-check($r['status'] === 'answered' && includes($r, '32,760') && !includes($r, '104,600'), 'Budget excludes programs over the stated total');
+check($r['status'] === 'answered' && includes($r, '40,752') && !includes($r, '104,600'), 'Budget excludes programs over the stated total');
 $r = $bot->answer("Taylor's foundation fees under RM 40000 total");
 check($r['status'] === 'not_found', 'Total budget uses inclusive total rather than cheaper tuition-only column');
 $r = $bot->answer('Computer science bachelor programs under 60000');
 check($r['status'] === 'clarification' && includes($r, 'whole program'), 'Unspecified budget currency and period need clarification');
 $r = $bot->answer('MYR total', $r['context']);
-check($r['status'] === 'answered' && includes($r, '32,760'), 'Budget currency and period can be supplied in a short follow-up');
+check($r['status'] === 'answered' && includes($r, '40,752'), 'Budget currency and period can be supplied in a short follow-up');
 $r = $bot->answer('APU master fees under USD 20000 total');
 check($r['status'] === 'clarification' && includes($r, 'exchange rates'), 'No invented exchange conversion');
 

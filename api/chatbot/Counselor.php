@@ -65,6 +65,38 @@ final class Counselor
             $profileState = $this->state($this->parser->parse($message));
             return $this->response('I cannot confirm admission or an English exemption from a score alone. Please include the university, exact program, study level, and your academic qualification. A counselor needs to confirm the program-specific entry requirements and your full profile.', $profileState, 'clarification');
         }
+        // Preserve each explicit question before a page-task shortcut can consume the message.
+        $taskParts = preg_split('/[?!;\n]+|(?<!\d)\.(?:\s+|$)|\s+(?:and|also)\s+(?=(?:how|what|can|does|do|is|are|when|where)\b)/i', str_ireplace(['a.p.u','ph.d'], ['APU','PhD'], $message), -1, PREG_SPLIT_NO_EMPTY);
+        if (count($taskParts) > 1 && preg_match('/\b(?:accommodation|housing|apply|application form|hostel|rent)\b/i', $message) && !preg_match('/\b(?:visa|emgs|val|pass|permit)\b/i', $message)) {
+            if (count($taskParts) > 4) return $this->response('Please send up to four questions at a time so I can address each one.', $state, 'clarification');
+            $parts = []; $sources = []; $partial = false;
+            foreach ($taskParts as $part) {
+                $r = $this->answerPrepared(trim($part), $state, []);
+                $state = $r['context']; $parts[] = $r['reply']; $sources = array_merge($sources, $r['sources']);
+                $partial = $partial || $r['status'] !== 'answered';
+            }
+            return $this->response(implode("\n\n", $parts), $state, $partial ? 'partial' : 'answered', $sources);
+        }
+        $lookup = new ReferenceLookup($this->kb);
+        if (preg_match('/\b(?:cheapest|lowest)\b/', $normal) && preg_match('/\b(?:living|accommodation)\b/', $normal) && preg_match('/\b(?:visa|emgs)\b/', $normal) && Text::levels(Text::canonical($message))) {
+            $tuitionText = preg_split('/\b(?:including|inclusive|with)\b/i', $message)[0];
+            $query = $this->parser->parse($tuitionText); $query['intent'] = 'fees';
+            $r = $this->programs($query, $this->state($query));
+            $living = $this->single('What is the monthly living cost in Malaysia?', []);
+            return $this->response('I cannot establish the cheapest overall package from these references. Tuition, visa charges and living costs have different conditions and periods; they cannot be combined into a verified all-inclusive price.' . "\n\n**Tuition references**\n" . $r['reply'] . "\n\n**Living-cost reference**\n" . $living['reply'] . "\n\n**Visa charges**\nThese depend on the university, nationality and application stage. Tell me those details so I can look up the applicable recorded guidance.", $r['context'], 'partial', array_merge($r['sources'], $living['sources']), $r['suggestions']);
+        }
+        if (($state['intent'] ?? '') === 'fees' && preg_match('/\b(?:altogether|all in)\b/', $normal) && preg_match('/\b(?:registration|initial|emgs|visa|miscellaneous)\b/', $normal)) {
+            $query = $this->parser->parse('fees');
+            foreach (['universities','levels','subjects','subject_groups','audience','campus','mode','fee_period','intake'] as $slot) if (isset($state[$slot])) $query[$slot] = $state[$slot];
+            $r = $this->programs($query, $state);
+            return $this->response('The tuition amount is not automatically an all-inclusive payable total. Here are the recorded fee columns and separate conditions for your current selection. I have not added them together because some charges may overlap or apply at different times. Confirm the final payable amount in a written offer.' . "\n\n" . $r['reply'], $r['context'], 'partial', $r['sources'], $r['suggestions']);
+        }
+        if (!preg_match('/\b(?:and|also|plus)\b.*\b(?:fees?|courses?|rank|ranking|apply)\b|\b(?:fees?|courses?|rank|ranking|apply)\b.*\b(?:and|also|plus)\b/i', $message)) {
+            $detail = $lookup->housing($message, $state);
+            if ($detail) return $this->response($detail['reply'], $detail['context'], $detail['status'], $detail['sources']);
+        }
+        $pageReply = $this->pageReply($message, $state);
+        if ($pageReply !== null) return $pageReply;
         if (!$this->kb->guidance && preg_match('/\b(?:emgs|visa)\b/', $normal) && preg_match('/\b(?:check|track|update)\s+(?:my|me)\b/', $normal)) {
             return $this->response('I cannot access your application or check live EMGS status. Use the [official EMGS application tracker](https://visa.educationmalaysia.gov.my/emgs/application/searchForm/?___SID=S). If you share the status wording or percentage, I can search our FAQs to help explain it.', $state, 'partial');
         }
@@ -95,6 +127,8 @@ final class Counselor
             $parsed = $this->state($this->parser->parse($message));
             return $this->faqAnswer($wholeMatch[0], $parsed);
         }
+        $reference = $lookup->campus($message, $state);
+        if ($reference) return $this->response($reference['reply'], $reference['context'], $reference['status'], $reference['sources']);
         // Respect decimal scores and dotted university acronyms while separating questions.
         $splitText = str_ireplace(['a.p.u', 'ph.d'], ['APU', 'PhD'], $message);
         // Keep a ranking/fee request's distinct topics instead of dropping the fee clause.
@@ -156,9 +190,10 @@ final class Counselor
             return is_string($word) && strlen($word) <= 120 && preg_match('/^[\p{L}\p{M}]+$/u', $word);
         }));
         if (!$state['universities'] && is_string($context['last_university'] ?? null)) $state['universities'] = $this->kb->entities($context['last_university']);
-        foreach (['intent' => ['fees','programs','duration','intakes','overview','compare','faq','rankings'], 'audience' => ['local','international'],
+        if (($context['intent'] ?? '') === 'accommodation' && count($state['universities']) === 1 && is_int($context['property'] ?? null) && isset($this->kb->accommodation[$state['universities'][0]]['properties'][$context['property']])) $state['property'] = $context['property'];
+        foreach (['intent' => ['fees','programs','duration','intakes','overview','compare','faq','rankings','accommodation','application','articles'], 'audience' => ['local','international'],
             'ranking_scope' => ['all','world','asia','malaysia'],
-            'subject_mode' => ['all','any'], 'mode' => ['fulltime','parttime','online','research','coursework'],
+            'subject_mode' => ['all','any'], 'mode' => ['fulltime','parttime','online','odl','research','coursework'],
             'campus' => ['johor bahru','petaling jaya','penang','cyberjaya','kuala lumpur']] as $key => $values) {
             if (in_array($context[$key] ?? null, $values, true)) $state[$key] = $context[$key];
         }
@@ -171,6 +206,10 @@ final class Counselor
         if (in_array($context['pending'] ?? null, ['university','level','subject','budget'], true)) $state['pending'] = $context['pending'];
         if (in_array($context['language'] ?? null, ['en','bn'], true)) $state['language'] = $context['language'];
         if (in_array($context['fee_period'] ?? null, ['first_year','annual','total','semester','year_2','year_3','year_4','year_5'], true)) $state['fee_period'] = $context['fee_period'];
+        if (is_array($context['intake'] ?? null) && in_array($context['intake']['month'] ?? '', ['january','february','march','april','may','june','july','august','september','october','november','december','jan','feb','mar','apr','jun','jul','aug','sep','sept','oct','nov','dec'], true)) {
+            $year = $context['intake']['year'] ?? null;
+            if ($year === null || (is_int($year) && $year >= 2000 && $year <= 2099)) $state['intake'] = ['month'=>$context['intake']['month'],'year'=>$year];
+        }
         if (($context['recommend'] ?? false) === true) $state['recommend'] = true;
         if (is_int($context['ranking_year'] ?? null) && $context['ranking_year'] >= 2000 && $context['ranking_year'] <= 2099) $state['ranking_year'] = $context['ranking_year'];
         if ($this->guidance->validNationality($context['nationality'] ?? null)) $state['nationality'] = $context['nationality'];
@@ -208,25 +247,25 @@ final class Counselor
         }
         if ($more && empty($old['intent'])) return $this->response('Which university or program would you like to see?', [], 'clarification');
         if ($follow && $old) {
-            foreach (['universities','levels','subjects','excluded','excluded_subjects','audience','campus','mode','budget','fee_period'] as $slot) {
+            foreach (['universities','levels','subjects','excluded','excluded_subjects','audience','campus','mode','budget','fee_period','intake'] as $slot) {
                 if ($slot === 'universities' && $allUniversities) continue;
                 if (empty($query[$slot]) && !empty($old[$slot])) $query[$slot] = $old[$slot];
             }
             if (!empty($old['recommend'])) $query['recommend'] = true;
-            if (($explicit['universities'] && $explicit['levels']) || ($explicit['levels'] && $explicit['levels'] !== ($old['levels'] ?? []))) {
+            if (!$fillsPending && (($explicit['universities'] && $explicit['levels']) || ($explicit['levels'] && $explicit['levels'] !== ($old['levels'] ?? [])))) {
                 if (!$explicit['subjects']) {
                     $query['subjects'] = [];
                     $query['subject_groups'] = [];
                 }
             }
-            if (($explicit['universities'] || $explicit['levels'] || $explicit['subjects']) && !preg_match('/^(?:what about|how about|and |also )/', $text)) {
+            if (!$fillsPending && ($explicit['universities'] || $explicit['levels'] || $explicit['subjects']) && !preg_match('/^(?:what about|how about|and |also )/', $text)) {
                 if (!$explicit['fee_period']) $query['fee_period'] = null;
             }
             $query['excluded'] = array_values(array_diff($query['excluded'], $explicit['universities']));
             $query['excluded_subjects'] = array_values(array_diff($query['excluded_subjects'], $explicit['subjects']));
             // Campus, mode and budget qualify a selection; an explicit new institution starts those filters afresh.
             if ($explicit['universities'] && $explicit['universities'] !== ($old['universities'] ?? []) && !preg_match('/^(?:what about|how about|and |also )/', $text)) {
-                foreach (['campus','mode','budget'] as $slot) if (!$explicit[$slot]) $query[$slot] = null;
+                foreach (['campus','mode','budget','intake'] as $slot) if (!$explicit[$slot]) $query[$slot] = null;
             }
             if ($query['excluded']) $query['universities'] = array_values(array_diff($query['universities'], $query['excluded']));
             if ((in_array($query['intent'], ['faq','overview'], true) && !$query['topics']) || $more || ($query['intent'] === 'programs' && empty($query['topics']) && isset($old['pending']))) $query['intent'] = $old['intent'] ?? $query['intent'];
@@ -307,6 +346,91 @@ final class Counselor
         return $this->faq($faqQuestion, $state, $ranked);
     }
 
+    /** Route site tasks before generic FAQ retrieval; visa and eligibility advice keep their own handlers. */
+    private function pageReply(string $message, array $old): ?array
+    {
+        $text = Text::canonical($message);
+        $query = $this->parser->parse($message);
+        $housing = (bool)preg_match('/\b(?:accommodation|housing|hostels?|rooms?|rent)\b/', $text);
+        if ($housing && preg_match('/\b(?:living|food|transport|utilities included)\b/', $text)) return null;
+        $application = (bool)preg_match('/\b(?:apply|applying|application form|start (?:my |an )?application)\b/', Text::normalize($message))
+            && !preg_match('/\b(?:visa|emgs|val|pass|permit|renewal|refund|fee|fees|eligible|eligibility|ielts|cgpa|gpa|scholarship|job)\b/', $text);
+        $article = (bool)preg_match('/\b(?:articles?|read about|campus life)\b/', $text);
+        // Specific housing-policy questions still use reviewed FAQs.
+        if ($housing && preg_match('/\b(?:deposit|refund|cancel|contract|rules|pets|guarantee|mandatory|required)\b/', $text)) return null;
+        $intent = $housing ? 'accommodation' : ($application ? 'application' : ($article ? 'articles' : null));
+        if (!$intent && in_array($old['intent'] ?? '', ['accommodation','application','articles'], true)
+            && ($query['universities'] || ($old['pending'] ?? '') === 'university')
+            && !Text::tokens($this->kb->stripEntities(preg_replace('/^(?:what about|how about|and|also)\s+/i', '', $message)))) $intent = $old['intent'];
+        if (!$intent) return null;
+        $ids = $query['universities'] ?: ($old['universities'] ?? []);
+        $state = $old;
+        if (($old['universities'] ?? []) !== $ids) unset($state['property']);
+        $state['universities'] = $ids;
+        $state['intent'] = $intent;
+        unset($state['choices'], $state['last_faq'], $state['offset'], $state['unknown'], $state['pending']);
+        if (!$ids) {
+            $state['pending'] = 'university';
+            return $this->response('Which university do you mean?', $state, 'clarification');
+        }
+        if (count($ids) > 3) return $this->response('Please choose up to three universities so I can show each clearly.', $state, 'clarification');
+        $parts = []; $sources = []; $partial = false;
+        foreach ($ids as $id) {
+            $name = Text::markdown($this->kb->universities[$id]['name']);
+            $page = $this->kb->page($id, 'details');
+            if ($page === 'explore-universities') {
+                $parts[] = "I do not have a current university page for **$name**. Please ask a counselor about available options.";
+                $partial = true; continue;
+            }
+            if ($intent === 'application') {
+                $url = 'apply?university=' . rawurlencode($id);
+                $courses = [];
+                foreach ($this->kb->records as $record) if ($record['university'] === $id && Text::contains($text, Text::canonical($record['name']))) $courses[$record['name']] = true;
+                if (count($courses) === 1) $url .= '&course=' . rawurlencode(key($courses));
+                $sources[] = ['type'=>'application','file'=>'apply.php','pointer'=>$id,'title'=>'Apply to ' . $name,'url'=>$url];
+                $parts[] = "Start your application to **$name** using the [Apply form]($url). The university is selected for you. Enter your full name, contact number, valid email address and nationality; passport number is optional. Submitting the form does not confirm admission. Our team will follow up on your course and requirements.";
+            } elseif ($intent === 'articles') {
+                $data = $this->kb->articles[$id] ?? null;
+                if (!$data) { $parts[] = "An article for **$name** is not published yet. You can [read the university overview]($page)."; $partial = true; continue; }
+                $parts[] = '**' . Text::markdown($data['title']) . "**\n" . Text::markdown($data['dek']) . (preg_match('/\bcampus life\b/', $text) ? "\n\n" . implode("\n\n", array_map([Text::class,'markdown'], array_slice($data['paragraphs'],0,2))) : '') . "\n\n[Read the article]($page#articles)";
+                $sources[] = ['type'=>'article','file'=>'data/university_articles.json','pointer'=>'/' . $id,'title'=>$data['title'],'url'=>$page . '#articles'];
+            } else {
+                $data = $this->kb->accommodation[$id] ?? null;
+                if (!$data) { $parts[] = "We have not published accommodation listings for **$name** yet. [Ask us about rooms and current rents](https://wa.me/601119359497)."; $partial = true; continue; }
+                $part = "**Accommodation for $name**\n";
+                $part .= ($data['rentPeriod'] ?? '') === 'month' ? "These are approximate monthly rents.\n\n" : "The rental period is not specified in these listings; confirm it before comparing prices.\n\n";
+                foreach (array_slice($data['properties'], 0, 3) as $property) {
+                    $part .= '**' . Text::markdown($property['name']) . "**\n" . Text::markdown($property['location']) . "\n";
+                    foreach ($property['rent'] as $rent) $part .= '- ' . Text::markdown($rent) . "\n";
+                    $part .= "\n";
+                }
+                $part .= "Confirm room availability, deposits, utilities and travel to your teaching campus. [View the listings and amenities]($page#accommodation).";
+                $parts[] = $part;
+                $sources[] = ['type'=>'accommodation','file'=>'data/university_accommodation.json','pointer'=>'/' . $id,'title'=>'Accommodation for ' . $name,'url'=>$page . '#accommodation'];
+            }
+        }
+        if ($housing && preg_match('/\b(?:tuition|fees?|courses?|programs?)\b/', $text) && preg_match('/\b(?:and|also|plus)\b/', $text)) {
+            $feeText = preg_replace('/\b(?:and|also|plus)\s+(?:accommodation|housing|hostels?|rooms?|rent)\b|\b(?:accommodation|housing|hostels?|rooms?|rent)\s+(?:and|also|plus)\b/i', ' ', $message);
+            $feeQuery = $this->parser->parse($feeText);
+            $feeQuery['universities'] = $ids;
+            $feeQuery['intent'] = preg_match('/\b(?:fees?|tuition)\b/', $text) ? 'fees' : 'programs';
+            $feeState = $this->state($feeQuery);
+            $r = $this->programs($feeQuery, $feeState);
+            $state = $r['context'];
+            array_unshift($parts, "**" . ($feeQuery['intent'] === 'fees' ? 'Fees' : 'Courses') . "**\n" . $r['reply']);
+            $sources = array_merge($r['sources'], $sources);
+            $partial = $partial || $r['status'] !== 'answered';
+        }
+        if ($housing && preg_match('/\b(?:qs|rank|ranking|rankings)\b/', $text) && preg_match('/\b(?:and|also|plus)\b/', $text)) {
+            $rankingText = preg_replace('/\b(?:and|also|plus)\s+(?:accommodation|housing|hostels?|rooms?|rent)\b|\b(?:accommodation|housing|hostels?|rooms?|rent)\s+(?:and|also|plus)\b/i', ' ', $message);
+            $r = $this->single($rankingText, $state);
+            $parts[] = "**Rankings**\n" . $r['reply'];
+            $sources = array_merge($sources, $r['sources']);
+            $partial = $partial || $r['status'] !== 'answered';
+        }
+        return $this->response(implode("\n\n", $parts), $state, $partial ? 'partial' : 'answered', $sources);
+    }
+
     private function guidanceAnswer(array $cards, array $query, array $state, string $message): array
     {
         $replies = []; $sources = []; $status = 'answered'; $suggestions = [];
@@ -377,7 +501,8 @@ final class Counselor
         $margin = $best ? $best['score'] - ($ranked[1]['score'] ?? 0) : 0;
         if ($best && $best['coverage'] >= 0.72 && $best['score'] >= 0.77 && $margin >= 0.045 && ($best['exact'] || (($best['hits'] ?? 0) >= 2 && ($best['precision'] ?? 0) >= 0.55))) return $this->faqAnswer($best, $state);
         if ($best && $best['score'] >= 0.48 && $best['coverage'] >= 0.38) {
-            $choices = array_slice(array_filter($ranked, static function ($r) use ($best) { return $r['score'] >= max(0.48, $best['score'] - 0.18); }), 0, 3);
+            $choices = array_slice(array_filter($ranked, static function ($r) use ($best) { return $r['score'] >= max(0.48, $best['score'] - 0.18) && $r['coverage'] >= 0.55 && ($r['exact'] || (($r['hits'] ?? 0) >= 2 && ($r['precision'] ?? 0) >= 0.25)); }), 0, 3);
+            if (!$choices) return $this->response('I could not find a close enough answer. Please tell me the university and the specific detail you need, or [ask a counselor](https://wa.me/601119359497).', $state, 'not_found');
             $state['choices'] = array_column($choices, 'id');
             $suggestions = array_map(function ($r) { return $this->kb->faqs[$r['id']]['q']; }, $choices);
             $reply = "I found related FAQs, but I am not sure which answers your question. Which one did you mean?\n\n";
@@ -455,6 +580,14 @@ final class Counselor
             $seen[$key] = true;
             $record['budget_price'] = $price;
             $matches[] = $record;
+        }
+        if ($fees && !$query['levels'] && in_array($query['fee_period'] ?? '', ['first_year','annual'], true)) {
+            $levels = [];
+            foreach ($matches as $record) foreach ($record['levels'] as $level) $levels[$level] = true;
+            if (count($levels) > 1) {
+                $state['pending'] = 'level';
+                return $this->response('Which study level do you mean? First-year fees differ between foundation, diploma and degree courses.', $state, 'clarification', [], array_map('ucfirst', array_keys($levels)));
+            }
         }
         // Prefer the program catalog for availability/duration; fee groups are secondary.
         if (!$fees) usort($matches, static function ($a, $b) {
@@ -537,6 +670,7 @@ final class Counselor
         if ($offset >= count($matches)) return $this->response('You have reached the end of the matching local entries. Change a filter or start over to search again.', $state);
         $selected = array_slice($matches, $offset, self::LIMIT);
         $reply = $fees ? "These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.\n\n" : "Here are matching entries from our local catalog.\n\n";
+        if (!empty($query['intake'])) $reply .= 'You asked about **' . ucfirst($query['intake']['month']) . ($query['intake']['year'] ? ' ' . $query['intake']['year'] : '') . '**. These are stored reference entries, not confirmation that the intake is open or that these fees apply to it. Confirm the campus, next intake and written fee schedule.' . "\n\n";
         if ($modeUnverifiedOnly) $reply .= 'These rows match the university, level and subject, but the local data does **not confirm ' . Text::markdown($query['mode']) . " mode** for them. Treat them as related programs pending confirmation of the study mode.\n\n";
         if ($query['subjects'] && $selected && !array_filter($selected, static function ($record) { return substr_count($record['name'], ',') < 3; })) {
             $reply .= "These matches are broad program-group rows, not separately named course confirmations. Confirm the exact course title and whether the displayed duration or fee applies to it.\n\n";
@@ -561,6 +695,7 @@ final class Counselor
             if (!array_filter($matches, static function ($record) use ($group) { return !array_diff($group, $record['terms']); })) $missingGroups[] = implode(' ', $group);
         }
         $period = $query['fee_period'] ?? null;
+        $seenConditions = [];
         if ($fees && in_array($period, ['first_year','annual'], true)) $reply .= "Only the recorded first-year/annual charges are shown below; no total has been divided by the course duration.\n\n";
         foreach ($selected as $record) {
             $reply .= '**' . Text::markdown($this->kb->universities[$record['university']]['name']) . ' — ' . Text::markdown($record['name']) . "**\n";
@@ -602,7 +737,13 @@ final class Counselor
                     $reply .= '- **' . Text::markdown($label) . ':** ' . Text::markdown($displayValue) . "\n";
                 }
             }
-            if ($fees && $record['remarks']) $reply .= "\n> **Published conditions:** " . str_replace("\n", "\n> ", $record['remarks']) . "\n";
+            if ($fees && $record['remarks']) {
+                $conditionKey = $record['university'] . ':' . $record['remarks'];
+                if (!isset($seenConditions[$conditionKey])) {
+                    $reply .= "\n> **Published conditions:** " . str_replace("\n", "\n> ", $record['remarks']) . "\n";
+                    $seenConditions[$conditionKey] = $record['name'];
+                } else $reply .= "\nConditions: the same published notes as **" . Text::markdown($seenConditions[$conditionKey]) . "** above.\n";
+            }
             $sources[] = $record['source'];
             $reply .= "\n[Source: " . ($fees ? 'fee table' : 'program details') . '](' . $record['source']['url'] . ")\n\n";
         }
@@ -614,9 +755,10 @@ final class Counselor
         foreach ($missingGroups as $group) $reply .= 'No specific local match was found for **' . Text::markdown($group) . "** with these filters.\n\n";
         $reply .= 'Showing ' . count($selected) . ' of ' . count($matches) . ' matching entries.';
         if ($fees) $reply .= ' The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.';
+        if ($fees && $query['universities']) foreach ($query['universities'] as $id) if (!empty($this->kb->universities[$id]['fee_validity'])) $reply .= "\nStored schedule label for " . Text::markdown($this->kb->universities[$id]['name']) . ': ' . Text::markdown($this->kb->universities[$id]['fee_validity']) . '. This label is not proof of current verification.';
         $suggestions = count($matches) > $offset + self::LIMIT ? ['Show more'] : [];
         if (!$fees) $suggestions[] = 'What are the fees?';
-        $result = $this->response(trim($reply), $state, $missingPeriod || $missingGroups || $modeUnverifiedOnly ? 'partial' : 'answered', $sources, $suggestions);
+        $result = $this->response(trim($reply), $state, $missingPeriod || $missingGroups || $modeUnverifiedOnly || !empty($query['intake']) ? 'partial' : 'answered', $sources, $suggestions);
         $result['result_count'] = count($matches);
         return $result;
     }
@@ -699,7 +841,22 @@ final class Counselor
         $state['language'] = $this->language;
         if ($this->language === 'bn') $reply = Language::localize($reply);
         $buttons = [['label' => 'Speak with a counselor','url' => 'https://wa.me/601119359497','class' => 'os-wa-btn','icon' => 'fab fa-whatsapp']];
-        foreach (array_slice($state['universities'] ?? [], 0, 3) as $id) if ($this->kb->universities[$id]['supported']) $buttons[] = ['label' => strtoupper($id) . ' fees','url' => $this->kb->page($id, 'fees'),'class' => 'os-fee-btn','icon' => 'fas fa-coins'];
+        foreach (array_slice($state['universities'] ?? [], 0, 3) as $id) if ($this->kb->universities[$id]['supported']) {
+            $page = $this->kb->page($id, 'details');
+            $intent = $state['intent'] ?? 'fees';
+            $section = ['programs'=>'courses','duration'=>'courses','intakes'=>'courses','rankings'=>'rankings','accommodation'=>'accommodation','articles'=>'articles'][$intent] ?? null;
+            if ($intent === 'application') {
+                $label = 'Apply to ' . strtoupper($id); $url = 'apply?university=' . rawurlencode($id);
+                foreach ($sources as $source) if (($source['type'] ?? '') === 'application' && ($source['pointer'] ?? '') === $id) $url = $source['url'];
+            }
+            elseif ($section && ($section !== 'accommodation' || isset($this->kb->accommodation[$id])) && ($section !== 'articles' || isset($this->kb->articles[$id]))) { $label = strtoupper($id) . ' ' . ucfirst($section); $url = $page . '#' . $section; }
+            elseif (in_array($intent, ['faq','overview','compare','accommodation','articles'], true)) { $label = strtoupper($id) . ' Details'; $url = $page; }
+            else { $label = strtoupper($id) . ' fees'; $url = $this->kb->page($id, 'fees'); }
+            $buttons[] = ['label'=>$label,'url'=>$url,'class'=>'os-fee-btn','icon'=>'fas fa-university'];
+        }
+        foreach ($sources as $source) if (in_array($source['type'] ?? '', ['accommodation','article','application'], true) && !in_array($source['url'], array_column($buttons, 'url'), true) && count($buttons) < 7) {
+            $buttons[] = ['label'=>['article'=>'Read article','application'=>'Apply now','accommodation'=>'View accommodation'][$source['type']],'url'=>$source['url'],'class'=>'os-details-btn','icon'=>'fas fa-university'];
+        }
         $unique = [];
         foreach ($sources as $source) $unique[$source['file'] . ($source['pointer'] ?? $source['title'])] = $source;
         return ['reply' => $reply, 'context' => $state, 'status' => $status, 'isFallback' => $status !== 'answered',

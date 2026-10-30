@@ -22,6 +22,12 @@ final class Query
         $subjectText = Text::canonical($this->kb->stripEntities($message));
         $subjectText = preg_replace('/\b(?:(?:in|from) )?(?:your|our|the|local) (?:data|catalog|records?)\b/', ' ', $subjectText);
         $subjectText = preg_replace('/\bfull program total\b/', 'total', $subjectText);
+        $intake = null;
+        if (preg_match('/\b(january|february|march|april|may(?!\s+(?:i|we)\b)|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec)\s*(20\d{2})?\b/i', $message, $date) && preg_match('/\b(?:intake|start|join|admission|fees?|tuition)\b/', $text)
+            && (!empty($date[2]) || Text::contains($text, 'intake') || preg_match('/\b(?:for|in|join|start)\s+' . preg_quote($date[1], '/') . '\b/i', $message))) {
+            $intake = ['month'=>strtolower($date[1]),'year'=>isset($date[2]) ? (int)$date[2] : null];
+            $subjectText = preg_replace('/\b' . preg_quote(strtolower($date[1]), '/') . '\b/', '', $subjectText);
+        }
         $excludedSubjects = [];
         if (preg_match('/\b(?:not|except|excluding|exclude)\s+(.+?)(?:\b(?:but|instead|rather)\b|$)/', $subjectText, $m)) {
             foreach (Text::tokens($m[1], false) as $term) if (isset($this->kb->subjectVocabulary[$term])) $excludedSubjects[] = $term;
@@ -34,6 +40,7 @@ final class Query
         $fillers = array_fill_keys(explode(' ', 'maybe even every single kindly roughly approximately possible various range several options option detail details need wishes anywhere exactly thank thanks goodbye bye human real bot robot accept finished graduated completed national since currently four year years preferably enough money family support discount costs hows best suggest shortlist lowest across matching match matches based published recorded amount amounts breakdown overall prove proven totals total higher lower full research coursework'), true);
         foreach (Text::tokens($subjectText, false) as $term) {
             if (in_array($term, $excludedSubjects, true) || isset($fillers[$term])) continue;
+            if (in_array($term, ['online','odl','fulltime','parttime'], true)) continue;
             if (preg_match('/\p{Bengali}/u', $term)) { $unknown[] = $term; continue; }
             if (isset($this->kb->subjectVocabulary[$term])) $subjects[] = $term;
             elseif (strlen($term) >= 4 && ctype_alpha($term) && !in_array($term, ['hello','cheaper','cheapest','scholarship','accommodation','ielts','without','tuition','price','intake','duration','please','fees','mastres','universities','options','around','maximum','minimum','under','below','annually','yearly','monthly','entire','whole','exclude','excluding','recommend','recommendation','recommendations','suitable','find','search','studies','interested','looking','there','related','additional','different','want','wanting','not','instead','actually','campus','petaling','jaya','johor','bahru','penang','selangor','kuala','lumpur','cyberjaya','online','taught','coursework','research'], true)) $unknown[] = $term;
@@ -65,7 +72,7 @@ final class Query
             if (Text::contains($text, $place) && !($place === 'cyberjaya' && in_array('cyberjaya', $universities, true))) $campus = $place;
         }
         $mode = null;
-        foreach (['fulltime', 'parttime', 'online', 'research', 'coursework'] as $value) if (Text::contains($text, $value)) $mode = $value;
+        foreach (['fulltime', 'parttime', 'online', 'odl', 'research', 'coursework'] as $value) if (Text::contains($text, $value)) $mode = $value;
         $feeIntent = in_array('fees', $topics, true);
         $faqTopics = array_values(array_intersect($topics, ['scholarship','language','accommodation','visa','payment','refund','admission','career','recognition','transfer','location']));
         $structured = !$faqTopics && ($feeIntent || $levels || $subjects || array_intersect($topics, ['programs','duration','intakes']));
@@ -87,7 +94,7 @@ final class Query
             'subjects' => array_values(array_unique($subjects)), 'excluded_subjects' => $excludedSubjects, 'subject_groups' => $groups, 'unknown' => array_values(array_unique($unknown)),
             'subject_mode' => count($groups) > 1 ? 'any' : 'all',
             'audience' => $audience, 'budget' => $budget, 'campus' => $campus, 'mode' => $mode,
-            'intent' => $intent, 'topics' => $topics, 'compare' => $compare, 'text' => $text, 'fee_period'=>$period,
+            'intent' => $intent, 'topics' => $topics, 'compare' => $compare, 'text' => $text, 'fee_period'=>$period, 'intake'=>$intake,
             'recommend'=>(bool)preg_match('/\b(?:best|recommend|suitable|shortlist|suggest)\b/', $text),
             'cheapest'=>(bool)preg_match('/\b(?:cheapest|cheaper|lowest|affordable)\b/', $text)];
     }

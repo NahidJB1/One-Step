@@ -40,7 +40,7 @@ A6: Which program or study level should I check? Fees differ by program, campus,
 
 Q7: Which is cheaper, APU or SEGI or Cybernetics?
 Status: clarification
-A7: Which program or study level should I check? Fees differ by program, campus, and student category.
+A7: I could not match this part to a program or supported filter: **cybernetics**. Please give the program name or rephrase that condition so I do not ignore it.
 
 -------------------------------------------------
 
@@ -62,36 +62,42 @@ Status: answered
 A9: Here are matching entries from our local catalog.
 
 **City University Malaysia — Bachelor of Graphic Design (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Bachelor of Fashion Design (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Bachelor of Multimedia (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Bachelor of Communication (Hons) Corporate Communication**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Bachelor of Communication (Hons) Mass Communication**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Bachelor of Communication (Hons) Journalism**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
-Showing 6 of 3151 matching entries.
+Showing 6 of 3095 matching entries.
 
 -------------------------------------------------
 
@@ -99,7 +105,7 @@ Q10: What is the diploma and undergrad cost?
 Status: answered
 A10: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
 
-**ALFA UNIVERSITY MALAYSIA — Diploma in Accountancy**
+**ALFA University College — Diploma in Accountancy**
 DIPLOMA PROGRAMS
 - **Duration:** 2.5 Years
 - **Year 1:** RM 10,500
@@ -119,7 +125,7 @@ DIPLOMA PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Diploma in Business Administration**
+**ALFA University College — Diploma in Business Administration**
 DIPLOMA PROGRAMS
 - **Duration:** 2.5 Years
 - **Year 1:** RM 10,500
@@ -139,7 +145,7 @@ DIPLOMA PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Diploma in E-Business**
+**ALFA University College — Diploma in E-Business**
 DIPLOMA PROGRAMS
 - **Duration:** 2.5 Years
 - **Year 1:** RM 10,500
@@ -159,7 +165,7 @@ DIPLOMA PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Diploma in Information Technology**
+**ALFA University College — Diploma in Information Technology**
 DIPLOMA PROGRAMS
 - **Duration:** 2.5 Years
 - **Year 1:** RM 11,500
@@ -179,7 +185,7 @@ DIPLOMA PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Diploma in Early Childhood**
+**ALFA University College — Diploma in Early Childhood**
 DIPLOMA PROGRAMS
 - **Duration:** 2.5 Years
 - **Year 1:** RM 10,500
@@ -199,7 +205,7 @@ DIPLOMA PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Diploma in Early Childhood (ODL)**
+**ALFA University College — Diploma in Early Childhood (ODL)**
 DIPLOMA PROGRAMS
 - **Duration:** 2.5 Years
 - **Year 1:** RM 10,500
@@ -219,7 +225,7 @@ DIPLOMA PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-Showing 6 of 1077 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+Showing 6 of 1048 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
 -------------------------------------------------
 
@@ -276,34 +282,40 @@ Status: answered
 A19: Here are matching entries from our local catalog.
 
 **Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Computer Networks and Security) with Honours**
+- **Level:** Bachelor
 - **Duration:** 8 Semesters
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university.html)
 
 **Universiti Teknologi Malaysia (UTM) — Bachelor of Computer Science (Graphics and Multimedia Software) with Honours**
+- **Level:** Bachelor
 - **Duration:** 8 Semesters
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university.html)
 
 **Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Architecture with Honours**
+- **Level:** Bachelor
 - **Duration:** 6 Semesters
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university.html)
 
 **Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Construction with Honours**
+- **Level:** Bachelor
 - **Duration:** 8 Semesters
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university.html)
 
 **Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Geoinformatics with Honours**
+- **Level:** Bachelor
 - **Duration:** 8 Semesters
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university.html)
 
 **Universiti Teknologi Malaysia (UTM) — Bachelor of Science in Land Administration and Development with Honours**
+- **Level:** Bachelor
 - **Duration:** 8 Semesters
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university.html)
 
 Showing 6 of 154 matching entries.
 
@@ -313,12 +325,16 @@ Q20: List all the engineering and management degrees at APU.
 Status: partial
 A20: Here are matching entries from our local catalog.
 
+These matches are broad program-group rows, not separately named course confirmations. Confirm the exact course title and whether the displayed duration or fee applies to it.
+
 **Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**
+- **Level:** Bachelor
 - **Duration:** 4 Years
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university.html)
 
 **Asia Pacific University of Technology & Innovation (APU) — Mechatronic, Mechanical, Computer, Electrical & Electronic, Petroleum Engineering**
+- **Level:** Bachelor
 - **Duration:** 4 Years
 
 [Source: program details](Fees_Chart/apu-fees.html)
@@ -334,36 +350,42 @@ Status: answered
 A21: Here are matching entries from our local catalog.
 
 **City University Malaysia — Diploma in Fashion Design**
+- **Level:** Diploma
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Diploma in Graphic Design**
+- **Level:** Diploma
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Diploma in Mass Communication**
+- **Level:** Diploma
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Diploma in Corporate Communication**
+- **Level:** Diploma
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Diploma in Accounting**
+- **Level:** Diploma
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Diploma in Business Management**
+- **Level:** Diploma
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
-Showing 6 of 579 matching entries.
+Showing 6 of 540 matching entries.
 
 -------------------------------------------------
 
@@ -436,40 +458,8 @@ Showing 6 of 8 matching entries. The local data has no verified effective date; 
 -------------------------------------------------
 
 Q24: cyber netics diploma?
-Status: answered
-A24: Here are matching entries from our local catalog.
-
-**CYBERNETICS MALAYSIA (KTAC) — Diploma in Creative Multimedia**
-- **Duration:** 3 Years
-
-[Source: program details](Universities/cybernetics-details.html)
-
-**CYBERNETICS MALAYSIA (KTAC) — Diploma in Aviation Management**
-- **Duration:** 3 Years
-
-[Source: program details](Universities/cybernetics-details.html)
-
-**CYBERNETICS MALAYSIA (KTAC) — Diploma in Halal Industry Management**
-- **Duration:** 3 Years
-
-[Source: program details](Universities/cybernetics-details.html)
-
-**CYBERNETICS MALAYSIA (KTAC) — Diploma in Accounting**
-- **Duration:** 3 Years
-
-[Source: program details](Universities/cybernetics-details.html)
-
-**CYBERNETICS MALAYSIA (KTAC) — Diploma in Early Childhood Management**
-- **Duration:** 3 Years
-
-[Source: program details](Universities/cybernetics-details.html)
-
-**CYBERNETICS MALAYSIA (KTAC) — Diploma in Business Management**
-- **Duration:** 3 Years
-
-[Source: program details](Universities/cybernetics-details.html)
-
-Showing 6 of 9 matching entries.
+Status: clarification
+A24: I could not match this part to a program or supported filter: **cyber, netics**. Please give the program name or rephrase that condition so I do not ignore it.
 
 -------------------------------------------------
 
@@ -554,7 +544,7 @@ Status: partial
 A37: **Fees**
 These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
 
-**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
+**ALFA University College — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
 BACHELOR PROGRAMS
 - **Duration:** 3 Years
 - **Year 1:** RM 16,000
@@ -570,33 +560,6 @@ BACHELOR PROGRAMS
 > Total Initial Fees Payment Upon Application: RM 6,000
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
-
-**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**
-All Programs
-- **Level:** Bachelor
-- **Duration:** 3 Years
-- **Year 1 (RM):** 10,920
-- **Year 2 (RM):** 10,920
-- **Year 3 (RM):** 10,920
-- **Total (RM):** 32,760
-
-> **Published conditions:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
-
-[Source: fee table](Fees_Chart/binary-fees.html)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
 UNIMY
@@ -660,7 +623,23 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 
 [Source: fee table](Fees_Chart/cityu-fees.html)
 
-Showing 6 of 49 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+**INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**
+INTI  -  PENANG CAMPUS
+- **Duration:** 3 years
+- **Intake:** Jan, Apr, Aug
+- **Total Tuition Fee (RM):** RM70,266
+
+> **Published conditions:** Misc Fees:
+> Application Fee: RM600
+> EMGS Fee: RM2,520
+> Registration Fee: RM2,400
+> Administration Fee: RM4,000
+> General Deposit: RM600
+> Total Misc Fees: RM10,120
+
+[Source: fee table](Fees_Chart/inti-fees.html)
+
+Showing 6 of 48 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
 **Can international students work part time?**
 International students may work up to **20 hours per week only during semester breaks or holidays longer than 7 days**, in permitted sectors such as restaurants, petrol kiosks, mini-markets and hotels. A valid Student Pass and prior Immigration approval through the institution are required. This is not permission to work throughout teaching weeks, and income is not guaranteed; plan tuition and living costs without relying on a job. The Graduate Pass has separate eligibility rules.
@@ -741,7 +720,7 @@ Q47: ?? fees for MBA?
 Status: answered
 A47: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
 
-**ALFA UNIVERSITY MALAYSIA — Master of Business Administration**
+**ALFA University College — Master of Business Administration**
 MASTER PROGRAMS
 - **Duration:** 1 Years & 4 Months
 - **Year 1:** RM 13,500
@@ -757,7 +736,7 @@ MASTER PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Master of Business Administration (International Business)**
+**ALFA University College — Master of Business Administration (International Business)**
 MASTER PROGRAMS
 - **Duration:** 1 Years & 3 Months
 - **Year 1:** RM 13,500
@@ -773,7 +752,7 @@ MASTER PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Master of Business Administration (ODL)**
+**ALFA University College — Master of Business Administration (ODL)**
 MASTER PROGRAMS
 - **Duration:** 1 Years & 4 Months
 - **Year 1:** RM 13,500
@@ -788,7 +767,7 @@ MASTER PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**ALFA UNIVERSITY MALAYSIA — Master of Business Administration in Oil & Gas**
+**ALFA University College — Master of Business Administration in Oil & Gas**
 MASTER PROGRAMS
 - **Duration:** 1 Years & 3 Months
 - **Year 1:** RM 16,000
@@ -804,59 +783,29 @@ MASTER PROGRAMS
 
 [Source: fee table](Fees_Chart/alfa-fees.html)
 
-**Binary University of Management & Entrepreneurship — Master of Business Administration (MBA)**
-All Programs
-- **Level:** Master
-- **Duration:** 1.6 Years
-- **Year 1 (RM):** 15,120
-- **Year 2 (RM):** 15,120
-- **Total (RM):** 30,240
+**BAC EDUCATION GROUP — Master of Business Administration (MBA) (By coursework)**
+UNIMY
+- **Duration:** 1.5 years
+- **Tuition Fees (1st Year):** RM16,168
+- **Tuition Fees (Following Years):** RM9,000
+- **Total Tuition Fee:** RM25,168
 
-> **Published conditions:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
+> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
 
-[Source: fee table](Fees_Chart/binary-fees.html)
+[Source: fee table](Fees_Chart/bac-fees.html)
 
-**Binary University of Management & Entrepreneurship — MBA (Specialisations: Engineering Mgt, Finance, Business)**
-All Programs
-- **Level:** Master
-- **Duration:** 2 Years
-- **Year 1 (RM):** 15,120
-- **Year 2 (RM):** 15,120
-- **Total (RM):** 30,240
+**BAC EDUCATION GROUP — Masters of Business Administration**
+VERITAS UNIVERSITY
+- **Duration:** 1.5 years
+- **Tuition Fees (1st Year):** RM16,168
+- **Tuition Fees (Following Years):** RM9,000
+- **Total Tuition Fee:** RM25,168
 
-> **Published conditions:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
+> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Undergraduate Programs Conventional: Jan, May, Sep<br>ODL: Jan, May, June, Sep<br>Bachelor of Communication (Branding & Digital Marketing): Conventional Jan, Jun, Aug; ODL Jan, Jun, Aug<br>Postgraduate Programs: Conventional Jan, May, Sep (MBA); ODL Jan, May, Sep (DBA, PhD); ODL Monthly (MBA, MBACL, MCLG, MA Law)
 
-[Source: fee table](Fees_Chart/binary-fees.html)
+[Source: fee table](Fees_Chart/bac-fees.html)
 
-Showing 6 of 66 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+Showing 6 of 63 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
 -------------------------------------------------
 
@@ -865,34 +814,40 @@ Status: answered
 A48: Here are matching entries from our local catalog.
 
 **Taylor's University — Bachelor of Business (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university.html)
 
 **Taylor's University — Bachelor of Accounting & Finance (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university.html)
 
 **Taylor's University — Bachelor of Laws (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university.html)
 
 **Taylor's University — Bachelor of Computer Science (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university.html)
 
 **Taylor's University — Bachelor of Software Engineering (Hons)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university.html)
 
 **Taylor's University — Bachelor of Mechanical Engineering (Hons)**
+- **Level:** Bachelor
 - **Duration:** 4 Years
 
-[Source: program details](Universities/taylors-details.html)
+[Source: program details](Universities/taylors-university.html)
 
 Showing 6 of 80 matching entries.
 
@@ -981,28 +936,34 @@ Status: answered
 A51: Here are matching entries from our local catalog.
 
 **UCSI University — Bachelor of Chemical Engineering with Honours**
+- **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university.html)
 
 **UCSI University — Bachelor of Civil Engineering with Honours**
+- **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university.html)
 
 **UCSI University — Bachelor of Electrical and Electronic Engineering with Honours**
+- **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university.html)
 
 **UCSI University — Bachelor of Computer Engineering (Artificial Intelligence) with Honours**
+- **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university.html)
 
 **UCSI University — Bachelor of Energy Engineering with Honours**
+- **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university.html)
 
 **UCSI University — Bachelor of Mechanical Engineering with Honours**
+- **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university.html)
 
 Showing 6 of 30 matching entries.
 
@@ -1019,36 +980,42 @@ Status: answered
 A53: Here are matching entries from our local catalog.
 
 **City University Malaysia — Bachelor of Computer Science (Hons) Software Engineering**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **Asia Pacific University of Technology & Innovation (APU) — Computing, Business, Tourism, Accounting & Finance, Actuarial, Banking, International Relations, Media, Psychology**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university.html)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/bac-details.html)
+[Source: program details](Universities/bac-university.html)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/bac-details.html)
+[Source: program details](Universities/bac-university.html)
 
-**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
+**ALFA University College — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/alfa-details.html)
+[Source: program details](Universities/alfa-university.html)
 
 **INTI International University — 3+0 BSc (Hons) in Computer Science (Coventry, UK)**
+- **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/inti-details.html)
+[Source: program details](Universities/inti-university.html)
 
-Showing 6 of 101 matching entries.
+Showing 6 of 99 matching entries.
 
 -------------------------------------------------
 
@@ -1056,32 +1023,7 @@ Q54: Which is the cheapest university for CS?
 Status: answered
 A54: These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
 
-**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**
-All Programs
-- **Level:** Bachelor
-- **Duration:** 3 Years
-- **Year 1 (RM):** 10,920
-- **Year 2 (RM):** 10,920
-- **Year 3 (RM):** 10,920
-- **Total (RM):** 32,760
-
-> **Published conditions:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
-
-[Source: fee table](Fees_Chart/binary-fees.html)
+**Lowest comparable published total amount in these matches:** KL University of Science & Technology (KLUST) — Bachelor of Computer Science (Hons): **RM40,752**.
 
 **KL University of Science & Technology (KLUST) — Bachelor of Computer Science (Hons)**
 BACHELOR PROGRAMS
@@ -1173,11 +1115,28 @@ UNDERGRADUATE DEGREE PROGRAMMES
 
 [Source: fee table](Fees_Chart/utem-fees.html)
 
+**Universiti Teknikal Malaysia Melaka (UTeM) — Bachelor of Computer Science (Artificial Intelligence) with Honours**
+UNDERGRADUATE DEGREE PROGRAMMES
+- **Level:** Degree
+- **Duration:** 3.5 years
+- **Total Tuition Fees:** RM 41,000.00
+
+> **Published conditions:** Entry Requirements for International Students:
+> - Have completed at least twelve (12) years of education.
+> - Obtained at least three (3) principals in General Certificate of Education Advanced Level (GCE A-Level) Examination or International Baccalaureate (IB) obtained in one sitting.
+> - Language Requirements: A minimum score of 500 in the Test of English as a Foreign Language (TOEFL) OR a minimum score/Band 5.0 in the International English Language Testing System (IELTS).
+> - Applicants without TOEFL/IELTS or those who obtained a score/band below the requirement are required to undergo and pass the English Program conducted by UTeM prior to commencement of the undergraduate programmes EXCEPT for Indonesia and Brunei.
+> 
+> Course Fees:
+> - All listed course fees are excluding student accommodation.
+
+[Source: fee table](Fees_Chart/utem-fees.html)
+
 Fee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.
 
 Entries with an explicit comparable total are shown in ascending order; unpriced or differently labelled entries cannot establish the cheapest overall cost. Tuition, living costs and visa charges must be checked separately.
 
-Showing 6 of 49 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+Showing 6 of 48 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
 -------------------------------------------------
 
@@ -1283,36 +1242,42 @@ Status: answered
 A64: Here are matching entries from our local catalog.
 
 **City University Malaysia — Master of Business Administration (MBA)**
+- **Level:** Master
 - **Duration:** 1 Year
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**
+- **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/cityu-details.html)
+[Source: program details](Universities/cityu-university.html)
 
 **Asia Pacific University of Technology & Innovation (APU) — Master of Tech Mgt, IT Mgt, Digital Transformation, Software Eng, Project Mgt, MBA (incl. specialisms), Int. Business Comms, Digital Marketing, Finance, Accounting, Design Innovation, Actuarial Science**
+- **Level:** Master
 - **Duration:** 1-1.5 Years (3 Semesters)
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university.html)
 
 **Asia Pacific University of Technology & Innovation (APU) — ODL - Master of Business Administration (incl. specialisms)**
+- **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/apu-details.html)
-
-**University College MAIWP International (UCMI) — Master of Business Administration (MBA)**
-- **Duration:** 1-3 Years
-
-[Source: program details](Universities/ucmi-details.html)
+[Source: program details](Universities/apu-university.html)
 
 **GENOVASI UNIVERSITY MALAYSIA — Master of Business Administration**
+- **Level:** Master
 - **Duration:** 1.5 Years
 
-[Source: program details](Universities/genovasi-details.html)
+[Source: program details](Universities/genovasi-university.html)
 
-Showing 6 of 140 matching entries.
+**BAC EDUCATION GROUP — Master of Business Administration (MBA) (By coursework)**
+- **Level:** Master
+- **Duration:** 1.5 Years
+
+[Source: program details](Universities/bac-university.html)
+
+Showing 6 of 134 matching entries.
 
 -------------------------------------------------
 
@@ -1322,8 +1287,8 @@ A65: These are the **published local fee entries** matching your request. Amount
 
 **SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
 MASTER'S PROGRAMS (SEGi University KD)
-- **Total Fee (MYR):** 54,350
-- **Year 1 (MYR):** 51,200
+- **Total Fee (MYR):** RM54,350
+- **Year 1 (MYR):** RM51,200
 
 > **Published conditions:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
@@ -1340,8 +1305,8 @@ A66: These are the **published local fee entries** matching your request. Amount
 
 **SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
 MASTER'S PROGRAMS (SEGi University KD)
-- **Total Fee (MYR):** 54,350
-- **Year 1 (MYR):** 51,200
+- **Total Fee (MYR):** RM54,350
+- **Year 1 (MYR):** RM51,200
 
 > **Published conditions:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
@@ -1431,27 +1396,33 @@ Status: answered
 A74: Here are matching entries from our local catalog.
 
 **Lincoln University College — Master of Science in Electrical & Electronics Engineering**
+- **Level:** Master
 
-[Source: program details](Universities/lincoln-details.html)
+[Source: program details](Universities/lincoln-university.html)
 
 **Universiti Kuala Lumpur (UniKL) — Master of Electrical Engineering**
+- **Level:** Master
 
-[Source: program details](Universities/unikl-details.html)
+[Source: program details](Universities/unikl-university.html)
 
 **Universiti Kuala Lumpur (UniKL) — Master of Engineering Technology (Electrical and Electronics)**
+- **Level:** Master
 
-[Source: program details](Universities/unikl-details.html)
+[Source: program details](Universities/unikl-university.html)
 
 **Universiti Putra Malaysia (UPM) — Master in Electrical Power Engineering**
+- **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university.html)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**
+- **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university.html)
 
 **Lincoln University College — Master of Science in Electrical & Electronics Engineering**
+- **Level:** Master
 - **Duration:** Year 1 Year 2
 
 [Source: program details](Fees_Chart/lincoln-fees.html)
@@ -1462,7 +1433,7 @@ Showing 6 of 12 matching entries.
 
 Q75: How much does it cost at UTM for engineering?
 Status: partial
-A75: Matching program entries exist, but their local fee rows contain **no monetary fee amount**. I cannot quote a cost from study-mode or duration labels. Please ask the university or a counselor for the current fee schedule.
+A75: Matching program entries for **Universiti Teknologi Malaysia (UTM)** exist, but their local fee rows contain **no monetary fee amount**. I cannot quote a cost from study-mode or duration labels. Please ask the university or a counselor for the current fee schedule.
 
 -------------------------------------------------
 
@@ -1486,7 +1457,7 @@ A78: **Universiti Malaya (UM)**
 
 **Taylor's University**
 - Taylor's University is ranked #272 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/taylors-details.html#rankings)
+[Rankings and FAQs](Universities/taylors-university#rankings)
 
 Universiti Malaya (UM) has the higher position in QS World University Rankings 2027 (a smaller rank number).
 

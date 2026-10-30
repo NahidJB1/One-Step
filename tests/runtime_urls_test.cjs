@@ -28,7 +28,7 @@ function normalize(request) {
 }
 const cases = [
     ['//','/'], ['///','/'], ['/Fees_Chart//alfa-fees','/Fees_Chart/alfa-fees'],
-    ['/Universities//apu-details','/Universities/apu-details'], ['/Articles//cheapest-universities','/Articles/cheapest-universities'],
+    ['/Universities//apu-university','/Universities/apu-university'], ['/Articles//cheapest-universities','/Articles/cheapest-universities'],
     ['/Fees_Chart//alfa-fees?q=business%20management&next=https://example.com//x','/Fees_Chart/alfa-fees?q=business%20management&next=https://example.com//x'],
     ['//Fees_Chart///alfa-fees','/Fees_Chart/alfa-fees'],
     ['/Fees_Chart//city-university-fees.html?q=a%2Fb&next=https://example.com//x','/Fees_Chart/city-university-fees.html?q=a%2Fb&next=https://example.com//x'],
@@ -117,7 +117,7 @@ const server=http.createServer((req,res)=>{
             return route.continue();
         });
         const page=await context.newPage();
-        for(const p of ['/','/Fees_Chart/alfa-fees','/Universities/apu-details','/Articles/cheapest-universities']) {
+        for(const p of ['/','/Fees_Chart/alfa-fees','/Universities/apu-university','/Articles/cheapest-universities']) {
             await page.goto(base+p,{waitUntil:'networkidle'});
             eq(await page.locator('.main-header .logo').getAttribute('href'),'/','Logo Home '+p);
             eq(await page.locator('.main-header .nav-link').first().getAttribute('href'),'/','Navbar Home '+p);
@@ -129,7 +129,7 @@ const server=http.createServer((req,res)=>{
             await page.goto(base+p,{waitUntil:'networkidle'});
             const cards=await page.locator('.university-card a').evaluateAll(es=>es.map(e=>e.getAttribute('href')));
             ok(cards.length>0,'Rendered university cards '+p);checkLinks(cards,base+p,'Cards');
-            ok(cards.includes('/Universities/cityu-details'),'CityU profile card');
+            ok(cards.includes('/Universities/cityu-university'),'CityU profile card');
             ok(cards.includes('/Fees_Chart/cityu-fees'),'CityU fee card');
         }
         for(const p of ['/','/search']) {
@@ -156,18 +156,18 @@ const server=http.createServer((req,res)=>{
             await page.waitForFunction(()=>document.querySelector('#dashboardView').style.display==='block');
             const result=await page.locator('#btnUniDetail,#btnUniFees').evaluateAll(es=>es.map(e=>e.getAttribute('href')));
             checkLinks(result,base+'/malaysia-scholarship','Scholarship '+uni.value);
-            if(uni.key==='City University Malaysia') eq(result,['/Universities/cityu-details','/Fees_Chart/cityu-fees'],'CityU scholarship mapping');
+            if(uni.key==='City University Malaysia') eq(result,['/Universities/cityu-university','/Fees_Chart/cityu-fees'],'CityU scholarship mapping');
         }
         eq(submissions,universities.length,'All scholarship POSTs mocked');
         await context.addInitScript(()=>localStorage.setItem('os_chat_history',JSON.stringify([{
             role:'bot',text:'[CityU](Fees_Chart/city-university-fees.html?q=business%20management#fee-category-0)',
-            buttons:[{label:'Profile',url:'Universities/cityu-details.html'}],
+            buttons:[{label:'Profile',url:'Universities/cityu-university'}],
             sources:[{title:'APU',url:'Fees_Chart/apu-fees.html'},{title:'China',url:'countries/china.html'}]
         }])));
-        await page.goto(base+'/Universities/apu-details',{waitUntil:'networkidle'});
+        await page.goto(base+'/Universities/apu-university',{waitUntil:'networkidle'});
         const chat=await page.locator('.os-message.bot a').evaluateAll(es=>es.map(e=>e.getAttribute('href')));
         eq(chat.length,4,'Rendered chatbot markdown, button and sources');
-        checkLinks(chat,base+'/Universities/apu-details','Chatbot');
+        checkLinks(chat,base+'/Universities/apu-university','Chatbot');
         ok(chat.some(h=>h.includes('/Fees_Chart/cityu-fees?q=business%20management#fee-category-0')),'Rendered chatbot CityU alias/query/fragment');
         for(const href of destinations) {
             const response=await context.request.get(base+href,{maxRedirects:0});
@@ -178,7 +178,7 @@ const server=http.createServer((req,res)=>{
             const response=await context.request.get(base+href,{maxRedirects:0});
             eq(response.status(),200,'Canonical sitemap destination 200: '+href);
         }
-        for(const p of ['/','/Fees_Chart/alfa-fees','/Universities/apu-details','/Articles/cheapest-universities']) {
+        for(const p of ['/','/Fees_Chart/alfa-fees','/Universities/apu-university','/Articles/cheapest-universities']) {
             await page.goto(base+p,{waitUntil:'networkidle'});
             for(const width of [320,390,768,1024,1440]) {
                 await page.setViewportSize({width,height:900});

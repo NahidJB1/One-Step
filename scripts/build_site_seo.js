@@ -11,15 +11,15 @@ const check = process.argv.includes('--check');
 const scopeArg = process.argv.find(arg => arg.startsWith('--universities='));
 const scopeIds = scopeArg ? scopeArg.slice('--universities='.length).split(',').filter(Boolean) : null;
 if (scopeIds && (!scopeIds.length || scopeIds.some(id => !rankings.universities[id]?.page))) throw new Error('Unknown or empty university build scope');
-const scopeFiles = scopeIds ? new Set(scopeIds.flatMap(id => [`Fees_Chart/${id}-fees.html`, `Universities/${id}-details.html`])) : null;
+const scopeFiles = scopeIds ? new Set(scopeIds.flatMap(id => [`Fees_Chart/${id}-fees.html`, `data/university_details/${id}-details.html`])) : null;
 const changed = [];
 const rendered = new Map();
 const slug = id => id === 'city-university' ? 'cityu' : id;
 const feeId = id => id === 'cityu' ? 'city-university' : id;
 const short = id => rankings.universities[id]?.short_name || fees[feeId(id)]?.title || id;
 const feeFile = id => `Fees_Chart/${id}-fees.html`;
-const detailFile = id => `Universities/${id}-details.html`;
-const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
+const detailFile = id => `data/university_details/${id}-details.html`;
+const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'genovasi', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
 const publicDetailFile = id => combinedIds.has(id) ? `Universities/${id}-university.html` : detailFile(id);
 const publicFeeHref = id => combinedIds.has(id) ? `/${publicDetailFile(id).replace('.html','')}#courses-fees` : `/${feeFile(id).replace('.html','')}`;
 function save(file, html) {
@@ -87,13 +87,13 @@ for (const [key,uni] of Object.entries(fees)) {
     html = replaceElement(html, /<div\b[^>]*id="static-faq"[^>]*>/, '', false);
     html = replaceElement(html, /<div\b[^>]*class="popular-queries-section"[^>]*>/, '', false);
     html = replaceElement(html, /<nav\b[^>]*class="breadcrumb"[^>]*>/, '', false);
-    const crumbs = [['Home','index.html'],['Universities','explore-universities.html'],[name,detailFile(id)],['Tuition fees',file]];
+    const crumbs = [['Home','index.html'],['Universities','explore-universities.html'],[name,publicDetailFile(id)],['Tuition fees',file]];
     const categories = [...new Set(uni.categories.map(c=>plain(c.category_name)).filter(Boolean))];
     const overview = `${breadcrumbHtml(crumbs)}<section class="study-content" id="fees-guide" aria-labelledby="fees-guide-title">
 <h2 id="fees-guide-title">${esc(name)} tuition fees for international students</h2>
 <p>Check course costs, payment periods and additional charges before applying from Bangladesh or another country. Select your program and campus, then read its fee headings and notes together.</p>
 <details class="study-faq"><summary>How to read this fee chart</summary>${categories.length ? `<p><strong>Covered in the schedule:</strong> ${esc(categories.slice(0,8).join('; '))}${categories.length > 8 ? '; and further faculty or campus sections below' : ''}.</p>` : ''}<p>Amounts retain their published labels. First-year payments, semester fees, tuition-only amounts and program totals may include different items. Scholarships and nationality-specific costs need confirmation for your intake.</p></details>
-<p><a href="/${detailFile(id).replace('.html','')}#rankings">${esc(name)} QS World, Asia and Malaysia rankings</a> · <a href="/Articles/scholarships-for-international-students-malaysia">International student scholarship guide</a> · <a href="#faq">Fee questions and answers</a></p>
+<p><a href="/${publicDetailFile(id).replace('.html','')}#rankings">${esc(name)} QS World, Asia and Malaysia rankings</a> · <a href="/Articles/scholarships-for-international-students-malaysia">International student scholarship guide</a> · <a href="#faq">Fee questions and answers</a></p>
 </section>`;
     html = block(html, 'fee-guide', prioritySEO.content[id] ? prioritySEO.feeGuide(id, uni, crumbs, html) : overview, '<div class="search-container">');
     const docs = sourceDocs(uni);
@@ -116,7 +116,7 @@ for (const [key,uni] of Object.entries(fees)) {
     const title = prioritySEO.content[id]?.fee_title || `${name} Tuition Fees${edition} & International Fee Chart | One-Step`;
     const description = prioritySEO.content[id]?.fee_description || `Explore ${name} tuition fees for international and Bangladeshi students. Compare course costs, payment periods, fee documents and scholarship conditions.`;
     html = metadata(html, file, title, description, [
-        {'@type':'WebPage','@id':urlFor(file)+'#webpage',url:urlFor(file),name:title,description,about:{'@id':urlFor(detailFile(id))+'#university'}},
+        {'@type':'WebPage','@id':urlFor(file)+'#webpage',url:urlFor(file),name:title,description,about:{'@id':urlFor(publicDetailFile(id))+'#university'}},
         breadcrumbs(crumbs), {'@type':'FAQPage','@id':urlFor(file)+'#faq',mainEntity:faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}
     ]);
     save(file, stylesheet(html));
@@ -127,7 +127,7 @@ function directory() {
     return '<ul class="study-directory">' + directoryItems.map(id=>`<li><a href="/${publicDetailFile(id).replace('.html','')}">${esc(rankings.universities[id].name)}</a><small><a href="${publicFeeHref(id)}">Tuition fees and fee chart</a> · <a href="/${publicDetailFile(id).replace('.html','')}#rankings">QS rankings</a></small></li>`).join('\n') + '</ul>';
 }
 for (const id of directoryItems) {
-    const file = detailFile(id), uni = fees[feeId(id)], name = short(id);
+    const file = detailFile(id), publicFile = publicDetailFile(id), uni = fees[feeId(id)], name = short(id);
     let html = read(file);
     // Keep these fields aligned with the ranking builder without touching its
     // ranking facts or FAQ schema. This build can also run on machines without PHP.
@@ -142,7 +142,7 @@ for (const id of directoryItems) {
         .replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${rankingEsc(description)}">`)
         .replace(/<meta property="og:title" content="[^"]*">/,`<meta property="og:title" content="${rankingEsc(title)}">`)
         .replace(/<meta property="og:description" content="[^"]*">/,`<meta property="og:description" content="${rankingEsc(description)}">`);
-    const crumbs = [['Home','index.html'],['Universities','explore-universities.html'],[name,file]];
+    const crumbs = [['Home','index.html'],['Universities','explore-universities.html'],[name,publicFile]];
     html = block(html,'study-guide',`<section class="container study-content" id="fees-and-scholarships">
 ${breadcrumbHtml(crumbs)}
 <h2>${esc(name)} tuition fees, scholarships and study planning</h2>
@@ -180,7 +180,7 @@ for (const file of ['index.html','explore-universities.html']) {
     const schema = file === 'index.html'
         ? {'@type':'WebSite',url:urlFor(file),name:'One-Step',alternateName:'One Step MY',description}
         : {'@type':'CollectionPage',url:urlFor(file),name:title,description};
-    html = metadata(html,file,title,description,[schema]);
+    html = metadata(html,file,title,description,file === 'index.html' ? require('./agent_schema')(description) : [schema]);
     save(file,stylesheet(html,''));
 }
 
@@ -193,12 +193,12 @@ save('contact.html', metadata(read('contact.html'),'contact.html','Contact One-S
 require('./student_support')({H,save,rendered});
 
 // Public content only. The previous sitemap omitted every article and hub page.
-const rootPages = ['index.html','explore-universities.html','articles.html','student-support-malaysia.html','compare.html','contact.html','scholarship-options.html','scholarship.html','malaysia-scholarship.html'];
-const mergedLegacyFiles = new Set([...combinedIds].flatMap(id => [detailFile(id), feeFile(id)]));
+const rootPages = ['index.html','explore-universities.html','articles.html','student-support-malaysia.html','compare.html','contact.html','scholarship-options.html','scholarship.html','malaysia-scholarship.html','about.html','terms.html'];
+const mergedLegacyFiles = new Set([...combinedIds].map(id => feeFile(id)));
 const pages = [...rootPages, ...['Universities','Fees_Chart','Articles','countries'].flatMap(dir=>fs.readdirSync(path.join(root,dir)).filter(f=>f.endsWith('.html')).map(f=>`${dir}/${f}`))].filter(file => !mergedLegacyFiles.has(file));
-// Omit lastmod until per-page source/editorial dates can be maintained accurately.
-// File copy times and the build date are not evidence that a fee was reviewed.
-const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + [...new Set(pages)].filter(file=>rendered.has(file) || fs.existsSync(path.join(root,file))).map(file=>`  <url><loc>${esc(urlFor(file))}</loc></url>`).join('\n') + '\n</urlset>\n';
+const publicPages = [...new Set(pages)].filter(file=>rendered.has(file) || fs.existsSync(path.join(root,file)));
+const lastmods = require('./sitemap_lastmod')(root,publicPages,file=>rendered.get(file) || read(file),save);
+const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + publicPages.map(file=>`  <url><loc>${esc(urlFor(file))}</loc><lastmod>${lastmods[file].lastmod}</lastmod></url>`).join('\n') + '\n</urlset>\n';
 save('sitemap.xml',sitemap);
 // Compare only final output: shared sections may enrich a page after its renderer.
 for (const [file, html] of rendered) {

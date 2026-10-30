@@ -149,10 +149,10 @@ function renderFeaturedUniversities() {
         const meta = window.UNIVERSITY_META[uni.name];
         
         const isHidden = count >= 6 ? ' hidden-card' : '';
-        const combinedUniversities = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
+        const combinedUniversities = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'genovasi', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
         const detailsLink = combinedUniversities.has(meta.slug)
             ? `/Universities/${meta.slug}-university`
-            : `/Universities/${meta.slug}-details`;
+            : `/Universities/${meta.slug}-university`;
         // Reserved for the dedicated university application page, to be built next.
         const applyLink = `/apply?university=${encodeURIComponent(meta.slug)}`;
 

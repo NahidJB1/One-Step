@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/mcp-server-card/v1.json",
+  "version": "1.0",
+  "protocolVersion": "2025-06-18",
+  "serverInfo": {"name": "onestep-public-guides", "title": "One-Step Public Study Guides", "version": "1.0.0"},
+  "description": "Read-only access to public One-Step study guidance. No applications, accounts or personal data.",
+  "documentationUrl": "https://www.onestepmy.com/llms.txt",
+  "transport": {"type": "streamable-http", "endpoint": "https://www.onestepmy.com/mcp.php"},
+  "capabilities": {"resources": {}},
+  "authentication": {"required": false},
+  "resources": [
+    {"uri": "https://www.onestepmy.com/llms.txt", "name": "site-guide", "mimeType": "text/plain"},
+    {"uri": "https://www.onestepmy.com/index.md", "name": "homepage", "mimeType": "text/markdown"},
+    {"uri": "mcp://server-card.json", "name": "server-card", "mimeType": "application/json"}
+  ]
+}

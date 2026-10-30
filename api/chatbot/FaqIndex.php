@@ -13,6 +13,10 @@ final class FaqIndex
     public function __construct(KnowledgeBase $kb)
     {
         $this->kb = $kb;
+        if ($kb->cachedIndex) {
+            foreach (['docs','postings','exact','averageLength'] as $field) $this->$field = $kb->cachedIndex[$field];
+            return;
+        }
         $total = 0;
         foreach ($kb->faqs as $id => $faq) {
             foreach ($faq['variants'] as $question) {
@@ -27,6 +31,11 @@ final class FaqIndex
             }
         }
         $this->averageLength = $total / max(1, count($this->docs));
+    }
+
+    public function snapshot(): array
+    {
+        return ['docs'=>$this->docs,'postings'=>$this->postings,'exact'=>$this->exact,'averageLength'=>$this->averageLength];
     }
 
     private function tokens(string $text): array
@@ -63,7 +72,15 @@ final class FaqIndex
         foreach (array_keys($this->exact[Text::normalize($question)] ?? []) as $id) {
             if ($this->allowed($this->kb->faqs[$id], $universities) && $this->conditionsMatch($this->kb->faqs[$id], $question)) $exact[] = ['id' => $id, 'score' => 1.0, 'coverage' => 1.0, 'exact' => true];
         }
-        if ($exact) return $this->deduplicate($exact);
+        if ($exact) {
+            if (count($universities) === 1) {
+                $scoped = array_values(array_filter($exact, function ($match) use ($universities) { return $this->kb->faqs[$match['id']]['scope'] === $universities[0]; }));
+                if ($scoped) $exact = $scoped;
+            }
+            $primary = array_values(array_filter($exact, function ($match) use ($question) { return Text::normalize($this->kb->faqs[$match['id']]['q']) === Text::normalize($question); }));
+            if ($primary) $exact = $primary;
+            return $this->deduplicate($exact);
+        }
         $terms = $this->tokens($question);
         // Correct only unrecognized, long query tokens with a unique distance-one match.
         foreach ($terms as &$term) {

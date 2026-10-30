@@ -4,14 +4,14 @@
 - Contextual turns: **100**
 - Turns passing semantic checks: **100**
 - Turns needing review: **0**
-- Assertions: **1375**; failed: **0**
+- Assertions: **1369**; failed: **0**
 - Response statuses: **answered 82**, **partial 15**, **clarification 2**, **not_found 1**
 
 A PASS means the response met the turn-specific safety/fact/context assertions. It is not a general accuracy percentage and does not replace review of source data or real-user evaluation.
 
 # Five fictional Bangladeshi student chatbot simulation
 
-Generated: 2026-09-13 03:49:45 +08  
+Generated: 2026-10-13 22:52:09 +08  
 Five isolated conversations; each student has 20 sequential turns. The real local PHP chatbot receives only the current question and its returned compact context. Names and profiles are fictional.
 
 ## Student A — Tanvir (fictional)
@@ -38,13 +38,13 @@ These matches are broad program-group rows, not separately named course confirma
 - **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university)
 
 **Asia Pacific University of Technology & Innovation (APU) — Computing, Business, Tourism, Accounting & Finance, Actuarial, Banking, International Relations, Media, Psychology**
 - **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Fees_Chart/apu-fees.html)
+[Source: program details](Universities/apu-university#courses-fees)
 
 Showing 2 of 2 matching entries.
 
@@ -65,7 +65,7 @@ First-year or annual fees are not recorded for this entry. The published total i
 
 > **Published conditions:** Dual Award Scheme with De Montfort University (DMU) UK requires an additional fee of GBP 425 per level.
 
-[Source: fee table](Fees_Chart/apu-fees.html)
+[Source: fee table](Universities/apu-university#courses-fees)
 
 Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -85,7 +85,7 @@ BACHELOR PROGRAMS
 
 > **Published conditions:** Dual Award Scheme with De Montfort University (DMU) UK requires an additional fee of GBP 425 per level.
 
-[Source: fee table](Fees_Chart/apu-fees.html)
+[Source: fee table](Universities/apu-university#courses-fees)
 
 Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -107,7 +107,7 @@ BACHELOR PROGRAMS
 
 > **Published conditions:** Dual Award Scheme with De Montfort University (DMU) UK requires an additional fee of GBP 425 per level.
 
-[Source: fee table](Fees_Chart/apu-fees.html)
+[Source: fee table](Universities/apu-university#courses-fees)
 
 Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -118,7 +118,7 @@ Showing 1 of 1 matching entries. The local data has no verified effective date; 
 
 **Asia Pacific University of Technology & Innovation (APU)**
 - APU is ranked #=528 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/apu-details.html#rankings)
+[Rankings and FAQs](Universities/apu-university#rankings)
 
 Verified 2026-09-12. An = sign means a tied rank; a range is a band, not an exact position.
 
@@ -131,7 +131,7 @@ Sources: [Asia Pacific University of Technology & Innovation (APU) - QS profile]
 
 **Asia Pacific University of Technology & Innovation (APU)**
 - APU is ranked #147 in QS Asia University Rankings 2026.
-[Rankings and FAQs](Universities/apu-details.html#rankings)
+[Rankings and FAQs](Universities/apu-university#rankings)
 
 Verified 2026-09-12. An = sign means a tied rank; a range is a band, not an exact position.
 
@@ -144,11 +144,11 @@ Sources: [APU 2026 brochure - QS Asia 2026 results](https://publicwebsite-media.
 
 **Asia Pacific University of Technology & Innovation (APU)**
 - APU is ranked #=528 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/apu-details.html#rankings)
+[Rankings and FAQs](Universities/apu-university#rankings)
 
 **Multimedia University (MMU)**
 - MMU is ranked #771–780 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/mmu-details.html#rankings)
+[Rankings and FAQs](Universities/mmu-university#rankings)
 
 APU has the higher position in QS World University Rankings 2027 (a smaller rank number).
 
@@ -167,37 +167,37 @@ Here are matching entries from our local catalog.
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Universities/mmu-details.html)
+[Source: program details](Universities/mmu-university)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) in Game Development (92/48)/6/0531) 02/25 (A5830)**
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Universities/mmu-details.html)
+[Source: program details](Universities/mmu-university)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) in Data Science (172/481/6/0831) (12/25 (A5830)**
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Universities/mmu-details.html)
+[Source: program details](Universities/mmu-university)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) Cybersecurity (12/481/6/0531)**
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Universities/mmu-details.html)
+[Source: program details](Universities/mmu-university)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) Artificial Intelligence (R2/481/6/0786) 06/23 (A4187)**
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Universities/mmu-details.html)
+[Source: program details](Universities/mmu-university)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) in Software Engineering (22/451/6/0551) 02/25 ( )**
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Fees_Chart/mmu-fees.html)
+[Source: program details](Universities/mmu-university#courses-fees)
 
 Showing 6 of 10 matching entries.
 
@@ -226,115 +226,53 @@ INFORMATION TECHNOLOGY AND COMPUTER SCIENCE
 > 
 > Note: All fees including the one-time payment, program fees and other related charges are currently listed before the 6% Sales & Service Tax (SST).
 
-[Source: fee table](Fees_Chart/mmu-fees.html)
+[Source: fee table](Universities/mmu-university#courses-fees)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) in Game Development (92/48)/6/0531) 02/25 (A5830)**
 INFORMATION TECHNOLOGY AND COMPUTER SCIENCE
 - **Estimated Yearly Programme Fee (RM):** RM 25,750
 
-> **Published conditions:** One-time Payment (Upon Acceptance) [All Programmes]:
-> - Registration Fee: RM 2,000
-> - International Processing Fee (Student Visa): RM 3,500
-> - Deposit: RM 1,500
-> Total Initial Fees: RM 7,000
-> 
-> Other Payment (After Enrolment):
-> - Trimester Fee (All UG Programmes): Long Trimester RM 160, Short Trimester RM 80.
-> - RM 400 (per year)
-> 
-> Note: All fees including the one-time payment, program fees and other related charges are currently listed before the 6% Sales & Service Tax (SST).
+Conditions: the same published notes as **Bachelor of Computer Science (Hons.) in Software Engineering (22/451/6/0551) 02/25 ( )** above.
 
-[Source: fee table](Fees_Chart/mmu-fees.html)
+[Source: fee table](Universities/mmu-university#courses-fees)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) in Data Science (172/481/6/0831) (12/25 (A5830)**
 INFORMATION TECHNOLOGY AND COMPUTER SCIENCE
 - **Estimated Yearly Programme Fee (RM):** RM 25,750
 
-> **Published conditions:** One-time Payment (Upon Acceptance) [All Programmes]:
-> - Registration Fee: RM 2,000
-> - International Processing Fee (Student Visa): RM 3,500
-> - Deposit: RM 1,500
-> Total Initial Fees: RM 7,000
-> 
-> Other Payment (After Enrolment):
-> - Trimester Fee (All UG Programmes): Long Trimester RM 160, Short Trimester RM 80.
-> - RM 400 (per year)
-> 
-> Note: All fees including the one-time payment, program fees and other related charges are currently listed before the 6% Sales & Service Tax (SST).
+Conditions: the same published notes as **Bachelor of Computer Science (Hons.) in Software Engineering (22/451/6/0551) 02/25 ( )** above.
 
-[Source: fee table](Fees_Chart/mmu-fees.html)
+[Source: fee table](Universities/mmu-university#courses-fees)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) Cybersecurity (12/481/6/0531)**
 INFORMATION TECHNOLOGY AND COMPUTER SCIENCE
 - **Estimated Yearly Programme Fee (RM):** RM 25,750
 
-> **Published conditions:** One-time Payment (Upon Acceptance) [All Programmes]:
-> - Registration Fee: RM 2,000
-> - International Processing Fee (Student Visa): RM 3,500
-> - Deposit: RM 1,500
-> Total Initial Fees: RM 7,000
-> 
-> Other Payment (After Enrolment):
-> - Trimester Fee (All UG Programmes): Long Trimester RM 160, Short Trimester RM 80.
-> - RM 400 (per year)
-> 
-> Note: All fees including the one-time payment, program fees and other related charges are currently listed before the 6% Sales & Service Tax (SST).
+Conditions: the same published notes as **Bachelor of Computer Science (Hons.) in Software Engineering (22/451/6/0551) 02/25 ( )** above.
 
-[Source: fee table](Fees_Chart/mmu-fees.html)
+[Source: fee table](Universities/mmu-university#courses-fees)
 
 **Multimedia University (MMU) — Bachelor of Computer Science (Hons.) Artificial Intelligence (R2/481/6/0786) 06/23 (A4187)**
 INFORMATION TECHNOLOGY AND COMPUTER SCIENCE
 - **Estimated Yearly Programme Fee (RM):** RM 25,750
 
-> **Published conditions:** One-time Payment (Upon Acceptance) [All Programmes]:
-> - Registration Fee: RM 2,000
-> - International Processing Fee (Student Visa): RM 3,500
-> - Deposit: RM 1,500
-> Total Initial Fees: RM 7,000
-> 
-> Other Payment (After Enrolment):
-> - Trimester Fee (All UG Programmes): Long Trimester RM 160, Short Trimester RM 80.
-> - RM 400 (per year)
-> 
-> Note: All fees including the one-time payment, program fees and other related charges are currently listed before the 6% Sales & Service Tax (SST).
+Conditions: the same published notes as **Bachelor of Computer Science (Hons.) in Software Engineering (22/451/6/0551) 02/25 ( )** above.
 
-[Source: fee table](Fees_Chart/mmu-fees.html)
+[Source: fee table](Universities/mmu-university#courses-fees)
 
 Showing 5 of 5 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
 ### 11. Across all universities, my budget is RM40,000 per year. Show matching IT bachelor options.
 
 **Result:** PASS  
-**Status:** answered · **Context:** 232 bytes · **Sources:** Binary University of Management & Entrepreneurship: All Programs; ALFA UNIVERSITY MALAYSIA: BACHELOR PROGRAMS; BAC EDUCATION GROUP: UNIMY; Universiti Putra Malaysia (UPM): BACHELOR DEGREE PROGRAMMES
+**Status:** answered · **Context:** 232 bytes · **Sources:** ALFA University College: BACHELOR PROGRAMS; BAC EDUCATION GROUP: UNIMY; Universiti Putra Malaysia (UPM): BACHELOR DEGREE PROGRAMMES
 
 **Across all universities, my budget is RM40,000 per year**
 These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
 
 Only the recorded first-year/annual charges are shown below; no total has been divided by the course duration.
 
-**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**
-All Programs
-- **Year 1 (RM):** RM10,920
-
-> **Published conditions:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
-
-[Source: fee table](Fees_Chart/binary-fees.html)
-
-**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
+**ALFA University College — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
 BACHELOR PROGRAMS
 - **Year 1:** RM 16,000
 
@@ -344,7 +282,7 @@ BACHELOR PROGRAMS
 > International Student Fee: RM 1,500
 > Total Initial Fees Payment Upon Application: RM 6,000
 
-[Source: fee table](Fees_Chart/alfa-fees.html)
+[Source: fee table](Universities/alfa-university#courses-fees)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
 UNIMY
@@ -352,15 +290,15 @@ UNIMY
 
 > **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
 
-[Source: fee table](Fees_Chart/bac-fees.html)
+[Source: fee table](Universities/bac-university#courses-fees)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**
 UNIMY
 - **Tuition Fees (1st Year):** RM16,168
 
-> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
+Conditions: the same published notes as **Bachelor of Computer Science (Data Science)** above.
 
-[Source: fee table](Fees_Chart/bac-fees.html)
+[Source: fee table](Universities/bac-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — Bachelor of Computer Science with Honours**
 BACHELOR DEGREE PROGRAMMES
@@ -370,98 +308,77 @@ BACHELOR DEGREE PROGRAMMES
 > Initial/Other Fees: Registration Fee for first semester: RM 2000.00 (USD 500); Service Fee per semester: RM 1000.00 (USD 250); Medical Check-Up: RM 400.00; Insurance: RM 500.00 - RM 800.00; Visa Approval Letter (e-VAL): RM 1400.00 - RM 2000.00.
 > Note: Fees quoted in US dollars are subject to change due to fluctuations in the exchange rate. The tuition fee listed does not include housing/accommodation.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — Bachelor of Computer Science (Multimedia) with Honours**
 BACHELOR DEGREE PROGRAMMES
 - **Fee Per Year (MYR):** RM 20,000.00
 
-> **Published conditions:** "#" indicates that the applicant must undergo an interview prior to approval into the respective faculty.
-> Initial/Other Fees: Registration Fee for first semester: RM 2000.00 (USD 500); Service Fee per semester: RM 1000.00 (USD 250); Medical Check-Up: RM 400.00; Insurance: RM 500.00 - RM 800.00; Visa Approval Letter (e-VAL): RM 1400.00 - RM 2000.00.
-> Note: Fees quoted in US dollars are subject to change due to fluctuations in the exchange rate. The tuition fee listed does not include housing/accommodation.
+Conditions: the same published notes as **Bachelor of Computer Science with Honours** above.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
-Showing 6 of 15 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+**Universiti Putra Malaysia (UPM) — Bachelor of Computer Science (Computer Network) with Honours**
+BACHELOR DEGREE PROGRAMMES
+- **Fee Per Year (MYR):** RM 20,000.00
+
+Conditions: the same published notes as **Bachelor of Computer Science with Honours** above.
+
+[Source: fee table](Universities/upm-university#courses-fees)
+
+Showing 6 of 14 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
 **Show matching IT bachelor options**
 Here are matching entries from our local catalog.
 
-**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**
+**ALFA University College — Bachelor of Information Technology (HONOURS)**
 - **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Fees_Chart/binary-fees.html)
+[Source: program details](Universities/alfa-university#courses-fees)
 
-**ALFA UNIVERSITY MALAYSIA — Bachelor of Information Technology (HONOURS)**
+**ALFA University College — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
 - **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Fees_Chart/alfa-fees.html)
-
-**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
-- **Level:** Bachelor
-- **Duration:** 3 Years
-
-[Source: program details](Fees_Chart/alfa-fees.html)
+[Source: program details](Universities/alfa-university#courses-fees)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Fees_Chart/bac-fees.html)
+[Source: program details](Universities/bac-university#courses-fees)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**
 - **Level:** Bachelor
 - **Duration:** 3 years
 
-[Source: program details](Fees_Chart/bac-fees.html)
+[Source: program details](Universities/bac-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — Bachelor of Computer Science with Honours**
 - **Level:** Bachelor
 - **Duration:** 4 Years
 
-[Source: program details](Fees_Chart/upm-fees.html)
+[Source: program details](Universities/upm-university#courses-fees)
 
-Showing 6 of 28 matching entries.
+**Universiti Putra Malaysia (UPM) — Bachelor of Computer Science (Multimedia) with Honours**
+- **Level:** Bachelor
+- **Duration:** 4 Years
+
+[Source: program details](Universities/upm-university#courses-fees)
+
+Showing 6 of 27 matching entries.
 
 ### 12. Which of those is the cheapest?
 
 **Result:** PASS  
-**Status:** answered · **Context:** 228 bytes · **Sources:** Binary University of Management & Entrepreneurship: All Programs; ALFA UNIVERSITY MALAYSIA: BACHELOR PROGRAMS; BAC EDUCATION GROUP: UNIMY; Universiti Putra Malaysia (UPM): BACHELOR DEGREE PROGRAMMES
+**Status:** answered · **Context:** 228 bytes · **Sources:** ALFA University College: BACHELOR PROGRAMS; BAC EDUCATION GROUP: UNIMY; Universiti Putra Malaysia (UPM): BACHELOR DEGREE PROGRAMMES
 
 These are the **published local fee entries** matching your request. Amounts keep the original labels and conditions.
 
-**Lowest comparable published annual amount in these matches:** Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics): **RM10,920**.
+**Lowest comparable published annual amount in these matches:** ALFA University College — Bachelor of Information Technology (HONOURS): **RM14,000**.
 
-**Binary University of Management & Entrepreneurship — BSc (Hons) Computer Science (Specialisations: AI, Cloud Computing, Cybersecurity, Data Analytics)**
-All Programs
-- **Level:** Bachelor
-- **Duration:** 3 Years
-- **Year 1 (RM):** RM10,920
-- **Year 2 (RM):** RM10,920
-- **Year 3 (RM):** RM10,920
-- **Total (RM):** RM32,760
-
-> **Published conditions:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
-
-[Source: fee table](Fees_Chart/binary-fees.html)
-
-**ALFA UNIVERSITY MALAYSIA — Bachelor of Information Technology (HONOURS)**
+**ALFA University College — Bachelor of Information Technology (HONOURS)**
 BACHELOR PROGRAMS
 - **Duration:** 3 Years
 - **Year 1:** RM 14,000
@@ -476,9 +393,9 @@ BACHELOR PROGRAMS
 > International Student Fee: RM 1,500
 > Total Initial Fees Payment Upon Application: RM 6,000
 
-[Source: fee table](Fees_Chart/alfa-fees.html)
+[Source: fee table](Universities/alfa-university#courses-fees)
 
-**ALFA UNIVERSITY MALAYSIA — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
+**ALFA University College — Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)**
 BACHELOR PROGRAMS
 - **Duration:** 3 Years
 - **Year 1:** RM 16,000
@@ -487,13 +404,9 @@ BACHELOR PROGRAMS
 - **Year 3:** RM 15,000
 - **Total:** RM 48,000
 
-> **Published conditions:** Initial Fees (International Student):
-> EMGS and VISA Processing Fee: RM 3,500
-> Registration Fee: RM 1,000
-> International Student Fee: RM 1,500
-> Total Initial Fees Payment Upon Application: RM 6,000
+Conditions: the same published notes as **Bachelor of Information Technology (HONOURS)** above.
 
-[Source: fee table](Fees_Chart/alfa-fees.html)
+[Source: fee table](Universities/alfa-university#courses-fees)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Data Science)**
 UNIMY
@@ -504,7 +417,7 @@ UNIMY
 
 > **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
 
-[Source: fee table](Fees_Chart/bac-fees.html)
+[Source: fee table](Universities/bac-university#courses-fees)
 
 **BAC EDUCATION GROUP — Bachelor of Computer Science (Honours)**
 UNIMY
@@ -513,9 +426,9 @@ UNIMY
 - **Tuition Fees (Following Years):** RM15,000 / 2nd & 3rd year
 - **Total Tuition Fee:** RM46,168
 
-> **Published conditions:** <strong>Other Fees:</strong><br>EMGS & Application Fee: RM4,800 (Non-refundable)<br>Visa Renewal Fee: RM1,200 / year (Non-refundable)<br>Resource Fee: RM1,000 / year (Non-refundable)<br><br><strong>Intakes Calendar:</strong><br>Pre-University Programs: Feb, May, Sep<br>Undergraduate Programs: Feb, May, Sep<br>Bachelor of Computer Engineering: May, Sep<br>Postgraduate Programs: Feb, May, Sep (Course Work); Open throughout the year (Research)
+Conditions: the same published notes as **Bachelor of Computer Science (Data Science)** above.
 
-[Source: fee table](Fees_Chart/bac-fees.html)
+[Source: fee table](Universities/bac-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — Bachelor of Computer Science with Honours**
 BACHELOR DEGREE PROGRAMMES
@@ -528,13 +441,24 @@ BACHELOR DEGREE PROGRAMMES
 > Initial/Other Fees: Registration Fee for first semester: RM 2000.00 (USD 500); Service Fee per semester: RM 1000.00 (USD 250); Medical Check-Up: RM 400.00; Insurance: RM 500.00 - RM 800.00; Visa Approval Letter (e-VAL): RM 1400.00 - RM 2000.00.
 > Note: Fees quoted in US dollars are subject to change due to fluctuations in the exchange rate. The tuition fee listed does not include housing/accommodation.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
+
+**Universiti Putra Malaysia (UPM) — Bachelor of Computer Science (Multimedia) with Honours**
+BACHELOR DEGREE PROGRAMMES
+- **Faculty:** Computer Science & Information Technology
+- **Duration:** 4 Years
+- **Fee Per Year (MYR):** RM 20,000.00
+- **Total Tuition Fees (MYR):** RM 80,000.00
+
+Conditions: the same published notes as **Bachelor of Computer Science with Honours** above.
+
+[Source: fee table](Universities/upm-university#courses-fees)
 
 Fee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.
 
 Entries with an explicit comparable total are shown in ascending order; unpriced or differently labelled entries cannot establish the cheapest overall cost. Tuition, living costs and visa charges must be checked separately.
 
-Showing 6 of 28 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
+Showing 6 of 27 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
 ### 13. I do not have IELTS. Can I still apply?
 
@@ -624,7 +548,7 @@ MASTER'S PROGRAMS (SEGi University KD)
 > **প্রকাশিত শর্ত:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
 
-[সূত্র: ফি তালিকা](Fees_Chart/segi-fees.html)
+[সূত্র: ফি তালিকা](Universities/segi-university#courses-fees)
 
 মোট 1টি মিলের মধ্যে 1টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -643,7 +567,7 @@ MASTER'S PROGRAMS (SEGi University KD)
 > **প্রকাশিত শর্ত:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
 
-[সূত্র: ফি তালিকা](Fees_Chart/segi-fees.html)
+[সূত্র: ফি তালিকা](Universities/segi-university#courses-fees)
 
 মোট 1টি মিলের মধ্যে 1টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -663,7 +587,7 @@ MASTER'S PROGRAMS (SEGi University KD)
 > **Published conditions:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
 
-[Source: fee table](Fees_Chart/segi-fees.html)
+[Source: fee table](Universities/segi-university#courses-fees)
 
 Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -681,7 +605,7 @@ Year 2 fees are not recorded for this entry; a blank/dash is not a zero fee.
 > **Published conditions:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
 
-[Source: fee table](Fees_Chart/segi-fees.html)
+[Source: fee table](Universities/segi-university#courses-fees)
 
 Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -708,7 +632,7 @@ JOHOR BAHRU CAMPUS
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 **City University Malaysia — Master of Business Administration (MBA)**
 PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
@@ -720,13 +644,9 @@ PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
 - **প্রথম বছর:** RM35,523
 - **মোট:** RM35,523
 
-> **প্রকাশিত শর্ত:** Payment Schedule:
-> 1. Payment: Visa (EMGS) Fee RM 3000
-> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.
-> 
-> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
+Conditions: the same published notes as **Master of Business Administration (MBA)** above.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 **City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**
 PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
@@ -739,13 +659,9 @@ PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
 - **Year 2:** RM13,923
 - **মোট:** RM37,113
 
-> **প্রকাশিত শর্ত:** Payment Schedule:
-> 1. Payment: Visa (EMGS) Fee RM 3000
-> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.
-> 
-> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
+Conditions: the same published notes as **Master of Business Administration (MBA)** above.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 মোট 3টি মিলের মধ্যে 3টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -772,7 +688,7 @@ JOHOR BAHRU CAMPUS
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 **SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
 MASTER'S PROGRAMS (SEGi University KD)
@@ -782,7 +698,7 @@ MASTER'S PROGRAMS (SEGi University KD)
 > **Published conditions:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
 
-[Source: fee table](Fees_Chart/segi-fees.html)
+[Source: fee table](Universities/segi-university#courses-fees)
 
 **City University Malaysia — Master of Business Administration (MBA)**
 PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
@@ -794,13 +710,9 @@ PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
 - **Year 1:** RM35,523
 - **TOTAL:** RM35,523
 
-> **Published conditions:** Payment Schedule:
-> 1. Payment: Visa (EMGS) Fee RM 3000
-> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.
-> 
-> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
+Conditions: the same published notes as **Master of Business Administration (MBA)** above.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 **City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**
 PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
@@ -813,13 +725,9 @@ PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
 - **Year 2:** RM13,923
 - **TOTAL:** RM37,113
 
-> **Published conditions:** Payment Schedule:
-> 1. Payment: Visa (EMGS) Fee RM 3000
-> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.
-> 
-> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
+Conditions: the same published notes as **Master of Business Administration (MBA)** above.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 Fee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.
 
@@ -850,7 +758,7 @@ PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 **SEGI UNIVERSITY MALAYSIA — MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)**
 MASTER'S PROGRAMS (SEGi University KD)
@@ -860,7 +768,7 @@ MASTER'S PROGRAMS (SEGi University KD)
 > **Published conditions:** Initial Payment: MYR 3,150.00
 > Note: Masters fees exclude EMGS/Visa renewal fees
 
-[Source: fee table](Fees_Chart/segi-fees.html)
+[Source: fee table](Universities/segi-university#courses-fees)
 
 **City University Malaysia — Master of Business Administration (MBA)**
 JOHOR BAHRU CAMPUS
@@ -872,13 +780,9 @@ JOHOR BAHRU CAMPUS
 - **Year 1:** RM36,023
 - **TOTAL:** RM36,023
 
-> **Published conditions:** Payment Schedule:
-> 1. Payment: Visa (EMGS) Fee RM 3000
-> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.
-> 
-> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
+Conditions: the same published notes as **Master of Business Administration (MBA)** above.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 **City University Malaysia — Master of Science in Business Administration (By Research) (MSCBA)**
 PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
@@ -891,13 +795,9 @@ PETALING JAYA CAMPUS / CYBER JAYA CAMPUS - MASTER & PHD
 - **Year 2:** RM13,923
 - **TOTAL:** RM37,113
 
-> **Published conditions:** Payment Schedule:
-> 1. Payment: Visa (EMGS) Fee RM 3000
-> 2. Second Payment upon Receiving eVal: First Year Tuition Fee + Application Precessing Fee + International Student Fee + Completion processing fee.
-> 
-> *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
+Conditions: the same published notes as **Master of Business Administration (MBA)** above.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 Fee labels, included charges, and study periods may differ. These entries do not establish an overall cheapest university.
 
@@ -913,11 +813,11 @@ Showing 4 of 4 matching entries. The local data has no verified effective date; 
 **City University Malaysia**
 - City University Malaysia has no institution entry in the published QS World University Rankings 2027 table.
 This entry is City University Malaysia in Petaling Jaya. City University of Hong Kong and City University of Macau are different institutions.
-[Rankings and FAQs](Universities/cityu-details.html#rankings)
+[Rankings and FAQs](Universities/cityu-university#rankings)
 
 **SEGi University**
 - SEGi University is ranked #701–710 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/segi-details.html#rankings)
+[Rankings and FAQs](Universities/segi-university#rankings)
 
 Verified 2026-09-12. An = sign means a tied rank; a range is a band, not an exact position.
 
@@ -930,7 +830,7 @@ Sources: [QS World University Rankings 2027 - official results spreadsheet (v1.1
 
 **SEGi University**
 - SEGi University QS Asia University Rankings 2026-এ #350 অবস্থানে আছে।
-[র‍্যাঙ্কিং ও FAQ](Universities/segi-details.html#rankings)
+[র‍্যাঙ্কিং ও FAQ](Universities/segi-university#rankings)
 
 যাচাইয়ের তারিখ: 2026-09-12। = চিহ্ন যৌথ অবস্থান বোঝায়; একটি range একটি band, নির্দিষ্ট একক র‍্যাঙ্ক নয়।
 
@@ -1052,13 +952,13 @@ These matches are broad program-group rows, not separately named course confirma
 - **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Universities/apu-details.html)
+[Source: program details](Universities/apu-university)
 
 **Asia Pacific University of Technology & Innovation (APU) — Computing, Business, Tourism, Accounting & Finance, Actuarial, Banking, International Relations, Media, Psychology**
 - **Level:** Bachelor
 - **Duration:** 3 Years
 
-[Source: program details](Fees_Chart/apu-fees.html)
+[Source: program details](Universities/apu-university#courses-fees)
 
 Showing 2 of 2 matching entries.
 
@@ -1078,7 +978,7 @@ BACHELOR PROGRAMS
 
 > **Published conditions:** Dual Award Scheme with De Montfort University (DMU) UK requires an additional fee of GBP 425 per level.
 
-[Source: fee table](Fees_Chart/apu-fees.html)
+[Source: fee table](Universities/apu-university#courses-fees)
 
 Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -1099,7 +999,7 @@ First-year or annual fees are not recorded for this entry. The published total i
 
 > **Published conditions:** Dual Award Scheme with De Montfort University (DMU) UK requires an additional fee of GBP 425 per level.
 
-[Source: fee table](Fees_Chart/apu-fees.html)
+[Source: fee table](Universities/apu-university#courses-fees)
 
 Showing 1 of 1 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -1120,57 +1020,47 @@ First-year or annual fees are not recorded for this entry. The published total i
 > FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
 > ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science (Hons) Mobile Computing and Networking**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 First-year or annual fees are not recorded for this entry. The published total is not an annual quote.
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science in Data Science with Honours**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 First-year or annual fees are not recorded for this entry. The published total is not an annual quote.
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science in Cyber Security with Honours**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 First-year or annual fees are not recorded for this entry. The published total is not an annual quote.
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science in Artificial Intelligence with Honours**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 First-year or annual fees are not recorded for this entry. The published total is not an annual quote.
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science (Honours) (TVET Module)**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 First-year or annual fees are not recorded for this entry. The published total is not an annual quote.
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 Showing 6 of 6 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -1184,32 +1074,32 @@ Here are matching entries from our local catalog.
 **UCSI University — Bachelor of Computer Science (Honours)**
 - **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Bachelor of Computer Science (Hons) Mobile Computing and Networking**
 - **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Bachelor of Computer Science in Data Science with Honours**
 - **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Bachelor of Computer Science in Cyber Security with Honours**
 - **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Bachelor of Computer Science in Artificial Intelligence with Honours**
 - **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 **UCSI University — Bachelor of Computer Science (Honours) (TVET Module)**
 - **Level:** Bachelor
 
-[Source: program details](Universities/ucsi-details.html)
+[Source: program details](Universities/ucsi-university)
 
 Showing 6 of 12 matching entries.
 
@@ -1230,7 +1120,7 @@ INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 > FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
 > ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science (Hons) Mobile Computing and Networking**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
@@ -1238,11 +1128,9 @@ INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 - **TUITION FEE:** Year 1 RM21,410, Year 2 RM31,010, Year 3 RM23,210. Total RM75,630 (with bridging course RM76,980)
 - **FIRST TIME PAYMENT (AFTER APPLICATION):** RM26,300 / USD 7,108 (with bridging: RM27,650 / USD 7,473)
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science in Data Science with Honours**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
@@ -1250,11 +1138,9 @@ INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 - **TUITION FEE:** Year 1 RM24,620, Year 2 RM31,070, Year 3 RM23,020. Total RM78,710 (with bridging course RM80,060)
 - **FIRST TIME PAYMENT (AFTER APPLICATION):** RM26,300 / USD 7,108 (with bridging: RM27,650 / USD 7,473)
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science in Cyber Security with Honours**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
@@ -1262,11 +1148,9 @@ INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 - **TUITION FEE:** Year 1 RM24,093, Year 2 RM33,475, Year 3 RM32,582. Total RM90,150 (with bridging course RM91,500)
 - **FIRST TIME PAYMENT (AFTER APPLICATION):** RM31,300 / USD 8,459 (with bridging: RM32,650 / USD 8,824)
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science in Artificial Intelligence with Honours**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
@@ -1274,11 +1158,9 @@ INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 - **TUITION FEE:** Year 1 RM28,182, Year 2 RM28,646, Year 3 RM30,772. Total RM87,600 (with bridging course RM88,950)
 - **FIRST TIME PAYMENT (AFTER APPLICATION):** RM31,300 / USD 8,459 (with bridging: RM32,650 / USD 8,824)
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 **UCSI University — Bachelor of Computer Science (Honours) (TVET Module)**
 INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
@@ -1286,11 +1168,9 @@ INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION
 - **TUITION FEE:** Year 1 RM25,370, Year 2 RM32,480, Year 3 RM23,890. Total RM81,740 (with bridging course RM83,090)
 - **FIRST TIME PAYMENT (AFTER APPLICATION):** RM31,300 / USD 8,459 (with bridging: RM32,650 / USD 8,824)
 
-> **Published conditions:** FACILITIES FEE POSTGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200, FACILITIES RM200 (Total RM850), MEDICAL PLAN RM50. Minimum 9 semesters for Doctor Philosophy RM7,650. Minimum 6 semesters for Master in Computer Science RM5,100. Minimum 3 semesters for Master in Technopreneurship & Digital technology RM2,550.
-> FACILITIES FEE UNDERGRADUATE: ICT RM200, LIBRARY RM200, STUDENT ACTIVITIES RM200 (Total RM650), MEDICAL PLAN RM50. Minimum 9 semesters for Bachelor's Degree RM5,850. Minimum 7 semesters for Diploma RM4,550. Minimum 3 semesters for Foundation RM1,950.
-> ADMINISTRATION FEE: PG RM10,350. UG RM9,350.
+Conditions: the same published notes as **Bachelor of Computer Science (Honours)** above.
 
-[Source: fee table](Fees_Chart/ucsi-fees.html)
+[Source: fee table](Universities/ucsi-university#courses-fees)
 
 Showing 6 of 6 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -1301,11 +1181,11 @@ Showing 6 of 6 matching entries. The local data has no verified effective date; 
 
 **UCSI University**
 - UCSI University is ranked #282 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/ucsi-details.html#rankings)
+[Rankings and FAQs](Universities/ucsi-university#rankings)
 
 **Asia Pacific University of Technology & Innovation (APU)**
 - APU is ranked #=528 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/apu-details.html#rankings)
+[Rankings and FAQs](Universities/apu-university#rankings)
 
 UCSI University has the higher position in QS World University Rankings 2027 (a smaller rank number).
 
@@ -1320,11 +1200,11 @@ Sources: [UCSI University - QS profile](https://www.topuniversities.com/universi
 
 **UCSI University**
 - UCSI University is ranked #282 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/ucsi-details.html#rankings)
+[Rankings and FAQs](Universities/ucsi-university#rankings)
 
 **Asia Pacific University of Technology & Innovation (APU)**
 - APU is ranked #=528 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/apu-details.html#rankings)
+[Rankings and FAQs](Universities/apu-university#rankings)
 
 UCSI University has the higher position in QS World University Rankings 2027 (a smaller rank number).
 
@@ -1417,7 +1297,7 @@ Refunds depend on the fee component, who created the application, and its proces
 ### 2. Ami hospitality bachelor porte chai.
 
 **Result:** PASS  
-**Status:** answered · **Context:** 137 bytes · **Sources:** City University Malaysia programs; ALFA UNIVERSITY MALAYSIA programs; Binary University of Management & Entrepreneurship programs; HELP University programs; Lincoln University College programs
+**Status:** answered · **Context:** 137 bytes · **Sources:** City University Malaysia programs; ALFA University College programs; HELP University programs; Lincoln University College programs; UCSI University programs
 
 আমাদের সংরক্ষিত তালিকা থেকে মিলে এমন প্রোগ্রামগুলো নিচে দেওয়া হলো।
 
@@ -1425,93 +1305,47 @@ Refunds depend on the fee component, who created the application, and its proces
 - **Level:** Bachelor
 - **মেয়াদ:** 3 Years
 
-[সূত্র: প্রোগ্রামের তথ্য](Universities/cityu-details.html)
+[সূত্র: প্রোগ্রামের তথ্য](Universities/cityu-university)
 
-**ALFA UNIVERSITY MALAYSIA — Bachelor of Science (HONOURS) in Hospitality Management**
+**ALFA University College — Bachelor of Science (HONOURS) in Hospitality Management**
 - **Level:** Bachelor
 - **মেয়াদ:** 3 Years
 
-[সূত্র: প্রোগ্রামের তথ্য](Universities/alfa-details.html)
-
-**Binary University of Management & Entrepreneurship — BA (Hons) in Business Management (Specialisations: Finance, Hospitality, Analytics)**
-- **Level:** Bachelor
-- **মেয়াদ:** 3 Years
-
-[সূত্র: প্রোগ্রামের তথ্য](Universities/binary-details.html)
-
-**Binary University of Management & Entrepreneurship — Bachelor of Hospitality Management (Hons)**
-- **Level:** Bachelor
-- **মেয়াদ:** 3 Years
-
-[সূত্র: প্রোগ্রামের তথ্য](Universities/binary-details.html)
+[সূত্র: প্রোগ্রামের তথ্য](Universities/alfa-university)
 
 **HELP University — Bachelor in Hospitality Management (Honours)**
 - **Level:** Bachelor
 - **মেয়াদ:** 3 Years
 
-[সূত্র: প্রোগ্রামের তথ্য](Universities/help-details.html)
+[সূত্র: প্রোগ্রামের তথ্য](Universities/help-university)
 
 **Lincoln University College — Bachelor of Science (Hons) in Hospitality Management**
 - **Level:** Bachelor
 
-[সূত্র: প্রোগ্রামের তথ্য](Universities/lincoln-details.html)
+[সূত্র: প্রোগ্রামের তথ্য](Universities/lincoln-university)
 
-মোট 23টি মিলের মধ্যে 6টি দেখানো হচ্ছে।
+**Lincoln University College — Bachelor of Science (Hons) in Hospitality Management**
+- **Level:** Bachelor
+
+[সূত্র: প্রোগ্রামের তথ্য](Universities/lincoln-university)
+
+**UCSI University — Bachelor of Hospitality Administration (A Dual Award with HTMI Switzerland)**
+- **Level:** Bachelor
+
+[সূত্র: প্রোগ্রামের তথ্য](Universities/ucsi-university)
+
+মোট 19টি মিলের মধ্যে 6টি দেখানো হচ্ছে।
 
 ### 3. Budget RM30000 per year.
 
 **Result:** PASS  
-**Status:** answered · **Context:** 213 bytes · **Sources:** Binary University of Management & Entrepreneurship: All Programs; ALFA UNIVERSITY MALAYSIA: BACHELOR PROGRAMS; City University Malaysia: PJ & CYBERJAYA CAMPUS - BACHELOR
+**Status:** answered · **Context:** 213 bytes · **Sources:** ALFA University College: BACHELOR PROGRAMS; City University Malaysia: PJ & CYBERJAYA CAMPUS - BACHELOR
 
 আপনার প্রশ্নের সঙ্গে মিলে এমন **সংরক্ষিত ফি-এর তথ্য** নিচে দেওয়া হলো। মূল খরচের নাম ও শর্ত রাখা হয়েছে।
 
 নিচে শুধু তালিকায় থাকা প্রথম বছরের বা বার্ষিক খরচ দেখানো হলো। কোর্সের মোট ফি ভাগ করে বার্ষিক খরচ বানানো হয়নি।
 
-**Binary University of Management & Entrepreneurship — BA (Hons) in Business Management (Specialisations: Finance, Hospitality, Analytics)**
-All Programs
-- **Year 1 (RM):** RM10,920
-
-> **প্রকাশিত শর্ত:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
-
-[সূত্র: ফি তালিকা](Fees_Chart/binary-fees.html)
-
-**Binary University of Management & Entrepreneurship — Bachelor of Hospitality Management (Hons)**
-All Programs
-- **Year 1 (RM):** RM10,920
-
-> **প্রকাশিত শর্ত:** First Payment (Upon Registration):
-> Diploma: RM14,500
-> Bachelor / Master / PhD: RM17,500
-> 
-> Important Notes:
-> â€¢ EMGS fee is non-refundable.
-> â€¢ English course required if no proficiency certificate (RM3,000).Initial Payment Requirements:
-> â€¢ Visa + Application Fee (EMGS): RM 3,900 (Non-refundable) 
-> â€¢ Other Required Fees: RM 3,550 (Includes International Admin Fee, Registration, Student ID, and Library fees) 
-> â€¢ Refundable Deposit: Personal Bond of RM 750 is included in the 'Other Fees' and is refundable upon completion.
-> 
-> Important Notes:
-> â€¢ Fees listed include 6% SST.
-> â€¢ Most undergraduate and postgraduate fees shown above reflect the MyBig 50% Scholarship offer.
-> â€¢ Bachelor of Accounting (Hons) is not eligible for the 50% scholarship.
-
-[সূত্র: ফি তালিকা](Fees_Chart/binary-fees.html)
-
-**ALFA UNIVERSITY MALAYSIA — Bachelor of Science (HONOURS) in Hospitality Management**
+**ALFA University College — Bachelor of Science (HONOURS) in Hospitality Management**
 BACHELOR PROGRAMS
 - **প্রথম বছর:** RM 15,500
 
@@ -1521,7 +1355,7 @@ BACHELOR PROGRAMS
 > International Student Fee: RM 1,500
 > Total Initial Fees Payment Upon Application: RM 6,000
 
-[সূত্র: ফি তালিকা](Fees_Chart/alfa-fees.html)
+[সূত্র: ফি তালিকা](Universities/alfa-university#courses-fees)
 
 **City University Malaysia — Bachelor of Hospitality Management (Hons) (Single Award)**
 PJ & CYBERJAYA CAMPUS - BACHELOR
@@ -1533,9 +1367,9 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
-মোট 4টি মিলের মধ্যে 4টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
+মোট 2টি মিলের মধ্যে 2টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
 ### 4. CITYU BoHM fees koto?
 
@@ -1562,7 +1396,7 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 মোট 1টি মিলের মধ্যে 1টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -1585,7 +1419,7 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 মোট 1টি মিলের মধ্যে 1টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -1606,7 +1440,7 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 মোট 1টি মিলের মধ্যে 1টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -1627,7 +1461,7 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 মোট 1টি মিলের মধ্যে 1টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -1656,7 +1490,7 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[সূত্র: ফি তালিকা](Fees_Chart/cityu-fees.html)
+[সূত্র: ফি তালিকা](Universities/cityu-university#courses-fees)
 
 মোট 1টি মিলের মধ্যে 1টি দেখানো হচ্ছে। এই ফি কোন তারিখ থেকে কার্যকর তা যাচাই করা নেই। আবেদন করার আগে বর্তমান ফি ও ছাড়ের যোগ্যতা নিশ্চিত করুন।
 
@@ -1692,7 +1526,7 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 No matching local entry was found for **Taylor's University**.
 
@@ -1727,7 +1561,7 @@ PJ & CYBERJAYA CAMPUS - BACHELOR
 > 
 > *All fees are subject to 6% SST (Sales and Service Tax), effective from 1 September 2025.
 
-[Source: fee table](Fees_Chart/cityu-fees.html)
+[Source: fee table](Universities/cityu-university#courses-fees)
 
 No matching local entry was found for **Taylor's University**.
 
@@ -1745,7 +1579,7 @@ Showing 1 of 1 matching entries. The local data has no verified effective date; 
 **City University Malaysia**
 - City University Malaysia QS Asia University Rankings 2026-এ #=558 অবস্থানে আছে।
 This entry is City University Malaysia in Petaling Jaya. City University of Hong Kong and City University of Macau are different institutions.
-[র‍্যাঙ্কিং ও FAQ](Universities/cityu-details.html#rankings)
+[র‍্যাঙ্কিং ও FAQ](Universities/cityu-university#rankings)
 
 যাচাইয়ের তারিখ: 2026-09-12। = চিহ্ন যৌথ অবস্থান বোঝায়; একটি range একটি band, নির্দিষ্ট একক র‍্যাঙ্ক নয়।
 
@@ -1758,7 +1592,7 @@ This entry is City University Malaysia in Petaling Jaya. City University of Hong
 
 **Taylor's University**
 - Taylor's University QS Asia University Rankings 2026-এ #27 অবস্থানে আছে।
-[র‍্যাঙ্কিং ও FAQ](Universities/taylors-details.html#rankings)
+[র‍্যাঙ্কিং ও FAQ](Universities/taylors-university#rankings)
 
 যাচাইয়ের তারিখ: 2026-09-12। = চিহ্ন যৌথ অবস্থান বোঝায়; একটি range একটি band, নির্দিষ্ট একক র‍্যাঙ্ক নয়।
 
@@ -1838,12 +1672,12 @@ These rows match the university, level and subject, but the local data does **no
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Civil)**
 - **Level:** Master
 
-[Source: program details](Fees_Chart/utm-fees.html)
+[Source: program details](Universities/utm-university#courses-fees)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Civil)**
 - **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 Showing 2 of 2 matching entries.
 
@@ -1857,32 +1691,32 @@ Here are matching entries from our local catalog.
 **Universiti Teknologi Malaysia (UTM) — Master of Science (Biomedical Engineering)**
 - **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Wireless Communication and Network)**
 - **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Computer and Microelectronic Systems)**
 - **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Electrical Power)**
 - **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Mechatronics and Automatic Control)**
 - **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 **Universiti Teknologi Malaysia (UTM) — Master of Engineering (Civil)**
 - **Level:** Master
 
-[Source: program details](Universities/utm-details.html)
+[Source: program details](Universities/utm-university)
 
 Showing 6 of 82 matching entries.
 
@@ -1911,37 +1745,37 @@ Here are matching entries from our local catalog.
 - **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university)
 
 **Universiti Putra Malaysia (UPM) — Master in Aerospace System Design Engineering**
 - **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university)
 
 **Universiti Putra Malaysia (UPM) — Master of Communication Engineering**
 - **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university)
 
 **Universiti Putra Malaysia (UPM) — Master in Electrical Power Engineering**
 - **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university)
 
 **Universiti Putra Malaysia (UPM) — Master of Engineering Management**
 - **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university)
 
 **Universiti Putra Malaysia (UPM) — Master of Environmental Engineering**
 - **Level:** Master
 - **Duration:** 2 Years
 
-[Source: program details](Universities/upm-details.html)
+[Source: program details](Universities/upm-university)
 
 Showing 6 of 39 matching entries.
 
@@ -1964,7 +1798,7 @@ POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY C
 
 > **Published conditions:** Fees in Ringgit Malaysia (RM). Health Insurance: RM400.00-500.00 per annum. Medical Check-up: RM400.00. The fee amount is subject to change without prior notice. Basic fee for 1st Semester must be paid in full amount before registration. Certain intakes are restricted (e.g. intake every FIRST SEMESTER or SECOND SEMESTER only for designated programmes).
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — MASTER IN AEROSPACE SYSTEM DESIGN ENGINEERING**
 POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY COURSEWORK
@@ -1976,9 +1810,9 @@ POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY C
 - **STUDY COST 2 YEARS:** 26,850
 - **STUDY COST 3 YEARS:** 31,150
 
-> **Published conditions:** Fees in Ringgit Malaysia (RM). Health Insurance: RM400.00-500.00 per annum. Medical Check-up: RM400.00. The fee amount is subject to change without prior notice. Basic fee for 1st Semester must be paid in full amount before registration. Certain intakes are restricted (e.g. intake every FIRST SEMESTER or SECOND SEMESTER only for designated programmes).
+Conditions: the same published notes as **MASTER OF SOFTWARE ENGINEERING** above.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — MASTER OF COMMUNICATION ENGINEERING**
 POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY COURSEWORK
@@ -1990,9 +1824,9 @@ POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY C
 - **STUDY COST 2 YEARS:** 26,850
 - **STUDY COST 3 YEARS:** 31,150
 
-> **Published conditions:** Fees in Ringgit Malaysia (RM). Health Insurance: RM400.00-500.00 per annum. Medical Check-up: RM400.00. The fee amount is subject to change without prior notice. Basic fee for 1st Semester must be paid in full amount before registration. Certain intakes are restricted (e.g. intake every FIRST SEMESTER or SECOND SEMESTER only for designated programmes).
+Conditions: the same published notes as **MASTER OF SOFTWARE ENGINEERING** above.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — MASTER IN ELECTRICAL POWER ENGINEERING**
 POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY COURSEWORK
@@ -2004,9 +1838,9 @@ POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY C
 - **STUDY COST 2 YEARS:** 26,850
 - **STUDY COST 3 YEARS:** 31,150
 
-> **Published conditions:** Fees in Ringgit Malaysia (RM). Health Insurance: RM400.00-500.00 per annum. Medical Check-up: RM400.00. The fee amount is subject to change without prior notice. Basic fee for 1st Semester must be paid in full amount before registration. Certain intakes are restricted (e.g. intake every FIRST SEMESTER or SECOND SEMESTER only for designated programmes).
+Conditions: the same published notes as **MASTER OF SOFTWARE ENGINEERING** above.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — MASTER OF ENGINEERING MANAGEMENT**
 POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY COURSEWORK
@@ -2018,9 +1852,9 @@ POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY C
 - **STUDY COST 2 YEARS:** 26,850
 - **STUDY COST 3 YEARS:** 31,150
 
-> **Published conditions:** Fees in Ringgit Malaysia (RM). Health Insurance: RM400.00-500.00 per annum. Medical Check-up: RM400.00. The fee amount is subject to change without prior notice. Basic fee for 1st Semester must be paid in full amount before registration. Certain intakes are restricted (e.g. intake every FIRST SEMESTER or SECOND SEMESTER only for designated programmes).
+Conditions: the same published notes as **MASTER OF SOFTWARE ENGINEERING** above.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
 **Universiti Putra Malaysia (UPM) — MASTER OF ENVIRONMENTAL ENGINEERING**
 POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY COURSEWORK
@@ -2032,9 +1866,9 @@ POSTGRADUATE TUITION FEE INTERNATIONAL STUDENT (Dual Semester) - PROGRAMMES BY C
 - **STUDY COST 2 YEARS:** 27,300
 - **STUDY COST 3 YEARS:** 31,600
 
-> **Published conditions:** Fees in Ringgit Malaysia (RM). Health Insurance: RM400.00-500.00 per annum. Medical Check-up: RM400.00. The fee amount is subject to change without prior notice. Basic fee for 1st Semester must be paid in full amount before registration. Certain intakes are restricted (e.g. intake every FIRST SEMESTER or SECOND SEMESTER only for designated programmes).
+Conditions: the same published notes as **MASTER OF SOFTWARE ENGINEERING** above.
 
-[Source: fee table](Fees_Chart/upm-fees.html)
+[Source: fee table](Universities/upm-university#courses-fees)
 
 Showing 6 of 26 matching entries. The local data has no verified effective date; confirm the current amount and eligibility for any discount before applying.
 
@@ -2045,11 +1879,11 @@ Showing 6 of 26 matching entries. The local data has no verified effective date;
 
 **Universiti Putra Malaysia (UPM)**
 - UPM is ranked #138 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/upm-details.html#rankings)
+[Rankings and FAQs](Universities/upm-university#rankings)
 
 **Universiti Teknologi Malaysia (UTM)**
 - UTM is ranked #=158 in QS World University Rankings 2027.
-[Rankings and FAQs](Universities/utm-details.html#rankings)
+[Rankings and FAQs](Universities/utm-university#rankings)
 
 UPM has the higher position in QS World University Rankings 2027 (a smaller rank number).
 
@@ -2064,11 +1898,11 @@ Sources: [Universiti Putra Malaysia (UPM) - QS profile](https://www.topuniversit
 
 **Universiti Putra Malaysia (UPM)**
 - UPM has Malaysia position #4 among the 32 institutions listed under Malaysia in QS World 2027, calculated from the published table.
-[Rankings and FAQs](Universities/upm-details.html#rankings)
+[Rankings and FAQs](Universities/upm-university#rankings)
 
 **Universiti Teknologi Malaysia (UTM)**
 - UTM has Malaysia position #5 among the 32 institutions listed under Malaysia in QS World 2027, calculated from the published table.
-[Rankings and FAQs](Universities/utm-details.html#rankings)
+[Rankings and FAQs](Universities/utm-university#rankings)
 
 UPM has the higher position in Malaysia position in QS World University Rankings 2027 (a smaller rank number).
 

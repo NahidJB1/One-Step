@@ -63,37 +63,37 @@ function widget(pathname, options = {}) {
         buttons: [{ label: '<img src=x onerror=alert(1)>', url: 'Fees_Chart/apu-fees.html', class: 'evil" onclick="alert(1)' }],
         sources: [{ title: 'APU fees', url: 'Fees_Chart/apu-fees.html' }], suggestions: ['What about SEGi?']
     };
-    let w = widget('/project/Universities/apu-details.html', { replies: [reply, { reply: 'SEGi fees', context: { universities: ['segi'] }, suggestions: [] }] });
+    let w = widget('/project/Universities/apu-university', { replies: [reply, { reply: 'SEGi fees', context: { universities: ['segi'] }, suggestions: [] }] });
     await w.send('APU master fees');
     assert.equal(w.requests[0].url, '../api/chat.php');
     assert.deepEqual(JSON.parse(w.storage.get('os_chat_context')), context);
     const bot = w.bots().at(-1);
     assert(bot.innerHTML.endsWith('</table></div>'), 'Trailing markdown table must close');
     const button = bot.children.find(c => c.className === 'os-bot-buttons').children[0];
-    assert.equal(button.href, 'https://example.test/project/Fees_Chart/apu-fees');
+    assert.equal(button.href, 'https://example.test/project/Universities/apu-university#courses-fees');
     assert.equal(button.textContent, '<img src=x onerror=alert(1)>');
     assert.equal(button.innerHTML, '');
     assert.equal(button.rel, 'noopener noreferrer');
     assert.equal(button.className, 'os-details-btn');
     const source = bot.children.find(c => c.className === 'os-chat-sources').children.find(c => c.tagName === 'a');
-    assert.equal(source.href, 'https://example.test/project/Fees_Chart/apu-fees');
+    assert.equal(source.href, 'https://example.test/project/Universities/apu-university#courses-fees');
     await w.send('What about SEGi?');
     assert.deepEqual(w.requests[1].body.context, context);
     assert.equal(Object.hasOwn(w.requests[1].body, 'history'), false, 'Requests contain compact context, never conversation history');
     assert(!w.byId.get('os-chat-input').disabled && !w.byId.get('os-chat-send').disabled);
     assert.equal(w.errors.length, 0);
 
-    w = widget('/Universities/apu-details', { replies: [{
+    w = widget('/Universities/apu-university', { replies: [{
         reply: '[CityU](Fees_Chart/city-university-fees.html?q=business%20management#fee-category-0) [External](https://official.example/course.html)',
-        buttons: [{label:'Profile',url:'Universities/cityu-details.html'},{label:'Download',url:'assets/documents/fees/cityu-fees.pdf'}],
+        buttons: [{label:'Profile',url:'Universities/cityu-university'},{label:'Download',url:'assets/documents/fees/cityu-fees.pdf'}],
         sources: [{title:'Country',url:'countries/china.html'},{title:'Hub',url:'explore-universities.html'}]
     }] });
     await w.send('links');
     const cleanBot = w.bots().at(-1);
-    assert(cleanBot.innerHTML.includes('href="https://example.test/Fees_Chart/cityu-fees?q=business%20management#fee-category-0"'));
+    assert(cleanBot.innerHTML.includes('href="https://example.test/Universities/cityu-university?q=business%20management#fee-category-0"'));
     assert(cleanBot.innerHTML.includes('href="https://official.example/course.html"'));
     assert.deepEqual(cleanBot.children.find(c=>c.className==='os-bot-buttons').children.map(c=>c.href),[
-        'https://example.test/Universities/cityu-details','https://example.test/assets/documents/fees/cityu-fees.pdf'
+        'https://example.test/Universities/cityu-university','https://example.test/assets/documents/fees/cityu-fees.pdf'
     ]);
     assert.deepEqual(cleanBot.children.find(c=>c.className==='os-chat-sources').children.filter(c=>c.tagName==='a').map(c=>c.href),[
         'https://example.test/countries/china','https://example.test/explore-universities'

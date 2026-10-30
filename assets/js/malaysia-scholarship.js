@@ -21,17 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const scholarshipMap = {
         "Alfa University": { default: 90000, condition: "Foundation/Diploma", conditionAmt: 30000 },
         "BAC": { default: 92000 },
-        "Binary University": { default: 90000 },
         "City University": { default: 95000 },
         "Cyberjaya Uni": { default: 90000 },
-        "Cybernetics": { default: 70000 },
         "Genovasi Uni": { default: 60000 },
         "INTI International University": { default: 100000 },
         "Kings College": { default: 50000 },
         "KLUST": { default: 80000 },
         "SEGi University": { default: 90000 },
-        "Taylor's University": { default: 90000 },
-        "UCMI": { default: 90000 }
+        "Taylor's University": { default: 90000 }
     };
 
     // Populate University Dropdown
@@ -352,7 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.getElementById("dashDuration").textContent = "3 - 4 Years"; 
                     document.getElementById("dashFees").textContent = uniData.bachelorFee || "Contact for details";
                     
-                    document.getElementById("btnUniDetail").href = `/Universities/${uniData.slug}-details`;
+                    document.getElementById("btnUniDetail").href = `/Universities/${uniData.slug}-university`;
                     document.getElementById("btnUniFees").href = `/Fees_Chart/${feesSlug}-fees`;
                 }
 

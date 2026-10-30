@@ -1,4 +1,4 @@
-﻿const UNIVERSITY_META = {
+const UNIVERSITY_META = {
     "International Islamic University Malaysia (IIUM)": {
         slug: "iium",
         name: "International Islamic University Malaysia (IIUM)",
@@ -220,9 +220,9 @@
         tags: ['Premier Law', 'Business Pros'],
         desc: "Premier institution globally recognized for Law, Business, and Mass Communication."
     },
-    "ALFA UNIVERSITY MALAYSIA": {
+    "ALFA University College": {
         slug: "alfa",
-        name: "Alfa University College",
+        name: "ALFA University College",
         img: "alfa/alfa_main.jpg",
         badge: "Creative Arts",
         loc: "Subang Jaya",
@@ -320,66 +320,6 @@
         tags: ['Tech Focus', 'Budget Friendly'],
         desc: "Highly affordable engineering and tech programs right in the capital."
     },
-    /* "CYBERNETICS MALAYSIA (KTAC)": {
-        slug: "cybernetics",
-        name: "Cybernetics International College",
-        img: "cybernetics/cybernetics-main.jpg",
-        badge: "Affordable",
-        loc: "Kuala Lumpur",
-        type: "Private",
-        rank: "TVET & Skills",
-        foundationFee: "N/A",
-        bachelorFee: "N/A",
-        intakes: "January, May, September",
-        popular: "Creative Multimedia, Business, Aviation",
-        visa: "95%",
-        location: "Kuala Lumpur",
-        fields: ['business', 'arts'],
-        budget: 'budget',
-        locationCode: 'kl',
-        tags: ['TVET Focus', 'Affordable'],
-        desc: "Affordable college focusing on skills and vocational training."
-    }, */
-    /* "Binary University": {
-        slug: "binary",
-        name: "Binary University",
-        img: "binary/binary-main.jpg",
-        badge: "Entrepreneurship",
-        loc: "Puchong",
-        type: "Private",
-        rank: "Top Rated for IT & Business",
-        foundationFee: "RM 20,000",
-        bachelorFee: "RM 50,000",
-        intakes: "January, May, September",
-        popular: "Business, IT, Entrepreneurship",
-        visa: "98%",
-        location: "Puchong, Selangor",
-        fields: ['business', 'engineering'],
-        budget: 'mid',
-        locationCode: 'subang',
-        tags: ['Entrepreneurship', 'Tech Hub'],
-        desc: "A specialist university for Management, IT, and Entrepreneurship."
-    }, */
-    /* "Binary University of Management & Entrepreneurship": {
-        slug: "binary",
-        name: "Binary University",
-        img: "binary/binary-main.jpg",
-        badge: "Entrepreneurship",
-        loc: "Puchong",
-        type: "Private",
-        rank: "Top Rated for IT & Business",
-        foundationFee: "RM 20,000",
-        bachelorFee: "RM 50,000",
-        intakes: "January, May, September",
-        popular: "Business, IT, Entrepreneurship",
-        visa: "98%",
-        location: "Puchong, Selangor",
-        fields: ['business', 'engineering'],
-        budget: 'mid',
-        locationCode: 'subang',
-        tags: ['Entrepreneurship', 'Tech Hub'],
-        desc: "A specialist university for Management, IT, and Entrepreneurship."
-    }, */
     /* "GENOVASI UNIVERSITY MALAYSIA": {
         slug: "genovasi",
         name: "Genovasi University",
@@ -399,26 +339,6 @@
         locationCode: 'subang',
         tags: ['Innovation', 'Design Thinking'],
         desc: "Pioneering university in Design Thinking and Innovation."
-    }, */
-    /* "University College MAIWP International (UCMI)": {
-        slug: "ucmi",
-        name: "UCMI",
-        img: "ucmi/ucmi_main.jpg",
-        badge: "Islamic Finance",
-        loc: "Kuala Lumpur",
-        type: "Private",
-        rank: "Specialized Medical & Health",
-        foundationFee: "RM 20,000",
-        bachelorFee: "RM 55,000",
-        intakes: "January, May, September",
-        popular: "Nursing, Pharmacy, Health Science",
-        visa: "98%",
-        location: "Kuala Lumpur",
-        fields: ['healthcare'],
-        budget: 'mid',
-        locationCode: 'kl',
-        tags: ['Medical Focus', 'Islamic Finance'],
-        desc: "Strong emphasis on Health Sciences, Nursing, and Pharmacy."
     }, */
     "KL University of Science & Technology (KLUST)": {
         slug: "klust",

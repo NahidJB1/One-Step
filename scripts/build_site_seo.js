@@ -2,6 +2,8 @@
 // Offline build: no AI/API, browser, server or dependency is needed on Hostinger.
 // Run after scripts/build_university_rankings.php. --check never writes files.
 const H = require('./seo_helpers');
+const feeOwner = require('./fee_owner.cjs');
+const feeAnswer = require('./fee_answer.cjs');
 const prioritySEO = require('./university_seo_content');
 const {fs,path,root,origin,read,esc,plain,rich,jsonScript,urlFor,replaceElement,block,metadata,breadcrumbs,breadcrumbHtml,stylesheet,documentLink} = H;
 const fees = JSON.parse(read('data/fees_data.json'));
@@ -21,8 +23,9 @@ const feeFile = id => `Fees_Chart/${id}-fees.html`;
 const detailFile = id => `data/university_details/${id}-details.html`;
 const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'genovasi', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
 const publicDetailFile = id => combinedIds.has(id) ? `Universities/${id}-university.html` : detailFile(id);
-const publicFeeHref = id => combinedIds.has(id) ? `/${publicDetailFile(id).replace('.html','')}#courses-fees` : `/${feeFile(id).replace('.html','')}`;
+const publicFeeHref = id => feeOwner.href(id);
 function save(file, html) {
+    if(file.endsWith('.html'))for(const u of Object.values(feeOwner.ownership))if(u.owner==='hub')html=html.replace(new RegExp(`(<a\\b[^>]*href=")(?:https?://(?:www\\.)?onestepmy\\.com)?${u.feePath}(?=["#?])`,'g'),`$1${u.ownerPath}`);
     if (file.endsWith('.html')) html = html.replace(/(href="[^"\n]*\/Fees_Chart\/)city-university-fees(?=[".?#])/g,'$1cityu-fees');
     html = html.replace(/\r\n/g, '\n').trimEnd() + '\n';
     rendered.set(file, html);
@@ -70,6 +73,7 @@ function feeFaqs(id, uni) {
 }
 for (const [key,uni] of Object.entries(fees)) {
     const id = slug(key), file = feeFile(id), name = short(id);
+    if (!fs.existsSync(path.join(root,file))) continue;
     let html = read(file);
     // These three pages already contain authored tables; retain their additional
     // rows and payment notes instead of replacing them with incomplete JSON.
@@ -87,7 +91,7 @@ for (const [key,uni] of Object.entries(fees)) {
     html = replaceElement(html, /<div\b[^>]*id="static-faq"[^>]*>/, '', false);
     html = replaceElement(html, /<div\b[^>]*class="popular-queries-section"[^>]*>/, '', false);
     html = replaceElement(html, /<nav\b[^>]*class="breadcrumb"[^>]*>/, '', false);
-    const crumbs = [['Home','index.html'],['Universities','explore-universities.html'],[name,publicDetailFile(id)],['Tuition fees',file]];
+    const crumbs = [['Home','index.html'],['Universities','explore-universities.html'],[name,publicDetailFile(id)],['Fees',file]];
     const categories = [...new Set(uni.categories.map(c=>plain(c.category_name)).filter(Boolean))];
     const overview = `${breadcrumbHtml(crumbs)}<section class="study-content" id="fees-guide" aria-labelledby="fees-guide-title">
 <h2 id="fees-guide-title">${esc(name)} tuition fees for international students</h2>
@@ -101,6 +105,7 @@ for (const [key,uni] of Object.entries(fees)) {
     const faqHtml = `<section id="faq" class="study-content" aria-labelledby="fee-faq-title"><h2 id="fee-faq-title">${esc(name)} fee chart: questions and answers</h2>${faq.map(f=>`<details class="study-faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n')}${docs.length ? `<h3>Fee documents</h3><p>Check the date and terms printed in each stored schedule. Confirm current rates with the university.</p><div class="fee-source-links">${docs.map((d,i)=>`<a href="${d.href}" download>Download fee schedule${docs.length>1 ? ' '+(i+1) : ''} (${d.type})</a>`).join('')}</div>` : ''}</section>`;
     html = block(html, 'fee-faq', faqHtml, '<div id="global-footer-placeholder">');
     if (prioritySEO.content[id]) html = prioritySEO.feePage(html, id);
+    html = block(html,'fee-navigation',`<nav class="study-content" aria-label="Fee chart related pages"><a href="/${publicDetailFile(id).replace('.html','')}">${esc(name)} university guide</a> · <a href="/compare">Compare universities</a> · <a href="/Articles/cheapest-universities">Compare Malaysia university costs</a></nav>`,'<div id="global-footer-placeholder">');
     // Make existing resource cards usable by keyboard and crawlers as well.
     const resource = /<div\b[^>]*class="resources-card"[^>]*onclick="downloadPDF\('([^']+)'\)"[^>]*>/;
     const match = resource.exec(html);
@@ -113,18 +118,23 @@ for (const [key,uni] of Object.entries(fees)) {
     }
     const years = [...new Set((uni.validity || '').match(/\b20\d{2}\b/g) || [])];
     const edition = years.length === 1 ? ' '+years[0] : '';
-    const title = prioritySEO.content[id]?.fee_title || `${name} Tuition Fees${edition} & International Fee Chart | One-Step`;
-    const description = prioritySEO.content[id]?.fee_description || `Explore ${name} tuition fees for international and Bangladeshi students. Compare course costs, payment periods, fee documents and scholarship conditions.`;
+    const title = id === 'taylors' ? "Taylor's University Fees for International Students" : `${uni.title} Tuition Fees for International Students (RM) | One-Step`;
+    const description = feeAnswer.description(id,uni);
+    html = replaceElement(html, /<h1\b[^>]*>/, `<h1>${esc(uni.title)} fees for international students</h1>`);
+    html = block(html,'fee-answer',feeAnswer.summary(id,uni),'<!-- seo:fee-guide:start -->');
+    html = html.replace(/<details class="study-faq fee-provenance">[\s\S]*?<\/details>/g,'');
+    html = block(html,'fee-source-note',prioritySEO.feeSourceNote(id,uni),'<!-- seo:fee-guide:start -->');
+    html = block(html,'nojs-fees','<noscript><style>.panel{display:block!important}</style></noscript>');
     html = metadata(html, file, title, description, [
         {'@type':'WebPage','@id':urlFor(file)+'#webpage',url:urlFor(file),name:title,description,about:{'@id':urlFor(publicDetailFile(id))+'#university'}},
-        breadcrumbs(crumbs), {'@type':'FAQPage','@id':urlFor(file)+'#faq',mainEntity:faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}
+        breadcrumbs(crumbs)
     ]);
-    save(file, stylesheet(html));
+    save(file, stylesheet(feeAnswer.captions(html)));
 }
 
 const directoryItems = Object.keys(rankings.universities).filter(id=>rankings.universities[id].page).sort((a,b)=>short(a).localeCompare(short(b)));
 function directory() {
-    return '<ul class="study-directory">' + directoryItems.map(id=>`<li><a href="/${publicDetailFile(id).replace('.html','')}">${esc(rankings.universities[id].name)}</a><small><a href="${publicFeeHref(id)}">Tuition fees and fee chart</a> · <a href="/${publicDetailFile(id).replace('.html','')}#rankings">QS rankings</a></small></li>`).join('\n') + '</ul>';
+    return '<ul class="study-directory">' + directoryItems.map(id=>`<li><a href="/${publicDetailFile(id).replace('.html','')}">${esc(rankings.universities[id].name)}</a><small><a href="${publicFeeHref(id)}">${esc(short(id))} tuition fees</a> · <a href="/${publicDetailFile(id).replace('.html','')}#rankings">QS rankings</a></small></li>`).join('\n') + '</ul>';
 }
 for (const id of directoryItems) {
     const file = detailFile(id), publicFile = publicDetailFile(id), uni = fees[feeId(id)], name = short(id);
@@ -172,9 +182,18 @@ for (const file of ['index.html','explore-universities.html']) {
     html = html.replace('10 Cheapest Universities in Malaysia','10 Affordable Universities in Malaysia');
     const content = file === 'index.html'
         ? `<section class="container study-content"><h2>Malaysia university fees and rankings</h2><p>Browse course fee charts, university profiles and dated QS rankings for international students, including applicants from Bangladesh.</p><details><summary>Browse all ${directoryItems.length} university guides and fee charts</summary>${directory()}</details><p><a href="/articles">Student guides: costs, scholarships and university comparisons</a></p></section>`
-        : `<section class="container study-content"><h2>University tuition fees and ranking directory</h2><p>Find each university's fee chart, campus information and QS ranking sources. Read scholarship and payment conditions before comparing offers.</p>${directory()}</section>`;
-    html = block(html,'directory',content,'<div id="global-footer-placeholder">');
+        : `<section class="container study-content"><details class="university-directory-disclosure"><summary><h2>University tuition fees and ranking directory</h2></summary><p>Find each university's fee chart, campus information and QS ranking sources. Read scholarship and payment conditions before comparing offers.</p>${directory()}<p><a href="/malaysia-university-fees">All Malaysia university fees</a></p></details></section>`;
+    html = block(html,'directory',(file === 'explore-universities.html' ? content : content.replace('</section>','<p><a href="/malaysia-university-fees">All Malaysia university fees</a></p></section>')),'<div id="global-footer-placeholder">');
     if (file === 'explore-universities.html') html = html.replace('<h2 class="section-title">Featured <span>Universities</span></h2>','<h1 class="section-title">Featured <span>Universities</span></h1>');
+    if(file==='index.html') {
+        html=replaceElement(html, /<h1 class="hero-title">/, '<h1 class="hero-title">Malaysian university fees, rankings <span>and guidance</span></h1>');
+        html=replaceElement(html, /<p class="hero-subtitle">/, '<p class="hero-subtitle">Compare Malaysian university fees and rankings, explore courses, and find study and application guidance for international students.</p>');
+        html=replaceElement(html, /<div class="hero-stats">/, `<div class="hero-stats"><div class="hero-stat"><span class="hero-stat-number" id="universityCount">${directoryItems.length}</span><span class="hero-stat-label">Universities listed</span></div><div class="hero-stat"><span class="hero-stat-number">Course</span><span class="hero-stat-label">Application guidance</span></div><div class="hero-stat"><span class="hero-stat-number">Visa</span><span class="hero-stat-label">Process guidance</span></div></div>`);
+        html=replaceElement(html, /<div class="country-details-grid">/, '', false);
+        html=html.replace('Select a Country','Malaysia').replace('href="#" id="cReadMore"','href="/explore-universities" id="cReadMore"');
+        html=html.replace(/View All (?:20\+|26) Universities/g,`View All ${directoryItems.length} Universities`);
+        html=html.replace('Expert guidance through the visa application process with a high success rate.','Guidance through the visa application process and required documents.');
+    }
     const title = file === 'index.html' ? 'Study in Malaysia: University Fees, Rankings & Guides | One-Step' : 'Malaysian Universities: Tuition Fees & QS Rankings | One-Step';
     const description = 'Compare Malaysian university tuition fees, course details, QS rankings and scholarship guidance for international students, including applicants from Bangladesh.';
     const schema = file === 'index.html'
@@ -192,9 +211,13 @@ save('contact.html', metadata(read('contact.html'),'contact.html','Contact One-S
 
 require('./student_support')({H,save,rendered});
 
+const feesIndexFile='malaysia-university-fees.html';
+const feesIndexBody=`<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/assets/css/index.css"><link rel="stylesheet" href="/assets/css/study-content.css"><link rel="stylesheet" href="/assets/css/mobile.css"></head><body><div id="global-nav-placeholder"></div><main class="container study-content">${breadcrumbHtml([['Home','index.html'],['Universities','explore-universities.html'],['Fees',feesIndexFile]])}<h1>All Malaysia university fees</h1><p>Find the full tuition fee chart and university guide for each covered institution. Read the course, campus, payment period and additional-charge notes before comparing amounts.</p>${directory()}<p><a href="/compare">Compare universities</a> · <a href="/Articles/cheapest-universities">Compare university costs in Malaysia</a></p></main><div id="global-footer-placeholder"></div><script src="/assets/js/navbar.js"></script><script src="/assets/js/footer.js"></script></body></html>`;
+save(feesIndexFile,metadata(feesIndexBody.replace('</head>','<link rel="stylesheet" href="/assets/css/company-pages.css"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></head>').replace('<body>','<body class="company-page">'),feesIndexFile,'Malaysia University Tuition Fees: All Fee Charts | One-Step','Find Malaysia university tuition fee charts for international students, with links to each university guide and its full published fee schedule.',[{'@type':'CollectionPage',url:urlFor(feesIndexFile),name:'All Malaysia university fees'}]));
+
 // Public content only. The previous sitemap omitted every article and hub page.
-const rootPages = ['index.html','explore-universities.html','articles.html','student-support-malaysia.html','compare.html','contact.html','scholarship-options.html','scholarship.html','malaysia-scholarship.html','about.html','terms.html'];
-const mergedLegacyFiles = new Set([...combinedIds].map(id => feeFile(id)));
+const rootPages = ['index.html','explore-universities.html',feesIndexFile,'articles.html','student-support-malaysia.html','compare.html','contact.html','scholarship-options.html','scholarship.html','malaysia-scholarship.html','about.html','terms.html'];
+const mergedLegacyFiles = new Set([...combinedIds].filter(id=>feeOwner.owner(id).owner==='hub').map(id => feeFile(id)));
 const pages = [...rootPages, ...['Universities','Fees_Chart','Articles','countries'].flatMap(dir=>fs.readdirSync(path.join(root,dir)).filter(f=>f.endsWith('.html')).map(f=>`${dir}/${f}`))].filter(file => !mergedLegacyFiles.has(file));
 const publicPages = [...new Set(pages)].filter(file=>rendered.has(file) || fs.existsSync(path.join(root,file)));
 const lastmods = require('./sitemap_lastmod')(root,publicPages,file=>rendered.get(file) || read(file),save);

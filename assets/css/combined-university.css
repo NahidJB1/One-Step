@@ -156,3 +156,17 @@
 
 /* Keep wide fee tables scrollable inside the university layout. */
 .fees-section { min-width:0; }
+/* University FAQs: clear disclosure controls and comfortable reading widths. */
+.combined-faq { background:#fff; }
+.combined-faq .section-heading { max-width:760px; margin-bottom:28px; }
+.combined-faq details { margin:0; border:0; border-bottom:1px solid var(--combined-line); border-radius:0; background:transparent; }
+.combined-faq details:first-of-type { border-top:1px solid var(--combined-line); }
+.combined-faq summary { position:relative; display:block; list-style:none; padding:24px 52px 24px 0; font-size:1rem; line-height:1.6; font-weight:600; }
+.combined-faq summary::-webkit-details-marker { display:none; }
+.combined-faq summary::after { content:'+'; position:absolute; right:4px; top:24px; width:26px; height:26px; display:grid; place-items:center; border:1px solid var(--combined-line); border-radius:50%; color:var(--combined-ink); font-size:20px; font-weight:400; line-height:1; }
+.combined-faq details[open] summary::after { content:'-'; }
+.combined-faq details[open] summary { color:#174d75; }
+.combined-faq summary:focus-visible { outline:3px solid #287dad; outline-offset:4px; border-radius:4px; }
+.combined-faq details>:not(summary) { max-width:78ch; margin-left:0; margin-right:36px; color:#475569; line-height:1.85; }
+.combined-faq details>:last-child { margin-bottom:26px; }
+@media(max-width:600px) { .combined-faq summary { padding-top:20px; padding-bottom:20px; } .combined-faq summary::after { top:21px; } .combined-faq details>:not(summary) { margin-right:0; } }

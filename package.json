@@ -15,7 +15,9 @@
     "check:chatbot-index": "php scripts/build_chatbot_index.php --check",
     "check:seo": "node scripts/build_site_seo.js --check",
     "test:seo": "node tests/seo_pages_test.js",
-    "test:combined-universities": "node tests/university_course_cards_test.cjs && node tests/university_accommodation_test.cjs && node tests/combined_university_pages_test.cjs && node tests/combined_university_responsive_test.cjs"
+    "test:combined-universities": "node tests/university_course_cards_test.cjs && node tests/university_accommodation_test.cjs && node tests/combined_university_pages_test.cjs && node tests/combined_university_responsive_test.cjs",
+    "build:fee-ownership": "node scripts/build_fee_ownership_routing.cjs && node scripts/build_site_seo.js && node scripts/build_combined_university_pages.js && node scripts/build_site_seo.js",
+    "check:fee-ownership": "node scripts/build_fee_ownership_routing.cjs --check && node scripts/build_site_seo.js --check && node scripts/build_combined_university_pages.js --check && node tests/fee_ownership_test.cjs"
   },
   "repository": {
     "type": "git",

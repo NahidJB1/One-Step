@@ -63,14 +63,8 @@
               targetUniCount = Object.keys(window.UNIVERSITY_META).length;
           }
 
-          const baseDate = new Date(Date.UTC(2026, 7, 10));
-          const baseCount = 151;
-          const diffTime = Math.max(0, new Date() - baseDate);
-          const diffWeeks = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 7));
-          const currentStudentCount = baseCount + diffWeeks;
-          
-          animateCounter(universityCount, targetUniCount);
-          animateCounter(studentCount, currentStudentCount);
+          // The initial HTML contains the count of the actual published list.
+          // Student outcomes require evidence rather than a time-based counter.
           
           observer.unobserve(entry.target);
         }
@@ -138,6 +132,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 function renderFeaturedUniversities() {
     const grid = document.getElementById('universityGrid');
     if (!grid) return;
+    if (grid.dataset.prerendered === 'true') return;
 
     let html = '';
     let count = 0;
@@ -211,7 +206,7 @@ function triggerSearch() {
         const uniName = uni.name;
         if (!window.UNIVERSITY_META || !window.UNIVERSITY_META[uniName]) return;
         const meta = window.UNIVERSITY_META[uniName];
-        const uniLink = `/Fees_Chart/${meta.slug}-fees`;
+        const uniLink = `/Universities/${meta.slug}-university#courses-fees`;
 
         uni.programs.forEach(program => {
             const progName = program.name;
@@ -563,10 +558,6 @@ function updateCountryDisplay() {
   card.style.opacity = '0.8';
   setTimeout(() => {
       document.getElementById('cName').textContent = data.name;
-      document.getElementById('cIntakes').textContent = data.intakes;
-      document.getElementById('cPrograms').textContent = data.programs;
-      document.getElementById('cFee').textContent = data.fee;
-      document.getElementById('cVisa').textContent = data.visa;
       document.getElementById('cReadMore').href = data.link;
       card.style.opacity = '1';
   }, 200);

@@ -1,0 +1,226 @@
+[
+  {
+    "pattern": "^(?:Universities/segi-details|Fees_Chart/segi-fees)(?:\\.html)?$",
+    "target": "/Universities/segi-university"
+  },
+  {
+    "pattern": "^(?:Universities/kings-details|Fees_Chart/kings-fees)(?:\\.html)?$",
+    "target": "/Universities/kings-university"
+  },
+  {
+    "pattern": "^(?:Universities/taylors-details|Fees_Chart/taylors-fees)(?:\\.html)?$",
+    "target": "/Universities/taylors-university"
+  },
+  {
+    "pattern": "^(?:Universities/unirazak-details|Fees_Chart/unirazak-fees)(?:\\.html)?$",
+    "target": "/Universities/unirazak-university"
+  },
+  {
+    "pattern": "^(?:Universities/amu-details|Fees_Chart/amu-fees)(?:\\.html)?$",
+    "target": "/Universities/amu-university"
+  },
+  {
+    "pattern": "^(?:Universities/apu-details|Fees_Chart/apu-fees)(?:\\.html)?$",
+    "target": "/Universities/apu-university"
+  },
+  {
+    "pattern": "^(?:Universities/help-details|Fees_Chart/help-fees)(?:\\.html)?$",
+    "target": "/Universities/help-university"
+  },
+  {
+    "pattern": "^(?:Universities/icms-details|Fees_Chart/icms-fees)(?:\\.html)?$",
+    "target": "/Universities/icms-university"
+  },
+  {
+    "pattern": "^(?:Universities/limkokwing-details|Fees_Chart/limkokwing-fees)(?:\\.html)?$",
+    "target": "/Universities/limkokwing-university"
+  },
+  {
+    "pattern": "^(?:Universities/lincoln-details|Fees_Chart/lincoln-fees)(?:\\.html)?$",
+    "target": "/Universities/lincoln-university"
+  },
+  {
+    "pattern": "^(?:Universities/mmu-details|Fees_Chart/mmu-fees)(?:\\.html)?$",
+    "target": "/Universities/mmu-university"
+  },
+  {
+    "pattern": "^(?:Universities/ucsi-details|Fees_Chart/ucsi-fees)(?:\\.html)?$",
+    "target": "/Universities/ucsi-university"
+  },
+  {
+    "pattern": "^(?:Universities/unikl-details|Fees_Chart/unikl-fees)(?:\\.html)?$",
+    "target": "/Universities/unikl-university"
+  },
+  {
+    "pattern": "^(?:Universities/umw-details|Fees_Chart/umw-fees)(?:\\.html)?$",
+    "target": "/Universities/umw-university"
+  },
+  {
+    "pattern": "^(?:Universities/iium-details|Fees_Chart/iium-fees)(?:\\.html)?$",
+    "target": "/Universities/iium-university"
+  },
+  {
+    "pattern": "^(?:Universities/uow-details|Fees_Chart/uow-fees)(?:\\.html)?$",
+    "target": "/Universities/uow-university"
+  },
+  {
+    "pattern": "^(?:Universities/upm-details|Fees_Chart/upm-fees)(?:\\.html)?$",
+    "target": "/Universities/upm-university"
+  },
+  {
+    "pattern": "^(?:Universities/utem-details|Fees_Chart/utem-fees)(?:\\.html)?$",
+    "target": "/Universities/utem-university"
+  },
+  {
+    "pattern": "^(?:Universities/utm-details|Fees_Chart/utm-fees)(?:\\.html)?$",
+    "target": "/Universities/utm-university"
+  },
+  {
+    "pattern": "^(?:Universities/bac-details|Fees_Chart/bac-fees)(?:\\.html)?$",
+    "target": "/Universities/bac-university"
+  },
+  {
+    "pattern": "^(?:Universities/alfa-details|Fees_Chart/alfa-fees)(?:\\.html)?$",
+    "target": "/Universities/alfa-university"
+  },
+  {
+    "pattern": "^(?:Universities/inti-details|Fees_Chart/inti-fees)(?:\\.html)?$",
+    "target": "/Universities/inti-university"
+  },
+  {
+    "pattern": "^(?:Universities/klust-details|Fees_Chart/klust-fees)(?:\\.html)?$",
+    "target": "/Universities/klust-university"
+  },
+  {
+    "pattern": "^(?:Universities/cityu-details|Fees_Chart/cityu-fees)(?:\\.html)?$",
+    "target": "/Universities/cityu-university"
+  },
+  {
+    "pattern": "^(?:Universities/cyberjaya-details|Fees_Chart/cyberjaya-fees)(?:\\.html)?$",
+    "target": "/Universities/cyberjaya-university"
+  },
+  {
+    "pattern": "^(?:Universities/binary(?:-details|-university)|Fees_Chart/binary-fees)(?:\\.html)?$",
+    "target": "/explore-universities"
+  },
+  {
+    "pattern": "^(?:Universities/cybernetics(?:-details|-university)|Fees_Chart/cybernetics-fees)(?:\\.html)?$",
+    "target": "/explore-universities"
+  },
+  {
+    "pattern": "^(?:Universities/genovasi-details|Fees_Chart/genovasi-fees)(?:\\.html)?$",
+    "target": "/Universities/genovasi-university"
+  },
+  {
+    "pattern": "^(?:Universities/ucmi(?:-details|-university)|Fees_Chart/ucmi-fees)(?:\\.html)?$",
+    "target": "/explore-universities"
+  },
+  {
+    "pattern": "^Fees_Chart/city-university-fees(?:\\.html)?$",
+    "target": "/Fees_Chart/cityu-fees"
+  },
+  {
+    "pattern": "^Universities/cybernetics-malaysia-\\(ktac\\)-details(?:\\.html)?$",
+    "target": "/explore-universities"
+  },
+  {
+    "pattern": "^Universities/genovasi-university-malaysia-details(?:\\.html)?$",
+    "target": "/Universities/genovasi-university"
+  },
+  {
+    "pattern": "^Universities/binary-university-of-management-&-entrepreneurship-details(?:\\.html)?$",
+    "target": "/explore-universities"
+  },
+  {
+    "pattern": "^Universities/lincoln-university-college-details(?:\\.html)?$",
+    "target": "/Universities/lincoln-university"
+  },
+  {
+    "pattern": "^Universities/asia-metropolitan-university-\\(amu\\)-details(?:\\.html)?$",
+    "target": "/Universities/amu-university"
+  },
+  {
+    "pattern": "^Universities/universiti-kuala-lumpur-\\(unikl\\)-details(?:\\.html)?$",
+    "target": "/Universities/unikl-university"
+  },
+  {
+    "pattern": "^Universities/universiti-putra-malaysia-\\(upm\\)-details(?:\\.html)?$",
+    "target": "/Universities/upm-university"
+  },
+  {
+    "pattern": "^Universities/limkokwing-university-of-creative-technology-details(?:\\.html)?$",
+    "target": "/Universities/limkokwing-university"
+  },
+  {
+    "pattern": "^Universities/asia-pacific-university-of-technology-&-innovation-\\(apu\\)-details(?:\\.html)?$",
+    "target": "/Universities/apu-university"
+  },
+  {
+    "pattern": "^Universities/international-university-of-malaya-wales-\\(iumw\\)-details(?:\\.html)?$",
+    "target": "/Universities/umw-university"
+  },
+  {
+    "pattern": "^Universities/ucsi-university-details(?:\\.html)?$",
+    "target": "/Universities/ucsi-university"
+  },
+  {
+    "pattern": "^Universities/multimedia-university-\\(mmu\\)-details(?:\\.html)?$",
+    "target": "/Universities/mmu-university"
+  },
+  {
+    "pattern": "^Universities/international-islamic-university-malaysia-\\(iium\\)-details(?:\\.html)?$",
+    "target": "/Universities/iium-university"
+  },
+  {
+    "pattern": "^Universities/universiti-teknologi-malaysia-\\(utm\\)-details(?:\\.html)?$",
+    "target": "/Universities/utm-university"
+  },
+  {
+    "pattern": "^Universities/kl-university-of-science-&-technology-\\(klust\\)-details(?:\\.html)?$",
+    "target": "/Universities/klust-university"
+  },
+  {
+    "pattern": "^Universities/universiti-teknikal-malaysia-melaka-\\(utem\\)-details(?:\\.html)?$",
+    "target": "/Universities/utem-university"
+  },
+  {
+    "pattern": "^Universities/university-of-wollongong-\\(uow\\)-details(?:\\.html)?$",
+    "target": "/Universities/uow-university"
+  },
+  {
+    "pattern": "^Universities/help-university-details(?:\\.html)?$",
+    "target": "/Universities/help-university"
+  },
+  {
+    "pattern": "^Universities/university-college-maiwp-international-\\(ucmi\\)-details(?:\\.html)?$",
+    "target": "/explore-universities"
+  },
+  {
+    "pattern": "^Universities/vision-university-college-details(?:\\.html)?$",
+    "target": "/"
+  },
+  {
+    "pattern": "^Fees_Chart/KLUST-fees(?:\\.html)?$",
+    "target": "/Fees_Chart/klust-fees"
+  },
+  {
+    "pattern": "^Fees_Chart/iukl-fees(?:\\.html)?$",
+    "target": "/Fees_Chart/klust-fees"
+  },
+  {
+    "pattern": "^segi-university(?:\\.html)?$",
+    "target": "/Universities/segi-university"
+  },
+  {
+    "pattern": "^Universities/application(?:\\.html)?$",
+    "target": "/application"
+  },
+  {
+    "pattern": "^Universities/index(?:\\.html)?$",
+    "target": "/"
+  },
+  {
+    "pattern": "^Universities/scholarship(?:\\.html)?$",
+    "target": "/scholarship"
+  }
+]

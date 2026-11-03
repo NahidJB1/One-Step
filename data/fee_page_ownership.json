@@ -1,0 +1,1149 @@
+{
+  "source": "onestepmy.com-Performance/Pages.csv",
+  "dates": [
+    "2026-03-27",
+    "2026-10-31"
+  ],
+  "method": "All fee tables belong to university pages, requested by the site owner on 2026-11-03.",
+  "universities": {
+    "alfa": {
+      "id": "alfa",
+      "feeClicks": 356,
+      "hubClicks": 6,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/alfa-fees.html",
+          "clicks": 183,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/alfa-fees",
+          "clicks": 122,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/alfa-fees.html",
+          "clicks": 50,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/alfa-university",
+          "clicks": 6,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/alfa-details",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/alfa-fees",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/alfa-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/alfa-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/alfa-details.html",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 7,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/alfa-fees",
+      "hubPath": "/Universities/alfa-university",
+      "ownerPath": "/Universities/alfa-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "amu": {
+      "id": "amu",
+      "feeClicks": 8,
+      "hubClicks": 0,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/amu-fees",
+          "clicks": 8,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/amu-fees",
+          "clicks": 0,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/amu-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/amu-details.html?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/amu-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/amu-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 0,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/amu-fees",
+      "hubPath": "/Universities/amu-university",
+      "ownerPath": "/Universities/amu-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "apu": {
+      "id": "apu",
+      "feeClicks": 2,
+      "hubClicks": 1,
+      "detailsClicks": 3,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Universities/apu-details",
+          "clicks": 3,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/apu-fees",
+          "clicks": 2,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/apu-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/apu-details.html?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/apu-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/apu-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 4,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/apu-fees",
+      "hubPath": "/Universities/apu-university",
+      "ownerPath": "/Universities/apu-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "bac": {
+      "id": "bac",
+      "feeClicks": 5,
+      "hubClicks": 0,
+      "detailsClicks": 3,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/bac-fees",
+          "clicks": 4,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/bac-details",
+          "clicks": 3,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/bac-fees.html",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/bac-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/bac-fees",
+          "clicks": 0,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/bac-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/bac-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/bac-details.html",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 3,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/bac-fees",
+      "hubPath": "/Universities/bac-university",
+      "ownerPath": "/Universities/bac-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "cityu": {
+      "id": "cityu",
+      "feeClicks": 18,
+      "hubClicks": 1,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://onestepmy.com/Fees_Chart/city-university-fees.html",
+          "clicks": 11,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/cityu-fees",
+          "clicks": 7,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/cityu-details",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/cityu-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/cityu-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/cityu-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 2,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/cityu-fees",
+      "hubPath": "/Universities/cityu-university",
+      "ownerPath": "/Universities/cityu-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "cyberjaya": {
+      "id": "cyberjaya",
+      "feeClicks": 5,
+      "hubClicks": 0,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/cyberjaya-fees",
+          "clicks": 3,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/cyberjaya-fees.html",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/cyberjaya-fees.html",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/cyberjaya-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/cyberjaya-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/cyberjaya-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/cyberjaya-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/cyberjaya-fees",
+          "clicks": 0,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/cyberjaya-details",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 0,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/cyberjaya-fees",
+      "hubPath": "/Universities/cyberjaya-university",
+      "ownerPath": "/Universities/cyberjaya-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "genovasi": {
+      "id": "genovasi",
+      "feeClicks": 8,
+      "hubClicks": 0,
+      "detailsClicks": 2,
+      "rows": [
+        {
+          "url": "https://onestepmy.com/Fees_Chart/genovasi-fees.html",
+          "clicks": 7,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/genovasi-details",
+          "clicks": 2,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/genovasi-fees",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/genovasi-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/genovasi-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/genovasi-details.html",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 2,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/genovasi-fees",
+      "hubPath": "/Universities/genovasi-university",
+      "ownerPath": "/Universities/genovasi-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "help": {
+      "id": "help",
+      "feeClicks": 12,
+      "hubClicks": 1,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/help-fees",
+          "clicks": 11,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/help-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/help-fees.html",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/help-fees",
+          "clicks": 0,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/help-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/help-fees",
+      "hubPath": "/Universities/help-university",
+      "ownerPath": "/Universities/help-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "icms": {
+      "id": "icms",
+      "feeClicks": 7,
+      "hubClicks": 6,
+      "detailsClicks": 10,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Universities/icms-details",
+          "clicks": 9,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/icms-fees",
+          "clicks": 7,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/icms-university",
+          "clicks": 6,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/icms-details.html?program=true",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/icms-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 16,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/icms-fees",
+      "hubPath": "/Universities/icms-university",
+      "ownerPath": "/Universities/icms-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "iium": {
+      "id": "iium",
+      "feeClicks": 14,
+      "hubClicks": 1,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/iium-fees",
+          "clicks": 14,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/iium-details",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/iium-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/iium-university?program=true",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/iium-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 2,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/iium-fees",
+      "hubPath": "/Universities/iium-university",
+      "ownerPath": "/Universities/iium-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "inti": {
+      "id": "inti",
+      "feeClicks": 8,
+      "hubClicks": 0,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://onestepmy.com/Fees_Chart/inti-fees.html",
+          "clicks": 5,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/inti-fees",
+          "clicks": 3,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/inti-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/inti-fees",
+          "clicks": 0,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/inti-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/inti-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/inti-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/inti-details.html",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 0,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/inti-fees",
+      "hubPath": "/Universities/inti-university",
+      "ownerPath": "/Universities/inti-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "kings": {
+      "id": "kings",
+      "feeClicks": 1,
+      "hubClicks": 1,
+      "detailsClicks": 4,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Universities/kings-details",
+          "clicks": 4,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/kings-fees",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/kings-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/kings-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/kings-details",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 5,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/kings-fees",
+      "hubPath": "/Universities/kings-university",
+      "ownerPath": "/Universities/kings-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "klust": {
+      "id": "klust",
+      "feeClicks": 0,
+      "hubClicks": 3,
+      "detailsClicks": 8,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Universities/klust-details",
+          "clicks": 8,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/klust-university",
+          "clicks": 3,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/klust-fees",
+          "clicks": 0,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/klust-details.html?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/klust-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 11,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/klust-fees",
+      "hubPath": "/Universities/klust-university",
+      "ownerPath": "/Universities/klust-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "limkokwing": {
+      "id": "limkokwing",
+      "feeClicks": 10,
+      "hubClicks": 1,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/limkokwing-fees",
+          "clicks": 8,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/limkokwing-fees.html",
+          "clicks": 2,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/limkokwing-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/limkokwing-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/limkokwing-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/limkokwing-details.html?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/limkokwing-fees",
+      "hubPath": "/Universities/limkokwing-university",
+      "ownerPath": "/Universities/limkokwing-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "lincoln": {
+      "id": "lincoln",
+      "feeClicks": 2,
+      "hubClicks": 0,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/lincoln-fees",
+          "clicks": 2,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/lincoln-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/lincoln-details",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 0,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/lincoln-fees",
+      "hubPath": "/Universities/lincoln-university",
+      "ownerPath": "/Universities/lincoln-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "mmu": {
+      "id": "mmu",
+      "feeClicks": 2,
+      "hubClicks": 0,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/mmu-fees",
+          "clicks": 2,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/mmu-details",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/mmu-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/mmu-details.html?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/mmu-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/mmu-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/mmu-fees",
+      "hubPath": "/Universities/mmu-university",
+      "ownerPath": "/Universities/mmu-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "segi": {
+      "id": "segi",
+      "feeClicks": 33,
+      "hubClicks": 1,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/segi-fees",
+          "clicks": 19,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/segi-fees",
+          "clicks": 9,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/segi-fees.html",
+          "clicks": 5,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/segi-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/segi-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/segi-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/segi-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/segi-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/segi-fees",
+      "hubPath": "/Universities/segi-university",
+      "ownerPath": "/Universities/segi-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "taylors": {
+      "id": "taylors",
+      "feeClicks": 46,
+      "hubClicks": 0,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/taylors-fees",
+          "clicks": 33,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/taylors-fees.html",
+          "clicks": 13,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/taylors-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/taylors-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/taylors-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 0,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/taylors-fees",
+      "hubPath": "/Universities/taylors-university",
+      "ownerPath": "/Universities/taylors-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "ucsi": {
+      "id": "ucsi",
+      "feeClicks": 12,
+      "hubClicks": 1,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/ucsi-fees",
+          "clicks": 10,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/ucsi-fees.html",
+          "clicks": 2,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/ucsi-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/ucsi-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/ucsi-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/ucsi-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/ucsi-fees",
+      "hubPath": "/Universities/ucsi-university",
+      "ownerPath": "/Universities/ucsi-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "umw": {
+      "id": "umw",
+      "feeClicks": 1,
+      "hubClicks": 0,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/umw-fees",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/umw-details.html?program=true",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/umw-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/umw-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/umw-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/umw-fees",
+      "hubPath": "/Universities/umw-university",
+      "ownerPath": "/Universities/umw-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "unikl": {
+      "id": "unikl",
+      "feeClicks": 13,
+      "hubClicks": 0,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/unikl-fees",
+          "clicks": 10,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/unikl-fees.html",
+          "clicks": 3,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/unikl-details",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/unikl-university",
+          "clicks": 0,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/unikl-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/unikl-details.html",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/unikl-details.html?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/unikl-fees",
+      "hubPath": "/Universities/unikl-university",
+      "ownerPath": "/Universities/unikl-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "unirazak": {
+      "id": "unirazak",
+      "feeClicks": 18,
+      "hubClicks": 1,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/unirazak-fees",
+          "clicks": 12,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/unirazak-fees.html",
+          "clicks": 4,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/unirazak-fees",
+          "clicks": 2,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/unirazak-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/unirazak-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/unirazak-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/unirazak-details.html",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 1,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/unirazak-fees",
+      "hubPath": "/Universities/unirazak-university",
+      "ownerPath": "/Universities/unirazak-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "uow": {
+      "id": "uow",
+      "feeClicks": 6,
+      "hubClicks": 0,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/uow-fees",
+          "clicks": 6,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/uow-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/uow-university",
+          "clicks": 0,
+          "family": "hub"
+        }
+      ],
+      "guideClicks": 0,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/uow-fees",
+      "hubPath": "/Universities/uow-university",
+      "ownerPath": "/Universities/uow-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "upm": {
+      "id": "upm",
+      "feeClicks": 1,
+      "hubClicks": 2,
+      "detailsClicks": 0,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Universities/upm-university",
+          "clicks": 2,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/upm-fees",
+          "clicks": 1,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/upm-details",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/upm-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://onestepmy.com/Universities/upm-details.html?program=true",
+          "clicks": 0,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/upm-details.html",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 2,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/upm-fees",
+      "hubPath": "/Universities/upm-university",
+      "ownerPath": "/Universities/upm-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "utem": {
+      "id": "utem",
+      "feeClicks": 6,
+      "hubClicks": 2,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/utem-fees",
+          "clicks": 6,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/utem-university",
+          "clicks": 2,
+          "family": "hub"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/utem-details",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/utem-details.html",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 3,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/utem-fees",
+      "hubPath": "/Universities/utem-university",
+      "ownerPath": "/Universities/utem-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    },
+    "utm": {
+      "id": "utm",
+      "feeClicks": 11,
+      "hubClicks": 1,
+      "detailsClicks": 1,
+      "rows": [
+        {
+          "url": "https://www.onestepmy.com/Fees_Chart/utm-fees",
+          "clicks": 7,
+          "family": "fees"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/utm-fees",
+          "clicks": 4,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/utm-details",
+          "clicks": 1,
+          "family": "details"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/utm-university",
+          "clicks": 1,
+          "family": "hub"
+        },
+        {
+          "url": "https://onestepmy.com/Fees_Chart/utm-fees.html",
+          "clicks": 0,
+          "family": "fees"
+        },
+        {
+          "url": "https://www.onestepmy.com/Universities/utm-details?program=true",
+          "clicks": 0,
+          "family": "details"
+        }
+      ],
+      "guideClicks": 2,
+      "owner": "hub",
+      "feePath": "/Fees_Chart/utm-fees",
+      "hubPath": "/Universities/utm-university",
+      "ownerPath": "/Universities/utm-university",
+      "reason": "Owner requested a single university page with intact fee tables"
+    }
+  }
+}

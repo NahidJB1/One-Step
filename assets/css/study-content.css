@@ -54,3 +54,7 @@ body[data-university-guide] .main-header { background: #fff; }
     .study-actions a { flex: 1 1 180px; }
     .study-decision { width: calc(100% - 32px); margin: 20px 16px; }
 }
+
+.university-directory-disclosure > summary { cursor:pointer; padding:8px 0; }
+.university-directory-disclosure > summary > h2 { display:inline; margin:0; }
+.university-directory-disclosure > summary:focus-visible { outline:3px solid #287dad; outline-offset:5px; border-radius:4px; }

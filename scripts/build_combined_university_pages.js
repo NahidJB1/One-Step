@@ -4,6 +4,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {renderCourses} = require('./university_course_cards');
 const {accommodation, renderAccommodation} = require('./university_accommodation');
+const feeOwner = require('./fee_owner.cjs');
+const feeAnswer = require('./fee_answer.cjs');
+const feeData = require('../data/fees_data.json');
+const feeSources = require('./university_seo_content');
 
 const root = path.resolve(__dirname, '..');
 const checkOnly = process.argv.includes('--check');
@@ -47,8 +51,6 @@ const seoNames = {
   ucsi:'UCSI University', unikl:'UniKL', umw:'IUMW', iium:'IIUM', uow:'UOW Malaysia',
   upm:'UPM', utem:'UTeM', utm:'UTM'
 };
-// Only these merged pages currently publish living-cost figures.
-const livingCostIds = new Set(['upm', 'utm']);
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const articles = JSON.parse(read('data/university_articles.json'));
@@ -82,7 +84,7 @@ function researchFaqs() {
 }
 const researchedFaqs = researchFaqs();
 const esc = value => String(value).replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const plain = html => html.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+const plain = html => html.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#0*39;|&#x0*27;|&apos;/gi, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const between = (html, start, end) => {
   const a = html.indexOf(start), b = html.indexOf(end, a + start.length);
   if (a < 0 || b < 0) throw new Error(`Missing marker: ${start} / ${end}`);
@@ -162,8 +164,7 @@ function expandResearchAnswer(question, answer, cfg) {
 function faqParts(detail, fee) {
   const blocks = [
     between(detail, '<!-- seo:study-guide:start -->', '<!-- seo:study-guide:end -->'),
-    between(detail, '<!-- rankings:content:start -->', '<!-- rankings:content:end -->'),
-    between(fee, '<!-- seo:fee-faq:start -->', '<!-- seo:fee-faq:end -->')
+    between(detail, '<!-- rankings:content:start -->', '<!-- rankings:content:end -->')
   ];
   const seen = new Set();
   return blocks.flatMap(detailsFrom).filter(item => {
@@ -229,13 +230,16 @@ function documentFor(id, cfg, detail, fee, data) {
     {'@type':'ListItem',position:2,name:'Universities',item:'https://www.onestepmy.com/explore-universities'},
     {'@type':'ListItem',position:3,name:cfg.name,item:canonical}
   ]};
-  schema['@graph'].push({'@type':'FAQPage','@id':canonical+'#faq',mainEntity:faqSchema(faqs)});
-  const title = `${seoNames[id]} | Fees, Courses & Ranking 2026`;
+  // Visible FAQs remain without FAQ structured data.
+  const ownsFees = feeOwner.owner(id).owner==='hub';
+  const title = `${cfg.name} | Courses, Fees, Rankings and Admission`;
   const descriptionName = cfg.name;
-  const descriptionTopics = livingCostIds.has(id)
-    ? 'tuition fees, living costs, rankings and scholarships'
-    : 'tuition fees, courses, rankings and scholarships';
-  const description = `A clear guide to ${descriptionTopics} at ${descriptionName} for international students.`;
+  const description = ownsFees ? `Explore ${descriptionName} tuition fees for international students, with course fee tables, payment periods, source notes and university information.` : `Explore ${descriptionName} programmes, rankings, campus information and links to its full tuition fee chart for international students.`;
+  const feeLink=`<a href="${feeOwner.href(id)}${ownsFees?'#courses-fees':''}">See the full ${esc(cfg.name)} fee chart</a>`;
+  const feeNavigation=`<p><a href="#overview">${esc(cfg.name)} university overview</a> · <a href="/compare">Compare universities</a> · <a href="/Articles/cheapest-universities">Compare Malaysia university costs</a></p>`;
+  const feeContent=fee;
+  const breadcrumbs=`<nav class="study-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explore-universities">Universities</a> <span aria-hidden="true">/</span> <a href="${canonical}#overview">${esc(cfg.name)}</a>${ownsFees?' <span aria-hidden="true">/</span> <a href="#courses-fees">Fees</a>':''}</nav>`;
+  if(ownsFees)schema['@graph'][1].itemListElement.push({'@type':'ListItem',position:4,name:'Fees',item:canonical+'#courses-fees'});
   return `<!DOCTYPE html>
 <html lang="en"><head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1776812546531019" crossorigin="anonymous"></script>
@@ -244,24 +248,26 @@ function documentFor(id, cfg, detail, fee, data) {
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link rel="stylesheet" href="../assets/css/index.css"><link rel="stylesheet" href="../assets/css/fees.css"><link rel="stylesheet" href="../assets/css/university-details.css"><link rel="stylesheet" href="../assets/css/study-content.css"><link rel="stylesheet" href="../assets/css/combined-university.css?v=20261016-accommodation-photos-1"><link rel="stylesheet" href="/assets/css/mobile.css"><!-- seo:support-style:start -->
+<link rel="stylesheet" href="../assets/css/index.css"><link rel="stylesheet" href="../assets/css/fees.css"><link rel="stylesheet" href="../assets/css/university-details.css"><link rel="stylesheet" href="../assets/css/study-content.css"><link rel="stylesheet" href="../assets/css/combined-university.css?v=20261103-merged-fees"><link rel="stylesheet" href="/assets/css/mobile.css"><!-- seo:support-style:start -->
 <link rel="stylesheet" href="/assets/css/student-support.css">
 <!-- seo:support-style:end -->
+<noscript><style>.panel{display:block!important}#courses[hidden],#articles[hidden]{display:block!important}</style></noscript>
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}">
 <script type="application/ld+json">${JSON.stringify(schema)}</script></head>
 <body class="combined-university-page" data-university="${id}"><div id="global-nav-placeholder"></div>
 <main>
-<header class="combined-hero" style="--hero-image:url('/assets/images/universities/${cfg.hero}')"><div class="combined-hero-overlay"></div><div class="combined-hero-content"><div class="combined-hero-identity"><img class="combined-logo" src="../assets/images/universities/${cfg.logo}" alt="${esc(cfg.name)} logo"><span class="combined-eyebrow">University guide <span aria-hidden="true">/</span> Malaysia</span></div><h1>${esc(cfg.name)}</h1><p class="combined-hero-lead">Explore courses, international fees, campus life and your path to applying.</p><div class="combined-hero-actions"><a class="combined-primary" href="/apply?university=${id}">Apply now <span aria-hidden="true">↗</span></a><a class="combined-secondary" href="#courses">Explore courses <span aria-hidden="true">→</span></a></div></div><span class="combined-hero-caption">${esc(cfg.short)} <span aria-hidden="true">·</span> Study in Malaysia</span></header>
+<header class="combined-hero" style="--hero-image:url('/assets/images/universities/${cfg.hero}')"><div class="combined-hero-overlay"></div><div class="combined-hero-content"><div class="combined-hero-identity"><img class="combined-logo" src="../assets/images/universities/${cfg.logo}" alt="${esc(cfg.name)} logo"><span class="combined-eyebrow">University guide <span aria-hidden="true">/</span> Malaysia</span></div><h1>${esc(cfg.name)}</h1><p class="combined-hero-lead">Explore ${esc(cfg.name)} courses, fees, rankings and admission guidance. </p><div class="combined-hero-actions"><a class="combined-primary" href="/apply?university=${id}">Apply now <span aria-hidden="true">↗</span></a><a class="combined-secondary" href="#courses">Explore courses <span aria-hidden="true">→</span></a></div></div><span class="combined-hero-caption">${esc(cfg.short)} <span aria-hidden="true">·</span> Study in Malaysia</span></header>
 <div class="combined-tabs-wrap"><nav class="combined-tabs" aria-label="University sections"><a class="active" href="#overview">Overview</a><a href="#courses" aria-controls="courses">Courses</a>${articles[id] ? '<a href="#articles" aria-controls="articles">Articles</a>' : '<span aria-disabled="true">Articles</span>'}${accommodation[id] ? '<a href="#accommodation" aria-controls="accommodation">Accommodation</a>' : '<span aria-disabled="true">Accommodation</span>'}</nav><button class="combined-tabs-more" type="button" aria-label="Show more university sections" hidden>More <span aria-hidden="true">→</span></button></div>
 <div class="combined-shell" id="overview">
+${breadcrumbs}
 <section class="combined-section about-section"><div class="section-heading"><p>University overview</p><h2>About ${esc(cfg.name)}</h2></div><div class="about-copy">${firstAbout(detail)}</div>${gallery(detail)}</section>
 <section class="combined-section international-section"><div class="section-heading"><p>International students</p><h2>Study at ${esc(cfg.name)} as an international student</h2></div>${studyCopy(data,cfg)}</section>
-<section class="combined-section fees-section" id="courses-fees"><div class="section-heading"><p>Programmes and tuition</p><h2>${esc(cfg.name)} ${esc(cfg.short)} courses and fees for international students</h2></div><div class="search-container"><div class="search-box-wrapper"><input type="text" id="searchInput" placeholder="Search courses and programmes" aria-label="Search courses and programmes"><button type="button" class="search-icon-btn" aria-label="Search fee chart">&#128269;</button></div></div>${feeChart(fee,id)}</section>
+<section class="combined-section fees-section" id="courses-fees"><div class="section-heading"><p>Programmes and tuition</p><h2>${esc(cfg.name)} courses and fees for International students</h2></div>${feeContent}${feeNavigation}</section>
 <!-- rankings:content:start -->${ranking(detail)}<!-- rankings:content:end -->
 <section class="combined-section campus-gallery"><div class="section-heading"><p>Explore the campus</p><h2>Campus gallery</h2></div>${gallery(detail)}</section>
-<section class="combined-section combined-faq" id="faq"><div class="section-heading"><p>Questions and answers</p><h2>Frequently Asked Questions About ${esc(cfg.name)} ${esc(cfg.short)}</h2></div>${faqs.join('\n')}</section>
-</div>${renderCourses(id,cfg.name,feeChart(fee,id))}${renderArticle(id,cfg)}${renderAccommodation(id,cfg.name)}</main><div id="lightbox" class="lightbox"><span class="close-lightbox">&times;</span><img id="lightbox-img" alt="Campus image preview"></div><!-- seo:student-support:start -->
+<section class="combined-section combined-faq" id="faq"><div class="section-heading"><p>Questions and answers</p><h2>Frequently Asked Questions About ${esc(cfg.name)}</h2></div>${faqs.join('\n')}</section>
+</div>${renderCourses(id,cfg.name,feeChart(fee,id),{showFees:ownsFees,feeHref:feeOwner.href(id)})}${renderArticle(id,cfg)}${renderAccommodation(id,cfg.name)}</main><div id="lightbox" class="lightbox"><span class="close-lightbox">&times;</span><img id="lightbox-img" alt="Campus image preview"></div><!-- seo:student-support:start -->
 <aside class="support-inline"><h2>Support after you arrive in Malaysia</h2><p>Need help with airport pickup, a room, your clinic visit or university registration? Plan the next steps with One-Step.</p><a href="/student-support-malaysia">Explore student support and arrival arrangements &#8594;</a></aside>
 <!-- seo:student-support:end -->
 <div id="global-footer-placeholder"></div>
@@ -272,11 +278,11 @@ const editorial = JSON.parse(read('data/university_seo_content.json'));
 let outdated = 0;
 for (const [id,cfg] of Object.entries(configs)) {
   let detail = read(`data/university_details/${id}-details.html`);
-  const fee = read(`Fees_Chart/${id}-fees.html`);
+  const fee = read(`data/university_fees/${id}.html`);
   for (const mergedId of Object.keys(configs)) {
     detail = detail.replaceAll(`/Universities/${mergedId}-details`, `/Universities/${mergedId}-university`)
-      .replaceAll(`/Fees_Chart/${mergedId}-fees#`, `/Universities/${mergedId}-university#`)
-      .replaceAll(`/Fees_Chart/${mergedId}-fees`, `/Universities/${mergedId}-university#courses-fees`);
+      .replaceAll(`/Fees_Chart/${mergedId}-fees#`, `${feeOwner.href(mergedId)}#`)
+      .replaceAll(`/Fees_Chart/${mergedId}-fees`, feeOwner.href(mergedId));
   }
   let output = documentFor(id,cfg,detail,fee,editorial[id] || {});
   if (id === 'alfa') output = output.replaceAll('Alfa University College', cfg.name);

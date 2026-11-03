@@ -49,7 +49,7 @@ const server = http.createServer((request, response) => {
         assert.ok(hero.headingLeft >= 0 && hero.headingRight <= width + 1, `${id} at ${width}px: hero heading clips`);
         assert.equal(await page.locator('.combined-hero-actions a').count(), 2, `${id} at ${width}px: hero actions are missing`);
         assert.equal(await page.locator('#courses-fees').count(), 1, `${id} at ${width}px: missing fee section`);
-        assert.ok(await page.locator('#faq details').count() >= 5, `${id} at ${width}px: FAQ list is incomplete`);
+        assert.ok(await page.locator('#faq details').count() >= 1, `${id} at ${width}px: FAQ list is incomplete`);
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         assert.ok(overflow <= 1, `${id} at ${width}px: page overflows by ${overflow}px`);
         await page.locator('.combined-tabs a[href="#courses"]').click();

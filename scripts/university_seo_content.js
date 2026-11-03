@@ -4,9 +4,8 @@
 const content = require('../data/university_seo_content.json');
 const H = require('./seo_helpers');
 const {esc, plain, block, breadcrumbHtml, replaceElement} = H;
-const combinedIds = new Set(['bac', 'alfa', 'inti', 'klust', 'cityu', 'cyberjaya', 'genovasi', 'segi', 'kings', 'taylors', 'unirazak', 'amu', 'apu', 'help', 'icms', 'limkokwing', 'lincoln', 'mmu', 'ucsi', 'unikl', 'umw', 'iium', 'uow', 'upm', 'utem', 'utm']);
-const feePath = id => combinedIds.has(id) ? `/Universities/${id}-university#courses-fees` : `/Fees_Chart/${id}-fees`;
-const feeCategoryPath = (id, category) => combinedIds.has(id) ? `/Universities/${id}-university#fee-category-${category}` : `/Fees_Chart/${id}-fees#fee-category-${category}`;
+const feePath = id => require('./fee_owner.cjs').href(id);
+const feeCategoryPath = (id, category) => `${feePath(id)}#fee-category-${category}`;
 const detailPath = id => `/Universities/${id}-university`;
 const links = items => `<ul class="study-link-list">${items.map(item => `<li><a href="${esc(item.path || item.url)}">${esc(item.label)}</a></li>`).join('')}</ul>`;
 const faq = items => items.map(f => `<details class="study-faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n');
@@ -16,11 +15,13 @@ function feeSourceLabel(id, index, uni) {
     if (!c?.fee_provenance) return '';
     const source = c.fee_provenance;
     const section = source.sections?.[index] || {};
-    return `<details class="study-faq fee-provenance"><summary>Schedule source and validity</summary>
-<p><strong>Institution/campus in the stored schedule:</strong> ${esc(section.institution || c.name)}.<br><strong>Section:</strong> ${esc(plain(uni.categories[index].category_name))}.<br><strong>Student category:</strong> International students.<br><strong>Schedule edition:</strong> ${esc(section.edition || source.edition)}.<br><strong>Fee basis:</strong> ${esc(section.basis || source.basis)}.</p>
-${section.status ? `<p>${esc(section.status)}</p>` : ''}
-${links(section.sources || source.sources)}
-</details>`;
+    return `<p class="fee-provenance">${esc(plain(uni.categories[index].category_name))} — International students; see the source and validity note above.</p>`;
+}
+
+function feeSourceNote(id,uni){
+    const c=content[id],s=c?.fee_provenance;
+    if(!s)return '';
+    return `<section class="study-content fee-provenance"><h2>Schedule source and validity</h2><p>Institution/campus: ${esc(c.name)}. Student category: International students. Schedule edition: ${esc(s.edition)}. Fee basis: ${esc(s.basis)}.</p><p>${esc(s.status)}</p>${links(s.sources||[])}${(s.sections||[]).map((section,index)=>`<p>${esc(plain(uni.categories[index]?.category_name||'Section'))}: ${esc([section.institution,section.edition,section.basis,section.status].filter(Boolean).join('; '))}</p>${section.sources?links(section.sources):''}`).join('')}</section>`;
 }
 
 function feeGuide(id, uni, crumbs, html) {
@@ -30,10 +31,9 @@ function feeGuide(id, uni, crumbs, html) {
 <p class="study-eyebrow">International tuition &amp; programme costs</p>
 <h2 id="fees-guide-title">Plan your ${esc(c.name)} study budget</h2>
 <p>${esc(c.scope)}</p>
-${c.fee_provenance ? `<p class="fee-source-note">${esc(c.fee_provenance.status)}</p>` : ''}
 <nav class="study-actions" aria-label="Fee page sections"><a href="#fee-tables">Browse fee chart</a><a href="#payment-planning">Initial payments &amp; other costs</a><a href="#faq">Fee questions &amp; documents</a></nav>
 <details class="study-faq"><summary>Choose a programme or campus section</summary><ul class="study-section-links">${labels.map((label,i) => `<li><a href="#fee-category-${i}">${esc(label)}</a></li>`).join('')}</ul></details>
-<p class="study-counterpart">Choosing a course or intake? <a href="${detailPath(id)}${c.verified_programmes ? '#courses-intakes' : ''}">Explore ${esc(c.name)} courses, campuses and admissions guidance</a>.</p>
+<p class="study-counterpart">Choosing a course or intake? <a href="${detailPath(id)}${c.verified_programmes ? '#courses' : ''}">Explore ${esc(c.name)} courses, campuses and admissions guidance</a>.</p>
 </section>`;
 }
 
@@ -44,7 +44,7 @@ function feePlanning(id) {
 <div class="study-planning-grid"><div><h3>Tuition and payment periods</h3><p>${esc(c.fee_reading)}</p></div><div><h3>Initial payments and additional charges</h3><p>${esc(c.payment)}</p></div></div>
 <h3>Budgeting from Bangladesh</h3><p>Use the currency and payment period printed in your programme's schedule. Keep accommodation, travel and living expenses separate from tuition. A BDT estimate needs a dated exchange rate and may differ from the amount your bank charges.</p>
 <p>Compare scholarship or adjusted-fee columns only after your eligibility is confirmed. Your written offer should identify the award, covered charges and renewal conditions.</p>
-${links([{label:'Scholarship eligibility and conditions',path:detailPath(id)+'#scholarships'},{label:'Malaysia living-cost guide',path:'/Articles/cost-of-living-malaysia-international-students'},{label:'Student visa process and cost stages',path:'/Articles/visas-and-requirements-malaysia'}])}
+${links([{label:'Scholarship eligibility and conditions',path:detailPath(id)+'#faq'},{label:'Malaysia living-cost guide',path:'/Articles/cost-of-living-malaysia-international-students'},{label:'Student visa process and cost stages',path:'/Articles/visas-and-requirements-malaysia'}])}
 <p><a class="study-primary-link" href="/contact">Ask about my programme's fee schedule</a></p>
 </section>`;
 }
@@ -128,4 +128,4 @@ function detailPage(html, id) {
     return html;
 }
 
-module.exports = {content, feeGuide, feePlanning, feePage, feeSourceLabel, detailGuide, detailPage};
+module.exports = {content, feeGuide, feePlanning, feePage, feeSourceLabel, feeSourceNote, detailGuide, detailPage};

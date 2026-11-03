@@ -12,6 +12,6 @@ assert.equal(coursesFromChart(bundled)[0].fee, null, 'Bundled initial charges mu
 const html = renderCourses('test','Test University', fixture);
 assert.ok(html.includes('/apply?university=test&amp;course=Business%20%26%20Management'));
 assert.ok(html.includes('https://wa.me/601119359497?text='));
-const cyberjaya = coursesFromChart(fs.readFileSync('Fees_Chart/cyberjaya-fees.html','utf8'));
+const cyberjaya = coursesFromChart(fs.readFileSync('data/university_fees/cyberjaya.html','utf8'));
 assert.ok(cyberjaya.some(c => /FOUNDATION IN SCIENCE/i.test(c.name) && c.fee === 'MYR 12,466'), 'Use authored Cyberjaya fee chart');
 console.log('Course card extraction, fee labels, rowspan handling and action links passed.');
